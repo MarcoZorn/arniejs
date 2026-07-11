@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-labelledby="arnieTitle">
+  <title id="arnieTitle">Arnie the gardener, ArnieJS mascot</title>
+  <circle cx="100" cy="100" r="98" fill="#2e2010" stroke="#1a1208" stroke-width="4"/>
+
+  <!-- straw hat -->
+  <ellipse cx="100" cy="72" rx="58" ry="14" fill="#c4862d" stroke="#1a1208" stroke-width="4"/>
+  <path d="M62 70 Q100 30 138 70 Q120 58 100 58 Q80 58 62 70 Z" fill="#d4a85a" stroke="#1a1208" stroke-width="4" stroke-linejoin="round"/>
+  <ellipse cx="100" cy="70" rx="24" ry="7" fill="#9b6b3a" stroke="#1a1208" stroke-width="3"/>
+
+  <!-- face -->
+  <circle cx="100" cy="112" r="46" fill="#d4956a" stroke="#1a1208" stroke-width="4"/>
+
+  <!-- ears -->
+  <circle cx="55" cy="112" r="9" fill="#d4956a" stroke="#1a1208" stroke-width="4"/>
+  <circle cx="145" cy="112" r="9" fill="#d4956a" stroke="#1a1208" stroke-width="4"/>
+
+  <!-- rosy cheeks -->
+  <circle cx="76" cy="126" r="9" fill="#c4622d" opacity="0.55"/>
+  <circle cx="124" cy="126" r="9" fill="#c4622d" opacity="0.55"/>
+
+  <!-- eyes -->
+  <path d="M68 104 Q76 96 84 104" fill="none" stroke="#1a1208" stroke-width="4" stroke-linecap="round"/>
+  <path d="M116 104 Q124 96 132 104" fill="none" stroke="#1a1208" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- nose -->
+  <circle cx="100" cy="118" r="4" fill="#1a1208"/>
+
+  <!-- big smile -->
+  <path d="M78 128 Q100 150 122 128" fill="none" stroke="#1a1208" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- mustache -->
+  <path d="M76 130 Q88 138 100 132 Q112 138 124 130" fill="#f0e6d3" stroke="#1a1208" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- arm holding seedling trophy -->
+  <path d="M140 150 Q158 140 158 118" fill="none" stroke="#d4956a" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="158" cy="114" r="9" fill="#d4956a" stroke="#1a1208" stroke-width="3"/>
+
+  <!-- tiny seedling held up like a trophy -->
+  <rect x="153" y="90" width="10" height="18" rx="3" fill="#9b6b3a" stroke="#1a1208" stroke-width="2.5"/>
+  <path d="M158 90 Q150 76 140 78 Q146 90 158 90 Z" fill="#5a7a3a" stroke="#1a1208" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M158 90 Q166 74 178 78 Q170 90 158 90 Z" fill="#8fa86e" stroke="#1a1208" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M158 90 L158 80" stroke="#5a7a3a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- body / overalls hint -->
+  <path d="M58 156 Q100 178 142 156 L142 172 Q100 190 58 172 Z" fill="#5a7a3a" stroke="#1a1208" stroke-width="4" stroke-linejoin="round"/>
+</svg>
