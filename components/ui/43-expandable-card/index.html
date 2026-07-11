@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Expandable card</h1>
+  <p class="stage__sub">Click to expand into a full detail view.</p>
+
+  <article class="exp-card" id="expCard">
+    <button class="exp-card__head" id="expToggle" aria-expanded="false" aria-controls="expBody">
+      <div class="exp-card__heading">
+        <span class="exp-card__tag">Field Guide</span>
+        <h2 class="exp-card__title">Composting for Small Gardens</h2>
+        <p class="exp-card__summary">A short primer on turning kitchen scraps into living soil.</p>
+      </div>
+      <span class="exp-card__chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </span>
+    </button>
+
+    <div class="exp-card__collapse" id="expBody">
+      <div class="exp-card__inner">
+        <p>
+          Start with a mix of "browns" — dry leaves, cardboard, straw — and "greens" like
+          vegetable peels and coffee grounds. Keep the pile roughly three parts brown to
+          one part green, turning it every week or two to bring in air.
+        </p>
+        <ul class="exp-card__list">
+          <li>Layer materials rather than dumping all at once</li>
+          <li>Keep moisture like a wrung-out sponge</li>
+          <li>Chop larger scraps to speed decomposition</li>
+          <li>Finished compost smells earthy, not sour</li>
+        </ul>
+        <div class="exp-card__actions">
+          <button class="exp-card__btn" type="button">Save guide</button>
+          <button class="exp-card__btn exp-card__btn--ghost" type="button">Share</button>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+
+<script src="script.js"></script>
