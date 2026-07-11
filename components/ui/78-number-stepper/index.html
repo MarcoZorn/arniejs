@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Number stepper</h1>
+  <p class="stage__sub">Count out seedlings — click, or press and hold to speed up.</p>
+
+  <div class="stepper" id="stepper">
+    <button class="stepper__btn stepper__btn--minus" id="stepMinus" type="button" aria-label="Decrease">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+    </button>
+    <div class="stepper__field">
+      <input class="stepper__input" id="stepInput" type="text" inputmode="numeric" value="0" aria-live="polite">
+      <span class="stepper__label">seedlings</span>
+    </div>
+    <button class="stepper__btn stepper__btn--plus" id="stepPlus" type="button" aria-label="Increase">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+    </button>
+  </div>
+</main>
+
+<script src="script.js"></script>
