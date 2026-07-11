@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="wrap">
+  <header class="page-head">
+    <h1>Garden Activity</h1>
+    <p>Watering, weeding &amp; harvest log over the last <span data-role="range-label">24 weeks</span></p>
+  </header>
+
+  <section class="heatmap-card">
+    <div class="heatmap-top">
+      <div class="heatmap-title">
+        <span class="heatmap-total" data-role="total">— activities</span>
+      </div>
+    </div>
+
+    <div class="heatmap-scroll">
+      <div class="heatmap-body">
+        <div class="month-row" data-role="months"></div>
+        <div class="heatmap-main">
+          <div class="day-labels">
+            <span></span>
+            <span>Mon</span>
+            <span></span>
+            <span>Wed</span>
+            <span></span>
+            <span>Fri</span>
+            <span></span>
+          </div>
+          <div class="grid" data-role="grid" role="img" aria-label="Garden activity heatmap"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="heatmap-legend">
+      <span class="legend-word">Less</span>
+      <span class="legend-swatch" data-level="0"></span>
+      <span class="legend-swatch" data-level="1"></span>
+      <span class="legend-swatch" data-level="2"></span>
+      <span class="legend-swatch" data-level="3"></span>
+      <span class="legend-swatch" data-level="4"></span>
+      <span class="legend-word">More</span>
+    </div>
+  </section>
+
+  <div class="tooltip" data-role="tooltip"></div>
+</main>
+
+<script src="script.js"></script>
