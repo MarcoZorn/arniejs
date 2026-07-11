@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <header class="head">
+    <p class="eyebrow">Field Notes</p>
+    <h1>Click to zoom the harvest</h1>
+    <p class="sub">Tap any photo below to open it in a warm, focused lightbox.</p>
+  </header>
+
+  <div class="gallery">
+    <button class="thumb" type="button" data-title="Terraced Rows" data-desc="Sunrise over the terraced vegetable rows.">
+      <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Terraced rows at sunrise">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#d4a85a"/>
+            <stop offset="55%" stop-color="#a03820"/>
+            <stop offset="100%" stop-color="#241a0e"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="300" fill="url(#g1)"/>
+        <path d="M0 200 Q100 170 200 200 T400 200 V300 H0 Z" fill="#5a7a3a"/>
+        <path d="M0 240 Q100 215 200 240 T400 240 V300 H0 Z" fill="#3d2b14"/>
+      </svg>
+      <span class="thumb-label">Terraced Rows</span>
+    </button>
+
+    <button class="thumb" type="button" data-title="Root Cellar" data-desc="Fresh roots stacked and drying after harvest.">
+      <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Root cellar with drying roots">
+        <defs>
+          <radialGradient id="g2" cx="50%" cy="40%" r="75%">
+            <stop offset="0%" stop-color="#9b6b3a"/>
+            <stop offset="100%" stop-color="#1a1208"/>
+          </radialGradient>
+        </defs>
+        <rect width="400" height="300" fill="url(#g2)"/>
+        <circle cx="120" cy="180" r="34" fill="#c4622d"/>
+        <circle cx="200" cy="200" r="28" fill="#a03820"/>
+        <circle cx="270" cy="170" r="38" fill="#c4622d"/>
+        <circle cx="330" cy="210" r="24" fill="#a03820"/>
+      </svg>
+      <span class="thumb-label">Root Cellar</span>
+    </button>
+
+    <button class="thumb" type="button" data-title="Golden Grove" data-desc="Late afternoon light through the orchard grove.">
+      <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Golden light through orchard grove">
+        <defs>
+          <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#8fa86e"/>
+            <stop offset="60%" stop-color="#5a7a3a"/>
+            <stop offset="100%" stop-color="#241a0e"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="300" fill="url(#g3)"/>
+        <circle cx="320" cy="60" r="40" fill="#d4a85a"/>
+        <rect x="60" y="150" width="14" height="120" fill="#3d2b14"/>
+        <rect x="160" y="130" width="14" height="140" fill="#3d2b14"/>
+        <rect x="260" y="160" width="14" height="110" fill="#3d2b14"/>
+      </svg>
+      <span class="thumb-label">Golden Grove</span>
+    </button>
+  </div>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox-backdrop" data-close="true"></div>
+    <figure class="lightbox-frame">
+      <button class="lightbox-close" type="button" data-close="true" aria-label="Close zoomed image">&times;</button>
+      <div class="lightbox-media" id="lightboxMedia"></div>
+      <figcaption>
+        <h2 id="lightboxTitle"></h2>
+        <p id="lightboxDesc"></p>
+      </figcaption>
+    </figure>
+  </div>
+</main>
+<script src="script.js"></script>
