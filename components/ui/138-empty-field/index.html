@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="wrap">
+  <section class="empty-card" aria-labelledby="empty-title">
+    <div class="scene" id="scene">
+      <div class="sun" aria-hidden="true"></div>
+
+      <svg class="pot-illustration" viewBox="0 0 220 160" width="220" height="160" role="img" aria-label="An empty plant pot waiting for a seed">
+        <ellipse class="ground-shadow" cx="110" cy="140" rx="70" ry="10" />
+
+        <!-- pot -->
+        <path class="pot-body" d="M55 78 L165 78 L150 138 Q110 148 70 138 Z" />
+        <rect class="pot-rim" x="48" y="66" width="124" height="16" rx="8" />
+
+        <!-- soil mound -->
+        <path class="soil" d="M62 78 Q110 58 158 78 Q110 86 62 78 Z" />
+
+        <!-- dashed hole where a seed would go -->
+        <ellipse class="seed-hole" cx="110" cy="72" rx="14" ry="6" />
+
+        <!-- sprout, hidden until planted -->
+        <g class="sprout" id="sprout" transform="translate(110 74)">
+          <path class="stem" d="M0 0 C 0 -10, 0 -18, 0 -26" />
+          <path class="leaf leaf-left" d="M0 -20 C -14 -22, -18 -32, -8 -38 C -2 -30, -2 -24, 0 -20 Z" />
+          <path class="leaf leaf-right" d="M0 -16 C 14 -18, 18 -28, 8 -34 C 2 -26, 2 -20, 0 -16 Z" />
+        </g>
+      </svg>
+    </div>
+
+    <h2 class="title" id="empty-title">Nothing planted yet</h2>
+    <p class="subtitle" id="empty-subtitle">This little pot is just soil and hope right now. Give it a seed and see what grows.</p>
+
+    <div class="actions">
+      <button type="button" class="btn btn-primary" id="plant-btn">
+        <span class="btn-icon" aria-hidden="true">&#127793;</span>
+        Plant a seed
+      </button>
+      <button type="button" class="btn btn-ghost" id="reset-btn" hidden>
+        Clear the pot
+      </button>
+    </div>
+
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+  </section>
+</main>
+
+<script src="script.js"></script>
