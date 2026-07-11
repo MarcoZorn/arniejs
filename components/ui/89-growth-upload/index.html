@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <header class="head">
+    <h1>Growth Upload</h1>
+    <p>Drop a file, or press start — watch the sprout grow with every percent.</p>
+  </header>
+
+  <section class="uploader">
+    <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Upload area, click or drop a file to start">
+      <div class="sprout" id="sprout" aria-hidden="true">
+        <div class="soil"></div>
+        <div class="stem" id="stem">
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </div>
+      </div>
+
+      <p class="drop-text" id="drop-text">Drag a file here, or click to simulate an upload</p>
+    </div>
+
+    <div class="progress-row">
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <span class="progress-pct" id="progress-pct">0%</span>
+    </div>
+
+    <div class="status-row">
+      <span class="status-text" id="status-text">Ready</span>
+      <button type="button" class="start-btn" id="start-btn">Start Upload</button>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
