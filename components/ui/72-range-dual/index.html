@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Dual range slider</h1>
+  <p class="stage__sub">Drag either handle to set a min/max range.</p>
+
+  <div class="dual-range" id="dualRange">
+    <div class="dual-range__readout">
+      <span id="minVal">20</span>
+      <span class="dual-range__sep">&ndash;</span>
+      <span id="maxVal">80</span>
+    </div>
+
+    <div class="dual-range__track" id="track">
+      <div class="dual-range__fill" id="fill"></div>
+      <button type="button" class="dual-range__thumb" id="thumbMin" role="slider"
+        aria-label="Minimum value" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20"></button>
+      <button type="button" class="dual-range__thumb" id="thumbMax" role="slider"
+        aria-label="Maximum value" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"></button>
+    </div>
+
+    <div class="dual-range__scale">
+      <span>0</span>
+      <span>100</span>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
