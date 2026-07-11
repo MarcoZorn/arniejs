@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  padding: 3rem 1.5rem;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.head {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.head h1 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.head p {
+  color: var(--text-muted);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 700px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 460px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+.cell {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 2.25rem 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  min-height: 180px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.cell:hover {
+  border-color: var(--border-light);
+  transform: translateY(-2px);
+}
+
+.label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.spinner {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+/* 1. Rotating ring */
+.spinner.ring {
+  border: 4px solid var(--bg-subtle);
+  border-top-color: var(--accent-terra);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* 2. Dashed ring */
+.spinner.dashed {
+  border: 4px dashed var(--accent-sand);
+  border-radius: 50%;
+  animation: spin 3s linear infinite;
+  opacity: 0.9;
+}
+
+/* 3. Dual-tone arc */
+.spinner.arc {
+  border: 4px solid transparent;
+  border-top-color: var(--accent-rust);
+  border-right-color: var(--accent-clay);
+  border-radius: 50%;
+  animation: spin 0.9s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+/* 4. Pulsing dot ring */
+.spinner.pulse-ring {
+  width: 48px;
+  height: 48px;
+}
+.spinner.pulse-ring span {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-sage);
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+  animation: dot-pulse 1.2s ease-in-out infinite;
+}
+.spinner.pulse-ring span:nth-child(1) { transform: rotate(0deg) translate(20px) translate(-4px,-4px); animation-delay: 0s; }
+.spinner.pulse-ring span:nth-child(2) { transform: rotate(60deg) translate(20px) translate(-4px,-4px); animation-delay: 0.1s; }
+.spinner.pulse-ring span:nth-child(3) { transform: rotate(120deg) translate(20px) translate(-4px,-4px); animation-delay: 0.2s; }
+.spinner.pulse-ring span:nth-child(4) { transform: rotate(180deg) translate(20px) translate(-4px,-4px); animation-delay: 0.3s; }
+.spinner.pulse-ring span:nth-child(5) { transform: rotate(240deg) translate(20px) translate(-4px,-4px); animation-delay: 0.4s; }
+.spinner.pulse-ring span:nth-child(6) { transform: rotate(300deg) translate(20px) translate(-4px,-4px); animation-delay: 0.5s; }
+
+@keyframes dot-pulse {
+  0%, 100% { opacity: 0.25; transform: rotate(var(--r,0deg)) translate(20px) translate(-4px,-4px) scale(0.7); }
+  50% { opacity: 1; transform: rotate(var(--r,0deg)) translate(20px) translate(-4px,-4px) scale(1.15); }
+}
+.spinner.pulse-ring span:nth-child(1){ --r: 0deg; }
+.spinner.pulse-ring span:nth-child(2){ --r: 60deg; }
+.spinner.pulse-ring span:nth-child(3){ --r: 120deg; }
+.spinner.pulse-ring span:nth-child(4){ --r: 180deg; }
+.spinner.pulse-ring span:nth-child(5){ --r: 240deg; }
+.spinner.pulse-ring span:nth-child(6){ --r: 300deg; }
+
+/* 5. Bouncing bars */
+.spinner.bounce-bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+  width: 48px;
+  height: 48px;
+}
+.spinner.bounce-bars span {
+  width: 6px;
+  height: 100%;
+  background: var(--accent-moss);
+  border-radius: 3px;
+  animation: bounce-bar 1s ease-in-out infinite;
+}
+.spinner.bounce-bars span:nth-child(1) { animation-delay: 0s; }
+.spinner.bounce-bars span:nth-child(2) { animation-delay: 0.15s; }
+.spinner.bounce-bars span:nth-child(3) { animation-delay: 0.3s; }
+.spinner.bounce-bars span:nth-child(4) { animation-delay: 0.45s; }
+
+@keyframes bounce-bar {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+
+/* 6. Orbiting dot */
+.spinner.orbit {
+  border-radius: 50%;
+  border: 1px dashed var(--border-light);
+  animation: spin 4s linear infinite;
+}
+.spinner.orbit .orbit-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-terra);
+  box-shadow: 0 0 8px 1px var(--accent-terra);
+  top: -5px;
+  left: 50%;
+  margin-left: -5px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner,
+  .spinner * {
+    animation: none !important;
+  }
+  .spinner.ring { border-top-color: var(--accent-terra); opacity: 0.8; }
+}
