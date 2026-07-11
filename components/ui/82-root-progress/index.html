@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <h1 class="title">root progress</h1>
+  <p class="subtitle">a multi-step path with a terracotta line that fills as you grow</p>
+
+  <section class="demo">
+    <ol class="steps" id="steps">
+      <li class="step is-active" data-step="1">
+        <button class="step-dot" type="button" aria-current="step">1</button>
+        <span class="step-label">Sow</span>
+      </li>
+      <li class="step" data-step="2">
+        <button class="step-dot" type="button">2</button>
+        <span class="step-label">Sprout</span>
+      </li>
+      <li class="step" data-step="3">
+        <button class="step-dot" type="button">3</button>
+        <span class="step-label">Grow</span>
+      </li>
+      <li class="step" data-step="4">
+        <button class="step-dot" type="button">4</button>
+        <span class="step-label">Bloom</span>
+      </li>
+      <li class="step" data-step="5">
+        <button class="step-dot" type="button">5</button>
+        <span class="step-label">Harvest</span>
+      </li>
+    </ol>
+
+    <div class="controls">
+      <button class="ctrl-btn" id="prevBtn" type="button">Back</button>
+      <button class="ctrl-btn ctrl-primary" id="nextBtn" type="button">Next</button>
+      <button class="ctrl-btn ctrl-ghost" id="resetBtn" type="button">Reset</button>
+    </div>
+
+    <p class="status" id="statusText">Step 1 of 5 — Sow</p>
+  </section>
+</main>
+<script src="script.js"></script>
