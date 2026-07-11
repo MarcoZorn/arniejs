@@ -1,0 +1,62 @@
+<!-- description: A grid of integration cards with logo placeholder, name, connected/disconnected status, and a connect/disconnect button. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Integrations</h1>
+  <p class="stage__sub">Connect third-party tools to your workspace.</p>
+
+  <div class="integration-grid">
+    <div class="integration-card" data-state="connected">
+      <div class="integration-card__head">
+        <span class="integration-card__logo" style="background:#c4622d">SL</span>
+        <span class="integration-card__badge">
+          <span class="integration-card__dot" aria-hidden="true"></span>
+          <span class="integration-card__badge-text">Connected</span>
+        </span>
+      </div>
+      <h2 class="integration-card__name">Slack</h2>
+      <p class="integration-card__desc">Send notifications and alerts to your team channels.</p>
+      <button type="button" class="integration-card__action">Disconnect</button>
+    </div>
+
+    <div class="integration-card" data-state="disconnected">
+      <div class="integration-card__head">
+        <span class="integration-card__logo" style="background:#5a7a3a">GH</span>
+        <span class="integration-card__badge">
+          <span class="integration-card__dot" aria-hidden="true"></span>
+          <span class="integration-card__badge-text">Disconnected</span>
+        </span>
+      </div>
+      <h2 class="integration-card__name">GitHub</h2>
+      <p class="integration-card__desc">Sync issues and pull requests automatically.</p>
+      <button type="button" class="integration-card__action">Connect</button>
+    </div>
+
+    <div class="integration-card" data-state="connected">
+      <div class="integration-card__head">
+        <span class="integration-card__logo" style="background:#9b6b3a">FG</span>
+        <span class="integration-card__badge">
+          <span class="integration-card__dot" aria-hidden="true"></span>
+          <span class="integration-card__badge-text">Connected</span>
+        </span>
+      </div>
+      <h2 class="integration-card__name">Figma</h2>
+      <p class="integration-card__desc">Embed design files directly inside your docs.</p>
+      <button type="button" class="integration-card__action">Disconnect</button>
+    </div>
+
+    <div class="integration-card" data-state="disconnected">
+      <div class="integration-card__head">
+        <span class="integration-card__logo" style="background:#a03820">ZM</span>
+        <span class="integration-card__badge">
+          <span class="integration-card__dot" aria-hidden="true"></span>
+          <span class="integration-card__badge-text">Disconnected</span>
+        </span>
+      </div>
+      <h2 class="integration-card__name">Zoom</h2>
+      <p class="integration-card__desc">Schedule and launch meetings from your calendar.</p>
+      <button type="button" class="integration-card__action">Connect</button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
