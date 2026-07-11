@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Dark Mode Detector</h1>
+  <p class="stage__sub">Reflects your OS color-scheme preference in real time</p>
+
+  <div class="detector" role="status" aria-live="polite">
+    <div class="detector__icon" aria-hidden="true">
+      <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="12" cy="12" r="4.5"></circle>
+        <path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"></path>
+      </svg>
+      <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"></path>
+      </svg>
+    </div>
+    <p class="detector__label" data-label>Detecting…</p>
+    <p class="detector__hint" data-hint>Waiting for matchMedia support</p>
+  </div>
+
+  <p class="footnote">Change your system appearance settings to see this update live — no reload needed.</p>
+</main>
+<script src="script.js"></script>
