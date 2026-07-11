@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="wrap">
+  <header class="page-head">
+    <h1>Garden Ledger</h1>
+    <p>Quick stats with inline trend sparklines</p>
+  </header>
+
+  <section class="stat-grid">
+    <article class="stat-card" data-spark data-values="12,14,13,17,16,20,22,21,25,29,27,32" data-trend="up">
+      <div class="stat-top">
+        <span class="stat-label">Seedlings Sprouted</span>
+        <span class="stat-trend" data-role="trend">+18.4%</span>
+      </div>
+      <div class="stat-mid">
+        <span class="stat-number" data-role="number">2,914</span>
+      </div>
+      <div class="spark-wrap">
+        <svg class="spark-svg" data-role="svg" viewBox="0 0 240 64" preserveAspectRatio="none" aria-hidden="true"></svg>
+        <div class="spark-tooltip" data-role="tooltip"></div>
+      </div>
+    </article>
+
+    <article class="stat-card" data-spark data-values="48,44,46,39,41,35,33,30,27,24,22,19" data-trend="down">
+      <div class="stat-top">
+        <span class="stat-label">Pest Incidents</span>
+        <span class="stat-trend" data-role="trend">-38.2%</span>
+      </div>
+      <div class="stat-mid">
+        <span class="stat-number" data-role="number">19</span>
+      </div>
+      <div class="spark-wrap">
+        <svg class="spark-svg" data-role="svg" viewBox="0 0 240 64" preserveAspectRatio="none" aria-hidden="true"></svg>
+        <div class="spark-tooltip" data-role="tooltip"></div>
+      </div>
+    </article>
+
+    <article class="stat-card" data-spark data-values="60,58,63,61,65,62,64,63,66,64,65,66" data-trend="flat">
+      <div class="stat-top">
+        <span class="stat-label">Soil Moisture Avg</span>
+        <span class="stat-trend" data-role="trend">+1.1%</span>
+      </div>
+      <div class="stat-mid">
+        <span class="stat-number" data-role="number">66%</span>
+      </div>
+      <div class="spark-wrap">
+        <svg class="spark-svg" data-role="svg" viewBox="0 0 240 64" preserveAspectRatio="none" aria-hidden="true"></svg>
+        <div class="spark-tooltip" data-role="tooltip"></div>
+      </div>
+    </article>
+  </section>
+</main>
+
+<script src="script.js"></script>

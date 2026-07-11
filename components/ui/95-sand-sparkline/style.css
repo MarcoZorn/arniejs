@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+}
+
+.page-head {
+  margin-bottom: 36px;
+}
+
+.page-head h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 6px;
+  letter-spacing: -0.02em;
+}
+
+.page-head p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: linear-gradient(160deg, var(--bg-card) 0%, var(--bg-surface) 100%);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 20px 16px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(220px 120px at 100% 0%, rgba(212, 168, 90, 0.08), transparent 70%);
+  pointer-events: none;
+}
+
+.stat-card:hover {
+  border-color: var(--border-light);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -14px rgba(0, 0, 0, 0.55);
+}
+
+.stat-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.stat-trend {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(90, 122, 58, 0.18);
+  color: var(--accent-sage);
+  white-space: nowrap;
+}
+
+.stat-card[data-trend-state="down"] .stat-trend {
+  background: rgba(160, 56, 32, 0.16);
+  color: var(--accent-rust);
+}
+
+.stat-card[data-trend-state="flat"] .stat-trend {
+  background: rgba(155, 107, 58, 0.18);
+  color: var(--accent-clay);
+}
+
+.stat-mid {
+  margin-bottom: 14px;
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.spark-wrap {
+  position: relative;
+  height: 64px;
+  margin: 0 -4px -4px;
+}
+
+.spark-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+.spark-line {
+  fill: none;
+  stroke: var(--accent-sand);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.stat-card[data-trend-state="down"] .spark-line {
+  stroke: var(--accent-rust);
+}
+
+.stat-card[data-trend-state="flat"] .spark-line {
+  stroke: var(--accent-clay);
+}
+
+.spark-fill {
+  opacity: 0.9;
+}
+
+.spark-dot {
+  fill: var(--accent-sand);
+  stroke: var(--bg-deep);
+  stroke-width: 2;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.stat-card[data-trend-state="down"] .spark-dot {
+  fill: var(--accent-rust);
+}
+
+.stat-card[data-trend-state="flat"] .spark-dot {
+  fill: var(--accent-clay);
+}
+
+.spark-hit {
+  fill: transparent;
+  cursor: crosshair;
+}
+
+.spark-guide {
+  stroke: var(--border-light);
+  stroke-width: 1;
+  stroke-dasharray: 2 3;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.stat-card.is-active .spark-dot,
+.stat-card.is-active .spark-guide {
+  opacity: 1;
+}
+
+.spark-tooltip {
+  position: absolute;
+  top: -2px;
+  transform: translate(-50%, -100%);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  color: var(--text-primary);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.6);
+}
+
+.stat-card.is-active .spark-tooltip {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stat-card,
+  .spark-dot,
+  .spark-guide,
+  .spark-tooltip {
+    transition: none !important;
+  }
+}
