@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 8vh 20px;
+}
+
+.stage__title { margin: 0 0 6px; font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -.02em; }
+.stage__sub { margin: 0 0 36px; color: var(--text-muted); }
+
+.plot {
+  position: relative;
+  width: min(92vw, 420px);
+  margin: 0 auto;
+  padding: 34px 20px 26px;
+  border: 2px dashed var(--border-light);
+  border-radius: 18px;
+  background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-card) 100%);
+  cursor: pointer;
+  transition: border-color .2s ease, background .2s ease, box-shadow .2s ease;
+}
+.plot:focus-visible { outline: 2px solid var(--accent-terra); outline-offset: 3px; }
+
+.plot.is-dragover {
+  border-color: var(--accent-sand);
+  background: linear-gradient(180deg, #3a2811 0%, #2e2010 100%);
+  box-shadow: 0 0 0 6px rgba(212, 168, 90, .12), inset 0 0 30px rgba(212,168,90,.08);
+}
+
+.plot__input { display: none; }
+
+.plot__sprout { width: 96px; height: 70px; margin: 0 auto 10px; display: block; overflow: visible; }
+
+.plot__mound {
+  fill: var(--bg-subtle);
+  transition: fill .2s ease;
+}
+.plot.is-dragover .plot__mound { fill: var(--accent-clay); }
+
+.plot__plant {
+  transform-origin: 0px 0px;
+  transform: translate(60px, 88px) scale(0);
+  opacity: 0;
+}
+.plot__stem { stroke: var(--accent-moss); stroke-width: 3; fill: none; stroke-linecap: round; }
+.plot__leaf { fill: var(--accent-sage); }
+
+.plot.is-planted .plot__plant {
+  animation: sprout-grow .7s cubic-bezier(.2,.9,.3,1.1) forwards;
+}
+@keyframes sprout-grow {
+  0%   { transform: translate(60px, 88px) scale(0); opacity: 0; }
+  40%  { opacity: 1; }
+  100% { transform: translate(60px, 88px) scale(1); opacity: 1; }
+}
+
+.plot__hint {
+  margin: 6px 0 0;
+  font-size: .9rem;
+  color: var(--text-muted);
+}
+.plot.is-dragover .plot__hint { color: var(--accent-sand); font-weight: 600; }
+.plot.is-planted .plot__hint { color: var(--accent-sage); }
+
+.plot__files {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+  width: min(92vw, 420px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+.plot__file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: .86rem;
+  animation: file-in .3s ease;
+}
+@keyframes file-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.plot__file-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.plot__file-remove {
+  border: 0;
+  background: transparent;
+  color: var(--text-faint);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 4px;
+  transition: color .15s ease;
+}
+.plot__file-remove:hover { color: var(--accent-rust); }
+
+@media (prefers-reduced-motion: reduce) {
+  .plot, .plot__mound, .plot__plant, .plot__file { transition: none !important; animation: none !important; }
+  .plot.is-planted .plot__plant { transform: translate(60px, 88px) scale(1); opacity: 1; }
+}

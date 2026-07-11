@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Field upload</h1>
+  <p class="stage__sub">Drop a file to plant it, or click the soil to browse.</p>
+
+  <div class="plot" id="plot" tabindex="0" role="button" aria-label="Upload a file">
+    <input type="file" id="fileInput" class="plot__input" multiple hidden>
+
+    <svg class="plot__sprout" id="sprout" viewBox="0 0 120 120" aria-hidden="true">
+      <ellipse class="plot__mound" cx="60" cy="98" rx="46" ry="12"/>
+      <g class="plot__plant" transform="translate(60,88)">
+        <path class="plot__stem" d="M0,0 C0,-16 0,-28 0,-40" />
+        <path class="plot__leaf plot__leaf--l" d="M0,-24 C-16,-26 -22,-14 -8,-8 C-6,-16 -2,-20 0,-24 Z" />
+        <path class="plot__leaf plot__leaf--r" d="M0,-34 C16,-36 22,-24 8,-18 C6,-26 2,-30 0,-34 Z" />
+      </g>
+    </svg>
+
+    <p class="plot__hint" id="plotHint">Drag a file here or click to browse</p>
+  </div>
+
+  <ul class="plot__files" id="fileList"></ul>
+</main>
+
+<script src="script.js"></script>
