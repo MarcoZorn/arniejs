@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+html,body{margin:0;height:100%;background:radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);overflow:hidden;cursor:crosshair}
+canvas{display:block}
+.cap{position:fixed;left:22px;bottom:20px;font-family:'Syne',system-ui,sans-serif;
+  color:#f0e6d3;mix-blend-mode:screen;pointer-events:none;line-height:1.4}
+.cap b{font-weight:700;font-size:15px;letter-spacing:.08em;text-transform:uppercase;display:block}
+.cap span{font-weight:500;font-size:12px;opacity:.6;color:#d4a85a}
+@media (prefers-reduced-motion: reduce){
+  .cap{opacity:.85}
+}
