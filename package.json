@@ -1,7 +1,7 @@
 {
   "name": "arniejs",
   "version": "1.0.0",
-  "description": "290+ vanilla JS components. Grown from scratch. No deps.",
+  "description": "280+ vanilla JS components. Grown from scratch. No deps.",
   "bin": {
     "arniejs": "bin/arniejs.js"
   },
