@@ -1,0 +1,18 @@
+<!-- description: A polaroid photo card that develops from blank white into an image on click, with a shake animation. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Instant photo</h1>
+  <p class="stage__sub">Click the polaroid to develop it.</p>
+
+  <div class="darkroom">
+    <button class="polaroid" type="button" data-developed="false" aria-label="Develop photo">
+      <span class="polaroid__photo">
+        <span class="polaroid__scene" aria-hidden="true"></span>
+        <span class="polaroid__sheen" aria-hidden="true"></span>
+      </span>
+      <span class="polaroid__caption">shake it &middot; wait for it</span>
+    </button>
+  </div>
+</main>
+<script src="script.js"></script>
