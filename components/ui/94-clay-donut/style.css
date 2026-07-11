@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+  box-sizing: border-box;
+}
+
+.donut-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.donut-card {
+  width: 100%;
+  max-width: 640px;
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-surface) 100%);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px 28px 24px;
+  box-shadow: 0 24px 60px -30px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  position: relative;
+}
+
+.donut-head {
+  margin-bottom: 16px;
+}
+
+.donut-title {
+  margin: 0 0 4px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.donut-sub {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.donut-body {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.donut-figure {
+  flex: 0 0 220px;
+  width: 220px;
+}
+
+.donut-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+.segment {
+  fill: none;
+  stroke-width: 34;
+  cursor: pointer;
+  transition: stroke-width 0.18s ease, opacity 0.18s ease, filter 0.18s ease;
+  transform-origin: 120px 120px;
+}
+
+.segment.is-dimmed {
+  opacity: 0.35;
+}
+
+.segment.is-active {
+  stroke-width: 40;
+  filter: drop-shadow(0 0 8px rgba(212, 168, 90, 0.35));
+}
+
+.donut-hole {
+  fill: var(--bg-card);
+}
+
+.center-value {
+  text-anchor: middle;
+  fill: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.center-label {
+  text-anchor: middle;
+  fill: var(--text-muted);
+  font-family: 'Syne', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.donut-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 200px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.legend-item:hover,
+.legend-item.is-active {
+  background: var(--bg-subtle);
+}
+
+.legend-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.legend-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.legend-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.legend-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.legend-pct {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--accent-sand);
+  flex-shrink: 0;
+}
+
+.donut-tooltip {
+  position: absolute;
+  transform: translate(-50%, -115%);
+  background: var(--bg-deep);
+  border: 1px solid var(--accent-clay);
+  border-radius: 10px;
+  padding: 7px 12px;
+  pointer-events: none;
+  white-space: nowrap;
+  box-shadow: 0 10px 24px -10px rgba(0, 0, 0, 0.7);
+  z-index: 4;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.donut-tooltip .tt-value {
+  color: var(--accent-sand);
+  margin-left: 6px;
+}
+
+@media (max-width: 480px) {
+  .donut-card {
+    padding: 20px 16px;
+  }
+  .donut-body {
+    justify-content: center;
+  }
+  .donut-figure {
+    flex: 0 0 200px;
+    width: 200px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .segment,
+  .legend-item {
+    transition: none !important;
+  }
+}

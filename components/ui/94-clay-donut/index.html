@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="style.css">
+<main class="donut-wrap">
+  <div class="donut-card">
+    <header class="donut-head">
+      <h2 class="donut-title">Garden Plot Allocation</h2>
+      <p class="donut-sub">How the 240m&sup2; community plot is divided this season</p>
+    </header>
+
+    <div class="donut-body">
+      <div class="donut-figure">
+        <svg class="donut-chart" viewBox="0 0 240 240" role="img" aria-label="Donut chart of garden plot allocation by category">
+          <g class="segments" data-role="segments"></g>
+          <circle class="donut-hole" cx="120" cy="120" r="62"></circle>
+          <g class="donut-center" data-role="center">
+            <text class="center-value" data-role="center-value" x="120" y="115">100%</text>
+            <text class="center-label" data-role="center-label" x="120" y="136">Total plot</text>
+          </g>
+        </svg>
+      </div>
+
+      <ul class="donut-legend" data-role="legend"></ul>
+    </div>
+
+    <div class="donut-tooltip" data-role="tooltip" hidden></div>
+  </div>
+</main>
+<script src="script.js"></script>
