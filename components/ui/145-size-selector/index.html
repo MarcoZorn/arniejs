@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <div class="size-selector" id="sizeSelector" role="radiogroup" aria-label="Select size">
+    <button type="button" class="size-chip is-selected" data-size="S" role="radio" aria-checked="true">S</button>
+    <button type="button" class="size-chip" data-size="M" role="radio" aria-checked="false">M</button>
+    <button type="button" class="size-chip" data-size="L" role="radio" aria-checked="false">L</button>
+    <button type="button" class="size-chip" data-size="XL" role="radio" aria-checked="false" disabled aria-disabled="true">XL</button>
+  </div>
+  <p class="demo__note" id="demoNote">Selected size: <strong id="selectedLabel">S</strong> &mdash; XL is out of stock.</p>
+</main>
+<script src="script.js"></script>
