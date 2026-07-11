@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: grid;
+  place-content: center;
+  padding: 8vh 20px;
+}
+
+.stage__title { margin: 0 0 6px; font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -.02em; text-align: center; }
+.stage__sub { margin: 0 0 44px; color: var(--text-muted); text-align: center; }
+
+.ember {
+  position: relative;
+  width: min(90vw, 360px);
+  padding: 34px 30px;
+  border-radius: 18px;
+  background: linear-gradient(155deg, var(--bg-card), var(--bg-surface));
+  border: 1px solid var(--accent-rust);
+  box-shadow:
+    0 0 0 1px rgba(196, 98, 45, .15),
+    0 0 30px 2px rgba(196, 98, 45, .25),
+    0 25px 50px -28px rgba(0,0,0,.7);
+  animation: breathe 3.6s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px rgba(196, 98, 45, .12),
+      0 0 18px 0px rgba(196, 98, 45, .18),
+      0 25px 50px -28px rgba(0,0,0,.7);
+    border-color: var(--accent-rust);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(212, 168, 90, .35),
+      0 0 42px 6px rgba(212, 168, 90, .4),
+      0 25px 50px -28px rgba(0,0,0,.7);
+    border-color: var(--accent-sand);
+  }
+}
+
+.ember__spark {
+  display: block;
+  color: var(--accent-terra);
+  font-size: .9rem;
+  margin-bottom: 16px;
+  animation: flicker 2.8s ease-in-out infinite;
+}
+@keyframes flicker {
+  0%, 100% { opacity: .6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.15); color: var(--accent-sand); }
+}
+
+.ember__title { margin: 0 0 12px; font-size: 1.3rem; font-weight: 700; letter-spacing: -.01em; }
+.ember__desc { margin: 0 0 20px; font-size: .9rem; color: var(--text-muted); line-height: 1.6; }
+.ember__meta { font-size: .76rem; letter-spacing: .05em; color: var(--accent-sand); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ember, .ember__spark { animation: none !important; }
+  .ember {
+    box-shadow:
+      0 0 0 1px rgba(212, 168, 90, .25),
+      0 0 30px 3px rgba(212, 168, 90, .28),
+      0 25px 50px -28px rgba(0,0,0,.7);
+  }
+}
