@@ -1,0 +1,17 @@
+<!-- description: A collapsible, expandable JSON tree viewer with type-based syntax coloring; click any node to toggle it. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">JSON viewer</h1>
+  <p class="stage__sub">Click any key, brace, or bracket to expand or collapse that node.</p>
+
+  <div class="json-card">
+    <div class="json-card__toolbar">
+      <span class="json-card__filename">response.json</span>
+      <button class="json-card__btn" id="expandAllBtn" type="button">Expand all</button>
+      <button class="json-card__btn" id="collapseAllBtn" type="button">Collapse all</button>
+    </div>
+    <div class="json-tree" id="jsonTree"></div>
+  </div>
+</main>
+<script src="script.js"></script>
