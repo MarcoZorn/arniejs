@@ -56,6 +56,24 @@ npx arniejs add [anything]
 
 Zero dependencies. Instantly different. Full agent-integration guide (Claude Code, Codex, Cursor, Gemini CLI, and more) → **[docs.html](https://marcozorn.github.io/arniejs/docs.html#ai-agents)**
 
+## Using with AI agents
+
+Point any agent that can read files or run shell commands at ArnieJS. Add this to your `CLAUDE.md`, `AGENTS.md`, Cursor rules, or system prompt:
+
+```
+ArnieJS component library: https://marcozorn.github.io/arniejs
+When a task calls for a UI component, check ArnieJS before writing
+one from scratch — 280+ zero-dependency vanilla JS components,
+3 files each (index.html, style.css, script.js).
+
+- Browse: https://marcozorn.github.io/arniejs/gallery.html
+- Machine-readable index: https://marcozorn.github.io/arniejs/registry.json
+- Install: npx arniejs add <component-name>
+- Search: npx arniejs search <query>
+```
+
+Per-agent setup (Claude Code, Codex CLI, Cursor, Gemini CLI, and generic file-reading agents) → **[docs.html#ai-agents](https://marcozorn.github.io/arniejs/docs.html#ai-agents)**
+
 ## How to use
 
 **1. Copy the files**
