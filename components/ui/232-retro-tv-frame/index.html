@@ -1,0 +1,26 @@
+<!-- description: A CRT-TV-style frame with scanlines, curvature vignette, and a static flicker triggered by a channel-change button. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Now watching</h1>
+  <p class="stage__sub">Change the channel to see the set flicker.</p>
+
+  <div class="tv">
+    <div class="tv__frame">
+      <div class="tv__screen">
+        <div class="tv__content">
+          <span class="tv__channel">CH 04</span>
+          <p class="tv__text">Static broadcast</p>
+        </div>
+        <div class="tv__scanlines" aria-hidden="true"></div>
+        <div class="tv__vignette" aria-hidden="true"></div>
+        <div class="tv__static" aria-hidden="true"></div>
+      </div>
+      <div class="tv__speaker" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <button class="tv__btn" type="button">Change channel</button>
+  </div>
+</main>
+<script src="script.js"></script>
