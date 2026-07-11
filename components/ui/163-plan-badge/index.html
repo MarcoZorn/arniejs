@@ -1,0 +1,24 @@
+<!-- description: Free / Pro / Enterprise plan chips, each with a distinct color and a selectable active state. -->
+<!-- category: dashboard -->
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <p class="demo__label">Choose a plan</p>
+
+  <div class="plan-row" id="planRow" role="radiogroup" aria-label="Plan tier">
+    <button class="plan-badge" data-tier="free" role="radio" aria-checked="true" type="button">
+      <span class="plan-badge__dot"></span>
+      Free
+    </button>
+    <button class="plan-badge" data-tier="pro" role="radio" aria-checked="false" type="button">
+      <span class="plan-badge__dot"></span>
+      Pro
+    </button>
+    <button class="plan-badge" data-tier="enterprise" role="radio" aria-checked="false" type="button">
+      <span class="plan-badge__dot"></span>
+      Enterprise
+    </button>
+  </div>
+
+  <p class="demo__note" id="planNote">You're currently on the <strong>Free</strong> plan.</p>
+</main>
+<script src="script.js"></script>
