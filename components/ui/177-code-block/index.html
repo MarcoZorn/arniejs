@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Code Block</h1>
+  <p class="stage__sub">Manual token coloring, no external library</p>
+
+  <article class="post">
+    <p>To batch-tag every planting record, loop over the harvest log and push a normalized entry into the season index:</p>
+
+    <div class="code-block" data-lang="javascript">
+      <div class="code-block__chrome">
+        <span class="code-block__lang">JavaScript</span>
+        <button type="button" class="code-block__copy" id="copyCodeBtn" aria-label="Copy code to clipboard">
+          <svg class="icon-copy" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          <svg class="icon-check" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M20 6L9 17l-5-5"/></svg>
+          <span class="code-block__copy-label">Copy</span>
+        </button>
+      </div>
+      <pre class="code-block__pre"><code id="codeSample" class="code-block__code">// normalize a season's harvest log
+function tagHarvest(records, season) {
+  const tagged = [];
+
+  for (const entry of records) {
+    if (!entry.crop || entry.weightKg <= 0) {
+      continue; // skip incomplete rows
+    }
+
+    tagged.push({
+      season,
+      crop: entry.crop.toLowerCase(),
+      weightKg: Number(entry.weightKg.toFixed(2)),
+      harvestedAt: new Date(entry.date),
+    });
+  }
+
+  return tagged;
+}
+
+const summer = tagHarvest(rawLog, "summer-2026");
+console.log(`Tagged ${summer.length} entries`);</code></pre>
+    </div>
+
+    <p>Anything with a zero or negative weight is treated as an incomplete row and skipped before it ever reaches the season index.</p>
+  </article>
+</main>
+
+<script src="script.js"></script>
