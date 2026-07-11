@@ -1,6 +1,6 @@
 {
   "name": "@mzorn/arniejs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "280+ vanilla JS components. Grown from scratch. No deps.",
   "bin": {
     "arniejs": "bin/arniejs.js"
