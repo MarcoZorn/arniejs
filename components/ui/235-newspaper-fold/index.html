@@ -1,0 +1,26 @@
+<!-- description: A card styled like a folded newspaper front page that unfolds on click to reveal more content. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Front page</h1>
+  <p class="stage__sub">Click the paper to unfold the full story.</p>
+
+  <article class="paper" data-open="false">
+    <button class="paper__fold" type="button" aria-expanded="false">
+      <span class="paper__masthead">THE DAILY BARK</span>
+      <span class="paper__headline">Grove announces record harvest season</span>
+      <span class="paper__meta">Vol. 42 &middot; No. 118 &middot; Tap to unfold</span>
+      <span class="paper__crease" aria-hidden="true"></span>
+    </button>
+    <div class="paper__body">
+      <div class="paper__body-inner">
+        <p>Local growers report the largest yield in a decade, crediting steady rains and
+          a mild autumn. Markets across the region are preparing for an early opening
+          of the harvest festival.</p>
+        <p>Officials say the surplus will be distributed to community storehouses before
+          the first frost, with volunteers already lining up to help with the sort.</p>
+      </div>
+    </div>
+  </article>
+</main>
+<script src="script.js"></script>
