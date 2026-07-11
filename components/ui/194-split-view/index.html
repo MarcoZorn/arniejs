@@ -1,0 +1,33 @@
+<!-- description: Two side-by-side panels separated by a draggable divider that resizes them, built with Pointer Events. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Split view</h1>
+  <p class="stage__sub">Drag the middle divider to resize the panels.</p>
+
+  <div class="split" id="split">
+    <section class="split__pane" id="paneLeft">
+      <h2 class="split__pane-title">File tree</h2>
+      <ul class="split__list">
+        <li>src/</li>
+        <li class="indent">components/</li>
+        <li class="indent indent2">SplitView.js</li>
+        <li class="indent indent2">Divider.js</li>
+        <li class="indent">index.js</li>
+        <li>package.json</li>
+        <li>README.md</li>
+      </ul>
+    </section>
+
+    <div class="split__divider" id="divider" role="separator" aria-orientation="vertical" aria-label="Resize panels" tabindex="0">
+      <span class="split__divider-handle"></span>
+    </div>
+
+    <section class="split__pane" id="paneRight">
+      <h2 class="split__pane-title">Preview</h2>
+      <p class="split__text">This panel mirrors the width of the panel opposite it. Drag, or use the keyboard (arrow keys when the divider is focused) to adjust the split ratio.</p>
+      <p class="split__ratio" id="ratioLabel">50% / 50%</p>
+    </section>
+  </div>
+</main>
+<script src="script.js"></script>
