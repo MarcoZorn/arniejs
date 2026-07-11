@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <article class="card">
+    <p class="eyebrow">Grove Highlight</p>
+    <h1>Select some text below</h1>
+    <p class="sub">Highlight a few words in the passage to reveal the toolbar — bold it, mark it, or copy it straight to your clipboard.</p>
+
+    <div class="content" id="content">
+      <p>Beneath the old grove, the soil holds more life than the trees above it ever show. Fungal threads stretch for miles, quietly trading sugar for minerals between roots that never meet.</p>
+      <p>Foresters call this the wood-wide web, though the growers who first noticed it simply called it good neighboring. A stressed sapling can draw help from an elder tree three plots over, carried entirely underground.</p>
+      <p>Try selecting a sentence here. A small toolbar will rise from the ground of the page, offering to bold, highlight, or copy whatever you have chosen — a tiny grove of its own.</p>
+    </div>
+  </article>
+
+  <div class="toolbar" id="toolbar" role="toolbar" aria-label="Text selection actions" hidden>
+    <button type="button" data-action="bold" aria-label="Bold selection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h7a3.5 3.5 0 0 1 0 7H6z"></path><path d="M6 11h8a3.5 3.5 0 0 1 0 7H6z"></path></svg>
+    </button>
+    <button type="button" data-action="highlight" aria-label="Highlight selection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15 4 20"></path><path d="m15 4 5 5-9.5 9.5-6-1 -1-6z"></path></svg>
+    </button>
+    <button type="button" data-action="copy" aria-label="Copy selection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M5 15V5a2 2 0 0 1 2-2h10"></path></svg>
+    </button>
+    <span class="toolbar-msg" id="toolbarMsg"></span>
+  </div>
+</main>
+<script src="script.js"></script>
