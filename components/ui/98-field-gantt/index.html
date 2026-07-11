@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <header class="head">
+    <h1 class="title">Field Gantt</h1>
+    <p class="sub">Season plan for the lower field — hover a bar for the exact dates.</p>
+    <ul class="legend" id="legend" aria-hidden="true"></ul>
+  </header>
+
+  <div class="gantt-card">
+    <div class="gantt" id="gantt">
+      <div class="gantt-labels" id="ganttLabels"></div>
+      <div class="gantt-scroll" id="ganttScroll">
+        <div class="gantt-track" id="ganttTrack">
+          <div class="gantt-header" id="ganttHeader"></div>
+          <div class="gantt-rows" id="ganttRows"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tooltip" id="tooltip" role="tooltip" aria-hidden="true">
+    <div class="tooltip-title" id="tooltipTitle"></div>
+    <div class="tooltip-phase" id="tooltipPhase"></div>
+    <div class="tooltip-dates" id="tooltipDates"></div>
+  </div>
+</main>
+<script src="script.js"></script>
