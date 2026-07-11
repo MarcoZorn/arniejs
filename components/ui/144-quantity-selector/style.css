@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.demo {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.demo__note {
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 13px;
+  margin: 0;
+}
+
+.qty-selector {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-subtle));
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.qty-selector__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 19px;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.15s ease;
+}
+
+.qty-selector__btn:hover:not(:disabled) {
+  background: var(--accent-terra);
+  color: var(--text-primary);
+}
+
+.qty-selector__btn:active:not(:disabled) {
+  transform: scale(0.92);
+}
+
+.qty-selector__btn:disabled {
+  color: var(--text-faint);
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.qty-selector__value {
+  min-width: 44px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--accent-sand);
+  transition: transform 0.15s ease;
+}
+
+.qty-selector__value.is-bump {
+  animation: bump 0.22s ease;
+}
+
+@keyframes bump {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .qty-selector__btn,
+  .qty-selector__value {
+    transition: none !important;
+    animation: none !important;
+  }
+}
