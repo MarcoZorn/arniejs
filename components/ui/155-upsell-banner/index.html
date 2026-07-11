@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo-wrap">
+  <div class="ub-demo-stage">
+    <p class="ub-demo-hint">Simulate adding items to see the banner update:</p>
+    <div class="ub-demo-controls">
+      <button class="ub-demo-btn" type="button" data-add="8">+ $8 item</button>
+      <button class="ub-demo-btn" type="button" data-add="15">+ $15 item</button>
+      <button class="ub-demo-btn" type="button" data-reset>Reset cart</button>
+    </div>
+    <p class="ub-demo-total">Cart subtotal: <strong class="ub-cart-total">$26.00</strong></p>
+  </div>
+
+  <div class="ub-banner" data-threshold="60">
+    <div class="ub-banner-inner">
+      <div class="ub-banner-text">
+        <span class="ub-banner-icon" aria-hidden="true">🚚</span>
+        <span class="ub-banner-msg">Add <strong class="ub-remaining">$34.00</strong> more for <strong>free shipping</strong></span>
+      </div>
+      <div class="ub-track" role="progressbar" aria-valuemin="0" aria-valuemax="60" aria-valuenow="26" aria-label="Progress toward free shipping">
+        <div class="ub-fill" style="width: 43%"></div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
