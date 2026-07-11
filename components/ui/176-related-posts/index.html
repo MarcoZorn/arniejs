@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Related Posts</h1>
+  <p class="stage__sub">Drag or scroll horizontally</p>
+
+  <section class="related" aria-label="Related posts">
+    <div class="related__head">
+      <h2 class="related__heading">Keep reading</h2>
+      <div class="related__nav">
+        <button type="button" class="related__arrow" id="scrollPrev" aria-label="Scroll to previous post">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button type="button" class="related__arrow" id="scrollNext" aria-label="Scroll to next post">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="related__track" id="relatedTrack" tabindex="0" role="list">
+      <a class="teaser" href="#" role="listitem">
+        <div class="teaser__media">
+          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=700&auto=format&fit=crop" alt="Rows of raised garden beds at sunrise" loading="lazy">
+        </div>
+        <div class="teaser__body">
+          <span class="teaser__tag">Soil Health</span>
+          <h3 class="teaser__title">Reading Your Soil Before You Plant a Single Seed</h3>
+          <p class="teaser__excerpt">A simple jar test tells you more about texture and drainage than any bag of amendment ever will.</p>
+          <span class="teaser__meta">6 min read</span>
+        </div>
+      </a>
+
+      <a class="teaser" href="#" role="listitem">
+        <div class="teaser__media">
+          <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=700&auto=format&fit=crop" alt="Hands holding freshly harvested carrots" loading="lazy">
+        </div>
+        <div class="teaser__body">
+          <span class="teaser__tag">Harvest</span>
+          <h3 class="teaser__title">Succession Planting for a Longer Harvest Window</h3>
+          <p class="teaser__excerpt">Stagger your sowing dates by two weeks and you'll never face a glut — or a gap — again.</p>
+          <span class="teaser__meta">4 min read</span>
+        </div>
+      </a>
+
+      <a class="teaser" href="#" role="listitem">
+        <div class="teaser__media">
+          <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=700&auto=format&fit=crop" alt="Wooden compost bin with fresh scraps" loading="lazy">
+        </div>
+        <div class="teaser__body">
+          <span class="teaser__tag">Composting</span>
+          <h3 class="teaser__title">The Carbon-to-Nitrogen Ratio, Explained Simply</h3>
+          <p class="teaser__excerpt">Stop guessing at "browns and greens" — here's the actual math behind a compost pile that doesn't stink.</p>
+          <span class="teaser__meta">5 min read</span>
+        </div>
+      </a>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
