@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Phone number</h1>
+  <p class="stage__sub">Pick your country to set the correct dial code.</p>
+
+  <div class="phone">
+    <div class="phone__field">
+      <button class="phone__country" id="countryBtn" type="button" aria-haspopup="listbox" aria-expanded="false">
+        <span class="phone__flag" id="countryFlag">🇺🇸</span>
+        <span class="phone__dial" id="countryDial">+1</span>
+        <svg class="phone__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <span class="phone__divider" aria-hidden="true"></span>
+      <input class="phone__input" id="phoneInput" type="tel" placeholder="(201) 555-0123" aria-label="Phone number">
+    </div>
+
+    <ul class="phone__dropdown" id="countryDropdown" role="listbox" aria-label="Select a country" hidden></ul>
+
+    <p class="phone__hint" id="phoneHint">Format: United States, e.g. (201) 555-0123</p>
+  </div>
+</main>
+
+<script src="script.js"></script>
