@@ -1,0 +1,21 @@
+{
+  "name": "arniejs-video",
+  "version": "1.0.0",
+  "description": "ArnieJS intro video (Remotion)",
+  "type": "module",
+  "scripts": {
+    "start": "remotion studio src/index.jsx",
+    "render:intro": "remotion render src/index.jsx ArnieJSIntro ../docs/assets/arniejs-intro.mp4 --codec h264",
+    "render:short": "remotion render src/index.jsx ArnieJSShort ../docs/assets/arniejs-short.mp4 --codec h264"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@remotion/cli": "^4.0.488",
+    "@remotion/google-fonts": "^4.0.488",
+    "@remotion/player": "^4.0.488",
+    "@remotion/renderer": "^4.0.488",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "remotion": "^4.0.488"
+  }
+}

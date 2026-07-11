@@ -13,6 +13,13 @@
 
 ---
 
+<div align="center">
+  <a href="https://raw.githubusercontent.com/MarcoZorn/arniejs/main/docs/assets/arniejs-intro.mp4">
+    <img src="docs/assets/video-thumbnail.jpg" width="640" alt="ArnieJS video walkthrough — click to watch" />
+  </a>
+  <p><a href="https://raw.githubusercontent.com/MarcoZorn/arniejs/main/docs/assets/arniejs-intro.mp4">▶ Watch the 30s intro</a> · <a href="https://raw.githubusercontent.com/MarcoZorn/arniejs/main/docs/assets/arniejs-short.mp4">📱 Vertical cut (15s)</a></p>
+</div>
+
 Arnie never installed npm. Never will. He grows tomatoes and buttons the same way — from scratch, no shortcuts, no chemicals.
 His neighbour's framework has 340 peer dependencies. Arnie's has zero.
 
@@ -159,6 +166,25 @@ If your agent can only read/write files (no shell), it can still use ArnieJS: fe
 </details>
 
 Full guide with more detail → **[docs.html#ai-agents](https://marcozorn.github.io/arniejs/docs.html#ai-agents)**
+
+## A few things growing in the garden
+
+<table>
+  <tr>
+    <td width="25%"><a href="https://marcozorn.github.io/arniejs/gallery.html?component=tilt-cards"><img src="assets/thumbnails/ui-tilt-cards.jpg" width="100%" alt="Tilt Cards" /><br/><sub><strong>Tilt Cards</strong></sub></a></td>
+    <td width="25%"><a href="https://marcozorn.github.io/arniejs/gallery.html?component=bloom-button"><img src="assets/thumbnails/ui-bloom-button.jpg" width="100%" alt="Bloom Button" /><br/><sub><strong>Bloom Button</strong></sub></a></td>
+    <td width="25%"><a href="https://marcozorn.github.io/arniejs/gallery.html?component=holographic-card"><img src="assets/thumbnails/ui-holographic-card.jpg" width="100%" alt="Holographic Card" /><br/><sub><strong>Holographic Card</strong></sub></a></td>
+    <td width="25%"><a href="https://marcozorn.github.io/arniejs/gallery.html?component=sand-simulation"><img src="assets/thumbnails/effects-sand-simulation.jpg" width="100%" alt="Sand Simulation" /><br/><sub><strong>Sand Simulation</strong></sub></a></td>
+  </tr>
+  <tr>
+    <td width="25%"><a href="https://marcozorn.github.io/arniejs/gallery.html?component=aurora-field"><img src="assets/thumbnails/effects-aurora-field.jpg" width="100%" alt="Aurora Field" /><br/><sub><strong>Aurora Field</strong></sub></a></td>
+    <td width="25%"><a href="https://marcozorn.github.io/arniejs/gallery.html?component=magnetic-cursor"><img src="assets/thumbnails/ui-magnetic-cursor.jpg" width="100%" alt="Magnetic Cursor" /><br/><sub><strong>Magnetic Cursor</strong></sub></a></td>
+    <td width="25%"><a href="https://marcozorn.github.io/arniejs/gallery.html?component=blob-cursor"><img src="assets/thumbnails/ui-blob-cursor.jpg" width="100%" alt="Blob Cursor" /><br/><sub><strong>Blob Cursor</strong></sub></a></td>
+    <td width="25%"><a href="https://marcozorn.github.io/arniejs/gallery.html?component=product-card"><img src="assets/thumbnails/ui-product-card.jpg" width="100%" alt="Product Card" /><br/><sub><strong>Product Card</strong></sub></a></td>
+  </tr>
+</table>
+
+<p align="center"><a href="https://marcozorn.github.io/arniejs/gallery.html"><strong>See all 280+ →</strong></a></p>
 
 ## How to use
 
