@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+}
+
+.demo {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.anchor-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.trigger {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px 24px;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  background: var(--accent-terra);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.trigger:hover,
+.trigger[aria-expanded="true"] {
+  background: var(--accent-sand);
+  color: var(--bg-deep);
+}
+
+.popover {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 220px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  opacity: 0;
+  transform: translateY(-6px) scale(0.97);
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  z-index: 70;
+}
+
+.popover.open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.popover.flip {
+  top: auto;
+  bottom: calc(100% + 10px);
+}
+
+.pop-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.pop-item:hover {
+  background: var(--bg-subtle);
+}
+
+.pop-danger {
+  color: var(--accent-rust);
+}
+
+.pop-danger:hover {
+  background: rgba(160, 56, 32, 0.15);
+}
+
+.pop-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 6px 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .popover,
+  .trigger {
+    transition: none !important;
+  }
+}
