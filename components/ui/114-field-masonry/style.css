@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+}
+
+.masonry-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 32px 120px;
+}
+
+.masonry-wrap h1 {
+  font-size: 34px;
+  margin: 0 0 8px;
+}
+
+.sub {
+  color: var(--text-muted);
+  margin: 0 0 40px;
+}
+
+.masonry {
+  position: relative;
+}
+
+.masonry-item {
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 14px;
+  padding: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: top 0.4s cubic-bezier(0.22, 1, 0.36, 1), left 0.4s cubic-bezier(0.22, 1, 0.36, 1), width 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.masonry-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.5;
+  background: var(--swatch, var(--accent-moss));
+}
+
+.masonry-item-label {
+  position: relative;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.masonry-item-tag {
+  position: relative;
+  font-size: 12px;
+  color: rgba(240, 230, 211, 0.75);
+  margin-top: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .masonry-item {
+    transition: none;
+  }
+}
