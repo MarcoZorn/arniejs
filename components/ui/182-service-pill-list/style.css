@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  padding: 12vh 20px;
+}
+
+.stage__title {
+  margin: 0 0 6px;
+  text-align: center;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
+.stage__sub {
+  margin: 0 0 44px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.pill-row {
+  display: flex;
+  gap: 12px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 8px 4px 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-clay) transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.pill-row.dragging {
+  cursor: grabbing;
+}
+
+.pill-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.pill-row::-webkit-scrollbar-thumb {
+  background: var(--accent-clay);
+  border-radius: 8px;
+}
+
+.pill-row::-webkit-scrollbar-track {
+  background: var(--bg-subtle);
+  border-radius: 8px;
+}
+
+.pill {
+  flex: 0 0 auto;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: .92rem;
+  letter-spacing: -.01em;
+  white-space: nowrap;
+  transition: background .25s ease, border-color .25s ease, color .25s ease, transform .25s ease;
+}
+
+.pill:hover {
+  background: var(--accent-terra);
+  border-color: var(--accent-terra);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pill {
+    transition: none;
+  }
+  .pill:hover {
+    transform: none;
+  }
+}
