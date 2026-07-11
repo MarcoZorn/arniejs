@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <section class="stage">
+    <p class="hint">Mobile bottom tab bar. Tap a tab to switch and watch the indicator glide.</p>
+  </section>
+  <nav class="tab-bar" aria-label="Primary" id="tabBar">
+    <button class="tab-item active" data-tab="home" aria-current="page">
+      <svg class="tab-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+      <span class="tab-label">Home</span>
+    </button>
+    <button class="tab-item" data-tab="plots">
+      <svg class="tab-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      <span class="tab-label">Plots</span>
+    </button>
+    <button class="tab-item" data-tab="add">
+      <svg class="tab-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+      <span class="tab-label">Add</span>
+    </button>
+    <button class="tab-item" data-tab="journal">
+      <svg class="tab-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+      <span class="tab-label">Journal</span>
+    </button>
+    <button class="tab-item" data-tab="profile">
+      <svg class="tab-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      <span class="tab-label">Profile</span>
+    </button>
+    <span class="tab-indicator" id="tabIndicator" aria-hidden="true"></span>
+  </nav>
+</main>
+<script src="script.js"></script>
