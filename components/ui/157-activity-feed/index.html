@@ -1,0 +1,51 @@
+<!-- description: A vertical timeline of timestamped events with avatar circles, action text and live-updating relative times. -->
+<!-- category: dashboard -->
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <div class="activity-feed" id="activityFeed" role="feed" aria-label="Recent activity">
+
+    <div class="activity-feed__item" data-timestamp="-120">
+      <span class="activity-feed__avatar" data-tone="terra">JL</span>
+      <div class="activity-feed__body">
+        <p class="activity-feed__text"><strong>Jamie Lin</strong> deployed <span class="activity-feed__target">production-api</span></p>
+        <time class="activity-feed__time">2m ago</time>
+      </div>
+    </div>
+
+    <div class="activity-feed__item" data-timestamp="-900">
+      <span class="activity-feed__avatar" data-tone="sage">MK</span>
+      <div class="activity-feed__body">
+        <p class="activity-feed__text"><strong>Mira Kessler</strong> commented on <span class="activity-feed__target">Q3 roadmap</span></p>
+        <time class="activity-feed__time">15m ago</time>
+      </div>
+    </div>
+
+    <div class="activity-feed__item" data-timestamp="-3600">
+      <span class="activity-feed__avatar" data-tone="clay">OT</span>
+      <div class="activity-feed__body">
+        <p class="activity-feed__text"><strong>Omar Trask</strong> invited <span class="activity-feed__target">3 teammates</span></p>
+        <time class="activity-feed__time">1h ago</time>
+      </div>
+    </div>
+
+    <div class="activity-feed__item" data-timestamp="-14400">
+      <span class="activity-feed__avatar" data-tone="rust">SB</span>
+      <div class="activity-feed__body">
+        <p class="activity-feed__text"><strong>Sana Brooks</strong> closed issue <span class="activity-feed__target">#482</span></p>
+        <time class="activity-feed__time">4h ago</time>
+      </div>
+    </div>
+
+    <div class="activity-feed__item" data-timestamp="-86400">
+      <span class="activity-feed__avatar" data-tone="moss">DP</span>
+      <div class="activity-feed__body">
+        <p class="activity-feed__text"><strong>Dev Patel</strong> archived <span class="activity-feed__target">legacy-worker</span></p>
+        <time class="activity-feed__time">1d ago</time>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="live-btn" id="liveBtn" type="button">Simulate new event</button>
+</main>
+<script src="script.js"></script>
