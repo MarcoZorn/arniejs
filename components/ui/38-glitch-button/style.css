@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 8vh 20px;
+}
+
+.stage__title { margin: 0 0 6px; font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -.02em; }
+.stage__sub { margin: 0 0 60px; color: var(--text-muted); max-width: 460px; }
+
+.grid { display: grid; place-items: center; min-height: 100px; }
+
+.glitch-btn {
+  position: relative;
+  border: 0;
+  border-radius: 10px;
+  padding: 18px 32px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  box-shadow: inset 0 0 0 1.5px var(--border-light);
+  cursor: pointer;
+  isolation: isolate;
+  overflow: hidden;
+  transition: box-shadow .25s ease, transform .2s ease;
+}
+.glitch-btn:active { transform: scale(.98); }
+.glitch-btn:focus-visible { outline: 2px solid var(--accent-sand); outline-offset: 4px; }
+
+.glitch-btn__label,
+.glitch-btn__layer {
+  display: block;
+  white-space: nowrap;
+}
+
+.glitch-btn__label { position: relative; z-index: 3; }
+
+.glitch-btn__layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  opacity: 0;
+  mix-blend-mode: screen;
+}
+.glitch-btn__layer--rust { color: var(--accent-rust); }
+.glitch-btn__layer--terra { color: var(--accent-terra); }
+
+.glitch-btn:hover,
+.glitch-btn:focus-visible,
+.glitch-btn.is-glitching {
+  box-shadow: inset 0 0 0 1.5px var(--accent-terra);
+}
+
+.glitch-btn:hover .glitch-btn__layer--rust,
+.glitch-btn:focus-visible .glitch-btn__layer--rust,
+.glitch-btn.is-glitching .glitch-btn__layer--rust {
+  opacity: .8;
+  animation: glitch-shift-rust .5s steps(2, jump-none) infinite;
+}
+.glitch-btn:hover .glitch-btn__layer--terra,
+.glitch-btn:focus-visible .glitch-btn__layer--terra,
+.glitch-btn.is-glitching .glitch-btn__layer--terra {
+  opacity: .8;
+  animation: glitch-shift-terra .45s steps(2, jump-none) infinite;
+}
+.glitch-btn:hover .glitch-btn__label,
+.glitch-btn:focus-visible .glitch-btn__label,
+.glitch-btn.is-glitching .glitch-btn__label {
+  animation: glitch-jitter .5s steps(2, jump-none) infinite;
+}
+
+@keyframes glitch-shift-rust {
+  0%   { transform: translate(0, 0); clip-path: inset(0 0 55% 0); }
+  25%  { transform: translate(-3px, 1px); clip-path: inset(20% 0 30% 0); }
+  50%  { transform: translate(2px, -2px); clip-path: inset(60% 0 5% 0); }
+  75%  { transform: translate(-2px, 2px); clip-path: inset(5% 0 70% 0); }
+  100% { transform: translate(0, 0); clip-path: inset(0 0 55% 0); }
+}
+
+@keyframes glitch-shift-terra {
+  0%   { transform: translate(0, 0); clip-path: inset(50% 0 0 0); }
+  25%  { transform: translate(3px, -1px); clip-path: inset(10% 0 50% 0); }
+  50%  { transform: translate(-2px, 2px); clip-path: inset(70% 0 0 0); }
+  75%  { transform: translate(2px, -2px); clip-path: inset(30% 0 40% 0); }
+  100% { transform: translate(0, 0); clip-path: inset(50% 0 0 0); }
+}
+
+@keyframes glitch-jitter {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(-1px, 0); }
+  50%  { transform: translate(1px, 0); }
+  75%  { transform: translate(0, 1px); }
+  100% { transform: translate(0, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glitch-btn, .glitch-btn * { transition: none !important; animation: none !important; }
+  .glitch-btn__layer { display: none; }
+}
