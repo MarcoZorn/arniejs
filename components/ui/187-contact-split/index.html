@@ -1,0 +1,52 @@
+<!-- description: Two-column contact section — info block on the left, minimal form on the right. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <div class="contact-split">
+    <div class="contact-info">
+      <h2 class="contact-info__title">Let's talk</h2>
+      <p class="contact-info__lede">Have a project in mind? We'd love to hear about it.</p>
+
+      <dl class="contact-info__list">
+        <div class="contact-info__row">
+          <dt>Email</dt>
+          <dd><a href="mailto:hello@studio.com">hello@studio.com</a></dd>
+        </div>
+        <div class="contact-info__row">
+          <dt>Phone</dt>
+          <dd><a href="tel:+15551234567">+1 (555) 123-4567</a></dd>
+        </div>
+        <div class="contact-info__row">
+          <dt>Studio</dt>
+          <dd>142 Foundry Lane, Portland, OR</dd>
+        </div>
+      </dl>
+
+      <div class="contact-info__social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">LI</a>
+        <a href="#" aria-label="Twitter">TW</a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="field">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" required autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" name="email" required autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="contact-form__submit">
+        <span class="btn-label">Send message</span>
+      </button>
+      <p class="contact-form__status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</main>
+<script src="script.js"></script>
