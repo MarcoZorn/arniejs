@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.demo {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.usage-bar {
+  background: linear-gradient(160deg, var(--bg-card) 0%, var(--bg-surface) 100%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 20px;
+  box-shadow: 0 12px 30px -14px rgba(0,0,0,.6);
+}
+
+.usage-bar__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.usage-bar__label {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.usage-bar__value {
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.usage-bar__track {
+  height: 10px;
+  border-radius: 999px;
+  background: var(--bg-subtle);
+  overflow: hidden;
+}
+
+.usage-bar__fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--accent-sage);
+  transition: width .5s ease, background-color .3s ease;
+}
+
+.usage-bar[data-level="ok"]   .usage-bar__fill { background: var(--accent-sage); }
+.usage-bar[data-level="warn"] .usage-bar__fill { background: var(--accent-sand); }
+.usage-bar[data-level="crit"] .usage-bar__fill { background: var(--accent-rust); }
+
+.usage-bar[data-level="crit"] .usage-bar__value {
+  color: var(--accent-rust);
+}
+
+.spike-btn {
+  align-self: center;
+  background: var(--accent-terra);
+  color: var(--text-primary);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 10px 22px;
+  font-family: 'Syne', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: .85rem;
+  cursor: pointer;
+  transition: background-color .2s ease, transform .15s ease;
+}
+
+.spike-btn:hover { background: var(--accent-rust); }
+.spike-btn:active { transform: scale(.97); }
+
+@media (prefers-reduced-motion: reduce) {
+  .usage-bar__fill,
+  .spike-btn {
+    transition: none !important;
+  }
+}

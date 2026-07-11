@@ -1,0 +1,28 @@
+<!-- description: A storage/API usage bar showing "used / limit" with a percentage fill that shifts color near the limit. -->
+<!-- category: dashboard -->
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+
+  <div class="usage-bar" data-level="ok">
+    <div class="usage-bar__head">
+      <span class="usage-bar__label">Storage</span>
+      <span class="usage-bar__value" id="storageValue">7.2GB / 10GB used</span>
+    </div>
+    <div class="usage-bar__track">
+      <div class="usage-bar__fill" id="storageFill" style="width:72%"></div>
+    </div>
+  </div>
+
+  <div class="usage-bar" data-level="warn">
+    <div class="usage-bar__head">
+      <span class="usage-bar__label">API requests</span>
+      <span class="usage-bar__value" id="apiValue">86,400 / 100,000 calls</span>
+    </div>
+    <div class="usage-bar__track">
+      <div class="usage-bar__fill" id="apiFill" style="width:86%"></div>
+    </div>
+  </div>
+
+  <button class="spike-btn" id="spikeBtn" type="button">Simulate usage spike</button>
+</main>
+<script src="script.js"></script>
