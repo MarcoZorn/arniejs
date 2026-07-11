@@ -46,7 +46,7 @@ Each shot: component filling most of the frame, its interaction actually trigger
 - **Duration:** 20s.
 
 ### 0:50–1:05 — How to use
-- **Shot A (0:50–0:55):** Terminal, clean and calm (return to the warm palette terminal theme, not the cold one from the problem montage). Type: `npx arniejs add bloom-button`. Enter.
+- **Shot A (0:50–0:55):** Terminal, clean and calm (return to the warm palette terminal theme, not the cold one from the problem montage). Type: `npx @mzorn/arniejs add bloom-button`. Enter.
 - **Shot B (0:55–0:59):** Quick file-tree animation — three files appear one by one: `index.html`, `style.css`, `script.js`, each with a small "✓ planted" checkmark.
 - **Shot C (0:59–1:05):** Cut to a browser — the bloom-button component is live and working, cursor hovers it, petals bloom. Caption overlay: "That's it."
 - **Audio:** Music drops back down, cleaner/sparser — let the terminal typing sound (mechanical keyboard clicks) carry the beat.
@@ -86,8 +86,8 @@ Faster, no problem montage — assume the audience already gets the npm-fatigue 
 - **Audio:** Music at full energy, hard-cut foley on every transition.
 
 ### 0:20–0:26 — CLI payoff
-- **Visual:** Terminal, `npx arniejs add bloom-button`, files appear, cut to it working in browser.
-- **Text overlay:** "npx arniejs add [anything]"
+- **Visual:** Terminal, `npx @mzorn/arniejs add bloom-button`, files appear, cut to it working in browser.
+- **Text overlay:** "npx @mzorn/arniejs add [anything]"
 
 ### 0:26–0:30 — CTA
 - **Visual:** Arnie mascot + logo lockup, centered.

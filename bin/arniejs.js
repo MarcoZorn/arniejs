@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ArnieJS CLI — the shadcn model for vanilla JS.
-// Usage: npx arniejs add <component-name>
+// Usage: npx @mzorn/arniejs add <component-name>
 
 const fs = require('fs');
 const path = require('path');
@@ -20,7 +20,7 @@ async function fetchJson(url) {
 
 async function add(name) {
   if (!name) {
-    console.error('Usage: npx arniejs add <component-name>');
+    console.error('Usage: npx @mzorn/arniejs add <component-name>');
     process.exit(1);
   }
 
@@ -78,7 +78,7 @@ async function list() {
 
 async function search(query) {
   if (!query) {
-    console.error('Usage: npx arniejs search <query>');
+    console.error('Usage: npx @mzorn/arniejs search <query>');
     process.exit(1);
   }
   let registry;
@@ -101,22 +101,22 @@ async function search(query) {
   }
   console.log(`${matches.length} match(es) for "${query}":\n`);
   matches.forEach((e) => console.log(`  ${e.id}  (${e.category})  — ${e.description}`));
-  console.log(`\nPlant one with: npx arniejs add <name>`);
+  console.log(`\nPlant one with: npx @mzorn/arniejs add <name>`);
 }
 
 function help() {
   console.log(`ArnieJS CLI — copy vanilla JS components straight into your project.
 
 Usage:
-  npx arniejs add <component-name>   Plant a component in ./arniejs/<name>/
-  npx arniejs list                   List every component, grouped by category
-  npx arniejs search <query>         Search components by name, tag, or description
-  npx arniejs help                   Show this message
+  npx @mzorn/arniejs add <component-name>   Plant a component in ./arniejs/<name>/
+  npx @mzorn/arniejs list                   List every component, grouped by category
+  npx @mzorn/arniejs search <query>         Search components by name, tag, or description
+  npx @mzorn/arniejs help                   Show this message
 
 Examples:
-  npx arniejs add bloom-button
-  npx arniejs search cursor
-  npx arniejs search ecommerce
+  npx @mzorn/arniejs add bloom-button
+  npx @mzorn/arniejs search cursor
+  npx @mzorn/arniejs search ecommerce
 
 No dependencies. No build step. Just files.`);
 }

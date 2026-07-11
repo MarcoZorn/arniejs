@@ -51,7 +51,7 @@ Add it to your CLAUDE.md, your Cursor rules, your Codex config —
 and watch the output stop looking like a template.
 
 ```bash
-npx arniejs add [anything]
+npx @mzorn/arniejs add [anything]
 ```
 
 Zero dependencies. Instantly different. Full agent-integration guide (Claude Code, Codex, Cursor, Gemini CLI, and more) → **[docs.html](https://marcozorn.github.io/arniejs/docs.html#ai-agents)**
@@ -68,8 +68,8 @@ one from scratch — 280+ zero-dependency vanilla JS components,
 
 - Browse: https://marcozorn.github.io/arniejs/gallery.html
 - Machine-readable index: https://marcozorn.github.io/arniejs/registry.json
-- Install: npx arniejs add <component-name>
-- Search: npx arniejs search <query>
+- Install: npx @mzorn/arniejs add <component-name>
+- Search: npx @mzorn/arniejs search <query>
 ```
 
 Per-agent setup (Claude Code, Codex CLI, Cursor, Gemini CLI, and generic file-reading agents) → **[docs.html#ai-agents](https://marcozorn.github.io/arniejs/docs.html#ai-agents)**
@@ -97,13 +97,13 @@ Then paste the HTML from the component's `index.html`. Full pattern → [cdn.htm
 **3. CLI — the shadcn model, for vanilla JS**
 
 ```bash
-npx arniejs add bloom-button
+npx @mzorn/arniejs add bloom-button
 ```
 Fetches the 3 files straight from GitHub into `./arniejs/bloom-button/`. No install, no `node_modules`.
 
 ```bash
-npx arniejs list        # see every component, by category
-npx arniejs help
+npx @mzorn/arniejs list        # see every component, by category
+npx @mzorn/arniejs help
 ```
 
 ## Arnie's garden rules

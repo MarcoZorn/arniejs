@@ -1,5 +1,5 @@
 {
-  "name": "arniejs",
+  "name": "@mzorn/arniejs",
   "version": "1.0.0",
   "description": "280+ vanilla JS components. Grown from scratch. No deps.",
   "bin": {
