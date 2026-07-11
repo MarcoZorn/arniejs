@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Radio cards</h1>
+  <p class="stage__sub">Choose the plot size that suits your garden.</p>
+
+  <fieldset class="card-group">
+    <legend class="sr-only">Garden plot size</legend>
+
+    <label class="option-card" for="plan-sprout">
+      <input type="radio" name="plan" id="plan-sprout" value="sprout">
+      <span class="option-card__title">Sprout</span>
+      <span class="option-card__desc">A single raised bed. Perfect for herbs and first-timers.</span>
+      <span class="option-card__price">Free</span>
+    </label>
+
+    <label class="option-card" for="plan-grove">
+      <input type="radio" name="plan" id="plan-grove" value="grove" checked>
+      <span class="option-card__title">Grove</span>
+      <span class="option-card__desc">Four beds, a compost corner, and seasonal succession planting.</span>
+      <span class="option-card__price">$9 / mo</span>
+    </label>
+
+    <label class="option-card" for="plan-orchard">
+      <input type="radio" name="plan" id="plan-orchard" value="orchard">
+      <span class="option-card__title">Orchard</span>
+      <span class="option-card__desc">Full acreage with fruit trees, irrigation, and a tool shed.</span>
+      <span class="option-card__price">$24 / mo</span>
+    </label>
+  </fieldset>
+</main>
+
+<script src="script.js"></script>
