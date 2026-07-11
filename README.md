@@ -15,9 +15,9 @@
 
 <div align="center">
   <a href="https://raw.githubusercontent.com/MarcoZorn/arniejs/main/docs/assets/arniejs-intro.mp4">
-    <img src="docs/assets/video-thumbnail.jpg" width="640" alt="ArnieJS video walkthrough — click to watch" />
+    <img src="docs/assets/arniejs-hero.gif" width="640" alt="ArnieJS 30-second video walkthrough" />
   </a>
-  <p><a href="https://raw.githubusercontent.com/MarcoZorn/arniejs/main/docs/assets/arniejs-intro.mp4">▶ Watch the 30s intro</a> · <a href="https://raw.githubusercontent.com/MarcoZorn/arniejs/main/docs/assets/arniejs-short.mp4">📱 Vertical cut (15s)</a></p>
+  <p><a href="https://raw.githubusercontent.com/MarcoZorn/arniejs/main/docs/assets/arniejs-intro.mp4">▶ Watch with sound (30s)</a> · <a href="https://raw.githubusercontent.com/MarcoZorn/arniejs/main/docs/assets/arniejs-short.mp4">📱 Vertical cut (15s)</a></p>
 </div>
 
 Arnie never installed npm. Never will. He grows tomatoes and buttons the same way — from scratch, no shortcuts, no chemicals.
