@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <header class="intro">
+    <h1>Harvest Avatars</h1>
+    <p>Stacked, overlapping avatar group with warm border rings. Hover or click the "+N more" bubble to see who else is here.</p>
+  </header>
+
+  <section class="card">
+    <div class="avatar-group" data-avatar-group>
+      <div class="avatar" style="background:#c4622d" title="Rosa Fielding">RF</div>
+      <div class="avatar" style="background:#5a7a3a" title="Otis Marrow">OM</div>
+      <div class="avatar" style="background:#9b6b3a" title="Juniper Vale">JV</div>
+      <div class="avatar" style="background:#a03820" title="Wendell Ash">WA</div>
+      <div class="avatar avatar--more" data-more tabindex="0" role="button" aria-haspopup="true" aria-expanded="false">
+        <span>+5</span>
+        <div class="more-tooltip" data-tooltip role="tooltip">
+          <p class="more-tooltip__title">Also in this field</p>
+          <ul>
+            <li>Sage Alder</li>
+            <li>Basil Thorne</li>
+            <li>Clover Mabry</li>
+            <li>Fennel Cross</li>
+            <li>Reed Copse</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="caption">9 growers tending this plot</p>
+  </section>
+</main>
+<script src="script.js"></script>
