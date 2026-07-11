@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.demo {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.demo__note {
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 13px;
+  margin: 0;
+}
+
+.blob-stage {
+  position: relative;
+  width: 100%;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-surface));
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  cursor: none;
+}
+
+.blob-stage__title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text-primary);
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.blob-stage__text {
+  margin: 0;
+  max-width: 420px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.blob-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  margin-left: -35px;
+  margin-top: -35px;
+  background: radial-gradient(circle at 35% 30%, var(--accent-sand), var(--accent-clay) 55%, var(--accent-terra) 100%);
+  border-radius: 46% 54% 60% 40% / 50% 45% 55% 50%;
+  filter: blur(0.5px);
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.3s ease, border-radius 1.8s ease-in-out;
+  will-change: transform, border-radius;
+  box-shadow: 0 0 40px rgba(196, 98, 45, 0.35);
+}
+
+.blob-stage.is-active .blob-cursor {
+  opacity: 0.9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob-stage {
+    cursor: default;
+  }
+  .blob-cursor {
+    display: none;
+  }
+}
