@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="style.css">
+<div class="harvest-bar" id="harvestBar" aria-hidden="true">
+  <div class="harvest-bar-fill" id="harvestBarFill"></div>
+</div>
+<main class="wrap">
+  <h1 class="title">harvest bar</h1>
+  <p class="subtitle">a slim clay progress bar pinned to the top of the page, like a load indicator</p>
+
+  <section class="demo">
+    <button class="ctrl-btn ctrl-primary" id="loadBtn" type="button">Simulate page load</button>
+    <p class="status" id="statusText">idle</p>
+
+    <div class="preview-lines" aria-hidden="true">
+      <div class="preview-line" style="width: 92%"></div>
+      <div class="preview-line" style="width: 78%"></div>
+      <div class="preview-line" style="width: 85%"></div>
+      <div class="preview-line" style="width: 60%"></div>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
