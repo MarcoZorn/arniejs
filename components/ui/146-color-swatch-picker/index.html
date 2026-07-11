@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <div class="swatch-picker" id="swatchPicker" role="radiogroup" aria-label="Select color">
+    <button type="button" class="swatch is-selected" style="--swatch-color:#a03820;" data-name="Rust" role="radio" aria-checked="true">
+      <span class="swatch__tooltip">Rust</span>
+    </button>
+    <button type="button" class="swatch" style="--swatch-color:#5a7a3a;" data-name="Moss" role="radio" aria-checked="false">
+      <span class="swatch__tooltip">Moss</span>
+    </button>
+    <button type="button" class="swatch" style="--swatch-color:#d4a85a;" data-name="Sand" role="radio" aria-checked="false">
+      <span class="swatch__tooltip">Sand</span>
+    </button>
+    <button type="button" class="swatch" style="--swatch-color:#241a0e;" data-name="Espresso" role="radio" aria-checked="false">
+      <span class="swatch__tooltip">Espresso</span>
+    </button>
+    <button type="button" class="swatch" style="--swatch-color:#8fa86e;" data-name="Sage" role="radio" aria-checked="false">
+      <span class="swatch__tooltip">Sage</span>
+    </button>
+  </div>
+  <p class="demo__note">Selected color: <strong id="selectedLabel">Rust</strong></p>
+</main>
+<script src="script.js"></script>
