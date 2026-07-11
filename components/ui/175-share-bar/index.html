@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Share Bar</h1>
+  <p class="stage__sub">Scroll down to reveal the sticky share bar</p>
+
+  <article class="post">
+    <p class="post__kicker">Field Notes</p>
+    <h2 class="post__title">Composting for Small Urban Gardens</h2>
+    <p>Turning kitchen scraps into rich soil doesn't require acres of land. A tight rotation, the right ratio of greens to browns, and a little patience is all it takes to build a compost system that keeps pace with a household of four.</p>
+    <p>Start with a bin no bigger than a barrel. Layer your nitrogen-rich scraps — vegetable peels, coffee grounds, eggshells — with carbon-rich material like dry leaves or shredded cardboard. Turn it weekly and keep it as damp as a wrung-out sponge.</p>
+    <p>Within eight to twelve weeks you'll have a dark, crumbly amendment ready to feed next season's beds. The smell should be earthy, never sour — if it turns sharp, add more browns and turn it more often.</p>
+    <p>Worm bins are a faster alternative for apartment dwellers. A pound of red wigglers can process half a pound of scraps a day, and the castings they leave behind are some of the most potent fertilizer you can make at home.</p>
+    <p>Whatever method you choose, the goal is the same: close the loop between what your kitchen throws away and what your garden needs to thrive.</p>
+    <p>Keep experimenting with ratios until the process feels effortless — every household's scrap mix is a little different, and the best compost recipe is the one you'll actually keep up with.</p>
+  </article>
+</main>
+
+<div class="share-bar" id="shareBar" aria-hidden="true">
+  <span class="share-bar__label">Share this</span>
+  <div class="share-bar__actions">
+    <button type="button" class="share-bar__btn share-bar__btn--primary" id="nativeShareBtn" aria-label="Share this article">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="10.6" x2="15.4" y2="6.4"/><line x1="8.6" y1="13.4" x2="15.4" y2="17.6"/></svg>
+      <span>Share</span>
+    </button>
+    <button type="button" class="share-bar__btn" id="copyLinkBtn" aria-label="Copy link">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+      <span id="copyLinkLabel">Copy link</span>
+    </button>
+  </div>
+  <span class="share-bar__toast" id="shareToast" role="status" aria-live="polite"></span>
+</div>
+
+<script src="script.js"></script>
