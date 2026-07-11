@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <div class="geo" id="geo">
+    <button type="button" class="geo__btn" id="geoBtn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="1.8"/>
+        <circle cx="12" cy="12" r="1.6" fill="currentColor"/>
+      </svg>
+      <span id="geoBtnLabel">Use my location</span>
+    </button>
+
+    <div class="geo__result" id="geoResult" role="status" aria-live="polite"></div>
+  </div>
+</main>
+<script src="script.js"></script>
