@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <header class="intro">
+    <h1>Soil Chip</h1>
+    <p>Dismissible tags in earthy tones. Click the × to remove a chip, or add a new one from the list below.</p>
+  </header>
+
+  <section class="card">
+    <div class="chip-field" data-chip-field>
+      <span class="chip" data-chip>
+        <span class="chip__label">Compost</span>
+        <button class="chip__remove" type="button" aria-label="Remove Compost">×</button>
+      </span>
+      <span class="chip" data-chip>
+        <span class="chip__label">Mulch</span>
+        <button class="chip__remove" type="button" aria-label="Remove Mulch">×</button>
+      </span>
+      <span class="chip" data-chip>
+        <span class="chip__label">Loam</span>
+        <button class="chip__remove" type="button" aria-label="Remove Loam">×</button>
+      </span>
+      <span class="chip" data-chip>
+        <span class="chip__label">Peat</span>
+        <button class="chip__remove" type="button" aria-label="Remove Peat">×</button>
+      </span>
+      <span class="chip" data-chip>
+        <span class="chip__label">Clay</span>
+        <button class="chip__remove" type="button" aria-label="Remove Clay">×</button>
+      </span>
+    </div>
+
+    <div class="add-row">
+      <label class="add-label" for="chip-select">Add a soil type</label>
+      <div class="add-controls">
+        <select id="chip-select" class="add-select" data-chip-select>
+          <option value="">Choose…</option>
+          <option value="Silt">Silt</option>
+          <option value="Sand">Sand</option>
+          <option value="Chalk">Chalk</option>
+          <option value="Humus">Humus</option>
+          <option value="Manure">Manure</option>
+        </select>
+        <button class="add-btn" type="button" data-chip-add>+ Add chip</button>
+      </div>
+    </div>
+
+    <p class="empty-msg" data-empty-msg hidden>No soil types selected yet.</p>
+  </section>
+</main>
+<script src="script.js"></script>
