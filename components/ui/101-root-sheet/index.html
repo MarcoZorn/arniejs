@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <button class="trigger" id="openSheet">Open Root Sheet</button>
+
+  <div class="sheet-backdrop" id="sheetBackdrop"></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <div class="sheet-handle-area" id="sheetHandle">
+      <div class="sheet-handle"></div>
+    </div>
+    <div class="sheet-body">
+      <h2 id="sheetTitle">Planting Schedule</h2>
+      <p>Drag the handle down, or swipe the sheet, to dismiss. You can also tap the backdrop.</p>
+      <ul class="sheet-list">
+        <li><span>Sow seeds</span><span class="tag">Spring</span></li>
+        <li><span>Mulch beds</span><span class="tag">Summer</span></li>
+        <li><span>Harvest roots</span><span class="tag tag-rust">Autumn</span></li>
+        <li><span>Rest soil</span><span class="tag">Winter</span></li>
+      </ul>
+      <button class="sheet-close" id="sheetClose">Close</button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
