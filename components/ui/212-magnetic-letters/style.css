@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.demo {
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.demo__note {
+  color: var(--text-faint);
+  font-size: 13px;
+  margin: 0;
+}
+
+.magnetic {
+  margin: 0;
+  font-size: clamp(30px, 6vw, 56px);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  cursor: default;
+  user-select: none;
+  padding: 24px 8px;
+}
+
+.magnetic__letter {
+  display: inline-block;
+  will-change: transform;
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s ease;
+}
+
+.magnetic__letter.is-near {
+  color: var(--accent-sand);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .magnetic__letter {
+    transition: color 0.3s ease !important;
+    transform: none !important;
+  }
+}
