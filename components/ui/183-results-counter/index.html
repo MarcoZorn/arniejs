@@ -1,0 +1,29 @@
+<!-- description: Large animated count-up numbers with labels, triggered on scroll into view. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Results Counter</h1>
+  <p class="stage__sub">Scroll down &mdash; the numbers count up when they enter view</p>
+
+  <div class="spacer" aria-hidden="true"></div>
+
+  <div class="counters" role="list">
+    <div class="counter" role="listitem">
+      <span class="counter__value" data-target="200" data-suffix="+">0</span>
+      <span class="counter__label">Projects delivered</span>
+    </div>
+    <div class="counter" role="listitem">
+      <span class="counter__value" data-target="48" data-suffix="">0</span>
+      <span class="counter__label">Happy clients</span>
+    </div>
+    <div class="counter" role="listitem">
+      <span class="counter__value" data-target="12" data-suffix="">0</span>
+      <span class="counter__label">Years experience</span>
+    </div>
+    <div class="counter" role="listitem">
+      <span class="counter__value" data-target="99" data-suffix="%">0</span>
+      <span class="counter__label">Client retention</span>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
