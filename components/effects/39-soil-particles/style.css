@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  font-family: 'Syne', system-ui, sans-serif;
+}
+
+canvas#c {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer;
+}
+
+.hint {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  color: #d4a85a;
+  opacity: 0.55;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hint { opacity: 0.35; }
+}
