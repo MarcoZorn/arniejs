@@ -1,0 +1,40 @@
+<!-- description: Auto-rotating testimonial carousel with hover-to-pause and dot navigation. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Testimonial Rotator</h1>
+  <p class="stage__sub">Auto-rotates every few seconds &mdash; hover to pause</p>
+
+  <div class="rotator" id="rotator" aria-roledescription="carousel" aria-label="Client testimonials">
+    <div class="rotator__track">
+      <blockquote class="testimonial is-active" data-index="0">
+        <p class="testimonial__quote">&ldquo;They took a vague idea and turned it into the sharpest brand in our category. Every touchpoint feels intentional.&rdquo;</p>
+        <footer class="testimonial__author">
+          <span class="testimonial__name">Maya Chen</span>
+          <span class="testimonial__role">Founder, Solstice</span>
+        </footer>
+      </blockquote>
+      <blockquote class="testimonial" data-index="1">
+        <p class="testimonial__quote">&ldquo;Fast, thoughtful, and genuinely fun to work with. Our new site converts twice as well as the old one.&rdquo;</p>
+        <footer class="testimonial__author">
+          <span class="testimonial__name">Diego Alvarez</span>
+          <span class="testimonial__role">CMO, Orbit</span>
+        </footer>
+      </blockquote>
+      <blockquote class="testimonial" data-index="2">
+        <p class="testimonial__quote">&ldquo;The kind of partner that pushes back on bad ideas. Our launch wouldn't have landed without them.&rdquo;</p>
+        <footer class="testimonial__author">
+          <span class="testimonial__name">Priya Shah</span>
+          <span class="testimonial__role">Head of Product, Flux</span>
+        </footer>
+      </blockquote>
+    </div>
+
+    <div class="rotator__dots" role="tablist" aria-label="Choose testimonial">
+      <button type="button" class="rotator__dot is-active" data-goto="0" role="tab" aria-selected="true" aria-label="Testimonial 1"></button>
+      <button type="button" class="rotator__dot" data-goto="1" role="tab" aria-selected="false" aria-label="Testimonial 2"></button>
+      <button type="button" class="rotator__dot" data-goto="2" role="tab" aria-selected="false" aria-label="Testimonial 3"></button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
