@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: grid;
+  place-content: center;
+  padding: 8vh 20px;
+}
+
+.stage__title { margin: 0 0 6px; font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -.02em; text-align: center; }
+.stage__sub { margin: 0 0 44px; color: var(--text-muted); text-align: center; }
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 22px;
+  max-width: 760px;
+}
+
+.feature {
+  padding: 30px 26px;
+  border-radius: 16px;
+  background: linear-gradient(155deg, var(--bg-card), var(--bg-surface));
+  border: 1px solid var(--border);
+  transition: transform .3s cubic-bezier(.2,.8,.2,1), box-shadow .3s ease, border-color .3s ease;
+}
+.feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 26px 48px -22px rgba(196, 98, 45, .35);
+  border-color: var(--border-light);
+}
+
+.feature__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 46px; height: 46px;
+  border-radius: 12px;
+  color: var(--accent-terra);
+  background: var(--bg-subtle);
+  margin-bottom: 18px;
+  transition: background .3s ease, color .3s ease, transform .3s ease;
+}
+.feature__icon svg { width: 22px; height: 22px; }
+.feature:hover .feature__icon {
+  background: linear-gradient(155deg, var(--accent-terra), var(--accent-rust));
+  color: #fff;
+  transform: rotate(-6deg) scale(1.08);
+}
+
+.feature__title { margin: 0 0 10px; font-size: 1.05rem; font-weight: 700; letter-spacing: -.01em; }
+.feature__desc { margin: 0; font-size: .86rem; color: var(--text-muted); line-height: 1.55; }
+
+@media (prefers-reduced-motion: reduce) {
+  .feature, .feature__icon { transition: none !important; }
+}
