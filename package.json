@@ -1,0 +1,28 @@
+{
+  "name": "arniejs",
+  "version": "1.0.0",
+  "description": "180+ vanilla JS components. Grown from scratch. No deps.",
+  "bin": {
+    "arniejs": "bin/arniejs.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "author": "Marco Zorn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarcoZorn/arniejs.git"
+  },
+  "homepage": "https://marcozorn.github.io/arniejs",
+  "keywords": [
+    "vanilla-js",
+    "components",
+    "ui",
+    "zero-dependencies",
+    "css-animations"
+  ]
+}
