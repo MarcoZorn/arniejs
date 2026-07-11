@@ -1,0 +1,53 @@
+<!-- description: A GDPR-style cookie consent bar with Accept, Decline, and Settings controls that persists the visitor's choice. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Cookie consent</h1>
+  <p class="stage__sub">Reload the demo after choosing — your decision is remembered via localStorage.</p>
+
+  <div class="demo-panel">
+    <p class="demo-panel__text">Current stored consent: <strong class="demo-panel__value" id="consentValue">none</strong></p>
+    <button class="demo-panel__reset" id="resetBtn" type="button">Reset stored choice</button>
+  </div>
+
+  <div class="cookie-bar" id="cookieBar" role="dialog" aria-live="polite" aria-label="Cookie consent">
+    <div class="cookie-bar__body">
+      <p class="cookie-bar__text">
+        We use cookies to improve your experience, analyze traffic, and personalize content.
+        Read our <a href="#" class="cookie-bar__link">cookie policy</a> to learn more.
+      </p>
+
+      <div class="cookie-bar__settings" id="cookieSettings" hidden>
+        <label class="cookie-row">
+          <span class="cookie-row__text">
+            <span class="cookie-row__label">Essential</span>
+            <span class="cookie-row__desc">Required for the site to function. Always on.</span>
+          </span>
+          <input type="checkbox" checked disabled>
+        </label>
+        <label class="cookie-row">
+          <span class="cookie-row__text">
+            <span class="cookie-row__label">Analytics</span>
+            <span class="cookie-row__desc">Helps us understand how visitors use the site.</span>
+          </span>
+          <input type="checkbox" id="prefAnalytics" checked>
+        </label>
+        <label class="cookie-row">
+          <span class="cookie-row__text">
+            <span class="cookie-row__label">Marketing</span>
+            <span class="cookie-row__desc">Used to personalize ads across other sites.</span>
+          </span>
+          <input type="checkbox" id="prefMarketing">
+        </label>
+      </div>
+    </div>
+
+    <div class="cookie-bar__actions">
+      <button class="btn btn--ghost" id="settingsBtn" type="button">Settings</button>
+      <button class="btn btn--outline" id="declineBtn" type="button">Decline</button>
+      <button class="btn btn--primary" id="acceptBtn" type="button">Accept all</button>
+      <button class="btn btn--primary" id="saveBtn" type="button" hidden>Save preferences</button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
