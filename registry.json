@@ -21,7 +21,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/01-image-gallery/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/01-image-gallery/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-image-gallery.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--txt",
+        "value": "#f0e6d3"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--panel",
+        "value": "#241a0e"
+      },
+      {
+        "name": "--line",
+        "value": "#3d2b14"
+      }
+    ]
   },
   {
     "id": "image-compare",
@@ -45,7 +72,26 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/02-image-compare/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/02-image-compare/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-image-compare.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--txt",
+        "value": "#f0e6d3"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      }
+    ]
   },
   {
     "id": "tilt-cards",
@@ -69,7 +115,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/03-tilt-cards/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/03-tilt-cards/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-tilt-cards.jpg",
+    "cssVars": []
   },
   {
     "id": "bento-grid",
@@ -93,7 +141,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/04-bento-grid/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/04-bento-grid/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-bento-grid.jpg",
+    "cssVars": []
   },
   {
     "id": "image-carousel",
@@ -117,7 +167,26 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/05-image-carousel/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/05-image-carousel/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-image-carousel.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--ink",
+        "value": "#f0e6d3"
+      }
+    ]
   },
   {
     "id": "flip-cards",
@@ -141,7 +210,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/06-flip-cards/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/06-flip-cards/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-flip-cards.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-2",
+        "value": "#22d3ee"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--muted",
+        "value": "#9aa3b2"
+      },
+      {
+        "name": "--card",
+        "value": "#241a0e"
+      },
+      {
+        "name": "--ink",
+        "value": "#f0e6d3"
+      }
+    ]
   },
   {
     "id": "parallax-hero",
@@ -165,7 +261,30 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/07-parallax-hero/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/07-parallax-hero/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-parallax-hero.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#ff6f61"
+      },
+      {
+        "name": "--accent-2",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--ink",
+        "value": "#f0e6d3"
+      }
+    ]
   },
   {
     "id": "cube-showcase",
@@ -189,7 +308,26 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/08-cube-showcase/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/08-cube-showcase/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-cube-showcase.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#38e8c6"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--muted",
+        "value": "#97a1b2"
+      },
+      {
+        "name": "--ink",
+        "value": "#f0e6d3"
+      }
+    ]
   },
   {
     "id": "fullscreen-nav",
@@ -213,7 +351,30 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/09-fullscreen-nav/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/09-fullscreen-nav/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-fullscreen-nav.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--panel",
+        "value": "#11141b"
+      },
+      {
+        "name": "--fg",
+        "value": "#f0e6d3"
+      }
+    ]
   },
   {
     "id": "accordion-faq",
@@ -237,7 +398,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/10-accordion-faq/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/10-accordion-faq/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-accordion-faq.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--panel",
+        "value": "#241a0e"
+      },
+      {
+        "name": "--panel-2",
+        "value": "#241a0e"
+      },
+      {
+        "name": "--fg",
+        "value": "#f0e6d3"
+      }
+    ]
   },
   {
     "id": "animated-tabs",
@@ -261,7 +449,30 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/11-animated-tabs/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/11-animated-tabs/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-animated-tabs.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--panel",
+        "value": "#241a0e"
+      },
+      {
+        "name": "--fg",
+        "value": "#f0e6d3"
+      }
+    ]
   },
   {
     "id": "toast-notifications",
@@ -285,7 +496,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/12-toast-notifications/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/12-toast-notifications/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-toast-notifications.jpg",
+    "cssVars": [
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--panel",
+        "value": "#241a0e"
+      },
+      {
+        "name": "--fg",
+        "value": "#f0e6d3"
+      },
+      {
+        "name": "--success",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--error",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "modal-dialog",
@@ -309,7 +547,30 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/13-modal-dialog/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/13-modal-dialog/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-modal-dialog.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--panel",
+        "value": "#241a0e"
+      },
+      {
+        "name": "--fg",
+        "value": "#f0e6d3"
+      }
+    ]
   },
   {
     "id": "multistep-form",
@@ -333,7 +594,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/14-multistep-form/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/14-multistep-form/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-multistep-form.jpg",
+    "cssVars": []
   },
   {
     "id": "pricing-toggle",
@@ -357,7 +620,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/15-pricing-toggle/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/15-pricing-toggle/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-pricing-toggle.jpg",
+    "cssVars": []
   },
   {
     "id": "testimonial-slider",
@@ -381,7 +646,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/16-testimonial-slider/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/16-testimonial-slider/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-testimonial-slider.jpg",
+    "cssVars": []
   },
   {
     "id": "count-up-stats",
@@ -406,7 +673,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/17-count-up-stats/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/17-count-up-stats/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-count-up-stats.jpg",
+    "cssVars": []
   },
   {
     "id": "theme-toggle",
@@ -430,7 +699,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/18-theme-toggle/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/18-theme-toggle/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-theme-toggle.jpg",
+    "cssVars": []
   },
   {
     "id": "magnetic-cursor",
@@ -454,7 +725,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/19-magnetic-cursor/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/19-magnetic-cursor/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-magnetic-cursor.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent2",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--text",
+        "value": "#f0e6d3"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--card",
+        "value": "#241a0e"
+      }
+    ]
   },
   {
     "id": "logo-marquee",
@@ -478,7 +776,30 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/20-logo-marquee/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/20-logo-marquee/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-logo-marquee.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--text",
+        "value": "#f0e6d3"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--card",
+        "value": "#241a0e"
+      }
+    ]
   },
   {
     "id": "vertical-timeline",
@@ -502,7 +823,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/21-vertical-timeline/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/21-vertical-timeline/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-vertical-timeline.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#ff7a59"
+      },
+      {
+        "name": "--accent2",
+        "value": "#ffb27a"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--text",
+        "value": "#f0e6d3"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--card",
+        "value": "#241a0e"
+      }
+    ]
   },
   {
     "id": "command-palette",
@@ -526,7 +874,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/22-command-palette/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/22-command-palette/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-command-palette.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--text",
+        "value": "#f0e6d3"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--panel",
+        "value": "#241a0e"
+      },
+      {
+        "name": "--panel2",
+        "value": "#241a0e"
+      }
+    ]
   },
   {
     "id": "star-rating",
@@ -550,7 +925,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/23-star-rating/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/23-star-rating/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-star-rating.jpg",
+    "cssVars": [
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--panel",
+        "value": "#241a0e"
+      },
+      {
+        "name": "--panel-2",
+        "value": "#1b2030"
+      },
+      {
+        "name": "--ink",
+        "value": "#f0e6d3"
+      },
+      {
+        "name": "--gold",
+        "value": "#ffc93c"
+      }
+    ]
   },
   {
     "id": "range-slider",
@@ -574,7 +976,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/24-range-slider/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/24-range-slider/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-range-slider.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-2",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--panel",
+        "value": "#241a0e"
+      },
+      {
+        "name": "--ink",
+        "value": "#f0e6d3"
+      }
+    ]
   },
   {
     "id": "segmented-control",
@@ -598,7 +1027,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/25-segmented-control/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/25-segmented-control/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-segmented-control.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--panel",
+        "value": "#241a0e"
+      },
+      {
+        "name": "--track",
+        "value": "#2e2010"
+      },
+      {
+        "name": "--ink",
+        "value": "#f0e6d3"
+      }
+    ]
   },
   {
     "id": "custom-select",
@@ -622,7 +1078,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/26-custom-select/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/26-custom-select/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-custom-select.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--panel",
+        "value": "#241a0e"
+      },
+      {
+        "name": "--field",
+        "value": "#241a0e"
+      },
+      {
+        "name": "--ink",
+        "value": "#f0e6d3"
+      }
+    ]
   },
   {
     "id": "file-dropzone",
@@ -646,7 +1129,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/27-file-dropzone/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/27-file-dropzone/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-file-dropzone.jpg",
+    "cssVars": [
+      {
+        "name": "--accent",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-2",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--text",
+        "value": "#f0e6d3"
+      },
+      {
+        "name": "--muted",
+        "value": "#8892a6"
+      },
+      {
+        "name": "--panel",
+        "value": "#241a0e"
+      }
+    ]
   },
   {
     "id": "circular-progress",
@@ -670,7 +1180,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/28-circular-progress/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/28-circular-progress/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-circular-progress.jpg",
+    "cssVars": [
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--text",
+        "value": "#f0e6d3"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--a1",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--a2",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--b1",
+        "value": "#5a7a3a"
+      }
+    ]
   },
   {
     "id": "glow-buttons",
@@ -694,7 +1231,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/29-glow-buttons/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/29-glow-buttons/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-glow-buttons.jpg",
+    "cssVars": [
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--text",
+        "value": "#f0e6d3"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--a1",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--a2",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--a3",
+        "value": "#5a7a3a"
+      }
+    ]
   },
   {
     "id": "kanban-board",
@@ -718,7 +1282,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/30-kanban-board/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/30-kanban-board/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-kanban-board.jpg",
+    "cssVars": [
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--col-bg",
+        "value": "#241a0e"
+      },
+      {
+        "name": "--text",
+        "value": "#f0e6d3"
+      },
+      {
+        "name": "--muted",
+        "value": "#a89070"
+      },
+      {
+        "name": "--card",
+        "value": "#2e2010"
+      },
+      {
+        "name": "--card-hover",
+        "value": "#3d2b14"
+      }
+    ]
   },
   {
     "id": "ripple-button",
@@ -742,7 +1333,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/31-ripple-button/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/31-ripple-button/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-ripple-button.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "morphing-button",
@@ -766,7 +1384,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/32-morphing-button/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/32-morphing-button/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-morphing-button.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "bloom-button",
@@ -790,7 +1435,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/33-bloom-button/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/33-bloom-button/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-bloom-button.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "shockwave-button",
@@ -814,7 +1486,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/34-shockwave-button/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/34-shockwave-button/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-shockwave-button.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "typewriter-button",
@@ -838,7 +1537,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/35-typewriter-button/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/35-typewriter-button/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-typewriter-button.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "ember-button",
@@ -862,7 +1588,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/36-ember-button/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/36-ember-button/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-ember-button.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "split-button",
@@ -886,7 +1639,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/37-split-button/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/37-split-button/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-split-button.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "glitch-button",
@@ -910,7 +1690,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/38-glitch-button/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/38-glitch-button/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-glitch-button.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "magnetic-button",
@@ -934,7 +1741,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/39-magnetic-button/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/39-magnetic-button/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-magnetic-button.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "seed-button",
@@ -958,7 +1792,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/40-seed-button/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/40-seed-button/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-seed-button.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "parchment-card",
@@ -982,7 +1843,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/41-parchment-card/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/41-parchment-card/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-parchment-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "holographic-card",
@@ -1006,7 +1894,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/42-holographic-card/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/42-holographic-card/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-holographic-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "expandable-card",
@@ -1030,7 +1945,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/43-expandable-card/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/43-expandable-card/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-expandable-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "stacked-cards",
@@ -1053,7 +1995,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/44-stacked-cards/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/44-stacked-cards/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-stacked-cards.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "reveal-card",
@@ -1077,7 +2046,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/45-reveal-card/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/45-reveal-card/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-reveal-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "field-notes-card",
@@ -1102,7 +2098,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/46-field-notes-card/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/46-field-notes-card/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-field-notes-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "polaroid-stack",
@@ -1126,7 +2149,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/47-polaroid-stack/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/47-polaroid-stack/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-polaroid-stack.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "ember-card",
@@ -1150,7 +2200,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/48-ember-card/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/48-ember-card/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-ember-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "clay-border-card",
@@ -1175,7 +2252,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/49-clay-border-card/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/49-clay-border-card/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-clay-border-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "stat-card",
@@ -1199,7 +2303,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/50-stat-card/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/50-stat-card/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-stat-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "profile-card",
@@ -1223,7 +2354,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/51-profile-card/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/51-profile-card/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-profile-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "pricing-card",
@@ -1247,7 +2405,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/52-pricing-card/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/52-pricing-card/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-pricing-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "feature-card",
@@ -1271,7 +2456,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/53-feature-card/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/53-feature-card/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-feature-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "testimonial-card",
@@ -1295,7 +2507,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/54-testimonial-card/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/54-testimonial-card/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-testimonial-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "bark-card",
@@ -1319,7 +2558,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/55-bark-card/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/55-bark-card/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-bark-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "sidebar-nav",
@@ -1343,7 +2609,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/56-sidebar-nav/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/56-sidebar-nav/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-sidebar-nav.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "mega-menu",
@@ -1367,7 +2660,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/57-mega-menu/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/57-mega-menu/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-mega-menu.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "breadcrumb",
@@ -1390,7 +2710,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/58-breadcrumb/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/58-breadcrumb/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-breadcrumb.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "root-tab-bar",
@@ -1415,7 +2762,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/59-root-tab-bar/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/59-root-tab-bar/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-root-tab-bar.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "floating-dock",
@@ -1439,7 +2813,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/60-floating-dock/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/60-floating-dock/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-floating-dock.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "radial-menu",
@@ -1463,7 +2864,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/61-radial-menu/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/61-radial-menu/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-radial-menu.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "hamburger-morph",
@@ -1487,7 +2915,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/62-hamburger-morph/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/62-hamburger-morph/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-hamburger-morph.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "scroll-spy-nav",
@@ -1512,7 +2967,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/63-scroll-spy-nav/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/63-scroll-spy-nav/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-scroll-spy-nav.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "field-command",
@@ -1536,7 +3018,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/64-field-command/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/64-field-command/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-field-command.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "grove-menu",
@@ -1560,7 +3069,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/65-grove-menu/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/65-grove-menu/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-grove-menu.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "otp-input",
@@ -1584,7 +3120,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/66-otp-input/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/66-otp-input/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-otp-input.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "root-password",
@@ -1608,7 +3171,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/67-root-password/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/67-root-password/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-root-password.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "tag-input",
@@ -1632,7 +3222,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/68-tag-input/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/68-tag-input/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-tag-input.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "phone-input",
@@ -1656,7 +3273,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/69-phone-input/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/69-phone-input/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-phone-input.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "harvest-datepicker",
@@ -1680,7 +3324,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/70-harvest-datepicker/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/70-harvest-datepicker/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-harvest-datepicker.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "clay-color-picker",
@@ -1705,7 +3376,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/71-clay-color-picker/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/71-clay-color-picker/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-clay-color-picker.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "range-dual",
@@ -1729,7 +3427,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/72-range-dual/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/72-range-dual/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-range-dual.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "earth-toggle",
@@ -1753,7 +3478,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/73-earth-toggle/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/73-earth-toggle/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-earth-toggle.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "radio-cards",
@@ -1777,7 +3529,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/74-radio-cards/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/74-radio-cards/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-radio-cards.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "grove-search",
@@ -1801,7 +3580,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/75-grove-search/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/75-grove-search/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-grove-search.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "autocomplete",
@@ -1824,7 +3630,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/76-autocomplete/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/76-autocomplete/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-autocomplete.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "soil-textarea",
@@ -1848,7 +3681,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/77-soil-textarea/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/77-soil-textarea/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-soil-textarea.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "number-stepper",
@@ -1872,7 +3732,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/78-number-stepper/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/78-number-stepper/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-number-stepper.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "field-upload",
@@ -1896,7 +3783,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/79-field-upload/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/79-field-upload/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-field-upload.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "signature-pad",
@@ -1920,7 +3834,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/80-signature-pad/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/80-signature-pad/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-signature-pad.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "soil-skeleton",
@@ -1944,7 +3885,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/81-soil-skeleton/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/81-soil-skeleton/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-soil-skeleton.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "root-progress",
@@ -1968,7 +3936,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/82-root-progress/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/82-root-progress/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-root-progress.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "sun-timer",
@@ -1992,7 +3987,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/83-sun-timer/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/83-sun-timer/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-sun-timer.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "sprout-loader",
@@ -2016,7 +4038,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/84-sprout-loader/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/84-sprout-loader/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-sprout-loader.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "harvest-bar",
@@ -2040,7 +4089,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/85-harvest-bar/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/85-harvest-bar/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-harvest-bar.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "seed-spinners",
@@ -2064,7 +4140,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/86-seed-spinners/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/86-seed-spinners/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-seed-spinners.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "pulse-ember",
@@ -2088,7 +4191,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/87-pulse-ember/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/87-pulse-ember/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-pulse-ember.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "skeleton-field",
@@ -2112,7 +4242,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/88-skeleton-field/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/88-skeleton-field/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-skeleton-field.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "growth-upload",
@@ -2136,7 +4293,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/89-growth-upload/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/89-growth-upload/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-growth-upload.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "soil-indeterminate",
@@ -2160,7 +4344,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/90-soil-indeterminate/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/90-soil-indeterminate/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-soil-indeterminate.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "field-table",
@@ -2184,7 +4395,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/91-field-table/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/91-field-table/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-field-table.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "grove-bar-chart",
@@ -2209,7 +4447,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/92-grove-bar-chart/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/92-grove-bar-chart/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-grove-bar-chart.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "root-line-chart",
@@ -2234,7 +4499,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/93-root-line-chart/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/93-root-line-chart/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-root-line-chart.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "clay-donut",
@@ -2258,7 +4550,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/94-clay-donut/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/94-clay-donut/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-clay-donut.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "sand-sparkline",
@@ -2282,7 +4601,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/95-sand-sparkline/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/95-sand-sparkline/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-sand-sparkline.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "growth-heatmap",
@@ -2306,7 +4652,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/96-growth-heatmap/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/96-growth-heatmap/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-growth-heatmap.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "branch-tree",
@@ -2330,7 +4703,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/97-branch-tree/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/97-branch-tree/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-branch-tree.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "field-gantt",
@@ -2354,7 +4754,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/98-field-gantt/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/98-field-gantt/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-field-gantt.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "harvest-comparison",
@@ -2378,7 +4805,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/99-harvest-comparison/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/99-harvest-comparison/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-harvest-comparison.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "soil-leaderboard",
@@ -2402,7 +4856,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/100-soil-leaderboard/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/100-soil-leaderboard/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-soil-leaderboard.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "root-sheet",
@@ -2426,7 +4907,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/101-root-sheet/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/101-root-sheet/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-root-sheet.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "grove-notifications",
@@ -2450,7 +4958,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/102-grove-notifications/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/102-grove-notifications/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-grove-notifications.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "clay-tooltip",
@@ -2474,7 +5009,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/103-clay-tooltip/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/103-clay-tooltip/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-clay-tooltip.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "field-popover",
@@ -2498,7 +5060,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/104-field-popover/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/104-field-popover/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-field-popover.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "bark-alert",
@@ -2522,7 +5111,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/105-bark-alert/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/105-bark-alert/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-bark-alert.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "harvest-cookie",
@@ -2546,7 +5162,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/106-harvest-cookie/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/106-harvest-cookie/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-harvest-cookie.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "ember-snackbar",
@@ -2570,7 +5213,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/107-ember-snackbar/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/107-ember-snackbar/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-ember-snackbar.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "soil-overlay",
@@ -2594,7 +5264,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/108-soil-overlay/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/108-soil-overlay/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-soil-overlay.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "grove-spotlight",
@@ -2618,7 +5315,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/109-grove-spotlight/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/109-grove-spotlight/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-grove-spotlight.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "root-drawer",
@@ -2642,7 +5366,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/110-root-drawer/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/110-root-drawer/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-root-drawer.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "sticky-header",
@@ -2666,7 +5417,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/111-sticky-header/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/111-sticky-header/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-sticky-header.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "growth-scroll",
@@ -2690,7 +5468,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/112-growth-scroll/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/112-growth-scroll/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-growth-scroll.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "harvest-infinite",
@@ -2714,7 +5519,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/113-harvest-infinite/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/113-harvest-infinite/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-harvest-infinite.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "field-masonry",
@@ -2738,7 +5570,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/114-field-masonry/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/114-field-masonry/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-field-masonry.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "root-horizontal",
@@ -2762,7 +5621,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/115-root-horizontal/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/115-root-horizontal/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-root-horizontal.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "grove-snap",
@@ -2786,7 +5672,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/116-grove-snap/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/116-grove-snap/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-grove-snap.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "soil-parallax",
@@ -2810,7 +5723,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/117-soil-parallax/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/117-soil-parallax/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-soil-parallax.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "bloom-reveal",
@@ -2834,7 +5774,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/118-bloom-reveal/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/118-bloom-reveal/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-bloom-reveal.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "branch-sidebar",
@@ -2858,7 +5825,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/119-branch-sidebar/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/119-branch-sidebar/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-branch-sidebar.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "back-to-soil",
@@ -2883,7 +5877,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/120-back-to-soil/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/120-back-to-soil/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-back-to-soil.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "field-zoom",
@@ -2907,7 +5928,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/121-field-zoom/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/121-field-zoom/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-field-zoom.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "harvest-compare",
@@ -2931,7 +5979,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/122-harvest-compare/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/122-harvest-compare/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-harvest-compare.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "root-reorder",
@@ -2955,7 +6030,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/123-root-reorder/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/123-root-reorder/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-root-reorder.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "grove-panels",
@@ -2979,7 +6081,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/124-grove-panels/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/124-grove-panels/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-grove-panels.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "bark-copy",
@@ -3003,7 +6132,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/125-bark-copy/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/125-bark-copy/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-bark-copy.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "earth-mode",
@@ -3027,7 +6183,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/126-earth-mode/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/126-earth-mode/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-earth-mode.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "soil-share",
@@ -3051,7 +6234,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/127-soil-share/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/127-soil-share/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-soil-share.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "seed-reading",
@@ -3075,7 +6285,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/128-seed-reading/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/128-seed-reading/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-seed-reading.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "grove-highlight",
@@ -3099,7 +6336,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/129-grove-highlight/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/129-grove-highlight/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-grove-highlight.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "root-anchor",
@@ -3123,7 +6387,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/130-root-anchor/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/130-root-anchor/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-root-anchor.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "field-lazy",
@@ -3147,7 +6438,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/131-field-lazy/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/131-field-lazy/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-field-lazy.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "harvest-avatars",
@@ -3171,7 +6489,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/132-harvest-avatars/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/132-harvest-avatars/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-harvest-avatars.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "clay-badge",
@@ -3195,7 +6540,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/133-clay-badge/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/133-clay-badge/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-clay-badge.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "soil-chip",
@@ -3219,7 +6591,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/134-soil-chip/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/134-soil-chip/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-soil-chip.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "root-divider",
@@ -3243,7 +6642,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/135-root-divider/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/135-root-divider/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-root-divider.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "grove-timeline",
@@ -3267,7 +6693,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/136-grove-timeline/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/136-grove-timeline/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-grove-timeline.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "branch-stepper",
@@ -3291,7 +6744,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/137-branch-stepper/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/137-branch-stepper/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-branch-stepper.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "empty-field",
@@ -3315,7 +6795,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/138-empty-field/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/138-empty-field/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-empty-field.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "error-grove",
@@ -3339,7 +6846,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/139-error-grove/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/139-error-grove/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-error-grove.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "bark-shortcut",
@@ -3363,7 +6897,34 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/140-bark-shortcut/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/140-bark-shortcut/",
-    "type": "ui"
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-bark-shortcut.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
   },
   {
     "id": "aurora-field",
@@ -3386,7 +6947,18 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/01-aurora-field/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/01-aurora-field/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-aurora-field.jpg",
+    "cssVars": [
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      },
+      {
+        "name": "--ink",
+        "value": "#f0e6d3"
+      }
+    ]
   },
   {
     "id": "liquid-metaballs",
@@ -3409,7 +6981,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/02-liquid-metaballs/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/02-liquid-metaballs/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-liquid-metaballs.jpg",
+    "cssVars": []
   },
   {
     "id": "starfield-warp",
@@ -3432,7 +7006,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/03-starfield-warp/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/03-starfield-warp/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-starfield-warp.jpg",
+    "cssVars": []
   },
   {
     "id": "particle-text",
@@ -3455,7 +7031,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/04-particle-text/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/04-particle-text/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-particle-text.jpg",
+    "cssVars": []
   },
   {
     "id": "dot-sphere",
@@ -3478,7 +7056,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/05-dot-sphere/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/05-dot-sphere/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-dot-sphere.jpg",
+    "cssVars": []
   },
   {
     "id": "topographic-flow",
@@ -3501,7 +7081,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/06-topographic-flow/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/06-topographic-flow/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-topographic-flow.jpg",
+    "cssVars": []
   },
   {
     "id": "fireworks",
@@ -3523,7 +7105,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/07-fireworks/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/07-fireworks/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-fireworks.jpg",
+    "cssVars": []
   },
   {
     "id": "matrix-rain",
@@ -3546,7 +7130,14 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/08-matrix-rain/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/08-matrix-rain/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-matrix-rain.jpg",
+    "cssVars": [
+      {
+        "name": "--bg",
+        "value": "#1a1208"
+      }
+    ]
   },
   {
     "id": "plasma-field",
@@ -3569,7 +7160,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/09-plasma-field/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/09-plasma-field/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-plasma-field.jpg",
+    "cssVars": []
   },
   {
     "id": "gooey-cursor",
@@ -3592,7 +7185,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/10-gooey-cursor/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/10-gooey-cursor/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-gooey-cursor.jpg",
+    "cssVars": []
   },
   {
     "id": "game-of-life",
@@ -3616,7 +7211,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/11-game-of-life/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/11-game-of-life/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-game-of-life.jpg",
+    "cssVars": []
   },
   {
     "id": "smoke-cursor",
@@ -3639,7 +7236,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/12-smoke-cursor/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/12-smoke-cursor/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-smoke-cursor.jpg",
+    "cssVars": []
   },
   {
     "id": "constellation",
@@ -3661,7 +7260,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/13-constellation/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/13-constellation/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-constellation.jpg",
+    "cssVars": []
   },
   {
     "id": "liquid-canvas",
@@ -3684,7 +7285,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/14-liquid-canvas/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/14-liquid-canvas/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-liquid-canvas.jpg",
+    "cssVars": []
   },
   {
     "id": "wormhole",
@@ -3706,7 +7309,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/15-wormhole/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/15-wormhole/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-wormhole.jpg",
+    "cssVars": []
   },
   {
     "id": "earth-grid",
@@ -3729,7 +7334,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/16-earth-grid/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/16-earth-grid/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-earth-grid.jpg",
+    "cssVars": []
   },
   {
     "id": "root-helix",
@@ -3752,7 +7359,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/17-root-helix/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/17-root-helix/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-root-helix.jpg",
+    "cssVars": []
   },
   {
     "id": "gravity-seeds",
@@ -3775,7 +7384,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/18-gravity-seeds/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/18-gravity-seeds/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-gravity-seeds.jpg",
+    "cssVars": []
   },
   {
     "id": "morphing-blob",
@@ -3798,7 +7409,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/19-morphing-blob/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/19-morphing-blob/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-morphing-blob.jpg",
+    "cssVars": []
   },
   {
     "id": "leaf-rain",
@@ -3821,7 +7434,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/20-leaf-rain/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/20-leaf-rain/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-leaf-rain.jpg",
+    "cssVars": []
   },
   {
     "id": "spiral-roots",
@@ -3844,7 +7459,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/21-spiral-roots/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/21-spiral-roots/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-spiral-roots.jpg",
+    "cssVars": []
   },
   {
     "id": "ember-arc",
@@ -3867,7 +7484,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/22-ember-arc/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/22-ember-arc/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-ember-arc.jpg",
+    "cssVars": []
   },
   {
     "id": "soil-automata",
@@ -3890,7 +7509,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/23-soil-automata/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/23-soil-automata/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-soil-automata.jpg",
+    "cssVars": []
   },
   {
     "id": "clay-voronoi",
@@ -3913,7 +7534,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/24-clay-voronoi/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/24-clay-voronoi/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-clay-voronoi.jpg",
+    "cssVars": []
   },
   {
     "id": "lissajous",
@@ -3935,7 +7558,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/25-lissajous/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/25-lissajous/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-lissajous.jpg",
+    "cssVars": []
   },
   {
     "id": "sand-simulation",
@@ -3958,7 +7583,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/26-sand-simulation/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/26-sand-simulation/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-sand-simulation.jpg",
+    "cssVars": []
   },
   {
     "id": "water-soil",
@@ -3981,7 +7608,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/27-water-soil/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/27-water-soil/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-water-soil.jpg",
+    "cssVars": []
   },
   {
     "id": "northern-roots",
@@ -4004,7 +7633,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/28-northern-roots/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/28-northern-roots/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-northern-roots.jpg",
+    "cssVars": []
   },
   {
     "id": "branch-tree",
@@ -4027,7 +7658,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/29-branch-tree/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/29-branch-tree/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-branch-tree.jpg",
+    "cssVars": []
   },
   {
     "id": "root-wave",
@@ -4050,7 +7683,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/30-root-wave/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/30-root-wave/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-root-wave.jpg",
+    "cssVars": []
   },
   {
     "id": "earth-morph",
@@ -4073,7 +7708,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/31-earth-morph/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/31-earth-morph/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-earth-morph.jpg",
+    "cssVars": []
   },
   {
     "id": "warm-bokeh",
@@ -4096,7 +7733,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/32-warm-bokeh/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/32-warm-bokeh/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-warm-bokeh.jpg",
+    "cssVars": []
   },
   {
     "id": "cloth-field",
@@ -4119,7 +7758,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/33-cloth-field/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/33-cloth-field/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-cloth-field.jpg",
+    "cssVars": []
   },
   {
     "id": "hex-soil",
@@ -4142,7 +7783,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/34-hex-soil/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/34-hex-soil/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-hex-soil.jpg",
+    "cssVars": []
   },
   {
     "id": "seed-scope",
@@ -4165,7 +7808,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/35-seed-scope/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/35-seed-scope/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-seed-scope.jpg",
+    "cssVars": []
   },
   {
     "id": "root-tunnel",
@@ -4188,7 +7833,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/36-root-tunnel/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/36-root-tunnel/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-root-tunnel.jpg",
+    "cssVars": []
   },
   {
     "id": "root-network",
@@ -4211,7 +7858,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/37-root-network/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/37-root-network/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-root-network.jpg",
+    "cssVars": []
   },
   {
     "id": "solar-roots",
@@ -4234,7 +7883,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/38-solar-roots/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/38-solar-roots/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-solar-roots.jpg",
+    "cssVars": []
   },
   {
     "id": "soil-particles",
@@ -4257,7 +7908,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/39-soil-particles/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/39-soil-particles/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-soil-particles.jpg",
+    "cssVars": []
   },
   {
     "id": "field-lines",
@@ -4280,7 +7933,9 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/40-field-lines/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/40-field-lines/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-field-lines.jpg",
+    "cssVars": []
   },
   {
     "id": "ink-earth",
@@ -4303,6 +7958,8 @@
       "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/41-ink-earth/script.js"
     },
     "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/41-ink-earth/",
-    "type": "effects"
+    "type": "effects",
+    "thumbnail": "assets/thumbnails/effects-ink-earth.jpg",
+    "cssVars": []
   }
 ]

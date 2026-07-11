@@ -31,6 +31,31 @@ function titleFromSlug(slug) {
   return slug.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 }
 
+function extractCssVars(css) {
+  const rootMatch = css.match(/:root\s*{([^}]*)}/);
+  if (!rootMatch) return [];
+  const body = rootMatch[1];
+  const varRe = /--([a-zA-Z0-9_-]+)\s*:\s*(#[0-9a-fA-F]{3,6})\s*;/g;
+  const found = [];
+  let m;
+  while ((m = varRe.exec(body))) {
+    found.push({ name: `--${m[1]}`, value: m[2] });
+  }
+  const priority = (n) => (/accent/i.test(n) ? 0 : /bg/i.test(n) ? 1 : /text|txt|muted/i.test(n) ? 2 : 3);
+  found.sort((a, b) => priority(a.name) - priority(b.name));
+  // de-dupe by value+name, cap at 6
+  const seen = new Set();
+  const out = [];
+  for (const v of found) {
+    const key = v.name;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(v);
+    if (out.length >= 6) break;
+  }
+  return out;
+}
+
 function extractDescription(html, title) {
   let m = html.match(/class="[a-zA-Z0-9_-]*(?:sub|desc|tagline|caption)[a-zA-Z0-9_-]*"[^>]*>([^<]{6,140})/i);
   if (m) return m[1].trim().replace(/\s+/g, ' ');
@@ -58,8 +83,11 @@ function collect(kind) {
     const category = kind === 'ui' ? categoryForUi(num) : 'effects';
 
     const htmlPath = path.join(dir, folder, 'index.html');
+    const cssPath = path.join(dir, folder, 'style.css');
     let html = fs.readFileSync(htmlPath, 'utf8');
+    const css = fs.readFileSync(cssPath, 'utf8');
     const description = extractDescription(html, title);
+    const cssVars = extractCssVars(css);
 
     const tags = Array.from(new Set([...slug.split('-'), category, kind]));
 
@@ -82,6 +110,8 @@ function collect(kind) {
       },
       pageUrl: `${SITE}/${relBase}/`,
       type: kind,
+      thumbnail: `assets/thumbnails/${kind}-${slug}.jpg`,
+      cssVars,
     };
     entries.push(entry);
 

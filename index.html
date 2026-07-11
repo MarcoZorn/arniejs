@@ -12,7 +12,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap">
-<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
 <style>
   :root{
     --bg-deep:#1a1208; --bg-surface:#241a0e; --bg-card:#2e2010; --bg-subtle:#3d2b14;
@@ -23,162 +23,203 @@
   }
   *{box-sizing:border-box;}
   html,body{height:100%;}
-  body{
-    margin:0;
-    font-family:'Syne', system-ui, sans-serif;
-    background: var(--bg-deep);
-    color: var(--text-primary);
-    overflow-x:hidden;
-  }
+  body{ margin:0; font-family:'Syne', system-ui, sans-serif; background: var(--bg-deep); color: var(--text-primary); overflow-x:hidden; }
   ::-webkit-scrollbar{ width:10px; height:10px; }
   ::-webkit-scrollbar-thumb{ background: var(--bg-subtle); border-radius:8px; }
   ::-webkit-scrollbar-track{ background: transparent; }
+  a{ color:inherit; }
 
-  .pill{ font-size:12.5px; padding:6px 14px; border-radius:999px; border:1px solid var(--border-light); color:var(--text-muted); background:var(--bg-surface); cursor:pointer; transition:all .2s ease; white-space:nowrap; }
+  /* header */
+  header{ display:flex; align-items:center; gap:16px; padding:10px 18px; border-bottom:1px solid var(--border); background:var(--bg-surface); position:sticky; top:0; z-index:30; }
+  .logo{ display:flex; align-items:center; gap:10px; flex-shrink:0; }
+  .logo img{ width:30px; height:30px; }
+  .logo .name{ font-weight:800; font-size:16px; line-height:1; }
+  .logo .tag{ font-size:11px; color:var(--text-muted); margin-top:2px; }
+  #searchInput{ flex:1; max-width:480px; margin:0 auto; background:var(--bg-card); border:1px solid var(--border-light); color:var(--text-primary); border-radius:10px; padding:9px 14px; font-size:13.5px; }
+  #searchInput::placeholder{ color:var(--text-faint); }
+  #searchInput:focus{ outline:none; border-color:var(--accent-sand); }
+  .star-mini{ display:inline-flex; align-items:center; gap:6px; padding:7px 12px; border-radius:999px; background:var(--accent-terra); color:#fff; font-size:12.5px; font-weight:700; white-space:nowrap; flex-shrink:0; }
+  .star-mini:hover{ background:#a8501f; }
+
+  /* layout */
+  .layout{ display:flex; min-height:calc(100vh - 57px); }
+  aside{ width:230px; flex-shrink:0; padding:18px; background:var(--bg-surface); border-right:1px solid var(--border); overflow-y:auto; }
+  main{ flex:1; padding:18px; min-width:0; }
+
+  .sec-label{ font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--text-faint); margin:0 0 8px; }
+  .pill{ font-size:12px; padding:6px 12px; border-radius:999px; border:1px solid var(--border-light); color:var(--text-muted); background:var(--bg-card); cursor:pointer; transition:all .15s ease; }
   .pill:hover{ border-color:var(--accent-sand); color:var(--text-primary); }
   .pill.active{ background:var(--accent-terra); border-color:var(--accent-terra); color:#fff; }
+  .type-row{ display:flex; gap:6px; margin-bottom:20px; }
+  .type-row .pill{ flex:1; text-align:center; }
+  #categoryFilters{ display:flex; flex-direction:column; gap:6px; align-items:flex-start; }
+  #categoryFilters .pill{ width:100%; text-align:left; }
 
-  .card{ background: var(--bg-card); border:1px solid var(--border); border-radius:14px; overflow:hidden; cursor:pointer; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
-  .card:hover{ transform: translateY(-3px); box-shadow: 0 18px 34px -18px rgba(196,98,45,.35); border-color: var(--border-light); }
-  .preview-wrap{ position:relative; aspect-ratio:16/10; background:#120c05; overflow:hidden; }
-  .preview-wrap iframe{ position:absolute; inset:0; width:400%; height:400%; transform:scale(.25); transform-origin:top left; border:0; pointer-events:none; background:#1a1208; }
-  .badge{ font-size:10.5px; letter-spacing:.05em; text-transform:uppercase; padding:3px 9px; border-radius:999px; background:var(--bg-subtle); color:var(--accent-sand); }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px; }
+  .card{ background:var(--bg-card); border:1px solid var(--border); border-radius:14px; overflow:hidden; cursor:pointer; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; position:relative; }
+  .card:hover{ transform: translateY(-3px); box-shadow: 0 16px 30px -16px rgba(196,98,45,.35); border-color: var(--border-light); }
+  .card .thumb-wrap{ aspect-ratio:16/10; background:#120c05; overflow:hidden; }
+  .card img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .card .copy-icon{ position:absolute; top:8px; right:8px; width:30px; height:30px; border-radius:8px; background:rgba(26,18,8,.75); border:1px solid var(--border-light); color:var(--text-primary); display:grid; place-items:center; opacity:0; transition:opacity .15s ease; }
+  .card:hover .copy-icon{ opacity:1; }
+  .card .copy-icon svg{ width:14px; height:14px; }
+  .card .meta{ padding:10px 12px; }
+  .card .name{ font-weight:700; font-size:13.5px; margin-bottom:6px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .badge{ font-size:10px; letter-spacing:.05em; text-transform:uppercase; padding:3px 8px; border-radius:999px; background:var(--bg-subtle); color:var(--accent-sand); }
+  mark{ background: rgba(212,168,90,.35); color:inherit; border-radius:3px; }
 
-  .btn-terra{ background: var(--accent-terra); color:#fff; }
+  /* detail panel */
+  #detailOverlay{ position:fixed; inset:0; background:rgba(0,0,0,.55); backdrop-filter:blur(2px); opacity:0; pointer-events:none; transition:opacity .3s ease; z-index:45; }
+  #detailOverlay.open{ opacity:1; pointer-events:auto; }
+  #detailPanel{ position:fixed; top:0; right:0; height:100%; width:min(600px,100vw); background:var(--bg-surface); border-left:1px solid var(--border-light); transform:translateX(100%); transition:transform .35s cubic-bezier(.2,.8,.2,1); z-index:50; display:flex; flex-direction:column; }
+  #detailPanel.open{ transform:translateX(0); }
+  .panel-head{ display:flex; align-items:center; justify-content:space-between; padding:14px 18px; border-bottom:1px solid var(--border); flex-shrink:0; }
+  .panel-body{ overflow-y:auto; flex:1; }
+  .preview-box{ position:relative; margin:16px 18px 0; border-radius:12px; overflow:hidden; border:1px solid var(--border); aspect-ratio:16/10; background:#120c05; }
+  .preview-box iframe{ width:100%; height:100%; border:0; position:relative; z-index:1; }
+  .skeleton{ position:absolute; inset:0; z-index:2; background:linear-gradient(100deg, var(--bg-card) 30%, var(--bg-subtle) 45%, var(--bg-card) 60%); background-size:200% 100%; animation:shimmer 1.3s linear infinite; display:flex; align-items:center; justify-content:center; }
+  .skeleton span{ font-size:12px; color:var(--text-faint); }
+  @keyframes shimmer{ 0%{background-position:200% 0;} 100%{background-position:-200% 0;} }
+  .skeleton.hidden{ display:none; }
+
+  .vars-row{ display:flex; flex-wrap:wrap; gap:12px; padding:14px 18px; }
+  .var-item{ display:flex; align-items:center; gap:6px; font-size:11px; color:var(--text-muted); background:var(--bg-card); border:1px solid var(--border); border-radius:8px; padding:5px 8px 5px 5px; }
+  .var-item input[type=color]{ width:22px; height:22px; border:0; padding:0; background:none; cursor:pointer; border-radius:5px; overflow:hidden; }
+
+  .tabs{ display:flex; gap:2px; padding:0 18px; border-bottom:1px solid var(--border); }
+  .tab-btn{ padding:9px 14px; font-size:12.5px; font-weight:700; color:var(--text-muted); border-bottom:2px solid transparent; cursor:pointer; }
+  .tab-btn.active{ color:var(--text-primary); border-color:var(--accent-terra); }
+  .code-wrap{ padding:14px 18px; }
+  .code-toolbar{ display:flex; justify-content:flex-end; gap:8px; margin-bottom:8px; }
+  .copy-btn, .dl-btn{ font-size:11.5px; padding:6px 11px; border-radius:7px; background:var(--bg-subtle); color:var(--text-primary); border:1px solid var(--border-light); cursor:pointer; }
+  .copy-btn:hover, .dl-btn:hover{ border-color:var(--accent-sand); }
+  pre[class*="language-"]{ margin:0 !important; max-height:280px; border-radius:10px; font-size:12px !important; }
+
+  .action-row{ display:flex; gap:8px; padding:14px 18px; flex-wrap:wrap; }
+  .btn-terra{ background:var(--accent-terra); color:#fff; border:0; }
   .btn-terra:hover{ background:#a8501f; }
-  .btn-ghost{ border:1.5px solid var(--border-light); color: var(--text-primary); }
-  .btn-ghost:hover{ border-color: var(--accent-sand); }
+  .btn-ghost{ background:transparent; border:1.5px solid var(--border-light); color:var(--text-primary); }
+  .btn-ghost:hover{ border-color:var(--accent-sand); }
+  .action-row a, .action-row button{ font-size:12.5px; font-weight:600; padding:8px 14px; border-radius:9px; cursor:pointer; }
 
-  .star-btn{ background: var(--accent-terra); color:#fff; box-shadow:0 8px 24px -10px rgba(196,98,45,.55); }
-  .star-btn:hover{ background:#a8501f; }
-  .star-btn__count-wrap{ display:inline-flex; align-items:center; gap:4px; margin-left:6px; padding-left:10px; border-left:1px solid rgba(255,255,255,.3); }
-  .star-btn__star-icon{ color:rgba(255,255,255,.7); }
-  .star-btn:hover .star-btn__star-icon{ color:var(--accent-sand); }
+  .cli-hint{ margin:0 18px 18px; padding:12px 14px; border-radius:10px; background:var(--bg-card); border:1px solid var(--border); font-size:12px; color:var(--text-muted); }
+  .cli-hint code{ color:var(--accent-sand); font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+
+  .panel-footer{ padding:14px 18px; text-align:center; font-size:12px; color:var(--text-faint); border-top:1px solid var(--border); }
 
   .star-float{ position:fixed; right:18px; bottom:18px; z-index:40; background:var(--accent-terra); color:#fff; padding:10px 16px; border-radius:999px; font-size:13px; font-weight:600; box-shadow:0 10px 30px -10px rgba(196,98,45,.6); opacity:.92; }
   .star-float:hover{ opacity:1; background:#a8501f; }
 
-  #sidebar{ background: var(--bg-surface); border-right:1px solid var(--border); }
-  #searchInput{ background:var(--bg-card); border:1px solid var(--border-light); color:var(--text-primary); }
-  #searchInput::placeholder{ color:var(--text-faint); }
-  #searchInput:focus{ outline:none; border-color:var(--accent-sand); }
-
-  mark{ background: rgba(212,168,90,.35); color:inherit; border-radius:3px; }
-
-  #detailPanel{ position:fixed; top:0; right:0; height:100%; width:min(560px,100vw); background:var(--bg-surface); border-left:1px solid var(--border-light); transform:translateX(100%); transition:transform .35s cubic-bezier(.2,.8,.2,1); z-index:50; display:flex; flex-direction:column; }
-  #detailPanel.open{ transform:translateX(0); }
-  #detailOverlay{ position:fixed; inset:0; background:rgba(0,0,0,.55); backdrop-filter:blur(2px); opacity:0; pointer-events:none; transition:opacity .3s ease; z-index:45; }
-  #detailOverlay.open{ opacity:1; pointer-events:auto; }
-
-  .tab-btn{ padding:8px 14px; font-size:12.5px; font-weight:600; color:var(--text-muted); border-bottom:2px solid transparent; cursor:pointer; }
-  .tab-btn.active{ color:var(--text-primary); border-color:var(--accent-terra); }
-  pre.code-block{ background:#120c05; border:1px solid var(--border); border-radius:10px; padding:14px; font-size:12px; line-height:1.6; overflow:auto; max-height:280px; white-space:pre-wrap; word-break:break-word; color:var(--text-primary); }
-  .copy-btn{ font-size:11.5px; padding:5px 10px; border-radius:7px; background:var(--bg-subtle); color:var(--text-primary); border:1px solid var(--border-light); }
-  .copy-btn:hover{ border-color:var(--accent-sand); }
+  #emptyState{ display:none; text-align:center; padding:60px 0; color:var(--text-faint); font-size:14px; }
+  #emptyState.show{ display:block; }
+  .toast{ position:fixed; bottom:18px; left:50%; transform:translateX(-50%) translateY(20px); background:var(--bg-card); border:1px solid var(--accent-sand); color:var(--text-primary); padding:9px 18px; border-radius:10px; font-size:13px; opacity:0; pointer-events:none; transition:all .25s ease; z-index:60; }
+  .toast.show{ opacity:1; transform:translateX(-50%) translateY(0); }
 
   @media (prefers-reduced-motion: reduce){ *{ transition:none !important; animation:none !important; } }
   @media (max-width: 860px){
-    #sidebar{ position:static; width:100%; height:auto; overflow:visible; }
-    .layout-wrap{ flex-direction:column; }
+    .layout{ flex-direction:column; }
+    aside{ width:100%; }
+    #searchInput{ max-width:none; }
+  }
+  @media (max-width: 560px){
+    header{ flex-wrap:wrap; row-gap:8px; }
+    .logo .tag{ display:none; }
+    #searchInput{ order:3; flex-basis:100%; max-width:none; }
+    .star-mini{ margin-left:auto; }
+    #detailPanel{ width:100vw; }
   }
 </style>
 </head>
 <body>
 
-<header class="border-b flex items-center justify-between gap-4 px-5 py-3" style="border-color:var(--border); background:var(--bg-surface)">
-  <div class="flex items-center gap-3 min-w-0">
-    <img src="assets/arnie.svg" width="34" height="34" alt="Arnie" class="shrink-0">
-    <div class="min-w-0">
-      <div class="font-extrabold text-lg leading-none">arniejs 🌱</div>
-      <div class="text-xs mt-1 truncate" style="color:var(--text-muted)">180+ vanilla JS components. Grown from scratch.</div>
-    </div>
+<header>
+  <div class="logo">
+    <img src="assets/arnie.svg" alt="Arnie">
+    <div><div class="name">arniejs 🌱</div><div class="tag">180+ vanilla JS components</div></div>
   </div>
-  <div class="flex items-center gap-3 shrink-0">
-    <span class="hidden sm:inline text-xs" style="color:var(--text-faint)" id="componentCount">180 components · 0 dependencies</span>
-    <a href="cdn.html" class="pill">CDN</a>
-    <a href="https://github.com/MarcoZorn/arniejs" target="_blank" rel="noopener"
-       class="star-btn relative inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold">
-      <svg class="h-4 w-4 fill-current" viewBox="0 0 438.549 438.549" aria-hidden="true"><path d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path></svg>
-      <span class="hidden sm:inline">Star on GitHub</span>
-      <span class="star-btn__count-wrap">
-        <svg class="star-btn__star-icon h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"></path></svg>
-        <span id="gh-star-count" class="tabular-nums">&hellip;</span>
-      </span>
-    </a>
-  </div>
+  <input id="searchInput" type="search" placeholder="Search components…">
+  <a href="https://github.com/MarcoZorn/arniejs" target="_blank" rel="noopener" class="star-mini">
+    ⭐ <span id="gh-star-count">&hellip;</span>
+  </a>
 </header>
 
-<div class="layout-wrap flex" style="min-height:calc(100vh - 61px)">
-
-  <!-- SIDEBAR -->
-  <aside id="sidebar" class="w-72 shrink-0 p-5 overflow-y-auto" style="max-height:calc(100vh - 61px)">
-    <input id="searchInput" type="search" placeholder="Search components…" class="w-full rounded-lg px-3 py-2 text-sm mb-5">
-
-    <div class="mb-2 text-xs font-bold tracking-wide uppercase" style="color:var(--text-faint)">Type</div>
-    <div class="flex flex-wrap gap-2 mb-5" id="typeFilters">
+<div class="layout">
+  <aside>
+    <p class="sec-label">Type</p>
+    <div class="type-row" id="typeFilters">
       <button class="pill active" data-type="all">All</button>
       <button class="pill" data-type="ui">UI</button>
       <button class="pill" data-type="effects">Effects</button>
     </div>
-
-    <div class="mb-2 text-xs font-bold tracking-wide uppercase" style="color:var(--text-faint)">Category</div>
-    <div class="flex flex-wrap gap-2" id="categoryFilters"></div>
-
-    <div class="mt-8 pt-6 text-xs leading-relaxed" style="border-top:1px solid var(--border); color:var(--text-muted)">
-      <p class="mb-3">Arnie is a fictional old gardener who never used pesticides, frameworks, or npm. Everything here grows from pure HTML, CSS &amp; JS.</p>
-      <p class="italic" style="color:var(--text-faint)">"My neighbour installed a framework. My tomatoes are fine." — Arnie</p>
-    </div>
+    <p class="sec-label">Category</p>
+    <div id="categoryFilters"></div>
   </aside>
 
-  <!-- MAIN -->
-  <main class="flex-1 p-5">
-    <div class="flex items-center justify-between mb-4">
-      <h1 class="text-sm font-bold" id="resultsHeading" style="color:var(--text-muted)">All components</h1>
-      <span class="text-xs" id="resultsCount" style="color:var(--text-faint)"></span>
+  <main>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <span id="resultsHeading" style="font-size:12.5px;font-weight:700;color:var(--text-muted)">All components</span>
+      <span id="resultsCount" style="font-size:11.5px;color:var(--text-faint)"></span>
     </div>
-    <div id="grid" class="grid gap-4" style="grid-template-columns:repeat(auto-fill,minmax(230px,1fr))"></div>
-    <p id="emptyState" class="hidden text-sm text-center py-16" style="color:var(--text-faint)">No components match that search. Arnie's garden has limits.</p>
+    <div class="grid" id="grid"></div>
+    <p id="emptyState">No components match that search. Arnie's garden has limits.</p>
   </main>
 </div>
 
-<a href="https://github.com/MarcoZorn/arniejs" target="_blank" rel="noopener" class="star-float hidden sm:block">⭐ Star</a>
+<a href="https://github.com/MarcoZorn/arniejs" target="_blank" rel="noopener" class="star-float">⭐ Star</a>
+<div class="toast" id="toast"></div>
 
 <!-- DETAIL PANEL -->
 <div id="detailOverlay"></div>
 <div id="detailPanel">
-  <div class="flex items-center justify-between px-5 py-4" style="border-bottom:1px solid var(--border)">
-    <button id="detailClose" class="text-sm" style="color:var(--text-muted)">&larr; Back</button>
-    <a id="detailOpenFull" target="_blank" class="pill">Open full preview</a>
-  </div>
-  <div class="px-5 pt-4">
-    <h2 id="detailName" class="text-xl font-bold mb-1"></h2>
-    <div class="flex items-center gap-2 mb-3">
+  <div class="panel-head">
+    <button id="detailClose" style="background:none;border:0;color:var(--text-muted);font-size:13px;cursor:pointer">&larr; Back</button>
+    <div>
       <span id="detailBadge" class="badge"></span>
-      <span id="detailDesc" class="text-xs" style="color:var(--text-muted)"></span>
     </div>
   </div>
-  <div class="px-5">
-    <div class="rounded-xl overflow-hidden" style="border:1px solid var(--border); aspect-ratio:16/10; background:#120c05">
-      <iframe id="detailIframe" style="width:100%;height:100%;border:0" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+  <div class="panel-body">
+    <h2 id="detailName" style="margin:14px 18px 4px;font-size:1.2rem"></h2>
+    <p id="detailDesc" style="margin:0 18px 14px;font-size:12.5px;color:var(--text-muted)"></p>
+
+    <div class="preview-box">
+      <div class="skeleton" id="previewSkeleton"><span>growing…</span></div>
+      <iframe id="detailIframe" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+    </div>
+
+    <div id="varsSection">
+      <p class="sec-label" style="padding:14px 18px 0">Customize</p>
+      <div class="vars-row" id="varsRow"></div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab-btn active" data-tab="html">HTML</div>
+      <div class="tab-btn" data-tab="css">CSS</div>
+      <div class="tab-btn" data-tab="js">JS</div>
+      <div class="tab-btn" data-tab="cdn">CDN</div>
+    </div>
+    <div class="code-wrap">
+      <div class="code-toolbar">
+        <button class="copy-btn" id="copyBtn">Copy</button>
+      </div>
+      <pre class="language-markup"><code id="codeBlock"></code></pre>
+    </div>
+
+    <div class="cli-hint">Prefer a CLI? <code id="cliSnippet">npx arniejs add …</code> <button class="copy-btn" id="cliCopyBtn" style="margin-left:6px">Copy</button></div>
+
+    <div class="action-row">
+      <button class="dl-btn btn-terra" id="downloadBtn">⬇ Download .zip</button>
+      <a id="detailOpenFull" target="_blank" class="btn-ghost">Open full preview ↗</a>
     </div>
   </div>
-  <div class="px-5 pt-4 flex items-center gap-1" style="border-bottom:1px solid var(--border)">
-    <div class="tab-btn active" data-tab="html">HTML</div>
-    <div class="tab-btn" data-tab="css">CSS</div>
-    <div class="tab-btn" data-tab="js">JS</div>
-    <div class="tab-btn" data-tab="cdn">CDN</div>
-  </div>
-  <div class="px-5 py-4 overflow-y-auto flex-1">
-    <div class="flex justify-end mb-2">
-      <button id="copyBtn" class="copy-btn">Copy</button>
-    </div>
-    <pre id="codeBlock" class="code-block"></pre>
-  </div>
-  <div class="px-5 py-4 text-center text-xs" style="border-top:1px solid var(--border); color:var(--text-faint)">
+  <div class="panel-footer">
     Useful? ⭐ <a href="https://github.com/MarcoZorn/arniejs" target="_blank" style="color:var(--accent-sand)">Star on GitHub</a> — it keeps Arnie gardening.
   </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
 <script>
 (function () {
   var state = { items: [], type: 'all', categories: new Set(), search: '', active: null };
@@ -189,6 +230,7 @@
   var emptyState = document.getElementById('emptyState');
   var resultsCount = document.getElementById('resultsCount');
   var resultsHeading = document.getElementById('resultsHeading');
+  var toastEl = document.getElementById('toast');
 
   var CATEGORY_LABELS = {
     buttons: 'Buttons', cards: 'Cards', navigation: 'Navigation', forms: 'Forms',
@@ -196,14 +238,26 @@
     layout: 'Layout', misc: 'Misc', effects: 'Effects'
   };
 
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastEl._t);
+    toastEl._t = setTimeout(function () { toastEl.classList.remove('show'); }, 1600);
+  }
+
   function debounce(fn, ms) {
     var t;
     return function () { clearTimeout(t); var args = arguments; t = setTimeout(function () { fn.apply(null, args); }, ms); };
   }
 
+  function cdnSnippet(item) {
+    return '<!-- In <head> -->\n<link rel="stylesheet" href="' + item.cdn.css + '">\n\n' +
+      '<!-- Before </body> -->\n<script src="' + item.cdn.js + '"><' + '/script>\n\n' +
+      '<!-- Then paste the HTML markup from ' + item.files.html + ' -->';
+  }
+
   fetch('registry.json').then(function (r) { return r.json(); }).then(function (data) {
     state.items = data;
-    document.getElementById('componentCount').textContent = data.length + ' components · 0 dependencies';
     buildCategoryFilters();
     applyUrlParams();
     render();
@@ -258,18 +312,19 @@
     return text.slice(0, idx) + '<mark>' + text.slice(idx, idx + state.search.length) + '</mark>' + text.slice(idx + state.search.length);
   }
 
+  var copyIconSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>';
+
   function render() {
     var filtered = state.items.filter(matches);
     resultsCount.textContent = filtered.length + ' / ' + state.items.length;
     resultsHeading.textContent = state.search ? 'Search results' : (state.categories.size ? Array.from(state.categories).map(function(c){return CATEGORY_LABELS[c]||c;}).join(', ') : 'All components');
-    emptyState.classList.toggle('hidden', filtered.length > 0);
+    emptyState.classList.toggle('show', filtered.length === 0);
     grid.innerHTML = filtered.map(function (item) {
       return '<div class="card" data-id="' + item.id + '" data-type="' + item.type + '">' +
-        '<div class="preview-wrap"><iframe src="' + item.files.html + '" title="' + item.name + ' preview" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe></div>' +
-        '<div class="p-3">' +
-          '<div class="flex items-center justify-between gap-2 mb-1">' +
-            '<span class="font-bold text-sm truncate">' + highlight(item.name) + '</span>' +
-          '</div>' +
+        '<button class="copy-icon" data-copy-id="' + item.id + '" data-copy-type="' + item.type + '" title="Copy CDN snippet">' + copyIconSvg + '</button>' +
+        '<div class="thumb-wrap"><img src="' + item.thumbnail + '" alt="' + item.name + '" loading="lazy"></div>' +
+        '<div class="meta">' +
+          '<div class="name">' + highlight(item.name) + '</div>' +
           '<span class="badge">' + (CATEGORY_LABELS[item.category] || item.category) + '</span>' +
         '</div>' +
       '</div>';
@@ -277,6 +332,14 @@
 
     grid.querySelectorAll('.card').forEach(function (card) {
       card.addEventListener('click', function () { openDetail(card.dataset.id, card.dataset.type); });
+    });
+    grid.querySelectorAll('.copy-icon').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var item = state.items.find(function (i) { return i.id === btn.dataset.copyId && i.type === btn.dataset.copyType; });
+        if (!item) return;
+        navigator.clipboard.writeText(cdnSnippet(item)).then(function () { toast('CDN snippet copied'); });
+      });
     });
   }
 
@@ -313,33 +376,85 @@
   var detailPanel = document.getElementById('detailPanel');
   var detailOverlay = document.getElementById('detailOverlay');
   var detailIframe = document.getElementById('detailIframe');
+  var previewSkeleton = document.getElementById('previewSkeleton');
   var detailName = document.getElementById('detailName');
   var detailBadge = document.getElementById('detailBadge');
   var detailDesc = document.getElementById('detailDesc');
   var detailOpenFull = document.getElementById('detailOpenFull');
   var codeBlock = document.getElementById('codeBlock');
+  var varsRow = document.getElementById('varsRow');
+  var varsSection = document.getElementById('varsSection');
+  var cliSnippet = document.getElementById('cliSnippet');
   var activeTab = 'html';
+  var fileCache = {};
 
   function openDetail(id, type) {
     var item = state.items.find(function (i) { return i.id === id && i.type === type; });
     if (!item) return;
     state.active = item;
+    fileCache = {};
     detailName.textContent = item.name;
     detailBadge.textContent = CATEGORY_LABELS[item.category] || item.category;
     detailDesc.textContent = item.description;
-    detailIframe.src = item.files.html;
     detailOpenFull.href = item.files.html;
+    cliSnippet.textContent = 'npx arniejs add ' + item.id;
+
+    previewSkeleton.classList.remove('hidden');
+    detailIframe.removeAttribute('src');
+
     detailPanel.classList.add('open');
     detailOverlay.classList.add('open');
+
+    // lazy-load the iframe only now that the panel is actually open
+    requestAnimationFrame(function () {
+      detailIframe.onload = function () { previewSkeleton.classList.add('hidden'); wireCssVars(item); };
+      detailIframe.src = item.files.html;
+    });
+
+    buildVarsRow(item);
+
     var params = new URLSearchParams(location.search);
     params.set('component', item.id);
     history.replaceState(null, '', '?' + params.toString());
+
+    document.querySelectorAll('.tab-btn').forEach(function (t) { t.classList.toggle('active', t.dataset.tab === 'html'); });
+    activeTab = 'html';
     loadTab('html');
+  }
+
+  function buildVarsRow(item) {
+    if (!item.cssVars || !item.cssVars.length) {
+      varsSection.style.display = 'none';
+      varsRow.innerHTML = '';
+      return;
+    }
+    varsSection.style.display = '';
+    varsRow.innerHTML = item.cssVars.map(function (v) {
+      return '<label class="var-item"><input type="color" data-var="' + v.name + '" value="' + v.value + '">' + v.name.replace('--', '') + '</label>';
+    }).join('');
+    varsRow.querySelectorAll('input[type=color]').forEach(function (input) {
+      input.addEventListener('input', function () {
+        applyVar(input.dataset.var, input.value);
+      });
+    });
+  }
+
+  function applyVar(name, value) {
+    try {
+      var doc = detailIframe.contentDocument;
+      if (doc && doc.documentElement) doc.documentElement.style.setProperty(name, value);
+    } catch (e) { /* cross-origin fallback: no-op */ }
+  }
+
+  function wireCssVars(item) {
+    if (!item.cssVars) return;
+    item.cssVars.forEach(function (v) { applyVar(v.name, v.value); });
   }
 
   function closeDetail() {
     detailPanel.classList.remove('open');
     detailOverlay.classList.remove('open');
+    detailIframe.removeAttribute('src');
     var params = new URLSearchParams(location.search);
     params.delete('component');
     var qs = params.toString();
@@ -359,29 +474,147 @@
     });
   });
 
+  function langFor(tab) { return tab === 'css' ? 'css' : tab === 'js' ? 'javascript' : 'markup'; }
+
   function loadTab(tab) {
     var item = state.active;
     if (!item) return;
+    var pre = codeBlock.parentElement;
+    pre.className = 'language-' + langFor(tab === 'cdn' ? 'html' : tab);
+
     if (tab === 'cdn') {
-      codeBlock.textContent =
-        '<!-- In <head> -->\n<link rel="stylesheet" href="' + item.cdn.css + '">\n\n' +
-        '<!-- Before </body> -->\n<script src="' + item.cdn.js + '"><' + '/script>\n\n' +
-        '<!-- Then paste the HTML markup from ' + item.files.html + ' -->';
+      codeBlock.textContent = cdnSnippet(item);
+      if (window.Prism) Prism.highlightElement(codeBlock);
       return;
     }
     var path = tab === 'html' ? item.files.html : tab === 'css' ? item.files.css : item.files.js;
+    if (fileCache[path]) {
+      codeBlock.textContent = fileCache[path];
+      if (window.Prism) Prism.highlightElement(codeBlock);
+      return;
+    }
     codeBlock.textContent = 'Loading…';
     fetch(path).then(function (r) { return r.text(); }).then(function (text) {
+      fileCache[path] = text;
       codeBlock.textContent = text;
+      if (window.Prism) Prism.highlightElement(codeBlock);
     }).catch(function () { codeBlock.textContent = 'Could not load ' + path; });
   }
 
   document.getElementById('copyBtn').addEventListener('click', function () {
+    navigator.clipboard.writeText(codeBlock.textContent).then(function () { toast('Copied!'); });
+  });
+  document.getElementById('cliCopyBtn').addEventListener('click', function () {
+    navigator.clipboard.writeText(cliSnippet.textContent).then(function () { toast('Copied!'); });
+  });
+
+  // --- Download .zip (vanilla, store-only zip encoder — no dependencies) ---
+  function crc32(buf) {
+    var table = crc32.table || (crc32.table = (function () {
+      var t = [];
+      for (var n = 0; n < 256; n++) {
+        var c = n;
+        for (var k = 0; k < 8; k++) c = c & 1 ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1);
+        t[n] = c >>> 0;
+      }
+      return t;
+    })());
+    var crc = 0xFFFFFFFF;
+    for (var i = 0; i < buf.length; i++) crc = (crc >>> 8) ^ table[(crc ^ buf[i]) & 0xFF];
+    return (crc ^ 0xFFFFFFFF) >>> 0;
+  }
+
+  function makeZip(files) {
+    var encoder = new TextEncoder();
+    var localParts = [], centralParts = [], offset = 0;
+    var dosTime = 0, dosDate = (1 << 5) | 1; // arbitrary fixed timestamp
+
+    files.forEach(function (f) {
+      var nameBytes = encoder.encode(f.name);
+      var data = encoder.encode(f.content);
+      var crc = crc32(data);
+
+      var local = new Uint8Array(30 + nameBytes.length);
+      var dv = new DataView(local.buffer);
+      dv.setUint32(0, 0x04034b50, true);
+      dv.setUint16(4, 20, true);
+      dv.setUint16(6, 0, true);
+      dv.setUint16(8, 0, true); // stored, no compression
+      dv.setUint16(10, dosTime, true);
+      dv.setUint16(12, dosDate, true);
+      dv.setUint32(14, crc, true);
+      dv.setUint32(18, data.length, true);
+      dv.setUint32(22, data.length, true);
+      dv.setUint16(26, nameBytes.length, true);
+      dv.setUint16(28, 0, true);
+      local.set(nameBytes, 30);
+
+      localParts.push(local, data);
+
+      var central = new Uint8Array(46 + nameBytes.length);
+      var cdv = new DataView(central.buffer);
+      cdv.setUint32(0, 0x02014b50, true);
+      cdv.setUint16(4, 20, true);
+      cdv.setUint16(6, 20, true);
+      cdv.setUint16(8, 0, true);
+      cdv.setUint16(10, 0, true);
+      cdv.setUint16(12, dosTime, true);
+      cdv.setUint16(14, dosDate, true);
+      cdv.setUint32(16, crc, true);
+      cdv.setUint32(20, data.length, true);
+      cdv.setUint32(24, data.length, true);
+      cdv.setUint16(28, nameBytes.length, true);
+      cdv.setUint32(42, offset, true);
+      central.set(nameBytes, 46);
+      centralParts.push(central);
+
+      offset += local.length + data.length;
+    });
+
+    var centralStart = offset;
+    var centralSize = centralParts.reduce(function (s, p) { return s + p.length; }, 0);
+
+    var end = new Uint8Array(22);
+    var edv = new DataView(end.buffer);
+    edv.setUint32(0, 0x06054b50, true);
+    edv.setUint16(8, files.length, true);
+    edv.setUint16(10, files.length, true);
+    edv.setUint32(12, centralSize, true);
+    edv.setUint32(16, centralStart, true);
+
+    return new Blob(localParts.concat(centralParts, [end]), { type: 'application/zip' });
+  }
+
+  document.getElementById('downloadBtn').addEventListener('click', function () {
+    var item = state.active;
+    if (!item) return;
     var btn = this;
-    navigator.clipboard.writeText(codeBlock.textContent).then(function () {
-      var orig = btn.textContent;
-      btn.textContent = 'Copied!';
-      setTimeout(function () { btn.textContent = orig; }, 1500);
+    btn.disabled = true;
+    btn.textContent = 'Zipping…';
+    Promise.all([
+      fetch(item.files.html).then(function (r) { return r.text(); }),
+      fetch(item.files.css).then(function (r) { return r.text(); }),
+      fetch(item.files.js).then(function (r) { return r.text(); }),
+    ]).then(function (contents) {
+      var zip = makeZip([
+        { name: item.id + '/index.html', content: contents[0] },
+        { name: item.id + '/style.css', content: contents[1] },
+        { name: item.id + '/script.js', content: contents[2] },
+      ]);
+      var url = URL.createObjectURL(zip);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = item.id + '.zip';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      btn.disabled = false;
+      btn.textContent = '⬇ Download .zip';
+    }).catch(function () {
+      btn.disabled = false;
+      btn.textContent = '⬇ Download .zip';
+      toast('Download failed');
     });
   });
 
