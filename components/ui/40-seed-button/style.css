@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 8vh 20px;
+}
+
+.stage__title { margin: 0 0 6px; font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -.02em; }
+.stage__sub { margin: 0 0 60px; color: var(--text-muted); max-width: 460px; }
+
+.grid { display: grid; place-items: center; min-height: 110px; }
+
+.seed-btn {
+  position: relative;
+  border: 0;
+  border-radius: 12px;
+  padding: 17px 32px;
+  font: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--bg-deep);
+  background: linear-gradient(135deg, var(--accent-sage), var(--accent-moss));
+  cursor: pointer;
+  isolation: isolate;
+  overflow: visible;
+  transition: transform .18s cubic-bezier(.2,.7,.3,1), box-shadow .25s ease;
+}
+.seed-btn:hover { box-shadow: 0 14px 34px -14px rgba(90,122,58,.6); transform: translateY(-2px); }
+.seed-btn:active { transform: translateY(0) scale(.97); }
+.seed-btn:focus-visible { outline: 2px solid var(--accent-sand); outline-offset: 4px; }
+.seed-btn span { position: relative; z-index: 2; }
+
+.seed {
+  position: absolute;
+  left: var(--sx);
+  top: var(--sy);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent-sand);
+  pointer-events: none;
+  z-index: -1;
+  animation: seed-fall var(--dur, .9s) cubic-bezier(.35,.6,.4,1) forwards;
+}
+
+@keyframes seed-fall {
+  0%   { transform: translate(0, 0) scale(1); opacity: 1; }
+  55%  { transform: translate(var(--dx), calc(var(--dy) * 0.55)) scale(.9); opacity: 1; }
+  100% { transform: translate(calc(var(--dx) * 1.15), calc(var(--dy) + 44px)) scale(.4); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seed-btn { transition: none !important; }
+  .seed { display: none; }
+}
