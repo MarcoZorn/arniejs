@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: grid;
+  place-content: center;
+  padding: 8vh 20px;
+}
+
+.stage__title { margin: 0 0 6px; font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -.02em; text-align: center; }
+.stage__sub { margin: 0 0 70px; color: var(--text-muted); text-align: center; }
+
+.polaroids {
+  position: relative;
+  width: min(90vw, 200px);
+  height: 240px;
+  margin: 0 auto;
+}
+
+.polaroid {
+  position: absolute;
+  inset: 0;
+  margin: 0 auto;
+  width: 180px;
+  padding: 12px 12px 26px;
+  background: linear-gradient(160deg, #efe3ca, #e6d7b6);
+  border-radius: 3px;
+  box-shadow: 0 18px 34px -16px rgba(0,0,0,.65);
+  transform: rotate(0deg) translate(0, 0);
+  transition: transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .4s ease;
+  cursor: grab;
+}
+
+.polaroid__photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+.polaroid__photo--a { background: radial-gradient(circle at 30% 30%, #c4622d, #7a3818 80%); }
+.polaroid__photo--b { background: radial-gradient(circle at 70% 30%, #9b6b3a, #5a7a3a 85%); }
+.polaroid__photo--c { background: radial-gradient(circle at 40% 60%, #d4a85a, #a03820 90%); }
+.polaroid__photo--d { background: radial-gradient(circle at 60% 70%, #8fa86e, #3d2b14 85%); }
+
+.polaroid figcaption {
+  font-size: .78rem;
+  color: #4a3620;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Syne', cursive, sans-serif;
+}
+
+.polaroids:hover .polaroid,
+.polaroids.is-active .polaroid {
+  transform: rotate(var(--r)) translate(var(--x), var(--y));
+  box-shadow: 0 26px 44px -18px rgba(0,0,0,.7);
+}
+
+.polaroid:hover {
+  z-index: 5;
+  transform: rotate(0deg) translate(var(--x), calc(var(--y) - 10px)) scale(1.05) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .polaroid { transition: none !important; }
+}
