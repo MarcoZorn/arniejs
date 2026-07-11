@@ -1,0 +1,13 @@
+<!-- description: A status indicator toggling between "Available for work" and "Fully booked" with a pulsing dot. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Availability Badge</h1>
+  <p class="stage__sub">Click the badge to toggle status</p>
+
+  <button type="button" class="availability" id="availabilityBadge" data-state="available" aria-pressed="false">
+    <span class="availability__dot" aria-hidden="true"></span>
+    <span class="availability__label">Available for work</span>
+  </button>
+</main>
+<script src="script.js"></script>
