@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  padding: 12vh 20px;
+}
+
+.stage__title {
+  margin: 0 0 6px;
+  text-align: center;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
+.stage__sub {
+  margin: 0 0 44px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.awards {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.award {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 150px;
+  padding: 24px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.award:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-light);
+  box-shadow: 0 16px 30px -18px rgba(0,0,0,.6);
+}
+
+.award__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--bg-subtle);
+  margin-bottom: 4px;
+}
+
+.award__name {
+  font-weight: 700;
+  font-size: .92rem;
+  text-align: center;
+  letter-spacing: -.01em;
+}
+
+.award__year {
+  color: var(--text-faint);
+  font-size: .78rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .award {
+    transition: none;
+  }
+  .award:hover {
+    transform: none;
+  }
+}
