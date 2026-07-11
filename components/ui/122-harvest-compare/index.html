@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <header class="head">
+    <p class="eyebrow">Harvest Compare</p>
+    <h1>Before &amp; after the harvest</h1>
+    <p class="sub">Drag the handle to reveal how the field changed.</p>
+  </header>
+
+  <div class="compare" id="compare">
+    <div class="compare-media compare-before">
+      <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Field before harvest, full and overgrown">
+        <defs>
+          <linearGradient id="before-sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#3d2b14"/>
+            <stop offset="100%" stop-color="#5a7a3a"/>
+          </linearGradient>
+        </defs>
+        <rect width="600" height="400" fill="url(#before-sky)"/>
+        <g fill="#8fa86e">
+          <ellipse cx="80" cy="330" rx="60" ry="90"/>
+          <ellipse cx="180" cy="320" rx="65" ry="95"/>
+          <ellipse cx="290" cy="335" rx="60" ry="90"/>
+          <ellipse cx="400" cy="320" rx="65" ry="95"/>
+          <ellipse cx="510" cy="330" rx="60" ry="90"/>
+        </g>
+        <g fill="#5a7a3a">
+          <ellipse cx="130" cy="350" rx="70" ry="70"/>
+          <ellipse cx="340" cy="355" rx="80" ry="70"/>
+          <ellipse cx="480" cy="350" rx="70" ry="70"/>
+        </g>
+      </svg>
+      <span class="compare-tag">Before</span>
+    </div>
+    <div class="compare-media compare-after">
+      <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Field after harvest, cleared with neat rows">
+        <defs>
+          <linearGradient id="after-sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#d4a85a"/>
+            <stop offset="100%" stop-color="#9b6b3a"/>
+          </linearGradient>
+        </defs>
+        <rect width="600" height="400" fill="url(#after-sky)"/>
+        <g stroke="#6b5540" stroke-width="4">
+          <line x1="0" y1="260" x2="600" y2="260"/>
+          <line x1="0" y1="300" x2="600" y2="300"/>
+          <line x1="0" y1="340" x2="600" y2="340"/>
+          <line x1="0" y1="380" x2="600" y2="380"/>
+        </g>
+        <rect x="0" y="220" width="600" height="40" fill="#c4622d" opacity="0.5"/>
+      </svg>
+      <span class="compare-tag">After</span>
+    </div>
+
+    <div class="compare-handle" id="compareHandle" role="slider" tabindex="0" aria-label="Comparison slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+      <span class="handle-line"></span>
+      <span class="handle-grip">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 3L2 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10 3L14 8L10 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="handle-line"></span>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
