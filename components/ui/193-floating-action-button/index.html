@@ -1,0 +1,33 @@
+<!-- description: A corner floating action button that expands into a fan of sub-action buttons on click. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Floating action button</h1>
+  <p class="stage__sub">Click the plus button in the corner to reveal quick actions.</p>
+
+  <div class="fab-wrap">
+    <div class="fab-actions" id="fabActions">
+      <button class="fab-action" type="button" data-label="Add photo" style="--i:0">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
+        <span class="fab-action__tip">Add photo</span>
+      </button>
+      <button class="fab-action" type="button" data-label="New note" style="--i:1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+        <span class="fab-action__tip">New note</span>
+      </button>
+      <button class="fab-action" type="button" data-label="Upload file" style="--i:2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        <span class="fab-action__tip">Upload file</span>
+      </button>
+      <button class="fab-action" type="button" data-label="Invite" style="--i:3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+        <span class="fab-action__tip">Invite</span>
+      </button>
+    </div>
+
+    <button class="fab-main" id="fabMain" type="button" aria-expanded="false" aria-label="Open quick actions">
+      <span class="fab-main__icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</main>
+<script src="script.js"></script>
