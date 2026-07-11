@@ -1,0 +1,34 @@
+<!-- description: A visual cassette tape with spinning reels that animate when the play button is toggled. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Side A</h1>
+  <p class="stage__sub">Press play to spin the reels.</p>
+
+  <div class="deck">
+    <div class="cassette" data-playing="false">
+      <div class="cassette__label">
+        <span class="cassette__label-title">MIXTAPE 90</span>
+        <span class="cassette__label-sub">TYPE II &middot; HIGH BIAS</span>
+      </div>
+      <div class="cassette__window">
+        <div class="reel reel--left">
+          <div class="reel__hub"></div>
+        </div>
+        <div class="reel reel--right">
+          <div class="reel__hub"></div>
+        </div>
+        <div class="cassette__tape-path"></div>
+      </div>
+      <div class="cassette__screws">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <button class="play-btn" type="button" aria-pressed="false">
+      <span class="play-btn__icon" aria-hidden="true"></span>
+      <span class="play-btn__label">Play</span>
+    </button>
+  </div>
+</main>
+<script src="script.js"></script>
