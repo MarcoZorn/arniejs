@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  padding: 8vh 20px;
+}
+
+.stage {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.stage__title {
+  margin: 0 0 20px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -.02em;
+}
+
+.stage__body {
+  margin-top: 28px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: .95rem;
+}
+
+.byline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.byline__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 700;
+  font-size: .82rem;
+  flex-shrink: 0;
+}
+
+.byline__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.byline__name {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: .92rem;
+  color: var(--text-primary);
+}
+
+.byline__follow {
+  padding: 3px 11px;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+  background: transparent;
+  color: var(--accent-sand);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: .72rem;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.byline__follow:hover {
+  border-color: var(--accent-sand);
+  background: var(--bg-subtle);
+}
+
+.byline__follow:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 2px;
+}
+
+.byline__follow[aria-pressed="true"] {
+  background: var(--accent-moss);
+  border-color: var(--accent-sage);
+  color: var(--text-primary);
+}
+
+.byline__meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .78rem;
+  color: var(--text-faint);
+}
+
+.byline__dot {
+  color: var(--text-faint);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .byline__follow {
+    transition: none !important;
+    animation: none !important;
+  }
+}
