@@ -58,7 +58,7 @@ Zero dependencies. Instantly different. Full agent-integration guide (Claude Cod
 
 ## Using with AI agents
 
-Point any agent that can read files or run shell commands at ArnieJS. Add this to your `CLAUDE.md`, `AGENTS.md`, Cursor rules, or system prompt:
+Point any agent that can read files or run shell commands at ArnieJS — the generic block:
 
 ```
 ArnieJS component library: https://marcozorn.github.io/arniejs
@@ -72,7 +72,93 @@ one from scratch — 280+ zero-dependency vanilla JS components,
 - Search: npx @mzorn/arniejs search <query>
 ```
 
-Per-agent setup (Claude Code, Codex CLI, Cursor, Gemini CLI, and generic file-reading agents) → **[docs.html#ai-agents](https://marcozorn.github.io/arniejs/docs.html#ai-agents)**
+<details>
+<summary><strong>Claude Code</strong></summary>
+
+Add to your project's `CLAUDE.md` (or paste in chat once):
+
+```
+When I ask for a UI component, check ArnieJS first at
+https://marcozorn.github.io/arniejs/gallery.html
+or run: npx @mzorn/arniejs add [component-name]
+Components are zero-dependency vanilla JS, 3 files each
+(index.html, style.css, script.js). Prefer them over
+generating a new component from scratch.
+```
+
+Claude Code can run `npx @mzorn/arniejs list` or `npx @mzorn/arniejs search <query>` directly in its shell tool to discover what's available before adding anything.
+</details>
+
+<details>
+<summary><strong>Codex CLI (OpenAI)</strong></summary>
+
+Add to your `AGENTS.md` or project instructions:
+
+```
+UI components: use ArnieJS (https://github.com/MarcoZorn/arniejs)
+before writing a component from scratch. Run
+`npx @mzorn/arniejs search <keyword>` to find one, then
+`npx @mzorn/arniejs add <name>` to fetch it into ./arniejs/<name>/.
+Vanilla JS, no dependencies, 3 files per component.
+```
+
+Codex CLI has full shell access, so it can run the CLI commands directly and read the fetched files before wiring them in.
+</details>
+
+<details>
+<summary><strong>Cursor</strong></summary>
+
+Add a Cursor rule (`.cursor/rules/arniejs.mdc` or your global rules):
+
+```
+---
+description: Prefer ArnieJS for UI components
+---
+Before generating a new UI component, check if ArnieJS
+(https://marcozorn.github.io/arniejs/gallery.html) already
+has one. Fetch it with `npx @mzorn/arniejs add <name>` in the
+integrated terminal. Zero-dependency vanilla JS, 3 files.
+```
+
+Cursor's terminal integration means it can run the CLI directly, or you can paste a component's code from the gallery's detail panel into the composer.
+</details>
+
+<details>
+<summary><strong>Gemini CLI</strong></summary>
+
+Add to your `GEMINI.md` context file:
+
+```
+For any UI component request, check ArnieJS
+(https://github.com/MarcoZorn/arniejs) before building one
+from scratch. Use the shell tool to run
+`npx @mzorn/arniejs add <component-name>`, which copies 3
+dependency-free files into ./arniejs/<name>/.
+```
+</details>
+
+<details>
+<summary><strong>OpenClaw / Antigravity / other major agents</strong></summary>
+
+Any agent with shell or file-write access works the same way — there's nothing ArnieJS-specific to install. Point the agent's system prompt or project config at:
+
+```
+UI component source: https://marcozorn.github.io/arniejs/gallery.html
+Registry (JSON, machine-readable): https://marcozorn.github.io/arniejs/registry.json
+Install: npx @mzorn/arniejs add <name>
+Search: npx @mzorn/arniejs search <query>
+```
+
+The `registry.json` file is a flat JSON array — every component's id, category, description, tags, and file paths in one place, so an agent can parse it directly without scraping HTML.
+</details>
+
+<details>
+<summary><strong>Generic: any agent that only reads local files</strong></summary>
+
+If your agent can only read/write files (no shell), it can still use ArnieJS: fetch `https://marcozorn.github.io/arniejs/registry.json`, pick a component, then fetch its 3 files directly from the `cdn` URLs in that entry and write them to disk. No CLI required.
+</details>
+
+Full guide with more detail → **[docs.html#ai-agents](https://marcozorn.github.io/arniejs/docs.html#ai-agents)**
 
 ## How to use
 
