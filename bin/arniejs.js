@@ -76,17 +76,47 @@ async function list() {
   }
 }
 
+async function search(query) {
+  if (!query) {
+    console.error('Usage: npx arniejs search <query>');
+    process.exit(1);
+  }
+  let registry;
+  try {
+    registry = await fetchJson(`${RAW}/registry.json`);
+  } catch (err) {
+    console.error('Could not reach the ArnieJS registry:', err.message);
+    process.exit(1);
+  }
+  const q = query.toLowerCase();
+  const matches = registry.filter((e) =>
+    e.id.includes(q) ||
+    e.name.toLowerCase().includes(q) ||
+    e.description.toLowerCase().includes(q) ||
+    e.tags.some((t) => t.includes(q))
+  );
+  if (!matches.length) {
+    console.log(`No components match "${query}".`);
+    return;
+  }
+  console.log(`${matches.length} match(es) for "${query}":\n`);
+  matches.forEach((e) => console.log(`  ${e.id}  (${e.category})  — ${e.description}`));
+  console.log(`\nPlant one with: npx arniejs add <name>`);
+}
+
 function help() {
   console.log(`ArnieJS CLI — copy vanilla JS components straight into your project.
 
 Usage:
   npx arniejs add <component-name>   Plant a component in ./arniejs/<name>/
   npx arniejs list                   List every component, grouped by category
+  npx arniejs search <query>         Search components by name, tag, or description
   npx arniejs help                   Show this message
 
 Examples:
   npx arniejs add bloom-button
-  npx arniejs add sand-simulation
+  npx arniejs search cursor
+  npx arniejs search ecommerce
 
 No dependencies. No build step. Just files.`);
 }
@@ -96,5 +126,6 @@ const [, , cmd, arg] = process.argv;
 (async () => {
   if (cmd === 'add') await add(arg);
   else if (cmd === 'list') await list();
+  else if (cmd === 'search') await search(arg);
   else help();
 })();
