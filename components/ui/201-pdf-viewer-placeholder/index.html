@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <div class="pdf-viewer" id="pdfViewer" data-state="loading">
+    <div class="pdf-viewer__skeleton" id="skeleton" aria-hidden="true">
+      <div class="pdf-viewer__page">
+        <span class="pdf-viewer__line pdf-viewer__line--title"></span>
+        <span class="pdf-viewer__line"></span>
+        <span class="pdf-viewer__line"></span>
+        <span class="pdf-viewer__line pdf-viewer__line--short"></span>
+      </div>
+      <p class="pdf-viewer__loading-text">Loading document&hellip;</p>
+    </div>
+
+    <div class="pdf-viewer__fallback" id="fallback" hidden>
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+        <path d="M14 2v6h6" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+        <text x="7" y="17" font-size="6" fill="currentColor" font-family="sans-serif" font-weight="700">PDF</text>
+      </svg>
+      <p class="pdf-viewer__fallback-text">Preview isn&rsquo;t available in this embedded view.</p>
+      <a class="pdf-viewer__link" id="openLink" href="https://example.com/sample.pdf" target="_blank" rel="noopener noreferrer">
+        Open in new tab
+      </a>
+    </div>
+  </div>
+
+  <p class="demo__note">Simulated load, then falls back to an &ldquo;open in new tab&rdquo; link.</p>
+</main>
+<script src="script.js"></script>
