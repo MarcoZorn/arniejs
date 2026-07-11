@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <div class="table-head">
+    <h1 class="title">Harvest Ledger</h1>
+    <p class="subtitle">Season records &middot; click a column to sort</p>
+  </div>
+
+  <div class="table-scroll">
+    <table class="field-table" id="fieldTable">
+      <thead>
+        <tr>
+          <th data-key="crop" data-type="string">
+            <button class="th-btn" type="button">
+              <span>Crop</span>
+              <span class="sort-icon" aria-hidden="true"></span>
+            </button>
+          </th>
+          <th data-key="region" data-type="string">
+            <button class="th-btn" type="button">
+              <span>Region</span>
+              <span class="sort-icon" aria-hidden="true"></span>
+            </button>
+          </th>
+          <th data-key="yield" data-type="number">
+            <button class="th-btn" type="button">
+              <span>Yield (t/ha)</span>
+              <span class="sort-icon" aria-hidden="true"></span>
+            </button>
+          </th>
+          <th data-key="area" data-type="number">
+            <button class="th-btn" type="button">
+              <span>Area (ha)</span>
+              <span class="sort-icon" aria-hidden="true"></span>
+            </button>
+          </th>
+          <th data-key="date" data-type="date">
+            <button class="th-btn" type="button">
+              <span>Harvest Date</span>
+              <span class="sort-icon" aria-hidden="true"></span>
+            </button>
+          </th>
+          <th data-key="quality" data-type="string">
+            <button class="th-btn" type="button">
+              <span>Quality</span>
+              <span class="sort-icon" aria-hidden="true"></span>
+            </button>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- rows injected by script.js -->
+      </tbody>
+    </table>
+  </div>
+
+  <p class="table-foot" id="tableFoot"></p>
+</main>
+<script src="script.js"></script>
