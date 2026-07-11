@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <div class="card">
+    <p class="eyebrow">Earth Mode</p>
+    <h1>Day / Night Toggle</h1>
+    <p class="sub">Flip between sun-warmed daylight and deep earthy night, straight from the soil.</p>
+
+    <button class="toggle" id="earthToggle" type="button" role="switch" aria-checked="false" aria-label="Toggle day and night mode">
+      <span class="toggle-track">
+        <span class="toggle-stars">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </span>
+        <span class="toggle-thumb">
+          <svg viewBox="0 0 40 40" width="26" height="26" aria-hidden="true">
+            <defs>
+              <clipPath id="moonClip">
+                <path id="moonPath" d="M20,2 a18,18 0 1 0 0.0001,0" />
+              </clipPath>
+            </defs>
+            <circle id="sunCore" cx="20" cy="20" r="12" />
+            <g id="sunRays" stroke-linecap="round">
+              <line x1="20" y1="2" x2="20" y2="8"></line>
+              <line x1="20" y1="32" x2="20" y2="38"></line>
+              <line x1="2" y1="20" x2="8" y2="20"></line>
+              <line x1="32" y1="20" x2="38" y2="20"></line>
+              <line x1="6.3" y1="6.3" x2="10.5" y2="10.5"></line>
+              <line x1="29.5" y1="29.5" x2="33.7" y2="33.7"></line>
+              <line x1="6.3" y1="33.7" x2="10.5" y2="29.5"></line>
+              <line x1="29.5" y1="10.5" x2="33.7" y2="6.3"></line>
+            </g>
+            <circle id="moonBite" cx="27" cy="14" r="10" />
+          </svg>
+        </span>
+      </span>
+      <span class="toggle-label" id="toggleLabel">Day</span>
+    </button>
+
+    <div class="soil-strip" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
