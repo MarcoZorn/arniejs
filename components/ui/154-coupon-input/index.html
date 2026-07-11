@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo-wrap">
+  <div class="cp-card">
+    <label class="cp-label" for="cp-code">Discount code</label>
+    <form class="cp-form" novalidate>
+      <div class="cp-row">
+        <input class="cp-input" id="cp-code" name="code" type="text" placeholder="Enter code" autocomplete="off" spellcheck="false">
+        <button class="cp-btn" type="submit">Apply</button>
+      </div>
+      <p class="cp-message cp-message-success" role="status" hidden>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>Code applied — <strong class="cp-discount-amount">15%</strong> off your order</span>
+      </p>
+      <p class="cp-message cp-message-error" role="alert" hidden>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+        <span>That code isn't valid or has expired</span>
+      </p>
+    </form>
+    <p class="cp-hint">Try <code>SAVE15</code> or <code>WELCOME10</code></p>
+  </div>
+</main>
+<script src="script.js"></script>
