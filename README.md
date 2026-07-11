@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/assets/arnie.svg" width="120" alt="Arnie the gardener" />
+  <img src="assets/arnie.svg" width="120" alt="Arnie the gardener" />
 
   <h1>ArnieJS 🌱</h1>
 
@@ -89,6 +89,26 @@ arniejs/
 
 No configuration. No `npm install`. No `.env` file.
 Arnie would say: *"If it needs a config file, it's not ready yet."*
+
+---
+
+## Option B — CDN (two lines, no file copying)
+
+```html
+<!-- In <head> -->
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/31-bloom-button/style.css">
+
+<!-- Before </body> -->
+<script
+  src="https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/31-bloom-button/script.js">
+</script>
+```
+
+Then paste the HTML markup from the component's `index.html`.
+Replace `31-bloom-button` with any component folder name. See [cdn.html](https://marcozorn.github.io/arniejs/cdn.html) for the full pattern.
+
+Arnie doesn't love CDNs (he prefers to grow his own), but he understands not everyone has time to dig in the soil.
 
 ---
 
