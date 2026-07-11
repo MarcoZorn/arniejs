@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ArnieJS — Docs</title>
-<meta name="description" content="How to use ArnieJS — copy files, CDN, or the npx arniejs CLI. Garden rules and contributing guide.">
+<meta name="description" content="Full ArnieJS documentation — installation, AI coding agent integration, component reference, CDN, CLI, contributing, and FAQ.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap">
 <style>
@@ -27,23 +27,44 @@
   .site-nav a{ font-size:13px; font-weight:600; color:var(--text-muted); text-decoration:none; }
   .site-nav a:hover, .site-nav a.current{ color:var(--accent-sand); }
 
-  .wrap{ max-width:820px; margin:0 auto; padding:56px 24px 80px; }
+  .layout{ display:flex; max-width:1100px; margin:0 auto; align-items:flex-start; }
+  aside.side-toc{ width:220px; flex-shrink:0; position:sticky; top:76px; padding:56px 0 80px 24px; }
+  aside.side-toc .group{ margin-bottom:22px; }
+  aside.side-toc .group-label{ font-size:10.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--text-faint); margin-bottom:8px; }
+  aside.side-toc a{ display:block; font-size:13px; color:var(--text-muted); text-decoration:none; padding:3px 0; }
+  aside.side-toc a:hover{ color:var(--accent-sand); }
+
+  .wrap{ flex:1; min-width:0; max-width:780px; padding:56px 24px 100px; }
   h1{ font-size:2rem; margin-bottom:8px; }
-  p.lead{ color:var(--text-muted); margin-bottom:44px; }
-  h2{ font-size:1.3rem; margin:44px 0 16px; scroll-margin-top:80px; }
-  h2:first-of-type{ margin-top:0; }
+  p.lead{ color:var(--text-muted); margin-bottom:20px; }
+  h2{ font-size:1.4rem; margin:52px 0 16px; scroll-margin-top:80px; padding-top:8px; border-top:1px solid var(--border); }
+  h2:first-of-type{ margin-top:0; border-top:0; padding-top:0; }
+  h3{ font-size:1rem; margin-bottom:10px; scroll-margin-top:80px; }
   .card{ background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:22px 24px; margin-bottom:18px; }
-  .card h3{ font-size:1rem; margin-bottom:10px; }
-  pre{ background:#120c05; border:1px solid var(--border); border-radius:10px; padding:14px 16px; overflow-x:auto; font-size:12.5px; line-height:1.6; }
+  .card p{ font-size:14px; color:var(--text-muted); line-height:1.6; margin-bottom:10px; }
+  .card p:last-child{ margin-bottom:0; }
+  pre{ background:#120c05; border:1px solid var(--border); border-radius:10px; padding:14px 16px; overflow-x:auto; font-size:12.5px; line-height:1.6; margin:10px 0; }
   code{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
   p code, li code{ background:var(--bg-subtle); padding:1px 6px; border-radius:5px; font-size:.9em; color:var(--accent-sand); }
-  ul{ padding-left:20px; font-size:14px; color:var(--text-muted); line-height:1.8; }
+  ul, ol{ padding-left:20px; font-size:14px; color:var(--text-muted); line-height:1.8; }
   ul.rules{ list-style:none; padding-left:0; display:grid; gap:8px; }
-  .toc{ display:flex; flex-wrap:wrap; gap:10px 18px; margin-bottom:40px; font-size:13px; }
-  .toc a{ color:var(--accent-sand); text-decoration:none; }
-  .toc a:hover{ text-decoration:underline; }
   .note{ font-size:13px; color:var(--text-faint); font-style:italic; margin-top:8px; }
+  .agent-card summary{ cursor:pointer; font-weight:700; font-size:.98rem; list-style:none; display:flex; align-items:center; gap:8px; }
+  .agent-card summary::-webkit-details-marker{ display:none; }
+  .agent-card summary::before{ content:'▸'; color:var(--accent-sand); transition:transform .15s ease; }
+  .agent-card[open] summary::before{ transform:rotate(90deg); }
+  .agent-card{ margin-bottom:14px; }
+  .faq-item summary{ cursor:pointer; font-weight:700; font-size:.95rem; list-style:none; }
+  .faq-item summary::-webkit-details-marker{ display:none; }
+  .faq-item p{ margin-top:10px; }
   footer{ text-align:center; padding:36px 24px; color:var(--text-faint); font-size:13px; border-top:1px solid var(--border); }
+
+  @media (prefers-reduced-motion: reduce){ * { transition:none !important; animation:none !important; } }
+  @media (max-width: 900px){
+    .layout{ flex-direction:column; }
+    aside.side-toc{ position:static; width:100%; padding:24px 24px 0; }
+    aside.side-toc .group{ display:inline-block; margin-right:20px; }
+  }
 </style>
 </head>
 <body>
@@ -60,76 +81,267 @@
   </nav>
 </header>
 
-<div class="wrap">
-  <h1>Docs</h1>
-  <p class="lead">Everything you need to plant a component in your project.</p>
+<div class="layout">
+  <aside class="side-toc">
+    <div class="group">
+      <div class="group-label">Getting started</div>
+      <a href="#what-is-arniejs">What is ArnieJS</a>
+      <a href="#installation">Installation</a>
+      <a href="#file-structure">File structure</a>
+    </div>
+    <div class="group">
+      <div class="group-label">AI agents</div>
+      <a href="#ai-agents">Using with AI agents</a>
+      <a href="#skill-prompt">The ArnieJS skill prompt</a>
+    </div>
+    <div class="group">
+      <div class="group-label">Reference</div>
+      <a href="#component-reference">Components</a>
+      <a href="#cdn-reference">CDN</a>
+      <a href="#cli-reference">CLI</a>
+    </div>
+    <div class="group">
+      <div class="group-label">More</div>
+      <a href="#contributing">Contributing</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </aside>
 
-  <div class="toc">
-    <a href="#how-to-use">How to use</a>
-    <a href="#cli">CLI</a>
-    <a href="#cdn">CDN</a>
-    <a href="#rules">Garden rules</a>
-    <a href="#contributing">Contributing</a>
-  </div>
+  <div class="wrap">
+    <h1>Docs</h1>
+    <p class="lead">Everything you need to plant a component in your project — or point your AI agent at the garden.</p>
 
-  <h2 id="how-to-use">How to use</h2>
+    <!-- GETTING STARTED -->
+    <h2 id="what-is-arniejs">What is ArnieJS</h2>
+    <div class="card">
+      <p>ArnieJS is a collection of 280+ vanilla JS UI components and visual effects. Every component is exactly 3 files — <code>index.html</code>, <code>style.css</code>, <code>script.js</code> — with zero npm dependencies and zero build step. You copy the files, or fetch them with a CLI, or link them from a CDN. That's the whole model.</p>
+      <p>No framework lock-in. No version drift. A component you copy today still works in ten years, because it's just HTML, CSS, and JS — the same three things browsers have always run.</p>
+    </div>
 
-  <div class="card">
-    <h3>1. Copy the files</h3>
-    <p style="font-size:14px;color:var(--text-muted);margin-bottom:10px">Every component is exactly 3 files. Grab them from the <a href="gallery.html" style="color:var(--accent-sand)">gallery</a> and drop them in your project.</p>
-    <pre><code>components/ui/31-bloom-button/
+    <h2 id="installation">Installation</h2>
+    <div class="card">
+      <h3>1. Copy the files</h3>
+      <p>Grab a component from the <a href="gallery.html" style="color:var(--accent-sand)">gallery</a> and drop the 3 files into your project.</p>
+      <pre><code>components/ui/31-bloom-button/
 ├── index.html
 ├── style.css
 └── script.js</code></pre>
-  </div>
+    </div>
+    <div class="card">
+      <h3>2. CLI — <code>npx arniejs add</code></h3>
+      <p>Fetches the 3 files straight from GitHub into <code>./arniejs/&lt;name&gt;/</code>. No install, no <code>node_modules</code>.</p>
+      <pre><code>npx arniejs add bloom-button</code></pre>
+    </div>
+    <div class="card">
+      <h3>3. CDN — two lines, no file copying</h3>
+      <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/31-bloom-button/style.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/31-bloom-button/script.js"&gt;&lt;/script&gt;</code></pre>
+      <p>Then paste the HTML markup from the component's <code>index.html</code>. Full reference → <a href="#cdn-reference" style="color:var(--accent-sand)">jump to CDN section</a>.</p>
+    </div>
 
-  <div class="card" id="cli">
-    <h3>2. CLI — the shadcn model, for vanilla JS</h3>
-    <p style="font-size:14px;color:var(--text-muted);margin-bottom:10px">Fetches the 3 files straight from GitHub into <code>./arniejs/&lt;name&gt;/</code>. No install, no <code>node_modules</code>.</p>
-    <pre><code>npx arniejs add bloom-button
-npx arniejs list        <span style="color:var(--text-faint)"># see every component, by category</span>
-npx arniejs help</code></pre>
-    <p class="note">Source: <a href="https://github.com/MarcoZorn/arniejs/blob/main/bin/arniejs.js" style="color:var(--accent-sand)">bin/arniejs.js</a></p>
-  </div>
+    <h2 id="file-structure">File structure explained</h2>
+    <div class="card">
+      <p><code>index.html</code> — the markup, as a standalone document. Includes its own <code>&lt;link&gt;</code> to <code>style.css</code> and <code>&lt;script&gt;</code> tag for <code>script.js</code>, so it also works opened directly in a browser.</p>
+      <p><code>style.css</code> — scoped to that component's classes, plus a shared set of CSS custom properties (<code>--accent-terra</code>, <code>--bg-deep</code>, <code>--text-primary</code>, etc.) you can override to reskin it.</p>
+      <p><code>script.js</code> — a single IIFE (immediately-invoked function expression), so it never leaks globals or collides with other scripts on your page. Checks <code>prefers-reduced-motion</code> before running any animation.</p>
+    </div>
 
-  <div class="card" id="cdn">
-    <h3>3. CDN — two lines, no file copying</h3>
-    <pre><code>&lt;!-- In your &lt;head&gt;: --&gt;
-&lt;link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/31-bloom-button/style.css"&gt;
+    <!-- AI AGENTS -->
+    <h2 id="ai-agents">Using with AI coding agents</h2>
+    <div class="card">
+      <p>ArnieJS is built to be the thing your AI agent reaches for instead of generating a generic component from scratch (or reaching for the same shadcn button everyone else gets). Point any agent that can read files or run shell commands at ArnieJS and it can browse, fetch, and drop in components on its own.</p>
+    </div>
 
-&lt;!-- Before &lt;/body&gt;: --&gt;
-&lt;script src="https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/31-bloom-button/script.js"&gt;&lt;/script&gt;
+    <details class="agent-card card" open>
+      <summary>Claude Code</summary>
+      <p style="margin-top:12px">Add this to your project's <code>CLAUDE.md</code> (or paste it in chat once):</p>
+      <pre><code>When I ask for a UI component, check ArnieJS first at
+https://marcozorn.github.io/arniejs/gallery.html
+or run: npx arniejs add [component-name]
+Components are zero-dependency vanilla JS, 3 files each
+(index.html, style.css, script.js). Prefer them over
+generating a new component from scratch.</code></pre>
+      <p>Claude Code can run <code>npx arniejs list</code> or <code>npx arniejs search &lt;query&gt;</code> directly in its shell tool to discover what's available before adding anything.</p>
+    </details>
 
-&lt;!-- In your &lt;body&gt;: paste the HTML from the component's index.html --&gt;</code></pre>
-    <p style="font-size:13px;color:var(--text-muted);margin-top:10px">Replace <code>31-bloom-button</code> with any component folder name. Full reference → <a href="cdn.html" style="color:var(--accent-sand)">cdn.html</a></p>
-    <p class="note">Pin to a release tag (e.g. <code>@v1.0.0</code>) in production so updates never break you unexpectedly.</p>
-  </div>
+    <details class="agent-card card">
+      <summary>Codex CLI (OpenAI)</summary>
+      <p style="margin-top:12px">Add to your <code>AGENTS.md</code> or project instructions:</p>
+      <pre><code>UI components: use ArnieJS (https://github.com/MarcoZorn/arniejs)
+before writing a component from scratch. Run
+`npx arniejs search <keyword>` to find one, then
+`npx arniejs add <name>` to fetch it into ./arniejs/<name>/.
+Vanilla JS, no dependencies, 3 files per component.</code></pre>
+      <p>Codex CLI has full shell access, so it can run the CLI commands directly and read the fetched files before wiring them in.</p>
+    </details>
 
-  <h2 id="rules">Arnie's garden rules</h2>
-  <div class="card">
-    <ul class="rules">
-      <li style="color:var(--accent-sage)">✅ Zero dependencies — Arnie grows his own</li>
-      <li style="color:var(--accent-sage)">✅ Zero build step — seeds don't need Webpack</li>
-      <li style="color:var(--accent-sage)">✅ 3 files exactly — HTML + CSS + JS. That's it.</li>
-      <li style="color:var(--accent-sage)">✅ Works anywhere — WordPress, Webflow, static HTML, React</li>
-      <li style="color:var(--accent-sage)">✅ prefers-reduced-motion — Arnie respects his elderly visitors</li>
-      <li style="color:var(--accent-sage)">✅ Touch + Pointer events — the garden is mobile-first</li>
-      <li style="color:var(--accent-rust)">❌ No jQuery — Arnie doesn't use fertiliser</li>
-      <li style="color:var(--accent-rust)">❌ No GSAP — he doesn't trust the chemical industry</li>
-      <li style="color:var(--accent-rust)">❌ No React — he grows components, not factories</li>
-      <li style="color:var(--accent-rust)">❌ No npm install — he saves his own seeds</li>
-    </ul>
-  </div>
+    <details class="agent-card card">
+      <summary>Cursor</summary>
+      <p style="margin-top:12px">Add a Cursor rule (<code>.cursor/rules/arniejs.mdc</code> or your global rules):</p>
+      <pre><code>---
+description: Prefer ArnieJS for UI components
+---
+Before generating a new UI component, check if ArnieJS
+(https://marcozorn.github.io/arniejs/gallery.html) already
+has one. Fetch it with `npx arniejs add <name>` in the
+integrated terminal. Zero-dependency vanilla JS, 3 files.</code></pre>
+      <p>Cursor's terminal integration means it can run the CLI directly, or you can paste a component's code from the gallery's detail panel into the composer.</p>
+    </details>
 
-  <h2 id="contributing">Contributing</h2>
-  <div class="card">
-    <ol style="padding-left:20px;font-size:14px;color:var(--text-muted);line-height:1.9">
-      <li>Fork the garden</li>
-      <li>Create <code>components/ui/[NN]-[your-component]/</code> with 3 files, earthy palette</li>
-      <li>Open a PR with a screenshot or GIF</li>
-    </ol>
-    <p style="font-size:13px;color:var(--text-faint);margin-top:12px;font-style:italic">npm dependency in your PR? Arnie won't be angry. Just quietly disappointed.</p>
+    <details class="agent-card card">
+      <summary>Gemini CLI</summary>
+      <p style="margin-top:12px">Add to your <code>GEMINI.md</code> context file:</p>
+      <pre><code>For any UI component request, check ArnieJS
+(https://github.com/MarcoZorn/arniejs) before building one
+from scratch. Use the shell tool to run
+`npx arniejs add <component-name>`, which copies 3
+dependency-free files into ./arniejs/<name>/.</code></pre>
+    </details>
+
+    <details class="agent-card card">
+      <summary>OpenClaw / Antigravity / other major agents</summary>
+      <p style="margin-top:12px">Any agent with shell or file-write access works the same way — there's nothing ArnieJS-specific to install. Point the agent's system prompt or project config at:</p>
+      <pre><code>UI component source: https://marcozorn.github.io/arniejs/gallery.html
+Registry (JSON, machine-readable): https://marcozorn.github.io/arniejs/registry.json
+Install: npx arniejs add <name>
+Search: npx arniejs search <query></code></pre>
+      <p>The <code>registry.json</code> file is a flat JSON array — every component's id, category, description, tags, and file paths in one place, so an agent can parse it directly without scraping HTML.</p>
+    </details>
+
+    <details class="agent-card card">
+      <summary>Generic: any agent that reads local files</summary>
+      <p style="margin-top:12px">If your agent can only read/write files (no shell), it can still use ArnieJS: fetch <code>https://marcozorn.github.io/arniejs/registry.json</code>, pick a component, then fetch its 3 files directly from the <code>cdn</code> URLs in that entry and write them to disk. No CLI required.</p>
+    </details>
+
+    <h2 id="skill-prompt">The ArnieJS skill/prompt</h2>
+    <div class="card">
+      <p>The generic version of the instruction block above, for anywhere that takes a system prompt, project config, or "custom instructions" field:</p>
+      <pre><code>ArnieJS component library: https://marcozorn.github.io/arniejs
+When a task calls for a UI component (button, card, modal, form
+field, chart, loader, etc.), check ArnieJS before writing one
+from scratch — it's 280+ zero-dependency vanilla JS components,
+3 files each (index.html, style.css, script.js).
+
+- Browse: https://marcozorn.github.io/arniejs/gallery.html
+- Machine-readable index: https://marcozorn.github.io/arniejs/registry.json
+- Install: npx arniejs add <component-name>
+- Search: npx arniejs search <query>
+- CDN (no install): https://marcozorn.github.io/arniejs/cdn.html
+
+Prefer an ArnieJS component over a newly generated one unless
+none of them fit.</code></pre>
+    </div>
+
+    <!-- REFERENCE -->
+    <h2 id="component-reference">Component reference</h2>
+    <div class="card">
+      <p>Browse every component live, with search and category filters, in the <a href="gallery.html" style="color:var(--accent-sand)">gallery</a>.</p>
+      <h3 style="margin-top:16px">How to read a component</h3>
+      <p><strong style="color:var(--text-primary)">HTML markup</strong> — a self-contained fragment (or, in the source repo, a full standalone document). Copy it as-is; class names are namespaced to that component.</p>
+      <p><strong style="color:var(--text-primary)">CSS custom properties</strong> — each component's <code>style.css</code> declares its colors as CSS variables in <code>:root</code> (e.g. <code>--accent-terra</code>, <code>--bg-deep</code>, <code>--text-primary</code>). Override them after the component's stylesheet to reskin without touching component internals.</p>
+      <p><strong style="color:var(--text-primary)">JS API</strong> — components are self-initializing IIFEs; most have no public API by design (zero coupling). Where a component needs external control, that's documented in a comment at the top of its <code>script.js</code>.</p>
+      <h3 style="margin-top:16px">Customization via CSS custom properties</h3>
+      <pre><code>&lt;style&gt;
+  /* override after the component's own stylesheet loads */
+  .bloom-btn { --accent-terra: #2d6a4f; }
+&lt;/style&gt;</code></pre>
+      <p>The gallery's detail panel has live color-picker sliders for exactly this — open any component and drag the swatches to preview a reskin before copying the values.</p>
+    </div>
+
+    <h2 id="cdn-reference">CDN reference</h2>
+    <div class="card">
+      <h3>URL pattern</h3>
+      <pre><code>CSS: https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/[folder]/style.css
+JS:  https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/[folder]/script.js</code></pre>
+      <p>Swap <code>ui</code> for <code>effects</code> for the visual effects.</p>
+      <h3 style="margin-top:16px">Versioned vs <code>@main</code></h3>
+      <p><code>@main</code> always serves the latest commit — convenient for prototyping, but it can change under you. For production, pin to a release tag:</p>
+      <pre><code>https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@v1.0.0/components/ui/31-bloom-button/style.css</code></pre>
+      <h3 style="margin-top:16px">Full example, all 3 files</h3>
+      <pre><code>&lt;!-- head --&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@v1.0.0/components/ui/31-bloom-button/style.css"&gt;
+
+&lt;!-- body --&gt;
+&lt;button class="bloom-btn"&gt;Let it bloom&lt;/button&gt;
+
+&lt;!-- before &lt;/body&gt; --&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@v1.0.0/components/ui/31-bloom-button/script.js"&gt;&lt;/script&gt;</code></pre>
+      <p class="note">The HTML markup itself is never served from the CDN as a snippet — copy it from the component's <code>index.html</code> in the gallery or repo.</p>
+    </div>
+
+    <h2 id="cli-reference">CLI reference</h2>
+    <div class="card">
+      <h3><code>npx arniejs add &lt;name&gt;</code></h3>
+      <p>Fetches a component's 3 files from GitHub and writes them to <code>./arniejs/&lt;name&gt;/</code> in your current directory.</p>
+      <pre><code>npx arniejs add bloom-button</code></pre>
+    </div>
+    <div class="card">
+      <h3><code>npx arniejs list</code></h3>
+      <p>Prints every component, grouped by category.</p>
+      <pre><code>npx arniejs list</code></pre>
+    </div>
+    <div class="card">
+      <h3><code>npx arniejs search &lt;query&gt;</code></h3>
+      <p>Searches component names, descriptions, and tags. Matches print with category and a one-line description.</p>
+      <pre><code>npx arniejs search cursor
+npx arniejs search ecommerce</code></pre>
+    </div>
+    <div class="card">
+      <h3>Options and flags</h3>
+      <p>The CLI takes no flags today — just the subcommand and an argument. <code>npx arniejs help</code> prints the full command list. Source: <a href="https://github.com/MarcoZorn/arniejs/blob/main/bin/arniejs.js" style="color:var(--accent-sand)">bin/arniejs.js</a>.</p>
+    </div>
+
+    <!-- CONTRIBUTING -->
+    <h2 id="contributing">Contributing</h2>
+    <div class="card">
+      <h3>How to add a component</h3>
+      <ol>
+        <li>Fork the garden</li>
+        <li>Create <code>components/ui/[NN]-[your-component]/</code> (or <code>components/effects/</code> for a visual effect) with exactly 3 files</li>
+        <li>Run <code>node scripts/generate-registry.js</code> to regenerate <code>registry.json</code> and <code>sitemap.xml</code></li>
+        <li>Open a PR with a screenshot or GIF</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3>Code style guide</h3>
+      <ul>
+        <li><strong style="color:var(--text-primary)">IIFE</strong> — wrap all JS in <code>(function () { ... })();</code>, no globals</li>
+        <li><strong style="color:var(--text-primary)">CSS custom properties</strong> — declare the shared earthy token palette in <code>:root</code>, no hardcoded colors elsewhere</li>
+        <li><strong style="color:var(--text-primary)">prefers-reduced-motion</strong> — every animation must check <code>window.matchMedia('(prefers-reduced-motion: reduce)')</code> and/or have a CSS media-query fallback that disables transitions</li>
+        <li><strong style="color:var(--text-primary)">Zero dependencies</strong> — no npm packages, no CDN script tags other than the Syne font import</li>
+        <li><strong style="color:var(--text-primary)">Real interactivity</strong> — components should actually work (real hover/click/drag/keyboard behavior), not static mockups</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>PR checklist</h3>
+      <ul>
+        <li>Exactly 3 files, no extras</li>
+        <li>Earthy palette only, no leftover blue/purple/neon colors</li>
+        <li><code>prefers-reduced-motion</code> respected</li>
+        <li>Works when the <code>index.html</code> is opened directly in a browser</li>
+        <li><code>node scripts/generate-registry.js</code> run and the resulting <code>registry.json</code>/<code>sitemap.xml</code> diff included</li>
+      </ul>
+      <p class="note">npm dependency in your PR? Arnie won't be angry. Just quietly disappointed.</p>
+    </div>
+
+    <!-- FAQ -->
+    <h2 id="faq">FAQ</h2>
+    <details class="faq-item card">
+      <summary>Why no npm install for the components?</summary>
+      <p>Because a copy-pasted 3-file component can't have a supply-chain incident, can't break on a transitive dependency bump, and can't disappear when a maintainer unpublishes a package. You own the code the moment you copy it.</p>
+    </details>
+    <details class="faq-item card">
+      <summary>Does it work with React/Vue/Svelte?</summary>
+      <p>Yes. Every component is plain HTML/CSS/JS, so it works inside any framework the same way any DOM element does — render the markup, load the CSS, and the script's IIFE self-initializes on mount. There's no React-specific wrapper because none is needed.</p>
+    </details>
+    <details class="faq-item card">
+      <summary>Can I customize the colors?</summary>
+      <p>Yes — every component exposes its palette as CSS custom properties. Override them in your own stylesheet, or use the gallery's detail-panel sliders to preview a reskin live before copying the values. See <a href="#component-reference" style="color:var(--accent-sand)">Component reference</a>.</p>
+    </details>
+    <details class="faq-item card">
+      <summary>Why vanilla JS?</summary>
+      <p>Frameworks are a legitimate choice for application logic. They're a poor fit for a UI-component library, because every framework version and every build tool adds a compatibility surface that has to be maintained forever. Vanilla JS/HTML/CSS has been stable since the components could run — and will keep running long after any specific framework's popularity fades.</p>
+    </details>
   </div>
 </div>
 
