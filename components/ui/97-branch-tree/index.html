@@ -1,0 +1,197 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <header class="head">
+    <h1 class="title">Branch Tree</h1>
+    <p class="sub">A living map of the grove — click any branch to grow or fold it.</p>
+  </header>
+
+  <div class="tree-card">
+    <ul class="tree" id="tree" role="tree" aria-label="Grove structure">
+
+      <li class="node" role="treeitem" aria-expanded="true">
+        <div class="row root-row">
+          <button class="toggle" data-toggle aria-label="Toggle Old Oak Root">
+            <svg viewBox="0 0 24 24" class="twig"><path d="M6 4 L16 12 L6 20" /></svg>
+          </button>
+          <span class="icon">🌳</span>
+          <span class="label">Old Oak Root</span>
+          <span class="meta">est. 1842</span>
+        </div>
+
+        <ul class="children" data-children>
+
+          <li class="node" role="treeitem" aria-expanded="true">
+            <div class="row">
+              <button class="toggle" data-toggle aria-label="Toggle North Bough">
+                <svg viewBox="0 0 24 24" class="twig"><path d="M6 4 L16 12 L6 20" /></svg>
+              </button>
+              <span class="icon">🌿</span>
+              <span class="label">North Bough</span>
+              <span class="meta">3 shoots</span>
+            </div>
+            <ul class="children" data-children>
+
+              <li class="node" role="treeitem" aria-expanded="false">
+                <div class="row">
+                  <button class="toggle" data-toggle aria-label="Toggle Sparrow Nest Limb">
+                    <svg viewBox="0 0 24 24" class="twig"><path d="M6 4 L16 12 L6 20" /></svg>
+                  </button>
+                  <span class="icon">🪹</span>
+                  <span class="label">Sparrow Nest Limb</span>
+                  <span class="meta">2 twigs</span>
+                </div>
+                <ul class="children" data-children>
+                  <li class="node leaf" role="treeitem">
+                    <div class="row">
+                      <span class="toggle spacer"></span>
+                      <span class="icon">🍃</span>
+                      <span class="label">Morning Leaf</span>
+                    </div>
+                  </li>
+                  <li class="node leaf" role="treeitem">
+                    <div class="row">
+                      <span class="toggle spacer"></span>
+                      <span class="icon">🍃</span>
+                      <span class="label">Dew Leaf</span>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="node leaf" role="treeitem">
+                <div class="row">
+                  <span class="toggle spacer"></span>
+                  <span class="icon">🌸</span>
+                  <span class="label">Early Blossom</span>
+                </div>
+              </li>
+
+              <li class="node" role="treeitem" aria-expanded="false">
+                <div class="row">
+                  <button class="toggle" data-toggle aria-label="Toggle Wind-Bent Twiglet">
+                    <svg viewBox="0 0 24 24" class="twig"><path d="M6 4 L16 12 L6 20" /></svg>
+                  </button>
+                  <span class="icon">🌱</span>
+                  <span class="label">Wind-Bent Twiglet</span>
+                  <span class="meta">1 bud</span>
+                </div>
+                <ul class="children" data-children>
+                  <li class="node leaf" role="treeitem">
+                    <div class="row">
+                      <span class="toggle spacer"></span>
+                      <span class="icon">🌼</span>
+                      <span class="label">Late Bud</span>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="node" role="treeitem" aria-expanded="false">
+            <div class="row">
+              <button class="toggle" data-toggle aria-label="Toggle South Bough">
+                <svg viewBox="0 0 24 24" class="twig"><path d="M6 4 L16 12 L6 20" /></svg>
+              </button>
+              <span class="icon">🌿</span>
+              <span class="label">South Bough</span>
+              <span class="meta">2 shoots</span>
+            </div>
+            <ul class="children" data-children>
+
+              <li class="node" role="treeitem" aria-expanded="false">
+                <div class="row">
+                  <button class="toggle" data-toggle aria-label="Toggle Sunlit Runner">
+                    <svg viewBox="0 0 24 24" class="twig"><path d="M6 4 L16 12 L6 20" /></svg>
+                  </button>
+                  <span class="icon">🌾</span>
+                  <span class="label">Sunlit Runner</span>
+                  <span class="meta">2 twigs</span>
+                </div>
+                <ul class="children" data-children>
+                  <li class="node leaf" role="treeitem">
+                    <div class="row">
+                      <span class="toggle spacer"></span>
+                      <span class="icon">🍂</span>
+                      <span class="label">Autumn Leaf</span>
+                    </div>
+                  </li>
+                  <li class="node leaf" role="treeitem">
+                    <div class="row">
+                      <span class="toggle spacer"></span>
+                      <span class="icon">🍃</span>
+                      <span class="label">Green Leaf</span>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="node leaf" role="treeitem">
+                <div class="row">
+                  <span class="toggle spacer"></span>
+                  <span class="icon">🐝</span>
+                  <span class="label">Wasp-Gall Knot</span>
+                </div>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="node leaf" role="treeitem">
+            <div class="row">
+              <span class="toggle spacer"></span>
+              <span class="icon">🪵</span>
+              <span class="label">Broken Stub</span>
+            </div>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class="node" role="treeitem" aria-expanded="false">
+        <div class="row root-row">
+          <button class="toggle" data-toggle aria-label="Toggle Underground Root Web">
+            <svg viewBox="0 0 24 24" class="twig"><path d="M6 4 L16 12 L6 20" /></svg>
+          </button>
+          <span class="icon">🪴</span>
+          <span class="label">Underground Root Web</span>
+          <span class="meta">2 anchors</span>
+        </div>
+        <ul class="children" data-children>
+
+          <li class="node leaf" role="treeitem">
+            <div class="row">
+              <span class="toggle spacer"></span>
+              <span class="icon">🧅</span>
+              <span class="label">Taproot Anchor</span>
+            </div>
+          </li>
+
+          <li class="node" role="treeitem" aria-expanded="false">
+            <div class="row">
+              <button class="toggle" data-toggle aria-label="Toggle Fungal Network">
+                <svg viewBox="0 0 24 24" class="twig"><path d="M6 4 L16 12 L6 20" /></svg>
+              </button>
+              <span class="icon">🍄</span>
+              <span class="label">Fungal Network</span>
+              <span class="meta">1 strand</span>
+            </div>
+            <ul class="children" data-children>
+              <li class="node leaf" role="treeitem">
+                <div class="row">
+                  <span class="toggle spacer"></span>
+                  <span class="icon">🕸️</span>
+                  <span class="label">Mycelium Strand</span>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+</main>
+<script src="script.js"></script>
