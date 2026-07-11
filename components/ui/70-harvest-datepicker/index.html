@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Harvest date</h1>
+  <p class="stage__sub">Pick a date from the calendar to schedule your harvest.</p>
+
+  <div class="calendar" id="calendar">
+    <div class="calendar__header">
+      <button class="calendar__nav" id="prevMonth" type="button" aria-label="Previous month">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="calendar__title" id="calendarTitle" aria-live="polite">Month Year</div>
+      <button class="calendar__nav" id="nextMonth" type="button" aria-label="Next month">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+
+    <div class="calendar__weekdays" id="calendarWeekdays"></div>
+    <div class="calendar__grid" id="calendarGrid" role="grid"></div>
+
+    <p class="calendar__selected" id="calendarSelected">No date selected</p>
+  </div>
+</main>
+
+<script src="script.js"></script>
