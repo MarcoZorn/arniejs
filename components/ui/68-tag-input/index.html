@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Add tags</h1>
+  <p class="stage__sub">Press Enter or comma to add a tag. Backspace removes the last one.</p>
+
+  <div class="tags" id="tagsWrap">
+    <div class="tags__field" id="tagsField">
+      <ul class="tags__list" id="tagsList" aria-live="polite"></ul>
+      <input class="tags__input" id="tagsInput" type="text" placeholder="Type and press Enter…" aria-label="Add a tag">
+    </div>
+    <p class="tags__count" id="tagsCount">0 / 8 tags</p>
+  </div>
+</main>
+
+<script src="script.js"></script>
