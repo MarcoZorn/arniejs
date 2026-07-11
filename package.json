@@ -1,12 +1,14 @@
 {
   "name": "arniejs",
   "version": "1.0.0",
-  "description": "180+ vanilla JS components. Grown from scratch. No deps.",
+  "description": "290+ vanilla JS components. Grown from scratch. No deps.",
   "bin": {
     "arniejs": "bin/arniejs.js"
   },
   "files": [
-    "bin"
+    "bin",
+    "components",
+    "registry.json"
   ],
   "engines": {
     "node": ">=18"
@@ -18,11 +20,16 @@
     "url": "https://github.com/MarcoZorn/arniejs.git"
   },
   "homepage": "https://marcozorn.github.io/arniejs",
+  "bugs": {
+    "url": "https://github.com/MarcoZorn/arniejs/issues"
+  },
   "keywords": [
     "vanilla-js",
     "components",
-    "ui",
+    "ui-components",
+    "animation",
     "zero-dependencies",
+    "no-build",
     "css-animations"
   ]
 }
