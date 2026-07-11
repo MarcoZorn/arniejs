@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Clay color picker</h1>
+  <p class="stage__sub">Pick a hue, drag across the field, choose a warm preset.</p>
+
+  <div class="picker">
+    <div class="picker__field">
+      <canvas id="svCanvas" class="picker__canvas" width="260" height="200" tabindex="0" role="slider"
+        aria-label="Saturation and value" aria-valuetext="Select a color"></canvas>
+      <div class="picker__cursor" id="svCursor"></div>
+    </div>
+
+    <div class="picker__controls">
+      <div class="hue-row">
+        <canvas id="hueCanvas" class="picker__hue" width="260" height="18" tabindex="0" role="slider"
+          aria-label="Hue" aria-valuemin="0" aria-valuemax="360"></canvas>
+        <div class="hue-row__thumb" id="hueThumb"></div>
+      </div>
+
+      <div class="preview-row">
+        <div class="preview-row__swatch" id="preview"></div>
+        <div class="preview-row__info">
+          <label for="hexInput">Hex</label>
+          <input id="hexInput" class="hex-input" type="text" value="#c4622d" maxlength="7" spellcheck="false" autocomplete="off">
+        </div>
+      </div>
+
+      <div class="presets">
+        <p class="presets__label">Warm presets</p>
+        <div class="presets__row" id="presets"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
