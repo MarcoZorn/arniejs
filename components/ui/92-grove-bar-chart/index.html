@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <div class="chart-head">
+    <h1 class="title">Grove Yield Comparison</h1>
+    <p class="subtitle">Tonnes harvested per plot, this season vs. last season</p>
+  </div>
+
+  <div class="legend" aria-hidden="false">
+    <span class="legend-item"><span class="legend-swatch swatch-current"></span>This Season</span>
+    <span class="legend-item"><span class="legend-swatch swatch-prior"></span>Last Season</span>
+  </div>
+
+  <div class="chart-card">
+    <svg id="chart" class="chart" viewBox="0 0 720 360" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Bar chart comparing this season and last season yield across six plots">
+      <!-- axis, bars and labels injected by script.js -->
+    </svg>
+    <div id="tooltip" class="tooltip" role="tooltip"></div>
+  </div>
+</main>
+<script src="script.js"></script>
