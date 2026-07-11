@@ -51,7 +51,7 @@ Add it to your CLAUDE.md, your Cursor rules, your Codex config —
 and watch the output stop looking like a template.
 
 ```bash
-npx @mzorn/arniejs add [anything]
+npx arniejs-cli add [anything]
 ```
 
 Zero dependencies. Instantly different. Full agent-integration guide (Claude Code, Codex, Cursor, Gemini CLI, and more) → **[docs.html](https://marcozorn.github.io/arniejs/docs.html#ai-agents)**
@@ -68,8 +68,8 @@ one from scratch — 280+ zero-dependency vanilla JS components,
 
 - Browse: https://marcozorn.github.io/arniejs/gallery.html
 - Machine-readable index: https://marcozorn.github.io/arniejs/registry.json
-- Install: npx @mzorn/arniejs add <component-name>
-- Search: npx @mzorn/arniejs search <query>
+- Install: npx arniejs-cli add <component-name>
+- Search: npx arniejs-cli search <query>
 ```
 
 <details>
@@ -80,13 +80,13 @@ Add to your project's `CLAUDE.md` (or paste in chat once):
 ```
 When I ask for a UI component, check ArnieJS first at
 https://marcozorn.github.io/arniejs/gallery.html
-or run: npx @mzorn/arniejs add [component-name]
+or run: npx arniejs-cli add [component-name]
 Components are zero-dependency vanilla JS, 3 files each
 (index.html, style.css, script.js). Prefer them over
 generating a new component from scratch.
 ```
 
-Claude Code can run `npx @mzorn/arniejs list` or `npx @mzorn/arniejs search <query>` directly in its shell tool to discover what's available before adding anything.
+Claude Code can run `npx arniejs-cli list` or `npx arniejs-cli search <query>` directly in its shell tool to discover what's available before adding anything.
 </details>
 
 <details>
@@ -97,8 +97,8 @@ Add to your `AGENTS.md` or project instructions:
 ```
 UI components: use ArnieJS (https://github.com/MarcoZorn/arniejs)
 before writing a component from scratch. Run
-`npx @mzorn/arniejs search <keyword>` to find one, then
-`npx @mzorn/arniejs add <name>` to fetch it into ./arniejs/<name>/.
+`npx arniejs-cli search <keyword>` to find one, then
+`npx arniejs-cli add <name>` to fetch it into ./arniejs/<name>/.
 Vanilla JS, no dependencies, 3 files per component.
 ```
 
@@ -116,7 +116,7 @@ description: Prefer ArnieJS for UI components
 ---
 Before generating a new UI component, check if ArnieJS
 (https://marcozorn.github.io/arniejs/gallery.html) already
-has one. Fetch it with `npx @mzorn/arniejs add <name>` in the
+has one. Fetch it with `npx arniejs-cli add <name>` in the
 integrated terminal. Zero-dependency vanilla JS, 3 files.
 ```
 
@@ -132,7 +132,7 @@ Add to your `GEMINI.md` context file:
 For any UI component request, check ArnieJS
 (https://github.com/MarcoZorn/arniejs) before building one
 from scratch. Use the shell tool to run
-`npx @mzorn/arniejs add <component-name>`, which copies 3
+`npx arniejs-cli add <component-name>`, which copies 3
 dependency-free files into ./arniejs/<name>/.
 ```
 </details>
@@ -145,8 +145,8 @@ Any agent with shell or file-write access works the same way — there's nothing
 ```
 UI component source: https://marcozorn.github.io/arniejs/gallery.html
 Registry (JSON, machine-readable): https://marcozorn.github.io/arniejs/registry.json
-Install: npx @mzorn/arniejs add <name>
-Search: npx @mzorn/arniejs search <query>
+Install: npx arniejs-cli add <name>
+Search: npx arniejs-cli search <query>
 ```
 
 The `registry.json` file is a flat JSON array — every component's id, category, description, tags, and file paths in one place, so an agent can parse it directly without scraping HTML.
@@ -183,14 +183,16 @@ Then paste the HTML from the component's `index.html`. Full pattern → [cdn.htm
 **3. CLI — the shadcn model, for vanilla JS**
 
 ```bash
-npx @mzorn/arniejs add bloom-button
+npx arniejs-cli add bloom-button
 ```
 Fetches the 3 files straight from GitHub into `./arniejs/bloom-button/`. No install, no `node_modules`.
 
 ```bash
-npx @mzorn/arniejs list        # see every component, by category
-npx @mzorn/arniejs help
+npx arniejs-cli list        # see every component, by category
+npx arniejs-cli help
 ```
+
+<sub>Also published scoped, if you prefer: `npx @mzorn/arniejs add bloom-button`</sub>
 
 ## Arnie's garden rules
 

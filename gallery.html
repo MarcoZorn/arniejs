@@ -212,7 +212,7 @@
       <pre class="language-markup"><code id="codeBlock"></code></pre>
     </div>
 
-    <div class="cli-hint">Prefer a CLI? <code id="cliSnippet">npx @mzorn/arniejs add …</code> <button class="copy-btn" id="cliCopyBtn" style="margin-left:6px">Copy</button></div>
+    <div class="cli-hint">Prefer a CLI? <code id="cliSnippet">npx arniejs-cli add …</code> <button class="copy-btn" id="cliCopyBtn" style="margin-left:6px">Copy</button></div>
 
     <div class="action-row">
       <button class="dl-btn btn-terra" id="downloadBtn">⬇ Download .zip</button>
@@ -404,7 +404,7 @@
     detailBadge.textContent = CATEGORY_LABELS[item.category] || item.category;
     detailDesc.textContent = item.description;
     detailOpenFull.href = item.files.html;
-    cliSnippet.textContent = 'npx @mzorn/arniejs add ' + item.id;
+    cliSnippet.textContent = 'npx arniejs-cli add ' + item.id;
 
     previewSkeleton.classList.remove('hidden');
     detailIframe.removeAttribute('src');
