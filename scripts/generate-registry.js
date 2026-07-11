@@ -132,6 +132,8 @@ fs.writeFileSync(path.join(ROOT, 'registry.json'), JSON.stringify(registry, null
 
 const urls = [
   `  <url><loc>${SITE}/</loc><priority>1.0</priority></url>`,
+  `  <url><loc>${SITE}/gallery.html</loc><priority>0.9</priority></url>`,
+  `  <url><loc>${SITE}/docs.html</loc><priority>0.8</priority></url>`,
   `  <url><loc>${SITE}/cdn.html</loc><priority>0.7</priority></url>`,
   ...registry.map((e) => `  <url><loc>${e.pageUrl}</loc><priority>0.5</priority></url>`),
 ];

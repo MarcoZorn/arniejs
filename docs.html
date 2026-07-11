@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ArnieJS — Docs</title>
+<meta name="description" content="How to use ArnieJS — copy files, CDN, or the npx arniejs CLI. Garden rules and contributing guide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap">
+<style>
+  :root{
+    --bg-deep:#1a1208; --bg-surface:#241a0e; --bg-card:#2e2010; --bg-subtle:#3d2b14;
+    --text-primary:#f0e6d3; --text-muted:#a89070; --text-faint:#6b5540;
+    --accent-terra:#c4622d; --accent-moss:#5a7a3a; --accent-sage:#8fa86e;
+    --accent-clay:#9b6b3a; --accent-sand:#d4a85a; --accent-rust:#a03820;
+    --border:#3d2b14; --border-light:#5a3e20;
+  }
+  *{box-sizing:border-box; margin:0;}
+  body{ font-family:'Syne', system-ui, sans-serif; background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%); color: var(--text-primary); min-height:100vh; }
+  a{ color:inherit; }
+
+  header{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 24px; border-bottom:1px solid var(--border); background:rgba(36,26,14,.6); backdrop-filter:blur(6px); position:sticky; top:0; z-index:30; }
+  .logo{ display:flex; align-items:center; gap:10px; text-decoration:none; }
+  .logo img{ width:28px; height:28px; }
+  .logo .name{ font-weight:800; font-size:15px; color:var(--text-primary); }
+  .site-nav{ display:flex; gap:22px; }
+  .site-nav a{ font-size:13px; font-weight:600; color:var(--text-muted); text-decoration:none; }
+  .site-nav a:hover, .site-nav a.current{ color:var(--accent-sand); }
+  .star-mini{ display:inline-flex; align-items:center; gap:6px; padding:7px 12px; border-radius:999px; background:var(--accent-terra); color:#fff; font-size:12.5px; font-weight:700; text-decoration:none; white-space:nowrap; }
+  .star-mini:hover{ background:#a8501f; }
+
+  .wrap{ max-width:820px; margin:0 auto; padding:56px 24px 80px; }
+  h1{ font-size:2rem; margin-bottom:8px; }
+  p.lead{ color:var(--text-muted); margin-bottom:44px; }
+  h2{ font-size:1.3rem; margin:44px 0 16px; scroll-margin-top:80px; }
+  h2:first-of-type{ margin-top:0; }
+  .card{ background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:22px 24px; margin-bottom:18px; }
+  .card h3{ font-size:1rem; margin-bottom:10px; }
+  pre{ background:#120c05; border:1px solid var(--border); border-radius:10px; padding:14px 16px; overflow-x:auto; font-size:12.5px; line-height:1.6; }
+  code{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  p code, li code{ background:var(--bg-subtle); padding:1px 6px; border-radius:5px; font-size:.9em; color:var(--accent-sand); }
+  ul{ padding-left:20px; font-size:14px; color:var(--text-muted); line-height:1.8; }
+  ul.rules{ list-style:none; padding-left:0; display:grid; gap:8px; }
+  .toc{ display:flex; flex-wrap:wrap; gap:10px 18px; margin-bottom:40px; font-size:13px; }
+  .toc a{ color:var(--accent-sand); text-decoration:none; }
+  .toc a:hover{ text-decoration:underline; }
+  .note{ font-size:13px; color:var(--text-faint); font-style:italic; margin-top:8px; }
+  footer{ text-align:center; padding:36px 24px; color:var(--text-faint); font-size:13px; border-top:1px solid var(--border); }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">
+    <img src="assets/arnie.svg" alt="Arnie">
+    <span class="name">arniejs 🌱</span>
+  </a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="docs.html" class="current">Docs</a>
+  </nav>
+  <a href="https://github.com/MarcoZorn/arniejs" target="_blank" rel="noopener" class="star-mini">⭐ <span id="gh-star-count">&hellip;</span></a>
+</header>
+
+<div class="wrap">
+  <h1>Docs</h1>
+  <p class="lead">Everything you need to plant a component in your project.</p>
+
+  <div class="toc">
+    <a href="#how-to-use">How to use</a>
+    <a href="#cli">CLI</a>
+    <a href="#cdn">CDN</a>
+    <a href="#rules">Garden rules</a>
+    <a href="#contributing">Contributing</a>
+  </div>
+
+  <h2 id="how-to-use">How to use</h2>
+
+  <div class="card">
+    <h3>1. Copy the files</h3>
+    <p style="font-size:14px;color:var(--text-muted);margin-bottom:10px">Every component is exactly 3 files. Grab them from the <a href="gallery.html" style="color:var(--accent-sand)">gallery</a> and drop them in your project.</p>
+    <pre><code>components/ui/31-bloom-button/
+├── index.html
+├── style.css
+└── script.js</code></pre>
+  </div>
+
+  <div class="card" id="cli">
+    <h3>2. CLI — the shadcn model, for vanilla JS</h3>
+    <p style="font-size:14px;color:var(--text-muted);margin-bottom:10px">Fetches the 3 files straight from GitHub into <code>./arniejs/&lt;name&gt;/</code>. No install, no <code>node_modules</code>.</p>
+    <pre><code>npx arniejs add bloom-button
+npx arniejs list        <span style="color:var(--text-faint)"># see every component, by category</span>
+npx arniejs help</code></pre>
+    <p class="note">Source: <a href="https://github.com/MarcoZorn/arniejs/blob/main/bin/arniejs.js" style="color:var(--accent-sand)">bin/arniejs.js</a></p>
+  </div>
+
+  <div class="card" id="cdn">
+    <h3>3. CDN — two lines, no file copying</h3>
+    <pre><code>&lt;!-- In your &lt;head&gt;: --&gt;
+&lt;link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/31-bloom-button/style.css"&gt;
+
+&lt;!-- Before &lt;/body&gt;: --&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/31-bloom-button/script.js"&gt;&lt;/script&gt;
+
+&lt;!-- In your &lt;body&gt;: paste the HTML from the component's index.html --&gt;</code></pre>
+    <p style="font-size:13px;color:var(--text-muted);margin-top:10px">Replace <code>31-bloom-button</code> with any component folder name. Full reference → <a href="cdn.html" style="color:var(--accent-sand)">cdn.html</a></p>
+    <p class="note">Pin to a release tag (e.g. <code>@v1.0.0</code>) in production so updates never break you unexpectedly.</p>
+  </div>
+
+  <h2 id="rules">Arnie's garden rules</h2>
+  <div class="card">
+    <ul class="rules">
+      <li style="color:var(--accent-sage)">✅ Zero dependencies — Arnie grows his own</li>
+      <li style="color:var(--accent-sage)">✅ Zero build step — seeds don't need Webpack</li>
+      <li style="color:var(--accent-sage)">✅ 3 files exactly — HTML + CSS + JS. That's it.</li>
+      <li style="color:var(--accent-sage)">✅ Works anywhere — WordPress, Webflow, static HTML, React</li>
+      <li style="color:var(--accent-sage)">✅ prefers-reduced-motion — Arnie respects his elderly visitors</li>
+      <li style="color:var(--accent-sage)">✅ Touch + Pointer events — the garden is mobile-first</li>
+      <li style="color:var(--accent-rust)">❌ No jQuery — Arnie doesn't use fertiliser</li>
+      <li style="color:var(--accent-rust)">❌ No GSAP — he doesn't trust the chemical industry</li>
+      <li style="color:var(--accent-rust)">❌ No React — he grows components, not factories</li>
+      <li style="color:var(--accent-rust)">❌ No npm install — he saves his own seeds</li>
+    </ul>
+  </div>
+
+  <h2 id="contributing">Contributing</h2>
+  <div class="card">
+    <ol style="padding-left:20px;font-size:14px;color:var(--text-muted);line-height:1.9">
+      <li>Fork the garden</li>
+      <li>Create <code>components/ui/[NN]-[your-component]/</code> with 3 files, earthy palette</li>
+      <li>Open a PR with a screenshot or GIF</li>
+    </ol>
+    <p style="font-size:13px;color:var(--text-faint);margin-top:12px;font-style:italic">npm dependency in your PR? Arnie won't be angry. Just quietly disappointed.</p>
+  </div>
+</div>
+
+<footer>
+  <p>Useful? ⭐ <a href="https://github.com/MarcoZorn/arniejs" style="color:var(--accent-sand)">Star the garden</a> · <a href="gallery.html" style="color:var(--accent-sand)">Back to the gallery</a></p>
+</footer>
+
+<script>
+  fetch('https://api.github.com/repos/MarcoZorn/arniejs')
+    .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+    .then(function (data) {
+      var el = document.getElementById('gh-star-count');
+      if (el && typeof data.stargazers_count === 'number') el.textContent = data.stargazers_count.toLocaleString();
+    })
+    .catch(function () {
+      var el = document.getElementById('gh-star-count');
+      if (el) el.textContent = '★';
+    });
+</script>
+</body>
+</html>

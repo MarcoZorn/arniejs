@@ -39,7 +39,7 @@ async function add(name) {
     const close = registry.filter((e) => e.id.includes(name)).slice(0, 8).map((e) => e.id);
     console.error(`No component named "${name}" found.`);
     if (close.length) console.error(`Did you mean: ${close.join(', ')}?`);
-    console.error('Browse the full list at https://marcozorn.github.io/arniejs/');
+    console.error('Browse the full list at https://marcozorn.github.io/arniejs/gallery.html');
     process.exit(1);
   }
 

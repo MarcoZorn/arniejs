@@ -9,7 +9,7 @@
   ![License](https://img.shields.io/badge/license-MIT-d4a85a?style=flat-square)
   [![Stars](https://img.shields.io/github/stars/MarcoZorn/arniejs?style=flat-square&color=c4622d&label=%E2%AD%90%20stars)](https://github.com/MarcoZorn/arniejs/stargazers)
 
-  <p><a href="https://marcozorn.github.io/arniejs"><strong>Browse the gallery →</strong></a></p>
+  <p><a href="https://marcozorn.github.io/arniejs/gallery.html"><strong>Browse the gallery →</strong></a></p>
 </div>
 
 ---
@@ -32,7 +32,7 @@ His neighbour's framework has 340 peer dependencies. Arnie's has zero.
 | ✨ Misc + originals | 50 | soil scramble, kanban board, magnetic cursor |
 | 🌌 Visual effects | 41 | sand simulation, gravity seeds, clay voronoi |
 
-Full searchable list, live previews, and code → **[marcozorn.github.io/arniejs](https://marcozorn.github.io/arniejs)**
+Full searchable list, live previews, and code → **[marcozorn.github.io/arniejs/gallery.html](https://marcozorn.github.io/arniejs/gallery.html)**
 
 ## How to use
 
@@ -98,5 +98,5 @@ MIT. Grow it, fork it, transplant it anywhere.
 
 <div align="center">
   <p>Useful? ⭐ <a href="https://github.com/MarcoZorn/arniejs">Star the garden</a> — it keeps Arnie gardening.</p>
-  <p><a href="https://marcozorn.github.io/arniejs">Gallery</a> · <a href="https://github.com/MarcoZorn/arniejs/issues">Issues</a> · Made by <a href="https://github.com/MarcoZorn">MarcoZorn</a></p>
+  <p><a href="https://marcozorn.github.io/arniejs/gallery.html">Gallery</a> · <a href="https://marcozorn.github.io/arniejs/docs.html">Docs</a> · <a href="https://github.com/MarcoZorn/arniejs/issues">Issues</a> · Made by <a href="https://github.com/MarcoZorn">MarcoZorn</a></p>
 </div>
