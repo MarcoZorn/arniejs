@@ -6927,6 +6927,5131 @@
     ]
   },
   {
+    "id": "product-card",
+    "number": "141",
+    "name": "Product Card",
+    "category": "misc",
+    "description": "Product Card — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "product",
+      "card",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/141-product-card/index.html",
+      "css": "components/ui/141-product-card/style.css",
+      "js": "components/ui/141-product-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/141-product-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/141-product-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/141-product-card/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-product-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "product-gallery",
+    "number": "142",
+    "name": "Product Gallery",
+    "category": "misc",
+    "description": "Product Gallery — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "product",
+      "gallery",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/142-product-gallery/index.html",
+      "css": "components/ui/142-product-gallery/style.css",
+      "js": "components/ui/142-product-gallery/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/142-product-gallery/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/142-product-gallery/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/142-product-gallery/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-product-gallery.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "cart-drawer",
+    "number": "143",
+    "name": "Cart Drawer",
+    "category": "misc",
+    "description": "",
+    "tags": [
+      "cart",
+      "drawer",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/143-cart-drawer/index.html",
+      "css": "components/ui/143-cart-drawer/style.css",
+      "js": "components/ui/143-cart-drawer/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/143-cart-drawer/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/143-cart-drawer/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/143-cart-drawer/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-cart-drawer.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "quantity-selector",
+    "number": "144",
+    "name": "Quantity Selector",
+    "category": "misc",
+    "description": "Min 1 &middot; Max 8 &mdash; buttons disable at the limits.",
+    "tags": [
+      "quantity",
+      "selector",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/144-quantity-selector/index.html",
+      "css": "components/ui/144-quantity-selector/style.css",
+      "js": "components/ui/144-quantity-selector/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/144-quantity-selector/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/144-quantity-selector/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/144-quantity-selector/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-quantity-selector.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "size-selector",
+    "number": "145",
+    "name": "Size Selector",
+    "category": "misc",
+    "description": "Selected size:",
+    "tags": [
+      "size",
+      "selector",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/145-size-selector/index.html",
+      "css": "components/ui/145-size-selector/style.css",
+      "js": "components/ui/145-size-selector/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/145-size-selector/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/145-size-selector/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/145-size-selector/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-size-selector.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "color-swatch-picker",
+    "number": "146",
+    "name": "Color Swatch Picker",
+    "category": "misc",
+    "description": "Selected color:",
+    "tags": [
+      "color",
+      "swatch",
+      "picker",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/146-color-swatch-picker/index.html",
+      "css": "components/ui/146-color-swatch-picker/style.css",
+      "js": "components/ui/146-color-swatch-picker/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/146-color-swatch-picker/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/146-color-swatch-picker/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/146-color-swatch-picker/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-color-swatch-picker.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "price-range-display",
+    "number": "147",
+    "name": "Price Range Display",
+    "category": "misc",
+    "description": "Original price, discounted price, and auto-computed savings badge.",
+    "tags": [
+      "price",
+      "range",
+      "display",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/147-price-range-display/index.html",
+      "css": "components/ui/147-price-range-display/style.css",
+      "js": "components/ui/147-price-range-display/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/147-price-range-display/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/147-price-range-display/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/147-price-range-display/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-price-range-display.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "stock-indicator",
+    "number": "148",
+    "name": "Stock Indicator",
+    "category": "misc",
+    "description": "Three visual states: in stock (green), low stock (amber), out of stock (rust, disabled).",
+    "tags": [
+      "stock",
+      "indicator",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/148-stock-indicator/index.html",
+      "css": "components/ui/148-stock-indicator/style.css",
+      "js": "components/ui/148-stock-indicator/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/148-stock-indicator/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/148-stock-indicator/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/148-stock-indicator/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-stock-indicator.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "wishlist-button",
+    "number": "149",
+    "name": "Wishlist Button",
+    "category": "misc",
+    "description": "Click the heart to add this item to your wishlist.",
+    "tags": [
+      "wishlist",
+      "button",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/149-wishlist-button/index.html",
+      "css": "components/ui/149-wishlist-button/style.css",
+      "js": "components/ui/149-wishlist-button/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/149-wishlist-button/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/149-wishlist-button/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/149-wishlist-button/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-wishlist-button.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "product-tabs",
+    "number": "150",
+    "name": "Product Tabs",
+    "category": "misc",
+    "description": "Hand-thrown in small batches from stoneware clay, this ridge planter carries a matte terracotta glaze that deepens with sun exposure. A drai",
+    "tags": [
+      "product",
+      "tabs",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/150-product-tabs/index.html",
+      "css": "components/ui/150-product-tabs/style.css",
+      "js": "components/ui/150-product-tabs/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/150-product-tabs/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/150-product-tabs/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/150-product-tabs/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-product-tabs.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "review-summary",
+    "number": "151",
+    "name": "Review Summary",
+    "category": "misc",
+    "description": "Based on 128 reviews",
+    "tags": [
+      "review",
+      "summary",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/151-review-summary/index.html",
+      "css": "components/ui/151-review-summary/style.css",
+      "js": "components/ui/151-review-summary/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/151-review-summary/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/151-review-summary/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/151-review-summary/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-review-summary.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "shipping-calculator",
+    "number": "152",
+    "name": "Shipping Calculator",
+    "category": "misc",
+    "description": "Enter your ZIP/postal code to see delivery cost and date.",
+    "tags": [
+      "shipping",
+      "calculator",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/152-shipping-calculator/index.html",
+      "css": "components/ui/152-shipping-calculator/style.css",
+      "js": "components/ui/152-shipping-calculator/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/152-shipping-calculator/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/152-shipping-calculator/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/152-shipping-calculator/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-shipping-calculator.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "checkout-stepper",
+    "number": "153",
+    "name": "Checkout Stepper",
+    "category": "misc",
+    "description": "Checkout Stepper — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "checkout",
+      "stepper",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/153-checkout-stepper/index.html",
+      "css": "components/ui/153-checkout-stepper/style.css",
+      "js": "components/ui/153-checkout-stepper/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/153-checkout-stepper/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/153-checkout-stepper/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/153-checkout-stepper/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-checkout-stepper.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "coupon-input",
+    "number": "154",
+    "name": "Coupon Input",
+    "category": "misc",
+    "description": "Coupon Input — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "coupon",
+      "input",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/154-coupon-input/index.html",
+      "css": "components/ui/154-coupon-input/style.css",
+      "js": "components/ui/154-coupon-input/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/154-coupon-input/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/154-coupon-input/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/154-coupon-input/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-coupon-input.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "upsell-banner",
+    "number": "155",
+    "name": "Upsell Banner",
+    "category": "misc",
+    "description": "Simulate adding items to see the banner update:",
+    "tags": [
+      "upsell",
+      "banner",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/155-upsell-banner/index.html",
+      "css": "components/ui/155-upsell-banner/style.css",
+      "js": "components/ui/155-upsell-banner/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/155-upsell-banner/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/155-upsell-banner/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/155-upsell-banner/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-upsell-banner.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "metric-card",
+    "number": "156",
+    "name": "Metric Card",
+    "category": "misc",
+    "description": "vs. previous 7 days",
+    "tags": [
+      "metric",
+      "card",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/156-metric-card/index.html",
+      "css": "components/ui/156-metric-card/style.css",
+      "js": "components/ui/156-metric-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/156-metric-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/156-metric-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/156-metric-card/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-metric-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "activity-feed",
+    "number": "157",
+    "name": "Activity Feed",
+    "category": "misc",
+    "description": "Activity Feed — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "activity",
+      "feed",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/157-activity-feed/index.html",
+      "css": "components/ui/157-activity-feed/style.css",
+      "js": "components/ui/157-activity-feed/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/157-activity-feed/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/157-activity-feed/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/157-activity-feed/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-activity-feed.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "notification-dot",
+    "number": "158",
+    "name": "Notification Dot",
+    "category": "misc",
+    "description": "Notification Dot — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "notification",
+      "dot",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/158-notification-dot/index.html",
+      "css": "components/ui/158-notification-dot/style.css",
+      "js": "components/ui/158-notification-dot/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/158-notification-dot/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/158-notification-dot/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/158-notification-dot/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-notification-dot.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "empty-dashboard",
+    "number": "159",
+    "name": "Empty Dashboard",
+    "category": "misc",
+    "description": "Once you connect a source, your metrics and charts will show up right here.",
+    "tags": [
+      "empty",
+      "dashboard",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/159-empty-dashboard/index.html",
+      "css": "components/ui/159-empty-dashboard/style.css",
+      "js": "components/ui/159-empty-dashboard/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/159-empty-dashboard/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/159-empty-dashboard/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/159-empty-dashboard/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-empty-dashboard.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "onboarding-checklist",
+    "number": "160",
+    "name": "Onboarding Checklist",
+    "category": "misc",
+    "description": "1 of 5 steps complete",
+    "tags": [
+      "onboarding",
+      "checklist",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/160-onboarding-checklist/index.html",
+      "css": "components/ui/160-onboarding-checklist/style.css",
+      "js": "components/ui/160-onboarding-checklist/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/160-onboarding-checklist/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/160-onboarding-checklist/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/160-onboarding-checklist/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-onboarding-checklist.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "feature-flag-toggle",
+    "number": "161",
+    "name": "Feature Flag Toggle",
+    "category": "misc",
+    "description": "Toggle experimental features on and off for your workspace.",
+    "tags": [
+      "feature",
+      "flag",
+      "toggle",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/161-feature-flag-toggle/index.html",
+      "css": "components/ui/161-feature-flag-toggle/style.css",
+      "js": "components/ui/161-feature-flag-toggle/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/161-feature-flag-toggle/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/161-feature-flag-toggle/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/161-feature-flag-toggle/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-feature-flag-toggle.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "usage-bar",
+    "number": "162",
+    "name": "Usage Bar",
+    "category": "misc",
+    "description": "Usage Bar — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "usage",
+      "bar",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/162-usage-bar/index.html",
+      "css": "components/ui/162-usage-bar/style.css",
+      "js": "components/ui/162-usage-bar/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/162-usage-bar/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/162-usage-bar/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/162-usage-bar/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-usage-bar.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "plan-badge",
+    "number": "163",
+    "name": "Plan Badge",
+    "category": "misc",
+    "description": "Choose a plan",
+    "tags": [
+      "plan",
+      "badge",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/163-plan-badge/index.html",
+      "css": "components/ui/163-plan-badge/style.css",
+      "js": "components/ui/163-plan-badge/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/163-plan-badge/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/163-plan-badge/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/163-plan-badge/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-plan-badge.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "api-key-display",
+    "number": "164",
+    "name": "Api Key Display",
+    "category": "misc",
+    "description": "Api Key Display — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "api",
+      "key",
+      "display",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/164-api-key-display/index.html",
+      "css": "components/ui/164-api-key-display/style.css",
+      "js": "components/ui/164-api-key-display/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/164-api-key-display/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/164-api-key-display/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/164-api-key-display/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-api-key-display.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "changelog-entry",
+    "number": "165",
+    "name": "Changelog Entry",
+    "category": "misc",
+    "description": "Changelog Entry — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "changelog",
+      "entry",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/165-changelog-entry/index.html",
+      "css": "components/ui/165-changelog-entry/style.css",
+      "js": "components/ui/165-changelog-entry/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/165-changelog-entry/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/165-changelog-entry/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/165-changelog-entry/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-changelog-entry.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "trial-banner",
+    "number": "166",
+    "name": "Trial Banner",
+    "category": "misc",
+    "description": "Dismiss the banner to see it fade &amp; collapse away.",
+    "tags": [
+      "trial",
+      "banner",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/166-trial-banner/index.html",
+      "css": "components/ui/166-trial-banner/style.css",
+      "js": "components/ui/166-trial-banner/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/166-trial-banner/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/166-trial-banner/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/166-trial-banner/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-trial-banner.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "team-member-row",
+    "number": "167",
+    "name": "Team Member Row",
+    "category": "misc",
+    "description": "Everyone with access to this workspace.",
+    "tags": [
+      "team",
+      "member",
+      "row",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/167-team-member-row/index.html",
+      "css": "components/ui/167-team-member-row/style.css",
+      "js": "components/ui/167-team-member-row/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/167-team-member-row/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/167-team-member-row/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/167-team-member-row/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-team-member-row.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "billing-row",
+    "number": "168",
+    "name": "Billing Row",
+    "category": "misc",
+    "description": "Invoices for your workspace subscription.",
+    "tags": [
+      "billing",
+      "row",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/168-billing-row/index.html",
+      "css": "components/ui/168-billing-row/style.css",
+      "js": "components/ui/168-billing-row/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/168-billing-row/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/168-billing-row/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/168-billing-row/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-billing-row.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "integration-card",
+    "number": "169",
+    "name": "Integration Card",
+    "category": "misc",
+    "description": "Connect third-party tools to your workspace.",
+    "tags": [
+      "integration",
+      "card",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/169-integration-card/index.html",
+      "css": "components/ui/169-integration-card/style.css",
+      "js": "components/ui/169-integration-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/169-integration-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/169-integration-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/169-integration-card/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-integration-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "keyboard-shortcuts-modal",
+    "number": "170",
+    "name": "Keyboard Shortcuts Modal",
+    "category": "misc",
+    "description": "Open the reference sheet to see every available shortcut.",
+    "tags": [
+      "keyboard",
+      "shortcuts",
+      "modal",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/170-keyboard-shortcuts-modal/index.html",
+      "css": "components/ui/170-keyboard-shortcuts-modal/style.css",
+      "js": "components/ui/170-keyboard-shortcuts-modal/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/170-keyboard-shortcuts-modal/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/170-keyboard-shortcuts-modal/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/170-keyboard-shortcuts-modal/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-keyboard-shortcuts-modal.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "article-card",
+    "number": "171",
+    "name": "Article Card",
+    "category": "misc",
+    "description": "Field notes from the garden journal.",
+    "tags": [
+      "article",
+      "card",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/171-article-card/index.html",
+      "css": "components/ui/171-article-card/style.css",
+      "js": "components/ui/171-article-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/171-article-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/171-article-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/171-article-card/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-article-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "author-byline",
+    "number": "172",
+    "name": "Author Byline",
+    "category": "misc",
+    "description": "A practical guide to turning kitchen scraps into rich soil, even without a backyard. This article walks through container choices,",
+    "tags": [
+      "author",
+      "byline",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/172-author-byline/index.html",
+      "css": "components/ui/172-author-byline/style.css",
+      "js": "components/ui/172-author-byline/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/172-author-byline/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/172-author-byline/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/172-author-byline/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-author-byline.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "table-of-contents",
+    "number": "173",
+    "name": "Table Of Contents",
+    "category": "misc",
+    "description": "Composting doesn't require a big backyard. With the right container and a bit of routine, a balcony corner can turn kitchen scraps into rich",
+    "tags": [
+      "table",
+      "of",
+      "contents",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/173-table-of-contents/index.html",
+      "css": "components/ui/173-table-of-contents/style.css",
+      "js": "components/ui/173-table-of-contents/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/173-table-of-contents/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/173-table-of-contents/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/173-table-of-contents/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-table-of-contents.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "reading-progress-circle",
+    "number": "174",
+    "name": "Reading Progress Circle",
+    "category": "misc",
+    "description": "As nights get colder, the work in the garden shifts from growing to protecting. This piece walks through mulching, covering, and the harvest",
+    "tags": [
+      "reading",
+      "progress",
+      "circle",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/174-reading-progress-circle/index.html",
+      "css": "components/ui/174-reading-progress-circle/style.css",
+      "js": "components/ui/174-reading-progress-circle/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/174-reading-progress-circle/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/174-reading-progress-circle/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/174-reading-progress-circle/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-reading-progress-circle.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "share-bar",
+    "number": "175",
+    "name": "Share Bar",
+    "category": "misc",
+    "description": "Scroll down to reveal the sticky share bar",
+    "tags": [
+      "share",
+      "bar",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/175-share-bar/index.html",
+      "css": "components/ui/175-share-bar/style.css",
+      "js": "components/ui/175-share-bar/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/175-share-bar/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/175-share-bar/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/175-share-bar/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-share-bar.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "related-posts",
+    "number": "176",
+    "name": "Related Posts",
+    "category": "misc",
+    "description": "Drag or scroll horizontally",
+    "tags": [
+      "related",
+      "posts",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/176-related-posts/index.html",
+      "css": "components/ui/176-related-posts/style.css",
+      "js": "components/ui/176-related-posts/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/176-related-posts/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/176-related-posts/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/176-related-posts/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-related-posts.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "code-block",
+    "number": "177",
+    "name": "Code Block",
+    "category": "misc",
+    "description": "Manual token coloring, no external library",
+    "tags": [
+      "code",
+      "block",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/177-code-block/index.html",
+      "css": "components/ui/177-code-block/style.css",
+      "js": "components/ui/177-code-block/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/177-code-block/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/177-code-block/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/177-code-block/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-code-block.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "callout-block",
+    "number": "178",
+    "name": "Callout Block",
+    "category": "misc",
+    "description": "Four variants: info, warning, danger, tip",
+    "tags": [
+      "callout",
+      "block",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/178-callout-block/index.html",
+      "css": "components/ui/178-callout-block/style.css",
+      "js": "components/ui/178-callout-block/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/178-callout-block/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/178-callout-block/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/178-callout-block/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-callout-block.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "footnote-popover",
+    "number": "179",
+    "name": "Footnote Popover",
+    "category": "misc",
+    "description": "Hover or focus a reference number",
+    "tags": [
+      "footnote",
+      "popover",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/179-footnote-popover/index.html",
+      "css": "components/ui/179-footnote-popover/style.css",
+      "js": "components/ui/179-footnote-popover/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/179-footnote-popover/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/179-footnote-popover/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/179-footnote-popover/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-footnote-popover.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "newsletter-inline",
+    "number": "180",
+    "name": "Newsletter Inline",
+    "category": "misc",
+    "description": "Embedded in article flow, no modal",
+    "tags": [
+      "newsletter",
+      "inline",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/180-newsletter-inline/index.html",
+      "css": "components/ui/180-newsletter-inline/style.css",
+      "js": "components/ui/180-newsletter-inline/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/180-newsletter-inline/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/180-newsletter-inline/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/180-newsletter-inline/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-newsletter-inline.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "case-study-card",
+    "number": "181",
+    "name": "Case Study Card",
+    "category": "misc",
+    "description": "Hover to lift",
+    "tags": [
+      "case",
+      "study",
+      "card",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/181-case-study-card/index.html",
+      "css": "components/ui/181-case-study-card/style.css",
+      "js": "components/ui/181-case-study-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/181-case-study-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/181-case-study-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/181-case-study-card/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-case-study-card.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "service-pill-list",
+    "number": "182",
+    "name": "Service Pill List",
+    "category": "misc",
+    "description": "Drag or scroll horizontally",
+    "tags": [
+      "service",
+      "pill",
+      "list",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/182-service-pill-list/index.html",
+      "css": "components/ui/182-service-pill-list/style.css",
+      "js": "components/ui/182-service-pill-list/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/182-service-pill-list/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/182-service-pill-list/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/182-service-pill-list/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-service-pill-list.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "results-counter",
+    "number": "183",
+    "name": "Results Counter",
+    "category": "misc",
+    "description": "Scroll down &mdash; the numbers count up when they enter view",
+    "tags": [
+      "results",
+      "counter",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/183-results-counter/index.html",
+      "css": "components/ui/183-results-counter/style.css",
+      "js": "components/ui/183-results-counter/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/183-results-counter/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/183-results-counter/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/183-results-counter/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-results-counter.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "client-logo-strip",
+    "number": "184",
+    "name": "Client Logo Strip",
+    "category": "misc",
+    "description": "Hover a logo to bring it to full color",
+    "tags": [
+      "client",
+      "logo",
+      "strip",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/184-client-logo-strip/index.html",
+      "css": "components/ui/184-client-logo-strip/style.css",
+      "js": "components/ui/184-client-logo-strip/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/184-client-logo-strip/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/184-client-logo-strip/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/184-client-logo-strip/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-client-logo-strip.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "process-steps",
+    "number": "185",
+    "name": "Process Steps",
+    "category": "misc",
+    "description": "How a project comes together",
+    "tags": [
+      "process",
+      "steps",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/185-process-steps/index.html",
+      "css": "components/ui/185-process-steps/style.css",
+      "js": "components/ui/185-process-steps/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/185-process-steps/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/185-process-steps/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/185-process-steps/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-process-steps.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "awards-shelf",
+    "number": "186",
+    "name": "Awards Shelf",
+    "category": "misc",
+    "description": "Recognition earned along the way",
+    "tags": [
+      "awards",
+      "shelf",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/186-awards-shelf/index.html",
+      "css": "components/ui/186-awards-shelf/style.css",
+      "js": "components/ui/186-awards-shelf/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/186-awards-shelf/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/186-awards-shelf/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/186-awards-shelf/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-awards-shelf.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "contact-split",
+    "number": "187",
+    "name": "Contact Split",
+    "category": "misc",
+    "description": "",
+    "tags": [
+      "contact",
+      "split",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/187-contact-split/index.html",
+      "css": "components/ui/187-contact-split/style.css",
+      "js": "components/ui/187-contact-split/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/187-contact-split/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/187-contact-split/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/187-contact-split/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-contact-split.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "availability-badge",
+    "number": "188",
+    "name": "Availability Badge",
+    "category": "misc",
+    "description": "Click the badge to toggle status",
+    "tags": [
+      "availability",
+      "badge",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/188-availability-badge/index.html",
+      "css": "components/ui/188-availability-badge/style.css",
+      "js": "components/ui/188-availability-badge/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/188-availability-badge/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/188-availability-badge/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/188-availability-badge/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-availability-badge.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "work-filter",
+    "number": "189",
+    "name": "Work Filter",
+    "category": "misc",
+    "description": "Filter the grid by category",
+    "tags": [
+      "work",
+      "filter",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/189-work-filter/index.html",
+      "css": "components/ui/189-work-filter/style.css",
+      "js": "components/ui/189-work-filter/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/189-work-filter/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/189-work-filter/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/189-work-filter/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-work-filter.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "testimonial-rotator",
+    "number": "190",
+    "name": "Testimonial Rotator",
+    "category": "misc",
+    "description": "Auto-rotates every few seconds &mdash; hover to pause",
+    "tags": [
+      "testimonial",
+      "rotator",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/190-testimonial-rotator/index.html",
+      "css": "components/ui/190-testimonial-rotator/style.css",
+      "js": "components/ui/190-testimonial-rotator/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/190-testimonial-rotator/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/190-testimonial-rotator/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/190-testimonial-rotator/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-testimonial-rotator.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "cookie-consent",
+    "number": "191",
+    "name": "Cookie Consent",
+    "category": "misc",
+    "description": "Reload the demo after choosing — your decision is remembered via localStorage.",
+    "tags": [
+      "cookie",
+      "consent",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/191-cookie-consent/index.html",
+      "css": "components/ui/191-cookie-consent/style.css",
+      "js": "components/ui/191-cookie-consent/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/191-cookie-consent/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/191-cookie-consent/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/191-cookie-consent/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-cookie-consent.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "scroll-to-section",
+    "number": "192",
+    "name": "Scroll To Section",
+    "category": "misc",
+    "description": "A quick summary of what this product does and why it matters. Scroll down, or use the menu on the left to jump straight to any section.",
+    "tags": [
+      "scroll",
+      "to",
+      "section",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/192-scroll-to-section/index.html",
+      "css": "components/ui/192-scroll-to-section/style.css",
+      "js": "components/ui/192-scroll-to-section/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/192-scroll-to-section/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/192-scroll-to-section/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/192-scroll-to-section/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-scroll-to-section.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "floating-action-button",
+    "number": "193",
+    "name": "Floating Action Button",
+    "category": "misc",
+    "description": "Click the plus button in the corner to reveal quick actions.",
+    "tags": [
+      "floating",
+      "action",
+      "button",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/193-floating-action-button/index.html",
+      "css": "components/ui/193-floating-action-button/style.css",
+      "js": "components/ui/193-floating-action-button/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/193-floating-action-button/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/193-floating-action-button/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/193-floating-action-button/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-floating-action-button.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "split-view",
+    "number": "194",
+    "name": "Split View",
+    "category": "misc",
+    "description": "Drag the middle divider to resize the panels.",
+    "tags": [
+      "split",
+      "view",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/194-split-view/index.html",
+      "css": "components/ui/194-split-view/style.css",
+      "js": "components/ui/194-split-view/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/194-split-view/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/194-split-view/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/194-split-view/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-split-view.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "json-viewer",
+    "number": "195",
+    "name": "Json Viewer",
+    "category": "misc",
+    "description": "Click any key, brace, or bracket to expand or collapse that node.",
+    "tags": [
+      "json",
+      "viewer",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/195-json-viewer/index.html",
+      "css": "components/ui/195-json-viewer/style.css",
+      "js": "components/ui/195-json-viewer/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/195-json-viewer/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/195-json-viewer/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/195-json-viewer/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-json-viewer.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "diff-viewer",
+    "number": "196",
+    "name": "Diff Viewer",
+    "category": "misc",
+    "description": "Comparing",
+    "tags": [
+      "diff",
+      "viewer",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/196-diff-viewer/index.html",
+      "css": "components/ui/196-diff-viewer/style.css",
+      "js": "components/ui/196-diff-viewer/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/196-diff-viewer/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/196-diff-viewer/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/196-diff-viewer/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-diff-viewer.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "markdown-preview",
+    "number": "197",
+    "name": "Markdown Preview",
+    "category": "misc",
+    "description": "Type on the left — headers, bold, italic, links, and lists render live on the right.",
+    "tags": [
+      "markdown",
+      "preview",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/197-markdown-preview/index.html",
+      "css": "components/ui/197-markdown-preview/style.css",
+      "js": "components/ui/197-markdown-preview/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/197-markdown-preview/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/197-markdown-preview/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/197-markdown-preview/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-markdown-preview.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "hotkey-listener",
+    "number": "198",
+    "name": "Hotkey Listener",
+    "category": "misc",
+    "description": "Press any key or combination — the panel below reflects it live.",
+    "tags": [
+      "hotkey",
+      "listener",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/198-hotkey-listener/index.html",
+      "css": "components/ui/198-hotkey-listener/style.css",
+      "js": "components/ui/198-hotkey-listener/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/198-hotkey-listener/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/198-hotkey-listener/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/198-hotkey-listener/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-hotkey-listener.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "iframe-embed",
+    "number": "199",
+    "name": "Iframe Embed",
+    "category": "misc",
+    "description": "Switch ratios &mdash; the frame resizes using the CSS",
+    "tags": [
+      "iframe",
+      "embed",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/199-iframe-embed/index.html",
+      "css": "components/ui/199-iframe-embed/style.css",
+      "js": "components/ui/199-iframe-embed/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/199-iframe-embed/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/199-iframe-embed/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/199-iframe-embed/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-iframe-embed.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "print-button",
+    "number": "200",
+    "name": "Print Button",
+    "category": "misc",
+    "description": "Total due: $68.00",
+    "tags": [
+      "print",
+      "button",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/200-print-button/index.html",
+      "css": "components/ui/200-print-button/style.css",
+      "js": "components/ui/200-print-button/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/200-print-button/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/200-print-button/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/200-print-button/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-print-button.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "pdf-viewer-placeholder",
+    "number": "201",
+    "name": "Pdf Viewer Placeholder",
+    "category": "misc",
+    "description": "Loading document&hellip;",
+    "tags": [
+      "pdf",
+      "viewer",
+      "placeholder",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/201-pdf-viewer-placeholder/index.html",
+      "css": "components/ui/201-pdf-viewer-placeholder/style.css",
+      "js": "components/ui/201-pdf-viewer-placeholder/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/201-pdf-viewer-placeholder/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/201-pdf-viewer-placeholder/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/201-pdf-viewer-placeholder/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-pdf-viewer-placeholder.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "map-placeholder",
+    "number": "202",
+    "name": "Map Placeholder",
+    "category": "misc",
+    "description": "128 Grove Street, Portland",
+    "tags": [
+      "map",
+      "placeholder",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/202-map-placeholder/index.html",
+      "css": "components/ui/202-map-placeholder/style.css",
+      "js": "components/ui/202-map-placeholder/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/202-map-placeholder/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/202-map-placeholder/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/202-map-placeholder/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-map-placeholder.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "geolocation-button",
+    "number": "203",
+    "name": "Geolocation Button",
+    "category": "misc",
+    "description": "Geolocation Button — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "geolocation",
+      "button",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/203-geolocation-button/index.html",
+      "css": "components/ui/203-geolocation-button/style.css",
+      "js": "components/ui/203-geolocation-button/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/203-geolocation-button/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/203-geolocation-button/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/203-geolocation-button/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-geolocation-button.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "network-status",
+    "number": "204",
+    "name": "Network Status",
+    "category": "misc",
+    "description": "Toggle your device&rsquo;s network connection (or DevTools &ldquo;Offline&rdquo; mode) to see it update live.",
+    "tags": [
+      "network",
+      "status",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/204-network-status/index.html",
+      "css": "components/ui/204-network-status/style.css",
+      "js": "components/ui/204-network-status/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/204-network-status/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/204-network-status/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/204-network-status/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-network-status.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "battery-indicator",
+    "number": "205",
+    "name": "Battery Indicator",
+    "category": "misc",
+    "description": "Battery Indicator — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "battery",
+      "indicator",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/205-battery-indicator/index.html",
+      "css": "components/ui/205-battery-indicator/style.css",
+      "js": "components/ui/205-battery-indicator/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/205-battery-indicator/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/205-battery-indicator/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/205-battery-indicator/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-battery-indicator.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "screen-size-indicator",
+    "number": "206",
+    "name": "Screen Size Indicator",
+    "category": "misc",
+    "description": "Resize the window or browser panel to see the badge update live.",
+    "tags": [
+      "screen",
+      "size",
+      "indicator",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/206-screen-size-indicator/index.html",
+      "css": "components/ui/206-screen-size-indicator/style.css",
+      "js": "components/ui/206-screen-size-indicator/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/206-screen-size-indicator/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/206-screen-size-indicator/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/206-screen-size-indicator/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-screen-size-indicator.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "dark-mode-detector",
+    "number": "207",
+    "name": "Dark Mode Detector",
+    "category": "misc",
+    "description": "Reflects your OS color-scheme preference in real time",
+    "tags": [
+      "dark",
+      "mode",
+      "detector",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/207-dark-mode-detector/index.html",
+      "css": "components/ui/207-dark-mode-detector/style.css",
+      "js": "components/ui/207-dark-mode-detector/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/207-dark-mode-detector/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/207-dark-mode-detector/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/207-dark-mode-detector/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-dark-mode-detector.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "reduce-motion-toggle",
+    "number": "208",
+    "name": "Reduce Motion Toggle",
+    "category": "misc",
+    "description": "Simulates prefers-reduced-motion for demo purposes",
+    "tags": [
+      "reduce",
+      "motion",
+      "toggle",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/208-reduce-motion-toggle/index.html",
+      "css": "components/ui/208-reduce-motion-toggle/style.css",
+      "js": "components/ui/208-reduce-motion-toggle/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/208-reduce-motion-toggle/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/208-reduce-motion-toggle/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/208-reduce-motion-toggle/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-reduce-motion-toggle.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "focus-trap",
+    "number": "209",
+    "name": "Focus Trap",
+    "category": "misc",
+    "description": "Tab and Shift+Tab cycle only within the open modal",
+    "tags": [
+      "focus",
+      "trap",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/209-focus-trap/index.html",
+      "css": "components/ui/209-focus-trap/style.css",
+      "js": "components/ui/209-focus-trap/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/209-focus-trap/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/209-focus-trap/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/209-focus-trap/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-focus-trap.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "clipboard-history",
+    "number": "210",
+    "name": "Clipboard History",
+    "category": "misc",
+    "description": "Copies made through this component's buttons, remembered for you",
+    "tags": [
+      "clipboard",
+      "history",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/210-clipboard-history/index.html",
+      "css": "components/ui/210-clipboard-history/style.css",
+      "js": "components/ui/210-clipboard-history/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/210-clipboard-history/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/210-clipboard-history/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/210-clipboard-history/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-clipboard-history.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "text-morph",
+    "number": "211",
+    "name": "Text Morph",
+    "category": "misc",
+    "description": "Heading crossfades &amp; morphs between phrases on a loop.",
+    "tags": [
+      "text",
+      "morph",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/211-text-morph/index.html",
+      "css": "components/ui/211-text-morph/style.css",
+      "js": "components/ui/211-text-morph/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/211-text-morph/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/211-text-morph/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/211-text-morph/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-text-morph.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "magnetic-letters",
+    "number": "212",
+    "name": "Magnetic Letters",
+    "category": "misc",
+    "description": "Move the cursor near the heading — each letter pulls toward it, then springs back.",
+    "tags": [
+      "magnetic",
+      "letters",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/212-magnetic-letters/index.html",
+      "css": "components/ui/212-magnetic-letters/style.css",
+      "js": "components/ui/212-magnetic-letters/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/212-magnetic-letters/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/212-magnetic-letters/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/212-magnetic-letters/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-magnetic-letters.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "blob-cursor",
+    "number": "213",
+    "name": "Blob Cursor",
+    "category": "misc",
+    "description": "Move your cursor across this panel — a soft clay blob trails behind with elastic lag.",
+    "tags": [
+      "blob",
+      "cursor",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/213-blob-cursor/index.html",
+      "css": "components/ui/213-blob-cursor/style.css",
+      "js": "components/ui/213-blob-cursor/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/213-blob-cursor/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/213-blob-cursor/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/213-blob-cursor/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-blob-cursor.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "neon-trail-cursor",
+    "number": "214",
+    "name": "Neon Trail Cursor",
+    "category": "misc",
+    "description": "Sweep your cursor across the panel to leave a warm, fading glow behind it.",
+    "tags": [
+      "neon",
+      "trail",
+      "cursor",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/214-neon-trail-cursor/index.html",
+      "css": "components/ui/214-neon-trail-cursor/style.css",
+      "js": "components/ui/214-neon-trail-cursor/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/214-neon-trail-cursor/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/214-neon-trail-cursor/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/214-neon-trail-cursor/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-neon-trail-cursor.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "spotlight-cursor",
+    "number": "215",
+    "name": "Spotlight Cursor",
+    "category": "misc",
+    "description": "A weathered clay object rests here — move your cursor over the card to reveal it under a warm spotlight.",
+    "tags": [
+      "spotlight",
+      "cursor",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/215-spotlight-cursor/index.html",
+      "css": "components/ui/215-spotlight-cursor/style.css",
+      "js": "components/ui/215-spotlight-cursor/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/215-spotlight-cursor/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/215-spotlight-cursor/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/215-spotlight-cursor/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-spotlight-cursor.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "3d-perspective-cards",
+    "number": "216",
+    "name": "3d Perspective Cards",
+    "category": "misc",
+    "description": "Tilt responds to cursor position in 3D.",
+    "tags": [
+      "3d",
+      "perspective",
+      "cards",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/216-3d-perspective-cards/index.html",
+      "css": "components/ui/216-3d-perspective-cards/style.css",
+      "js": "components/ui/216-3d-perspective-cards/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/216-3d-perspective-cards/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/216-3d-perspective-cards/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/216-3d-perspective-cards/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-3d-perspective-cards.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "tilt-image-reveal",
+    "number": "217",
+    "name": "Tilt Image Reveal",
+    "category": "misc",
+    "description": "Shot at dawn &mdash; 2,400m",
+    "tags": [
+      "tilt",
+      "image",
+      "reveal",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/217-tilt-image-reveal/index.html",
+      "css": "components/ui/217-tilt-image-reveal/style.css",
+      "js": "components/ui/217-tilt-image-reveal/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/217-tilt-image-reveal/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/217-tilt-image-reveal/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/217-tilt-image-reveal/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-tilt-image-reveal.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "scramble-heading",
+    "number": "218",
+    "name": "Scramble Heading",
+    "category": "misc",
+    "description": "Scrambles on load &mdash; hover the heading or click replay to run it again.",
+    "tags": [
+      "scramble",
+      "heading",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/218-scramble-heading/index.html",
+      "css": "components/ui/218-scramble-heading/style.css",
+      "js": "components/ui/218-scramble-heading/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/218-scramble-heading/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/218-scramble-heading/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/218-scramble-heading/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-scramble-heading.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "glitch-image",
+    "number": "219",
+    "name": "Glitch Image",
+    "category": "misc",
+    "description": "Hover the tile to trigger a warm-toned RGB-channel glitch.",
+    "tags": [
+      "glitch",
+      "image",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/219-glitch-image/index.html",
+      "css": "components/ui/219-glitch-image/style.css",
+      "js": "components/ui/219-glitch-image/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/219-glitch-image/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/219-glitch-image/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/219-glitch-image/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-glitch-image.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "liquid-button-v2",
+    "number": "220",
+    "name": "Liquid Button V2",
+    "category": "misc",
+    "description": "Hover the button to see the gooey liquid blobs merge.",
+    "tags": [
+      "liquid",
+      "button",
+      "v2",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/220-liquid-button-v2/index.html",
+      "css": "components/ui/220-liquid-button-v2/style.css",
+      "js": "components/ui/220-liquid-button-v2/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/220-liquid-button-v2/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/220-liquid-button-v2/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/220-liquid-button-v2/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-liquid-button-v2.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "hover-distort",
+    "number": "221",
+    "name": "Hover Distort",
+    "category": "misc",
+    "description": "Move the cursor across the image to ripple it",
+    "tags": [
+      "hover",
+      "distort",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/221-hover-distort/index.html",
+      "css": "components/ui/221-hover-distort/style.css",
+      "js": "components/ui/221-hover-distort/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/221-hover-distort/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/221-hover-distort/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/221-hover-distort/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-hover-distort.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "kinetic-typography",
+    "number": "222",
+    "name": "Kinetic Typography",
+    "category": "misc",
+    "description": "Words emphasize themselves in sequence, as if spoken",
+    "tags": [
+      "kinetic",
+      "typography",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/222-kinetic-typography/index.html",
+      "css": "components/ui/222-kinetic-typography/style.css",
+      "js": "components/ui/222-kinetic-typography/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/222-kinetic-typography/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/222-kinetic-typography/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/222-kinetic-typography/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-kinetic-typography.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "draggable-window",
+    "number": "223",
+    "name": "Draggable Window",
+    "category": "misc",
+    "description": "Drag the title bar to move the window around",
+    "tags": [
+      "draggable",
+      "window",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/223-draggable-window/index.html",
+      "css": "components/ui/223-draggable-window/style.css",
+      "js": "components/ui/223-draggable-window/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/223-draggable-window/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/223-draggable-window/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/223-draggable-window/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-draggable-window.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "desktop-icon",
+    "number": "224",
+    "name": "Desktop Icon",
+    "category": "misc",
+    "description": "Drag to move &middot; double-click to open",
+    "tags": [
+      "desktop",
+      "icon",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/224-desktop-icon/index.html",
+      "css": "components/ui/224-desktop-icon/style.css",
+      "js": "components/ui/224-desktop-icon/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/224-desktop-icon/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/224-desktop-icon/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/224-desktop-icon/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-desktop-icon.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "folder-open",
+    "number": "225",
+    "name": "Folder Open",
+    "category": "misc",
+    "description": "Click the folder to peek inside",
+    "tags": [
+      "folder",
+      "open",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/225-folder-open/index.html",
+      "css": "components/ui/225-folder-open/style.css",
+      "js": "components/ui/225-folder-open/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/225-folder-open/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/225-folder-open/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/225-folder-open/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-folder-open.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "terminal-window",
+    "number": "226",
+    "name": "Terminal Window",
+    "category": "misc",
+    "description": "A looping demo session",
+    "tags": [
+      "terminal",
+      "window",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/226-terminal-window/index.html",
+      "css": "components/ui/226-terminal-window/style.css",
+      "js": "components/ui/226-terminal-window/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/226-terminal-window/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/226-terminal-window/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/226-terminal-window/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-terminal-window.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "os-menu-bar",
+    "number": "227",
+    "name": "Os Menu Bar",
+    "category": "misc",
+    "description": "Click a menu to open its dropdown",
+    "tags": [
+      "os",
+      "menu",
+      "bar",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/227-os-menu-bar/index.html",
+      "css": "components/ui/227-os-menu-bar/style.css",
+      "js": "components/ui/227-os-menu-bar/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/227-os-menu-bar/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/227-os-menu-bar/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/227-os-menu-bar/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-os-menu-bar.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "notification-stack",
+    "number": "228",
+    "name": "Notification Stack",
+    "category": "misc",
+    "description": "Toasts slide in, stack, and dismiss themselves",
+    "tags": [
+      "notification",
+      "stack",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/228-notification-stack/index.html",
+      "css": "components/ui/228-notification-stack/style.css",
+      "js": "components/ui/228-notification-stack/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/228-notification-stack/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/228-notification-stack/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/228-notification-stack/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-notification-stack.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "dock-preview",
+    "number": "229",
+    "name": "Dock Preview",
+    "category": "misc",
+    "description": "Hover a dock icon to see its live preview",
+    "tags": [
+      "dock",
+      "preview",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/229-dock-preview/index.html",
+      "css": "components/ui/229-dock-preview/style.css",
+      "js": "components/ui/229-dock-preview/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/229-dock-preview/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/229-dock-preview/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/229-dock-preview/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-dock-preview.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "vinyl-record-player",
+    "number": "230",
+    "name": "Vinyl Record Player",
+    "category": "misc",
+    "description": "Toggle play to spin the record and drop the tonearm",
+    "tags": [
+      "vinyl",
+      "record",
+      "player",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/230-vinyl-record-player/index.html",
+      "css": "components/ui/230-vinyl-record-player/style.css",
+      "js": "components/ui/230-vinyl-record-player/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/230-vinyl-record-player/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/230-vinyl-record-player/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/230-vinyl-record-player/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-vinyl-record-player.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "cassette-tape",
+    "number": "231",
+    "name": "Cassette Tape",
+    "category": "misc",
+    "description": "Press play to spin the reels.",
+    "tags": [
+      "cassette",
+      "tape",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/231-cassette-tape/index.html",
+      "css": "components/ui/231-cassette-tape/style.css",
+      "js": "components/ui/231-cassette-tape/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/231-cassette-tape/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/231-cassette-tape/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/231-cassette-tape/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-cassette-tape.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "retro-tv-frame",
+    "number": "232",
+    "name": "Retro Tv Frame",
+    "category": "misc",
+    "description": "Change the channel to see the set flicker.",
+    "tags": [
+      "retro",
+      "tv",
+      "frame",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/232-retro-tv-frame/index.html",
+      "css": "components/ui/232-retro-tv-frame/style.css",
+      "js": "components/ui/232-retro-tv-frame/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/232-retro-tv-frame/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/232-retro-tv-frame/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/232-retro-tv-frame/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-retro-tv-frame.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "polaroid-camera",
+    "number": "233",
+    "name": "Polaroid Camera",
+    "category": "misc",
+    "description": "Click the polaroid to develop it.",
+    "tags": [
+      "polaroid",
+      "camera",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/233-polaroid-camera/index.html",
+      "css": "components/ui/233-polaroid-camera/style.css",
+      "js": "components/ui/233-polaroid-camera/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/233-polaroid-camera/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/233-polaroid-camera/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/233-polaroid-camera/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-polaroid-camera.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "film-strip",
+    "number": "234",
+    "name": "Film Strip",
+    "category": "misc",
+    "description": "Scroll the strip to browse the frames.",
+    "tags": [
+      "film",
+      "strip",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/234-film-strip/index.html",
+      "css": "components/ui/234-film-strip/style.css",
+      "js": "components/ui/234-film-strip/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/234-film-strip/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/234-film-strip/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/234-film-strip/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-film-strip.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "newspaper-fold",
+    "number": "235",
+    "name": "Newspaper Fold",
+    "category": "misc",
+    "description": "Click the paper to unfold the full story.",
+    "tags": [
+      "newspaper",
+      "fold",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/235-newspaper-fold/index.html",
+      "css": "components/ui/235-newspaper-fold/style.css",
+      "js": "components/ui/235-newspaper-fold/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/235-newspaper-fold/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/235-newspaper-fold/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/235-newspaper-fold/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-newspaper-fold.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "map-pin-drop",
+    "number": "236",
+    "name": "Map Pin Drop",
+    "category": "misc",
+    "description": "Click anywhere on the map to mark a spot.",
+    "tags": [
+      "map",
+      "pin",
+      "drop",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/236-map-pin-drop/index.html",
+      "css": "components/ui/236-map-pin-drop/style.css",
+      "js": "components/ui/236-map-pin-drop/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/236-map-pin-drop/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/236-map-pin-drop/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/236-map-pin-drop/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-map-pin-drop.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "compass-rose",
+    "number": "237",
+    "name": "Compass Rose",
+    "category": "misc",
+    "description": "Click the compass to spin toward a new direction.",
+    "tags": [
+      "compass",
+      "rose",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/237-compass-rose/index.html",
+      "css": "components/ui/237-compass-rose/style.css",
+      "js": "components/ui/237-compass-rose/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/237-compass-rose/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/237-compass-rose/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/237-compass-rose/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-compass-rose.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "weather-widget",
+    "number": "238",
+    "name": "Weather Widget",
+    "category": "misc",
+    "description": "Purely decorative — no live data.",
+    "tags": [
+      "weather",
+      "widget",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/238-weather-widget/index.html",
+      "css": "components/ui/238-weather-widget/style.css",
+      "js": "components/ui/238-weather-widget/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/238-weather-widget/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/238-weather-widget/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/238-weather-widget/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-weather-widget.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "lunar-clock",
+    "number": "239",
+    "name": "Lunar Clock",
+    "category": "misc",
+    "description": "Computed live from today's date.",
+    "tags": [
+      "lunar",
+      "clock",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/239-lunar-clock/index.html",
+      "css": "components/ui/239-lunar-clock/style.css",
+      "js": "components/ui/239-lunar-clock/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/239-lunar-clock/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/239-lunar-clock/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/239-lunar-clock/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-lunar-clock.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
+    "id": "tide-animation",
+    "number": "240",
+    "name": "Tide Animation",
+    "category": "misc",
+    "description": "Purely decorative, ever-rolling waves.",
+    "tags": [
+      "tide",
+      "animation",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/240-tide-animation/index.html",
+      "css": "components/ui/240-tide-animation/style.css",
+      "js": "components/ui/240-tide-animation/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/240-tide-animation/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/240-tide-animation/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/240-tide-animation/",
+    "type": "ui",
+    "thumbnail": "assets/thumbnails/ui-tide-animation.jpg",
+    "cssVars": [
+      {
+        "name": "--accent-terra",
+        "value": "#c4622d"
+      },
+      {
+        "name": "--accent-moss",
+        "value": "#5a7a3a"
+      },
+      {
+        "name": "--accent-sage",
+        "value": "#8fa86e"
+      },
+      {
+        "name": "--accent-clay",
+        "value": "#9b6b3a"
+      },
+      {
+        "name": "--accent-sand",
+        "value": "#d4a85a"
+      },
+      {
+        "name": "--accent-rust",
+        "value": "#a03820"
+      }
+    ]
+  },
+  {
     "id": "aurora-field",
     "number": "01",
     "name": "Aurora Field",
