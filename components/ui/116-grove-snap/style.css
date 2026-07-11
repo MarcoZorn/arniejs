@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+}
+
+.grove-scroller {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.grove-section {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 32px;
+  position: relative;
+}
+
+.grove-section:nth-child(odd) {
+  background: radial-gradient(900px 500px at 50% 60%, #2e1a08 0%, #1a1208 75%);
+}
+
+.grove-section:nth-child(even) {
+  background: radial-gradient(900px 500px at 50% 40%, #241a0e 0%, #1a1208 75%);
+}
+
+.grove-num {
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  color: var(--accent-sand);
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.grove-section h2 {
+  font-size: 48px;
+  margin: 0 0 16px;
+}
+
+.grove-section p {
+  color: var(--text-muted);
+  max-width: 460px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.grove-dots {
+  position: fixed;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 20;
+}
+
+.grove-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid var(--border-light);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.grove-dot:hover {
+  border-color: var(--accent-sand);
+}
+
+.grove-dot.active {
+  background: var(--accent-clay);
+  border-color: var(--accent-clay);
+  transform: scale(1.25);
+}
+
+@media (max-width: 640px) {
+  .grove-dots {
+    right: 14px;
+  }
+  .grove-section h2 {
+    font-size: 34px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grove-scroller {
+    scroll-behavior: auto;
+  }
+  .grove-dot {
+    transition: none;
+  }
+}
