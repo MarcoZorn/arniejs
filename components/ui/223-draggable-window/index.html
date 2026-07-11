@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Draggable Window</h1>
+  <p class="stage__sub">Drag the title bar to move the window around</p>
+
+  <div class="desk">
+    <div class="win" id="win" style="top: 40px; left: 40px;">
+      <div class="win__bar" id="winBar">
+        <span class="win__dot win__dot--close"></span>
+        <span class="win__dot win__dot--min"></span>
+        <span class="win__dot win__dot--max"></span>
+        <span class="win__title">notes.txt</span>
+      </div>
+      <div class="win__body">
+        <p>This window is a fake OS chrome. Grab the title bar and drag it anywhere inside the desk area.</p>
+        <p>It stays within bounds and comes to the front when clicked.</p>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
