@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;800&display=swap');
+html,body{margin:0;height:100%;background:#1a1208;overflow:hidden;cursor:grab}
+body.drag{cursor:grabbing}
+canvas{display:block}
+.cap{position:fixed;left:22px;bottom:20px;font-family:'Syne',sans-serif;
+  color:#cfe9ff;mix-blend-mode:screen;pointer-events:none;line-height:1.35}
+.cap b{font-weight:800;font-size:15px;letter-spacing:.14em;text-transform:uppercase;display:block}
+.cap span{font-weight:600;font-size:12px;opacity:.55;letter-spacing:.04em}

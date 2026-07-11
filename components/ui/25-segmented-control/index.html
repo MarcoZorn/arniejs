@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Preferences</h1>
+
+  <section class="card">
+    <span class="card__label" id="viewLabel">View mode</span>
+    <div class="segmented" role="tablist" aria-labelledby="viewLabel">
+      <span class="segmented__pill" data-pill aria-hidden="true"></span>
+      <button class="segmented__btn is-active" role="tab" aria-selected="true" tabindex="0">Daily</button>
+      <button class="segmented__btn" role="tab" aria-selected="false" tabindex="-1">Weekly</button>
+      <button class="segmented__btn" role="tab" aria-selected="false" tabindex="-1">Monthly</button>
+      <button class="segmented__btn" role="tab" aria-selected="false" tabindex="-1">Yearly</button>
+    </div>
+
+    <div class="divider"></div>
+
+    <ul class="switches">
+      <li class="switch-row">
+        <div class="switch-row__text">
+          <span class="switch-row__title">Notifications</span>
+          <span class="switch-row__sub">Push alerts on this device</span>
+        </div>
+        <button class="toggle is-on" type="button" role="switch" aria-checked="true" aria-label="Notifications">
+          <span class="toggle__knob"></span>
+        </button>
+      </li>
+      <li class="switch-row">
+        <div class="switch-row__text">
+          <span class="switch-row__title">Dark theme</span>
+          <span class="switch-row__sub">Always use dark palette</span>
+        </div>
+        <button class="toggle" type="button" role="switch" aria-checked="false" aria-label="Dark theme">
+          <span class="toggle__knob"></span>
+        </button>
+      </li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <fieldset class="checks">
+      <legend class="switch-row__sub">Send me</legend>
+      <label class="check">
+        <input type="checkbox" checked>
+        <span class="check__box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+        <span class="check__label">Product updates</span>
+      </label>
+      <label class="check">
+        <input type="checkbox">
+        <span class="check__box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+        <span class="check__label">Weekly digest</span>
+      </label>
+      <label class="check">
+        <input type="checkbox">
+        <span class="check__box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+        <span class="check__label">Marketing tips</span>
+      </label>
+    </fieldset>
+  </section>
+</main>
+
+<script src="script.js"></script>

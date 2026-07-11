@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Progress &amp; loaders</h1>
+  <p class="stage__sub">Animated SVG rings with count-up, plus tasteful spinners.</p>
+
+  <div class="rings" id="rings">
+    <figure class="ring" data-value="72" data-color="a">
+      <svg class="ring__svg" viewBox="0 0 120 120" aria-hidden="true">
+        <circle class="ring__track" cx="60" cy="60" r="52"></circle>
+        <circle class="ring__bar" cx="60" cy="60" r="52"></circle>
+      </svg>
+      <figcaption class="ring__cap"><span class="ring__num">0</span><span class="ring__pct">%</span></figcaption>
+      <span class="ring__label">Storage</span>
+    </figure>
+
+    <figure class="ring ring--md" data-value="90" data-color="b">
+      <svg class="ring__svg" viewBox="0 0 120 120" aria-hidden="true">
+        <circle class="ring__track" cx="60" cy="60" r="52"></circle>
+        <circle class="ring__bar" cx="60" cy="60" r="52"></circle>
+      </svg>
+      <figcaption class="ring__cap"><span class="ring__num">0</span><span class="ring__pct">%</span></figcaption>
+      <span class="ring__label">Uptime</span>
+    </figure>
+
+    <figure class="ring ring--sm" data-value="45" data-color="c">
+      <svg class="ring__svg" viewBox="0 0 120 120" aria-hidden="true">
+        <circle class="ring__track" cx="60" cy="60" r="52"></circle>
+        <circle class="ring__bar" cx="60" cy="60" r="52"></circle>
+      </svg>
+      <figcaption class="ring__cap"><span class="ring__num">0</span><span class="ring__pct">%</span></figcaption>
+      <span class="ring__label">Battery</span>
+    </figure>
+  </div>
+
+  <div class="spinners">
+    <div class="spin"><span class="spin__ring" aria-label="Loading" role="status"></span><span class="spin__name">Ring</span></div>
+    <div class="spin"><span class="spin__dots" aria-label="Loading" role="status"><i></i><i></i><i></i></span><span class="spin__name">Dots</span></div>
+    <div class="spin"><span class="spin__bars" aria-label="Loading" role="status"><i></i><i></i><i></i><i></i></span><span class="spin__name">Bars</span></div>
+  </div>
+</main>
+
+<script src="script.js"></script>

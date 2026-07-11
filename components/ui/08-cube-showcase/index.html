@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="style.css">
+
+<section class="cube-showcase" aria-label="Product cube showcase">
+  <div class="cs-head">
+    <p class="cs-eyebrow">Collection · Volume 04</p>
+    <h1 class="cs-title">Spin the gallery</h1>
+    <p class="cs-sub">Drag to rotate freely, or jump to a face with the dots below.</p>
+  </div>
+
+  <div class="cs-scene" id="scene">
+    <div class="cube" id="cube">
+      <figure class="face face-front"><img src="https://picsum.photos/seed/cubea/500/500" alt="Product one"><figcaption>Nimbus Chair</figcaption></figure>
+      <figure class="face face-back"><img src="https://picsum.photos/seed/cubeb/500/500" alt="Product two"><figcaption>Halo Lamp</figcaption></figure>
+      <figure class="face face-right"><img src="https://picsum.photos/seed/cubec/500/500" alt="Product three"><figcaption>Drift Sofa</figcaption></figure>
+      <figure class="face face-left"><img src="https://picsum.photos/seed/cubed/500/500" alt="Product four"><figcaption>Ora Table</figcaption></figure>
+      <figure class="face face-top"><img src="https://picsum.photos/seed/cubee/500/500" alt="Product five"><figcaption>Pebble Stool</figcaption></figure>
+      <figure class="face face-bottom"><img src="https://picsum.photos/seed/cubef/500/500" alt="Product six"><figcaption>Arc Shelf</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="cs-dots" id="dots" role="tablist" aria-label="Choose a cube face">
+    <button class="dot" data-face="front" role="tab" aria-selected="true" aria-label="Nimbus Chair"></button>
+    <button class="dot" data-face="right" role="tab" aria-selected="false" aria-label="Drift Sofa"></button>
+    <button class="dot" data-face="back" role="tab" aria-selected="false" aria-label="Halo Lamp"></button>
+    <button class="dot" data-face="left" role="tab" aria-selected="false" aria-label="Ora Table"></button>
+    <button class="dot" data-face="top" role="tab" aria-selected="false" aria-label="Pebble Stool"></button>
+    <button class="dot" data-face="bottom" role="tab" aria-selected="false" aria-label="Arc Shelf"></button>
+  </div>
+</section>
+
+<script src="script.js"></script>

@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="style.css">
+
+<section class="stage">
+  <div class="demo">
+    <h1 class="demo__title">Toast notifications</h1>
+    <p class="demo__sub">Trigger a toast — they stack, auto-dismiss, and can be closed by hand.</p>
+
+    <div class="demo__buttons">
+      <button class="btn btn--success" data-toast="success">Success</button>
+      <button class="btn btn--error" data-toast="error">Error</button>
+      <button class="btn btn--info" data-toast="info">Info</button>
+      <button class="btn btn--warning" data-toast="warning">Warning</button>
+    </div>
+  </div>
+
+  <div class="toaster" id="toaster" role="region" aria-label="Notifications" aria-live="polite"></div>
+</section>
+
+<template id="toast-tpl">
+  <div class="toast" role="status">
+    <span class="toast__icon" aria-hidden="true"></span>
+    <div class="toast__body">
+      <p class="toast__title"></p>
+      <p class="toast__msg"></p>
+    </div>
+    <button class="toast__close" aria-label="Dismiss notification">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <span class="toast__bar"></span>
+  </div>
+</template>
+
+<script src="script.js"></script>

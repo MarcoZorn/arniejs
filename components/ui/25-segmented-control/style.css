@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
+:root{
+  --bg:#1a1208;
+  --panel:#241a0e;
+  --track:#2e2010;
+  --ink:#f0e6d3;
+  --muted:#a89070;
+  --accent:#c4622d;
+  --radius:18px;
+}
+
+*{box-sizing:border-box}
+
+.stage{
+  min-height:100vh;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:26px;
+  padding:48px 20px;
+  font-family:'Sora',system-ui,sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(1100px 600px at 50% -10%,#241a0e 0%,transparent 60%),
+    var(--bg);
+}
+
+.stage__title{
+  margin:0;
+  font-size:clamp(22px,4vw,30px);
+  font-weight:700;
+  letter-spacing:-.02em;
+}
+
+.card{
+  width:min(440px,100%);
+  background:linear-gradient(180deg,var(--panel),#1a1208);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:var(--radius);
+  padding:26px 24px;
+  box-shadow:0 24px 60px -30px rgba(0,0,0,.9);
+}
+
+.card__label{
+  display:block;
+  color:var(--muted);
+  font-size:13px;
+  font-weight:500;
+  margin-bottom:12px;
+}
+
+.segmented{
+  position:relative;
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns:1fr;
+  gap:0;
+  padding:5px;
+  background:var(--track);
+  border-radius:13px;
+  border:1px solid rgba(255,255,255,.05);
+}
+.segmented__pill{
+  position:absolute;
+  top:5px;
+  left:5px;
+  height:calc(100% - 10px);
+  border-radius:9px;
+  background:linear-gradient(180deg,#2b3450,#222a40);
+  box-shadow:0 4px 12px -4px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.08);
+  transform:translateX(0);
+  transition:transform .34s cubic-bezier(.22,1,.36,1);
+  will-change:transform;
+}
+.segmented__btn{
+  position:relative;
+  z-index:1;
+  border:0;
+  background:transparent;
+  color:var(--muted);
+  font-family:inherit;
+  font-size:14px;
+  font-weight:600;
+  padding:9px 6px;
+  cursor:pointer;
+  border-radius:9px;
+  transition:color .22s ease;
+}
+.segmented__btn.is-active{color:var(--ink)}
+.segmented__btn:focus-visible{
+  outline:none;
+  box-shadow:0 0 0 2px rgba(91,140,255,.6);
+}
+
+.divider{
+  height:1px;
+  background:rgba(255,255,255,.06);
+  margin:22px 0;
+}
+
+.switches{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px}
+.switch-row{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.switch-row__text{display:flex;flex-direction:column;gap:3px}
+.switch-row__title{font-size:15px;font-weight:600}
+.switch-row__sub{font-size:12.5px;color:var(--muted)}
+
+.toggle{
+  flex:none;
+  width:48px;height:28px;
+  padding:0;
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:999px;
+  background:var(--track);
+  cursor:pointer;
+  transition:background .26s ease;
+}
+.toggle.is-on{background:linear-gradient(90deg,#c4622d,var(--accent))}
+.toggle__knob{
+  display:block;
+  width:22px;height:22px;
+  margin:2px;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0 2px 6px rgba(0,0,0,.4);
+  transform:translateX(0);
+  transition:transform .28s cubic-bezier(.22,1,.36,1);
+}
+.toggle.is-on .toggle__knob{transform:translateX(20px)}
+.toggle:focus-visible{outline:none;box-shadow:0 0 0 3px rgba(91,140,255,.5)}
+
+.checks{border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.check{display:flex;align-items:center;gap:12px;cursor:pointer;font-size:14.5px}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check__box{
+  flex:none;
+  width:22px;height:22px;
+  border-radius:7px;
+  border:1.5px solid rgba(255,255,255,.16);
+  background:var(--track);
+  display:grid;
+  place-items:center;
+  transition:background .2s ease,border-color .2s ease;
+}
+.check__box svg{
+  width:15px;height:15px;
+  fill:none;
+  stroke:#fff;
+  stroke-width:3;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-dasharray:26;
+  stroke-dashoffset:26;
+  transition:stroke-dashoffset .26s ease;
+}
+.check input:checked + .check__box{
+  background:linear-gradient(180deg,#c4622d,var(--accent));
+  border-color:var(--accent);
+}
+.check input:checked + .check__box svg{stroke-dashoffset:0}
+.check input:focus-visible + .check__box{box-shadow:0 0 0 3px rgba(91,140,255,.5)}
+.check__label{color:var(--ink)}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+}

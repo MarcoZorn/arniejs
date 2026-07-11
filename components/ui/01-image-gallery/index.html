@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="style.css">
+
+<section class="gallery">
+  <header class="gallery__head">
+    <p class="gallery__eyebrow">Collection · 2026</p>
+    <h1 class="gallery__title">Visual Index</h1>
+    <p class="gallery__sub">A curated set of frames. Filter by mood, tap to expand.</p>
+    <nav class="filters" aria-label="Filter gallery">
+      <button class="filter is-active" data-filter="all">All</button>
+      <button class="filter" data-filter="nature">Nature</button>
+      <button class="filter" data-filter="urban">Urban</button>
+      <button class="filter" data-filter="abstract">Abstract</button>
+    </nav>
+  </header>
+
+  <div class="grid" id="grid">
+    <figure class="card" data-cat="nature" data-caption="Alpine drift" style="--w:800;--h:1100">
+      <img src="https://picsum.photos/seed/alpine/800/1100" alt="Alpine drift" loading="lazy">
+      <figcaption><span class="tag">Nature</span><span class="cap">Alpine drift</span></figcaption>
+    </figure>
+    <figure class="card" data-cat="urban" data-caption="Concrete tide" style="--w:800;--h:600">
+      <img src="https://picsum.photos/seed/concrete/800/600" alt="Concrete tide" loading="lazy">
+      <figcaption><span class="tag">Urban</span><span class="cap">Concrete tide</span></figcaption>
+    </figure>
+    <figure class="card" data-cat="abstract" data-caption="Chroma fold" style="--w:800;--h:800">
+      <img src="https://picsum.photos/seed/chroma/800/800" alt="Chroma fold" loading="lazy">
+      <figcaption><span class="tag">Abstract</span><span class="cap">Chroma fold</span></figcaption>
+    </figure>
+    <figure class="card" data-cat="nature" data-caption="Fern light" style="--w:800;--h:900">
+      <img src="https://picsum.photos/seed/fernlight/800/900" alt="Fern light" loading="lazy">
+      <figcaption><span class="tag">Nature</span><span class="cap">Fern light</span></figcaption>
+    </figure>
+    <figure class="card" data-cat="urban" data-caption="Night transit" style="--w:800;--h:1000">
+      <img src="https://picsum.photos/seed/transit/800/1000" alt="Night transit" loading="lazy">
+      <figcaption><span class="tag">Urban</span><span class="cap">Night transit</span></figcaption>
+    </figure>
+    <figure class="card" data-cat="abstract" data-caption="Liquid mesh" style="--w:800;--h:600">
+      <img src="https://picsum.photos/seed/liquidmesh/800/600" alt="Liquid mesh" loading="lazy">
+      <figcaption><span class="tag">Abstract</span><span class="cap">Liquid mesh</span></figcaption>
+    </figure>
+    <figure class="card" data-cat="nature" data-caption="Dune breath" style="--w:800;--h:700">
+      <img src="https://picsum.photos/seed/dunebreath/800/700" alt="Dune breath" loading="lazy">
+      <figcaption><span class="tag">Nature</span><span class="cap">Dune breath</span></figcaption>
+    </figure>
+    <figure class="card" data-cat="urban" data-caption="Glass canyon" style="--w:800;--h:1150">
+      <img src="https://picsum.photos/seed/glasscanyon/800/1150" alt="Glass canyon" loading="lazy">
+      <figcaption><span class="tag">Urban</span><span class="cap">Glass canyon</span></figcaption>
+    </figure>
+    <figure class="card" data-cat="abstract" data-caption="Prism dust" style="--w:800;--h:850">
+      <img src="https://picsum.photos/seed/prismdust/800/850" alt="Prism dust" loading="lazy">
+      <figcaption><span class="tag">Abstract</span><span class="cap">Prism dust</span></figcaption>
+    </figure>
+    <figure class="card" data-cat="nature" data-caption="Tidal mist" style="--w:800;--h:600">
+      <img src="https://picsum.photos/seed/tidalmist/800/600" alt="Tidal mist" loading="lazy">
+      <figcaption><span class="tag">Nature</span><span class="cap">Tidal mist</span></figcaption>
+    </figure>
+    <figure class="card" data-cat="urban" data-caption="Rooftop dusk" style="--w:800;--h:900">
+      <img src="https://picsum.photos/seed/rooftopdusk/800/900" alt="Rooftop dusk" loading="lazy">
+      <figcaption><span class="tag">Urban</span><span class="cap">Rooftop dusk</span></figcaption>
+    </figure>
+    <figure class="card" data-cat="abstract" data-caption="Ink bloom" style="--w:800;--h:1050">
+      <img src="https://picsum.photos/seed/inkbloom/800/1050" alt="Ink bloom" loading="lazy">
+      <figcaption><span class="tag">Abstract</span><span class="cap">Ink bloom</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+  <button class="lb__close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb__nav lb__prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+  <figure class="lb__stage">
+    <img id="lbImg" src="" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb__nav lb__next" id="lbNext" aria-label="Next">&#8250;</button>
+</div>
+
+<script src="script.js"></script>

@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Choose a workspace</h1>
+
+  <section class="card">
+    <span class="select__caption" id="wsCaption">Workspace</span>
+
+    <div class="select" data-select>
+      <button class="select__trigger" type="button"
+              aria-haspopup="listbox" aria-expanded="false"
+              aria-labelledby="wsCaption" data-trigger>
+        <span class="select__icon" data-current-icon>🚀</span>
+        <span class="select__value" data-value>Launchpad</span>
+        <svg class="select__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+
+      <ul class="select__list" role="listbox" aria-labelledby="wsCaption" tabindex="-1" data-list>
+        <li class="select__option is-selected" role="option" aria-selected="true" data-icon="🚀" data-val="Launchpad">
+          <span class="select__opt-icon">🚀</span>
+          <span class="select__opt-text"><b>Launchpad</b><small>Product & growth</small></span>
+          <svg class="select__check" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+        </li>
+        <li class="select__option" role="option" aria-selected="false" data-icon="🎨" data-val="Design Studio">
+          <span class="select__opt-icon">🎨</span>
+          <span class="select__opt-text"><b>Design Studio</b><small>Brand & UI</small></span>
+          <svg class="select__check" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+        </li>
+        <li class="select__option" role="option" aria-selected="false" data-icon="📊" data-val="Analytics">
+          <span class="select__opt-icon">📊</span>
+          <span class="select__opt-text"><b>Analytics</b><small>Data & reports</small></span>
+          <svg class="select__check" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+        </li>
+        <li class="select__option" role="option" aria-selected="false" data-icon="🛠️" data-val="Engineering">
+          <span class="select__opt-icon">🛠️</span>
+          <span class="select__opt-text"><b>Engineering</b><small>Build & ship</small></span>
+          <svg class="select__check" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+        </li>
+        <li class="select__option" role="option" aria-selected="false" data-icon="💬" data-val="Support">
+          <span class="select__opt-icon">💬</span>
+          <span class="select__opt-text"><b>Support</b><small>Help & success</small></span>
+          <svg class="select__check" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>

@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Set your budget</h1>
+
+  <section class="card">
+    <div class="card__head">
+      <span class="card__label">Price range</span>
+      <output class="card__output" data-output>€0 – €0</output>
+    </div>
+
+    <div class="slider" data-min="0" data-max="2000" data-step="10" data-low="400" data-high="1400">
+      <div class="slider__rail"></div>
+      <div class="slider__fill" data-fill></div>
+
+      <button class="slider__handle" data-handle="low" type="button"
+              role="slider" aria-label="Minimum price"
+              aria-valuemin="0" aria-valuemax="2000" aria-valuenow="400">
+        <span class="slider__tip" data-tip>€400</span>
+      </button>
+
+      <button class="slider__handle" data-handle="high" type="button"
+              role="slider" aria-label="Maximum price"
+              aria-valuemin="0" aria-valuemax="2000" aria-valuenow="1400">
+        <span class="slider__tip" data-tip>€1400</span>
+      </button>
+    </div>
+
+    <div class="slider__scale">
+      <span>€0</span>
+      <span>€2000</span>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #1a1208;
+  --card: #241a0e;
+  --line: rgba(255,255,255,.08);
+  --text: #f0e6d3;
+  --muted: #a89070;
+  --accent: #5a7a3a;
+}
+
+body {
+  font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.6rem;
+  padding: 4rem 0;
+}
+
+.intro { text-align: center; padding: 0 1.5rem; }
+.eyebrow {
+  font-size: .8rem; letter-spacing: .24em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: .9rem;
+}
+h1 {
+  font-size: clamp(1.9rem, 5vw, 3rem); font-weight: 700;
+  letter-spacing: -.02em; color: var(--text);
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  overflow: hidden;
+  padding: .5rem 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+
+.row { display: flex; overflow: hidden; }
+.track {
+  display: flex;
+  flex-shrink: 0;
+  gap: 1.2rem;
+  padding-right: 1.2rem;
+  will-change: transform;
+}
+
+.row--left .track { animation: scroll-left 38s linear infinite; }
+.row--right .track { animation: scroll-right 38s linear infinite; }
+
+.row:hover .track { animation-play-state: paused; }
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes scroll-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  flex-shrink: 0;
+  padding: .9rem 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: -.01em;
+  white-space: nowrap;
+  transition: transform .3s cubic-bezier(.2,.8,.2,1), color .3s, border-color .3s;
+  will-change: transform;
+}
+.logo:hover { color: var(--text); border-color: var(--accent); transform: translateY(-3px); }
+.logo svg { width: 24px; height: 24px; color: var(--accent); flex-shrink: 0; }
+
+.hint { color: var(--muted); font-size: .82rem; opacity: .7; text-align: center; padding: 0 1.5rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .row--left .track, .row--right .track { animation: none; }
+  .marquee {
+    -webkit-mask-image: none; mask-image: none;
+  }
+  .row { overflow-x: auto; }
+}

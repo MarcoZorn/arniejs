@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Rate your experience</h1>
+
+  <section class="card" aria-labelledby="starLabel">
+    <p id="starLabel" class="card__label">How was it?</p>
+
+    <div class="rating"
+         role="slider"
+         tabindex="0"
+         aria-label="Star rating"
+         aria-valuemin="0"
+         aria-valuemax="5"
+         aria-valuenow="0"
+         aria-valuetext="No rating">
+      <button class="star" type="button" data-value="1" aria-label="1 star" tabindex="-1">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.7l1.2-6.6L2.5 9.5l6.6-.9z"/></svg>
+      </button>
+      <button class="star" type="button" data-value="2" aria-label="2 stars" tabindex="-1">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.7l1.2-6.6L2.5 9.5l6.6-.9z"/></svg>
+      </button>
+      <button class="star" type="button" data-value="3" aria-label="3 stars" tabindex="-1">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.7l1.2-6.6L2.5 9.5l6.6-.9z"/></svg>
+      </button>
+      <button class="star" type="button" data-value="4" aria-label="4 stars" tabindex="-1">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.7l1.2-6.6L2.5 9.5l6.6-.9z"/></svg>
+      </button>
+      <button class="star" type="button" data-value="5" aria-label="5 stars" tabindex="-1">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.7l1.2-6.6L2.5 9.5l6.6-.9z"/></svg>
+      </button>
+    </div>
+
+    <div class="readout">
+      <span class="readout__value" data-value>0.0</span>
+      <span class="readout__label" data-caption>Tap a star</span>
+    </div>
+  </section>
+
+  <section class="card" aria-labelledby="emojiLabel">
+    <p id="emojiLabel" class="card__label">Mood variant</p>
+    <div class="emoji" role="radiogroup" aria-label="Mood rating">
+      <button class="emoji__face" type="button" data-mood="1" role="radio" aria-checked="false" aria-label="Awful">🙁</button>
+      <button class="emoji__face" type="button" data-mood="2" role="radio" aria-checked="false" aria-label="Meh">😕</button>
+      <button class="emoji__face" type="button" data-mood="3" role="radio" aria-checked="false" aria-label="Okay">😐</button>
+      <button class="emoji__face" type="button" data-mood="4" role="radio" aria-checked="false" aria-label="Good">🙂</button>
+      <button class="emoji__face" type="button" data-mood="5" role="radio" aria-checked="false" aria-label="Great">😍</button>
+    </div>
+    <p class="emoji__caption" data-mood-caption>Pick a face</p>
+  </section>
+</main>
+
+<script src="script.js"></script>

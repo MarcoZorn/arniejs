@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --bg: #1a1208;
+  --panel: #241a0e;
+  --fg: #f0e6d3;
+  --muted: #a89070;
+  --line: rgba(255,255,255,.08);
+  --success: #5a7a3a;
+  --error: #a03820;
+  --info: #c4622d;
+  --warning: #ffbf5b;
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Mono', ui-monospace, monospace;
+  background:
+    radial-gradient(900px 500px at 50% -10%, rgba(124,140,255,.12), transparent 60%),
+    var(--bg);
+  color: var(--fg);
+}
+
+.stage {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: clamp(1.2rem, 5vw, 3rem);
+}
+
+.demo { text-align: center; max-width: 460px; }
+.demo__title {
+  margin: 0 0 .5rem;
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+.demo__sub { margin: 0 0 1.8rem; color: var(--muted); font-size: .9rem; line-height: 1.6; }
+
+.demo__buttons { display: flex; flex-wrap: wrap; gap: .7rem; justify-content: center; }
+
+.btn {
+  padding: .7rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--fg);
+  font-family: inherit;
+  font-size: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .18s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+.btn:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+.btn--success:hover { border-color: var(--success); box-shadow: 0 8px 20px rgba(67,209,158,.18); }
+.btn--error:hover   { border-color: var(--error);   box-shadow: 0 8px 20px rgba(255,107,125,.18); }
+.btn--info:hover    { border-color: var(--info);    box-shadow: 0 8px 20px rgba(124,140,255,.18); }
+.btn--warning:hover { border-color: var(--warning); box-shadow: 0 8px 20px rgba(255,191,91,.18); }
+
+.toaster {
+  position: fixed;
+  top: 1.2rem;
+  right: 1.2rem;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  width: min(340px, calc(100vw - 2.4rem));
+}
+
+.toast {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: start;
+  gap: .75rem;
+  padding: .9rem 1rem 1rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 16px 40px rgba(0,0,0,.4);
+  overflow: hidden;
+  transform: translateX(120%);
+  opacity: 0;
+  transition: transform .4s cubic-bezier(.7,0,.2,1), opacity .3s ease;
+}
+.toast.is-in { transform: translateX(0); opacity: 1; }
+.toast.is-out { transform: translateX(120%); opacity: 0; }
+
+.toast--success { --c: var(--success); }
+.toast--error   { --c: var(--error); }
+.toast--info    { --c: var(--info); }
+.toast--warning { --c: var(--warning); }
+
+.toast__icon {
+  display: grid;
+  place-items: center;
+  width: 26px; height: 26px;
+  border-radius: 8px;
+  font-size: .95rem;
+  background: color-mix(in srgb, var(--c) 22%, transparent);
+}
+.toast__body { min-width: 0; }
+.toast__title {
+  margin: 0 0 .2rem;
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--c);
+  letter-spacing: .02em;
+}
+.toast__msg {
+  margin: 0;
+  font-size: .78rem;
+  line-height: 1.5;
+  color: var(--muted);
+  word-wrap: break-word;
+}
+
+.toast__close {
+  display: grid;
+  place-items: center;
+  width: 24px; height: 24px;
+  border: 0;
+  border-radius: 7px;
+  background: rgba(255,255,255,.04);
+  cursor: pointer;
+  transition: transform .18s ease, background .2s ease;
+}
+.toast__close:hover { background: rgba(255,255,255,.12); transform: scale(1.08); }
+.toast__close:focus-visible { outline: 2px solid var(--fg); outline-offset: 1px; }
+.toast__close svg {
+  width: 14px; height: 14px;
+  fill: none; stroke: var(--muted);
+  stroke-width: 2.4; stroke-linecap: round;
+}
+
+.toast__bar {
+  position: absolute;
+  left: 0; bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: var(--c);
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.toast.is-in .toast__bar {
+  animation: drain var(--life, 4000ms) linear forwards;
+}
+@keyframes drain { to { transform: scaleX(0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+  .toast { transform: none; }
+}

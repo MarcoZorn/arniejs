@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="style.css">
+<svg class="stage" id="stage">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="11" result="blur"/>
+      <feColorMatrix in="blur" mode="matrix"
+        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" result="goo"/>
+      <feBlend in="SourceGraphic" in2="goo"/>
+    </filter>
+    <radialGradient id="grad" cx="35%" cy="35%">
+      <stop offset="0%" stop-color="#e0f7ff"/>
+      <stop offset="35%" stop-color="#54e6ff"/>
+      <stop offset="100%" stop-color="#6a3cff"/>
+    </radialGradient>
+  </defs>
+  <g id="goo-group" filter="url(#goo)"></g>
+</svg>
+<div class="caption"><b>Gooey Cursor</b><span>move to trail — click to burst</span></div>
+<script src="script.js"></script>

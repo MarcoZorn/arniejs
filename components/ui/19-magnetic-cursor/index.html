@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <div class="glow" aria-hidden="true"></div>
+
+  <header class="intro">
+    <p class="eyebrow">Interaction / Pointer</p>
+    <h1>Magnetic Cursor</h1>
+    <p class="lede">Move your pointer around. Buttons pull it in, the ring lags behind, and everything scales on hover.</p>
+  </header>
+
+  <section class="actions" aria-label="Demo controls">
+    <button class="btn magnetic" data-cursor="view">Get started</button>
+    <button class="btn ghost magnetic" data-cursor="view">Live preview</button>
+    <a class="link magnetic" href="#" data-cursor="view">Documentation &rsaquo;</a>
+  </section>
+
+  <nav class="dots" aria-label="Social">
+    <a class="dot magnetic" href="#" data-cursor="open" aria-label="Twitter">X</a>
+    <a class="dot magnetic" href="#" data-cursor="open" aria-label="GitHub">GH</a>
+    <a class="dot magnetic" href="#" data-cursor="open" aria-label="Dribbble">Dr</a>
+  </nav>
+
+  <p class="hint">Custom cursor hides automatically on touch devices.</p>
+</main>
+
+<div class="cursor" aria-hidden="true">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"><span class="cursor-label"></span></div>
+</div>
+
+<script src="script.js"></script>

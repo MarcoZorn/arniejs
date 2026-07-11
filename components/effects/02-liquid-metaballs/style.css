@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;800&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; overflow: hidden; background: #1a1208; }
+canvas { display: block; width: 100vw; height: 100vh; }
+/* the gooey stage sits behind and is filtered */
+#stage { position: fixed; inset: 0; filter: blur(14px) contrast(28); }
+#glow  { position: fixed; inset: 0; mix-blend-mode: screen; opacity: .5; }
+.caption {
+  position: fixed; left: 26px; bottom: 24px; z-index: 5;
+  font-family: 'Syne', sans-serif; color: #cfe4ff;
+  pointer-events: none; mix-blend-mode: screen; line-height: 1.35;
+}
+.caption h1 { font-size: 20px; font-weight: 800; letter-spacing: .04em; }
+.caption p  { font-size: 12px; font-weight: 600; opacity: .55; letter-spacing: .18em; text-transform: uppercase; }

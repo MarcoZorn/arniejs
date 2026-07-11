@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #1a1208;
+  --ink: #f0e6d3;
+  --muted: #a89070;
+  --accent: #ff6f61;
+  --accent-2: #c4622d;
+}
+
+body {
+  font-family: 'Syne', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  perspective: 1000px;
+  overflow: hidden;
+  background:
+    radial-gradient(1200px 700px at 20% 0%, #2e2010 0%, transparent 55%),
+    radial-gradient(1000px 600px at 100% 100%, #3d2b14 0%, transparent 55%),
+    var(--bg);
+}
+
+.hero-stage {
+  position: relative;
+  width: min(1080px, 100%);
+  aspect-ratio: 16 / 10;
+  transform-style: preserve-3d;
+  transition: transform .25s ease-out;
+  will-change: transform;
+}
+
+.layer {
+  position: absolute;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.layer-bg {
+  inset: -8%;
+  border-radius: 32px;
+  background:
+    radial-gradient(600px 380px at 70% 30%, rgba(110,168,255,.22), transparent 60%),
+    radial-gradient(500px 320px at 25% 75%, rgba(255,111,97,.22), transparent 60%),
+    linear-gradient(160deg, #1a1208, #1a1208);
+  border: 1px solid rgba(255,255,255,.06);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+.layer-mid {
+  width: 42%;
+  border-radius: 24px;
+  object-fit: cover;
+  aspect-ratio: 1;
+  top: 12%;
+  right: 6%;
+  box-shadow: 0 40px 80px -30px rgba(0,0,0,.9);
+  border: 1px solid rgba(255,255,255,.1);
+}
+.layer-mid-2 {
+  width: 26%;
+  top: auto;
+  bottom: 8%;
+  right: 30%;
+  left: auto;
+  border-radius: 20px;
+}
+
+.accent {
+  display: block;
+  border-radius: 50%;
+  filter: blur(.5px);
+}
+.accent-1 {
+  width: 74px; height: 74px;
+  top: 16%; left: 10%;
+  background: linear-gradient(140deg, var(--accent), #a03820);
+  box-shadow: 0 20px 50px -12px rgba(255,111,97,.7);
+}
+.accent-2 {
+  width: 44px; height: 44px;
+  bottom: 20%; left: 22%;
+  background: linear-gradient(140deg, var(--accent-2), #d4a85a);
+  box-shadow: 0 16px 40px -10px rgba(110,168,255,.7);
+}
+.accent-ring {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,.25);
+  bottom: 6%; right: 4%;
+  filter: none;
+}
+
+.hero-content {
+  position: absolute;
+  left: 6%;
+  top: 50%;
+  transform: translateZ(0);
+  translate: 0 -50%;
+  max-width: 30rem;
+  z-index: 2;
+}
+.hero-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .26em;
+  font-size: .74rem;
+  font-weight: 600;
+  color: var(--accent-2);
+  margin-bottom: 1rem;
+}
+.hero-title {
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  font-weight: 800;
+  line-height: .98;
+  letter-spacing: -.02em;
+}
+.hero-sub {
+  color: var(--muted);
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.55;
+  margin: 1.4rem 0 2rem;
+  font-weight: 500;
+}
+
+.hero-actions { display: flex; flex-wrap: wrap; gap: .9rem; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .95rem 1.6rem;
+  border-radius: 14px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.btn-primary {
+  color: #1a1208;
+  background: linear-gradient(120deg, #a03820, var(--accent));
+  box-shadow: 0 18px 40px -16px rgba(255,111,97,.7);
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 26px 50px -16px rgba(255,111,97,.85); }
+.btn-ghost {
+  color: var(--ink);
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.14);
+}
+.btn-ghost:hover { transform: translateY(-3px); background: rgba(255,255,255,.12); }
+
+.hero-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(60% 50% at 50% 120%, rgba(110,168,255,.14), transparent 70%);
+}
+
+@media (max-width: 720px) {
+  .hero-stage { aspect-ratio: 3 / 4; }
+  .hero-content { position: static; translate: 0; max-width: none; text-align: left; padding-top: 8%; }
+  .layer-mid { width: 46%; top: 4%; }
+  .layer-mid-2 { width: 32%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-stage, .layer { transition: none !important; animation: none !important; }
+}

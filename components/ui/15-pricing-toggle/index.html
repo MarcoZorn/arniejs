@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <header class="stage__head">
+    <h1 class="stage__title">Simple, honest pricing</h1>
+    <p class="stage__sub">Switch anytime. No hidden fees.</p>
+
+    <div class="toggle" role="group" aria-label="Billing period">
+      <span class="toggle__label" data-label="monthly">Monthly</span>
+      <button class="switch" role="switch" aria-checked="false" aria-label="Toggle yearly billing">
+        <span class="switch__thumb" aria-hidden="true"></span>
+      </button>
+      <span class="toggle__label is-active" data-label="yearly">Yearly</span>
+      <span class="save">Save 20%</span>
+    </div>
+  </header>
+
+  <section class="tiers" aria-label="Plans">
+    <article class="tier">
+      <h2 class="tier__name">Starter</h2>
+      <p class="tier__desc">For solo makers finding their feet.</p>
+      <div class="price">
+        <span class="price__cur">$</span>
+        <span class="price__num" data-monthly="9" data-yearly="7">9</span>
+        <span class="price__per">/mo</span>
+      </div>
+      <ul class="tier__feats">
+        <li>1 project</li><li>Community support</li><li>Basic analytics</li>
+      </ul>
+      <button class="cta">Get started</button>
+    </article>
+
+    <article class="tier tier--popular">
+      <span class="tier__badge">Most popular</span>
+      <h2 class="tier__name">Studio</h2>
+      <p class="tier__desc">For teams shipping real product.</p>
+      <div class="price">
+        <span class="price__cur">$</span>
+        <span class="price__num" data-monthly="29" data-yearly="23">29</span>
+        <span class="price__per">/mo</span>
+      </div>
+      <ul class="tier__feats">
+        <li>Unlimited projects</li><li>Priority support</li><li>Advanced analytics</li><li>Team roles</li>
+      </ul>
+      <button class="cta cta--primary">Start free trial</button>
+    </article>
+
+    <article class="tier">
+      <h2 class="tier__name">Scale</h2>
+      <p class="tier__desc">For orgs that need control.</p>
+      <div class="price">
+        <span class="price__cur">$</span>
+        <span class="price__num" data-monthly="79" data-yearly="63">79</span>
+        <span class="price__per">/mo</span>
+      </div>
+      <ul class="tier__feats">
+        <li>SSO &amp; SAML</li><li>Dedicated manager</li><li>Audit logs</li><li>99.99% SLA</li>
+      </ul>
+      <button class="cta">Contact sales</button>
+    </article>
+  </section>
+</main>
+
+<script src="script.js"></script>

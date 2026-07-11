@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Create your account</h1>
+
+  <section class="wizard" aria-label="Multi-step form">
+    <ol class="stepper" role="list">
+      <li class="step is-active" data-step="0">
+        <span class="step__dot">1</span><span class="step__label">Profile</span>
+      </li>
+      <li class="step" data-step="1">
+        <span class="step__dot">2</span><span class="step__label">Account</span>
+      </li>
+      <li class="step" data-step="2">
+        <span class="step__dot">3</span><span class="step__label">Review</span>
+      </li>
+    </ol>
+
+    <div class="progress"><span class="progress__bar" style="transform:scaleX(0.05)"></span></div>
+
+    <form class="form" novalidate>
+      <div class="viewport">
+        <div class="track">
+          <!-- step 1 -->
+          <fieldset class="panel" aria-label="Profile">
+            <label class="field">
+              <span>Full name</span>
+              <input name="name" type="text" autocomplete="name" required minlength="2" placeholder="Ada Lovelace">
+              <em class="err">Please enter your name.</em>
+            </label>
+            <label class="field">
+              <span>Role</span>
+              <input name="role" type="text" required placeholder="Product Designer">
+              <em class="err">Tell us your role.</em>
+            </label>
+          </fieldset>
+
+          <!-- step 2 -->
+          <fieldset class="panel" aria-label="Account">
+            <label class="field">
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" required placeholder="you@studio.com">
+              <em class="err">Enter a valid email.</em>
+            </label>
+            <label class="field">
+              <span>Password</span>
+              <input name="password" type="password" required minlength="6" placeholder="6+ characters">
+              <em class="err">Min. 6 characters.</em>
+            </label>
+          </fieldset>
+
+          <!-- step 3 -->
+          <fieldset class="panel" aria-label="Review">
+            <div class="review">
+              <div class="review__row"><span>Name</span><strong data-out="name">—</strong></div>
+              <div class="review__row"><span>Role</span><strong data-out="role">—</strong></div>
+              <div class="review__row"><span>Email</span><strong data-out="email">—</strong></div>
+            </div>
+            <label class="check">
+              <input name="terms" type="checkbox" required>
+              <span>I agree to the terms &amp; conditions</span>
+            </label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="button" class="btn btn--ghost" data-back disabled>Back</button>
+        <button type="button" class="btn btn--primary" data-next>Continue</button>
+        <button type="submit" class="btn btn--primary" data-submit hidden>Create account</button>
+      </div>
+    </form>
+
+    <div class="success" hidden>
+      <div class="success__check" aria-hidden="true">
+        <svg viewBox="0 0 52 52"><path d="M14 27l8 8 16-18"/></svg>
+      </div>
+      <h2>You're all set</h2>
+      <p>Welcome aboard. Your workspace is ready.</p>
+      <button type="button" class="btn btn--ghost" data-restart>Start over</button>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>

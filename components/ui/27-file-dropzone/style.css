@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg: #1a1208;
+  --panel: #241a0e;
+  --panel-2: #241a0e;
+  --line: #3d2b14;
+  --text: #f0e6d3;
+  --muted: #8892a6;
+  --accent: #c4622d;
+  --accent-2: #9b6b3a;
+  --ok: #5a7a3a;
+  --danger: #a03820;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #241a0e 0%, var(--bg) 60%);
+  color: var(--text);
+  font-family: 'Sora', system-ui, sans-serif;
+  display: grid;
+  place-items: start center;
+  padding: 6vh 20px;
+}
+
+.stage { width: 100%; max-width: 560px; }
+.stage__title { margin: 0 0 6px; font-size: clamp(1.6rem, 4vw, 2.1rem); font-weight: 700; letter-spacing: -.02em; }
+.stage__sub { margin: 0 0 26px; color: var(--muted); font-size: .95rem; }
+
+.dropzone {
+  position: relative;
+  border: 2px dashed var(--line);
+  border-radius: 18px;
+  background: linear-gradient(180deg, var(--panel), #10141c);
+  padding: 40px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+  outline: none;
+}
+.dropzone:hover, .dropzone:focus-visible { border-color: var(--accent); }
+.dropzone:focus-visible { box-shadow: 0 0 0 4px rgba(109,139,255,.25); }
+.dropzone.is-drag {
+  border-color: var(--accent-2);
+  transform: scale(1.015);
+  box-shadow: 0 20px 60px -20px rgba(155,109,255,.5);
+}
+
+.dropzone__icon {
+  width: 54px; height: 54px; margin: 0 auto 14px;
+  display: grid; place-items: center;
+  border-radius: 14px;
+  color: var(--accent);
+  background: rgba(109,139,255,.12);
+  transition: transform .3s ease;
+}
+.dropzone.is-drag .dropzone__icon { transform: translateY(-4px); color: var(--accent-2); }
+.dropzone__icon svg { width: 26px; height: 26px; }
+.dropzone__text { margin: 0 0 6px; font-size: 1rem; }
+.dropzone__browse { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.dropzone__hint { margin: 0; color: var(--muted); font-size: .8rem; }
+
+.filelist { list-style: none; margin: 22px 0 0; padding: 0; display: grid; gap: 12px; }
+
+.file {
+  display: grid;
+  grid-template-columns: 46px 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel-2);
+  transform-origin: top;
+  animation: fileIn .35s cubic-bezier(.2,.8,.2,1) both;
+}
+.file.is-out { animation: fileOut .28s ease forwards; }
+
+@keyframes fileIn { from { opacity: 0; transform: translateY(8px) scale(.98); } to { opacity: 1; transform: none; } }
+@keyframes fileOut { to { opacity: 0; transform: translateX(20px) scale(.96); } }
+
+.file__thumb {
+  width: 46px; height: 46px; border-radius: 10px;
+  object-fit: cover; background: #1a1208;
+  display: grid; place-items: center;
+  color: var(--muted); font-size: .7rem; font-weight: 600;
+  overflow: hidden;
+}
+.file__main { min-width: 0; }
+.file__name { font-size: .9rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.file__meta { font-size: .75rem; color: var(--muted); margin-top: 2px; }
+.file__meta .file__done { color: var(--ok); }
+
+.bar { height: 5px; border-radius: 99px; background: #1a1208; margin-top: 8px; overflow: hidden; }
+.bar__fill {
+  height: 100%; width: 100%; border-radius: 99px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .2s linear;
+}
+.file.is-complete .bar__fill { background: linear-gradient(90deg, var(--ok), #6ee7b7); }
+
+.file__remove {
+  width: 30px; height: 30px; border-radius: 9px;
+  border: 1px solid var(--line); background: transparent; color: var(--muted);
+  cursor: pointer; display: grid; place-items: center;
+  transition: transform .2s ease, color .2s ease, border-color .2s ease;
+}
+.file__remove:hover { color: var(--danger); border-color: var(--danger); transform: rotate(90deg); }
+.file__remove svg { width: 15px; height: 15px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .001s !important; transition-duration: .001s !important; }
+}

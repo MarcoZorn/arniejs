@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage" data-theme="dark">
+  <div class="topbar">
+    <h1 class="stage__title">Your dashboard</h1>
+
+    <button class="tt" role="switch" aria-checked="false" aria-label="Toggle light mode">
+      <span class="tt__track" aria-hidden="true">
+        <span class="tt__thumb">
+          <svg class="tt__icon tt__sun" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"/>
+            <g class="tt__rays">
+              <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/><line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/>
+              <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/><line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/>
+            </g>
+          </svg>
+          <svg class="tt__icon tt__moon" viewBox="0 0 24 24">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/>
+          </svg>
+        </span>
+      </span>
+    </button>
+  </div>
+
+  <section class="cards" aria-label="Demo cards">
+    <article class="card card--wide">
+      <span class="card__tag">Revenue</span>
+      <strong class="card__big">$48,120</strong>
+      <span class="card__delta">+12.4% this month</span>
+      <div class="bars" aria-hidden="true">
+        <span style="--h:40%"></span><span style="--h:65%"></span><span style="--h:50%"></span>
+        <span style="--h:80%"></span><span style="--h:60%"></span><span style="--h:95%"></span>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card__avatar" src="https://picsum.photos/seed/theme-user/96/96" alt="" width="44" height="44">
+      <div>
+        <strong class="card__name">Nora Feld</strong>
+        <span class="card__sub">Product Lead</span>
+      </div>
+    </article>
+
+    <article class="card card--accent">
+      <span class="card__tag">Active now</span>
+      <strong class="card__big">1,204</strong>
+      <span class="card__sub">sessions</span>
+    </article>
+  </section>
+</main>
+
+<script src="script.js"></script>

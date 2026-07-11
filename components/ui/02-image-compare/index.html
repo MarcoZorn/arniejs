@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="wrap">
+  <header class="intro">
+    <p class="intro__eyebrow">Before / After</p>
+    <h1 class="intro__title">Drag to Compare</h1>
+    <p class="intro__sub">Slide the handle to reveal the edit. Works with mouse, touch and keyboard.</p>
+  </header>
+
+  <div class="compare" id="compare" style="--pos:50%">
+    <img class="compare__img compare__img--after" src="https://picsum.photos/seed/comparecity/1400/900" alt="After" draggable="false">
+    <div class="compare__top" id="top">
+      <img class="compare__img compare__img--before" src="https://picsum.photos/seed/comparecitygray/1400/900?grayscale&blur=1" alt="Before" draggable="false">
+    </div>
+
+    <span class="compare__label compare__label--before">Before</span>
+    <span class="compare__label compare__label--after">After</span>
+
+    <button class="handle" id="handle" role="slider" aria-label="Comparison position"
+            aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+      <span class="handle__line"></span>
+      <span class="handle__grip">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path d="M9 6 3 12l6 6M15 6l6 6-6 6" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="handle__line"></span>
+    </button>
+  </div>
+</main>
+
+<script src="script.js"></script>

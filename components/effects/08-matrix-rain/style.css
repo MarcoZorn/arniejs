@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+:root { --bg:#1a1208; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; background:var(--bg); overflow:hidden; cursor:crosshair; }
+canvas { display:block; }
+.caption {
+  position:fixed; left:22px; bottom:20px; z-index:10;
+  font-family:'Space Mono',monospace; pointer-events:none; mix-blend-mode:screen;
+  color:#8affc0; line-height:1.5;
+}
+.caption b { font-weight:700; letter-spacing:.14em; font-size:13px; text-transform:uppercase; }
+.caption span { display:block; font-size:11px; opacity:.55; letter-spacing:.05em; margin-top:3px; }

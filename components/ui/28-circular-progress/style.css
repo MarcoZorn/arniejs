@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg: #1a1208;
+  --text: #f0e6d3;
+  --muted: #a89070;
+  --a1: #c4622d; --a2: #9b6b3a;
+  --b1: #5a7a3a; --b2: #5a7a3a;
+  --c1: #d4a85a; --c2: #a03820;
+  --track: #2e2010;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1100px 600px at 50% -5%, #241a0e 0%, var(--bg) 60%);
+  color: var(--text);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: grid;
+  place-content: start center;
+  text-align: center;
+  padding: 8vh 20px;
+}
+
+.stage__title { margin: 0 0 6px; font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -.02em; }
+.stage__sub { margin: 0 0 42px; color: var(--muted); }
+
+.rings {
+  display: flex; flex-wrap: wrap; gap: 40px 56px;
+  justify-content: center; align-items: end;
+  margin-bottom: 56px;
+}
+
+.ring { position: relative; margin: 0; width: 168px; height: 168px; }
+.ring--md { width: 132px; height: 132px; }
+.ring--sm { width: 104px; height: 104px; }
+
+.ring__svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.ring__track { fill: none; stroke: var(--track); stroke-width: 8; }
+.ring__bar {
+  fill: none; stroke-width: 8; stroke-linecap: round;
+  stroke: url(#grad-a);
+  transition: stroke-dashoffset 1.4s cubic-bezier(.25,.8,.25,1);
+}
+.ring[data-color="a"] .ring__bar { stroke: var(--a1); filter: drop-shadow(0 0 6px rgba(109,139,255,.5)); }
+.ring[data-color="b"] .ring__bar { stroke: var(--b1); filter: drop-shadow(0 0 6px rgba(56,211,159,.5)); }
+.ring[data-color="c"] .ring__bar { stroke: var(--c1); filter: drop-shadow(0 0 6px rgba(255,178,77,.5)); }
+
+.ring__cap {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 1.5rem; letter-spacing: -.02em;
+}
+.ring--md .ring__cap { font-size: 1.2rem; }
+.ring--sm .ring__cap { font-size: 1rem; }
+.ring__pct { font-size: .65em; color: var(--muted); margin-left: 1px; align-self: flex-start; margin-top: .35em; }
+.ring__label {
+  position: absolute; left: 0; right: 0; bottom: -26px;
+  font-size: .8rem; color: var(--muted); font-weight: 500;
+}
+
+/* spinners */
+.spinners {
+  display: flex; flex-wrap: wrap; gap: 44px;
+  justify-content: center; align-items: center;
+  padding-top: 20px; border-top: 1px solid var(--track);
+}
+.spin { display: grid; gap: 12px; justify-items: center; }
+.spin__name { font-size: .78rem; color: var(--muted); }
+
+.spin__ring {
+  width: 34px; height: 34px; border-radius: 50%;
+  border: 3px solid var(--track);
+  border-top-color: var(--a1);
+  border-right-color: var(--a2);
+  display: inline-block;
+  animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.spin__dots { display: inline-flex; gap: 7px; }
+.spin__dots i {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--b1);
+  animation: pulse 1s ease-in-out infinite;
+}
+.spin__dots i:nth-child(2) { animation-delay: .15s; background: var(--b2); }
+.spin__dots i:nth-child(3) { animation-delay: .3s; background: var(--a1); }
+@keyframes pulse { 0%, 100% { transform: scale(.55); opacity: .4; } 50% { transform: scale(1); opacity: 1; } }
+
+.spin__bars { display: inline-flex; gap: 5px; align-items: center; height: 34px; }
+.spin__bars i {
+  width: 5px; height: 100%; border-radius: 99px;
+  background: linear-gradient(var(--c1), var(--c2));
+  transform-origin: center;
+  animation: stretch 1s ease-in-out infinite;
+}
+.spin__bars i:nth-child(2) { animation-delay: .12s; }
+.spin__bars i:nth-child(3) { animation-delay: .24s; }
+.spin__bars i:nth-child(4) { animation-delay: .36s; }
+@keyframes stretch { 0%, 100% { transform: scaleY(.35); } 50% { transform: scaleY(1); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .ring__bar { transition: none; }
+  .spin__ring, .spin__dots i, .spin__bars i { animation: none; }
+  .spin__dots i { opacity: 1; }
+  .spin__bars i { transform: scaleY(.7); }
+}

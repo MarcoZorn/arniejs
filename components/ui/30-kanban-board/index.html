@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <header class="stage__head">
+    <h1 class="stage__title">Sprint board</h1>
+    <p class="stage__sub">Drag cards between columns — order is saved as you drop.</p>
+  </header>
+
+  <div class="board" id="board">
+    <section class="col" data-col="todo">
+      <div class="col__head"><span class="col__dot col__dot--a"></span><h2 class="col__title">To do</h2><span class="col__count">0</span></div>
+      <div class="col__list" data-list></div>
+    </section>
+
+    <section class="col" data-col="doing">
+      <div class="col__head"><span class="col__dot col__dot--b"></span><h2 class="col__title">Doing</h2><span class="col__count">0</span></div>
+      <div class="col__list" data-list></div>
+    </section>
+
+    <section class="col" data-col="done">
+      <div class="col__head"><span class="col__dot col__dot--c"></span><h2 class="col__title">Done</h2><span class="col__count">0</span></div>
+      <div class="col__list" data-list></div>
+    </section>
+  </div>
+</main>
+
+<script src="script.js"></script>

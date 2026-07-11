@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="style.css">
+
+<section class="stage">
+  <div class="card">
+    <h1 class="card__title">Product overview</h1>
+
+    <div class="tabs">
+      <div class="tablist" role="tablist" aria-label="Product sections">
+        <span class="indicator" aria-hidden="true"></span>
+        <button class="tab" role="tab" id="tab-1" aria-controls="pan-1" aria-selected="true" tabindex="0">Overview</button>
+        <button class="tab" role="tab" id="tab-2" aria-controls="pan-2" aria-selected="false" tabindex="-1">Features</button>
+        <button class="tab" role="tab" id="tab-3" aria-controls="pan-3" aria-selected="false" tabindex="-1">Pricing</button>
+        <button class="tab" role="tab" id="tab-4" aria-controls="pan-4" aria-selected="false" tabindex="-1">Reviews</button>
+      </div>
+
+      <div class="panels">
+        <div class="panel is-active" role="tabpanel" id="pan-1" aria-labelledby="tab-1" tabindex="0">
+          <h2>Built for momentum</h2>
+          <p>A workspace that stays out of your way. Capture ideas, ship work, and keep every thread in one calm, fast interface designed for focus.</p>
+        </div>
+        <div class="panel" role="tabpanel" id="pan-2" aria-labelledby="tab-2" tabindex="0" hidden>
+          <h2>Everything, integrated</h2>
+          <p>Real-time sync, offline mode, version history, and 40+ native integrations. Automate the busywork and let your team spend time where it matters.</p>
+        </div>
+        <div class="panel" role="tabpanel" id="pan-3" aria-labelledby="tab-3" tabindex="0" hidden>
+          <h2>Fair, simple pricing</h2>
+          <p>Start free forever. Upgrade to Pro at $9 per seat each month, billed annually. No hidden fees, cancel any time — you only pay for active seats.</p>
+        </div>
+        <div class="panel" role="tabpanel" id="pan-4" aria-labelledby="tab-4" tabindex="0" hidden>
+          <h2>Loved by teams</h2>
+          <p>"The fastest tool we've adopted in years." Rated 4.9 out of 5 across 2,300+ reviews from designers, founders, and engineering leads worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>

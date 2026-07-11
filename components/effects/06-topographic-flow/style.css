@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+html,body{margin:0;height:100%;background:#1a1208;overflow:hidden}
+canvas{display:block}
+.cap{position:fixed;left:22px;bottom:20px;font-family:'Space Mono',monospace;
+  color:#bfeee0;mix-blend-mode:screen;pointer-events:none;line-height:1.4}
+.cap b{font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;display:block}
+.cap span{font-weight:400;font-size:11px;opacity:.5;letter-spacing:.02em}

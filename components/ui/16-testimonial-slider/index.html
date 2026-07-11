@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Loved by makers</h1>
+
+  <section class="slider" aria-label="Testimonials" aria-roledescription="carousel">
+    <button class="nav nav--prev" aria-label="Previous testimonial">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+
+    <div class="viewport">
+      <div class="deck" aria-live="polite">
+        <!-- slides injected by JS from data -->
+      </div>
+    </div>
+
+    <button class="nav nav--next" aria-label="Next testimonial">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+
+    <div class="dots" role="tablist" aria-label="Choose testimonial"></div>
+  </section>
+</main>
+
+<script src="script.js"></script>

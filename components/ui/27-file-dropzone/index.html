@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Upload your files</h1>
+  <p class="stage__sub">Drag &amp; drop or browse — images, docs, anything.</p>
+
+  <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Upload files by dragging here or pressing Enter to browse">
+    <input type="file" id="fileInput" class="dropzone__input" multiple hidden>
+    <div class="dropzone__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 16V4M12 4l-4 4M12 4l4 4"></path>
+        <path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"></path>
+      </svg>
+    </div>
+    <p class="dropzone__text"><strong>Drop files here</strong> or <span class="dropzone__browse">browse</span></p>
+    <p class="dropzone__hint">Up to 10 files · demo only, nothing is uploaded</p>
+  </div>
+
+  <ul class="filelist" id="filelist" aria-live="polite"></ul>
+</main>
+
+<script src="script.js"></script>

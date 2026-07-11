@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;800&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; background:#1a1208; overflow:hidden; cursor:none; }
+svg.stage { position:fixed; inset:0; width:100vw; height:100vh; display:block; }
+.caption {
+  position:fixed; left:22px; bottom:20px; z-index:10;
+  font-family:'Syne',sans-serif; pointer-events:none; mix-blend-mode:screen;
+  color:#a9b4ff; line-height:1.4;
+}
+.caption b { font-weight:800; letter-spacing:.06em; font-size:15px; text-transform:uppercase; }
+.caption span { display:block; font-family:sans-serif; font-size:11px; opacity:.5; letter-spacing:.04em; margin-top:3px; }

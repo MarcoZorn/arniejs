@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <header class="intro">
+    <p class="eyebrow">Command / Search</p>
+    <h1>Command Palette</h1>
+    <p class="lede">Press <kbd>&#8984;</kbd><kbd>K</kbd> (or <kbd>Ctrl</kbd><kbd>K</kbd>) to open. Type to fuzzy-filter, arrow keys to move, Enter to run, Esc to close.</p>
+    <button class="trigger" id="openPalette">
+      <span>Search commands</span>
+      <span class="kbd-hint"><kbd>&#8984;</kbd><kbd>K</kbd></span>
+    </button>
+  </header>
+
+  <div class="palette" id="palette" hidden>
+    <div class="backdrop" data-close></div>
+    <div class="panel" role="dialog" aria-modal="true" aria-label="Command palette">
+      <div class="search">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="paletteInput" type="text" placeholder="Type a command or search&hellip;" autocomplete="off" spellcheck="false" aria-label="Search commands" aria-controls="paletteList" role="combobox" aria-expanded="true">
+        <span class="esc-tag">esc</span>
+      </div>
+      <ul class="list" id="paletteList" role="listbox" aria-label="Commands"></ul>
+      <div class="empty" id="paletteEmpty" hidden>No results found</div>
+      <footer class="foot">
+        <span><kbd>&#8593;</kbd><kbd>&#8595;</kbd> navigate</span>
+        <span><kbd>&#8629;</kbd> select</span>
+        <span><kbd>esc</kbd> close</span>
+      </footer>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
