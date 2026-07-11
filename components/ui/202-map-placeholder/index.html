@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <div class="map" id="map">
+    <div class="map__grid" aria-hidden="true"></div>
+    <div class="map__pin">
+      <svg width="30" height="38" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 0C5.4 0 0 5.4 0 12c0 8.5 12 18 12 18s12-9.5 12-18c0-6.6-5.4-12-12-12Z" fill="currentColor"/>
+        <circle cx="12" cy="12" r="4.5" fill="#1a1208"/>
+      </svg>
+    </div>
+    <div class="map__label">
+      <span class="map__label-title">Arnie Studio HQ</span>
+      <span class="map__label-sub">128 Grove Street, Portland</span>
+    </div>
+  </div>
+
+  <a class="map__cta" id="openMaps" href="https://www.google.com/maps/search/?api=1&query=128+Grove+Street+Portland" target="_blank" rel="noopener noreferrer">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Open in Maps
+  </a>
+</main>
+<script src="script.js"></script>
