@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Desktop Icon</h1>
+  <p class="stage__sub">Drag to move &middot; double-click to open</p>
+
+  <div class="desk" id="desk">
+    <button class="icon" id="icon" type="button" style="top: 40px; left: 40px;">
+      <span class="icon__glyph" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M4 4h9l3 3h4v13H4z" />
+        </svg>
+      </span>
+      <span class="icon__label">Project Brief</span>
+    </button>
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal__bar">
+        <span class="modal__title" id="modalTitle">Project Brief.pdf</span>
+        <button class="modal__close" id="modalClose" type="button" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal__body">
+        <p>This file opened because you double-clicked the desktop icon.</p>
+        <p>Close it with the button, the overlay, or the Escape key.</p>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
