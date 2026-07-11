@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  padding: 56px 20px;
+}
+
+.soil-wrap {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.soil-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.soil-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.soil-eyebrow {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-sand);
+}
+
+.soil-title {
+  margin: 0 0 4px;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.soil-sub {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.soil-shuffle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: inherit;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--bg-deep);
+  background: var(--accent-sand);
+  border: 1px solid var(--accent-sand);
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+  white-space: nowrap;
+}
+
+.soil-shuffle:hover {
+  background: var(--accent-terra);
+  border-color: var(--accent-terra);
+  color: var(--text-primary);
+  box-shadow: 0 8px 20px rgba(196, 98, 45, 0.35);
+  transform: translateY(-1px);
+}
+
+.soil-shuffle:active {
+  transform: translateY(0);
+}
+
+.soil-shuffle svg {
+  transition: transform 0.4s ease;
+}
+
+.soil-shuffle.is-spinning svg {
+  transform: rotate(180deg);
+}
+
+.soil-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.soil-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 32px 42px 1fr auto auto;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  will-change: transform;
+}
+
+.soil-item--top1 {
+  border-color: var(--accent-terra);
+  background: linear-gradient(90deg, rgba(196, 98, 45, 0.14), var(--bg-surface) 60%);
+}
+
+.soil-rank {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text-faint);
+  text-align: center;
+}
+
+.soil-item--top1 .soil-rank {
+  color: var(--accent-terra);
+}
+
+.soil-item--top2 .soil-rank {
+  color: var(--accent-sand);
+}
+
+.soil-item--top3 .soil-rank {
+  color: var(--accent-clay);
+}
+
+.soil-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--bg-deep);
+  background: var(--avatar-color, var(--accent-sage));
+}
+
+.soil-info {
+  min-width: 0;
+}
+
+.soil-name {
+  font-weight: 700;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.soil-plot {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.soil-score {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--accent-sand);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.soil-score small {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.soil-delta {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 5px 8px;
+  border-radius: 999px;
+  min-width: 52px;
+  justify-content: center;
+}
+
+.soil-delta svg {
+  width: 11px;
+  height: 11px;
+}
+
+.soil-delta--up {
+  color: var(--accent-moss);
+  background: rgba(90, 122, 58, 0.16);
+}
+
+.soil-delta--down {
+  color: var(--accent-rust);
+  background: rgba(160, 56, 32, 0.16);
+}
+
+.soil-delta--flat {
+  color: var(--text-faint);
+  background: rgba(107, 85, 64, 0.16);
+}
+
+.soil-item.is-moved-up {
+  animation: soilPulse 900ms ease-out;
+}
+
+@keyframes soilPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(212, 168, 90, 0.55);
+    border-color: var(--accent-sand);
+  }
+  100% {
+    box-shadow: 0 0 0 14px rgba(212, 168, 90, 0);
+    border-color: var(--border);
+  }
+}
+
+.soil-footnote {
+  margin: 20px 0 0;
+  font-size: 12.5px;
+  color: var(--text-faint);
+  text-align: center;
+}
+
+@media (max-width: 460px) {
+  .soil-item {
+    grid-template-columns: 24px 36px 1fr auto;
+    gap: 10px;
+  }
+  .soil-delta {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

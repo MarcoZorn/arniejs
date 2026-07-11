@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="soil-wrap">
+  <div class="soil-card">
+    <header class="soil-head">
+      <div>
+        <p class="soil-eyebrow">This season</p>
+        <h1 class="soil-title">Soil Leaderboard</h1>
+        <p class="soil-sub">Top plots ranked by yield score</p>
+      </div>
+      <button class="soil-shuffle" type="button" id="soilShuffle">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 4h4l3 5"></path>
+          <path d="M4 20h4l7-11 3-5h4"></path>
+          <path d="M17 3l3 2-3 2"></path>
+          <path d="M4 15l4 5"></path>
+          <path d="M17 21l3-2-3-2"></path>
+        </svg>
+        Simulate update
+      </button>
+    </header>
+
+    <ul class="soil-list" id="soilList" aria-live="polite">
+      <!-- items injected by script.js -->
+    </ul>
+
+    <p class="soil-footnote">Scores update every harvest cycle. Rankings recompute automatically.</p>
+  </div>
+</main>
+
+<script src="script.js"></script>
