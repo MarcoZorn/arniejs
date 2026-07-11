@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Grove search</h1>
+  <p class="stage__sub">Click the icon to expand and filter the grove.</p>
+
+  <div class="search" id="search">
+    <button type="button" class="search__icon" id="searchIcon" aria-label="Open search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="7"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </button>
+    <input class="search__input" id="searchInput" type="text" placeholder="Search the grove&hellip;" autocomplete="off" aria-label="Search">
+  </div>
+
+  <ul class="results" id="results">
+    <li data-name="Terracotta pot">Terracotta pot</li>
+    <li data-name="Olive sapling">Olive sapling</li>
+    <li data-name="Compost bin">Compost bin</li>
+    <li data-name="Rain barrel">Rain barrel</li>
+    <li data-name="Pruning shears">Pruning shears</li>
+    <li data-name="Sage bundle">Sage bundle</li>
+    <li data-name="Clay watering can">Clay watering can</li>
+    <li data-name="Sandalwood trellis">Sandalwood trellis</li>
+  </ul>
+</main>
+
+<script src="script.js"></script>
