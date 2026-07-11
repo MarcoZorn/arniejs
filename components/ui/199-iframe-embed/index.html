@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <div class="embed" id="embed" data-ratio="16-9">
+    <iframe
+      class="embed__frame"
+      id="embedFrame"
+      src="about:blank"
+      title="Embedded content preview"
+      loading="lazy"
+      referrerpolicy="no-referrer"
+    ></iframe>
+  </div>
+
+  <div class="embed__controls" role="group" aria-label="Aspect ratio">
+    <button type="button" class="embed__ratio-btn is-active" data-ratio="16-9">16:9</button>
+    <button type="button" class="embed__ratio-btn" data-ratio="4-3">4:3</button>
+    <button type="button" class="embed__ratio-btn" data-ratio="1-1">1:1</button>
+    <button type="button" class="embed__ratio-btn" data-ratio="21-9">21:9</button>
+  </div>
+
+  <p class="demo__note" id="demoNote">Switch ratios &mdash; the frame resizes using the CSS <code>aspect-ratio</code> property.</p>
+</main>
+<script src="script.js"></script>
