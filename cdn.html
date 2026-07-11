@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ArnieJS — CDN usage</title>
+<meta name="description" content="Use any ArnieJS component via jsDelivr CDN — no file copying needed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap">
+<style>
+  :root{
+    --bg-deep:#1a1208; --bg-surface:#241a0e; --bg-card:#2e2010; --bg-subtle:#3d2b14;
+    --text-primary:#f0e6d3; --text-muted:#a89070; --text-faint:#6b5540;
+    --accent-terra:#c4622d; --accent-moss:#5a7a3a; --accent-sand:#d4a85a; --border:#3d2b14; --border-light:#5a3e20;
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; font-family:'Syne', system-ui, sans-serif; background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%); color:var(--text-primary); padding:8vh 20px; }
+  main{ max-width:760px; margin:0 auto; }
+  a{ color:var(--accent-sand); }
+  h1{ font-size:2rem; margin-bottom:8px; }
+  p.lead{ color:var(--text-muted); margin-bottom:36px; }
+  .card{ background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:24px; margin-bottom:24px; }
+  pre{ background:#120c05; border:1px solid var(--border); border-radius:10px; padding:16px; overflow-x:auto; font-size:13px; line-height:1.6; }
+  code{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .back{ display:inline-block; margin-bottom:24px; font-size:14px; }
+  .note{ font-size:13px; color:var(--text-faint); font-style:italic; margin-top:32px; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">&larr; Back to the garden</a>
+  <h1>CDN distribution</h1>
+  <p class="lead">Every ArnieJS component is available via jsDelivr — free, automatic, no setup, because the repo is public on GitHub.</p>
+
+  <div class="card">
+    <h2 style="margin-top:0">Two lines, no file copying</h2>
+    <pre><code>&lt;!-- In your &lt;head&gt;: --&gt;
+&lt;link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/31-bloom-button/style.css"&gt;
+
+&lt;!-- Before &lt;/body&gt;: --&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/31-bloom-button/script.js"&gt;&lt;/script&gt;
+
+&lt;!-- In your &lt;body&gt;: --&gt;
+&lt;!-- paste the HTML from the component's index.html --&gt;</code></pre>
+    <p style="color:var(--text-muted);font-size:14px">Replace <code>31-bloom-button</code> with any component folder name from the <a href="index.html">gallery</a>.</p>
+  </div>
+
+  <div class="card">
+    <h2 style="margin-top:0">URL pattern</h2>
+    <pre><code>CSS: https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/[folder]/style.css
+JS:  https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/[folder]/script.js</code></pre>
+    <p style="color:var(--text-muted);font-size:14px">Swap <code>ui</code> for <code>effects</code> for the visual effects.</p>
+  </div>
+
+  <div class="card">
+    <h2 style="margin-top:0">Versioned CDN (recommended for production)</h2>
+    <p style="color:var(--text-muted);font-size:14px">Pin to a release tag so updates never break you unexpectedly:</p>
+    <pre><code>https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@v1.0.0/components/ui/31-bloom-button/style.css</code></pre>
+  </div>
+
+  <p class="note">Arnie doesn't love CDNs (he prefers to grow his own), but he understands not everyone has time to dig in the soil.</p>
+</main>
+</body>
+</html>
