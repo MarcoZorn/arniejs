@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <header class="head">
+    <h1>Soil Indeterminate</h1>
+    <p>Unknown duration, steady motion — a stripe of earth sliding through the bar.</p>
+  </header>
+
+  <section class="demo">
+    <div class="field-label">
+      <span>Tilling the field</span>
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    </div>
+    <div class="bar-track" role="progressbar" aria-label="Loading, duration unknown" aria-busy="true">
+      <div class="bar-stripe" id="bar-stripe"></div>
+    </div>
+
+    <div class="field-label label-alt">
+      <span>Secondary variant</span>
+    </div>
+    <div class="bar-track bar-track--alt" role="progressbar" aria-label="Loading, duration unknown" aria-busy="true">
+      <div class="bar-stripe bar-stripe--alt"></div>
+    </div>
+
+    <div class="controls">
+      <button type="button" id="toggle-btn" class="toggle-btn">Pause</button>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
