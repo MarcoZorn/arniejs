@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+}
+
+.parallax-stage {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #3a2412 0%, #1a1208 100%);
+}
+
+.layer {
+  position: absolute;
+  left: -10%;
+  width: 120%;
+  will-change: transform;
+}
+
+.layer-sky {
+  top: 0;
+  height: 60%;
+  background: radial-gradient(600px 300px at 30% 20%, rgba(212, 168, 90, 0.25), transparent 70%);
+}
+
+.layer-hills-far {
+  bottom: 30%;
+  height: 32%;
+  background: var(--bg-surface);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  opacity: 0.7;
+}
+
+.layer-hills-near {
+  bottom: 20%;
+  height: 30%;
+  background: var(--bg-card);
+  border-radius: 45% 55% 0 0 / 100% 100% 0 0;
+  opacity: 0.85;
+}
+
+.layer-trees {
+  bottom: 10%;
+  height: 100px;
+  background-image:
+    radial-gradient(circle at 10% 100%, var(--accent-moss) 0 22px, transparent 23px),
+    radial-gradient(circle at 22% 100%, var(--accent-sage) 0 28px, transparent 29px),
+    radial-gradient(circle at 38% 100%, var(--accent-moss) 0 18px, transparent 19px),
+    radial-gradient(circle at 55% 100%, var(--accent-sage) 0 26px, transparent 27px),
+    radial-gradient(circle at 70% 100%, var(--accent-moss) 0 20px, transparent 21px),
+    radial-gradient(circle at 85% 100%, var(--accent-sage) 0 24px, transparent 25px);
+}
+
+.layer-fence {
+  bottom: 0;
+  height: 90px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--accent-clay) 0px,
+    var(--accent-clay) 8px,
+    transparent 8px,
+    transparent 48px
+  );
+  opacity: 0.9;
+}
+
+.parallax-title {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.parallax-title h1 {
+  font-size: 52px;
+  margin: 0 0 12px;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.parallax-title p {
+  color: var(--text-primary);
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+.filler {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 80px 32px 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.filler p {
+  color: var(--text-muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .layer {
+    transform: none !important;
+  }
+}
