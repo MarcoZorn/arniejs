@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Clipboard History</h1>
+  <p class="stage__sub">Copies made through this component's buttons, remembered for you</p>
+
+  <div class="panel">
+    <ul class="snippets" role="list">
+      <li class="snippet">
+        <code class="snippet__text">npm install arnie-js</code>
+        <button type="button" class="copy-btn" data-copy="npm install arnie-js">Copy</button>
+      </li>
+      <li class="snippet">
+        <code class="snippet__text">const trap = createFocusTrap(modal);</code>
+        <button type="button" class="copy-btn" data-copy="const trap = createFocusTrap(modal);">Copy</button>
+      </li>
+      <li class="snippet">
+        <code class="snippet__text">hello@arniejs.dev</code>
+        <button type="button" class="copy-btn" data-copy="hello@arniejs.dev">Copy</button>
+      </li>
+      <li class="snippet">
+        <code class="snippet__text">#c4622d</code>
+        <button type="button" class="copy-btn" data-copy="#c4622d">Copy</button>
+      </li>
+    </ul>
+
+    <div class="history">
+      <div class="history__head">
+        <h2 class="history__title">Recent copies</h2>
+        <button type="button" class="clear-btn" id="clearHistory">Clear</button>
+      </div>
+      <ul class="history__list" id="historyList" aria-live="polite">
+        <li class="history__empty" data-empty>Nothing copied yet — use a Copy button above.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="footnote" id="statusLine" aria-live="polite">Only items copied via this component's own buttons are tracked; the OS clipboard cannot otherwise be read.</p>
+</main>
+<script src="script.js"></script>
