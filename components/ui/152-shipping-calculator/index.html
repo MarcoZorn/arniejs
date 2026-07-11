@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo-wrap">
+  <div class="sc-card">
+    <h3 class="sc-title">Estimate shipping</h3>
+    <p class="sc-sub">Enter your ZIP/postal code to see delivery cost and date.</p>
+    <form class="sc-form" novalidate>
+      <label class="sc-label" for="sc-zip">ZIP / postal code</label>
+      <div class="sc-row">
+        <input class="sc-input" id="sc-zip" name="zip" type="text" inputmode="text" placeholder="e.g. 90210" autocomplete="postal-code">
+        <button class="sc-btn" type="submit">Calculate</button>
+      </div>
+      <p class="sc-error" role="alert" hidden>Please enter a valid ZIP/postal code (3–8 characters).</p>
+    </form>
+    <div class="sc-result" hidden>
+      <div class="sc-result-row">
+        <span class="sc-result-label">Estimated cost</span>
+        <span class="sc-result-value sc-cost">—</span>
+      </div>
+      <div class="sc-result-row">
+        <span class="sc-result-label">Estimated delivery</span>
+        <span class="sc-result-value sc-date">—</span>
+      </div>
+      <p class="sc-note">Estimate only. Final cost confirmed at checkout.</p>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
