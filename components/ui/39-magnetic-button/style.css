@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 8vh 20px;
+}
+
+.stage__title { margin: 0 0 6px; font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -.02em; }
+.stage__sub { margin: 0 0 70px; color: var(--text-muted); max-width: 460px; }
+
+.grid { display: grid; place-items: center; min-height: 160px; }
+
+.magnet-btn {
+  position: relative;
+  border: 0;
+  border-radius: 999px;
+  padding: 20px 42px;
+  font: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent-clay), var(--accent-terra));
+  cursor: pointer;
+  box-shadow: 0 14px 34px -16px rgba(155,107,58,.6);
+  transition: transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s ease;
+  will-change: transform;
+}
+.magnet-btn:hover { box-shadow: 0 18px 42px -14px rgba(155,107,58,.8); }
+.magnet-btn:active { box-shadow: 0 8px 20px -12px rgba(155,107,58,.7); }
+.magnet-btn:focus-visible { outline: 2px solid var(--accent-sand); outline-offset: 4px; }
+.magnet-btn__label { display: inline-block; pointer-events: none; transition: transform .25s cubic-bezier(.2,.8,.2,1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .magnet-btn, .magnet-btn * { transition: none !important; }
+}
