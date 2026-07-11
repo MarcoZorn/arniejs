@@ -1,0 +1,18 @@
+<!-- description: A pin that bounce-drops onto a static map placeholder; click anywhere on the map to drop a new pin at the cursor. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Drop a pin</h1>
+  <p class="stage__sub">Click anywhere on the map to mark a spot.</p>
+
+  <div class="map" role="button" tabindex="0" aria-label="Map, click to drop a pin">
+    <div class="map__grid" aria-hidden="true"></div>
+    <div class="map__road map__road--h" aria-hidden="true"></div>
+    <div class="map__road map__road--v" aria-hidden="true"></div>
+    <div class="pin pin--initial" style="left: 50%; top: 46%;">
+      <span class="pin__body"></span>
+      <span class="pin__shadow"></span>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
