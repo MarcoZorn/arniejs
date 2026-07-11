@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Garden autocomplete</h1>
+  <p class="stage__sub">Start typing a plant, herb, or vegetable to see matches.</p>
+
+  <div class="ac" id="ac">
+    <div class="ac__field">
+      <svg class="ac__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="m21 21-4.35-4.35"/></svg>
+      <input
+        class="ac__input"
+        id="acInput"
+        type="text"
+        role="combobox"
+        aria-expanded="false"
+        aria-autocomplete="list"
+        aria-controls="acList"
+        autocomplete="off"
+        placeholder="Search seeds, herbs, veg…"
+      >
+    </div>
+    <ul class="ac__list" id="acList" role="listbox"></ul>
+  </div>
+</main>
+
+<script src="script.js"></script>
