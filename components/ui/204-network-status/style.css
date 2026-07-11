@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.demo {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.demo__note {
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.net-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 999px;
+  padding: 10px 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.net-status__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--text-faint);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.net-status[data-online="true"] .net-status__dot {
+  background: var(--accent-sage);
+  box-shadow: 0 0 0 4px rgba(143, 168, 110, 0.2);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.net-status[data-online="false"] .net-status__dot {
+  background: var(--accent-rust);
+  box-shadow: 0 0 0 4px rgba(160, 56, 32, 0.2);
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(143, 168, 110, 0.2); }
+  50%      { box-shadow: 0 0 0 8px rgba(143, 168, 110, 0.08); }
+}
+
+.net-status__label {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .net-status__dot {
+    transition: none !important;
+    animation: none !important;
+  }
+}
