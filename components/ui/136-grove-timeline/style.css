@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+}
+
+.page {
+  padding: 64px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------- Grove Timeline ---------- */
+
+.grove-timeline {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grove-timeline__header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.grove-timeline__title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.grove-timeline__subtitle {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.grove-timeline__controls {
+  display: flex;
+  gap: 10px;
+  align-self: flex-end;
+  margin-top: -52px;
+}
+
+.grove-timeline__nav {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.grove-timeline__nav:hover {
+  background: var(--bg-subtle);
+  border-color: var(--accent-sage);
+  color: var(--accent-sand);
+}
+
+.grove-timeline__nav:active {
+  transform: scale(0.92);
+}
+
+.grove-timeline__nav:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 2px;
+}
+
+.grove-timeline__viewport {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-clay) var(--bg-surface);
+  padding: 12px 4px 28px;
+  -webkit-overflow-scrolling: touch;
+  user-select: none;
+}
+
+.grove-timeline__viewport:active {
+  cursor: grabbing;
+}
+
+.grove-timeline__viewport.is-dragging {
+  scroll-snap-type: none;
+}
+
+.grove-timeline__viewport:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+.grove-timeline__viewport::-webkit-scrollbar {
+  height: 8px;
+}
+
+.grove-timeline__viewport::-webkit-scrollbar-track {
+  background: var(--bg-surface);
+  border-radius: 8px;
+}
+
+.grove-timeline__viewport::-webkit-scrollbar-thumb {
+  background: var(--accent-clay);
+  border-radius: 8px;
+}
+
+.grove-timeline__track {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 56px;
+  list-style: none;
+  margin: 0;
+  padding: 36px 48px 0;
+  width: max-content;
+}
+
+.grove-timeline__track::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 8px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--accent-terra),
+    var(--accent-sand) 25%,
+    var(--accent-moss) 50%,
+    var(--accent-sage) 75%,
+    var(--accent-rust)
+  );
+  border-radius: 4px;
+  opacity: 0.55;
+}
+
+.grove-node {
+  position: relative;
+  flex: 0 0 auto;
+  width: 240px;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grove-node__dot {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent-terra);
+  border: 3px solid var(--bg-deep);
+  box-shadow: 0 0 0 3px var(--border-light);
+  margin-bottom: 22px;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.grove-node[data-tone="terra"] .grove-node__dot { background: var(--accent-terra); }
+.grove-node[data-tone="moss"] .grove-node__dot { background: var(--accent-moss); }
+.grove-node[data-tone="sage"] .grove-node__dot { background: var(--accent-sage); }
+.grove-node[data-tone="clay"] .grove-node__dot { background: var(--accent-clay); }
+.grove-node[data-tone="sand"] .grove-node__dot { background: var(--accent-sand); }
+.grove-node[data-tone="rust"] .grove-node__dot { background: var(--accent-rust); }
+
+.grove-node__card {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grove-node:hover .grove-node__card {
+  border-color: var(--accent-sage);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.grove-node__date {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-sand);
+}
+
+.grove-node__title {
+  margin: 2px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.grove-node__text {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.grove-timeline__progress {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--bg-subtle);
+  overflow: hidden;
+}
+
+.grove-timeline__progress-fill {
+  height: 100%;
+  width: 20%;
+  background: linear-gradient(90deg, var(--accent-terra), var(--accent-sand));
+  border-radius: 4px;
+  transition: width 0.15s ease-out;
+}
+
+@media (max-width: 640px) {
+  .grove-timeline__controls {
+    align-self: flex-start;
+    margin-top: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grove-timeline__viewport {
+    scroll-behavior: auto;
+  }
+
+  .grove-node__card,
+  .grove-timeline__nav,
+  .grove-timeline__progress-fill {
+    transition: none !important;
+  }
+
+  .grove-node:hover .grove-node__card {
+    transform: none;
+  }
+}

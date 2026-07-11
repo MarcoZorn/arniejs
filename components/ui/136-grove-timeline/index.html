@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="page">
+  <section class="grove-timeline" aria-label="Grove growth timeline">
+    <header class="grove-timeline__header">
+      <h1 class="grove-timeline__title">Grove Timeline</h1>
+      <p class="grove-timeline__subtitle">Drag, scroll, or use the arrows to wander through the seasons.</p>
+    </header>
+
+    <div class="grove-timeline__controls">
+      <button type="button" class="grove-timeline__nav" data-dir="-1" aria-label="Scroll to earlier events">&#8592;</button>
+      <button type="button" class="grove-timeline__nav" data-dir="1" aria-label="Scroll to later events">&#8594;</button>
+    </div>
+
+    <div class="grove-timeline__viewport" tabindex="0" role="region" aria-label="Scrollable list of timeline events">
+      <ol class="grove-timeline__track">
+        <li class="grove-node" data-tone="terra">
+          <span class="grove-node__dot"></span>
+          <div class="grove-node__card">
+            <span class="grove-node__date">Mar 2019</span>
+            <h2 class="grove-node__title">First Seed</h2>
+            <p class="grove-node__text">A single sapling planted behind the old barn, roots barely holding the clay soil.</p>
+          </div>
+        </li>
+        <li class="grove-node" data-tone="clay">
+          <span class="grove-node__dot"></span>
+          <div class="grove-node__card">
+            <span class="grove-node__date">Sep 2019</span>
+            <h2 class="grove-node__title">First Roots</h2>
+            <p class="grove-node__text">Root systems spread wide, drawing minerals up from deep amber earth.</p>
+          </div>
+        </li>
+        <li class="grove-node" data-tone="moss">
+          <span class="grove-node__dot"></span>
+          <div class="grove-node__card">
+            <span class="grove-node__date">Apr 2020</span>
+            <h2 class="grove-node__title">Canopy Opens</h2>
+            <p class="grove-node__text">Leaves unfurl across the grove, moss creeping along the northern bark.</p>
+          </div>
+        </li>
+        <li class="grove-node" data-tone="sand">
+          <span class="grove-node__dot"></span>
+          <div class="grove-node__card">
+            <span class="grove-node__date">Jul 2021</span>
+            <h2 class="grove-node__title">Dry Season</h2>
+            <p class="grove-node__text">Sandy winds test the grove, but the deepest roots hold their ground.</p>
+          </div>
+        </li>
+        <li class="grove-node" data-tone="rust">
+          <span class="grove-node__dot"></span>
+          <div class="grove-node__card">
+            <span class="grove-node__date">Nov 2021</span>
+            <h2 class="grove-node__title">First Frost</h2>
+            <p class="grove-node__text">Rust-colored leaves fall, composting into the bed for next spring's growth.</p>
+          </div>
+        </li>
+        <li class="grove-node" data-tone="sage">
+          <span class="grove-node__dot"></span>
+          <div class="grove-node__card">
+            <span class="grove-node__date">Jun 2022</span>
+            <h2 class="grove-node__title">Sage Bloom</h2>
+            <p class="grove-node__text">Wild sage takes hold in the undergrowth, drawing bees across the grove.</p>
+          </div>
+        </li>
+        <li class="grove-node" data-tone="terra">
+          <span class="grove-node__dot"></span>
+          <div class="grove-node__card">
+            <span class="grove-node__date">Feb 2023</span>
+            <h2 class="grove-node__title">New Grafts</h2>
+            <p class="grove-node__text">Cuttings from the eldest tree are grafted onto three young trunks.</p>
+          </div>
+        </li>
+        <li class="grove-node" data-tone="clay">
+          <span class="grove-node__dot"></span>
+          <div class="grove-node__card">
+            <span class="grove-node__date">Oct 2024</span>
+            <h2 class="grove-node__title">Full Grove</h2>
+            <p class="grove-node__text">Eight trees now stand together, their canopies finally touching overhead.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="grove-timeline__progress" aria-hidden="true">
+      <div class="grove-timeline__progress-fill"></div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
