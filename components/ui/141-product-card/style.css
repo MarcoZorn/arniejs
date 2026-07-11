@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.demo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card {
+  width: 280px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-light);
+  box-shadow: 0 20px 40px -20px rgba(0,0,0,0.6);
+}
+
+.pc-media {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--bg-subtle);
+}
+
+.pc-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .pc-img {
+  transform: scale(1.06);
+}
+
+.pc-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--accent-rust);
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  z-index: 2;
+  letter-spacing: 0.02em;
+}
+
+.pc-wish {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  background: rgba(26,18,8,0.55);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.pc-wish:hover {
+  background: var(--accent-terra);
+  border-color: var(--accent-terra);
+}
+
+.pc-wish[aria-pressed="true"] {
+  color: var(--accent-rust);
+  background: var(--text-primary);
+}
+
+.pc-wish[aria-pressed="true"] svg {
+  fill: currentColor;
+}
+
+.pc-wish.pop {
+  animation: pc-pop 0.4s ease;
+}
+
+@keyframes pc-pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}
+
+.pc-body {
+  padding: 16px 16px 18px;
+}
+
+.pc-cat {
+  margin: 0 0 4px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-sage);
+  font-weight: 600;
+}
+
+.pc-title {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.pc-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.pc-price-original {
+  color: var(--text-faint);
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+.pc-price {
+  color: var(--accent-sand);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.pc-add {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--accent-terra);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 10px;
+  padding: 11px 14px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.pc-add:hover {
+  background: var(--accent-clay);
+}
+
+.pc-add:active {
+  transform: scale(0.97);
+}
+
+.pc-add.added {
+  background: var(--accent-moss);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-card,
+  .pc-img,
+  .pc-wish,
+  .pc-add {
+    transition: none !important;
+  }
+  .pc-wish.pop {
+    animation: none !important;
+  }
+  .product-card:hover {
+    transform: none;
+  }
+  .product-card:hover .pc-img {
+    transform: none;
+  }
+}
