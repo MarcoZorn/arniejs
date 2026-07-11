@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.demo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs-card {
+  width: 520px;
+  max-width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 26px 22px;
+}
+
+.cs-stepper {
+  list-style: none;
+  margin: 0 0 26px;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.cs-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 64px;
+}
+
+.cs-connector {
+  flex: 1;
+  height: 2px;
+  background: var(--border-light);
+  margin-top: 17px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cs-connector::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent-terra);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cs-connector.is-filled::after {
+  transform: scaleX(1);
+}
+
+.cs-node {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid var(--border-light);
+  background: var(--bg-subtle);
+  color: var(--text-faint);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.15s ease;
+}
+
+.cs-node:hover {
+  transform: scale(1.06);
+}
+
+.cs-check {
+  display: none;
+}
+
+.cs-step.is-active .cs-node {
+  border-color: var(--accent-sand);
+  color: var(--accent-sand);
+  background: var(--bg-card);
+  box-shadow: 0 0 0 4px rgba(212, 168, 90, 0.15);
+}
+
+.cs-step.is-complete .cs-node {
+  border-color: var(--accent-moss);
+  background: var(--accent-moss);
+  color: var(--text-primary);
+}
+
+.cs-step.is-complete .cs-num {
+  display: none;
+}
+
+.cs-step.is-complete .cs-check {
+  display: block;
+}
+
+.cs-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--text-faint);
+  text-align: center;
+  transition: color 0.25s ease;
+}
+
+.cs-step.is-active .cs-label {
+  color: var(--text-primary);
+}
+
+.cs-step.is-complete .cs-label {
+  color: var(--accent-sage);
+}
+
+.cs-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.cs-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: background 0.2s ease, opacity 0.2s ease, transform 0.15s ease;
+}
+
+.cs-btn:active {
+  transform: scale(0.97);
+}
+
+.cs-btn-ghost {
+  background: none;
+  border: 1px solid var(--border-light);
+  color: var(--text-muted);
+}
+
+.cs-btn-ghost:hover {
+  border-color: var(--text-muted);
+  color: var(--text-primary);
+}
+
+.cs-btn-ghost:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.cs-btn-primary {
+  background: var(--accent-terra);
+  border: none;
+  color: var(--text-primary);
+}
+
+.cs-btn-primary:hover {
+  background: var(--accent-clay);
+}
+
+.cs-btn-primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+  background: var(--accent-moss);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cs-node,
+  .cs-label,
+  .cs-btn,
+  .cs-connector::after {
+    transition: none !important;
+  }
+}

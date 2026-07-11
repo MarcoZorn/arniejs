@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo-wrap">
+  <div class="cs-card">
+    <ol class="cs-stepper" data-current="1">
+      <li class="cs-step" data-step="1">
+        <button class="cs-node" type="button" aria-current="step">
+          <span class="cs-num">1</span>
+          <svg class="cs-check" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+        </button>
+        <span class="cs-label">Cart</span>
+      </li>
+      <li class="cs-connector"></li>
+      <li class="cs-step" data-step="2">
+        <button class="cs-node" type="button">
+          <span class="cs-num">2</span>
+          <svg class="cs-check" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+        </button>
+        <span class="cs-label">Shipping</span>
+      </li>
+      <li class="cs-connector"></li>
+      <li class="cs-step" data-step="3">
+        <button class="cs-node" type="button">
+          <span class="cs-num">3</span>
+          <svg class="cs-check" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+        </button>
+        <span class="cs-label">Payment</span>
+      </li>
+      <li class="cs-connector"></li>
+      <li class="cs-step" data-step="4">
+        <button class="cs-node" type="button">
+          <span class="cs-num">4</span>
+          <svg class="cs-check" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+        </button>
+        <span class="cs-label">Confirm</span>
+      </li>
+    </ol>
+
+    <div class="cs-actions">
+      <button class="cs-btn cs-btn-ghost" type="button" data-action="back">Back</button>
+      <button class="cs-btn cs-btn-primary" type="button" data-action="next">Continue</button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
