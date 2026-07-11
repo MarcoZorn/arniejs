@@ -1,0 +1,21 @@
+<!-- description: A side-by-side text diff view highlighting added lines in green and removed lines in rust for two hardcoded text blocks. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Diff viewer</h1>
+  <p class="stage__sub">Comparing <code>config.old.js</code> against <code>config.new.js</code></p>
+
+  <div class="diff-card">
+    <div class="diff-card__header">
+      <span class="diff-card__file">config.old.js</span>
+      <span class="diff-card__file">config.new.js</span>
+    </div>
+    <div class="diff-grid" id="diffGrid"></div>
+    <div class="diff-legend">
+      <span class="diff-legend__item"><i class="diff-legend__swatch diff-legend__swatch--add"></i>Added</span>
+      <span class="diff-legend__item"><i class="diff-legend__swatch diff-legend__swatch--remove"></i>Removed</span>
+      <span class="diff-legend__item"><i class="diff-legend__swatch diff-legend__swatch--same"></i>Unchanged</span>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
