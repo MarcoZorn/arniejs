@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ArnieJS — 180+ vanilla JS components. Grown from scratch.</title>
+<meta name="description" content="180+ vanilla JS UI components and visual effects. Zero dependencies. Zero build step. Just copy three files and go.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<style>
+  :root{
+    --bg-deep:#1a1208; --bg-surface:#241a0e; --bg-card:#2e2010; --bg-subtle:#3d2b14;
+    --text-primary:#f0e6d3; --text-muted:#a89070; --text-faint:#6b5540;
+    --accent-terra:#c4622d; --accent-moss:#5a7a3a; --accent-sage:#8fa86e;
+    --accent-clay:#9b6b3a; --accent-sand:#d4a85a; --accent-rust:#a03820;
+    --border:#3d2b14; --border-light:#5a3e20;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Syne', system-ui, sans-serif;
+    background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+    color: var(--text-primary);
+    overflow-x:hidden;
+  }
+  .card{ background: var(--bg-card); border:1px solid var(--border); border-radius:16px; }
+  .card:hover{ transform: translateY(-4px); box-shadow: 0 20px 40px -20px rgba(196,98,45,.35); border-color: var(--border-light); }
+  .card{ transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, border-color .35s ease; }
+  .btn-terra{ background: var(--accent-terra); color: var(--text-primary); }
+  .btn-terra:hover{ background:#a8501f; }
+  .btn-ghost{ border:1.5px solid var(--border-light); color: var(--text-primary); }
+  .btn-ghost:hover{ border-color: var(--accent-sand); }
+  .badge{ font-size:11px; letter-spacing:.06em; text-transform:uppercase; padding:4px 10px; border-radius:999px; }
+  .quote{ border-left:3px solid var(--accent-terra); padding-left:18px; color:var(--text-muted); font-style:italic; }
+  .star-cta{ background: var(--bg-subtle); border:1px solid var(--border-light); }
+  @media (prefers-reduced-motion: reduce){ * { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center" id="hero">
+  <img src="assets/arnie.svg" alt="Arnie the gardener" width="110" class="mx-auto mb-6" id="hero-mascot">
+  <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4" id="hero-title">ArnieJS 🌱</h1>
+  <p class="text-lg md:text-xl mb-2" style="color:var(--text-muted)" id="hero-sub">180+ vanilla JS components. Grown from scratch. No deps.</p>
+  <p class="quote inline-block text-left mt-6 mb-10 max-w-md mx-auto" id="hero-quote">"A good gardener never needs shortcuts."</p>
+  <div class="flex flex-wrap items-center justify-center gap-4" id="hero-ctas">
+    <a href="https://github.com/MarcoZorn/arniejs" class="btn-terra px-7 py-3 rounded-full font-semibold">Browse components</a>
+    <a href="#garden" class="btn-ghost px-7 py-3 rounded-full font-semibold">See the garden</a>
+  </div>
+</header>
+
+<!-- MEET ARNIE -->
+<section class="max-w-3xl mx-auto px-6 py-14" id="garden">
+  <div class="card p-8 md:p-10">
+    <h2 class="text-2xl font-bold mb-4">Meet Arnie</h2>
+    <p class="mb-4" style="color:var(--text-muted)">Arnie is a fictional old gardener. He has never used pesticides, synthetic fertilisers, or automated watering systems. Everything in his garden grows from scratch, naturally, and outlasts anything the neighbours grow with their chemical shortcuts. His tomatoes are legendary.</p>
+    <p class="mb-6" style="color:var(--text-muted)"><strong style="color:var(--text-primary)">ArnieJS works the same way.</strong> 180+ UI components grown from pure HTML, CSS, and JavaScript. No npm packages. No Webpack. No synthetic dependencies that break every six months when a maintainer renames a config option.</p>
+    <p class="quote">"My neighbour installed a framework. Now he spends weekends debugging peer dependency conflicts. My tomatoes are fine." — Arnie</p>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="max-w-5xl mx-auto px-6 py-14">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+    <div class="card p-6"><div class="text-3xl md:text-4xl font-extrabold" style="color:var(--accent-terra)" data-count="180">0</div><div class="text-sm mt-2" style="color:var(--text-muted)">Components</div></div>
+    <div class="card p-6"><div class="text-3xl md:text-4xl font-extrabold" style="color:var(--accent-moss)" data-count="0">0</div><div class="text-sm mt-2" style="color:var(--text-muted)">Dependencies</div></div>
+    <div class="card p-6"><div class="text-3xl md:text-4xl font-extrabold" style="color:var(--accent-clay)" data-count="0">0</div><div class="text-sm mt-2" style="color:var(--text-muted)">Build steps</div></div>
+    <div class="card p-6"><div class="text-3xl md:text-4xl font-extrabold" style="color:var(--accent-sand)">∞</div><div class="text-sm mt-2" style="color:var(--text-muted)">Tomatoes saved</div></div>
+  </div>
+</section>
+
+<!-- GARDEN RULES -->
+<section class="max-w-3xl mx-auto px-6 py-14">
+  <div class="card p-8 md:p-10">
+    <h2 class="text-2xl font-bold mb-6">Arnie's garden rules</h2>
+    <ul class="space-y-3 text-sm md:text-base">
+      <li style="color:var(--accent-sage)">✅ Zero dependencies — Arnie grows his own</li>
+      <li style="color:var(--accent-sage)">✅ Zero build step — seeds don't need Webpack</li>
+      <li style="color:var(--accent-sage)">✅ 3 files exactly — HTML + CSS + JS. That's it.</li>
+      <li style="color:var(--accent-sage)">✅ Works anywhere — WordPress, Webflow, static HTML, React</li>
+      <li style="color:var(--accent-sage)">✅ prefers-reduced-motion — Arnie respects his elderly visitors</li>
+      <li style="color:var(--accent-rust)">❌ No jQuery — Arnie doesn't use fertiliser</li>
+      <li style="color:var(--accent-rust)">❌ No GSAP — he doesn't trust the chemical industry</li>
+      <li style="color:var(--accent-rust)">❌ No React — he grows components, not factories</li>
+    </ul>
+  </div>
+</section>
+
+<!-- COMPONENT GRID -->
+<section class="max-w-6xl mx-auto px-6 py-14">
+  <h2 class="text-2xl font-bold mb-8 text-center">A few things growing in the garden</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="component-grid">
+    <div class="card p-6"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-terra)">buttons</span><h3 class="font-bold mt-3 mb-1">Bloom Button</h3><p class="text-sm" style="color:var(--text-muted)">Petal-like radial burst on hover.</p></div>
+    <div class="card p-6"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-moss)">cards</span><h3 class="font-bold mt-3 mb-1">Parchment Card</h3><p class="text-sm" style="color:var(--text-muted)">Aged-paper texture, warm tones.</p></div>
+    <div class="card p-6"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-clay)">navigation</span><h3 class="font-bold mt-3 mb-1">Grove Menu</h3><p class="text-sm" style="color:var(--text-muted)">Tree-branch style dropdown.</p></div>
+    <div class="card p-6"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-sand)">forms</span><h3 class="font-bold mt-3 mb-1">Harvest Datepicker</h3><p class="text-sm" style="color:var(--text-muted)">Calendar picker, earthy palette.</p></div>
+    <div class="card p-6"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-terra)">loaders</span><h3 class="font-bold mt-3 mb-1">Sprout Loader</h3><p class="text-sm" style="color:var(--text-muted)">Three dots bouncing like seedlings.</p></div>
+    <div class="card p-6"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-moss)">data</span><h3 class="font-bold mt-3 mb-1">Growth Heatmap</h3><p class="text-sm" style="color:var(--text-muted)">GitHub-style heatmap, sage scale.</p></div>
+    <div class="card p-6"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-clay)">overlays</span><h3 class="font-bold mt-3 mb-1">Root Drawer</h3><p class="text-sm" style="color:var(--text-muted)">Slide-in drawer, earthy backdrop.</p></div>
+    <div class="card p-6"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-sand)">layout</span><h3 class="font-bold mt-3 mb-1">Bloom Reveal</h3><p class="text-sm" style="color:var(--text-muted)">Elements bloom in on scroll.</p></div>
+    <div class="card p-6"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-rust)">misc</span><h3 class="font-bold mt-3 mb-1">Soil Scramble</h3><p class="text-sm" style="color:var(--text-muted)">Text scrambles, then resolves.</p></div>
+    <div class="card p-6"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-terra)">buttons</span><h3 class="font-bold mt-3 mb-1">Ember Button</h3><p class="text-sm" style="color:var(--text-muted)">Warm glow pulse, fire tones.</p></div>
+    <div class="card p-6"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-moss)">cards</span><h3 class="font-bold mt-3 mb-1">Bark Card</h3><p class="text-sm" style="color:var(--text-muted)">Subtle CSS wood-grain texture.</p></div>
+    <div class="card p-6"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-clay)">forms</span><h3 class="font-bold mt-3 mb-1">Clay Color Picker</h3><p class="text-sm" style="color:var(--text-muted)">Hue/saturation canvas, warm palette.</p></div>
+  </div>
+</section>
+
+<!-- EFFECTS PREVIEW -->
+<section class="max-w-6xl mx-auto px-6 py-14">
+  <h2 class="text-2xl font-bold mb-8 text-center">Visual effects</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="card p-6 h-40 flex flex-col justify-between" style="background:linear-gradient(135deg,#2e2010,#1a1208)"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-sand)">canvas</span><h3 class="font-bold">Sand Simulation</h3></div>
+    <div class="card p-6 h-40 flex flex-col justify-between" style="background:linear-gradient(135deg,#2e2010,#1a1208)"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-moss)">canvas</span><h3 class="font-bold">Gravity Seeds</h3></div>
+    <div class="card p-6 h-40 flex flex-col justify-between" style="background:linear-gradient(135deg,#2e2010,#1a1208)"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-clay)">canvas</span><h3 class="font-bold">Clay Voronoi</h3></div>
+    <div class="card p-6 h-40 flex flex-col justify-between" style="background:linear-gradient(135deg,#2e2010,#1a1208)"><span class="badge" style="background:var(--bg-subtle);color:var(--accent-terra)">canvas</span><h3 class="font-bold">Root Network</h3></div>
+  </div>
+</section>
+
+<!-- STAR CTA -->
+<section class="max-w-2xl mx-auto px-6 py-14 text-center">
+  <div class="star-cta rounded-2xl p-10">
+    <p class="text-xl font-bold mb-2">If ArnieJS saved you from an npm install, Arnie would love a ⭐</p>
+    <a href="https://github.com/MarcoZorn/arniejs" class="btn-terra inline-block mt-4 px-7 py-3 rounded-full font-semibold">⭐ Star the garden</a>
+    <p class="text-sm mt-4" style="color:var(--text-faint)">It takes 2 seconds. Arnie has been gardening for 40 years.</p>
+  </div>
+</section>
+
+<!-- HOW TO USE -->
+<section class="max-w-3xl mx-auto px-6 py-14">
+  <h2 class="text-2xl font-bold mb-6 text-center">How to use</h2>
+  <div class="card p-6 md:p-8 font-mono text-sm overflow-x-auto" style="color:var(--accent-sand)">
+<pre style="white-space:pre">arniejs/
+└── components/
+    └── ui/
+        └── 31-bloom-button/
+            ├── index.html   ← markup
+            ├── style.css    ← styling
+            └── script.js    ← logic</pre>
+  </div>
+  <p class="text-center mt-4" style="color:var(--text-muted)">Pick a component. Copy 3 files. Done. No config. No <code>npm install</code>.</p>
+</section>
+
+<!-- QUOTE WALL -->
+<section class="max-w-3xl mx-auto px-6 py-14 space-y-6">
+  <p class="quote">"I asked ChatGPT to write me a button. It gave me four dependencies and a build error. I planted a seed instead." — Arnie</p>
+  <p class="quote">"Frameworks come and go. My tomatoes are on their eleventh season." — Arnie</p>
+  <p class="quote">"You don't need a state manager for a toggle switch. You need a switch." — Arnie</p>
+</section>
+
+<!-- FINAL CTA -->
+<section class="max-w-2xl mx-auto px-6 py-16 text-center">
+  <h2 class="text-3xl font-bold mb-6">Stop installing. Start growing.</h2>
+  <a href="https://github.com/MarcoZorn/arniejs" class="btn-terra inline-block px-8 py-4 rounded-full font-semibold text-lg">Get ArnieJS on GitHub</a>
+</section>
+
+<footer class="max-w-6xl mx-auto px-6 py-10 text-center text-sm" style="color:var(--text-faint); border-top:1px solid var(--border)">
+  <p>MIT · Made by <a href="https://github.com/MarcoZorn" style="color:var(--accent-sand)">MarcoZorn</a> · <a href="https://github.com/MarcoZorn/arniejs" style="color:var(--accent-sand)">GitHub</a></p>
+</footer>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.gsap) {
+    gsap.from('#hero-mascot, #hero-title, #hero-sub, #hero-quote, #hero-ctas > *', {
+      opacity: 0, y: 24, duration: .8, stagger: .12, ease: 'power2.out'
+    });
+
+    document.querySelectorAll('[data-count]').forEach(el => {
+      const target = parseInt(el.dataset.count, 10);
+      const obj = { val: 0 };
+      gsap.to(obj, {
+        val: target, duration: 1.4, ease: 'power1.out',
+        scrollTrigger: { trigger: el, start: 'top 85%', once: true },
+        onUpdate: () => el.textContent = Math.round(obj.val)
+      });
+    });
+  } else {
+    document.querySelectorAll('[data-count]').forEach(el => el.textContent = el.dataset.count);
+  }
+</script>
+</body>
+</html>
