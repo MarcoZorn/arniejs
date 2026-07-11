@@ -39,8 +39,6 @@
   .site-nav{ display:flex; gap:22px; align-items:center; }
   .site-nav a{ font-size:13px; font-weight:600; color:var(--text-muted); text-decoration:none; }
   .site-nav a:hover, .site-nav a.current{ color:var(--accent-sand); }
-  .star-mini{ display:inline-flex; align-items:center; gap:6px; padding:7px 12px; border-radius:999px; background:var(--accent-terra); color:#fff; font-size:12.5px; font-weight:700; text-decoration:none; white-space:nowrap; }
-  .star-mini:hover{ background:#a8501f; }
 
   section{ max-width:960px; margin:0 auto; padding:64px 24px; }
   .card{ background: var(--bg-card); border:1px solid var(--border); border-radius:16px; }
@@ -73,11 +71,6 @@
   .preview-grid img{ width:100%; aspect-ratio:16/10; object-fit:cover; display:block; }
   .preview-grid .cap{ padding:8px 10px; font-size:12px; font-weight:700; background:var(--bg-card); }
 
-  .star-cta{ background: var(--bg-subtle); border:1px solid var(--border-light); text-align:center; padding:44px; border-radius:18px; }
-  .star-btn{ background: var(--accent-terra); color:#fff; box-shadow:0 8px 24px -10px rgba(196,98,45,.55); }
-  .star-btn:hover{ background:#a8501f; }
-  .star-btn__count-wrap{ display:inline-flex; align-items:center; gap:4px; margin-left:6px; padding-left:10px; border-left:1px solid rgba(255,255,255,.3); }
-
   footer{ text-align:center; padding:36px 24px; color:var(--text-faint); font-size:13px; border-top:1px solid var(--border); }
 
   @media (prefers-reduced-motion: reduce){ * { animation:none !important; transition:none !important; } }
@@ -99,7 +92,6 @@
     <a href="gallery.html">Gallery</a>
     <a href="docs.html">Docs</a>
   </nav>
-  <a href="https://github.com/MarcoZorn/arniejs" target="_blank" rel="noopener" class="star-mini">⭐ <span id="gh-star-count">&hellip;</span></a>
 </header>
 
 <section id="hero">
@@ -151,17 +143,6 @@
   <div class="preview-grid" id="previewGrid"></div>
 </section>
 
-<section>
-  <div class="star-cta">
-    <p style="font-size:1.2rem;font-weight:700;margin-bottom:16px">If ArnieJS saved you from an npm install, Arnie would love a ⭐</p>
-    <a href="https://github.com/MarcoZorn/arniejs" target="_blank" rel="noopener" class="star-btn" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:999px;font-weight:700;text-decoration:none">
-      ⭐ Star on GitHub
-      <span class="star-btn__count-wrap"><span id="gh-star-count-2">&hellip;</span></span>
-    </a>
-    <p style="font-size:12.5px;color:var(--text-faint);margin-top:16px">It takes 2 seconds. Arnie has been gardening for 40 years.</p>
-  </div>
-</section>
-
 <footer>
   <p>MIT · Made by <a href="https://github.com/MarcoZorn" style="color:var(--accent-sand)">MarcoZorn</a> · <a href="https://github.com/MarcoZorn/arniejs" style="color:var(--accent-sand)">GitHub</a></p>
 </footer>
@@ -176,22 +157,6 @@
       return '<a href="gallery.html?component=' + item.id + '"><img src="' + item.thumbnail + '" alt="' + item.name + '" loading="lazy"><div class="cap">' + item.name + '</div></a>';
     }).join('');
   }).catch(function () {});
-
-  fetch('https://api.github.com/repos/MarcoZorn/arniejs')
-    .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
-    .then(function (data) {
-      if (typeof data.stargazers_count !== 'number') return;
-      ['gh-star-count', 'gh-star-count-2'].forEach(function (id) {
-        var el = document.getElementById(id);
-        if (el) el.textContent = data.stargazers_count.toLocaleString();
-      });
-    })
-    .catch(function () {
-      ['gh-star-count', 'gh-star-count-2'].forEach(function (id) {
-        var el = document.getElementById(id);
-        if (el) el.textContent = '★';
-      });
-    });
 })();
 </script>
 </body>

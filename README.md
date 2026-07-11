@@ -4,10 +4,9 @@
   <h1>ArnieJS 🌱</h1>
   <p><strong>180+ vanilla JS components. Grown from scratch. No deps.</strong></p>
 
-  ![Components](https://img.shields.io/badge/components-180+-c4622d?style=flat-square)
+  ![Components](https://img.shields.io/badge/components-290+-c4622d?style=flat-square)
   ![Dependencies](https://img.shields.io/badge/dependencies-0-5a7a3a?style=flat-square)
   ![License](https://img.shields.io/badge/license-MIT-d4a85a?style=flat-square)
-  [![Stars](https://img.shields.io/github/stars/MarcoZorn/arniejs?style=flat-square&color=c4622d&label=%E2%AD%90%20stars)](https://github.com/MarcoZorn/arniejs/stargazers)
 
   <p><a href="https://marcozorn.github.io/arniejs/gallery.html"><strong>Browse the gallery →</strong></a></p>
 </div>
@@ -96,7 +95,10 @@ MIT. Grow it, fork it, transplant it anywhere.
 
 ---
 
+## Found this useful?
+
+⭐ [Star the garden on GitHub](https://github.com/MarcoZorn/arniejs) — it keeps Arnie gardening.
+
 <div align="center">
-  <p>Useful? ⭐ <a href="https://github.com/MarcoZorn/arniejs">Star the garden</a> — it keeps Arnie gardening.</p>
   <p><a href="https://marcozorn.github.io/arniejs/gallery.html">Gallery</a> · <a href="https://marcozorn.github.io/arniejs/docs.html">Docs</a> · <a href="https://github.com/MarcoZorn/arniejs/issues">Issues</a> · Made by <a href="https://github.com/MarcoZorn">MarcoZorn</a></p>
 </div>
