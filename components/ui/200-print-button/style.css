@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.demo {
+  width: 100%;
+  max-width: 560px;
+}
+
+.doc {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.doc__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border-light);
+  background: var(--bg-subtle);
+}
+
+.doc__title {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.print-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--bg-deep);
+  background: linear-gradient(135deg, var(--accent-sand), var(--accent-terra));
+  border: none;
+  border-radius: 8px;
+  padding: 9px 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.print-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(196, 98, 45, 0.35);
+  filter: brightness(1.06);
+}
+
+.print-btn:active {
+  transform: translateY(0);
+}
+
+.print-btn.is-pressed {
+  animation: press 0.3s ease;
+}
+
+@keyframes press {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.93); }
+  100% { transform: scale(1); }
+}
+
+.doc__body {
+  padding: 20px 24px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.doc__body p { margin: 0 0 8px; }
+.doc__body strong { color: var(--text-primary); }
+
+.doc__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 13px;
+}
+
+.doc__table th,
+.doc__table td {
+  text-align: left;
+  padding: 8px 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.doc__table th {
+  color: var(--text-faint);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+}
+
+.doc__total {
+  font-weight: 700;
+  color: var(--accent-sand);
+  font-size: 15px;
+}
+
+.doc__footer {
+  padding: 0 24px 18px;
+  margin: 0;
+  color: var(--text-faint);
+  font-size: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .print-btn {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Print stylesheet: hide non-essential chrome, keep the document body clean. */
+@media print {
+  body {
+    background: #fff;
+    padding: 0;
+    display: block;
+  }
+
+  .demo {
+    max-width: none;
+  }
+
+  .doc {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .doc__body {
+    color: #000;
+  }
+
+  .doc__body strong,
+  .doc__total {
+    color: #000;
+  }
+
+  [data-no-print] {
+    display: none !important;
+  }
+}

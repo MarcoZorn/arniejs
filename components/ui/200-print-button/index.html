@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <div class="doc" id="printArea">
+    <div class="doc__toolbar" data-no-print>
+      <span class="doc__title">Invoice #A-1042</span>
+      <button type="button" class="print-btn" id="printBtn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Print
+      </button>
+    </div>
+    <div class="doc__body">
+      <p><strong>Bill to:</strong> Arnie Studio LLC</p>
+      <p><strong>Date:</strong> 11 Jul 2026</p>
+      <table class="doc__table">
+        <thead><tr><th>Item</th><th>Qty</th><th>Total</th></tr></thead>
+        <tbody>
+          <tr><td>Component license</td><td>1</td><td>$49.00</td></tr>
+          <tr><td>Support plan</td><td>1</td><td>$19.00</td></tr>
+        </tbody>
+      </table>
+      <p class="doc__total">Total due: $68.00</p>
+    </div>
+    <p class="doc__footer" data-no-print>This toolbar and footer are hidden automatically when printed.</p>
+  </div>
+</main>
+<script src="script.js"></script>
