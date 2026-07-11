@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <h1 class="title">sun timer</h1>
+  <p class="subtitle">a countdown that sets like a warm evening sun</p>
+
+  <section class="demo">
+    <div class="timer-ring">
+      <svg viewBox="0 0 200 200" class="ring-svg" aria-hidden="true">
+        <circle class="ring-track" cx="100" cy="100" r="88"></circle>
+        <circle class="ring-arc" id="ringArc" cx="100" cy="100" r="88"></circle>
+      </svg>
+      <div class="ring-center">
+        <span class="ring-time" id="ringTime">05:00</span>
+        <span class="ring-caption" id="ringCaption">ready</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="ctrl-btn ctrl-primary" id="startBtn" type="button">Start</button>
+      <button class="ctrl-btn" id="pauseBtn" type="button" disabled>Pause</button>
+      <button class="ctrl-btn ctrl-ghost" id="resetBtn" type="button">Reset</button>
+    </div>
+
+    <div class="duration-row">
+      <label for="durationSelect">Duration</label>
+      <select id="durationSelect">
+        <option value="60">1 min</option>
+        <option value="300" selected>5 min</option>
+        <option value="600">10 min</option>
+        <option value="1500">25 min</option>
+      </select>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
