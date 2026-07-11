@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="style.css">
+<main>
+  <div class="soil-wrap">
+    <h1>Back to Soil</h1>
+    <p class="sub">Scroll down to reveal a circular growth-progress button in the corner. Click it to return to the top.</p>
+
+    <div class="filler">
+      <p>Section one. This is a long page purely to demonstrate the back-to-top button, which appears once you've scrolled a little way down.</p>
+      <p>Section two. The ring around the button fills as you scroll further, like a sprout curling open.</p>
+      <p>Section three. It's built with a plain SVG circle and a stroke-dashoffset driven by scroll percentage.</p>
+      <p>Section four. Keep going.</p>
+      <p>Section five. Almost to the good part.</p>
+      <p>Section six. Try clicking the button now.</p>
+      <p>Section seven. It should smoothly (or instantly, if you prefer reduced motion) scroll back to the top.</p>
+      <p>Section eight. End of the field — go on, click it.</p>
+    </div>
+  </div>
+
+  <button class="back-to-soil" id="backToSoil" aria-label="Back to top">
+    <svg class="ring" width="56" height="56" viewBox="0 0 56 56">
+      <circle class="ring-track" cx="28" cy="28" r="24"></circle>
+      <circle class="ring-fill" id="ringFill" cx="28" cy="28" r="24"></circle>
+    </svg>
+    <span class="sprout-icon">🌱</span>
+  </button>
+</main>
+<script src="script.js"></script>
