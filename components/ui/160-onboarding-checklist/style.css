@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.demo {
+  width: 100%;
+  max-width: 400px;
+}
+
+.checklist {
+  background: linear-gradient(160deg, var(--bg-card) 0%, var(--bg-surface) 100%);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px 24px 20px;
+  box-shadow: 0 12px 30px -14px rgba(0,0,0,.6);
+}
+
+.checklist__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.checklist__title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: -.01em;
+}
+
+.checklist__pct {
+  font-size: .9rem;
+  font-weight: 700;
+  color: var(--accent-sand);
+}
+
+.checklist__progress {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--bg-subtle);
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.checklist__progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent-clay), var(--accent-sand));
+  transition: width .4s ease;
+}
+
+.checklist__summary {
+  margin: 0 0 16px;
+  font-size: .76rem;
+  color: var(--text-faint);
+}
+
+.checklist__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.checklist__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 4px;
+  border-radius: 10px;
+  transition: background-color .2s ease;
+}
+
+.checklist__item:hover {
+  background: var(--bg-subtle);
+}
+
+.checklist__check {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 1.5px solid var(--border-light);
+  background: transparent;
+  color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .15s ease;
+}
+
+.checklist__check svg { width: 13px; height: 13px; }
+
+.checklist__check:active { transform: scale(.9); }
+
+.checklist__item.is-done .checklist__check {
+  background: var(--accent-sage);
+  border-color: var(--accent-sage);
+  color: var(--bg-deep);
+}
+
+.checklist__label {
+  font-size: .88rem;
+  color: var(--text-primary);
+  transition: color .2s ease;
+}
+
+.checklist__item.is-done .checklist__label {
+  color: var(--text-faint);
+  text-decoration: line-through;
+  text-decoration-color: var(--text-faint);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .checklist__progress-fill,
+  .checklist__item,
+  .checklist__check,
+  .checklist__label {
+    transition: none !important;
+  }
+  .checklist__check:active {
+    transform: none;
+  }
+}

@@ -1,0 +1,50 @@
+<!-- description: An onboarding step list with a live progress bar; items strike through as they're checked off. -->
+<!-- category: dashboard -->
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <div class="checklist" id="checklist">
+    <div class="checklist__head">
+      <h2 class="checklist__title">Get started</h2>
+      <span class="checklist__pct" id="checklistPct">20%</span>
+    </div>
+
+    <div class="checklist__progress">
+      <div class="checklist__progress-fill" id="checklistFill" style="width:20%"></div>
+    </div>
+    <p class="checklist__summary" id="checklistSummary">1 of 5 steps complete</p>
+
+    <ul class="checklist__list">
+      <li class="checklist__item is-done">
+        <button class="checklist__check" type="button" role="checkbox" aria-checked="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        </button>
+        <span class="checklist__label">Create your account</span>
+      </li>
+      <li class="checklist__item">
+        <button class="checklist__check" type="button" role="checkbox" aria-checked="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        </button>
+        <span class="checklist__label">Verify your email</span>
+      </li>
+      <li class="checklist__item">
+        <button class="checklist__check" type="button" role="checkbox" aria-checked="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        </button>
+        <span class="checklist__label">Connect a data source</span>
+      </li>
+      <li class="checklist__item">
+        <button class="checklist__check" type="button" role="checkbox" aria-checked="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        </button>
+        <span class="checklist__label">Invite a teammate</span>
+      </li>
+      <li class="checklist__item">
+        <button class="checklist__check" type="button" role="checkbox" aria-checked="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        </button>
+        <span class="checklist__label">Set up your first alert</span>
+      </li>
+    </ul>
+  </div>
+</main>
+<script src="script.js"></script>
