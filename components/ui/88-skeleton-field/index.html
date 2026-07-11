@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <header class="head">
+    <h1>Skeleton Field</h1>
+    <p>A parchment-toned card skeleton, shimmering while the harvest loads.</p>
+  </header>
+
+  <div class="controls">
+    <button type="button" id="toggle-state" class="toggle-btn">Show Loaded State</button>
+  </div>
+
+  <section class="card-stage">
+    <article class="card" id="card" aria-live="polite">
+      <div class="card-media skeleton" data-role="media"></div>
+      <img class="card-media loaded-img" data-role="media-loaded" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='220' viewBox='0 0 400 220'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%239b6b3a'/%3E%3Cstop offset='100%25' stop-color='%235a7a3a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='220' fill='url(%23g)'/%3E%3Ccircle cx='320' cy='50' r='34' fill='%23d4a85a' opacity='0.6'/%3E%3Cpath d='M0 170 L100 120 L180 160 L260 100 L400 150 L400 220 L0 220 Z' fill='%232e2010' opacity='0.55'/%3E%3C/svg%3E" alt="Field at harvest" hidden>
+
+      <div class="card-body">
+        <div class="line skeleton title-line" data-role="title"></div>
+        <h2 class="loaded-text title-loaded" hidden>Terraced Harvest Fields</h2>
+
+        <div class="line skeleton text-line w-90" data-role="text"></div>
+        <div class="line skeleton text-line w-75" data-role="text"></div>
+        <div class="line skeleton text-line w-60" data-role="text"></div>
+        <p class="loaded-text body-loaded" hidden>
+          Sun-warmed terraces yield a slow, deliberate harvest. Every row is tended by hand,
+          from first sprout to the final basket carried down the hill.
+        </p>
+
+        <div class="tag-row">
+          <span class="tag skeleton tag-pill" data-role="tag"></span>
+          <span class="tag skeleton tag-pill" data-role="tag"></span>
+          <span class="tag loaded-tag" hidden>Organic</span>
+          <span class="tag loaded-tag" hidden>Small-Batch</span>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>
+<script src="script.js"></script>
