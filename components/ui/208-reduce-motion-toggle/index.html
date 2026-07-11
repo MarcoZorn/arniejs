@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Reduce Motion Toggle</h1>
+  <p class="stage__sub">Simulates prefers-reduced-motion for demo purposes</p>
+
+  <div class="panel">
+    <button type="button" class="switch" id="motionSwitch" role="switch" aria-checked="false" aria-label="Simulate reduced motion">
+      <span class="switch__track">
+        <span class="switch__thumb"></span>
+      </span>
+      <span class="switch__text" data-switch-text>Motion enabled</span>
+    </button>
+
+    <div class="demo" id="demoBox">
+      <span class="demo__orb" aria-hidden="true"></span>
+      <p class="demo__caption" data-caption>Orb bounces freely — motion is on</p>
+    </div>
+  </div>
+
+  <p class="footnote">This override is simulated in-page. It does not change your OS setting; real prefers-reduced-motion media queries elsewhere are unaffected.</p>
+</main>
+<script src="script.js"></script>
