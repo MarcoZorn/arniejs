@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stepper-page">
+  <div class="stepper-wrap">
+    <h1 class="stepper-title">Plant Your Garden</h1>
+    <p class="stepper-subtitle">Follow the branch to grow your first plot, one step at a time.</p>
+
+    <div class="stepper" data-stepper>
+      <div class="stepper-rail">
+        <svg class="stepper-vine" viewBox="0 0 60 620" preserveAspectRatio="none" aria-hidden="true">
+          <path
+            class="stepper-vine-path-bg"
+            d="M 30 20 C 55 90, 5 130, 30 200 C 55 270, 5 310, 30 380 C 55 450, 5 490, 30 560 C 45 590, 20 605, 30 615"
+            fill="none"
+          />
+          <path
+            class="stepper-vine-path-fg"
+            data-vine-fg
+            d="M 30 20 C 55 90, 5 130, 30 200 C 55 270, 5 310, 30 380 C 55 450, 5 490, 30 560 C 45 590, 20 605, 30 615"
+            fill="none"
+          />
+        </svg>
+
+        <ol class="stepper-nodes" data-nodes>
+          <li class="stepper-node" data-step="0">
+            <button type="button" class="stepper-dot" data-dot aria-current="step">
+              <span class="stepper-dot-inner">1</span>
+            </button>
+            <span class="stepper-node-label">Choose a Plot</span>
+          </li>
+          <li class="stepper-node" data-step="1">
+            <button type="button" class="stepper-dot" data-dot>
+              <span class="stepper-dot-inner">2</span>
+            </button>
+            <span class="stepper-node-label">Prepare the Soil</span>
+          </li>
+          <li class="stepper-node" data-step="2">
+            <button type="button" class="stepper-dot" data-dot>
+              <span class="stepper-dot-inner">3</span>
+            </button>
+            <span class="stepper-node-label">Sow the Seeds</span>
+          </li>
+          <li class="stepper-node" data-step="3">
+            <button type="button" class="stepper-dot" data-dot>
+              <span class="stepper-dot-inner">4</span>
+            </button>
+            <span class="stepper-node-label">Tend & Grow</span>
+          </li>
+          <li class="stepper-node" data-step="4">
+            <button type="button" class="stepper-dot" data-dot>
+              <span class="stepper-dot-inner">5</span>
+            </button>
+            <span class="stepper-node-label">Harvest</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="stepper-panel">
+        <div class="stepper-content" data-content>
+
+          <section class="stepper-pane is-active" data-pane="0">
+            <span class="stepper-kicker">Step 1 of 5</span>
+            <h2>Choose a Plot</h2>
+            <p>Pick a sun-facing patch of earth. Good drainage and morning light will give your seedlings the
+              strongest start.</p>
+          </section>
+
+          <section class="stepper-pane" data-pane="1">
+            <span class="stepper-kicker">Step 2 of 5</span>
+            <h2>Prepare the Soil</h2>
+            <p>Turn the earth, clear the stones, and work in a little compost. Rich, loose soil is the root of
+              everything that follows.</p>
+          </section>
+
+          <section class="stepper-pane" data-pane="2">
+            <span class="stepper-kicker">Step 3 of 5</span>
+            <h2>Sow the Seeds</h2>
+            <p>Space your seeds evenly and press them gently into the soil. Water well and let patience do the
+              rest.</p>
+          </section>
+
+          <section class="stepper-pane" data-pane="3">
+            <span class="stepper-kicker">Step 4 of 5</span>
+            <h2>Tend &amp; Grow</h2>
+            <p>Water on a steady rhythm, pull the weeds, and watch the first true leaves unfurl toward the
+              sun.</p>
+          </section>
+
+          <section class="stepper-pane" data-pane="4">
+            <span class="stepper-kicker">Step 5 of 5</span>
+            <h2>Harvest</h2>
+            <p>Gather what you've grown. Every ripe fruit is a small reward for the branch you've climbed to
+              get here.</p>
+          </section>
+
+        </div>
+
+        <div class="stepper-controls">
+          <button type="button" class="stepper-btn stepper-btn-ghost" data-back>Back</button>
+          <span class="stepper-progress-text" data-progress-text>Step 1 of 5</span>
+          <button type="button" class="stepper-btn stepper-btn-primary" data-next>Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
