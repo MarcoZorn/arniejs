@@ -1,0 +1,4308 @@
+[
+  {
+    "id": "image-gallery",
+    "number": "01",
+    "name": "Image Gallery",
+    "category": "misc",
+    "description": "A curated set of frames. Filter by mood, tap to expand.",
+    "tags": [
+      "image",
+      "gallery",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/01-image-gallery/index.html",
+      "css": "components/ui/01-image-gallery/style.css",
+      "js": "components/ui/01-image-gallery/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/01-image-gallery/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/01-image-gallery/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/01-image-gallery/",
+    "type": "ui"
+  },
+  {
+    "id": "image-compare",
+    "number": "02",
+    "name": "Image Compare",
+    "category": "misc",
+    "description": "Slide the handle to reveal the edit. Works with mouse, touch and keyboard.",
+    "tags": [
+      "image",
+      "compare",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/02-image-compare/index.html",
+      "css": "components/ui/02-image-compare/style.css",
+      "js": "components/ui/02-image-compare/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/02-image-compare/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/02-image-compare/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/02-image-compare/",
+    "type": "ui"
+  },
+  {
+    "id": "tilt-cards",
+    "number": "03",
+    "name": "Tilt Cards",
+    "category": "misc",
+    "description": "Studio wireless, 40h battery",
+    "tags": [
+      "tilt",
+      "cards",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/03-tilt-cards/index.html",
+      "css": "components/ui/03-tilt-cards/style.css",
+      "js": "components/ui/03-tilt-cards/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/03-tilt-cards/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/03-tilt-cards/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/03-tilt-cards/",
+    "type": "ui"
+  },
+  {
+    "id": "bento-grid",
+    "number": "04",
+    "name": "Bento Grid",
+    "category": "misc",
+    "description": "A toolkit that scales from first commit to global launch.",
+    "tags": [
+      "bento",
+      "grid",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/04-bento-grid/index.html",
+      "css": "components/ui/04-bento-grid/style.css",
+      "js": "components/ui/04-bento-grid/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/04-bento-grid/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/04-bento-grid/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/04-bento-grid/",
+    "type": "ui"
+  },
+  {
+    "id": "image-carousel",
+    "number": "05",
+    "name": "Image Carousel",
+    "category": "misc",
+    "description": "drag, swipe, arrow keys or the controls below",
+    "tags": [
+      "image",
+      "carousel",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/05-image-carousel/index.html",
+      "css": "components/ui/05-image-carousel/style.css",
+      "js": "components/ui/05-image-carousel/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/05-image-carousel/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/05-image-carousel/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/05-image-carousel/",
+    "type": "ui"
+  },
+  {
+    "id": "flip-cards",
+    "number": "06",
+    "name": "Flip Cards",
+    "category": "misc",
+    "description": "Hover, tap, or press Enter on a card to flip it.",
+    "tags": [
+      "flip",
+      "cards",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/06-flip-cards/index.html",
+      "css": "components/ui/06-flip-cards/style.css",
+      "js": "components/ui/06-flip-cards/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/06-flip-cards/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/06-flip-cards/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/06-flip-cards/",
+    "type": "ui"
+  },
+  {
+    "id": "parallax-hero",
+    "number": "07",
+    "name": "Parallax Hero",
+    "category": "misc",
+    "description": "A depth-driven design toolkit for teams who want interfaces that feel alive — responsive, tactile, and unmistakably premium.",
+    "tags": [
+      "parallax",
+      "hero",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/07-parallax-hero/index.html",
+      "css": "components/ui/07-parallax-hero/style.css",
+      "js": "components/ui/07-parallax-hero/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/07-parallax-hero/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/07-parallax-hero/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/07-parallax-hero/",
+    "type": "ui"
+  },
+  {
+    "id": "cube-showcase",
+    "number": "08",
+    "name": "Cube Showcase",
+    "category": "misc",
+    "description": "Drag to rotate freely, or jump to a face with the dots below.",
+    "tags": [
+      "cube",
+      "showcase",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/08-cube-showcase/index.html",
+      "css": "components/ui/08-cube-showcase/style.css",
+      "js": "components/ui/08-cube-showcase/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/08-cube-showcase/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/08-cube-showcase/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/08-cube-showcase/",
+    "type": "ui"
+  },
+  {
+    "id": "fullscreen-nav",
+    "number": "09",
+    "name": "Fullscreen Nav",
+    "category": "misc",
+    "description": "Tap the menu, or press",
+    "tags": [
+      "fullscreen",
+      "nav",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/09-fullscreen-nav/index.html",
+      "css": "components/ui/09-fullscreen-nav/style.css",
+      "js": "components/ui/09-fullscreen-nav/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/09-fullscreen-nav/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/09-fullscreen-nav/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/09-fullscreen-nav/",
+    "type": "ui"
+  },
+  {
+    "id": "accordion-faq",
+    "number": "10",
+    "name": "Accordion Faq",
+    "category": "misc",
+    "description": "Everything you need to know about the product and billing.",
+    "tags": [
+      "accordion",
+      "faq",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/10-accordion-faq/index.html",
+      "css": "components/ui/10-accordion-faq/style.css",
+      "js": "components/ui/10-accordion-faq/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/10-accordion-faq/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/10-accordion-faq/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/10-accordion-faq/",
+    "type": "ui"
+  },
+  {
+    "id": "animated-tabs",
+    "number": "11",
+    "name": "Animated Tabs",
+    "category": "misc",
+    "description": "A workspace that stays out of your way. Capture ideas, ship work, and keep every thread in one calm, fast interface designed for focus.",
+    "tags": [
+      "animated",
+      "tabs",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/11-animated-tabs/index.html",
+      "css": "components/ui/11-animated-tabs/style.css",
+      "js": "components/ui/11-animated-tabs/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/11-animated-tabs/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/11-animated-tabs/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/11-animated-tabs/",
+    "type": "ui"
+  },
+  {
+    "id": "toast-notifications",
+    "number": "12",
+    "name": "Toast Notifications",
+    "category": "misc",
+    "description": "Trigger a toast — they stack, auto-dismiss, and can be closed by hand.",
+    "tags": [
+      "toast",
+      "notifications",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/12-toast-notifications/index.html",
+      "css": "components/ui/12-toast-notifications/style.css",
+      "js": "components/ui/12-toast-notifications/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/12-toast-notifications/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/12-toast-notifications/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/12-toast-notifications/",
+    "type": "ui"
+  },
+  {
+    "id": "modal-dialog",
+    "number": "13",
+    "name": "Modal Dialog",
+    "category": "misc",
+    "description": "A focus-trapped dialog with a blurred backdrop. Close with Esc, the backdrop, or Cancel.",
+    "tags": [
+      "modal",
+      "dialog",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/13-modal-dialog/index.html",
+      "css": "components/ui/13-modal-dialog/style.css",
+      "js": "components/ui/13-modal-dialog/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/13-modal-dialog/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/13-modal-dialog/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/13-modal-dialog/",
+    "type": "ui"
+  },
+  {
+    "id": "multistep-form",
+    "number": "14",
+    "name": "Multistep Form",
+    "category": "misc",
+    "description": "Welcome aboard. Your workspace is ready.",
+    "tags": [
+      "multistep",
+      "form",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/14-multistep-form/index.html",
+      "css": "components/ui/14-multistep-form/style.css",
+      "js": "components/ui/14-multistep-form/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/14-multistep-form/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/14-multistep-form/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/14-multistep-form/",
+    "type": "ui"
+  },
+  {
+    "id": "pricing-toggle",
+    "number": "15",
+    "name": "Pricing Toggle",
+    "category": "misc",
+    "description": "Switch anytime. No hidden fees.",
+    "tags": [
+      "pricing",
+      "toggle",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/15-pricing-toggle/index.html",
+      "css": "components/ui/15-pricing-toggle/style.css",
+      "js": "components/ui/15-pricing-toggle/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/15-pricing-toggle/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/15-pricing-toggle/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/15-pricing-toggle/",
+    "type": "ui"
+  },
+  {
+    "id": "testimonial-slider",
+    "number": "16",
+    "name": "Testimonial Slider",
+    "category": "misc",
+    "description": "Testimonial Slider — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "testimonial",
+      "slider",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/16-testimonial-slider/index.html",
+      "css": "components/ui/16-testimonial-slider/style.css",
+      "js": "components/ui/16-testimonial-slider/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/16-testimonial-slider/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/16-testimonial-slider/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/16-testimonial-slider/",
+    "type": "ui"
+  },
+  {
+    "id": "count-up-stats",
+    "number": "17",
+    "name": "Count Up Stats",
+    "category": "misc",
+    "description": "By the numbers",
+    "tags": [
+      "count",
+      "up",
+      "stats",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/17-count-up-stats/index.html",
+      "css": "components/ui/17-count-up-stats/style.css",
+      "js": "components/ui/17-count-up-stats/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/17-count-up-stats/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/17-count-up-stats/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/17-count-up-stats/",
+    "type": "ui"
+  },
+  {
+    "id": "theme-toggle",
+    "number": "18",
+    "name": "Theme Toggle",
+    "category": "misc",
+    "description": "Product Lead",
+    "tags": [
+      "theme",
+      "toggle",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/18-theme-toggle/index.html",
+      "css": "components/ui/18-theme-toggle/style.css",
+      "js": "components/ui/18-theme-toggle/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/18-theme-toggle/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/18-theme-toggle/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/18-theme-toggle/",
+    "type": "ui"
+  },
+  {
+    "id": "magnetic-cursor",
+    "number": "19",
+    "name": "Magnetic Cursor",
+    "category": "misc",
+    "description": "Custom cursor hides automatically on touch devices.",
+    "tags": [
+      "magnetic",
+      "cursor",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/19-magnetic-cursor/index.html",
+      "css": "components/ui/19-magnetic-cursor/style.css",
+      "js": "components/ui/19-magnetic-cursor/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/19-magnetic-cursor/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/19-magnetic-cursor/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/19-magnetic-cursor/",
+    "type": "ui"
+  },
+  {
+    "id": "logo-marquee",
+    "number": "20",
+    "name": "Logo Marquee",
+    "category": "misc",
+    "description": "Hover any row to pause. Two rows, opposite directions, seamless loop.",
+    "tags": [
+      "logo",
+      "marquee",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/20-logo-marquee/index.html",
+      "css": "components/ui/20-logo-marquee/style.css",
+      "js": "components/ui/20-logo-marquee/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/20-logo-marquee/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/20-logo-marquee/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/20-logo-marquee/",
+    "type": "ui"
+  },
+  {
+    "id": "vertical-timeline",
+    "number": "21",
+    "name": "Vertical Timeline",
+    "category": "misc",
+    "description": "Scroll down &mdash; the line fills as you go and each card reveals in sequence.",
+    "tags": [
+      "vertical",
+      "timeline",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/21-vertical-timeline/index.html",
+      "css": "components/ui/21-vertical-timeline/style.css",
+      "js": "components/ui/21-vertical-timeline/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/21-vertical-timeline/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/21-vertical-timeline/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/21-vertical-timeline/",
+    "type": "ui"
+  },
+  {
+    "id": "command-palette",
+    "number": "22",
+    "name": "Command Palette",
+    "category": "misc",
+    "description": "Command / Search",
+    "tags": [
+      "command",
+      "palette",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/22-command-palette/index.html",
+      "css": "components/ui/22-command-palette/style.css",
+      "js": "components/ui/22-command-palette/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/22-command-palette/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/22-command-palette/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/22-command-palette/",
+    "type": "ui"
+  },
+  {
+    "id": "star-rating",
+    "number": "23",
+    "name": "Star Rating",
+    "category": "misc",
+    "description": "Pick a face",
+    "tags": [
+      "star",
+      "rating",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/23-star-rating/index.html",
+      "css": "components/ui/23-star-rating/style.css",
+      "js": "components/ui/23-star-rating/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/23-star-rating/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/23-star-rating/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/23-star-rating/",
+    "type": "ui"
+  },
+  {
+    "id": "range-slider",
+    "number": "24",
+    "name": "Range Slider",
+    "category": "misc",
+    "description": "Range Slider — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "range",
+      "slider",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/24-range-slider/index.html",
+      "css": "components/ui/24-range-slider/style.css",
+      "js": "components/ui/24-range-slider/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/24-range-slider/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/24-range-slider/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/24-range-slider/",
+    "type": "ui"
+  },
+  {
+    "id": "segmented-control",
+    "number": "25",
+    "name": "Segmented Control",
+    "category": "misc",
+    "description": "Push alerts on this device",
+    "tags": [
+      "segmented",
+      "control",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/25-segmented-control/index.html",
+      "css": "components/ui/25-segmented-control/style.css",
+      "js": "components/ui/25-segmented-control/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/25-segmented-control/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/25-segmented-control/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/25-segmented-control/",
+    "type": "ui"
+  },
+  {
+    "id": "custom-select",
+    "number": "26",
+    "name": "Custom Select",
+    "category": "misc",
+    "description": "Workspace",
+    "tags": [
+      "custom",
+      "select",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/26-custom-select/index.html",
+      "css": "components/ui/26-custom-select/style.css",
+      "js": "components/ui/26-custom-select/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/26-custom-select/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/26-custom-select/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/26-custom-select/",
+    "type": "ui"
+  },
+  {
+    "id": "file-dropzone",
+    "number": "27",
+    "name": "File Dropzone",
+    "category": "misc",
+    "description": "Drag &amp; drop or browse — images, docs, anything.",
+    "tags": [
+      "file",
+      "dropzone",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/27-file-dropzone/index.html",
+      "css": "components/ui/27-file-dropzone/style.css",
+      "js": "components/ui/27-file-dropzone/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/27-file-dropzone/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/27-file-dropzone/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/27-file-dropzone/",
+    "type": "ui"
+  },
+  {
+    "id": "circular-progress",
+    "number": "28",
+    "name": "Circular Progress",
+    "category": "misc",
+    "description": "Animated SVG rings with count-up, plus tasteful spinners.",
+    "tags": [
+      "circular",
+      "progress",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/28-circular-progress/index.html",
+      "css": "components/ui/28-circular-progress/style.css",
+      "js": "components/ui/28-circular-progress/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/28-circular-progress/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/28-circular-progress/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/28-circular-progress/",
+    "type": "ui"
+  },
+  {
+    "id": "glow-buttons",
+    "number": "29",
+    "name": "Glow Buttons",
+    "category": "misc",
+    "description": "A reusable set of modern, tactile button styles.",
+    "tags": [
+      "glow",
+      "buttons",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/29-glow-buttons/index.html",
+      "css": "components/ui/29-glow-buttons/style.css",
+      "js": "components/ui/29-glow-buttons/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/29-glow-buttons/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/29-glow-buttons/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/29-glow-buttons/",
+    "type": "ui"
+  },
+  {
+    "id": "kanban-board",
+    "number": "30",
+    "name": "Kanban Board",
+    "category": "misc",
+    "description": "Drag cards between columns — order is saved as you drop.",
+    "tags": [
+      "kanban",
+      "board",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/30-kanban-board/index.html",
+      "css": "components/ui/30-kanban-board/style.css",
+      "js": "components/ui/30-kanban-board/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/30-kanban-board/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/30-kanban-board/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/30-kanban-board/",
+    "type": "ui"
+  },
+  {
+    "id": "ripple-button",
+    "number": "31",
+    "name": "Ripple Button",
+    "category": "buttons",
+    "description": "Click anywhere on the button — an earth-toned ink ripple spreads from that point.",
+    "tags": [
+      "ripple",
+      "button",
+      "buttons",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/31-ripple-button/index.html",
+      "css": "components/ui/31-ripple-button/style.css",
+      "js": "components/ui/31-ripple-button/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/31-ripple-button/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/31-ripple-button/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/31-ripple-button/",
+    "type": "ui"
+  },
+  {
+    "id": "morphing-button",
+    "number": "32",
+    "name": "Morphing Button",
+    "category": "buttons",
+    "description": "Hover to morph from circle to pill, click to settle into a full terracotta rectangle.",
+    "tags": [
+      "morphing",
+      "button",
+      "buttons",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/32-morphing-button/index.html",
+      "css": "components/ui/32-morphing-button/style.css",
+      "js": "components/ui/32-morphing-button/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/32-morphing-button/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/32-morphing-button/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/32-morphing-button/",
+    "type": "ui"
+  },
+  {
+    "id": "bloom-button",
+    "number": "33",
+    "name": "Bloom Button",
+    "category": "buttons",
+    "description": "Hover to watch organic petals unfold around the button, like a flower opening.",
+    "tags": [
+      "bloom",
+      "button",
+      "buttons",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/33-bloom-button/index.html",
+      "css": "components/ui/33-bloom-button/style.css",
+      "js": "components/ui/33-bloom-button/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/33-bloom-button/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/33-bloom-button/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/33-bloom-button/",
+    "type": "ui"
+  },
+  {
+    "id": "shockwave-button",
+    "number": "34",
+    "name": "Shockwave Button",
+    "category": "buttons",
+    "description": "Click to send concentric rings of clay and sand rippling outward.",
+    "tags": [
+      "shockwave",
+      "button",
+      "buttons",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/34-shockwave-button/index.html",
+      "css": "components/ui/34-shockwave-button/style.css",
+      "js": "components/ui/34-shockwave-button/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/34-shockwave-button/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/34-shockwave-button/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/34-shockwave-button/",
+    "type": "ui"
+  },
+  {
+    "id": "typewriter-button",
+    "number": "35",
+    "name": "Typewriter Button",
+    "category": "buttons",
+    "description": "Hover the button and its label types itself out, character by character.",
+    "tags": [
+      "typewriter",
+      "button",
+      "buttons",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/35-typewriter-button/index.html",
+      "css": "components/ui/35-typewriter-button/style.css",
+      "js": "components/ui/35-typewriter-button/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/35-typewriter-button/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/35-typewriter-button/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/35-typewriter-button/",
+    "type": "ui"
+  },
+  {
+    "id": "ember-button",
+    "number": "36",
+    "name": "Ember Button",
+    "category": "buttons",
+    "description": "A warm, glowing pulse breathes beneath the surface, like embers in a hearth.",
+    "tags": [
+      "ember",
+      "button",
+      "buttons",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/36-ember-button/index.html",
+      "css": "components/ui/36-ember-button/style.css",
+      "js": "components/ui/36-ember-button/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/36-ember-button/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/36-ember-button/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/36-ember-button/",
+    "type": "ui"
+  },
+  {
+    "id": "split-button",
+    "number": "37",
+    "name": "Split Button",
+    "category": "buttons",
+    "description": "Hover and the label splits apart, sliding away to reveal a second message underneath.",
+    "tags": [
+      "split",
+      "button",
+      "buttons",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/37-split-button/index.html",
+      "css": "components/ui/37-split-button/style.css",
+      "js": "components/ui/37-split-button/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/37-split-button/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/37-split-button/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/37-split-button/",
+    "type": "ui"
+  },
+  {
+    "id": "glitch-button",
+    "number": "38",
+    "name": "Glitch Button",
+    "category": "buttons",
+    "description": "Hover for a warm-toned channel-shift glitch — rust and terracotta split, not neon.",
+    "tags": [
+      "glitch",
+      "button",
+      "buttons",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/38-glitch-button/index.html",
+      "css": "components/ui/38-glitch-button/style.css",
+      "js": "components/ui/38-glitch-button/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/38-glitch-button/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/38-glitch-button/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/38-glitch-button/",
+    "type": "ui"
+  },
+  {
+    "id": "magnetic-button",
+    "number": "39",
+    "name": "Magnetic Button",
+    "category": "buttons",
+    "description": "Move your cursor near the button — it pulls toward you within a radius, then snaps back.",
+    "tags": [
+      "magnetic",
+      "button",
+      "buttons",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/39-magnetic-button/index.html",
+      "css": "components/ui/39-magnetic-button/style.css",
+      "js": "components/ui/39-magnetic-button/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/39-magnetic-button/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/39-magnetic-button/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/39-magnetic-button/",
+    "type": "ui"
+  },
+  {
+    "id": "seed-button",
+    "number": "40",
+    "name": "Seed Button",
+    "category": "buttons",
+    "description": "Click to scatter a tiny burst of seeds — they arc outward, fall with gravity, and fade.",
+    "tags": [
+      "seed",
+      "button",
+      "buttons",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/40-seed-button/index.html",
+      "css": "components/ui/40-seed-button/style.css",
+      "js": "components/ui/40-seed-button/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/40-seed-button/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/40-seed-button/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/40-seed-button/",
+    "type": "ui"
+  },
+  {
+    "id": "parchment-card",
+    "number": "41",
+    "name": "Parchment Card",
+    "category": "cards",
+    "description": "Aged paper texture, built from layered CSS gradients.",
+    "tags": [
+      "parchment",
+      "card",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/41-parchment-card/index.html",
+      "css": "components/ui/41-parchment-card/style.css",
+      "js": "components/ui/41-parchment-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/41-parchment-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/41-parchment-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/41-parchment-card/",
+    "type": "ui"
+  },
+  {
+    "id": "holographic-card",
+    "number": "42",
+    "name": "Holographic Card",
+    "category": "cards",
+    "description": "Tilt with your cursor to catch the amber-copper shimmer.",
+    "tags": [
+      "holographic",
+      "card",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/42-holographic-card/index.html",
+      "css": "components/ui/42-holographic-card/style.css",
+      "js": "components/ui/42-holographic-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/42-holographic-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/42-holographic-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/42-holographic-card/",
+    "type": "ui"
+  },
+  {
+    "id": "expandable-card",
+    "number": "43",
+    "name": "Expandable Card",
+    "category": "cards",
+    "description": "Click to expand into a full detail view.",
+    "tags": [
+      "expandable",
+      "card",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/43-expandable-card/index.html",
+      "css": "components/ui/43-expandable-card/style.css",
+      "js": "components/ui/43-expandable-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/43-expandable-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/43-expandable-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/43-expandable-card/",
+    "type": "ui"
+  },
+  {
+    "id": "stacked-cards",
+    "number": "44",
+    "name": "Stacked Cards",
+    "category": "cards",
+    "description": "Hover the stack to fan the cards apart.",
+    "tags": [
+      "stacked",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/44-stacked-cards/index.html",
+      "css": "components/ui/44-stacked-cards/style.css",
+      "js": "components/ui/44-stacked-cards/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/44-stacked-cards/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/44-stacked-cards/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/44-stacked-cards/",
+    "type": "ui"
+  },
+  {
+    "id": "reveal-card",
+    "number": "45",
+    "name": "Reveal Card",
+    "category": "cards",
+    "description": "Hover to slide the moss overlay away.",
+    "tags": [
+      "reveal",
+      "card",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/45-reveal-card/index.html",
+      "css": "components/ui/45-reveal-card/style.css",
+      "js": "components/ui/45-reveal-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/45-reveal-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/45-reveal-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/45-reveal-card/",
+    "type": "ui"
+  },
+  {
+    "id": "field-notes-card",
+    "number": "46",
+    "name": "Field Notes Card",
+    "category": "cards",
+    "description": "A notebook page, ruled and a little worn.",
+    "tags": [
+      "field",
+      "notes",
+      "card",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/46-field-notes-card/index.html",
+      "css": "components/ui/46-field-notes-card/style.css",
+      "js": "components/ui/46-field-notes-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/46-field-notes-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/46-field-notes-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/46-field-notes-card/",
+    "type": "ui"
+  },
+  {
+    "id": "polaroid-stack",
+    "number": "47",
+    "name": "Polaroid Stack",
+    "category": "cards",
+    "description": "Hover to scatter the photos like a dropped stack.",
+    "tags": [
+      "polaroid",
+      "stack",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/47-polaroid-stack/index.html",
+      "css": "components/ui/47-polaroid-stack/style.css",
+      "js": "components/ui/47-polaroid-stack/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/47-polaroid-stack/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/47-polaroid-stack/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/47-polaroid-stack/",
+    "type": "ui"
+  },
+  {
+    "id": "ember-card",
+    "number": "48",
+    "name": "Ember Card",
+    "category": "cards",
+    "description": "A slow, glowing breath around the border.",
+    "tags": [
+      "ember",
+      "card",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/48-ember-card/index.html",
+      "css": "components/ui/48-ember-card/style.css",
+      "js": "components/ui/48-ember-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/48-ember-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/48-ember-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/48-ember-card/",
+    "type": "ui"
+  },
+  {
+    "id": "clay-border-card",
+    "number": "49",
+    "name": "Clay Border Card",
+    "category": "cards",
+    "description": "An animated gradient border cycling through clay tones.",
+    "tags": [
+      "clay",
+      "border",
+      "card",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/49-clay-border-card/index.html",
+      "css": "components/ui/49-clay-border-card/style.css",
+      "js": "components/ui/49-clay-border-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/49-clay-border-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/49-clay-border-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/49-clay-border-card/",
+    "type": "ui"
+  },
+  {
+    "id": "stat-card",
+    "number": "50",
+    "name": "Stat Card",
+    "category": "cards",
+    "description": "KPI display with a count-up animation.",
+    "tags": [
+      "stat",
+      "card",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/50-stat-card/index.html",
+      "css": "components/ui/50-stat-card/style.css",
+      "js": "components/ui/50-stat-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/50-stat-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/50-stat-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/50-stat-card/",
+    "type": "ui"
+  },
+  {
+    "id": "profile-card",
+    "number": "51",
+    "name": "Profile Card",
+    "category": "cards",
+    "description": "Hover the avatar to fan out the social links.",
+    "tags": [
+      "profile",
+      "card",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/51-profile-card/index.html",
+      "css": "components/ui/51-profile-card/style.css",
+      "js": "components/ui/51-profile-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/51-profile-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/51-profile-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/51-profile-card/",
+    "type": "ui"
+  },
+  {
+    "id": "pricing-card",
+    "number": "52",
+    "name": "Pricing Card",
+    "category": "cards",
+    "description": "A moss-highlighted tier with an animated feature checklist.",
+    "tags": [
+      "pricing",
+      "card",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/52-pricing-card/index.html",
+      "css": "components/ui/52-pricing-card/style.css",
+      "js": "components/ui/52-pricing-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/52-pricing-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/52-pricing-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/52-pricing-card/",
+    "type": "ui"
+  },
+  {
+    "id": "feature-card",
+    "number": "53",
+    "name": "Feature Card",
+    "category": "cards",
+    "description": "Icon, title, description — lifts with a warm shadow on hover.",
+    "tags": [
+      "feature",
+      "card",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/53-feature-card/index.html",
+      "css": "components/ui/53-feature-card/style.css",
+      "js": "components/ui/53-feature-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/53-feature-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/53-feature-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/53-feature-card/",
+    "type": "ui"
+  },
+  {
+    "id": "testimonial-card",
+    "number": "54",
+    "name": "Testimonial Card",
+    "category": "cards",
+    "description": "Quote, avatar, and a sage-green star rating.",
+    "tags": [
+      "testimonial",
+      "card",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/54-testimonial-card/index.html",
+      "css": "components/ui/54-testimonial-card/style.css",
+      "js": "components/ui/54-testimonial-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/54-testimonial-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/54-testimonial-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/54-testimonial-card/",
+    "type": "ui"
+  },
+  {
+    "id": "bark-card",
+    "number": "55",
+    "name": "Bark Card",
+    "category": "cards",
+    "description": "Subtle CSS-generated wood-grain texture as a card background.",
+    "tags": [
+      "bark",
+      "card",
+      "cards",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/55-bark-card/index.html",
+      "css": "components/ui/55-bark-card/style.css",
+      "js": "components/ui/55-bark-card/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/55-bark-card/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/55-bark-card/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/55-bark-card/",
+    "type": "ui"
+  },
+  {
+    "id": "sidebar-nav",
+    "number": "56",
+    "name": "Sidebar Nav",
+    "category": "navigation",
+    "description": "Click the arrow to collapse. Click any item to set it active.",
+    "tags": [
+      "sidebar",
+      "nav",
+      "navigation",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/56-sidebar-nav/index.html",
+      "css": "components/ui/56-sidebar-nav/style.css",
+      "js": "components/ui/56-sidebar-nav/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/56-sidebar-nav/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/56-sidebar-nav/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/56-sidebar-nav/",
+    "type": "ui"
+  },
+  {
+    "id": "mega-menu",
+    "number": "57",
+    "name": "Mega Menu",
+    "category": "navigation",
+    "description": "Hand-thrown terracotta, made to last seasons.",
+    "tags": [
+      "mega",
+      "menu",
+      "navigation",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/57-mega-menu/index.html",
+      "css": "components/ui/57-mega-menu/style.css",
+      "js": "components/ui/57-mega-menu/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/57-mega-menu/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/57-mega-menu/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/57-mega-menu/",
+    "type": "ui"
+  },
+  {
+    "id": "breadcrumb",
+    "number": "58",
+    "name": "Breadcrumb",
+    "category": "navigation",
+    "description": "Click an earlier crumb to travel back up the trail.",
+    "tags": [
+      "breadcrumb",
+      "navigation",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/58-breadcrumb/index.html",
+      "css": "components/ui/58-breadcrumb/style.css",
+      "js": "components/ui/58-breadcrumb/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/58-breadcrumb/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/58-breadcrumb/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/58-breadcrumb/",
+    "type": "ui"
+  },
+  {
+    "id": "root-tab-bar",
+    "number": "59",
+    "name": "Root Tab Bar",
+    "category": "navigation",
+    "description": "Mobile bottom tab bar. Tap a tab to switch and watch the indicator glide.",
+    "tags": [
+      "root",
+      "tab",
+      "bar",
+      "navigation",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/59-root-tab-bar/index.html",
+      "css": "components/ui/59-root-tab-bar/style.css",
+      "js": "components/ui/59-root-tab-bar/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/59-root-tab-bar/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/59-root-tab-bar/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/59-root-tab-bar/",
+    "type": "ui"
+  },
+  {
+    "id": "floating-dock",
+    "number": "60",
+    "name": "Floating Dock",
+    "category": "navigation",
+    "description": "Move your cursor along the dock to see items magnify.",
+    "tags": [
+      "floating",
+      "dock",
+      "navigation",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/60-floating-dock/index.html",
+      "css": "components/ui/60-floating-dock/style.css",
+      "js": "components/ui/60-floating-dock/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/60-floating-dock/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/60-floating-dock/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/60-floating-dock/",
+    "type": "ui"
+  },
+  {
+    "id": "radial-menu",
+    "number": "61",
+    "name": "Radial Menu",
+    "category": "navigation",
+    "description": "Click the center bud to fan out the garden actions.",
+    "tags": [
+      "radial",
+      "menu",
+      "navigation",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/61-radial-menu/index.html",
+      "css": "components/ui/61-radial-menu/style.css",
+      "js": "components/ui/61-radial-menu/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/61-radial-menu/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/61-radial-menu/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/61-radial-menu/",
+    "type": "ui"
+  },
+  {
+    "id": "hamburger-morph",
+    "number": "62",
+    "name": "Hamburger Morph",
+    "category": "navigation",
+    "description": "Click the hamburger — it morphs into an X and reveals the menu.",
+    "tags": [
+      "hamburger",
+      "morph",
+      "navigation",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/62-hamburger-morph/index.html",
+      "css": "components/ui/62-hamburger-morph/style.css",
+      "js": "components/ui/62-hamburger-morph/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/62-hamburger-morph/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/62-hamburger-morph/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/62-hamburger-morph/",
+    "type": "ui"
+  },
+  {
+    "id": "scroll-spy-nav",
+    "number": "63",
+    "name": "Scroll Spy Nav",
+    "category": "navigation",
+    "description": "Welcome to the almanac. Scroll down through each section and watch the nav above track your position with a moving sand underline.",
+    "tags": [
+      "scroll",
+      "spy",
+      "nav",
+      "navigation",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/63-scroll-spy-nav/index.html",
+      "css": "components/ui/63-scroll-spy-nav/style.css",
+      "js": "components/ui/63-scroll-spy-nav/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/63-scroll-spy-nav/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/63-scroll-spy-nav/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/63-scroll-spy-nav/",
+    "type": "ui"
+  },
+  {
+    "id": "field-command",
+    "number": "64",
+    "name": "Field Command",
+    "category": "navigation",
+    "description": "Or press Cmd/Ctrl + K anywhere on this page.",
+    "tags": [
+      "field",
+      "command",
+      "navigation",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/64-field-command/index.html",
+      "css": "components/ui/64-field-command/style.css",
+      "js": "components/ui/64-field-command/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/64-field-command/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/64-field-command/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/64-field-command/",
+    "type": "ui"
+  },
+  {
+    "id": "grove-menu",
+    "number": "65",
+    "name": "Grove Menu",
+    "category": "navigation",
+    "description": "Click \"The Grove\" to branch out the menu, connected by organic root-lines.",
+    "tags": [
+      "grove",
+      "menu",
+      "navigation",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/65-grove-menu/index.html",
+      "css": "components/ui/65-grove-menu/style.css",
+      "js": "components/ui/65-grove-menu/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/65-grove-menu/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/65-grove-menu/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/65-grove-menu/",
+    "type": "ui"
+  },
+  {
+    "id": "otp-input",
+    "number": "66",
+    "name": "Otp Input",
+    "category": "forms",
+    "description": "Enter the 6-digit code we sent to your device.",
+    "tags": [
+      "otp",
+      "input",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/66-otp-input/index.html",
+      "css": "components/ui/66-otp-input/style.css",
+      "js": "components/ui/66-otp-input/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/66-otp-input/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/66-otp-input/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/66-otp-input/",
+    "type": "ui"
+  },
+  {
+    "id": "root-password",
+    "number": "67",
+    "name": "Root Password",
+    "category": "forms",
+    "description": "Choose a strong password to protect your root account.",
+    "tags": [
+      "root",
+      "password",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/67-root-password/index.html",
+      "css": "components/ui/67-root-password/style.css",
+      "js": "components/ui/67-root-password/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/67-root-password/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/67-root-password/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/67-root-password/",
+    "type": "ui"
+  },
+  {
+    "id": "tag-input",
+    "number": "68",
+    "name": "Tag Input",
+    "category": "forms",
+    "description": "Press Enter or comma to add a tag. Backspace removes the last one.",
+    "tags": [
+      "tag",
+      "input",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/68-tag-input/index.html",
+      "css": "components/ui/68-tag-input/style.css",
+      "js": "components/ui/68-tag-input/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/68-tag-input/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/68-tag-input/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/68-tag-input/",
+    "type": "ui"
+  },
+  {
+    "id": "phone-input",
+    "number": "69",
+    "name": "Phone Input",
+    "category": "forms",
+    "description": "Pick your country to set the correct dial code.",
+    "tags": [
+      "phone",
+      "input",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/69-phone-input/index.html",
+      "css": "components/ui/69-phone-input/style.css",
+      "js": "components/ui/69-phone-input/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/69-phone-input/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/69-phone-input/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/69-phone-input/",
+    "type": "ui"
+  },
+  {
+    "id": "harvest-datepicker",
+    "number": "70",
+    "name": "Harvest Datepicker",
+    "category": "forms",
+    "description": "Pick a date from the calendar to schedule your harvest.",
+    "tags": [
+      "harvest",
+      "datepicker",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/70-harvest-datepicker/index.html",
+      "css": "components/ui/70-harvest-datepicker/style.css",
+      "js": "components/ui/70-harvest-datepicker/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/70-harvest-datepicker/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/70-harvest-datepicker/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/70-harvest-datepicker/",
+    "type": "ui"
+  },
+  {
+    "id": "clay-color-picker",
+    "number": "71",
+    "name": "Clay Color Picker",
+    "category": "forms",
+    "description": "Pick a hue, drag across the field, choose a warm preset.",
+    "tags": [
+      "clay",
+      "color",
+      "picker",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/71-clay-color-picker/index.html",
+      "css": "components/ui/71-clay-color-picker/style.css",
+      "js": "components/ui/71-clay-color-picker/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/71-clay-color-picker/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/71-clay-color-picker/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/71-clay-color-picker/",
+    "type": "ui"
+  },
+  {
+    "id": "range-dual",
+    "number": "72",
+    "name": "Range Dual",
+    "category": "forms",
+    "description": "Drag either handle to set a min/max range.",
+    "tags": [
+      "range",
+      "dual",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/72-range-dual/index.html",
+      "css": "components/ui/72-range-dual/style.css",
+      "js": "components/ui/72-range-dual/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/72-range-dual/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/72-range-dual/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/72-range-dual/",
+    "type": "ui"
+  },
+  {
+    "id": "earth-toggle",
+    "number": "73",
+    "name": "Earth Toggle",
+    "category": "forms",
+    "description": "Grown-in switches for a small settings list.",
+    "tags": [
+      "earth",
+      "toggle",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/73-earth-toggle/index.html",
+      "css": "components/ui/73-earth-toggle/style.css",
+      "js": "components/ui/73-earth-toggle/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/73-earth-toggle/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/73-earth-toggle/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/73-earth-toggle/",
+    "type": "ui"
+  },
+  {
+    "id": "radio-cards",
+    "number": "74",
+    "name": "Radio Cards",
+    "category": "forms",
+    "description": "Choose the plot size that suits your garden.",
+    "tags": [
+      "radio",
+      "cards",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/74-radio-cards/index.html",
+      "css": "components/ui/74-radio-cards/style.css",
+      "js": "components/ui/74-radio-cards/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/74-radio-cards/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/74-radio-cards/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/74-radio-cards/",
+    "type": "ui"
+  },
+  {
+    "id": "grove-search",
+    "number": "75",
+    "name": "Grove Search",
+    "category": "forms",
+    "description": "Click the icon to expand and filter the grove.",
+    "tags": [
+      "grove",
+      "search",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/75-grove-search/index.html",
+      "css": "components/ui/75-grove-search/style.css",
+      "js": "components/ui/75-grove-search/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/75-grove-search/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/75-grove-search/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/75-grove-search/",
+    "type": "ui"
+  },
+  {
+    "id": "autocomplete",
+    "number": "76",
+    "name": "Autocomplete",
+    "category": "forms",
+    "description": "Start typing a plant, herb, or vegetable to see matches.",
+    "tags": [
+      "autocomplete",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/76-autocomplete/index.html",
+      "css": "components/ui/76-autocomplete/style.css",
+      "js": "components/ui/76-autocomplete/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/76-autocomplete/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/76-autocomplete/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/76-autocomplete/",
+    "type": "ui"
+  },
+  {
+    "id": "soil-textarea",
+    "number": "77",
+    "name": "Soil Textarea",
+    "category": "forms",
+    "description": "An auto-growing field that expands as your notes take root.",
+    "tags": [
+      "soil",
+      "textarea",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/77-soil-textarea/index.html",
+      "css": "components/ui/77-soil-textarea/style.css",
+      "js": "components/ui/77-soil-textarea/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/77-soil-textarea/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/77-soil-textarea/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/77-soil-textarea/",
+    "type": "ui"
+  },
+  {
+    "id": "number-stepper",
+    "number": "78",
+    "name": "Number Stepper",
+    "category": "forms",
+    "description": "Count out seedlings — click, or press and hold to speed up.",
+    "tags": [
+      "number",
+      "stepper",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/78-number-stepper/index.html",
+      "css": "components/ui/78-number-stepper/style.css",
+      "js": "components/ui/78-number-stepper/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/78-number-stepper/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/78-number-stepper/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/78-number-stepper/",
+    "type": "ui"
+  },
+  {
+    "id": "field-upload",
+    "number": "79",
+    "name": "Field Upload",
+    "category": "forms",
+    "description": "Drop a file to plant it, or click the soil to browse.",
+    "tags": [
+      "field",
+      "upload",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/79-field-upload/index.html",
+      "css": "components/ui/79-field-upload/style.css",
+      "js": "components/ui/79-field-upload/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/79-field-upload/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/79-field-upload/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/79-field-upload/",
+    "type": "ui"
+  },
+  {
+    "id": "signature-pad",
+    "number": "80",
+    "name": "Signature Pad",
+    "category": "forms",
+    "description": "Sign on the paper below, then clear to start over.",
+    "tags": [
+      "signature",
+      "pad",
+      "forms",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/80-signature-pad/index.html",
+      "css": "components/ui/80-signature-pad/style.css",
+      "js": "components/ui/80-signature-pad/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/80-signature-pad/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/80-signature-pad/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/80-signature-pad/",
+    "type": "ui"
+  },
+  {
+    "id": "soil-skeleton",
+    "number": "81",
+    "name": "Soil Skeleton",
+    "category": "loaders",
+    "description": "warm shimmer loading placeholders while your content grows in",
+    "tags": [
+      "soil",
+      "skeleton",
+      "loaders",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/81-soil-skeleton/index.html",
+      "css": "components/ui/81-soil-skeleton/style.css",
+      "js": "components/ui/81-soil-skeleton/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/81-soil-skeleton/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/81-soil-skeleton/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/81-soil-skeleton/",
+    "type": "ui"
+  },
+  {
+    "id": "root-progress",
+    "number": "82",
+    "name": "Root Progress",
+    "category": "loaders",
+    "description": "a multi-step path with a terracotta line that fills as you grow",
+    "tags": [
+      "root",
+      "progress",
+      "loaders",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/82-root-progress/index.html",
+      "css": "components/ui/82-root-progress/style.css",
+      "js": "components/ui/82-root-progress/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/82-root-progress/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/82-root-progress/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/82-root-progress/",
+    "type": "ui"
+  },
+  {
+    "id": "sun-timer",
+    "number": "83",
+    "name": "Sun Timer",
+    "category": "loaders",
+    "description": "a countdown that sets like a warm evening sun",
+    "tags": [
+      "sun",
+      "timer",
+      "loaders",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/83-sun-timer/index.html",
+      "css": "components/ui/83-sun-timer/style.css",
+      "js": "components/ui/83-sun-timer/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/83-sun-timer/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/83-sun-timer/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/83-sun-timer/",
+    "type": "ui"
+  },
+  {
+    "id": "sprout-loader",
+    "number": "84",
+    "name": "Sprout Loader",
+    "category": "loaders",
+    "description": "three little seedlings bouncing up out of the soil",
+    "tags": [
+      "sprout",
+      "loader",
+      "loaders",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/84-sprout-loader/index.html",
+      "css": "components/ui/84-sprout-loader/style.css",
+      "js": "components/ui/84-sprout-loader/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/84-sprout-loader/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/84-sprout-loader/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/84-sprout-loader/",
+    "type": "ui"
+  },
+  {
+    "id": "harvest-bar",
+    "number": "85",
+    "name": "Harvest Bar",
+    "category": "loaders",
+    "description": "a slim clay progress bar pinned to the top of the page, like a load indicator",
+    "tags": [
+      "harvest",
+      "bar",
+      "loaders",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/85-harvest-bar/index.html",
+      "css": "components/ui/85-harvest-bar/style.css",
+      "js": "components/ui/85-harvest-bar/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/85-harvest-bar/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/85-harvest-bar/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/85-harvest-bar/",
+    "type": "ui"
+  },
+  {
+    "id": "seed-spinners",
+    "number": "86",
+    "name": "Seed Spinners",
+    "category": "loaders",
+    "description": "Six earthy CSS-only loading spinners, grown from the same palette.",
+    "tags": [
+      "seed",
+      "spinners",
+      "loaders",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/86-seed-spinners/index.html",
+      "css": "components/ui/86-seed-spinners/style.css",
+      "js": "components/ui/86-seed-spinners/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/86-seed-spinners/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/86-seed-spinners/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/86-seed-spinners/",
+    "type": "ui"
+  },
+  {
+    "id": "pulse-ember",
+    "number": "87",
+    "name": "Pulse Ember",
+    "category": "loaders",
+    "description": "A glowing ember pulsing warmth outward, ring by ring.",
+    "tags": [
+      "pulse",
+      "ember",
+      "loaders",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/87-pulse-ember/index.html",
+      "css": "components/ui/87-pulse-ember/style.css",
+      "js": "components/ui/87-pulse-ember/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/87-pulse-ember/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/87-pulse-ember/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/87-pulse-ember/",
+    "type": "ui"
+  },
+  {
+    "id": "skeleton-field",
+    "number": "88",
+    "name": "Skeleton Field",
+    "category": "loaders",
+    "description": "A parchment-toned card skeleton, shimmering while the harvest loads.",
+    "tags": [
+      "skeleton",
+      "field",
+      "loaders",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/88-skeleton-field/index.html",
+      "css": "components/ui/88-skeleton-field/style.css",
+      "js": "components/ui/88-skeleton-field/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/88-skeleton-field/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/88-skeleton-field/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/88-skeleton-field/",
+    "type": "ui"
+  },
+  {
+    "id": "growth-upload",
+    "number": "89",
+    "name": "Growth Upload",
+    "category": "loaders",
+    "description": "Drop a file, or press start — watch the sprout grow with every percent.",
+    "tags": [
+      "growth",
+      "upload",
+      "loaders",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/89-growth-upload/index.html",
+      "css": "components/ui/89-growth-upload/style.css",
+      "js": "components/ui/89-growth-upload/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/89-growth-upload/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/89-growth-upload/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/89-growth-upload/",
+    "type": "ui"
+  },
+  {
+    "id": "soil-indeterminate",
+    "number": "90",
+    "name": "Soil Indeterminate",
+    "category": "loaders",
+    "description": "Unknown duration, steady motion — a stripe of earth sliding through the bar.",
+    "tags": [
+      "soil",
+      "indeterminate",
+      "loaders",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/90-soil-indeterminate/index.html",
+      "css": "components/ui/90-soil-indeterminate/style.css",
+      "js": "components/ui/90-soil-indeterminate/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/90-soil-indeterminate/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/90-soil-indeterminate/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/90-soil-indeterminate/",
+    "type": "ui"
+  },
+  {
+    "id": "field-table",
+    "number": "91",
+    "name": "Field Table",
+    "category": "data-display",
+    "description": "Season records &middot; click a column to sort",
+    "tags": [
+      "field",
+      "table",
+      "data-display",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/91-field-table/index.html",
+      "css": "components/ui/91-field-table/style.css",
+      "js": "components/ui/91-field-table/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/91-field-table/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/91-field-table/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/91-field-table/",
+    "type": "ui"
+  },
+  {
+    "id": "grove-bar-chart",
+    "number": "92",
+    "name": "Grove Bar Chart",
+    "category": "data-display",
+    "description": "Tonnes harvested per plot, this season vs. last season",
+    "tags": [
+      "grove",
+      "bar",
+      "chart",
+      "data-display",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/92-grove-bar-chart/index.html",
+      "css": "components/ui/92-grove-bar-chart/style.css",
+      "js": "components/ui/92-grove-bar-chart/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/92-grove-bar-chart/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/92-grove-bar-chart/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/92-grove-bar-chart/",
+    "type": "ui"
+  },
+  {
+    "id": "root-line-chart",
+    "number": "93",
+    "name": "Root Line Chart",
+    "category": "data-display",
+    "description": "Average weekly rainfall, greenhouse plot &mdash; 12 weeks",
+    "tags": [
+      "root",
+      "line",
+      "chart",
+      "data-display",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/93-root-line-chart/index.html",
+      "css": "components/ui/93-root-line-chart/style.css",
+      "js": "components/ui/93-root-line-chart/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/93-root-line-chart/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/93-root-line-chart/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/93-root-line-chart/",
+    "type": "ui"
+  },
+  {
+    "id": "clay-donut",
+    "number": "94",
+    "name": "Clay Donut",
+    "category": "data-display",
+    "description": "How the 240m&sup2; community plot is divided this season",
+    "tags": [
+      "clay",
+      "donut",
+      "data-display",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/94-clay-donut/index.html",
+      "css": "components/ui/94-clay-donut/style.css",
+      "js": "components/ui/94-clay-donut/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/94-clay-donut/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/94-clay-donut/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/94-clay-donut/",
+    "type": "ui"
+  },
+  {
+    "id": "sand-sparkline",
+    "number": "95",
+    "name": "Sand Sparkline",
+    "category": "data-display",
+    "description": "Quick stats with inline trend sparklines",
+    "tags": [
+      "sand",
+      "sparkline",
+      "data-display",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/95-sand-sparkline/index.html",
+      "css": "components/ui/95-sand-sparkline/style.css",
+      "js": "components/ui/95-sand-sparkline/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/95-sand-sparkline/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/95-sand-sparkline/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/95-sand-sparkline/",
+    "type": "ui"
+  },
+  {
+    "id": "growth-heatmap",
+    "number": "96",
+    "name": "Growth Heatmap",
+    "category": "data-display",
+    "description": "Watering, weeding &amp; harvest log over the last",
+    "tags": [
+      "growth",
+      "heatmap",
+      "data-display",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/96-growth-heatmap/index.html",
+      "css": "components/ui/96-growth-heatmap/style.css",
+      "js": "components/ui/96-growth-heatmap/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/96-growth-heatmap/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/96-growth-heatmap/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/96-growth-heatmap/",
+    "type": "ui"
+  },
+  {
+    "id": "branch-tree",
+    "number": "97",
+    "name": "Branch Tree",
+    "category": "data-display",
+    "description": "A living map of the grove — click any branch to grow or fold it.",
+    "tags": [
+      "branch",
+      "tree",
+      "data-display",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/97-branch-tree/index.html",
+      "css": "components/ui/97-branch-tree/style.css",
+      "js": "components/ui/97-branch-tree/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/97-branch-tree/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/97-branch-tree/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/97-branch-tree/",
+    "type": "ui"
+  },
+  {
+    "id": "field-gantt",
+    "number": "98",
+    "name": "Field Gantt",
+    "category": "data-display",
+    "description": "Season plan for the lower field — hover a bar for the exact dates.",
+    "tags": [
+      "field",
+      "gantt",
+      "data-display",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/98-field-gantt/index.html",
+      "css": "components/ui/98-field-gantt/style.css",
+      "js": "components/ui/98-field-gantt/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/98-field-gantt/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/98-field-gantt/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/98-field-gantt/",
+    "type": "ui"
+  },
+  {
+    "id": "harvest-comparison",
+    "number": "99",
+    "name": "Harvest Comparison",
+    "category": "data-display",
+    "description": "Every tier includes our core toolkit — upgrade whenever your garden needs more room to grow.",
+    "tags": [
+      "harvest",
+      "comparison",
+      "data-display",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/99-harvest-comparison/index.html",
+      "css": "components/ui/99-harvest-comparison/style.css",
+      "js": "components/ui/99-harvest-comparison/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/99-harvest-comparison/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/99-harvest-comparison/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/99-harvest-comparison/",
+    "type": "ui"
+  },
+  {
+    "id": "soil-leaderboard",
+    "number": "100",
+    "name": "Soil Leaderboard",
+    "category": "data-display",
+    "description": "Top plots ranked by yield score",
+    "tags": [
+      "soil",
+      "leaderboard",
+      "data-display",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/100-soil-leaderboard/index.html",
+      "css": "components/ui/100-soil-leaderboard/style.css",
+      "js": "components/ui/100-soil-leaderboard/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/100-soil-leaderboard/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/100-soil-leaderboard/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/100-soil-leaderboard/",
+    "type": "ui"
+  },
+  {
+    "id": "root-sheet",
+    "number": "101",
+    "name": "Root Sheet",
+    "category": "overlays",
+    "description": "Drag the handle down, or swipe the sheet, to dismiss. You can also tap the backdrop.",
+    "tags": [
+      "root",
+      "sheet",
+      "overlays",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/101-root-sheet/index.html",
+      "css": "components/ui/101-root-sheet/style.css",
+      "js": "components/ui/101-root-sheet/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/101-root-sheet/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/101-root-sheet/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/101-root-sheet/",
+    "type": "ui"
+  },
+  {
+    "id": "grove-notifications",
+    "number": "102",
+    "name": "Grove Notifications",
+    "category": "overlays",
+    "description": "Grove Notifications — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "grove",
+      "notifications",
+      "overlays",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/102-grove-notifications/index.html",
+      "css": "components/ui/102-grove-notifications/style.css",
+      "js": "components/ui/102-grove-notifications/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/102-grove-notifications/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/102-grove-notifications/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/102-grove-notifications/",
+    "type": "ui"
+  },
+  {
+    "id": "clay-tooltip",
+    "number": "103",
+    "name": "Clay Tooltip",
+    "category": "overlays",
+    "description": "Hover the seeds near the edges — the tooltip flips to stay on screen.",
+    "tags": [
+      "clay",
+      "tooltip",
+      "overlays",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/103-clay-tooltip/index.html",
+      "css": "components/ui/103-clay-tooltip/style.css",
+      "js": "components/ui/103-clay-tooltip/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/103-clay-tooltip/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/103-clay-tooltip/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/103-clay-tooltip/",
+    "type": "ui"
+  },
+  {
+    "id": "field-popover",
+    "number": "104",
+    "name": "Field Popover",
+    "category": "overlays",
+    "description": "Field Popover — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "field",
+      "popover",
+      "overlays",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/104-field-popover/index.html",
+      "css": "components/ui/104-field-popover/style.css",
+      "js": "components/ui/104-field-popover/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/104-field-popover/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/104-field-popover/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/104-field-popover/",
+    "type": "ui"
+  },
+  {
+    "id": "bark-alert",
+    "number": "105",
+    "name": "Bark Alert",
+    "category": "overlays",
+    "description": "Bark Alert — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "bark",
+      "alert",
+      "overlays",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/105-bark-alert/index.html",
+      "css": "components/ui/105-bark-alert/style.css",
+      "js": "components/ui/105-bark-alert/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/105-bark-alert/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/105-bark-alert/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/105-bark-alert/",
+    "type": "ui"
+  },
+  {
+    "id": "harvest-cookie",
+    "number": "106",
+    "name": "Harvest Cookie",
+    "category": "overlays",
+    "description": "This site uses cookies for essential functions and to understand how our garden is used. You can accept all, reject non-ess",
+    "tags": [
+      "harvest",
+      "cookie",
+      "overlays",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/106-harvest-cookie/index.html",
+      "css": "components/ui/106-harvest-cookie/style.css",
+      "js": "components/ui/106-harvest-cookie/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/106-harvest-cookie/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/106-harvest-cookie/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/106-harvest-cookie/",
+    "type": "ui"
+  },
+  {
+    "id": "ember-snackbar",
+    "number": "107",
+    "name": "Ember Snackbar",
+    "category": "overlays",
+    "description": "Ember Snackbar — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "ember",
+      "snackbar",
+      "overlays",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/107-ember-snackbar/index.html",
+      "css": "components/ui/107-ember-snackbar/style.css",
+      "js": "components/ui/107-ember-snackbar/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/107-ember-snackbar/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/107-ember-snackbar/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/107-ember-snackbar/",
+    "type": "ui"
+  },
+  {
+    "id": "soil-overlay",
+    "number": "108",
+    "name": "Soil Overlay",
+    "category": "overlays",
+    "description": "This content is gated behind the overlay. Blur and warm tint sit beneath, dimming the rest of the page.",
+    "tags": [
+      "soil",
+      "overlay",
+      "overlays",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/108-soil-overlay/index.html",
+      "css": "components/ui/108-soil-overlay/style.css",
+      "js": "components/ui/108-soil-overlay/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/108-soil-overlay/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/108-soil-overlay/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/108-soil-overlay/",
+    "type": "ui"
+  },
+  {
+    "id": "grove-spotlight",
+    "number": "109",
+    "name": "Grove Spotlight",
+    "category": "overlays",
+    "description": "Grove Spotlight — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "grove",
+      "spotlight",
+      "overlays",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/109-grove-spotlight/index.html",
+      "css": "components/ui/109-grove-spotlight/style.css",
+      "js": "components/ui/109-grove-spotlight/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/109-grove-spotlight/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/109-grove-spotlight/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/109-grove-spotlight/",
+    "type": "ui"
+  },
+  {
+    "id": "root-drawer",
+    "number": "110",
+    "name": "Root Drawer",
+    "category": "overlays",
+    "description": "Root Drawer — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "root",
+      "drawer",
+      "overlays",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/110-root-drawer/index.html",
+      "css": "components/ui/110-root-drawer/style.css",
+      "js": "components/ui/110-root-drawer/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/110-root-drawer/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/110-root-drawer/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/110-root-drawer/",
+    "type": "ui"
+  },
+  {
+    "id": "sticky-header",
+    "number": "111",
+    "name": "Sticky Header",
+    "category": "layout",
+    "description": "The header compacts and a clay underline blooms in as you move past the fold.",
+    "tags": [
+      "sticky",
+      "header",
+      "layout",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/111-sticky-header/index.html",
+      "css": "components/ui/111-sticky-header/style.css",
+      "js": "components/ui/111-sticky-header/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/111-sticky-header/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/111-sticky-header/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/111-sticky-header/",
+    "type": "ui"
+  },
+  {
+    "id": "growth-scroll",
+    "number": "112",
+    "name": "Growth Scroll",
+    "category": "layout",
+    "description": "Field Notes",
+    "tags": [
+      "growth",
+      "scroll",
+      "layout",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/112-growth-scroll/index.html",
+      "css": "components/ui/112-growth-scroll/style.css",
+      "js": "components/ui/112-growth-scroll/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/112-growth-scroll/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/112-growth-scroll/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/112-growth-scroll/",
+    "type": "ui"
+  },
+  {
+    "id": "harvest-infinite",
+    "number": "113",
+    "name": "Harvest Infinite",
+    "category": "layout",
+    "description": "Scroll down — new rows load automatically as you approach the bottom.",
+    "tags": [
+      "harvest",
+      "infinite",
+      "layout",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/113-harvest-infinite/index.html",
+      "css": "components/ui/113-harvest-infinite/style.css",
+      "js": "components/ui/113-harvest-infinite/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/113-harvest-infinite/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/113-harvest-infinite/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/113-harvest-infinite/",
+    "type": "ui"
+  },
+  {
+    "id": "field-masonry",
+    "number": "114",
+    "name": "Field Masonry",
+    "category": "layout",
+    "description": "A JS-computed masonry grid — resize your window to watch it recalculate columns and gaps.",
+    "tags": [
+      "field",
+      "masonry",
+      "layout",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/114-field-masonry/index.html",
+      "css": "components/ui/114-field-masonry/style.css",
+      "js": "components/ui/114-field-masonry/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/114-field-masonry/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/114-field-masonry/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/114-field-masonry/",
+    "type": "ui"
+  },
+  {
+    "id": "root-horizontal",
+    "number": "115",
+    "name": "Root Horizontal",
+    "category": "layout",
+    "description": "Drag with your mouse, swipe with touch, or scroll — items snap into place.",
+    "tags": [
+      "root",
+      "horizontal",
+      "layout",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/115-root-horizontal/index.html",
+      "css": "components/ui/115-root-horizontal/style.css",
+      "js": "components/ui/115-root-horizontal/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/115-root-horizontal/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/115-root-horizontal/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/115-root-horizontal/",
+    "type": "ui"
+  },
+  {
+    "id": "grove-snap",
+    "number": "116",
+    "name": "Grove Snap",
+    "category": "layout",
+    "description": "Where every grove begins — seedlings under glass, waiting for their season.",
+    "tags": [
+      "grove",
+      "snap",
+      "layout",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/116-grove-snap/index.html",
+      "css": "components/ui/116-grove-snap/style.css",
+      "js": "components/ui/116-grove-snap/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/116-grove-snap/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/116-grove-snap/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/116-grove-snap/",
+    "type": "ui"
+  },
+  {
+    "id": "soil-parallax",
+    "number": "117",
+    "name": "Soil Parallax",
+    "category": "layout",
+    "description": "Scroll to move through a hand-layered earthy scene.",
+    "tags": [
+      "soil",
+      "parallax",
+      "layout",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/117-soil-parallax/index.html",
+      "css": "components/ui/117-soil-parallax/style.css",
+      "js": "components/ui/117-soil-parallax/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/117-soil-parallax/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/117-soil-parallax/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/117-soil-parallax/",
+    "type": "ui"
+  },
+  {
+    "id": "bloom-reveal",
+    "number": "118",
+    "name": "Bloom Reveal",
+    "category": "layout",
+    "description": "Scroll down — each card blooms into view as it enters the viewport.",
+    "tags": [
+      "bloom",
+      "reveal",
+      "layout",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/118-bloom-reveal/index.html",
+      "css": "components/ui/118-bloom-reveal/style.css",
+      "js": "components/ui/118-bloom-reveal/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/118-bloom-reveal/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/118-bloom-reveal/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/118-bloom-reveal/",
+    "type": "ui"
+  },
+  {
+    "id": "branch-sidebar",
+    "number": "119",
+    "name": "Branch Sidebar",
+    "category": "layout",
+    "description": "Roots anchor the plant and pull water and nutrients up from the soil. They grow slowly, out of sight, but everything above ground depends on",
+    "tags": [
+      "branch",
+      "sidebar",
+      "layout",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/119-branch-sidebar/index.html",
+      "css": "components/ui/119-branch-sidebar/style.css",
+      "js": "components/ui/119-branch-sidebar/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/119-branch-sidebar/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/119-branch-sidebar/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/119-branch-sidebar/",
+    "type": "ui"
+  },
+  {
+    "id": "back-to-soil",
+    "number": "120",
+    "name": "Back To Soil",
+    "category": "layout",
+    "description": "Scroll down to reveal a circular growth-progress button in the corner. Click it to return to the top.",
+    "tags": [
+      "back",
+      "to",
+      "soil",
+      "layout",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/120-back-to-soil/index.html",
+      "css": "components/ui/120-back-to-soil/style.css",
+      "js": "components/ui/120-back-to-soil/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/120-back-to-soil/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/120-back-to-soil/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/120-back-to-soil/",
+    "type": "ui"
+  },
+  {
+    "id": "field-zoom",
+    "number": "121",
+    "name": "Field Zoom",
+    "category": "misc",
+    "description": "Tap any photo below to open it in a warm, focused lightbox.",
+    "tags": [
+      "field",
+      "zoom",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/121-field-zoom/index.html",
+      "css": "components/ui/121-field-zoom/style.css",
+      "js": "components/ui/121-field-zoom/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/121-field-zoom/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/121-field-zoom/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/121-field-zoom/",
+    "type": "ui"
+  },
+  {
+    "id": "harvest-compare",
+    "number": "122",
+    "name": "Harvest Compare",
+    "category": "misc",
+    "description": "Drag the handle to reveal how the field changed.",
+    "tags": [
+      "harvest",
+      "compare",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/122-harvest-compare/index.html",
+      "css": "components/ui/122-harvest-compare/style.css",
+      "js": "components/ui/122-harvest-compare/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/122-harvest-compare/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/122-harvest-compare/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/122-harvest-compare/",
+    "type": "ui"
+  },
+  {
+    "id": "root-reorder",
+    "number": "123",
+    "name": "Root Reorder",
+    "category": "misc",
+    "description": "Press and drag any row by its handle to reorder the crops.",
+    "tags": [
+      "root",
+      "reorder",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/123-root-reorder/index.html",
+      "css": "components/ui/123-root-reorder/style.css",
+      "js": "components/ui/123-root-reorder/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/123-root-reorder/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/123-root-reorder/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/123-root-reorder/",
+    "type": "ui"
+  },
+  {
+    "id": "grove-panels",
+    "number": "124",
+    "name": "Grove Panels",
+    "category": "misc",
+    "description": "Drag the earthy handle to resize the panels, or use arrow keys when it's focused.",
+    "tags": [
+      "grove",
+      "panels",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/124-grove-panels/index.html",
+      "css": "components/ui/124-grove-panels/style.css",
+      "js": "components/ui/124-grove-panels/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/124-grove-panels/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/124-grove-panels/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/124-grove-panels/",
+    "type": "ui"
+  },
+  {
+    "id": "bark-copy",
+    "number": "125",
+    "name": "Bark Copy",
+    "category": "misc",
+    "description": "Grab this snippet and paste it straight into your own field notes.",
+    "tags": [
+      "bark",
+      "copy",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/125-bark-copy/index.html",
+      "css": "components/ui/125-bark-copy/style.css",
+      "js": "components/ui/125-bark-copy/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/125-bark-copy/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/125-bark-copy/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/125-bark-copy/",
+    "type": "ui"
+  },
+  {
+    "id": "earth-mode",
+    "number": "126",
+    "name": "Earth Mode",
+    "category": "misc",
+    "description": "Flip between sun-warmed daylight and deep earthy night, straight from the soil.",
+    "tags": [
+      "earth",
+      "mode",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/126-earth-mode/index.html",
+      "css": "components/ui/126-earth-mode/style.css",
+      "js": "components/ui/126-earth-mode/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/126-earth-mode/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/126-earth-mode/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/126-earth-mode/",
+    "type": "ui"
+  },
+  {
+    "id": "soil-share",
+    "number": "127",
+    "name": "Soil Share",
+    "category": "misc",
+    "description": "A short field note on composting, mulch layers, and letting the ground rest between harvests. Share this page with your fellow growers.",
+    "tags": [
+      "soil",
+      "share",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/127-soil-share/index.html",
+      "css": "components/ui/127-soil-share/style.css",
+      "js": "components/ui/127-soil-share/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/127-soil-share/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/127-soil-share/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/127-soil-share/",
+    "type": "ui"
+  },
+  {
+    "id": "seed-reading",
+    "number": "128",
+    "name": "Seed Reading",
+    "category": "misc",
+    "description": "Seed Reading",
+    "tags": [
+      "seed",
+      "reading",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/128-seed-reading/index.html",
+      "css": "components/ui/128-seed-reading/style.css",
+      "js": "components/ui/128-seed-reading/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/128-seed-reading/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/128-seed-reading/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/128-seed-reading/",
+    "type": "ui"
+  },
+  {
+    "id": "grove-highlight",
+    "number": "129",
+    "name": "Grove Highlight",
+    "category": "misc",
+    "description": "Highlight a few words in the passage to reveal the toolbar — bold it, mark it, or copy it straight to your clipboard.",
+    "tags": [
+      "grove",
+      "highlight",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/129-grove-highlight/index.html",
+      "css": "components/ui/129-grove-highlight/style.css",
+      "js": "components/ui/129-grove-highlight/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/129-grove-highlight/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/129-grove-highlight/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/129-grove-highlight/",
+    "type": "ui"
+  },
+  {
+    "id": "root-anchor",
+    "number": "130",
+    "name": "Root Anchor",
+    "category": "misc",
+    "description": "Every root starts underground, unseen, gathering just enough moisture to crack its own shell before reaching for light.",
+    "tags": [
+      "root",
+      "anchor",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/130-root-anchor/index.html",
+      "css": "components/ui/130-root-anchor/style.css",
+      "js": "components/ui/130-root-anchor/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/130-root-anchor/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/130-root-anchor/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/130-root-anchor/",
+    "type": "ui"
+  },
+  {
+    "id": "field-lazy",
+    "number": "131",
+    "name": "Field Lazy",
+    "category": "misc",
+    "description": "Images sharpen automatically as they scroll into the viewport.",
+    "tags": [
+      "field",
+      "lazy",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/131-field-lazy/index.html",
+      "css": "components/ui/131-field-lazy/style.css",
+      "js": "components/ui/131-field-lazy/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/131-field-lazy/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/131-field-lazy/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/131-field-lazy/",
+    "type": "ui"
+  },
+  {
+    "id": "harvest-avatars",
+    "number": "132",
+    "name": "Harvest Avatars",
+    "category": "misc",
+    "description": "9 growers tending this plot",
+    "tags": [
+      "harvest",
+      "avatars",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/132-harvest-avatars/index.html",
+      "css": "components/ui/132-harvest-avatars/style.css",
+      "js": "components/ui/132-harvest-avatars/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/132-harvest-avatars/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/132-harvest-avatars/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/132-harvest-avatars/",
+    "type": "ui"
+  },
+  {
+    "id": "clay-badge",
+    "number": "133",
+    "name": "Clay Badge",
+    "category": "misc",
+    "description": "A notification badge that pops with a genuine scale animation each time the count changes.",
+    "tags": [
+      "clay",
+      "badge",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/133-clay-badge/index.html",
+      "css": "components/ui/133-clay-badge/style.css",
+      "js": "components/ui/133-clay-badge/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/133-clay-badge/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/133-clay-badge/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/133-clay-badge/",
+    "type": "ui"
+  },
+  {
+    "id": "soil-chip",
+    "number": "134",
+    "name": "Soil Chip",
+    "category": "misc",
+    "description": "Dismissible tags in earthy tones. Click the × to remove a chip, or add a new one from the list below.",
+    "tags": [
+      "soil",
+      "chip",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/134-soil-chip/index.html",
+      "css": "components/ui/134-soil-chip/style.css",
+      "js": "components/ui/134-soil-chip/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/134-soil-chip/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/134-soil-chip/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/134-soil-chip/",
+    "type": "ui"
+  },
+  {
+    "id": "root-divider",
+    "number": "135",
+    "name": "Root Divider",
+    "category": "misc",
+    "description": "An animated section divider that draws itself in — clay colored, growing outward from center as it scrolls into view.",
+    "tags": [
+      "root",
+      "divider",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/135-root-divider/index.html",
+      "css": "components/ui/135-root-divider/style.css",
+      "js": "components/ui/135-root-divider/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/135-root-divider/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/135-root-divider/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/135-root-divider/",
+    "type": "ui"
+  },
+  {
+    "id": "grove-timeline",
+    "number": "136",
+    "name": "Grove Timeline",
+    "category": "misc",
+    "description": "Drag, scroll, or use the arrows to wander through the seasons.",
+    "tags": [
+      "grove",
+      "timeline",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/136-grove-timeline/index.html",
+      "css": "components/ui/136-grove-timeline/style.css",
+      "js": "components/ui/136-grove-timeline/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/136-grove-timeline/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/136-grove-timeline/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/136-grove-timeline/",
+    "type": "ui"
+  },
+  {
+    "id": "branch-stepper",
+    "number": "137",
+    "name": "Branch Stepper",
+    "category": "misc",
+    "description": "Follow the branch to grow your first plot, one step at a time.",
+    "tags": [
+      "branch",
+      "stepper",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/137-branch-stepper/index.html",
+      "css": "components/ui/137-branch-stepper/style.css",
+      "js": "components/ui/137-branch-stepper/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/137-branch-stepper/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/137-branch-stepper/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/137-branch-stepper/",
+    "type": "ui"
+  },
+  {
+    "id": "empty-field",
+    "number": "138",
+    "name": "Empty Field",
+    "category": "misc",
+    "description": "This little pot is just soil and hope right now. Give it a seed and see what grows.",
+    "tags": [
+      "empty",
+      "field",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/138-empty-field/index.html",
+      "css": "components/ui/138-empty-field/style.css",
+      "js": "components/ui/138-empty-field/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/138-empty-field/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/138-empty-field/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/138-empty-field/",
+    "type": "ui"
+  },
+  {
+    "id": "error-grove",
+    "number": "139",
+    "name": "Error Grove",
+    "category": "misc",
+    "description": "The graft didn't take. Check the soil moisture and root connection, then try planting the seed again.",
+    "tags": [
+      "error",
+      "grove",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/139-error-grove/index.html",
+      "css": "components/ui/139-error-grove/style.css",
+      "js": "components/ui/139-error-grove/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/139-error-grove/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/139-error-grove/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/139-error-grove/",
+    "type": "ui"
+  },
+  {
+    "id": "bark-shortcut",
+    "number": "140",
+    "name": "Bark Shortcut",
+    "category": "misc",
+    "description": "Press a real combo below — the matching branch will glow.",
+    "tags": [
+      "bark",
+      "shortcut",
+      "misc",
+      "ui"
+    ],
+    "files": {
+      "html": "components/ui/140-bark-shortcut/index.html",
+      "css": "components/ui/140-bark-shortcut/style.css",
+      "js": "components/ui/140-bark-shortcut/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/140-bark-shortcut/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/ui/140-bark-shortcut/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/ui/140-bark-shortcut/",
+    "type": "ui"
+  },
+  {
+    "id": "aurora-field",
+    "number": "01",
+    "name": "Aurora Field",
+    "category": "effects",
+    "description": "move your cursor · click to ignite · press",
+    "tags": [
+      "aurora",
+      "field",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/01-aurora-field/index.html",
+      "css": "components/effects/01-aurora-field/style.css",
+      "js": "components/effects/01-aurora-field/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/01-aurora-field/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/01-aurora-field/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/01-aurora-field/",
+    "type": "effects"
+  },
+  {
+    "id": "liquid-metaballs",
+    "number": "02",
+    "name": "Liquid Metaballs",
+    "category": "effects",
+    "description": "move · watch them merge",
+    "tags": [
+      "liquid",
+      "metaballs",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/02-liquid-metaballs/index.html",
+      "css": "components/effects/02-liquid-metaballs/style.css",
+      "js": "components/effects/02-liquid-metaballs/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/02-liquid-metaballs/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/02-liquid-metaballs/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/02-liquid-metaballs/",
+    "type": "effects"
+  },
+  {
+    "id": "starfield-warp",
+    "number": "03",
+    "name": "Starfield Warp",
+    "category": "effects",
+    "description": "move · click to jump",
+    "tags": [
+      "starfield",
+      "warp",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/03-starfield-warp/index.html",
+      "css": "components/effects/03-starfield-warp/style.css",
+      "js": "components/effects/03-starfield-warp/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/03-starfield-warp/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/03-starfield-warp/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/03-starfield-warp/",
+    "type": "effects"
+  },
+  {
+    "id": "particle-text",
+    "number": "04",
+    "name": "Particle Text",
+    "category": "effects",
+    "description": "hover to scatter",
+    "tags": [
+      "particle",
+      "text",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/04-particle-text/index.html",
+      "css": "components/effects/04-particle-text/style.css",
+      "js": "components/effects/04-particle-text/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/04-particle-text/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/04-particle-text/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/04-particle-text/",
+    "type": "effects"
+  },
+  {
+    "id": "dot-sphere",
+    "number": "05",
+    "name": "Dot Sphere",
+    "category": "effects",
+    "description": "drag to rotate · fibonacci projection",
+    "tags": [
+      "dot",
+      "sphere",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/05-dot-sphere/index.html",
+      "css": "components/effects/05-dot-sphere/style.css",
+      "js": "components/effects/05-dot-sphere/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/05-dot-sphere/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/05-dot-sphere/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/05-dot-sphere/",
+    "type": "effects"
+  },
+  {
+    "id": "topographic-flow",
+    "number": "06",
+    "name": "Topographic Flow",
+    "category": "effects",
+    "description": "move the cursor to warp the terrain",
+    "tags": [
+      "topographic",
+      "flow",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/06-topographic-flow/index.html",
+      "css": "components/effects/06-topographic-flow/style.css",
+      "js": "components/effects/06-topographic-flow/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/06-topographic-flow/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/06-topographic-flow/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/06-topographic-flow/",
+    "type": "effects"
+  },
+  {
+    "id": "fireworks",
+    "number": "07",
+    "name": "Fireworks",
+    "category": "effects",
+    "description": "click anywhere to launch",
+    "tags": [
+      "fireworks",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/07-fireworks/index.html",
+      "css": "components/effects/07-fireworks/style.css",
+      "js": "components/effects/07-fireworks/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/07-fireworks/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/07-fireworks/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/07-fireworks/",
+    "type": "effects"
+  },
+  {
+    "id": "matrix-rain",
+    "number": "08",
+    "name": "Matrix Rain",
+    "category": "effects",
+    "description": "Matrix Rain — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "matrix",
+      "rain",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/08-matrix-rain/index.html",
+      "css": "components/effects/08-matrix-rain/style.css",
+      "js": "components/effects/08-matrix-rain/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/08-matrix-rain/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/08-matrix-rain/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/08-matrix-rain/",
+    "type": "effects"
+  },
+  {
+    "id": "plasma-field",
+    "number": "09",
+    "name": "Plasma Field",
+    "category": "effects",
+    "description": "Plasma Field — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "plasma",
+      "field",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/09-plasma-field/index.html",
+      "css": "components/effects/09-plasma-field/style.css",
+      "js": "components/effects/09-plasma-field/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/09-plasma-field/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/09-plasma-field/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/09-plasma-field/",
+    "type": "effects"
+  },
+  {
+    "id": "gooey-cursor",
+    "number": "10",
+    "name": "Gooey Cursor",
+    "category": "effects",
+    "description": "Gooey Cursor — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "gooey",
+      "cursor",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/10-gooey-cursor/index.html",
+      "css": "components/effects/10-gooey-cursor/style.css",
+      "js": "components/effects/10-gooey-cursor/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/10-gooey-cursor/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/10-gooey-cursor/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/10-gooey-cursor/",
+    "type": "effects"
+  },
+  {
+    "id": "game-of-life",
+    "number": "11",
+    "name": "Game Of Life",
+    "category": "effects",
+    "description": "Game Of Life — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "game",
+      "of",
+      "life",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/11-game-of-life/index.html",
+      "css": "components/effects/11-game-of-life/style.css",
+      "js": "components/effects/11-game-of-life/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/11-game-of-life/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/11-game-of-life/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/11-game-of-life/",
+    "type": "effects"
+  },
+  {
+    "id": "smoke-cursor",
+    "number": "12",
+    "name": "Smoke Cursor",
+    "category": "effects",
+    "description": "warm smoke trails the pointer",
+    "tags": [
+      "smoke",
+      "cursor",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/12-smoke-cursor/index.html",
+      "css": "components/effects/12-smoke-cursor/style.css",
+      "js": "components/effects/12-smoke-cursor/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/12-smoke-cursor/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/12-smoke-cursor/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/12-smoke-cursor/",
+    "type": "effects"
+  },
+  {
+    "id": "constellation",
+    "number": "13",
+    "name": "Constellation",
+    "category": "effects",
+    "description": "drifting amber stars, linked by proximity",
+    "tags": [
+      "constellation",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/13-constellation/index.html",
+      "css": "components/effects/13-constellation/style.css",
+      "js": "components/effects/13-constellation/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/13-constellation/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/13-constellation/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/13-constellation/",
+    "type": "effects"
+  },
+  {
+    "id": "liquid-canvas",
+    "number": "14",
+    "name": "Liquid Canvas",
+    "category": "effects",
+    "description": "clay metaballs react to the cursor",
+    "tags": [
+      "liquid",
+      "canvas",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/14-liquid-canvas/index.html",
+      "css": "components/effects/14-liquid-canvas/style.css",
+      "js": "components/effects/14-liquid-canvas/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/14-liquid-canvas/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/14-liquid-canvas/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/14-liquid-canvas/",
+    "type": "effects"
+  },
+  {
+    "id": "wormhole",
+    "number": "15",
+    "name": "Wormhole",
+    "category": "effects",
+    "description": "rings recede toward the vanishing point",
+    "tags": [
+      "wormhole",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/15-wormhole/index.html",
+      "css": "components/effects/15-wormhole/style.css",
+      "js": "components/effects/15-wormhole/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/15-wormhole/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/15-wormhole/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/15-wormhole/",
+    "type": "effects"
+  },
+  {
+    "id": "earth-grid",
+    "number": "16",
+    "name": "Earth Grid",
+    "category": "effects",
+    "description": "topographic grid, wave-distorted",
+    "tags": [
+      "earth",
+      "grid",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/16-earth-grid/index.html",
+      "css": "components/effects/16-earth-grid/style.css",
+      "js": "components/effects/16-earth-grid/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/16-earth-grid/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/16-earth-grid/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/16-earth-grid/",
+    "type": "effects"
+  },
+  {
+    "id": "root-helix",
+    "number": "17",
+    "name": "Root Helix",
+    "category": "effects",
+    "description": "organic double helix, growing",
+    "tags": [
+      "root",
+      "helix",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/17-root-helix/index.html",
+      "css": "components/effects/17-root-helix/style.css",
+      "js": "components/effects/17-root-helix/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/17-root-helix/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/17-root-helix/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/17-root-helix/",
+    "type": "effects"
+  },
+  {
+    "id": "gravity-seeds",
+    "number": "18",
+    "name": "Gravity Seeds",
+    "category": "effects",
+    "description": "seeds fall, drawn to the pointer",
+    "tags": [
+      "gravity",
+      "seeds",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/18-gravity-seeds/index.html",
+      "css": "components/effects/18-gravity-seeds/style.css",
+      "js": "components/effects/18-gravity-seeds/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/18-gravity-seeds/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/18-gravity-seeds/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/18-gravity-seeds/",
+    "type": "effects"
+  },
+  {
+    "id": "morphing-blob",
+    "number": "19",
+    "name": "Morphing Blob",
+    "category": "effects",
+    "description": "a clay form breathing and shifting",
+    "tags": [
+      "morphing",
+      "blob",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/19-morphing-blob/index.html",
+      "css": "components/effects/19-morphing-blob/style.css",
+      "js": "components/effects/19-morphing-blob/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/19-morphing-blob/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/19-morphing-blob/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/19-morphing-blob/",
+    "type": "effects"
+  },
+  {
+    "id": "leaf-rain",
+    "number": "20",
+    "name": "Leaf Rain",
+    "category": "effects",
+    "description": "autumn leaves tumble and sway",
+    "tags": [
+      "leaf",
+      "rain",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/20-leaf-rain/index.html",
+      "css": "components/effects/20-leaf-rain/style.css",
+      "js": "components/effects/20-leaf-rain/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/20-leaf-rain/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/20-leaf-rain/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/20-leaf-rain/",
+    "type": "effects"
+  },
+  {
+    "id": "spiral-roots",
+    "number": "21",
+    "name": "Spiral Roots",
+    "category": "effects",
+    "description": "roots spiral outward, drawing themselves",
+    "tags": [
+      "spiral",
+      "roots",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/21-spiral-roots/index.html",
+      "css": "components/effects/21-spiral-roots/style.css",
+      "js": "components/effects/21-spiral-roots/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/21-spiral-roots/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/21-spiral-roots/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/21-spiral-roots/",
+    "type": "effects"
+  },
+  {
+    "id": "ember-arc",
+    "number": "22",
+    "name": "Ember Arc",
+    "category": "effects",
+    "description": "ember lightning arcs between points",
+    "tags": [
+      "ember",
+      "arc",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/22-ember-arc/index.html",
+      "css": "components/effects/22-ember-arc/style.css",
+      "js": "components/effects/22-ember-arc/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/22-ember-arc/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/22-ember-arc/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/22-ember-arc/",
+    "type": "effects"
+  },
+  {
+    "id": "soil-automata",
+    "number": "23",
+    "name": "Soil Automata",
+    "category": "effects",
+    "description": "cellular life in the topsoil",
+    "tags": [
+      "soil",
+      "automata",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/23-soil-automata/index.html",
+      "css": "components/effects/23-soil-automata/style.css",
+      "js": "components/effects/23-soil-automata/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/23-soil-automata/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/23-soil-automata/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/23-soil-automata/",
+    "type": "effects"
+  },
+  {
+    "id": "clay-voronoi",
+    "number": "24",
+    "name": "Clay Voronoi",
+    "category": "effects",
+    "description": "warm cells drift and divide",
+    "tags": [
+      "clay",
+      "voronoi",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/24-clay-voronoi/index.html",
+      "css": "components/effects/24-clay-voronoi/style.css",
+      "js": "components/effects/24-clay-voronoi/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/24-clay-voronoi/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/24-clay-voronoi/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/24-clay-voronoi/",
+    "type": "effects"
+  },
+  {
+    "id": "lissajous",
+    "number": "25",
+    "name": "Lissajous",
+    "category": "effects",
+    "description": "sand-toned curves sweep through phase",
+    "tags": [
+      "lissajous",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/25-lissajous/index.html",
+      "css": "components/effects/25-lissajous/style.css",
+      "js": "components/effects/25-lissajous/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/25-lissajous/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/25-lissajous/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/25-lissajous/",
+    "type": "effects"
+  },
+  {
+    "id": "sand-simulation",
+    "number": "26",
+    "name": "Sand Simulation",
+    "category": "effects",
+    "description": "falling sand piles and settles",
+    "tags": [
+      "sand",
+      "simulation",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/26-sand-simulation/index.html",
+      "css": "components/effects/26-sand-simulation/style.css",
+      "js": "components/effects/26-sand-simulation/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/26-sand-simulation/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/26-sand-simulation/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/26-sand-simulation/",
+    "type": "effects"
+  },
+  {
+    "id": "water-soil",
+    "number": "27",
+    "name": "Water Soil",
+    "category": "effects",
+    "description": "click / drag — ripples on the clay pool",
+    "tags": [
+      "water",
+      "soil",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/27-water-soil/index.html",
+      "css": "components/effects/27-water-soil/style.css",
+      "js": "components/effects/27-water-soil/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/27-water-soil/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/27-water-soil/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/27-water-soil/",
+    "type": "effects"
+  },
+  {
+    "id": "northern-roots",
+    "number": "28",
+    "name": "Northern Roots",
+    "category": "effects",
+    "description": "move the mouse — the roots drift with you",
+    "tags": [
+      "northern",
+      "roots",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/28-northern-roots/index.html",
+      "css": "components/effects/28-northern-roots/style.css",
+      "js": "components/effects/28-northern-roots/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/28-northern-roots/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/28-northern-roots/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/28-northern-roots/",
+    "type": "effects"
+  },
+  {
+    "id": "branch-tree",
+    "number": "29",
+    "name": "Branch Tree",
+    "category": "effects",
+    "description": "click to regrow — the branches sway gently",
+    "tags": [
+      "branch",
+      "tree",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/29-branch-tree/index.html",
+      "css": "components/effects/29-branch-tree/style.css",
+      "js": "components/effects/29-branch-tree/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/29-branch-tree/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/29-branch-tree/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/29-branch-tree/",
+    "type": "effects"
+  },
+  {
+    "id": "root-wave",
+    "number": "30",
+    "name": "Root Wave",
+    "category": "effects",
+    "description": "move the mouse — the visualizer breathes with you",
+    "tags": [
+      "root",
+      "wave",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/30-root-wave/index.html",
+      "css": "components/effects/30-root-wave/style.css",
+      "js": "components/effects/30-root-wave/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/30-root-wave/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/30-root-wave/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/30-root-wave/",
+    "type": "effects"
+  },
+  {
+    "id": "earth-morph",
+    "number": "31",
+    "name": "Earth Morph",
+    "category": "effects",
+    "description": "click to shift palette",
+    "tags": [
+      "earth",
+      "morph",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/31-earth-morph/index.html",
+      "css": "components/effects/31-earth-morph/style.css",
+      "js": "components/effects/31-earth-morph/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/31-earth-morph/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/31-earth-morph/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/31-earth-morph/",
+    "type": "effects"
+  },
+  {
+    "id": "warm-bokeh",
+    "number": "32",
+    "name": "Warm Bokeh",
+    "category": "effects",
+    "description": "Warm Bokeh — a vanilla JS ArnieJS component. Zero dependencies.",
+    "tags": [
+      "warm",
+      "bokeh",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/32-warm-bokeh/index.html",
+      "css": "components/effects/32-warm-bokeh/style.css",
+      "js": "components/effects/32-warm-bokeh/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/32-warm-bokeh/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/32-warm-bokeh/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/32-warm-bokeh/",
+    "type": "effects"
+  },
+  {
+    "id": "cloth-field",
+    "number": "33",
+    "name": "Cloth Field",
+    "category": "effects",
+    "description": "drag to pull the cloth",
+    "tags": [
+      "cloth",
+      "field",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/33-cloth-field/index.html",
+      "css": "components/effects/33-cloth-field/style.css",
+      "js": "components/effects/33-cloth-field/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/33-cloth-field/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/33-cloth-field/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/33-cloth-field/",
+    "type": "effects"
+  },
+  {
+    "id": "hex-soil",
+    "number": "34",
+    "name": "Hex Soil",
+    "category": "effects",
+    "description": "click to send a ripple",
+    "tags": [
+      "hex",
+      "soil",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/34-hex-soil/index.html",
+      "css": "components/effects/34-hex-soil/style.css",
+      "js": "components/effects/34-hex-soil/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/34-hex-soil/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/34-hex-soil/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/34-hex-soil/",
+    "type": "effects"
+  },
+  {
+    "id": "seed-scope",
+    "number": "35",
+    "name": "Seed Scope",
+    "category": "effects",
+    "description": "move the mouse to warp the kaleidoscope",
+    "tags": [
+      "seed",
+      "scope",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/35-seed-scope/index.html",
+      "css": "components/effects/35-seed-scope/style.css",
+      "js": "components/effects/35-seed-scope/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/35-seed-scope/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/35-seed-scope/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/35-seed-scope/",
+    "type": "effects"
+  },
+  {
+    "id": "root-tunnel",
+    "number": "36",
+    "name": "Root Tunnel",
+    "category": "effects",
+    "description": "move the mouse to steer",
+    "tags": [
+      "root",
+      "tunnel",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/36-root-tunnel/index.html",
+      "css": "components/effects/36-root-tunnel/style.css",
+      "js": "components/effects/36-root-tunnel/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/36-root-tunnel/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/36-root-tunnel/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/36-root-tunnel/",
+    "type": "effects"
+  },
+  {
+    "id": "root-network",
+    "number": "37",
+    "name": "Root Network",
+    "category": "effects",
+    "description": "move the mouse to nudge the nodes",
+    "tags": [
+      "root",
+      "network",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/37-root-network/index.html",
+      "css": "components/effects/37-root-network/style.css",
+      "js": "components/effects/37-root-network/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/37-root-network/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/37-root-network/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/37-root-network/",
+    "type": "effects"
+  },
+  {
+    "id": "solar-roots",
+    "number": "38",
+    "name": "Solar Roots",
+    "category": "effects",
+    "description": "move the mouse to perturb the orbits",
+    "tags": [
+      "solar",
+      "roots",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/38-solar-roots/index.html",
+      "css": "components/effects/38-solar-roots/style.css",
+      "js": "components/effects/38-solar-roots/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/38-solar-roots/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/38-solar-roots/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/38-solar-roots/",
+    "type": "effects"
+  },
+  {
+    "id": "soil-particles",
+    "number": "39",
+    "name": "Soil Particles",
+    "category": "effects",
+    "description": "click / tap to scatter",
+    "tags": [
+      "soil",
+      "particles",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/39-soil-particles/index.html",
+      "css": "components/effects/39-soil-particles/style.css",
+      "js": "components/effects/39-soil-particles/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/39-soil-particles/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/39-soil-particles/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/39-soil-particles/",
+    "type": "effects"
+  },
+  {
+    "id": "field-lines",
+    "number": "40",
+    "name": "Field Lines",
+    "category": "effects",
+    "description": "drag the poles",
+    "tags": [
+      "field",
+      "lines",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/40-field-lines/index.html",
+      "css": "components/effects/40-field-lines/style.css",
+      "js": "components/effects/40-field-lines/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/40-field-lines/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/40-field-lines/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/40-field-lines/",
+    "type": "effects"
+  },
+  {
+    "id": "ink-earth",
+    "number": "41",
+    "name": "Ink Earth",
+    "category": "effects",
+    "description": "click to drop ink",
+    "tags": [
+      "ink",
+      "earth",
+      "effects"
+    ],
+    "files": {
+      "html": "components/effects/41-ink-earth/index.html",
+      "css": "components/effects/41-ink-earth/style.css",
+      "js": "components/effects/41-ink-earth/script.js"
+    },
+    "cdn": {
+      "css": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/41-ink-earth/style.css",
+      "js": "https://cdn.jsdelivr.net/gh/MarcoZorn/arniejs@main/components/effects/41-ink-earth/script.js"
+    },
+    "pageUrl": "https://marcozorn.github.io/arniejs/components/effects/41-ink-earth/",
+    "type": "effects"
+  }
+]
