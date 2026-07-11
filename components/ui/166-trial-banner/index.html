@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <div class="trial-banner" id="trialBanner" role="region" aria-label="Trial status">
+    <div class="trial-banner__content">
+      <span class="trial-banner__icon" aria-hidden="true">🌱</span>
+      <p class="trial-banner__text">
+        <strong>12 days left</strong> in your trial &mdash; keep your garden growing.
+      </p>
+    </div>
+    <div class="trial-banner__actions">
+      <button type="button" class="trial-banner__cta" id="upgradeBtn">Upgrade</button>
+      <button type="button" class="trial-banner__dismiss" id="dismissBtn" aria-label="Dismiss banner">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <p class="demo__note" id="demoNote">Dismiss the banner to see it fade &amp; collapse away.</p>
+</main>
+<script src="script.js"></script>
