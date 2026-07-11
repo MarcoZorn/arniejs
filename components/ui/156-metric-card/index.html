@@ -1,0 +1,59 @@
+<!doctype html>
+<!-- description: Metric Card — a vanilla JS ArnieJS component. Zero dependencies. -->
+<!-- category: dashboard -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Metric Card — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="demo">
+  <div class="cards">
+
+    <article class="metric-card" data-trend="up">
+      <header class="metric-card__head">
+        <span class="metric-card__label">Weekly Revenue</span>
+        <span class="metric-card__badge" id="badge1">
+          <svg class="metric-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+          <span id="delta1">+12.4%</span>
+        </span>
+      </header>
+      <div class="metric-card__value" id="value1">$48,290</div>
+      <svg class="metric-card__spark" id="spark1" viewBox="0 0 240 60" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <p class="metric-card__foot">vs. previous 7 days</p>
+    </article>
+
+    <article class="metric-card" data-trend="down">
+      <header class="metric-card__head">
+        <span class="metric-card__label">Churned Users</span>
+        <span class="metric-card__badge" id="badge2">
+          <svg class="metric-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M19 12l-7 7-7-7"/></svg>
+          <span id="delta2">-6.1%</span>
+        </span>
+      </header>
+      <div class="metric-card__value" id="value2">312</div>
+      <svg class="metric-card__spark" id="spark2" viewBox="0 0 240 60" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <p class="metric-card__foot">vs. previous 30 days</p>
+    </article>
+
+    <article class="metric-card" data-trend="up">
+      <header class="metric-card__head">
+        <span class="metric-card__label">Avg. Session</span>
+        <span class="metric-card__badge" id="badge3">
+          <svg class="metric-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+          <span id="delta3">+3.8%</span>
+        </span>
+      </header>
+      <div class="metric-card__value" id="value3">4m 12s</div>
+      <svg class="metric-card__spark" id="spark3" viewBox="0 0 240 60" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <p class="metric-card__foot">vs. previous 7 days</p>
+    </article>
+
+    <button class="refresh-btn" id="refreshBtn" type="button">Shuffle data</button>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
