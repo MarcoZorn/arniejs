@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <div class="grove-wrap">
+    <button class="trunk-btn" id="trunkBtn" aria-expanded="false" aria-haspopup="true">
+      🌳 The Grove
+    </button>
+    <div class="grove-menu" id="groveMenu" hidden>
+      <svg class="grove-lines" id="groveLines" viewBox="0 0 260 320" preserveAspectRatio="none" aria-hidden="true">
+        <path class="branch" d="M 10 10 C 60 10, 40 40, 90 40" />
+        <path class="branch" d="M 10 10 C 50 90, 40 90, 90 90" />
+        <path class="branch" d="M 10 10 C 40 150, 40 140, 90 140" />
+        <path class="branch branch-sub" d="M 90 140 C 120 155, 110 175, 150 190" />
+        <path class="branch branch-sub" d="M 90 140 C 120 200, 110 220, 150 240" />
+        <path class="branch" d="M 10 10 C 40 260, 40 280, 90 290" />
+      </svg>
+      <ul class="branch-list">
+        <li class="branch-node" style="top:32px;"><a href="#" class="branch-link">🌿 Overview</a></li>
+        <li class="branch-node" style="top:82px;"><a href="#" class="branch-link">🍃 Species</a></li>
+        <li class="branch-node" style="top:132px;"><a href="#" class="branch-link">🌱 Saplings</a></li>
+        <li class="branch-node branch-node-sub" style="top:182px;"><a href="#" class="branch-link">Newly planted</a></li>
+        <li class="branch-node branch-node-sub" style="top:232px;"><a href="#" class="branch-link">Ready to move</a></li>
+        <li class="branch-node" style="top:282px;"><a href="#" class="branch-link">🪵 Deadwood</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="hint">Click "The Grove" to branch out the menu, connected by organic root-lines.</p>
+</main>
+<script src="script.js"></script>
