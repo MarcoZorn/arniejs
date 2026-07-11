@@ -1,0 +1,49 @@
+<!-- description: A settings list of feature flags with earth-toned sliding toggle switches. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Feature flags</h1>
+  <p class="stage__sub">Toggle experimental features on and off for your workspace.</p>
+
+  <div class="flag-list">
+    <div class="flag-row" data-default="on">
+      <div class="flag-row__text">
+        <span class="flag-row__label">Early access dashboard</span>
+        <span class="flag-row__desc">Preview the redesigned dashboard before it ships to everyone.</span>
+      </div>
+      <div class="flag-row__control">
+        <button class="toggle is-on" type="button" role="switch" aria-checked="true" aria-label="Early access dashboard">
+          <span class="toggle__thumb"></span>
+        </button>
+        <span class="flag-row__status">Enabled</span>
+      </div>
+    </div>
+
+    <div class="flag-row" data-default="off">
+      <div class="flag-row__text">
+        <span class="flag-row__label">Compost mode analytics</span>
+        <span class="flag-row__desc">Send anonymized usage data to help us improve the harvest.</span>
+      </div>
+      <div class="flag-row__control">
+        <button class="toggle" type="button" role="switch" aria-checked="false" aria-label="Compost mode analytics">
+          <span class="toggle__thumb"></span>
+        </button>
+        <span class="flag-row__status">Disabled</span>
+      </div>
+    </div>
+
+    <div class="flag-row" data-default="off">
+      <div class="flag-row__text">
+        <span class="flag-row__label">Beta soil sync</span>
+        <span class="flag-row__desc">Sync settings across devices in near real time.</span>
+      </div>
+      <div class="flag-row__control">
+        <button class="toggle" type="button" role="switch" aria-checked="false" aria-label="Beta soil sync">
+          <span class="toggle__thumb"></span>
+        </button>
+        <span class="flag-row__status">Disabled</span>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>

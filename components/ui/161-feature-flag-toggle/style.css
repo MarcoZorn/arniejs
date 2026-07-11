@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  padding: 8vh 20px;
+}
+
+.stage {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.stage__title {
+  margin: 0 0 6px;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
+.stage__sub {
+  margin: 0 0 36px;
+  color: var(--text-muted);
+}
+
+.flag-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.flag-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 22px;
+  background: var(--bg-surface);
+}
+
+.flag-row__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.flag-row__label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.flag-row__desc {
+  font-size: .85rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.flag-row__control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.flag-row__status {
+  font-size: .78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--text-faint);
+  min-width: 62px;
+  text-align: right;
+  transition: color .2s ease;
+}
+
+.toggle.is-on ~ .flag-row__status,
+.flag-row__control:has(.toggle.is-on) .flag-row__status {
+  color: var(--accent-sage);
+}
+
+/* toggle switch */
+.toggle {
+  position: relative;
+  width: 48px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  padding: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background .25s ease, border-color .25s ease;
+}
+
+.toggle:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 3px;
+}
+
+.toggle__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  box-shadow: 0 2px 6px rgba(0,0,0,.35);
+  transition: transform .25s cubic-bezier(.3,.8,.3,1), background .25s ease;
+}
+
+.toggle.is-on {
+  background: var(--accent-moss);
+  border-color: var(--accent-sage);
+}
+
+.toggle.is-on .toggle__thumb {
+  transform: translateX(20px);
+  background: var(--text-primary);
+}
+
+.toggle:hover .toggle__thumb {
+  filter: brightness(1.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toggle, .toggle__thumb, .flag-row__status {
+    transition: none !important;
+    animation: none !important;
+  }
+}
