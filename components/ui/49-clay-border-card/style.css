@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: grid;
+  place-content: center;
+  padding: 8vh 20px;
+}
+
+.stage__title { margin: 0 0 6px; font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -.02em; text-align: center; }
+.stage__sub { margin: 0 0 44px; color: var(--text-muted); text-align: center; }
+
+.clay {
+  position: relative;
+  width: min(90vw, 360px);
+  padding: 3px;
+  border-radius: 20px;
+  background: conic-gradient(
+    from 0deg,
+    var(--accent-terra),
+    var(--accent-clay),
+    var(--accent-rust),
+    var(--accent-sand),
+    var(--accent-terra)
+  );
+  animation: rotateBorder 6s linear infinite;
+}
+
+@keyframes rotateBorder {
+  to { --angle: 360deg; }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.clay {
+  background: conic-gradient(
+    from var(--angle),
+    var(--accent-terra),
+    var(--accent-clay),
+    var(--accent-rust),
+    var(--accent-sand),
+    var(--accent-terra)
+  );
+  animation: spinAngle 5s linear infinite;
+}
+@keyframes spinAngle {
+  to { --angle: 360deg; }
+}
+
+.clay__inner {
+  border-radius: 17px;
+  padding: 32px 28px;
+  background: linear-gradient(155deg, var(--bg-card), var(--bg-surface));
+  height: 100%;
+}
+
+.clay__tag {
+  display: inline-block;
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent-sand);
+  margin-bottom: 12px;
+}
+.clay__title { margin: 0 0 12px; font-size: 1.3rem; font-weight: 700; letter-spacing: -.01em; }
+.clay__desc { margin: 0 0 20px; font-size: .9rem; color: var(--text-muted); line-height: 1.6; }
+.clay__price { font-size: 1.2rem; font-weight: 800; color: var(--accent-sand); }
+
+.clay:hover { animation-duration: 1.6s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .clay { animation: none !important; background: linear-gradient(135deg, var(--accent-terra), var(--accent-clay), var(--accent-rust)); }
+}
