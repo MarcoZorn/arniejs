@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Signature pad</h1>
+  <p class="stage__sub">Sign on the paper below, then clear to start over.</p>
+
+  <div class="pad">
+    <canvas class="pad__canvas" id="padCanvas" width="520" height="240"></canvas>
+    <div class="pad__line" aria-hidden="true"></div>
+    <div class="pad__toolbar">
+      <span class="pad__status" id="padStatus">Awaiting signature…</span>
+      <button class="pad__clear" id="padClear" type="button">Clear</button>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
