@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="style.css">
+<main class="chart-wrap">
+  <div class="chart-card">
+    <header class="chart-head">
+      <div>
+        <h2 class="chart-title">Rainfall &amp; Root Growth</h2>
+        <p class="chart-sub">Average weekly rainfall, greenhouse plot &mdash; 12 weeks</p>
+      </div>
+      <div class="chart-legend">
+        <span class="legend-dot"></span>
+        <span>mm of rainfall</span>
+      </div>
+    </header>
+
+    <div class="chart-body">
+      <svg class="line-chart" viewBox="0 0 720 340" role="img" aria-label="Line chart of weekly rainfall over 12 weeks" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#d4a85a" stop-opacity="0.35"></stop>
+            <stop offset="100%" stop-color="#d4a85a" stop-opacity="0"></stop>
+          </linearGradient>
+          <linearGradient id="lineStroke" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#c4622d"></stop>
+            <stop offset="100%" stop-color="#d4a85a"></stop>
+          </linearGradient>
+        </defs>
+
+        <!-- gridlines + axis groups injected/positioned via JS-computed layout, static structure here -->
+        <g class="grid-y" data-role="grid-y"></g>
+        <g class="grid-x" data-role="grid-x"></g>
+
+        <path class="area-path" data-role="area"></path>
+        <path class="line-path" data-role="line"></path>
+
+        <g class="points" data-role="points"></g>
+
+        <g class="axis-labels-x" data-role="labels-x"></g>
+        <g class="axis-labels-y" data-role="labels-y"></g>
+
+        <line class="hover-line" data-role="hover-line" x1="0" y1="0" x2="0" y2="0"></line>
+      </svg>
+
+      <div class="tooltip" data-role="tooltip" hidden>
+        <span class="tooltip-week" data-role="tooltip-week"></span>
+        <span class="tooltip-value" data-role="tooltip-value"></span>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
