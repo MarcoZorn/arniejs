@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+}
+
+.branch-layout {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 70px 32px 200px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.branch-sidebar {
+  position: sticky;
+  top: 70px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.branch-line {
+  width: 20px;
+  align-self: stretch;
+  margin-right: -4px;
+}
+
+.branch-line svg {
+  width: 20px;
+  height: 100%;
+  min-height: 260px;
+  overflow: visible;
+}
+
+.branch-line path {
+  fill: none;
+  stroke: var(--border-light);
+  stroke-width: 2;
+}
+
+.branch-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.branch-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-faint);
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.25s ease;
+}
+
+.branch-link .node {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bg-subtle);
+  border: 2px solid var(--border-light);
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+  flex: none;
+}
+
+.branch-link:hover {
+  color: var(--accent-sand);
+}
+
+.branch-link.active {
+  color: var(--text-primary);
+}
+
+.branch-link.active .node {
+  background: var(--accent-clay);
+  border-color: var(--accent-clay);
+  transform: scale(1.2);
+}
+
+.branch-content {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.branch-section h2 {
+  font-size: 28px;
+  margin: 0 0 16px;
+}
+
+.branch-section p {
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0 0 16px;
+  max-width: 560px;
+}
+
+@media (max-width: 720px) {
+  .branch-layout {
+    grid-template-columns: 1fr;
+  }
+  .branch-sidebar {
+    position: static;
+    margin-bottom: 20px;
+  }
+  .branch-line {
+    display: none;
+  }
+  .branch-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .branch-link,
+  .branch-link .node {
+    transition: none;
+  }
+}
