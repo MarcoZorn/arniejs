@@ -1,0 +1,26 @@
+<!-- description: Filter buttons above a portfolio grid that animate items in/out by category. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Work Filter</h1>
+  <p class="stage__sub">Filter the grid by category</p>
+
+  <div class="filters" role="group" aria-label="Filter projects by category">
+    <button type="button" class="filter-btn is-active" data-filter="all">All</button>
+    <button type="button" class="filter-btn" data-filter="branding">Branding</button>
+    <button type="button" class="filter-btn" data-filter="web">Web</button>
+    <button type="button" class="filter-btn" data-filter="motion">Motion</button>
+  </div>
+
+  <div class="grid" id="workGrid">
+    <div class="grid-item" data-category="branding"><span class="grid-item__cat">Branding</span><span class="grid-item__title">Solstice Identity</span></div>
+    <div class="grid-item" data-category="web"><span class="grid-item__cat">Web</span><span class="grid-item__title">Foundry Site</span></div>
+    <div class="grid-item" data-category="motion"><span class="grid-item__cat">Motion</span><span class="grid-item__title">Kinetic Reel</span></div>
+    <div class="grid-item" data-category="web"><span class="grid-item__cat">Web</span><span class="grid-item__title">Orbit Dashboard</span></div>
+    <div class="grid-item" data-category="branding"><span class="grid-item__cat">Branding</span><span class="grid-item__title">Halo Rebrand</span></div>
+    <div class="grid-item" data-category="motion"><span class="grid-item__cat">Motion</span><span class="grid-item__title">Launch Trailer</span></div>
+    <div class="grid-item" data-category="web"><span class="grid-item__cat">Web</span><span class="grid-item__title">Nova Storefront</span></div>
+    <div class="grid-item" data-category="branding"><span class="grid-item__cat">Branding</span><span class="grid-item__title">Flux Packaging</span></div>
+  </div>
+</main>
+<script src="script.js"></script>
