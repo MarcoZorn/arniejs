@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 8vh 20px;
+}
+
+.stage__title { margin: 0 0 6px; font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; letter-spacing: -.02em; }
+.stage__sub { margin: 0 0 40px; color: var(--text-muted); }
+
+.settings-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 8px;
+  width: min(420px, 88vw);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  text-align: left;
+}
+
+.settings-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.settings-list__item:last-child { border-bottom: none; }
+
+.settings-list__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.settings-list__label { font-weight: 600; font-size: .96rem; }
+.settings-list__hint { font-size: .8rem; color: var(--text-faint); }
+
+.toggle {
+  flex: none;
+  position: relative;
+  width: 50px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-subtle);
+  cursor: pointer;
+  padding: 0;
+  transition: background .25s ease, border-color .25s ease;
+}
+
+.toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(212,168,90,.35);
+}
+
+.toggle__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  transition: transform .28s cubic-bezier(.34,1.4,.64,1), background .25s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+
+.toggle.is-on {
+  background: var(--accent-moss);
+  border-color: var(--accent-moss);
+}
+
+.toggle.is-on .toggle__thumb {
+  transform: translateX(22px);
+  background: var(--text-primary);
+}
+
+.toggle:hover:not(.is-on) { background: var(--bg-card); }
+.toggle.is-on:hover { background: var(--accent-sage); border-color: var(--accent-sage); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

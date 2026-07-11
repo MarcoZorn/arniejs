@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="style.css">
+
+<main class="stage">
+  <h1 class="stage__title">Earth toggle</h1>
+  <p class="stage__sub">Grown-in switches for a small settings list.</p>
+
+  <ul class="settings-list">
+    <li class="settings-list__item">
+      <div class="settings-list__text">
+        <span class="settings-list__label">Compost reminders</span>
+        <span class="settings-list__hint">Notify when the bin needs turning</span>
+      </div>
+      <button type="button" class="toggle is-on" id="toggle1" role="switch" aria-checked="true" aria-label="Compost reminders">
+        <span class="toggle__thumb"></span>
+      </button>
+    </li>
+    <li class="settings-list__item">
+      <div class="settings-list__text">
+        <span class="settings-list__label">Rain watch</span>
+        <span class="settings-list__hint">Alerts before heavy rainfall</span>
+      </div>
+      <button type="button" class="toggle" id="toggle2" role="switch" aria-checked="false" aria-label="Rain watch">
+        <span class="toggle__thumb"></span>
+      </button>
+    </li>
+    <li class="settings-list__item">
+      <div class="settings-list__text">
+        <span class="settings-list__label">Night mode</span>
+        <span class="settings-list__hint">Dim greenhouse lighting after dusk</span>
+      </div>
+      <button type="button" class="toggle" id="toggle3" role="switch" aria-checked="false" aria-label="Night mode">
+        <span class="toggle__thumb"></span>
+      </button>
+    </li>
+  </ul>
+</main>
+
+<script src="script.js"></script>
