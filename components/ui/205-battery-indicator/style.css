@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.demo {
+  width: 100%;
+  max-width: 340px;
+}
+
+.battery {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.battery__shell {
+  position: relative;
+  width: 56px;
+  height: 28px;
+  border: 2px solid var(--border-light);
+  border-radius: 6px;
+  padding: 3px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.battery__nub {
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 12px;
+  background: var(--border-light);
+  border-radius: 0 2px 2px 0;
+}
+
+.battery__fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 3px;
+  background: var(--accent-sage);
+  transition: width 0.5s ease, background 0.3s ease;
+}
+
+.battery__fill.is-low {
+  background: var(--accent-rust);
+}
+
+.battery__fill.is-charging {
+  background: var(--accent-sand);
+}
+
+.battery__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.battery__level {
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--text-primary);
+}
+
+.battery__state {
+  font-size: 12px;
+  color: var(--text-faint);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .battery__fill {
+    transition: none !important;
+  }
+}
