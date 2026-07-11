@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.demo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rs-card {
+  width: 340px;
+  max-width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px 24px 24px;
+}
+
+.rs-headline {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 18px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.rs-score {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--accent-sand);
+  line-height: 1;
+}
+
+.rs-headline-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rs-stars {
+  color: var(--accent-sand);
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.rs-count {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.rs-bars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rs-bar-row {
+  display: grid;
+  grid-template-columns: 26px 1fr 34px;
+  align-items: center;
+  gap: 10px;
+}
+
+.rs-bar-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.rs-bar-track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--bg-subtle);
+  overflow: hidden;
+}
+
+.rs-bar-fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent-terra), var(--accent-sand));
+  transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rs-bar-fill.is-visible {
+  width: var(--pct);
+}
+
+.rs-bar-pct {
+  font-size: 12px;
+  color: var(--text-faint);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rs-bar-fill {
+    transition: none !important;
+    width: var(--pct);
+  }
+}
