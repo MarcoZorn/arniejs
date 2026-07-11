@@ -6930,12 +6930,12 @@
     "id": "product-card",
     "number": "141",
     "name": "Product Card",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "Product Card — a vanilla JS ArnieJS component. Zero dependencies.",
     "tags": [
       "product",
       "card",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -6981,12 +6981,12 @@
     "id": "product-gallery",
     "number": "142",
     "name": "Product Gallery",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "Product Gallery — a vanilla JS ArnieJS component. Zero dependencies.",
     "tags": [
       "product",
       "gallery",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -7032,12 +7032,12 @@
     "id": "cart-drawer",
     "number": "143",
     "name": "Cart Drawer",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "",
     "tags": [
       "cart",
       "drawer",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -7083,12 +7083,12 @@
     "id": "quantity-selector",
     "number": "144",
     "name": "Quantity Selector",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "Min 1 &middot; Max 8 &mdash; buttons disable at the limits.",
     "tags": [
       "quantity",
       "selector",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -7134,12 +7134,12 @@
     "id": "size-selector",
     "number": "145",
     "name": "Size Selector",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "Selected size:",
     "tags": [
       "size",
       "selector",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -7185,13 +7185,13 @@
     "id": "color-swatch-picker",
     "number": "146",
     "name": "Color Swatch Picker",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "Selected color:",
     "tags": [
       "color",
       "swatch",
       "picker",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -7237,13 +7237,13 @@
     "id": "price-range-display",
     "number": "147",
     "name": "Price Range Display",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "Original price, discounted price, and auto-computed savings badge.",
     "tags": [
       "price",
       "range",
       "display",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -7289,12 +7289,12 @@
     "id": "stock-indicator",
     "number": "148",
     "name": "Stock Indicator",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "Three visual states: in stock (green), low stock (amber), out of stock (rust, disabled).",
     "tags": [
       "stock",
       "indicator",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -7340,12 +7340,12 @@
     "id": "wishlist-button",
     "number": "149",
     "name": "Wishlist Button",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "Click the heart to add this item to your wishlist.",
     "tags": [
       "wishlist",
       "button",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -7391,12 +7391,12 @@
     "id": "product-tabs",
     "number": "150",
     "name": "Product Tabs",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "Hand-thrown in small batches from stoneware clay, this ridge planter carries a matte terracotta glaze that deepens with sun exposure. A drai",
     "tags": [
       "product",
       "tabs",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -7442,12 +7442,12 @@
     "id": "review-summary",
     "number": "151",
     "name": "Review Summary",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "Based on 128 reviews",
     "tags": [
       "review",
       "summary",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -7493,12 +7493,12 @@
     "id": "shipping-calculator",
     "number": "152",
     "name": "Shipping Calculator",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "Enter your ZIP/postal code to see delivery cost and date.",
     "tags": [
       "shipping",
       "calculator",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -7544,12 +7544,12 @@
     "id": "checkout-stepper",
     "number": "153",
     "name": "Checkout Stepper",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "Checkout Stepper — a vanilla JS ArnieJS component. Zero dependencies.",
     "tags": [
       "checkout",
       "stepper",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -7595,12 +7595,12 @@
     "id": "coupon-input",
     "number": "154",
     "name": "Coupon Input",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "Coupon Input — a vanilla JS ArnieJS component. Zero dependencies.",
     "tags": [
       "coupon",
       "input",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -7646,12 +7646,12 @@
     "id": "upsell-banner",
     "number": "155",
     "name": "Upsell Banner",
-    "category": "misc",
+    "category": "ecommerce",
     "description": "Simulate adding items to see the banner update:",
     "tags": [
       "upsell",
       "banner",
-      "misc",
+      "ecommerce",
       "ui"
     ],
     "files": {
@@ -7697,12 +7697,12 @@
     "id": "metric-card",
     "number": "156",
     "name": "Metric Card",
-    "category": "misc",
+    "category": "saas",
     "description": "vs. previous 7 days",
     "tags": [
       "metric",
       "card",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -7748,12 +7748,12 @@
     "id": "activity-feed",
     "number": "157",
     "name": "Activity Feed",
-    "category": "misc",
+    "category": "saas",
     "description": "Activity Feed — a vanilla JS ArnieJS component. Zero dependencies.",
     "tags": [
       "activity",
       "feed",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -7799,12 +7799,12 @@
     "id": "notification-dot",
     "number": "158",
     "name": "Notification Dot",
-    "category": "misc",
+    "category": "saas",
     "description": "Notification Dot — a vanilla JS ArnieJS component. Zero dependencies.",
     "tags": [
       "notification",
       "dot",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -7850,12 +7850,12 @@
     "id": "empty-dashboard",
     "number": "159",
     "name": "Empty Dashboard",
-    "category": "misc",
+    "category": "saas",
     "description": "Once you connect a source, your metrics and charts will show up right here.",
     "tags": [
       "empty",
       "dashboard",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -7901,12 +7901,12 @@
     "id": "onboarding-checklist",
     "number": "160",
     "name": "Onboarding Checklist",
-    "category": "misc",
+    "category": "saas",
     "description": "1 of 5 steps complete",
     "tags": [
       "onboarding",
       "checklist",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -7952,13 +7952,13 @@
     "id": "feature-flag-toggle",
     "number": "161",
     "name": "Feature Flag Toggle",
-    "category": "misc",
+    "category": "saas",
     "description": "Toggle experimental features on and off for your workspace.",
     "tags": [
       "feature",
       "flag",
       "toggle",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -8004,12 +8004,12 @@
     "id": "usage-bar",
     "number": "162",
     "name": "Usage Bar",
-    "category": "misc",
+    "category": "saas",
     "description": "Usage Bar — a vanilla JS ArnieJS component. Zero dependencies.",
     "tags": [
       "usage",
       "bar",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -8055,12 +8055,12 @@
     "id": "plan-badge",
     "number": "163",
     "name": "Plan Badge",
-    "category": "misc",
+    "category": "saas",
     "description": "Choose a plan",
     "tags": [
       "plan",
       "badge",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -8106,13 +8106,13 @@
     "id": "api-key-display",
     "number": "164",
     "name": "Api Key Display",
-    "category": "misc",
+    "category": "saas",
     "description": "Api Key Display — a vanilla JS ArnieJS component. Zero dependencies.",
     "tags": [
       "api",
       "key",
       "display",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -8158,12 +8158,12 @@
     "id": "changelog-entry",
     "number": "165",
     "name": "Changelog Entry",
-    "category": "misc",
+    "category": "saas",
     "description": "Changelog Entry — a vanilla JS ArnieJS component. Zero dependencies.",
     "tags": [
       "changelog",
       "entry",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -8209,12 +8209,12 @@
     "id": "trial-banner",
     "number": "166",
     "name": "Trial Banner",
-    "category": "misc",
+    "category": "saas",
     "description": "Dismiss the banner to see it fade &amp; collapse away.",
     "tags": [
       "trial",
       "banner",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -8260,13 +8260,13 @@
     "id": "team-member-row",
     "number": "167",
     "name": "Team Member Row",
-    "category": "misc",
+    "category": "saas",
     "description": "Everyone with access to this workspace.",
     "tags": [
       "team",
       "member",
       "row",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -8312,12 +8312,12 @@
     "id": "billing-row",
     "number": "168",
     "name": "Billing Row",
-    "category": "misc",
+    "category": "saas",
     "description": "Invoices for your workspace subscription.",
     "tags": [
       "billing",
       "row",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -8363,12 +8363,12 @@
     "id": "integration-card",
     "number": "169",
     "name": "Integration Card",
-    "category": "misc",
+    "category": "saas",
     "description": "Connect third-party tools to your workspace.",
     "tags": [
       "integration",
       "card",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -8414,13 +8414,13 @@
     "id": "keyboard-shortcuts-modal",
     "number": "170",
     "name": "Keyboard Shortcuts Modal",
-    "category": "misc",
+    "category": "saas",
     "description": "Open the reference sheet to see every available shortcut.",
     "tags": [
       "keyboard",
       "shortcuts",
       "modal",
-      "misc",
+      "saas",
       "ui"
     ],
     "files": {
@@ -8466,12 +8466,12 @@
     "id": "article-card",
     "number": "171",
     "name": "Article Card",
-    "category": "misc",
+    "category": "blog",
     "description": "Field notes from the garden journal.",
     "tags": [
       "article",
       "card",
-      "misc",
+      "blog",
       "ui"
     ],
     "files": {
@@ -8517,12 +8517,12 @@
     "id": "author-byline",
     "number": "172",
     "name": "Author Byline",
-    "category": "misc",
+    "category": "blog",
     "description": "A practical guide to turning kitchen scraps into rich soil, even without a backyard. This article walks through container choices,",
     "tags": [
       "author",
       "byline",
-      "misc",
+      "blog",
       "ui"
     ],
     "files": {
@@ -8568,13 +8568,13 @@
     "id": "table-of-contents",
     "number": "173",
     "name": "Table Of Contents",
-    "category": "misc",
+    "category": "blog",
     "description": "Composting doesn't require a big backyard. With the right container and a bit of routine, a balcony corner can turn kitchen scraps into rich",
     "tags": [
       "table",
       "of",
       "contents",
-      "misc",
+      "blog",
       "ui"
     ],
     "files": {
@@ -8620,13 +8620,13 @@
     "id": "reading-progress-circle",
     "number": "174",
     "name": "Reading Progress Circle",
-    "category": "misc",
+    "category": "blog",
     "description": "As nights get colder, the work in the garden shifts from growing to protecting. This piece walks through mulching, covering, and the harvest",
     "tags": [
       "reading",
       "progress",
       "circle",
-      "misc",
+      "blog",
       "ui"
     ],
     "files": {
@@ -8672,12 +8672,12 @@
     "id": "share-bar",
     "number": "175",
     "name": "Share Bar",
-    "category": "misc",
+    "category": "blog",
     "description": "Scroll down to reveal the sticky share bar",
     "tags": [
       "share",
       "bar",
-      "misc",
+      "blog",
       "ui"
     ],
     "files": {
@@ -8723,12 +8723,12 @@
     "id": "related-posts",
     "number": "176",
     "name": "Related Posts",
-    "category": "misc",
+    "category": "blog",
     "description": "Drag or scroll horizontally",
     "tags": [
       "related",
       "posts",
-      "misc",
+      "blog",
       "ui"
     ],
     "files": {
@@ -8774,12 +8774,12 @@
     "id": "code-block",
     "number": "177",
     "name": "Code Block",
-    "category": "misc",
+    "category": "blog",
     "description": "Manual token coloring, no external library",
     "tags": [
       "code",
       "block",
-      "misc",
+      "blog",
       "ui"
     ],
     "files": {
@@ -8825,12 +8825,12 @@
     "id": "callout-block",
     "number": "178",
     "name": "Callout Block",
-    "category": "misc",
+    "category": "blog",
     "description": "Four variants: info, warning, danger, tip",
     "tags": [
       "callout",
       "block",
-      "misc",
+      "blog",
       "ui"
     ],
     "files": {
@@ -8876,12 +8876,12 @@
     "id": "footnote-popover",
     "number": "179",
     "name": "Footnote Popover",
-    "category": "misc",
+    "category": "blog",
     "description": "Hover or focus a reference number",
     "tags": [
       "footnote",
       "popover",
-      "misc",
+      "blog",
       "ui"
     ],
     "files": {
@@ -8927,12 +8927,12 @@
     "id": "newsletter-inline",
     "number": "180",
     "name": "Newsletter Inline",
-    "category": "misc",
+    "category": "blog",
     "description": "Embedded in article flow, no modal",
     "tags": [
       "newsletter",
       "inline",
-      "misc",
+      "blog",
       "ui"
     ],
     "files": {
@@ -8978,13 +8978,13 @@
     "id": "case-study-card",
     "number": "181",
     "name": "Case Study Card",
-    "category": "misc",
+    "category": "portfolio",
     "description": "Hover to lift",
     "tags": [
       "case",
       "study",
       "card",
-      "misc",
+      "portfolio",
       "ui"
     ],
     "files": {
@@ -9030,13 +9030,13 @@
     "id": "service-pill-list",
     "number": "182",
     "name": "Service Pill List",
-    "category": "misc",
+    "category": "portfolio",
     "description": "Drag or scroll horizontally",
     "tags": [
       "service",
       "pill",
       "list",
-      "misc",
+      "portfolio",
       "ui"
     ],
     "files": {
@@ -9082,12 +9082,12 @@
     "id": "results-counter",
     "number": "183",
     "name": "Results Counter",
-    "category": "misc",
+    "category": "portfolio",
     "description": "Scroll down &mdash; the numbers count up when they enter view",
     "tags": [
       "results",
       "counter",
-      "misc",
+      "portfolio",
       "ui"
     ],
     "files": {
@@ -9133,13 +9133,13 @@
     "id": "client-logo-strip",
     "number": "184",
     "name": "Client Logo Strip",
-    "category": "misc",
+    "category": "portfolio",
     "description": "Hover a logo to bring it to full color",
     "tags": [
       "client",
       "logo",
       "strip",
-      "misc",
+      "portfolio",
       "ui"
     ],
     "files": {
@@ -9185,12 +9185,12 @@
     "id": "process-steps",
     "number": "185",
     "name": "Process Steps",
-    "category": "misc",
+    "category": "portfolio",
     "description": "How a project comes together",
     "tags": [
       "process",
       "steps",
-      "misc",
+      "portfolio",
       "ui"
     ],
     "files": {
@@ -9236,12 +9236,12 @@
     "id": "awards-shelf",
     "number": "186",
     "name": "Awards Shelf",
-    "category": "misc",
+    "category": "portfolio",
     "description": "Recognition earned along the way",
     "tags": [
       "awards",
       "shelf",
-      "misc",
+      "portfolio",
       "ui"
     ],
     "files": {
@@ -9287,12 +9287,12 @@
     "id": "contact-split",
     "number": "187",
     "name": "Contact Split",
-    "category": "misc",
+    "category": "portfolio",
     "description": "",
     "tags": [
       "contact",
       "split",
-      "misc",
+      "portfolio",
       "ui"
     ],
     "files": {
@@ -9338,12 +9338,12 @@
     "id": "availability-badge",
     "number": "188",
     "name": "Availability Badge",
-    "category": "misc",
+    "category": "portfolio",
     "description": "Click the badge to toggle status",
     "tags": [
       "availability",
       "badge",
-      "misc",
+      "portfolio",
       "ui"
     ],
     "files": {
@@ -9389,12 +9389,12 @@
     "id": "work-filter",
     "number": "189",
     "name": "Work Filter",
-    "category": "misc",
+    "category": "portfolio",
     "description": "Filter the grid by category",
     "tags": [
       "work",
       "filter",
-      "misc",
+      "portfolio",
       "ui"
     ],
     "files": {
@@ -9440,12 +9440,12 @@
     "id": "testimonial-rotator",
     "number": "190",
     "name": "Testimonial Rotator",
-    "category": "misc",
+    "category": "portfolio",
     "description": "Auto-rotates every few seconds &mdash; hover to pause",
     "tags": [
       "testimonial",
       "rotator",
-      "misc",
+      "portfolio",
       "ui"
     ],
     "files": {
@@ -9491,12 +9491,12 @@
     "id": "cookie-consent",
     "number": "191",
     "name": "Cookie Consent",
-    "category": "misc",
+    "category": "utility",
     "description": "Reload the demo after choosing — your decision is remembered via localStorage.",
     "tags": [
       "cookie",
       "consent",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -9542,13 +9542,13 @@
     "id": "scroll-to-section",
     "number": "192",
     "name": "Scroll To Section",
-    "category": "misc",
+    "category": "utility",
     "description": "A quick summary of what this product does and why it matters. Scroll down, or use the menu on the left to jump straight to any section.",
     "tags": [
       "scroll",
       "to",
       "section",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -9594,13 +9594,13 @@
     "id": "floating-action-button",
     "number": "193",
     "name": "Floating Action Button",
-    "category": "misc",
+    "category": "utility",
     "description": "Click the plus button in the corner to reveal quick actions.",
     "tags": [
       "floating",
       "action",
       "button",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -9646,12 +9646,12 @@
     "id": "split-view",
     "number": "194",
     "name": "Split View",
-    "category": "misc",
+    "category": "utility",
     "description": "Drag the middle divider to resize the panels.",
     "tags": [
       "split",
       "view",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -9697,12 +9697,12 @@
     "id": "json-viewer",
     "number": "195",
     "name": "Json Viewer",
-    "category": "misc",
+    "category": "utility",
     "description": "Click any key, brace, or bracket to expand or collapse that node.",
     "tags": [
       "json",
       "viewer",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -9748,12 +9748,12 @@
     "id": "diff-viewer",
     "number": "196",
     "name": "Diff Viewer",
-    "category": "misc",
+    "category": "utility",
     "description": "Comparing",
     "tags": [
       "diff",
       "viewer",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -9799,12 +9799,12 @@
     "id": "markdown-preview",
     "number": "197",
     "name": "Markdown Preview",
-    "category": "misc",
+    "category": "utility",
     "description": "Type on the left — headers, bold, italic, links, and lists render live on the right.",
     "tags": [
       "markdown",
       "preview",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -9850,12 +9850,12 @@
     "id": "hotkey-listener",
     "number": "198",
     "name": "Hotkey Listener",
-    "category": "misc",
+    "category": "utility",
     "description": "Press any key or combination — the panel below reflects it live.",
     "tags": [
       "hotkey",
       "listener",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -9901,12 +9901,12 @@
     "id": "iframe-embed",
     "number": "199",
     "name": "Iframe Embed",
-    "category": "misc",
+    "category": "utility",
     "description": "Switch ratios &mdash; the frame resizes using the CSS",
     "tags": [
       "iframe",
       "embed",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -9952,12 +9952,12 @@
     "id": "print-button",
     "number": "200",
     "name": "Print Button",
-    "category": "misc",
+    "category": "utility",
     "description": "Total due: $68.00",
     "tags": [
       "print",
       "button",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -10003,13 +10003,13 @@
     "id": "pdf-viewer-placeholder",
     "number": "201",
     "name": "Pdf Viewer Placeholder",
-    "category": "misc",
+    "category": "utility",
     "description": "Loading document&hellip;",
     "tags": [
       "pdf",
       "viewer",
       "placeholder",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -10055,12 +10055,12 @@
     "id": "map-placeholder",
     "number": "202",
     "name": "Map Placeholder",
-    "category": "misc",
+    "category": "utility",
     "description": "128 Grove Street, Portland",
     "tags": [
       "map",
       "placeholder",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -10106,12 +10106,12 @@
     "id": "geolocation-button",
     "number": "203",
     "name": "Geolocation Button",
-    "category": "misc",
+    "category": "utility",
     "description": "Geolocation Button — a vanilla JS ArnieJS component. Zero dependencies.",
     "tags": [
       "geolocation",
       "button",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -10157,12 +10157,12 @@
     "id": "network-status",
     "number": "204",
     "name": "Network Status",
-    "category": "misc",
+    "category": "utility",
     "description": "Toggle your device&rsquo;s network connection (or DevTools &ldquo;Offline&rdquo; mode) to see it update live.",
     "tags": [
       "network",
       "status",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -10208,12 +10208,12 @@
     "id": "battery-indicator",
     "number": "205",
     "name": "Battery Indicator",
-    "category": "misc",
+    "category": "utility",
     "description": "Battery Indicator — a vanilla JS ArnieJS component. Zero dependencies.",
     "tags": [
       "battery",
       "indicator",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -10259,13 +10259,13 @@
     "id": "screen-size-indicator",
     "number": "206",
     "name": "Screen Size Indicator",
-    "category": "misc",
+    "category": "utility",
     "description": "Resize the window or browser panel to see the badge update live.",
     "tags": [
       "screen",
       "size",
       "indicator",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -10311,13 +10311,13 @@
     "id": "dark-mode-detector",
     "number": "207",
     "name": "Dark Mode Detector",
-    "category": "misc",
+    "category": "utility",
     "description": "Reflects your OS color-scheme preference in real time",
     "tags": [
       "dark",
       "mode",
       "detector",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -10363,13 +10363,13 @@
     "id": "reduce-motion-toggle",
     "number": "208",
     "name": "Reduce Motion Toggle",
-    "category": "misc",
+    "category": "utility",
     "description": "Simulates prefers-reduced-motion for demo purposes",
     "tags": [
       "reduce",
       "motion",
       "toggle",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -10415,12 +10415,12 @@
     "id": "focus-trap",
     "number": "209",
     "name": "Focus Trap",
-    "category": "misc",
+    "category": "utility",
     "description": "Tab and Shift+Tab cycle only within the open modal",
     "tags": [
       "focus",
       "trap",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -10466,12 +10466,12 @@
     "id": "clipboard-history",
     "number": "210",
     "name": "Clipboard History",
-    "category": "misc",
+    "category": "utility",
     "description": "Copies made through this component's buttons, remembered for you",
     "tags": [
       "clipboard",
       "history",
-      "misc",
+      "utility",
       "ui"
     ],
     "files": {
@@ -10517,12 +10517,12 @@
     "id": "text-morph",
     "number": "211",
     "name": "Text Morph",
-    "category": "misc",
+    "category": "fun",
     "description": "Heading crossfades &amp; morphs between phrases on a loop.",
     "tags": [
       "text",
       "morph",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -10568,12 +10568,12 @@
     "id": "magnetic-letters",
     "number": "212",
     "name": "Magnetic Letters",
-    "category": "misc",
+    "category": "fun",
     "description": "Move the cursor near the heading — each letter pulls toward it, then springs back.",
     "tags": [
       "magnetic",
       "letters",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -10619,12 +10619,12 @@
     "id": "blob-cursor",
     "number": "213",
     "name": "Blob Cursor",
-    "category": "misc",
+    "category": "fun",
     "description": "Move your cursor across this panel — a soft clay blob trails behind with elastic lag.",
     "tags": [
       "blob",
       "cursor",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -10670,13 +10670,13 @@
     "id": "neon-trail-cursor",
     "number": "214",
     "name": "Neon Trail Cursor",
-    "category": "misc",
+    "category": "fun",
     "description": "Sweep your cursor across the panel to leave a warm, fading glow behind it.",
     "tags": [
       "neon",
       "trail",
       "cursor",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -10722,12 +10722,12 @@
     "id": "spotlight-cursor",
     "number": "215",
     "name": "Spotlight Cursor",
-    "category": "misc",
+    "category": "fun",
     "description": "A weathered clay object rests here — move your cursor over the card to reveal it under a warm spotlight.",
     "tags": [
       "spotlight",
       "cursor",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -10773,13 +10773,13 @@
     "id": "3d-perspective-cards",
     "number": "216",
     "name": "3d Perspective Cards",
-    "category": "misc",
+    "category": "fun",
     "description": "Tilt responds to cursor position in 3D.",
     "tags": [
       "3d",
       "perspective",
       "cards",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -10825,13 +10825,13 @@
     "id": "tilt-image-reveal",
     "number": "217",
     "name": "Tilt Image Reveal",
-    "category": "misc",
+    "category": "fun",
     "description": "Shot at dawn &mdash; 2,400m",
     "tags": [
       "tilt",
       "image",
       "reveal",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -10877,12 +10877,12 @@
     "id": "scramble-heading",
     "number": "218",
     "name": "Scramble Heading",
-    "category": "misc",
+    "category": "fun",
     "description": "Scrambles on load &mdash; hover the heading or click replay to run it again.",
     "tags": [
       "scramble",
       "heading",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -10928,12 +10928,12 @@
     "id": "glitch-image",
     "number": "219",
     "name": "Glitch Image",
-    "category": "misc",
+    "category": "fun",
     "description": "Hover the tile to trigger a warm-toned RGB-channel glitch.",
     "tags": [
       "glitch",
       "image",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -10979,13 +10979,13 @@
     "id": "liquid-button-v2",
     "number": "220",
     "name": "Liquid Button V2",
-    "category": "misc",
+    "category": "fun",
     "description": "Hover the button to see the gooey liquid blobs merge.",
     "tags": [
       "liquid",
       "button",
       "v2",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11031,12 +11031,12 @@
     "id": "hover-distort",
     "number": "221",
     "name": "Hover Distort",
-    "category": "misc",
+    "category": "fun",
     "description": "Move the cursor across the image to ripple it",
     "tags": [
       "hover",
       "distort",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11082,12 +11082,12 @@
     "id": "kinetic-typography",
     "number": "222",
     "name": "Kinetic Typography",
-    "category": "misc",
+    "category": "fun",
     "description": "Words emphasize themselves in sequence, as if spoken",
     "tags": [
       "kinetic",
       "typography",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11133,12 +11133,12 @@
     "id": "draggable-window",
     "number": "223",
     "name": "Draggable Window",
-    "category": "misc",
+    "category": "fun",
     "description": "Drag the title bar to move the window around",
     "tags": [
       "draggable",
       "window",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11184,12 +11184,12 @@
     "id": "desktop-icon",
     "number": "224",
     "name": "Desktop Icon",
-    "category": "misc",
+    "category": "fun",
     "description": "Drag to move &middot; double-click to open",
     "tags": [
       "desktop",
       "icon",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11235,12 +11235,12 @@
     "id": "folder-open",
     "number": "225",
     "name": "Folder Open",
-    "category": "misc",
+    "category": "fun",
     "description": "Click the folder to peek inside",
     "tags": [
       "folder",
       "open",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11286,12 +11286,12 @@
     "id": "terminal-window",
     "number": "226",
     "name": "Terminal Window",
-    "category": "misc",
+    "category": "fun",
     "description": "A looping demo session",
     "tags": [
       "terminal",
       "window",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11337,13 +11337,13 @@
     "id": "os-menu-bar",
     "number": "227",
     "name": "Os Menu Bar",
-    "category": "misc",
+    "category": "fun",
     "description": "Click a menu to open its dropdown",
     "tags": [
       "os",
       "menu",
       "bar",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11389,12 +11389,12 @@
     "id": "notification-stack",
     "number": "228",
     "name": "Notification Stack",
-    "category": "misc",
+    "category": "fun",
     "description": "Toasts slide in, stack, and dismiss themselves",
     "tags": [
       "notification",
       "stack",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11440,12 +11440,12 @@
     "id": "dock-preview",
     "number": "229",
     "name": "Dock Preview",
-    "category": "misc",
+    "category": "fun",
     "description": "Hover a dock icon to see its live preview",
     "tags": [
       "dock",
       "preview",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11491,13 +11491,13 @@
     "id": "vinyl-record-player",
     "number": "230",
     "name": "Vinyl Record Player",
-    "category": "misc",
+    "category": "fun",
     "description": "Toggle play to spin the record and drop the tonearm",
     "tags": [
       "vinyl",
       "record",
       "player",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11543,12 +11543,12 @@
     "id": "cassette-tape",
     "number": "231",
     "name": "Cassette Tape",
-    "category": "misc",
+    "category": "fun",
     "description": "Press play to spin the reels.",
     "tags": [
       "cassette",
       "tape",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11594,13 +11594,13 @@
     "id": "retro-tv-frame",
     "number": "232",
     "name": "Retro Tv Frame",
-    "category": "misc",
+    "category": "fun",
     "description": "Change the channel to see the set flicker.",
     "tags": [
       "retro",
       "tv",
       "frame",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11646,12 +11646,12 @@
     "id": "polaroid-camera",
     "number": "233",
     "name": "Polaroid Camera",
-    "category": "misc",
+    "category": "fun",
     "description": "Click the polaroid to develop it.",
     "tags": [
       "polaroid",
       "camera",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11697,12 +11697,12 @@
     "id": "film-strip",
     "number": "234",
     "name": "Film Strip",
-    "category": "misc",
+    "category": "fun",
     "description": "Scroll the strip to browse the frames.",
     "tags": [
       "film",
       "strip",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11748,12 +11748,12 @@
     "id": "newspaper-fold",
     "number": "235",
     "name": "Newspaper Fold",
-    "category": "misc",
+    "category": "fun",
     "description": "Click the paper to unfold the full story.",
     "tags": [
       "newspaper",
       "fold",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11799,13 +11799,13 @@
     "id": "map-pin-drop",
     "number": "236",
     "name": "Map Pin Drop",
-    "category": "misc",
+    "category": "fun",
     "description": "Click anywhere on the map to mark a spot.",
     "tags": [
       "map",
       "pin",
       "drop",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11851,12 +11851,12 @@
     "id": "compass-rose",
     "number": "237",
     "name": "Compass Rose",
-    "category": "misc",
+    "category": "fun",
     "description": "Click the compass to spin toward a new direction.",
     "tags": [
       "compass",
       "rose",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11902,12 +11902,12 @@
     "id": "weather-widget",
     "number": "238",
     "name": "Weather Widget",
-    "category": "misc",
+    "category": "fun",
     "description": "Purely decorative — no live data.",
     "tags": [
       "weather",
       "widget",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -11953,12 +11953,12 @@
     "id": "lunar-clock",
     "number": "239",
     "name": "Lunar Clock",
-    "category": "misc",
+    "category": "fun",
     "description": "Computed live from today's date.",
     "tags": [
       "lunar",
       "clock",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {
@@ -12004,12 +12004,12 @@
     "id": "tide-animation",
     "number": "240",
     "name": "Tide Animation",
-    "category": "misc",
+    "category": "fun",
     "description": "Purely decorative, ever-rolling waves.",
     "tags": [
       "tide",
       "animation",
-      "misc",
+      "fun",
       "ui"
     ],
     "files": {

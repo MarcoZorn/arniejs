@@ -20,6 +20,12 @@ const UI_CATEGORIES = [
   { max: 110, name: 'overlays' },
   { max: 120, name: 'layout' },
   { max: 140, name: 'misc' },
+  { max: 155, name: 'ecommerce' },
+  { max: 170, name: 'saas' },
+  { max: 180, name: 'blog' },
+  { max: 190, name: 'portfolio' },
+  { max: 210, name: 'utility' },
+  { max: 240, name: 'fun' },
 ];
 
 function categoryForUi(num) {
