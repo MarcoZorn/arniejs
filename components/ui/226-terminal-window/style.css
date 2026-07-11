@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  padding: 8vh 20px;
+}
+
+.stage__title {
+  margin: 0 0 6px;
+  text-align: center;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
+.stage__sub {
+  margin: 0 0 44px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.term {
+  max-width: 620px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #14100a;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 30px 60px -24px rgba(0,0,0,.7);
+}
+
+.term__bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  background: var(--bg-subtle);
+}
+
+.term__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.term__dot--close { background: var(--accent-rust); }
+.term__dot--min   { background: var(--accent-sand); }
+.term__dot--max   { background: var(--accent-sage); }
+
+.term__title {
+  margin-left: 8px;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.term__body {
+  min-height: 230px;
+  padding: 18px 20px 24px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: .88rem;
+  line-height: 1.7;
+  color: #d9d0b8;
+  white-space: pre-wrap;
+}
+
+.term__line {
+  display: block;
+}
+
+.term__prompt {
+  color: var(--accent-sage);
+}
+
+.term__output {
+  color: var(--text-muted);
+}
+
+.term__cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  margin-left: 2px;
+  background: var(--accent-sand);
+  vertical-align: text-bottom;
+  animation: termBlink 1s step-end infinite;
+}
+
+@keyframes termBlink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .term__cursor {
+    animation: none;
+  }
+}
