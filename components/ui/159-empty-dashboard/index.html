@@ -1,0 +1,27 @@
+<!-- description: An illustrated empty dashboard state for new users, built with CSS/SVG, with a primary CTA. -->
+<!-- category: dashboard -->
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <div class="empty-state" id="emptyState">
+    <svg class="empty-state__art" viewBox="0 0 220 160" aria-hidden="true">
+      <rect x="18" y="100" width="30" height="42" rx="4" class="empty-state__bar empty-state__bar--1"/>
+      <rect x="58" y="72"  width="30" height="70" rx="4" class="empty-state__bar empty-state__bar--2"/>
+      <rect x="98" y="88"  width="30" height="54" rx="4" class="empty-state__bar empty-state__bar--3"/>
+      <line x1="10" y1="142" x2="150" y2="142" class="empty-state__baseline"/>
+      <circle cx="168" cy="52" r="26" class="empty-state__lens"/>
+      <line x1="186" y1="70" x2="204" y2="88" class="empty-state__handle"/>
+      <path d="M156 52 a12 12 0 1 1 24 0" class="empty-state__spark"/>
+    </svg>
+
+    <h2 class="empty-state__title">No data yet</h2>
+    <p class="empty-state__desc">Once you connect a source, your metrics and charts will show up right here.</p>
+
+    <button class="empty-state__cta" id="ctaBtn" type="button">Create your first project</button>
+  </div>
+
+  <div class="success-chip" id="successChip" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+    <span>Project created — data will populate shortly.</span>
+  </div>
+</main>
+<script src="script.js"></script>
