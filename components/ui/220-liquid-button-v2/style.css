@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.demo {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.demo__note {
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 13px;
+  margin: 0;
+}
+
+.liquid-filter {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.liquid-btn {
+  position: relative;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--bg-deep);
+  background: transparent;
+  border: none;
+  border-radius: 999px;
+  padding: 16px 40px;
+  cursor: pointer;
+  isolation: isolate;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.liquid-btn__label {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.liquid-btn__blobs {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  filter: url(#liquidGoo);
+  z-index: 1;
+  background: linear-gradient(135deg, var(--accent-sand), var(--accent-terra));
+}
+
+.liquid-btn__blob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-sand), var(--accent-terra));
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.liquid-btn__blob--1 { transform: translate(-50%, -50%) scale(0); }
+.liquid-btn__blob--2 { transform: translate(-50%, -50%) scale(0); }
+.liquid-btn__blob--3 { transform: translate(-50%, -50%) scale(0); }
+
+.liquid-btn.is-active .liquid-btn__blob--1 {
+  transform: translate(-140%, -50%) scale(1.3);
+}
+
+.liquid-btn.is-active .liquid-btn__blob--2 {
+  transform: translate(40%, -160%) scale(1.1);
+}
+
+.liquid-btn.is-active .liquid-btn__blob--3 {
+  transform: translate(60%, 120%) scale(1.4);
+}
+
+.liquid-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent-sand), var(--accent-terra));
+  z-index: 0;
+  box-shadow: 0 10px 28px rgba(196, 98, 45, 0.35);
+  transition: box-shadow 0.3s ease;
+}
+
+.liquid-btn.is-active::before {
+  box-shadow: 0 16px 36px rgba(196, 98, 45, 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liquid-btn__blob {
+    transition: transform 0.25s ease !important;
+  }
+  .liquid-btn__blobs {
+    filter: none;
+  }
+}

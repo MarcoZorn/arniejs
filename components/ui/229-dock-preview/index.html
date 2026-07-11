@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Dock Preview</h1>
+  <p class="stage__sub">Hover a dock icon to see its live preview</p>
+
+  <div class="dock" id="dock">
+    <button class="dock__item" type="button" data-title="Studio" data-color="#c4622d">
+      <span class="dock__glyph">&#9635;</span>
+      <span class="dock__preview">
+        <span class="dock__thumb" style="background: linear-gradient(135deg, #c4622d, #7a4a24);"></span>
+        <span class="dock__caption">Studio</span>
+      </span>
+    </button>
+
+    <button class="dock__item" type="button" data-title="Mail" data-color="#5a7a3a">
+      <span class="dock__glyph">&#9993;</span>
+      <span class="dock__preview">
+        <span class="dock__thumb" style="background: linear-gradient(135deg, #8fa86e, #5a7a3a);"></span>
+        <span class="dock__caption">Mail</span>
+      </span>
+    </button>
+
+    <button class="dock__item" type="button" data-title="Notes" data-color="#d4a85a">
+      <span class="dock__glyph">&#9998;</span>
+      <span class="dock__preview">
+        <span class="dock__thumb" style="background: linear-gradient(135deg, #d4a85a, #9b6b3a);"></span>
+        <span class="dock__caption">Notes</span>
+      </span>
+    </button>
+
+    <button class="dock__item" type="button" data-title="Terminal" data-color="#a03820">
+      <span class="dock__glyph">&#9654;_</span>
+      <span class="dock__preview">
+        <span class="dock__thumb dock__thumb--dark"></span>
+        <span class="dock__caption">Terminal</span>
+      </span>
+    </button>
+
+    <button class="dock__item" type="button" data-title="Music" data-color="#9b6b3a">
+      <span class="dock__glyph">&#9834;</span>
+      <span class="dock__preview">
+        <span class="dock__thumb" style="background: linear-gradient(135deg, #9b6b3a, #6b5540);"></span>
+        <span class="dock__caption">Music</span>
+      </span>
+    </button>
+  </div>
+</main>
+<script src="script.js"></script>

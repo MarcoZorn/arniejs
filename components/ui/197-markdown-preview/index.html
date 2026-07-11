@@ -1,0 +1,19 @@
+<!-- description: A textarea on the left with a live-rendered HTML preview on the right, powered by a small hand-written markdown subset parser. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Markdown preview</h1>
+  <p class="stage__sub">Type on the left — headers, bold, italic, links, and lists render live on the right.</p>
+
+  <div class="md-split">
+    <div class="md-pane">
+      <span class="md-pane__label">Markdown</span>
+      <textarea class="md-input" id="mdInput" spellcheck="false"></textarea>
+    </div>
+    <div class="md-pane">
+      <span class="md-pane__label">Preview</span>
+      <div class="md-preview" id="mdPreview"></div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>

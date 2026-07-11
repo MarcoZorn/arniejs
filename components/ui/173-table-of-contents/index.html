@@ -1,0 +1,54 @@
+<!-- description: A sticky sidebar table of contents that highlights the active heading as the demo article scrolls, using IntersectionObserver. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="layout">
+  <nav class="toc" aria-label="Table of contents">
+    <span class="toc__label">On this page</span>
+    <ul class="toc__list" id="tocList">
+      <li><a href="#intro" data-target="intro">Introduction</a></li>
+      <li><a href="#containers" data-target="containers">Choosing containers</a></li>
+      <li><a href="#greens-browns" data-target="greens-browns">Greens and browns</a></li>
+      <li><a href="#moisture" data-target="moisture">Managing moisture</a></li>
+      <li><a href="#troubleshoot" data-target="troubleshoot">Troubleshooting odors</a></li>
+      <li><a href="#harvest" data-target="harvest">Harvesting compost</a></li>
+    </ul>
+  </nav>
+
+  <article class="article">
+    <h1>Composting for small urban balconies</h1>
+
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>Composting doesn't require a big backyard. With the right container and a bit of routine, a balcony corner can turn kitchen scraps into rich, usable soil within a few months.</p>
+      <p>This guide walks through the essentials: what to buy, what to feed your bin, and how to keep the whole system pleasant to live next to.</p>
+    </section>
+
+    <section id="containers">
+      <h2>Choosing containers</h2>
+      <p>Look for a sealed tumbler or a stackable worm bin — both handle small spaces well and limit pests. Avoid open piles on a balcony; they invite flies and neighbors' complaints alike.</p>
+      <p>A two-bin rotation lets one batch finish curing while you keep adding scraps to the other.</p>
+    </section>
+
+    <section id="greens-browns">
+      <h2>Greens and browns</h2>
+      <p>Balance nitrogen-rich "greens" (vegetable scraps, coffee grounds) with carbon-rich "browns" (dry leaves, shredded cardboard) at roughly a 1:3 ratio by volume.</p>
+      <p>Too many greens and the pile turns slimy and smelly; too many browns and it stalls out and stops breaking down.</p>
+    </section>
+
+    <section id="moisture">
+      <h2>Managing moisture</h2>
+      <p>Aim for the texture of a wrung-out sponge. If it's soggy, mix in more dry browns. If it's crumbly and dry, add a light misting of water.</p>
+    </section>
+
+    <section id="troubleshoot">
+      <h2>Troubleshooting odors</h2>
+      <p>A sour or ammonia smell usually means too much moisture or too many greens. Turn the pile, add dry material, and give it airflow.</p>
+    </section>
+
+    <section id="harvest">
+      <h2>Harvesting compost</h2>
+      <p>After 6 to 10 weeks, finished compost looks dark, crumbly, and smells like earth. Sift out any large fragments and return them to the bin for another round.</p>
+    </section>
+  </article>
+</main>
+<script src="script.js"></script>

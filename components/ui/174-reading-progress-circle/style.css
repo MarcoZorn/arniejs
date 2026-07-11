@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+}
+
+.article {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 8vh 20px 30vh;
+}
+
+.article h1 {
+  margin: 0 0 24px;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
+.article h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 40px 0 12px;
+  color: var(--text-primary);
+}
+
+.article p {
+  margin: 0 0 12px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: .92rem;
+}
+
+.article__end {
+  margin-top: 40px;
+  font-style: italic;
+  color: var(--text-faint);
+}
+
+.progress-ring {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  z-index: 50;
+}
+
+.progress-ring svg {
+  position: absolute;
+  inset: 0;
+  transform: rotate(-90deg);
+}
+
+.progress-ring__track,
+.progress-ring__fill {
+  fill: none;
+  stroke-width: 4;
+}
+
+.progress-ring__track {
+  stroke: var(--bg-subtle);
+}
+
+.progress-ring__fill {
+  stroke: var(--accent-terra);
+  stroke-linecap: round;
+  stroke-dasharray: 138.2;
+  stroke-dashoffset: 138.2;
+  transition: stroke-dashoffset .12s linear;
+}
+
+.progress-ring__pct {
+  position: relative;
+  font-size: .62rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-ring__fill {
+    transition: none !important;
+    animation: none !important;
+  }
+}

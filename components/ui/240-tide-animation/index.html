@@ -1,0 +1,23 @@
+<!-- description: A decorative animated wave/tide effect rising and falling rhythmically at the bottom of a card. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Tide watch</h1>
+  <p class="stage__sub">Purely decorative, ever-rolling waves.</p>
+
+  <div class="tide-card">
+    <div class="tide-card__content">
+      <span class="tide-card__label">Coastal ambience</span>
+      <span class="tide-card__value">Low tide in 3h 12m</span>
+    </div>
+    <div class="tide" aria-hidden="true">
+      <svg class="tide__svg" viewBox="0 0 400 120" preserveAspectRatio="none">
+        <path class="tide__wave tide__wave--back"
+          d="M0,60 C50,90 100,30 150,60 C200,90 250,30 300,60 C350,90 400,30 450,60 L450,120 L0,120 Z" />
+        <path class="tide__wave tide__wave--front"
+          d="M0,70 C50,40 100,100 150,70 C200,40 250,100 300,70 C350,40 400,100 450,70 L450,120 L0,120 Z" />
+      </svg>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>

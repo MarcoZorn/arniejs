@@ -1,0 +1,25 @@
+<!-- description: A demo panel that displays which key or key combination was just pressed, useful for documenting shortcuts. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Hotkey listener</h1>
+  <p class="stage__sub">Press any key or combination — the panel below reflects it live.</p>
+
+  <div class="hotkey-panel" id="hotkeyPanel" tabindex="0">
+    <div class="hotkey-panel__display">
+      <div class="hotkey-keys" id="hotkeyKeys">
+        <span class="hotkey-placeholder">Press a key…</span>
+      </div>
+    </div>
+    <p class="hotkey-panel__hint">Click here first if keys aren't registering, then try a combo like <kbd>Ctrl</kbd>+<kbd>K</kbd>.</p>
+  </div>
+
+  <div class="hotkey-log">
+    <div class="hotkey-log__header">
+      <span>Recent presses</span>
+      <button class="hotkey-log__clear" id="clearLog" type="button">Clear</button>
+    </div>
+    <ul class="hotkey-log__list" id="hotkeyLog"></ul>
+  </div>
+</main>
+<script src="script.js"></script>

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.demo {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.demo__note {
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 13px;
+  margin: 0;
+}
+
+.glitch {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(150deg, var(--bg-card), var(--bg-subtle));
+  border: 1px solid var(--border-light);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.glitch__layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 110px;
+}
+
+.glitch__layer--red {
+  color: var(--accent-rust);
+  mix-blend-mode: screen;
+  opacity: 0;
+  filter: grayscale(0.2) sepia(0.3) hue-rotate(-10deg) saturate(3);
+}
+
+.glitch__layer--cyan {
+  color: var(--accent-sand);
+  mix-blend-mode: screen;
+  opacity: 0;
+  filter: grayscale(0.2) sepia(0.4) hue-rotate(15deg) saturate(3);
+}
+
+.glitch.is-glitching .glitch__layer--base {
+  animation: glitch-base 0.5s steps(2, end) infinite;
+}
+
+.glitch.is-glitching .glitch__layer--red {
+  opacity: 0.75;
+  animation: glitch-red 0.5s steps(2, end) infinite;
+}
+
+.glitch.is-glitching .glitch__layer--cyan {
+  opacity: 0.75;
+  animation: glitch-cyan 0.5s steps(2, end) infinite;
+}
+
+@keyframes glitch-base {
+  0%   { transform: translate(0, 0); }
+  20%  { transform: translate(-1px, 1px); }
+  40%  { transform: translate(1px, -1px); }
+  60%  { transform: translate(-1px, 0); }
+  80%  { transform: translate(1px, 1px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes glitch-red {
+  0%   { transform: translate(0, 0); clip-path: inset(10% 0 60% 0); }
+  25%  { transform: translate(-6px, 2px); clip-path: inset(40% 0 20% 0); }
+  50%  { transform: translate(5px, -3px); clip-path: inset(65% 0 5% 0); }
+  75%  { transform: translate(-4px, 4px); clip-path: inset(5% 0 75% 0); }
+  100% { transform: translate(0, 0); clip-path: inset(30% 0 40% 0); }
+}
+
+@keyframes glitch-cyan {
+  0%   { transform: translate(0, 0); clip-path: inset(55% 0 10% 0); }
+  25%  { transform: translate(6px, -2px); clip-path: inset(15% 0 55% 0); }
+  50%  { transform: translate(-5px, 3px); clip-path: inset(5% 0 80% 0); }
+  75%  { transform: translate(4px, -4px); clip-path: inset(70% 0 8% 0); }
+  100% { transform: translate(0, 0); clip-path: inset(35% 0 30% 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glitch.is-glitching .glitch__layer--base,
+  .glitch.is-glitching .glitch__layer--red,
+  .glitch.is-glitching .glitch__layer--cyan {
+    animation: none !important;
+  }
+  .glitch.is-glitching .glitch__layer--red,
+  .glitch.is-glitching .glitch__layer--cyan {
+    opacity: 0.35;
+  }
+}

@@ -1,0 +1,46 @@
+<!-- description: A visual-only weather card with hardcoded data; the icon has a subtle idle animation depending on condition. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Today's forecast</h1>
+  <p class="stage__sub">Purely decorative — no live data.</p>
+
+  <div class="weather-cards">
+    <div class="weather-card">
+      <div class="weather-card__icon weather-card__icon--sun" aria-hidden="true">
+        <span class="sun__core"></span>
+        <span class="sun__ray"></span><span class="sun__ray"></span><span class="sun__ray"></span>
+        <span class="sun__ray"></span><span class="sun__ray"></span><span class="sun__ray"></span>
+        <span class="sun__ray"></span><span class="sun__ray"></span>
+      </div>
+      <div class="weather-card__temp">27&deg;</div>
+      <div class="weather-card__condition">Clear &amp; sunny</div>
+      <div class="weather-card__place">Harvest Valley</div>
+    </div>
+
+    <div class="weather-card">
+      <div class="weather-card__icon weather-card__icon--cloud" aria-hidden="true">
+        <span class="cloud__puff cloud__puff--1"></span>
+        <span class="cloud__puff cloud__puff--2"></span>
+        <span class="cloud__puff cloud__puff--3"></span>
+      </div>
+      <div class="weather-card__temp">18&deg;</div>
+      <div class="weather-card__condition">Drifting clouds</div>
+      <div class="weather-card__place">Root Hollow</div>
+    </div>
+
+    <div class="weather-card">
+      <div class="weather-card__icon weather-card__icon--rain" aria-hidden="true">
+        <span class="cloud__puff cloud__puff--1"></span>
+        <span class="cloud__puff cloud__puff--2"></span>
+        <span class="cloud__puff cloud__puff--3"></span>
+        <span class="rain__drop"></span><span class="rain__drop"></span><span class="rain__drop"></span>
+        <span class="rain__drop"></span><span class="rain__drop"></span>
+      </div>
+      <div class="weather-card__temp">13&deg;</div>
+      <div class="weather-card__condition">Light showers</div>
+      <div class="weather-card__place">Bark Ridge</div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>

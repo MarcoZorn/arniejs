@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <svg class="liquid-filter" width="0" height="0" aria-hidden="true">
+    <defs>
+      <filter id="liquidGoo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+        <feColorMatrix in="blur" mode="matrix"
+          values="1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 20 -9" result="goo" />
+        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+      </filter>
+    </defs>
+  </svg>
+
+  <button type="button" class="liquid-btn" id="liquidBtn">
+    <span class="liquid-btn__blobs" aria-hidden="true">
+      <span class="liquid-btn__blob liquid-btn__blob--1"></span>
+      <span class="liquid-btn__blob liquid-btn__blob--2"></span>
+      <span class="liquid-btn__blob liquid-btn__blob--3"></span>
+    </span>
+    <span class="liquid-btn__label">Pour It On</span>
+  </button>
+
+  <p class="demo__note">Hover the button to see the gooey liquid blobs merge.</p>
+</main>
+<script src="script.js"></script>

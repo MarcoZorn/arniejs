@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  padding: 8vh 20px;
+}
+
+.stage {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.stage__title {
+  margin: 0 0 6px;
+  text-align: center;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
+.stage__sub {
+  margin: 0 0 36px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.hotkey-panel {
+  border-radius: 16px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-surface);
+  padding: 36px 24px 22px;
+  text-align: center;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.hotkey-panel:focus-visible {
+  border-color: var(--accent-sand);
+  box-shadow: 0 0 0 3px rgba(212,168,90,.2);
+}
+
+.hotkey-panel__display {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.hotkey-keys {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hotkey-placeholder {
+  color: var(--text-faint);
+  font-size: .95rem;
+}
+
+.hotkey-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--accent-sand);
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 16px -6px rgba(0,0,0,.5);
+  animation: hotkey-pop .22s cubic-bezier(.3,.9,.3,1.2);
+}
+
+.hotkey-plus {
+  color: var(--text-faint);
+  font-weight: 700;
+}
+
+@keyframes hotkey-pop {
+  from { transform: scale(.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.hotkey-panel__hint {
+  margin: 0;
+  font-size: .8rem;
+  color: var(--text-faint);
+}
+
+.hotkey-panel__hint kbd {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 5px;
+  padding: 1px 6px;
+  font-family: inherit;
+  font-size: .78rem;
+  color: var(--text-muted);
+}
+
+.hotkey-log {
+  margin-top: 24px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  overflow: hidden;
+}
+
+.hotkey-log__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--text-faint);
+  border-bottom: 1px solid var(--border);
+}
+
+.hotkey-log__clear {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: .74rem;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.hotkey-log__clear:hover {
+  color: var(--accent-rust);
+}
+
+.hotkey-log__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.hotkey-log__list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  font-size: .84rem;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.hotkey-log__list li:last-child {
+  border-bottom: none;
+}
+
+.hotkey-log__combo {
+  color: var(--accent-sand);
+  font-weight: 700;
+  font-family: ui-monospace, monospace;
+}
+
+.hotkey-log__time {
+  font-size: .74rem;
+  color: var(--text-faint);
+}
+
+.hotkey-log__empty {
+  padding: 18px 16px;
+  text-align: center;
+  color: var(--text-faint);
+  font-size: .82rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hotkey-chip {
+    animation: none !important;
+  }
+  .hotkey-panel {
+    transition: none !important;
+  }
+}

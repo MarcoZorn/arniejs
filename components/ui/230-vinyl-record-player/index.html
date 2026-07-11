@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Vinyl Record Player</h1>
+  <p class="stage__sub">Toggle play to spin the record and drop the tonearm</p>
+
+  <div class="player">
+    <div class="platter">
+      <div class="record" id="record">
+        <div class="record__grooves"></div>
+        <div class="record__label">
+          <span>SIDE A</span>
+        </div>
+        <div class="record__hole"></div>
+      </div>
+    </div>
+    <div class="tonearm" id="tonearm">
+      <div class="tonearm__base"></div>
+      <div class="tonearm__arm">
+        <div class="tonearm__head"></div>
+      </div>
+    </div>
+
+    <button class="play-btn" id="playBtn" type="button" aria-pressed="false">
+      <span class="play-btn__icon" aria-hidden="true"></span>
+      <span class="play-btn__label">Play</span>
+    </button>
+  </div>
+</main>
+<script src="script.js"></script>

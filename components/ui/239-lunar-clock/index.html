@@ -1,0 +1,29 @@
+<!-- description: Shows today's real moon phase, computed from the current date, with an SVG moon illustration. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Lunar clock</h1>
+  <p class="stage__sub">Computed live from today's date.</p>
+
+  <div class="lunar-card">
+    <svg class="moon" viewBox="0 0 200 200" width="180" height="180" aria-hidden="true">
+      <defs>
+        <clipPath id="moonClip">
+          <circle cx="100" cy="100" r="90" />
+        </clipPath>
+      </defs>
+      <circle cx="100" cy="100" r="92" fill="#0f0a05" />
+      <g clip-path="url(#moonClip)">
+        <circle cx="100" cy="100" r="90" fill="#241a0e" />
+        <path class="moon__lit" d="" fill="#d4a85a" />
+      </g>
+      <circle cx="100" cy="100" r="90" fill="none" stroke="#5a3e20" stroke-width="2" />
+    </svg>
+    <div class="lunar-card__text">
+      <span class="lunar-card__phase">Waxing Gibbous</span>
+      <span class="lunar-card__illum">62% illuminated</span>
+      <span class="lunar-card__date">—</span>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
