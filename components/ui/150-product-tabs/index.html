@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo-wrap">
+  <div class="pt-card">
+    <div class="pt-tablist" role="tablist" aria-label="Product information">
+      <button class="pt-tab" role="tab" id="pt-tab-desc" aria-controls="pt-panel-desc" aria-selected="true" type="button">Description</button>
+      <button class="pt-tab" role="tab" id="pt-tab-reviews" aria-controls="pt-panel-reviews" aria-selected="false" tabindex="-1" type="button">Reviews <span class="pt-count">128</span></button>
+      <button class="pt-tab" role="tab" id="pt-tab-specs" aria-controls="pt-panel-specs" aria-selected="false" tabindex="-1" type="button">Specs</button>
+      <span class="pt-indicator" aria-hidden="true"></span>
+    </div>
+
+    <div class="pt-panel" id="pt-panel-desc" role="tabpanel" aria-labelledby="pt-tab-desc" tabindex="0">
+      <p>Hand-thrown in small batches from stoneware clay, this ridge planter carries a matte terracotta glaze that deepens with sun exposure. A drainage channel and detachable saucer keep roots healthy without staining your shelf.</p>
+      <p>Every piece is one of a kind — expect subtle variation in glaze pooling and rim shape.</p>
+    </div>
+
+    <div class="pt-panel" id="pt-panel-reviews" role="tabpanel" aria-labelledby="pt-tab-reviews" tabindex="0" hidden>
+      <ul class="pt-reviews">
+        <li class="pt-review">
+          <div class="pt-review-head"><span class="pt-stars">★★★★★</span><span class="pt-review-name">Marta K.</span></div>
+          <p>Even better in person. The glaze catches the light beautifully on my windowsill.</p>
+        </li>
+        <li class="pt-review">
+          <div class="pt-review-head"><span class="pt-stars">★★★★☆</span><span class="pt-review-name">Ren O.</span></div>
+          <p>Gorgeous planter, arrived well packed. Drainage hole is a touch small for fast-growing roots.</p>
+        </li>
+        <li class="pt-review">
+          <div class="pt-review-head"><span class="pt-stars">★★★★★</span><span class="pt-review-name">Priya S.</span></div>
+          <p>Bought three for a plant shelf and each has its own personality. Worth it.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pt-panel" id="pt-panel-specs" role="tabpanel" aria-labelledby="pt-tab-specs" tabindex="0" hidden>
+      <table class="pt-specs">
+        <tbody>
+          <tr><th>Material</th><td>Stoneware clay, matte glaze</td></tr>
+          <tr><th>Dimensions</th><td>15cm × 15cm × 14cm</td></tr>
+          <tr><th>Weight</th><td>820g</td></tr>
+          <tr><th>Drainage</th><td>Yes, with saucer</td></tr>
+          <tr><th>Care</th><td>Hand wash only</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
