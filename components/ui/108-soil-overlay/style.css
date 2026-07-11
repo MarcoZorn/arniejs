@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep:     #1a1208;
+  --bg-surface:  #241a0e;
+  --bg-card:     #2e2010;
+  --bg-subtle:   #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted:   #a89070;
+  --text-faint:   #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss:  #5a7a3a;
+  --accent-sage:  #8fa86e;
+  --accent-clay:  #9b6b3a;
+  --accent-sand:  #d4a85a;
+  --accent-rust:  #a03820;
+  --border:       #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 50% -10%, #2e1a08 0%, #1a1208 70%);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+}
+
+.demo {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.trigger {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  background: var(--accent-terra);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.trigger:hover {
+  background: var(--accent-sand);
+  color: var(--bg-deep);
+}
+
+.soil-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(46, 26, 8, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  z-index: 90;
+  padding: 20px;
+}
+
+.soil-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  width: min(440px, 100%);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+  transform: translateY(16px) scale(0.98);
+  opacity: 0;
+  transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.35s ease;
+}
+
+.soil-overlay.visible .modal {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.modal h2 {
+  margin: 0 0 12px;
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--accent-sand);
+}
+
+.modal p {
+  margin: 0 0 24px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.modal-close {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.modal-close:hover {
+  background: var(--bg-subtle);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .soil-overlay,
+  .modal,
+  .trigger {
+    transition: none !important;
+  }
+}
