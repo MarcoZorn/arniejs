@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <header class="head">
+    <p class="eyebrow">Grove Panels</p>
+    <h1>Resize the grove layout</h1>
+    <p class="sub">Drag the earthy handle to resize the panels, or use arrow keys when it's focused.</p>
+  </header>
+
+  <div class="panels" id="panels">
+    <section class="panel panel-left" id="panelLeft">
+      <h2>Seed Catalog</h2>
+      <p>Browse heirloom seed varieties gathered from the grove archive. Drag the handle to give this panel more room.</p>
+      <ul>
+        <li>Heirloom Tomato</li>
+        <li>Purple Carrot</li>
+        <li>Sweet Basil</li>
+        <li>Climbing Bean</li>
+      </ul>
+    </section>
+
+    <div class="panel-handle" id="panelHandle" role="separator" aria-orientation="vertical" aria-label="Resize panels" tabindex="0">
+      <span class="handle-notch"></span>
+    </div>
+
+    <section class="panel panel-right" id="panelRight">
+      <h2>Growth Journal</h2>
+      <p>Notes from this season's plantings, watering schedule, and companion planting plans logged by the grove keeper.</p>
+      <p>Week 6 — first true leaves appearing on the squash bed. Mulch applied around root vegetables to retain moisture.</p>
+    </section>
+  </div>
+</main>
+<script src="script.js"></script>
