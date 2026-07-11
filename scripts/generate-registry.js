@@ -98,7 +98,7 @@ function collect(kind) {
 }
 
 const registry = [...collect('ui'), ...collect('effects')];
-fs.writeFileSync(path.join(ROOT, 'docs', 'registry.json'), JSON.stringify(registry, null, 2) + '\n');
+fs.writeFileSync(path.join(ROOT, 'registry.json'), JSON.stringify(registry, null, 2) + '\n');
 
 const urls = [
   `  <url><loc>${SITE}/</loc><priority>1.0</priority></url>`,
@@ -106,7 +106,7 @@ const urls = [
   ...registry.map((e) => `  <url><loc>${e.pageUrl}</loc><priority>0.5</priority></url>`),
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`;
-fs.writeFileSync(path.join(ROOT, 'docs', 'sitemap.xml'), sitemap);
+fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap);
 
-console.log(`registry: ${registry.length} entries written to docs/registry.json`);
-console.log(`sitemap: ${urls.length} urls written to docs/sitemap.xml`);
+console.log(`registry: ${registry.length} entries written to registry.json`);
+console.log(`sitemap: ${urls.length} urls written to sitemap.xml`);
