@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Newsletter Inline</h1>
+  <p class="stage__sub">Embedded in article flow, no modal</p>
+
+  <article class="post">
+    <p>Every Friday we send a short field dispatch — one technique, one seasonal task, and one reader question answered. No fluff, just what's worth doing this week.</p>
+
+    <div class="newsletter" id="newsletter">
+      <form class="newsletter__form" id="newsletterForm" novalidate>
+        <div class="newsletter__copy">
+          <p class="newsletter__title">Get the Friday dispatch</p>
+          <p class="newsletter__desc">One email a week. Unsubscribe whenever.</p>
+        </div>
+        <div class="newsletter__field">
+          <label class="visually-hidden" for="newsletterEmail">Email address</label>
+          <input type="email" id="newsletterEmail" name="email" class="newsletter__input" placeholder="you@example.com" autocomplete="email" required>
+          <button type="submit" class="newsletter__submit">
+            <span class="newsletter__submit-label">Subscribe</span>
+            <svg class="newsletter__spinner" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" hidden><circle cx="12" cy="12" r="9" stroke-dasharray="42" stroke-dashoffset="30"/></svg>
+          </button>
+        </div>
+        <p class="newsletter__error" id="newsletterError" role="alert"></p>
+      </form>
+
+      <div class="newsletter__success" id="newsletterSuccess" hidden>
+        <span class="newsletter__success-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </span>
+        <div>
+          <p class="newsletter__success-title">You're on the list</p>
+          <p class="newsletter__success-desc">Check <span id="confirmedEmail">your inbox</span> this Friday for the first dispatch.</p>
+        </div>
+      </div>
+    </div>
+
+    <p>In the meantime, browse the archive for past dispatches on cover cropping, tool maintenance, and reading a weather map like a farmer.</p>
+  </article>
+</main>
+
+<script src="script.js"></script>
