@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <p class="hint">Click the center bud to fan out the garden actions.</p>
+  <div class="radial-wrap" id="radialWrap">
+    <nav class="radial-menu" id="radialMenu" aria-label="Quick actions">
+      <button class="radial-item" data-index="0" style="--tx:0; --ty:0;" tabindex="-1">
+        <span class="radial-emoji">💧</span><span class="radial-label">Water</span>
+      </button>
+      <button class="radial-item" data-index="1" style="--tx:0; --ty:0;" tabindex="-1">
+        <span class="radial-emoji">✂️</span><span class="radial-label">Prune</span>
+      </button>
+      <button class="radial-item" data-index="2" style="--tx:0; --ty:0;" tabindex="-1">
+        <span class="radial-emoji">🌾</span><span class="radial-label">Harvest</span>
+      </button>
+      <button class="radial-item" data-index="3" style="--tx:0; --ty:0;" tabindex="-1">
+        <span class="radial-emoji">🪴</span><span class="radial-label">Plant</span>
+      </button>
+      <button class="radial-item" data-index="4" style="--tx:0; --ty:0;" tabindex="-1">
+        <span class="radial-emoji">🐛</span><span class="radial-label">Inspect</span>
+      </button>
+      <button class="radial-item" data-index="5" style="--tx:0; --ty:0;" tabindex="-1">
+        <span class="radial-emoji">📓</span><span class="radial-label">Log</span>
+      </button>
+      <button class="radial-center" id="radialCenter" aria-expanded="false" aria-label="Toggle quick actions">
+        <span class="radial-center-icon">✦</span>
+      </button>
+    </nav>
+  </div>
+</main>
+<script src="script.js"></script>
