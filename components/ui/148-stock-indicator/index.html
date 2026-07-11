@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <div class="stock-indicator" data-state="in-stock">
+    <span class="stock-indicator__dot" aria-hidden="true"></span>
+    <span class="stock-indicator__label">In Stock</span>
+  </div>
+
+  <div class="stock-indicator" data-state="low-stock">
+    <span class="stock-indicator__dot" aria-hidden="true"></span>
+    <span class="stock-indicator__label">Only 3 left</span>
+  </div>
+
+  <div class="stock-indicator" data-state="out-of-stock">
+    <span class="stock-indicator__dot" aria-hidden="true"></span>
+    <span class="stock-indicator__label">Out of Stock</span>
+  </div>
+
+  <div class="stock-indicator stock-indicator--live" id="liveIndicator" data-state="in-stock">
+    <span class="stock-indicator__dot" aria-hidden="true"></span>
+    <span class="stock-indicator__label" id="liveLabel">In Stock</span>
+  </div>
+  <button type="button" class="demo__cycle" id="cycleBtn">Cycle live example</button>
+  <p class="demo__note">Three visual states: in stock (green), low stock (amber), out of stock (rust, disabled).</p>
+</main>
+<script src="script.js"></script>
