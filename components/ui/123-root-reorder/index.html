@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="style.css">
+<main class="wrap">
+  <header class="head">
+    <p class="eyebrow">Root Reorder</p>
+    <h1>Arrange the planting order</h1>
+    <p class="sub">Press and drag any row by its handle to reorder the crops.</p>
+  </header>
+
+  <ul class="root-list" id="rootList">
+    <li class="root-item" data-id="carrot">
+      <span class="drag-handle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <span class="root-icon" style="--chip: var(--accent-terra);">🥕</span>
+      <span class="root-name">Carrot</span>
+      <span class="root-meta">Row 1</span>
+    </li>
+    <li class="root-item" data-id="beet">
+      <span class="drag-handle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <span class="root-icon" style="--chip: var(--accent-rust);">🍠</span>
+      <span class="root-name">Beetroot</span>
+      <span class="root-meta">Row 2</span>
+    </li>
+    <li class="root-item" data-id="onion">
+      <span class="drag-handle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <span class="root-icon" style="--chip: var(--accent-sand);">🧅</span>
+      <span class="root-name">Onion</span>
+      <span class="root-meta">Row 3</span>
+    </li>
+    <li class="root-item" data-id="potato">
+      <span class="drag-handle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <span class="root-icon" style="--chip: var(--accent-clay);">🥔</span>
+      <span class="root-name">Potato</span>
+      <span class="root-meta">Row 4</span>
+    </li>
+    <li class="root-item" data-id="radish">
+      <span class="drag-handle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <span class="root-icon" style="--chip: var(--accent-moss);">🌱</span>
+      <span class="root-name">Radish</span>
+      <span class="root-meta">Row 5</span>
+    </li>
+  </ul>
+
+  <p class="hint" id="hint">Order saved automatically as you drag.</p>
+</main>
+<script src="script.js"></script>
