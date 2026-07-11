@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <div class="alert-stack">
+    <div class="alert" data-tone="rust">
+      <span class="alert-icon">⚠</span>
+      <div class="alert-body">
+        <div class="alert-title">Bark beetle activity detected</div>
+        <div class="alert-text">Inspect the northern grove within 48 hours to prevent spread.</div>
+      </div>
+      <button class="alert-dismiss" aria-label="Dismiss alert">&times;</button>
+    </div>
+    <div class="alert" data-tone="clay">
+      <span class="alert-icon">ℹ</span>
+      <div class="alert-body">
+        <div class="alert-title">Irrigation maintenance scheduled</div>
+        <div class="alert-text">Water will be shut off in Field 3 tomorrow from 6–8am.</div>
+      </div>
+      <button class="alert-dismiss" aria-label="Dismiss alert">&times;</button>
+    </div>
+  </div>
+  <button class="restore" id="restoreBtn" hidden>Restore alerts</button>
+</main>
+<script src="script.js"></script>
