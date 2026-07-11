@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="style.css">
+<main class="demo">
+  <section class="stage">
+    <button class="open-btn" id="openBtn">
+      Open field command
+      <kbd class="kbd-hint"><span>⌘</span><span>K</span></kbd>
+    </button>
+    <p class="hint">Or press Cmd/Ctrl + K anywhere on this page.</p>
+  </section>
+
+  <div class="palette-overlay" id="overlay" hidden>
+    <div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Command palette">
+      <div class="palette-input-row">
+        <span class="palette-icon">🔍</span>
+        <input type="text" class="palette-input" id="paletteInput" placeholder="Search fields, tools, journal entries…" autocomplete="off" spellcheck="false">
+        <kbd class="esc-hint">esc</kbd>
+      </div>
+      <ul class="palette-list" id="paletteList"></ul>
+      <p class="palette-empty" id="paletteEmpty" hidden>No matches in the field.</p>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
