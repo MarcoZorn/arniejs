@@ -1,0 +1,66 @@
+<!-- description: A billing history row with date, description, amount, and a download-invoice icon button. -->
+<!-- category: ui -->
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Billing history</h1>
+  <p class="stage__sub">Invoices for your workspace subscription.</p>
+
+  <div class="billing-list">
+    <div class="billing-row">
+      <div class="billing-row__date">
+        <span class="billing-row__month">Jun</span>
+        <span class="billing-row__day">01</span>
+      </div>
+      <div class="billing-row__text">
+        <span class="billing-row__desc">Pro plan &mdash; monthly</span>
+        <span class="billing-row__meta">Paid via Visa &bull;&bull;&bull;&bull;4242</span>
+      </div>
+      <span class="billing-row__amount">$49.00</span>
+      <button type="button" class="billing-row__download" data-file="invoice-2026-06.pdf" aria-label="Download invoice for June 1, 2026">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8 1.5V10.5M8 10.5L4.5 7M8 10.5L11.5 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 12.5V13.5C2 14.0523 2.44772 14.5 3 14.5H13C13.5523 14.5 14 14.0523 14 13.5V12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="billing-row">
+      <div class="billing-row__date">
+        <span class="billing-row__month">May</span>
+        <span class="billing-row__day">01</span>
+      </div>
+      <div class="billing-row__text">
+        <span class="billing-row__desc">Pro plan &mdash; monthly</span>
+        <span class="billing-row__meta">Paid via Visa &bull;&bull;&bull;&bull;4242</span>
+      </div>
+      <span class="billing-row__amount">$49.00</span>
+      <button type="button" class="billing-row__download" data-file="invoice-2026-05.pdf" aria-label="Download invoice for May 1, 2026">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8 1.5V10.5M8 10.5L4.5 7M8 10.5L11.5 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 12.5V13.5C2 14.0523 2.44772 14.5 3 14.5H13C13.5523 14.5 14 14.0523 14 13.5V12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="billing-row">
+      <div class="billing-row__date">
+        <span class="billing-row__month">Apr</span>
+        <span class="billing-row__day">01</span>
+      </div>
+      <div class="billing-row__text">
+        <span class="billing-row__desc">Pro plan &mdash; monthly</span>
+        <span class="billing-row__meta">Paid via Visa &bull;&bull;&bull;&bull;4242</span>
+      </div>
+      <span class="billing-row__amount">$49.00</span>
+      <button type="button" class="billing-row__download" data-file="invoice-2026-04.pdf" aria-label="Download invoice for April 1, 2026">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8 1.5V10.5M8 10.5L4.5 7M8 10.5L11.5 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 12.5V13.5C2 14.0523 2.44772 14.5 3 14.5H13C13.5523 14.5 14 14.0523 14 13.5V12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <p class="stage__note" id="downloadNote" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
