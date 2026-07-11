@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">OS Menu Bar</h1>
+  <p class="stage__sub">Click a menu to open its dropdown</p>
+
+  <nav class="menubar" id="menubar">
+    <span class="menubar__brand">&#127793;</span>
+
+    <div class="menu">
+      <button class="menu__trigger" type="button" aria-haspopup="true" aria-expanded="false">File</button>
+      <ul class="menu__dropdown" role="menu">
+        <li role="none"><button class="menu__item" role="menuitem" type="button">New Window</button></li>
+        <li role="none"><button class="menu__item" role="menuitem" type="button">Open&hellip;</button></li>
+        <li role="none"><hr class="menu__divider"></li>
+        <li role="none"><button class="menu__item" role="menuitem" type="button">Close</button></li>
+      </ul>
+    </div>
+
+    <div class="menu">
+      <button class="menu__trigger" type="button" aria-haspopup="true" aria-expanded="false">Edit</button>
+      <ul class="menu__dropdown" role="menu">
+        <li role="none"><button class="menu__item" role="menuitem" type="button">Undo</button></li>
+        <li role="none"><button class="menu__item" role="menuitem" type="button">Redo</button></li>
+        <li role="none"><hr class="menu__divider"></li>
+        <li role="none"><button class="menu__item" role="menuitem" type="button">Cut</button></li>
+        <li role="none"><button class="menu__item" role="menuitem" type="button">Copy</button></li>
+        <li role="none"><button class="menu__item" role="menuitem" type="button">Paste</button></li>
+      </ul>
+    </div>
+
+    <div class="menu">
+      <button class="menu__trigger" type="button" aria-haspopup="true" aria-expanded="false">View</button>
+      <ul class="menu__dropdown" role="menu">
+        <li role="none"><button class="menu__item" role="menuitem" type="button">Zoom In</button></li>
+        <li role="none"><button class="menu__item" role="menuitem" type="button">Zoom Out</button></li>
+        <li role="none"><button class="menu__item" role="menuitem" type="button">Full Screen</button></li>
+      </ul>
+    </div>
+
+    <span class="menubar__clock" id="menubarClock">9:41 AM</span>
+  </nav>
+</main>
+<script src="script.js"></script>
