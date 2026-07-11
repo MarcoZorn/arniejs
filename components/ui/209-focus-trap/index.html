@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="style.css">
+<main class="stage">
+  <h1 class="stage__title">Focus Trap</h1>
+  <p class="stage__sub">Tab and Shift+Tab cycle only within the open modal</p>
+
+  <div class="launcher">
+    <button type="button" class="btn" id="openModal">Open modal</button>
+    <a class="decoy-link" href="#" data-decoy>A link outside the modal (should stay unreachable while open)</a>
+  </div>
+
+  <div class="overlay" id="overlay" hidden>
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+      <h2 class="modal__title" id="modalTitle">Newsletter signup</h2>
+      <p class="modal__sub">Focus is trapped here until you close this dialog.</p>
+
+      <label class="field">
+        <span class="field__label">Name</span>
+        <input class="field__input" type="text" name="name" autocomplete="off">
+      </label>
+
+      <label class="field">
+        <span class="field__label">Email</span>
+        <input class="field__input" type="email" name="email" autocomplete="off">
+      </label>
+
+      <div class="modal__actions">
+        <button type="button" class="btn btn--ghost" id="cancelModal">Cancel</button>
+        <button type="button" class="btn" id="confirmModal">Subscribe</button>
+      </div>
+
+      <button type="button" class="modal__close" id="closeModal" aria-label="Close dialog">&times;</button>
+    </div>
+  </div>
+
+  <p class="footnote" id="statusLine" aria-live="polite">Press Escape or click Cancel to close. Focus returns to the button that opened it.</p>
+</main>
+<script src="script.js"></script>
