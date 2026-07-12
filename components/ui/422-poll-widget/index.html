@@ -1,0 +1,59 @@
+<!doctype html>
+<!-- description: One quiet vote, added to a bed of others — change your mind any time before the season ends. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Poll Widget — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="poll-wrap">
+  <p class="poll-hint">One quiet vote, added to a bed of others — change your mind any time before the season ends.</p>
+
+  <section class="poll-card">
+    <p class="poll-eyebrow">Community poll</p>
+    <h1 class="poll-question">What should we plant in the community plot next spring?</h1>
+
+    <div class="poll-options" role="radiogroup" aria-label="Poll options">
+      <button type="button" class="poll-option" data-option="tomatoes" role="radio" aria-checked="false">
+        <span class="poll-option-fill"></span>
+        <span class="poll-option-row">
+          <span class="poll-option-marker" aria-hidden="true"></span>
+          <span class="poll-option-label">Heirloom tomatoes</span>
+          <span class="poll-option-pct"></span>
+        </span>
+      </button>
+      <button type="button" class="poll-option" data-option="squash" role="radio" aria-checked="false">
+        <span class="poll-option-fill"></span>
+        <span class="poll-option-row">
+          <span class="poll-option-marker" aria-hidden="true"></span>
+          <span class="poll-option-label">Winter squash</span>
+          <span class="poll-option-pct"></span>
+        </span>
+      </button>
+      <button type="button" class="poll-option" data-option="beans" role="radio" aria-checked="false">
+        <span class="poll-option-fill"></span>
+        <span class="poll-option-row">
+          <span class="poll-option-marker" aria-hidden="true"></span>
+          <span class="poll-option-label">Climbing beans</span>
+          <span class="poll-option-pct"></span>
+        </span>
+      </button>
+      <button type="button" class="poll-option" data-option="herbs" role="radio" aria-checked="false">
+        <span class="poll-option-fill"></span>
+        <span class="poll-option-row">
+          <span class="poll-option-marker" aria-hidden="true"></span>
+          <span class="poll-option-label">Mixed herb border</span>
+          <span class="poll-option-pct"></span>
+        </span>
+      </button>
+    </div>
+
+    <p class="poll-footer"><span class="poll-total-votes">42</span> votes · <span class="poll-status" role="status" aria-live="polite">tap an option to vote</span></p>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

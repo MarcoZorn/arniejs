@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- description: Type a hex code, use the native picker, or tap a preset — every path stays perfectly in sync. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Color Input Swatch — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="cs-wrap">
+  <div class="cs-card">
+    <p class="cs-eyebrow">Paint the label</p>
+    <h1 class="cs-title">Pick a color for this seed packet</h1>
+    <p class="cs-desc">Type a hex code, use the native picker, or tap a preset — every path stays perfectly in sync.</p>
+
+    <div class="cs-row">
+      <div class="cs-swatch-block">
+        <div class="cs-swatch" data-swatch></div>
+        <input class="cs-native" type="color" value="#c4622d" aria-label="Native color picker">
+      </div>
+
+      <div class="cs-input-block">
+        <label class="cs-label" for="cs-hex">Hex value</label>
+        <input class="cs-hex" id="cs-hex" type="text" value="#c4622d" spellcheck="false" maxlength="7" autocomplete="off">
+        <p class="cs-error" role="alert"></p>
+      </div>
+    </div>
+
+    <p class="cs-presets-label">Presets</p>
+    <div class="cs-presets" role="group" aria-label="Preset colors">
+      <button class="cs-preset" type="button" style="--swatch:#c4622d" data-color="#c4622d" aria-label="Terra"></button>
+      <button class="cs-preset" type="button" style="--swatch:#5a7a3a" data-color="#5a7a3a" aria-label="Moss"></button>
+      <button class="cs-preset" type="button" style="--swatch:#8fa86e" data-color="#8fa86e" aria-label="Sage"></button>
+      <button class="cs-preset" type="button" style="--swatch:#9b6b3a" data-color="#9b6b3a" aria-label="Clay"></button>
+      <button class="cs-preset" type="button" style="--swatch:#d4a85a" data-color="#d4a85a" aria-label="Sand"></button>
+      <button class="cs-preset" type="button" style="--swatch:#a03820" data-color="#a03820" aria-label="Rust"></button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

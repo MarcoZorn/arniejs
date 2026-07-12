@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  background: var(--bg-deep);
+  font-family: 'Syne', sans-serif;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.htab-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 72px 24px 120px;
+}
+
+.htab-intro {
+  margin-bottom: 36px;
+}
+
+.htab-eyebrow {
+  margin: 0 0 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-rust);
+}
+
+.htab-title {
+  margin: 0 0 14px;
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.htab-tagline {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 54ch;
+}
+
+.htab-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.htab-list {
+  display: flex;
+  border-bottom: 1px solid var(--border-light);
+  overflow-x: auto;
+}
+
+.htab-tab {
+  flex: 1;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 16px 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.htab-tab:hover {
+  color: var(--text-primary);
+  background: var(--bg-subtle);
+}
+
+.htab-tab[aria-selected="true"] {
+  color: var(--accent-rust);
+  border-bottom-color: var(--accent-rust);
+  background: var(--bg-surface);
+}
+
+.htab-tab:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: -2px;
+}
+
+.htab-panels {
+  padding: 28px 26px 32px;
+}
+
+.htab-panel[hidden] {
+  display: none;
+}
+
+.htab-panel h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.htab-panel p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.htab-panel:focus-visible {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<!-- description: Tap any message to see exactly when it was planted. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chat Bubble List — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="bubbles-wrap">
+  <div class="bubbles-card">
+    <div class="bubbles-header">
+      <div class="bubbles-avatar" style="--av-bg:#9b6b3a">RS</div>
+      <div class="bubbles-header-text">
+        <span class="bubbles-name">Rosa Iturbide</span>
+        <span class="bubbles-status">online</span>
+      </div>
+    </div>
+    <p class="bubbles-hint">Tap any message to see exactly when it was planted.</p>
+
+    <div class="bubbles-list" id="bubblesList" role="log" aria-label="Conversation">
+      <div class="bubble-row bubble-row--them">
+        <div class="bubbles-avatar bubbles-avatar--sm" style="--av-bg:#9b6b3a">RS</div>
+        <div class="bubble bubble--them" data-time="Mon, 9:02 AM">
+          <p class="bubble-text">morning! did you get a chance to look at the plot layout I sent over?</p>
+          <span class="bubble-time">9:02 AM</span>
+        </div>
+      </div>
+
+      <div class="bubble-row bubble-row--me">
+        <div class="bubble bubble--me" data-time="Mon, 9:14 AM">
+          <p class="bubble-text">yes! it's really good, just think the north bed needs more shade cover</p>
+          <span class="bubble-time">9:14 AM</span>
+        </div>
+      </div>
+
+      <div class="bubble-row bubble-row--me">
+        <div class="bubble bubble--me" data-time="Mon, 9:15 AM">
+          <p class="bubble-text">otherwise ready to start marking it out this weekend</p>
+          <span class="bubble-time">9:15 AM</span>
+        </div>
+      </div>
+
+      <div class="bubble-row bubble-row--them">
+        <div class="bubbles-avatar bubbles-avatar--sm" style="--av-bg:#9b6b3a">RS</div>
+        <div class="bubble bubble--them" data-time="Mon, 9:20 AM">
+          <p class="bubble-text">good catch, I'll sketch a shade line before Saturday</p>
+          <span class="bubble-time">9:20 AM</span>
+        </div>
+      </div>
+
+      <div class="bubble-row bubble-row--them">
+        <div class="bubbles-avatar bubbles-avatar--sm" style="--av-bg:#9b6b3a">RS</div>
+        <div class="bubble bubble--them" data-time="Mon, 9:21 AM">
+          <p class="bubble-text">also bringing the soil probe this time, forgot it last week</p>
+          <span class="bubble-time">9:21 AM</span>
+        </div>
+      </div>
+
+      <div class="bubble-row bubble-row--me">
+        <div class="bubble bubble--me" data-time="Mon, 11:47 AM">
+          <p class="bubble-text">perfect, see you at 9?</p>
+          <span class="bubble-time">11:47 AM</span>
+        </div>
+      </div>
+
+      <div class="bubble-row bubble-row--them">
+        <div class="bubbles-avatar bubbles-avatar--sm" style="--av-bg:#9b6b3a">RS</div>
+        <div class="bubble bubble--them" data-time="Mon, 11:52 AM">
+          <p class="bubble-text">works for me, bringing coffee too</p>
+          <span class="bubble-time">11:52 AM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

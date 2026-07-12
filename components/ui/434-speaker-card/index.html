@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- description: A short introduction — press for the fuller story behind the talk. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Speaker Card — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="speaker-wrap">
+  <p class="speaker-hint">A short introduction — press for the fuller story behind the talk.</p>
+
+  <article class="speaker-card">
+    <button class="speaker-toggle" type="button" id="speakerToggle" aria-expanded="false" aria-controls="speakerBio">
+      <span class="speaker-avatar" style="background: var(--accent-moss);" aria-hidden="true">RM</span>
+      <span class="speaker-info">
+        <span class="speaker-name">Renata Marlow</span>
+        <span class="speaker-role">Lead Agronomist, Fieldwork Collective</span>
+        <span class="speaker-talk-chip">Rethinking Soil at Scale</span>
+      </span>
+      <span class="speaker-chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </span>
+    </button>
+
+    <div class="speaker-bio" id="speakerBio">
+      <div class="speaker-bio-inner">
+        <p>Renata has spent the last twelve years studying regenerative soil practices across three continents, helping cooperatives cut fertilizer costs while doubling yield resilience. Her talk unpacks the data behind slow, patient ground work.</p>
+      </div>
+    </div>
+  </article>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

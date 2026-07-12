@@ -1,0 +1,90 @@
+<!doctype html>
+<!-- description: Tend a few beds at once — select the ones ready to move, then act on all of them together. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bulk Action Bar — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="bulk-demo">
+  <p class="bulk-tagline">Tend a few beds at once — select the ones ready to move, then act on all of them together.</p>
+
+  <div class="bulk-list-card">
+    <div class="bulk-row bulk-row--header">
+      <label class="bulk-check-wrap">
+        <input type="checkbox" id="bulkSelectAll" class="bulk-check">
+        <span class="bulk-check-box" aria-hidden="true"></span>
+        <span>Select all</span>
+      </label>
+      <span class="bulk-header-label">Bed</span>
+    </div>
+
+    <ul class="bulk-list" id="bulkList">
+      <li class="bulk-row" data-item>
+        <label class="bulk-check-wrap">
+          <input type="checkbox" class="bulk-check">
+          <span class="bulk-check-box" aria-hidden="true"></span>
+          <span>Tomato bed A3</span>
+        </label>
+        <span class="bulk-meta">Ready</span>
+      </li>
+      <li class="bulk-row" data-item>
+        <label class="bulk-check-wrap">
+          <input type="checkbox" class="bulk-check">
+          <span class="bulk-check-box" aria-hidden="true"></span>
+          <span>Squash bed B1</span>
+        </label>
+        <span class="bulk-meta">Growing</span>
+      </li>
+      <li class="bulk-row" data-item>
+        <label class="bulk-check-wrap">
+          <input type="checkbox" class="bulk-check">
+          <span class="bulk-check-box" aria-hidden="true"></span>
+          <span>Herb bed C4</span>
+        </label>
+        <span class="bulk-meta">Ready</span>
+      </li>
+      <li class="bulk-row" data-item>
+        <label class="bulk-check-wrap">
+          <input type="checkbox" class="bulk-check">
+          <span class="bulk-check-box" aria-hidden="true"></span>
+          <span>Root bed D2</span>
+        </label>
+        <span class="bulk-meta">Dormant</span>
+      </li>
+      <li class="bulk-row" data-item>
+        <label class="bulk-check-wrap">
+          <input type="checkbox" class="bulk-check">
+          <span class="bulk-check-box" aria-hidden="true"></span>
+          <span>Flower bed E5</span>
+        </label>
+        <span class="bulk-meta">Ready</span>
+      </li>
+      <li class="bulk-row" data-item>
+        <label class="bulk-check-wrap">
+          <input type="checkbox" class="bulk-check">
+          <span class="bulk-check-box" aria-hidden="true"></span>
+          <span>Berry bed F1</span>
+        </label>
+        <span class="bulk-meta">Growing</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="bulk-bar" id="bulkBar" role="toolbar" aria-label="Bulk actions">
+    <span class="bulk-bar-count" id="bulkCount">0 items selected</span>
+    <div class="bulk-bar-actions">
+      <button class="bulk-bar-btn" type="button" data-action="Archive">Archive</button>
+      <button class="bulk-bar-btn" type="button" data-action="Export">Export</button>
+      <button class="bulk-bar-btn bulk-bar-btn--danger" type="button" data-action="Delete">Delete</button>
+    </div>
+  </div>
+
+  <p class="bulk-status" id="bulkStatus" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

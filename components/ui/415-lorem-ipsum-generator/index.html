@@ -1,0 +1,45 @@
+<!doctype html>
+<!-- description: Fill your layout with placeholder text grown fresh, not the same stale paragraph everyone copies. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lorem Ipsum Generator — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="lrm-wrap">
+  <p class="lrm-tagline">Fill your layout with placeholder text grown fresh, not the same stale paragraph everyone copies.</p>
+
+  <div class="lrm-controls">
+    <div class="lrm-control">
+      <label for="lrm-paragraphs">Paragraphs</label>
+      <div class="lrm-stepper">
+        <button type="button" class="lrm-step" data-target="lrm-paragraphs" data-dir="-1" aria-label="Decrease paragraphs">−</button>
+        <input type="number" id="lrm-paragraphs" min="1" max="20" value="3">
+        <button type="button" class="lrm-step" data-target="lrm-paragraphs" data-dir="1" aria-label="Increase paragraphs">+</button>
+      </div>
+    </div>
+    <div class="lrm-control">
+      <label for="lrm-words">Words / paragraph</label>
+      <div class="lrm-stepper">
+        <button type="button" class="lrm-step" data-target="lrm-words" data-dir="-1" aria-label="Decrease words">−</button>
+        <input type="number" id="lrm-words" min="5" max="200" value="40">
+        <button type="button" class="lrm-step" data-target="lrm-words" data-dir="1" aria-label="Increase words">+</button>
+      </div>
+    </div>
+    <button type="button" class="lrm-generate" id="lrm-generate">Generate</button>
+  </div>
+
+  <div class="lrm-output-head">
+    <span class="lrm-label">Output</span>
+    <button type="button" class="lrm-copy" id="lrm-copy">Copy</button>
+    <span class="lrm-confirm" id="lrm-confirm" aria-live="polite"></span>
+  </div>
+
+  <div class="lrm-output" id="lrm-output" aria-live="polite"></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

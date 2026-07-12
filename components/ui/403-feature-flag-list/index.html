@@ -1,0 +1,30 @@
+<!doctype html>
+<!-- description: Every flag is a seed you've planted early — some ready to open to everyone, some still best kept to a small bed. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Feature Flag List — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="ffl-wrap">
+  <p class="ffl-sub">Every flag is a seed you've planted early — some ready to open to everyone, some still best kept to a small bed.</p>
+
+  <h1 class="ffl-heading">Feature flags</h1>
+
+  <div class="ffl-summary" id="fflSummary" role="status" aria-live="polite">
+    <span id="fflCount">0 of 0 flags enabled</span>
+  </div>
+
+  <ul class="ffl-list" id="fflList"></ul>
+
+  <div class="ffl-preview">
+    <p class="ffl-preview-label">Current state</p>
+    <pre class="ffl-json" id="fflJson"></pre>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

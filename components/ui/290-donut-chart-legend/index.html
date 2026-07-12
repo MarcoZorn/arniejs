@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- description: Square footage by crop family — point at a wedge or a label and the other lights up to match. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Donut Chart with Legend — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="dcl-wrap">
+  <div class="dcl-intro">
+    <p class="dcl-eyebrow">Plot allocation</p>
+    <h1 class="dcl-title">What's actually growing in the garden this season</h1>
+    <p class="dcl-sub">Square footage by crop family — point at a wedge or a label and the other lights up to match.</p>
+  </div>
+
+  <div class="dcl-panel">
+    <div class="dcl-chart">
+      <svg class="dcl-svg" viewBox="0 0 200 200" width="100%" height="100%">
+        <g class="dcl-segments" data-segments></g>
+      </svg>
+      <div class="dcl-center">
+        <span class="dcl-center-value" data-center-value>—</span>
+        <span class="dcl-center-label" data-center-label>hover a segment</span>
+      </div>
+    </div>
+
+    <ul class="dcl-legend" data-legend></ul>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

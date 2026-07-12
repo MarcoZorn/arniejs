@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- description:  -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Forgot Password Form — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="fp-wrap">
+  <div class="fp-card">
+
+    <div class="fp-panel" id="fpRequestPanel">
+      <div class="fp-icon fp-icon--key" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="7.5" cy="15.5" r="5.5"></circle>
+          <path d="M11 11 20 2m-3 3 2.5 2.5M15 6l2.5 2.5"></path>
+        </svg>
+      </div>
+      <h1 class="fp-title">Reset your password</h1>
+      <p class="fp-hint">Tell us the email on your account and we’ll send a link to set a new password.</p>
+
+      <form class="fp-form" id="fpForm" novalidate>
+        <div class="fp-field">
+          <label class="fp-label" for="fpEmail">Email address</label>
+          <input class="fp-input" type="text" id="fpEmail" name="email" autocomplete="email" placeholder="you@example.com">
+          <p class="fp-error" id="fpEmailError" role="alert"></p>
+        </div>
+
+        <button class="fp-submit" type="submit" id="fpSubmit">
+          <span id="fpSubmitLabel">Send reset link</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="fp-panel fp-panel--confirm" id="fpConfirmPanel" hidden>
+      <div class="fp-icon fp-icon--mail" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+          <path d="m2 6 10 7L22 6"></path>
+        </svg>
+      </div>
+      <h1 class="fp-title">Check your email</h1>
+      <p class="fp-hint">We sent a reset link to <strong class="fp-sent-email" id="fpSentEmail"></strong>. Follow it to choose a new password.</p>
+      <p class="fp-fine">Didn’t get it? Check your spam folder, or try again with a different address.</p>
+      <button class="fp-back" type="button" id="fpBackBtn">Use a different email</button>
+    </div>
+
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

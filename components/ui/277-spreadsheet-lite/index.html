@@ -1,0 +1,30 @@
+<!doctype html>
+<!-- description: Click any cell and type. Use the arrow keys to move around, Enter to drop down a row, and Tab to move across — values stay put as you go. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spreadsheet Lite — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sslt-wrap">
+  <div class="sslt-intro">
+    <p class="sslt-eyebrow">Field notebook</p>
+    <h1 class="sslt-title">A small grid for quick tallies</h1>
+    <p class="sslt-desc">Click any cell and type. Use the arrow keys to move around, Enter to drop down a row, and Tab to move across — values stay put as you go.</p>
+  </div>
+
+  <div class="sslt-toolbar">
+    <button class="sslt-btn" type="button" id="sslt-clear">Clear grid</button>
+    <p class="sslt-hint" id="sslt-active-cell">Cell A1</p>
+  </div>
+
+  <div class="sslt-grid-wrap">
+    <div class="sslt-grid" id="sslt-grid" role="grid" aria-label="Editable spreadsheet, 6 columns by 10 rows"></div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

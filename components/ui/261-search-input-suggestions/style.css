@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-deep);
+  font-family: 'Syne', sans-serif;
+  color: var(--text-primary);
+  padding: 64px 20px;
+}
+
+.seek-wrap {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.seek-intro {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.seek-eyebrow {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-sage);
+}
+
+.seek-title {
+  margin: 0 0 12px;
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.seek-sub {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.seek-box {
+  position: relative;
+}
+
+.seek-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--bg-card);
+  border: 2px solid var(--border-light);
+  border-radius: 999px;
+  padding: 4px 6px 4px 20px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.seek-field:focus-within {
+  border-color: var(--accent-sage);
+  box-shadow: 0 0 0 4px rgba(143, 168, 110, 0.16);
+}
+
+.seek-icon {
+  flex: none;
+  color: var(--text-faint);
+}
+
+.seek-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--text-primary);
+  padding: 14px 12px;
+  min-width: 0;
+}
+
+.seek-input::placeholder {
+  color: var(--text-faint);
+}
+
+.seek-clear {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.seek-clear:hover {
+  background: var(--accent-rust);
+  color: var(--text-primary);
+}
+
+.seek-listbox {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  max-height: 320px;
+  overflow-y: auto;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.seek-option {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-size: 15px;
+  transition: background-color 0.12s ease;
+}
+
+.seek-option mark {
+  background: transparent;
+  color: var(--accent-sand);
+  font-weight: 700;
+  padding: 0;
+}
+
+.seek-option-tag {
+  flex: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.seek-option:hover,
+.seek-option.is-active {
+  background: var(--bg-subtle);
+}
+
+.seek-option.is-active .seek-option-tag {
+  color: var(--accent-sage);
+}
+
+.seek-empty {
+  padding: 18px 14px;
+  color: var(--text-muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+.seek-status {
+  min-height: 20px;
+  margin: 14px 0 0;
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--accent-sand);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

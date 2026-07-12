@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.apichart-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+}
+
+.apichart-card {
+  width: 100%;
+  max-width: 620px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 30px 34px 24px;
+}
+
+.apichart-title {
+  margin: 0 0 6px;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.apichart-desc {
+  margin: 0 0 28px;
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.apichart-plot {
+  position: relative;
+  height: 200px;
+}
+
+.apichart-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  height: 100%;
+}
+
+.apichart-bar-col {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.apichart-bar {
+  width: 100%;
+  border-radius: 6px 6px 2px 2px;
+  background: var(--accent-clay);
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  border: none;
+  padding: 0;
+  display: block;
+  font: inherit;
+}
+
+.apichart-bar:hover,
+.apichart-bar:focus-visible,
+.apichart-bar.is-active {
+  background: var(--accent-sand);
+  transform: scaleY(1.01);
+  box-shadow: 0 0 0 2px rgba(212, 168, 90, 0.25);
+}
+
+.apichart-bar:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 2px;
+}
+
+.apichart-axis {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.apichart-axis-label {
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-faint);
+  font-weight: 600;
+}
+
+.apichart-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  transform: translate(-50%, -10px);
+  background: var(--bg-deep);
+  border: 1px solid var(--accent-sand);
+  color: var(--text-primary);
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s ease, transform 0.12s ease;
+  z-index: 5;
+}
+
+.apichart-tooltip .apichart-tooltip-sub {
+  display: block;
+  font-weight: 500;
+  color: var(--text-muted);
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.apichart-tooltip.is-visible {
+  opacity: 1;
+  transform: translate(-50%, -14px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

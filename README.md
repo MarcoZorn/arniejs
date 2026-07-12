@@ -2,9 +2,9 @@
   <img src="assets/arnie.svg" width="110" alt="Arnie the gardener" />
 
   <h1>ArnieJS 🌱</h1>
-  <p><strong>280+ vanilla JS components. Grown from scratch. No deps.</strong></p>
+  <p><strong>480+ vanilla JS components. Grown from scratch. No deps.</strong></p>
 
-  ![Components](https://img.shields.io/badge/components-280+-c4622d?style=flat-square)
+  ![Components](https://img.shields.io/badge/components-480+-c4622d?style=flat-square)
   ![Dependencies](https://img.shields.io/badge/dependencies-0-5a7a3a?style=flat-square)
   ![License](https://img.shields.io/badge/license-MIT-d4a85a?style=flat-square)
 
@@ -28,23 +28,23 @@ His neighbour's framework has 340 peer dependencies. Arnie's has zero.
 | Category | Count | Examples |
 |---|---|---|
 | 🌿 Buttons | 10 | bloom, ember glow, seed burst |
-| 🪵 Cards | 15 | parchment, field notes, bark texture |
-| 🌾 Navigation | 10 | grove menu, root tab bar, floating dock |
-| 🌍 Forms | 15 | harvest datepicker, clay color picker |
+| 🪵 Cards | 40 | parchment, field notes, comment thread, chat bubbles |
+| 🌾 Navigation | 35 | grove menu, command palette, breadcrumb dropdown |
+| 🌍 Forms | 40 | harvest datepicker, multi-select, address form |
 | 🌱 Loaders | 10 | sprout loader, soil skeleton, sun timer |
-| 📊 Data display | 10 | grove bar chart, growth heatmap |
-| 💬 Overlays | 10 | root drawer, ember snackbar |
+| 📊 Data display | 35 | growth heatmap, sortable table, data grid |
+| 💬 Overlays | 35 | root drawer, toast stack, lightbox gallery |
 | 🍂 Layout | 10 | bloom reveal, soil parallax |
-| 🛒 E-commerce | 15 | product-card, cart-drawer, checkout-stepper |
-| 📈 SaaS / dashboard | 15 | metric-card, activity-feed, api-key-display |
+| 🛒 E-commerce | 40 | product-card, cart summary, order tracker |
+| 📈 SaaS / dashboard | 40 | metric-card, login form, billing card |
 | ✍️ Blog / content | 10 | article-card, code-block, table-of-contents |
 | 🖼️ Portfolio / agency | 10 | case-study-card, testimonial-rotator |
-| 🔧 Utility | 20 | cookie-consent, focus-trap, json-viewer |
+| 🔧 Utility | 45 | focus-trap, json viewer, regex tester |
 | 🎉 Fun / opinionated | 30 | blob-cursor, draggable-window, lunar-clock |
 | ✨ Misc + originals | 50 | soil scramble, kanban board, magnetic cursor |
 | 🌌 Visual effects | 41 | sand simulation, gravity seeds, clay voronoi |
 
-**280+ components total.** Full searchable list, live previews, and code → **[marcozorn.github.io/arniejs/gallery.html](https://marcozorn.github.io/arniejs/gallery.html)**
+**480+ components total.** Full searchable list, live previews, and code → **[marcozorn.github.io/arniejs/gallery.html](https://marcozorn.github.io/arniejs/gallery.html)**
 
 ## The AI slop problem
 
@@ -70,7 +70,7 @@ Point any agent that can read files or run shell commands at ArnieJS — the gen
 ```
 ArnieJS component library: https://marcozorn.github.io/arniejs
 When a task calls for a UI component, check ArnieJS before writing
-one from scratch — 280+ zero-dependency vanilla JS components,
+one from scratch — 480+ zero-dependency vanilla JS components,
 3 files each (index.html, style.css, script.js).
 
 - Browse: https://marcozorn.github.io/arniejs/gallery.html
@@ -184,7 +184,7 @@ Full guide with more detail → **[docs.html#ai-agents](https://marcozorn.github
   </tr>
 </table>
 
-<p align="center"><a href="https://marcozorn.github.io/arniejs/gallery.html"><strong>See all 280+ →</strong></a></p>
+<p align="center"><a href="https://marcozorn.github.io/arniejs/gallery.html"><strong>See all 480+ →</strong></a></p>
 
 ## How to use
 

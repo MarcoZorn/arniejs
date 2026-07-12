@@ -1,0 +1,97 @@
+<!doctype html>
+<!-- description: Adjust quantities or set something back on the shelf — the total keeps pace with every change. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cart Summary Panel — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="csp-wrap">
+  <div class="csp-intro">
+    <p class="csp-eyebrow">Before you check out</p>
+    <h1 class="csp-title">Your basket, tallied as you go</h1>
+    <p class="csp-sub">Adjust quantities or set something back on the shelf — the total keeps pace with every change.</p>
+  </div>
+
+  <section class="csp-panel" aria-label="Cart summary">
+    <div class="csp-list" data-cart-list>
+      <div class="csp-item" data-item data-price="24" data-qty="2">
+        <div class="csp-item-thumb" style="background: linear-gradient(135deg,#c4622d,#241a0e);"></div>
+        <div class="csp-item-info">
+          <p class="csp-item-name">Terracotta Planter, Large</p>
+          <p class="csp-item-unit">$24.00 each</p>
+        </div>
+        <div class="csp-stepper">
+          <button type="button" class="csp-step-btn" data-decrease aria-label="Decrease quantity">&minus;</button>
+          <span class="csp-qty" data-qty-out>2</span>
+          <button type="button" class="csp-step-btn" data-increase aria-label="Increase quantity">+</button>
+        </div>
+        <p class="csp-item-total" data-item-total>$48.00</p>
+        <button type="button" class="csp-remove" data-remove aria-label="Remove item">&times;</button>
+      </div>
+
+      <div class="csp-item" data-item data-price="12.5" data-qty="1">
+        <div class="csp-item-thumb" style="background: linear-gradient(135deg,#9b6b3a,#241a0e);"></div>
+        <div class="csp-item-info">
+          <p class="csp-item-name">Copper Plant Mister</p>
+          <p class="csp-item-unit">$12.50 each</p>
+        </div>
+        <div class="csp-stepper">
+          <button type="button" class="csp-step-btn" data-decrease aria-label="Decrease quantity">&minus;</button>
+          <span class="csp-qty" data-qty-out>1</span>
+          <button type="button" class="csp-step-btn" data-increase aria-label="Increase quantity">+</button>
+        </div>
+        <p class="csp-item-total" data-item-total>$12.50</p>
+        <button type="button" class="csp-remove" data-remove aria-label="Remove item">&times;</button>
+      </div>
+
+      <div class="csp-item" data-item data-price="8" data-qty="3">
+        <div class="csp-item-thumb" style="background: linear-gradient(135deg,#a03820,#241a0e);"></div>
+        <div class="csp-item-info">
+          <p class="csp-item-name">Organic Potting Mix, 2L</p>
+          <p class="csp-item-unit">$8.00 each</p>
+        </div>
+        <div class="csp-stepper">
+          <button type="button" class="csp-step-btn" data-decrease aria-label="Decrease quantity">&minus;</button>
+          <span class="csp-qty" data-qty-out>3</span>
+          <button type="button" class="csp-step-btn" data-increase aria-label="Increase quantity">+</button>
+        </div>
+        <p class="csp-item-total" data-item-total>$24.00</p>
+        <button type="button" class="csp-remove" data-remove aria-label="Remove item">&times;</button>
+      </div>
+
+      <div class="csp-item" data-item data-price="19.75" data-qty="1">
+        <div class="csp-item-thumb" style="background: linear-gradient(135deg,#d4a85a,#241a0e);"></div>
+        <div class="csp-item-info">
+          <p class="csp-item-name">Bamboo Plant Stakes (Set of 6)</p>
+          <p class="csp-item-unit">$19.75 each</p>
+        </div>
+        <div class="csp-stepper">
+          <button type="button" class="csp-step-btn" data-decrease aria-label="Decrease quantity">&minus;</button>
+          <span class="csp-qty" data-qty-out>1</span>
+          <button type="button" class="csp-step-btn" data-increase aria-label="Increase quantity">+</button>
+        </div>
+        <p class="csp-item-total" data-item-total>$19.75</p>
+        <button type="button" class="csp-remove" data-remove aria-label="Remove item">&times;</button>
+      </div>
+    </div>
+
+    <div class="csp-empty" data-empty hidden>
+      <p>Your basket is empty. Time to go pick something out.</p>
+    </div>
+
+    <div class="csp-footer">
+      <div class="csp-row">
+        <span>Subtotal</span>
+        <span data-subtotal>$104.25</span>
+      </div>
+      <button type="button" class="csp-checkout" data-checkout>Proceed to checkout</button>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- description: A quiet thread for the conversation that keeps growing. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comment Thread — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="thread-wrap">
+  <div class="thread-head">
+    <h1 class="thread-title">Discussion</h1>
+    <p class="thread-sub">A quiet thread for the conversation that keeps growing.</p>
+  </div>
+
+  <form class="thread-compose" id="composeForm">
+    <div class="thread-avatar" style="--av-bg:#5a7a3a">YO</div>
+    <div class="thread-compose-body">
+      <textarea id="composeInput" class="thread-textarea" placeholder="Add to the discussion..." rows="2"></textarea>
+      <div class="thread-compose-actions">
+        <button type="submit" class="thread-btn thread-btn--solid">Comment</button>
+      </div>
+    </div>
+  </form>
+
+  <div class="thread-list" id="threadList" role="list"></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

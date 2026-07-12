@@ -1,0 +1,61 @@
+<!doctype html>
+<!-- description: Grab the install line without reaching for the mouse twice — one click and it's in your clipboard. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Copy to Clipboard Badge — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="ccb-wrap">
+  <p class="ccb-sub">Grab the install line without reaching for the mouse twice — one click and it's in your clipboard.</p>
+
+  <div class="ccb-block">
+    <div class="ccb-block-head">
+      <span class="ccb-dot"></span>
+      <span class="ccb-dot"></span>
+      <span class="ccb-dot"></span>
+      <span class="ccb-filename">terminal</span>
+    </div>
+    <div class="ccb-code-row">
+      <pre class="ccb-pre"><code class="ccb-code" id="ccb-snippet-1">npx arniejs-cli add copy-to-clipboard-badge</code></pre>
+      <button class="ccb-copy-btn" type="button" data-target="ccb-snippet-1" aria-label="Copy snippet">
+        <span class="ccb-icon ccb-icon-copy" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </span>
+        <span class="ccb-icon ccb-icon-check" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </span>
+        <span class="ccb-copy-label">Copy</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="ccb-block">
+    <div class="ccb-block-head">
+      <span class="ccb-dot"></span>
+      <span class="ccb-dot"></span>
+      <span class="ccb-dot"></span>
+      <span class="ccb-filename">api-key.env</span>
+    </div>
+    <div class="ccb-code-row">
+      <pre class="ccb-pre"><code class="ccb-code" id="ccb-snippet-2">ARNIE_API_KEY=sk_live_9f2a7c1e4b8d</code></pre>
+      <button class="ccb-copy-btn" type="button" data-target="ccb-snippet-2" aria-label="Copy snippet">
+        <span class="ccb-icon ccb-icon-copy" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </span>
+        <span class="ccb-icon ccb-icon-check" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </span>
+        <span class="ccb-copy-label">Copy</span>
+      </button>
+    </div>
+  </div>
+
+  <p class="ccb-status" id="ccb-status" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

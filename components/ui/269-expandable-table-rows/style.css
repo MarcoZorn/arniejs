@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.exp-tbl-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 20px 80px;
+}
+
+.exp-tbl-eyebrow {
+  margin: 0 0 10px;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-sage);
+}
+
+.exp-tbl-title {
+  margin: 0 0 10px;
+  font-size: clamp(24px, 3.4vw, 32px);
+  font-weight: 800;
+}
+
+.exp-tbl-tagline {
+  margin: 0 0 28px;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 540px;
+}
+
+.exp-tbl-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  font-size: 14.5px;
+}
+
+.exp-tbl-table thead th {
+  text-align: left;
+  padding: 0 16px 8px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.exp-tbl-th-chevron {
+  width: 40px;
+}
+
+.exp-tbl-row {
+  cursor: pointer;
+  background: var(--bg-card);
+}
+
+.exp-tbl-row td {
+  padding: 15px 16px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.exp-tbl-row td:first-child {
+  border-left: 1px solid var(--border);
+  border-radius: 12px 0 0 12px;
+}
+
+.exp-tbl-row td:last-child {
+  border-right: 1px solid var(--border);
+  border-radius: 0 12px 12px 0;
+}
+
+.exp-tbl-row:hover {
+  background: var(--bg-subtle);
+}
+
+.exp-tbl-row[aria-expanded="true"] {
+  background: var(--bg-subtle);
+}
+
+.exp-tbl-chevron {
+  width: 18px;
+  height: 18px;
+  display: block;
+  transition: transform 0.2s ease;
+  color: var(--text-muted);
+}
+
+.exp-tbl-row[aria-expanded="true"] .exp-tbl-chevron {
+  transform: rotate(90deg);
+  color: var(--accent-sand);
+}
+
+.exp-tbl-status {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.exp-tbl-status[data-status="Healthy"] { background: rgba(90, 122, 58, 0.2); color: var(--accent-sage); }
+.exp-tbl-status[data-status="Watch"] { background: rgba(212, 168, 90, 0.18); color: var(--accent-sand); }
+.exp-tbl-status[data-status="Attention"] { background: rgba(160, 56, 32, 0.18); color: var(--accent-rust); }
+
+.exp-tbl-detail-row td {
+  padding: 0 16px;
+  border: none;
+}
+
+.exp-tbl-detail-inner {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.25s ease;
+  background: var(--bg-surface);
+  border-radius: 0 0 12px 12px;
+  margin-top: -10px;
+}
+
+.exp-tbl-row[aria-expanded="true"] + .exp-tbl-detail-row .exp-tbl-detail-inner {
+  max-height: 220px;
+}
+
+.exp-tbl-detail-content {
+  padding: 18px 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  border-left: 1px solid var(--border-light);
+  border-right: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  border-radius: 0 0 12px 12px;
+}
+
+.exp-tbl-detail-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.exp-tbl-detail-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.exp-tbl-detail-value {
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.exp-tbl-detail-note {
+  grid-column: 1 / -1;
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  padding-top: 4px;
+  border-top: 1px solid var(--border);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

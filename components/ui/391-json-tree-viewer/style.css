@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.jtv-mono {
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+}
+
+.jtv-wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+}
+
+.jtv-intro { margin-bottom: 32px; }
+
+.jtv-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  color: var(--accent-sand);
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+.jtv-title {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  margin: 0 0 12px;
+}
+
+.jtv-sub {
+  color: var(--text-muted);
+  font-size: 15px;
+  max-width: 60ch;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.jtv-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 800px) {
+  .jtv-panel { grid-template-columns: 1fr; }
+}
+
+.jtv-label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.jtv-textarea {
+  width: 100%;
+  min-height: 320px;
+  resize: vertical;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  color: var(--text-primary);
+  padding: 14px;
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.jtv-textarea:focus {
+  outline: none;
+  border-color: var(--accent-sand);
+}
+
+.jtv-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.jtv-btn {
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 8px;
+  padding: 9px 16px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.jtv-btn:hover { border-color: var(--accent-sand); }
+.jtv-btn:active { transform: translateY(1px); }
+
+.jtv-btn--primary {
+  background: var(--accent-moss);
+  border-color: var(--accent-moss);
+  color: #f0e6d3;
+}
+.jtv-btn--primary:hover { background: var(--accent-sage); border-color: var(--accent-sage); }
+
+.jtv-btn--ghost { background: transparent; }
+
+.jtv-error {
+  margin: 12px 0 0;
+  min-height: 18px;
+  font-size: 13px;
+  color: var(--accent-rust);
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+}
+
+.jtv-tree {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 14px;
+  min-height: 320px;
+  max-height: 560px;
+  overflow: auto;
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.jtv-node {
+  margin: 0;
+}
+
+.jtv-node-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  white-space: pre;
+}
+
+.jtv-toggle {
+  background: none;
+  border: none;
+  color: var(--accent-sand);
+  cursor: pointer;
+  width: 16px;
+  flex: none;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.jtv-toggle-spacer {
+  display: inline-block;
+  width: 16px;
+  flex: none;
+}
+
+.jtv-key {
+  color: var(--accent-sage);
+}
+
+.jtv-punct {
+  color: var(--text-faint);
+}
+
+.jtv-type-string { color: var(--accent-terra); }
+.jtv-type-number { color: var(--accent-sand); }
+.jtv-type-boolean { color: var(--accent-clay); }
+.jtv-type-null { color: var(--text-faint); }
+
+.jtv-summary {
+  color: var(--text-faint);
+  cursor: default;
+}
+
+.jtv-children {
+  margin: 0 0 0 16px;
+  padding-left: 10px;
+  border-left: 1px dashed var(--border-light);
+}
+
+.jtv-children[hidden] { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

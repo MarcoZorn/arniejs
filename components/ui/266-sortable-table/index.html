@@ -1,0 +1,69 @@
+<!doctype html>
+<!-- description: Click any column heading to sort the plot list by that measure — click again to flip the order. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sortable Table — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sort-tbl-wrap">
+  <div class="sort-tbl-intro">
+    <p class="sort-tbl-eyebrow">Field inventory</p>
+    <h1 class="sort-tbl-title">Rows that fall into line when you ask them to</h1>
+    <p class="sort-tbl-sub">Click any column heading to sort the plot list by that measure — click again to flip the order.</p>
+  </div>
+
+  <div class="sort-tbl-scroll">
+    <table class="sort-tbl-table">
+      <thead>
+        <tr>
+          <th class="sort-tbl-th" data-key="name" data-type="string" scope="col">
+            <button class="sort-tbl-th-btn" type="button">
+              <span>Plot name</span>
+              <span class="sort-tbl-arrow" aria-hidden="true"></span>
+            </button>
+          </th>
+          <th class="sort-tbl-th" data-key="crop" data-type="string" scope="col">
+            <button class="sort-tbl-th-btn" type="button">
+              <span>Crop</span>
+              <span class="sort-tbl-arrow" aria-hidden="true"></span>
+            </button>
+          </th>
+          <th class="sort-tbl-th" data-key="area" data-type="number" scope="col">
+            <button class="sort-tbl-th-btn" type="button">
+              <span>Area (m²)</span>
+              <span class="sort-tbl-arrow" aria-hidden="true"></span>
+            </button>
+          </th>
+          <th class="sort-tbl-th" data-key="yield" data-type="number" scope="col">
+            <button class="sort-tbl-th-btn" type="button">
+              <span>Yield (kg)</span>
+              <span class="sort-tbl-arrow" aria-hidden="true"></span>
+            </button>
+          </th>
+          <th class="sort-tbl-th" data-key="planted" data-type="date" scope="col">
+            <button class="sort-tbl-th-btn" type="button">
+              <span>Planted</span>
+              <span class="sort-tbl-arrow" aria-hidden="true"></span>
+            </button>
+          </th>
+          <th class="sort-tbl-th" data-key="health" data-type="number" scope="col">
+            <button class="sort-tbl-th-btn" type="button">
+              <span>Health %</span>
+              <span class="sort-tbl-arrow" aria-hidden="true"></span>
+            </button>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="sort-tbl-body"></tbody>
+    </table>
+  </div>
+
+  <p class="sort-tbl-status" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

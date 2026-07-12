@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- description: After a while tending your plot, we like to check in and ask how the season's going. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rating Prompt Modal — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="rp-stage">
+  <p class="rp-tagline">After a while tending your plot, we like to check in and ask how the season's going.</p>
+
+  <button type="button" class="rp-open-btn" id="rpOpenBtn">Open rating prompt</button>
+
+  <div class="rp-overlay" id="rpOverlay" hidden>
+    <div class="rp-modal" role="dialog" aria-modal="true" aria-labelledby="rpTitle" id="rpModal">
+      <h2 class="rp-title" id="rpTitle">Enjoying ArnieJS so far?</h2>
+      <p class="rp-sub">You've been growing things with us a while — mind rating the experience?</p>
+
+      <div class="rp-stars" role="radiogroup" aria-label="Rating, 1 to 5 stars" id="rpStars">
+        <button type="button" class="rp-star" data-value="1" role="radio" aria-checked="false" aria-label="1 star">★</button>
+        <button type="button" class="rp-star" data-value="2" role="radio" aria-checked="false" aria-label="2 stars">★</button>
+        <button type="button" class="rp-star" data-value="3" role="radio" aria-checked="false" aria-label="3 stars">★</button>
+        <button type="button" class="rp-star" data-value="4" role="radio" aria-checked="false" aria-label="4 stars">★</button>
+        <button type="button" class="rp-star" data-value="5" role="radio" aria-checked="false" aria-label="5 stars">★</button>
+      </div>
+
+      <div class="rp-actions">
+        <button type="button" class="rp-later" id="rpLater">Maybe later</button>
+        <button type="button" class="rp-submit" id="rpSubmit" disabled>Submit</button>
+      </div>
+
+      <p class="rp-note" id="rpNote" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

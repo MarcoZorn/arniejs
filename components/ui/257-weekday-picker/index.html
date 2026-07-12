@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- description: Watering schedule -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Weekday Picker — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wd-wrap">
+  <div class="wd-intro">
+    <p class="wd-eyebrow">Watering schedule</p>
+    <h1 class="wd-title">Which days get the watering can?</h1>
+    <p class="wd-hint-text">Tap the days that work, or tab through and press space — the summary below tracks every change.</p>
+  </div>
+
+  <div class="wd-pills" role="group" aria-label="Choose weekdays">
+    <button class="wd-pill" type="button" data-day="Mon" tabindex="0">Mon</button>
+    <button class="wd-pill" type="button" data-day="Tue" tabindex="-1">Tue</button>
+    <button class="wd-pill" type="button" data-day="Wed" tabindex="-1">Wed</button>
+    <button class="wd-pill" type="button" data-day="Thu" tabindex="-1">Thu</button>
+    <button class="wd-pill" type="button" data-day="Fri" tabindex="-1">Fri</button>
+    <button class="wd-pill" type="button" data-day="Sat" tabindex="-1">Sat</button>
+    <button class="wd-pill" type="button" data-day="Sun" tabindex="-1">Sun</button>
+  </div>
+
+  <p class="wd-summary" role="status" aria-live="polite">Selected: none yet</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

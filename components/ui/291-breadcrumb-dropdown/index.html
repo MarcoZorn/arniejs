@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- description: A trail that remembers where you've walked, tucking the middle steps away until you need them. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Breadcrumb Dropdown — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="crumb-wrap">
+  <p class="crumb-hint">A trail that remembers where you've walked, tucking the middle steps away until you need them.</p>
+
+  <nav class="crumb-nav" aria-label="Breadcrumb">
+    <ol class="crumb-list">
+      <li class="crumb-item">
+        <a class="crumb-link" href="#">Greenhouse</a>
+      </li>
+      <li class="crumb-sep" aria-hidden="true">/</li>
+      <li class="crumb-item crumb-item--collapsed">
+        <button
+          type="button"
+          class="crumb-more"
+          id="crumb-more-trigger"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="crumb-more-menu"
+        >
+          <span aria-hidden="true">&hellip;</span>
+          <span class="crumb-more-label">Show hidden crumbs</span>
+        </button>
+        <ul class="crumb-menu" id="crumb-more-menu" role="menu" aria-labelledby="crumb-more-trigger" hidden>
+          <li role="none"><a role="menuitem" class="crumb-menu-link" href="#" tabindex="-1">Beds &amp; Plots</a></li>
+          <li role="none"><a role="menuitem" class="crumb-menu-link" href="#" tabindex="-1">North Wing</a></li>
+          <li role="none"><a role="menuitem" class="crumb-menu-link" href="#" tabindex="-1">Raised Bed 12</a></li>
+        </ul>
+      </li>
+      <li class="crumb-sep" aria-hidden="true">/</li>
+      <li class="crumb-item">
+        <a class="crumb-link" href="#">Seedlings</a>
+      </li>
+      <li class="crumb-sep" aria-hidden="true">/</li>
+      <li class="crumb-item">
+        <a class="crumb-link crumb-link--current" href="#" aria-current="page">Tomato Row 3</a>
+      </li>
+    </ol>
+  </nav>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- description: Drag the divider to see six weeks of steady tending, before and after. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Before/After Slider — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="ba-demo">
+  <p class="ba-desc">Drag the divider to see six weeks of steady tending, before and after.</p>
+
+  <div class="ba-frame" id="baFrame">
+    <div class="ba-layer ba-layer--before">
+      <span class="ba-badge ba-badge--before">Before</span>
+    </div>
+    <div class="ba-layer ba-layer--after" id="baAfter">
+      <span class="ba-badge ba-badge--after">After</span>
+    </div>
+
+    <div
+      class="ba-handle"
+      id="baHandle"
+      role="slider"
+      tabindex="0"
+      aria-label="Comparison position"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow="50"
+    >
+      <span class="ba-grip" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M8 5v14M16 5v14"/>
+        </svg>
+      </span>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

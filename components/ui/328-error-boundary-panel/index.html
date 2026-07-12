@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- description: Sometimes a bed of ground doesn't take the first time — this panel shows how we catch a failure and try again. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Error Boundary Panel — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="errb-wrap">
+  <p class="errb-desc-tag">Sometimes a bed of ground doesn't take the first time — this panel shows how we catch a failure and try again.</p>
+
+  <section class="errb-panel" id="errb-panel" data-state="error" aria-live="polite">
+
+    <div class="errb-view" data-view="error">
+      <div class="errb-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="52" height="52" fill="none">
+          <path d="M32 10 L58 54 H6 Z" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/>
+          <line x1="32" y1="26" x2="32" y2="38" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="32" cy="46" r="1.6" fill="currentColor" stroke="currentColor" stroke-width="2.5"/>
+        </svg>
+      </div>
+      <h2 class="errb-heading">Something went wrong</h2>
+      <p class="errb-desc">This bed of content couldn't load. The soil may just need another pass — try again.</p>
+      <button type="button" class="errb-cta" id="errb-retry-btn">Try again</button>
+    </div>
+
+    <div class="errb-view" data-view="loading" hidden>
+      <div class="errb-spinner" aria-hidden="true"></div>
+      <p class="errb-loading-text">Trying again…</p>
+    </div>
+
+    <div class="errb-view" data-view="success" hidden>
+      <div class="errb-icon errb-icon--success" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="52" height="52" fill="none">
+          <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="3.5"/>
+          <polyline points="21,33 29,41 44,24" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </div>
+      <h2 class="errb-heading">Content recovered</h2>
+      <p class="errb-desc">The bed took root after all. Here's what was waiting underneath.</p>
+      <div class="errb-recovered">
+        <div class="errb-recovered-row"><strong>Plot 4</strong><span>Soil moisture normal</span></div>
+        <div class="errb-recovered-row"><strong>Plot 5</strong><span>Last watered 2 hours ago</span></div>
+        <div class="errb-recovered-row"><strong>Plot 6</strong><span>No pests detected</span></div>
+      </div>
+      <button type="button" class="errb-cta errb-cta--ghost" id="errb-reset-btn">Reset demo</button>
+    </div>
+
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

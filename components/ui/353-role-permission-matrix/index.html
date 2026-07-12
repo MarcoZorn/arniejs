@@ -1,0 +1,92 @@
+<!doctype html>
+<!-- description: Decide exactly what each role can see and touch across the workspace — toggle any cell to grant or revoke it. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Role Permission Matrix — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="perm-wrap">
+  <h1 class="perm-title">Role permissions</h1>
+  <p class="perm-desc">Decide exactly what each role can see and touch across the workspace — toggle any cell to grant or revoke it.</p>
+
+  <div class="perm-scroll">
+    <table class="perm-table">
+      <thead>
+        <tr>
+          <th scope="col" class="perm-row-label-head">Permission</th>
+          <th scope="col">Viewer</th>
+          <th scope="col">Editor</th>
+          <th scope="col">Admin</th>
+          <th scope="col">Owner</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-permission="View plots">
+          <th scope="row">View plots</th>
+          <td><label class="perm-check"><input type="checkbox" checked disabled><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked disabled><span class="perm-box"></span></label></td>
+        </tr>
+        <tr data-permission="Edit plant records">
+          <th scope="row">Edit plant records</th>
+          <td><label class="perm-check"><input type="checkbox"><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked disabled><span class="perm-box"></span></label></td>
+        </tr>
+        <tr data-permission="Delete records">
+          <th scope="row">Delete records</th>
+          <td><label class="perm-check"><input type="checkbox"><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox"><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked disabled><span class="perm-box"></span></label></td>
+        </tr>
+        <tr data-permission="Manage billing">
+          <th scope="row">Manage billing</th>
+          <td><label class="perm-check"><input type="checkbox"><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox"><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox"><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked disabled><span class="perm-box"></span></label></td>
+        </tr>
+        <tr data-permission="Invite members">
+          <th scope="row">Invite members</th>
+          <td><label class="perm-check"><input type="checkbox"><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox"><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked disabled><span class="perm-box"></span></label></td>
+        </tr>
+        <tr data-permission="Remove members">
+          <th scope="row">Remove members</th>
+          <td><label class="perm-check"><input type="checkbox"><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox"><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked disabled><span class="perm-box"></span></label></td>
+        </tr>
+        <tr data-permission="Export data">
+          <th scope="row">Export data</th>
+          <td><label class="perm-check"><input type="checkbox"><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked disabled><span class="perm-box"></span></label></td>
+        </tr>
+        <tr data-permission="Manage integrations">
+          <th scope="row">Manage integrations</th>
+          <td><label class="perm-check"><input type="checkbox"><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox"><span class="perm-box"></span></label></td>
+          <td><label class="perm-check" ><input type="checkbox" checked><span class="perm-box"></span></label></td>
+          <td><label class="perm-check"><input type="checkbox" checked disabled><span class="perm-box"></span></label></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="perm-status" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

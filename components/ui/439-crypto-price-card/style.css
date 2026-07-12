@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+.crypto-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+}
+
+.crypto-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 36px;
+  padding: 28px 28px 24px;
+  box-shadow: 0 26px 64px rgba(0,0,0,0.4);
+  position: relative;
+}
+
+.crypto-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.crypto-id {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.crypto-coin {
+  width: 46px;
+  height: 46px;
+  flex: none;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--bg-deep);
+  background: linear-gradient(145deg, var(--accent-sand), var(--accent-terra));
+  box-shadow: 0 6px 16px rgba(196, 98, 45, 0.35);
+}
+
+.crypto-id-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.crypto-name {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.crypto-symbol {
+  font-size: 12px;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+.crypto-refresh {
+  width: 38px;
+  height: 38px;
+  flex: none;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.crypto-refresh:hover {
+  color: var(--accent-sand);
+  border-color: var(--accent-sand);
+}
+
+.crypto-refresh.is-spinning svg {
+  animation: crypto-spin 0.6s linear;
+}
+
+@keyframes crypto-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.crypto-tagline {
+  margin: 0 0 20px;
+  font-size: 12.5px;
+  color: var(--accent-sage);
+  font-weight: 600;
+}
+
+.crypto-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.crypto-price {
+  font-size: 30px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  transition: opacity 0.15s ease;
+}
+
+.crypto-change {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.crypto-change.is-up {
+  color: var(--accent-moss);
+  background: rgba(90, 122, 58, 0.16);
+}
+
+.crypto-change.is-down {
+  color: var(--accent-rust);
+  background: rgba(160, 56, 32, 0.16);
+}
+
+.crypto-change.is-down svg {
+  transform: rotate(180deg);
+}
+
+.crypto-window {
+  margin: 4px 0 18px;
+  font-size: 11.5px;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.crypto-chart {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 10px 8px;
+  border: 1px solid var(--border);
+}
+
+.crypto-chart svg {
+  display: block;
+}
+
+#cryptoPolyline {
+  transition: opacity 0.2s ease, stroke 0.2s ease;
+}
+
+.crypto-card.is-updating .crypto-chart {
+  box-shadow: 0 0 0 2px var(--accent-sand);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

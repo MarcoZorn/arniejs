@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- description: Plant a pattern, see which parts of the text take root. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Regex Tester — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="rgx-wrap">
+  <p class="rgx-tagline">Plant a pattern, see which parts of the text take root.</p>
+
+  <div class="rgx-pattern-row">
+    <div class="rgx-field rgx-field--pattern">
+      <span class="rgx-slash">/</span>
+      <input type="text" id="rgx-pattern" class="rgx-pattern-input" value="[a-z]+@[a-z]+\.[a-z]+" spellcheck="false" autocapitalize="off">
+      <span class="rgx-slash">/</span>
+      <input type="text" id="rgx-flags" class="rgx-flags-input" value="gi" spellcheck="false" autocapitalize="off" maxlength="6">
+    </div>
+    <span class="rgx-count" id="rgx-count">0 matches</span>
+  </div>
+
+  <p class="rgx-error" id="rgx-error" role="alert"></p>
+
+  <label class="rgx-label" for="rgx-input">Test string</label>
+  <textarea id="rgx-input" class="rgx-textarea" rows="6" spellcheck="false">Reach the team at soil@example.com or backup contact roots@garden.dev for questions.</textarea>
+
+  <label class="rgx-label">Matches</label>
+  <div class="rgx-output" id="rgx-output" aria-live="polite"></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

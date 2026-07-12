@@ -1,0 +1,92 @@
+<!doctype html>
+<!-- description: Set the schedule field by field — the expression below updates as you go, no guesswork required. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cron Builder — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="cron-wrap">
+  <p class="cron-hint">Set the schedule field by field — the expression below updates as you go, no guesswork required.</p>
+
+  <div class="cron-grid">
+    <label class="cron-field">
+      <span class="cron-label">Minute</span>
+      <select id="cronMinute" class="cron-select">
+        <option value="*">* (every minute)</option>
+        <option value="0" selected>0</option>
+        <option value="15">15</option>
+        <option value="30">30</option>
+        <option value="45">45</option>
+        <option value="*/5">*/5</option>
+        <option value="*/10">*/10</option>
+        <option value="*/15">*/15</option>
+      </select>
+    </label>
+
+    <label class="cron-field">
+      <span class="cron-label">Hour</span>
+      <select id="cronHour" class="cron-select">
+        <option value="*">* (every hour)</option>
+        <option value="0">0 (midnight)</option>
+        <option value="6">6</option>
+        <option value="9" selected>9</option>
+        <option value="12">12</option>
+        <option value="18">18</option>
+        <option value="*/2">*/2</option>
+        <option value="*/6">*/6</option>
+      </select>
+    </label>
+
+    <label class="cron-field">
+      <span class="cron-label">Day of month</span>
+      <select id="cronDom" class="cron-select">
+        <option value="*" selected>* (every day)</option>
+        <option value="1">1</option>
+        <option value="15">15</option>
+        <option value="L">L (last day)</option>
+      </select>
+    </label>
+
+    <label class="cron-field">
+      <span class="cron-label">Month</span>
+      <select id="cronMonth" class="cron-select">
+        <option value="*" selected>* (every month)</option>
+        <option value="1">January</option>
+        <option value="3">March</option>
+        <option value="6">June</option>
+        <option value="9">September</option>
+        <option value="12">December</option>
+      </select>
+    </label>
+
+    <label class="cron-field">
+      <span class="cron-label">Day of week</span>
+      <select id="cronDow" class="cron-select">
+        <option value="*">* (every day)</option>
+        <option value="1-5" selected>Mon–Fri</option>
+        <option value="0,6">Sat–Sun</option>
+        <option value="1">Mon</option>
+        <option value="2">Tue</option>
+        <option value="3">Wed</option>
+        <option value="4">Thu</option>
+        <option value="5">Fri</option>
+        <option value="6">Sat</option>
+        <option value="0">Sun</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="cron-output">
+    <span class="cron-output-label">Expression</span>
+    <code class="cron-expr" id="cronExpr">0 9 * * 1-5</code>
+  </div>
+
+  <p class="cron-readable" id="cronReadable">Runs at 9:00 AM, Monday through Friday.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

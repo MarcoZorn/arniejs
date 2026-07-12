@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+.job-wrap {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 56px 20px;
+}
+
+.job-desc {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.job-card {
+  position: relative;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-clay);
+  border-radius: 4px;
+  padding: 22px 22px 20px;
+}
+
+.job-bookmark {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
+}
+
+.job-bookmark:hover {
+  color: var(--accent-sand);
+  border-color: var(--accent-sand);
+  transform: translateY(-1px);
+}
+
+.job-bookmark.is-saved {
+  color: var(--accent-sand);
+  border-color: var(--accent-sand);
+  background: rgba(212, 168, 90, 0.12);
+}
+
+.job-bookmark.is-saved svg {
+  fill: var(--accent-sand);
+}
+
+.job-top {
+  padding-right: 44px;
+  margin-bottom: 14px;
+}
+
+.job-title {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.job-company {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.job-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.job-tag {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.job-tag--location {
+  background: rgba(143, 168, 110, 0.14);
+  color: var(--accent-sage);
+}
+
+.job-tag--salary {
+  background: rgba(155, 107, 58, 0.18);
+  color: var(--accent-sand);
+}
+
+.job-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.job-posted {
+  font-size: 12px;
+  color: var(--text-faint);
+}
+
+.job-apply {
+  font-family: inherit;
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: 1px solid var(--accent-clay);
+  background: var(--accent-clay);
+  color: #1a1208;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+}
+
+.job-apply:hover {
+  transform: translateY(-1px);
+  background: var(--accent-sand);
+  border-color: var(--accent-sand);
+}
+
+.job-apply:active {
+  transform: translateY(0);
+}
+
+.job-apply.is-applied {
+  background: transparent;
+  color: var(--accent-sage);
+  border-color: var(--accent-sage);
+  cursor: default;
+  transform: none;
+}
+
+.job-apply.is-applied:hover {
+  transform: none;
+  background: transparent;
+}
+
+.job-apply:disabled {
+  opacity: 0.9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

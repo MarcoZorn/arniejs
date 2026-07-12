@@ -1,0 +1,76 @@
+<!doctype html>
+<!-- description: Tell us which order and why, and we'll get a return label headed your way. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Return Request Form — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="return-wrap">
+  <div class="return-intro">
+    <p class="return-eyebrow">Returns</p>
+    <h1 class="return-title">Start a return</h1>
+    <p class="return-sub">Tell us which order and why, and we'll get a return label headed your way.</p>
+  </div>
+
+  <div class="return-card" data-return-card>
+    <form class="return-form" data-return-form novalidate>
+      <fieldset class="return-fieldset">
+        <legend class="return-label">Which order?</legend>
+
+        <label class="return-order">
+          <input type="radio" name="order" value="ORD-8841" data-order-price="42" data-order-name="Moss Trellis Planter">
+          <span class="return-order-body">
+            <span class="return-order-name">Moss Trellis Planter</span>
+            <span class="return-order-meta">Order ORD-8841 &middot; June 24, 2026</span>
+          </span>
+          <span class="return-order-price">$42</span>
+        </label>
+
+        <label class="return-order">
+          <input type="radio" name="order" value="ORD-8756" data-order-price="18" data-order-name="Rust Pruning Shears">
+          <span class="return-order-body">
+            <span class="return-order-name">Rust Pruning Shears</span>
+            <span class="return-order-meta">Order ORD-8756 &middot; June 11, 2026</span>
+          </span>
+          <span class="return-order-price">$18</span>
+        </label>
+
+        <label class="return-order">
+          <input type="radio" name="order" value="ORD-8602" data-order-price="56" data-order-name="Cedar Garden Stool">
+          <span class="return-order-body">
+            <span class="return-order-name">Cedar Garden Stool</span>
+            <span class="return-order-meta">Order ORD-8602 &middot; May 29, 2026</span>
+          </span>
+          <span class="return-order-price">$56</span>
+        </label>
+      </fieldset>
+
+      <div class="return-field">
+        <label class="return-label" for="return-reason">Reason for return</label>
+        <select class="return-select" id="return-reason" name="reason">
+          <option value="">Choose a reason</option>
+          <option value="wrong-size">Wrong size</option>
+          <option value="changed-mind">Changed my mind</option>
+          <option value="damaged">Item damaged</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="return-field">
+        <label class="return-label" for="return-comment">Comment <span class="return-optional">(optional)</span></label>
+        <textarea class="return-textarea" id="return-comment" name="comment" rows="3" placeholder="Anything else we should know?"></textarea>
+      </div>
+
+      <p class="return-error" data-return-error role="alert"></p>
+
+      <button type="submit" class="return-submit">Request return</button>
+    </form>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

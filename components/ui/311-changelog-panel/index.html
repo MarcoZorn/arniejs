@@ -1,0 +1,84 @@
+<!doctype html>
+<!-- description: A quiet record of what's changed, tucked behind a bell — open it when you want to know what grew since your last visit. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Changelog Panel — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="clp-wrap">
+  <p class="clp-sub">A quiet record of what's changed, tucked behind a bell — open it when you want to know what grew since your last visit.</p>
+
+  <button class="clp-trigger" type="button" id="clpTrigger" aria-haspopup="dialog" aria-expanded="false" aria-controls="clpPanel">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path>
+      <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+    </svg>
+    <span>What's new</span>
+    <span class="clp-dot" id="clpDot" aria-hidden="true"></span>
+  </button>
+
+  <div class="clp-backdrop" id="clpBackdrop" hidden></div>
+
+  <aside class="clp-panel" id="clpPanel" role="dialog" aria-modal="true" aria-labelledby="clpTitle" hidden>
+    <header class="clp-panel-head">
+      <h2 id="clpTitle">Changelog</h2>
+      <button class="clp-close" type="button" id="clpClose" aria-label="Close changelog">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </header>
+
+    <div class="clp-body">
+      <section class="clp-group">
+        <h3 class="clp-date">July 2, 2026</h3>
+        <ul class="clp-entries">
+          <li class="clp-entry" data-tag="added">
+            <span class="clp-tag clp-tag--added">Added</span>
+            <p>Companion planting suggestions now appear next to each bed in the planner.</p>
+          </li>
+          <li class="clp-entry" data-tag="fixed">
+            <span class="clp-tag clp-tag--fixed">Fixed</span>
+            <p>Watering reminders no longer fire twice on slow connections.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="clp-group">
+        <h3 class="clp-date">June 18, 2026</h3>
+        <ul class="clp-entries">
+          <li class="clp-entry" data-tag="improved">
+            <span class="clp-tag clp-tag--improved">Improved</span>
+            <p>Faster load times for gardens with more than fifty plots.</p>
+          </li>
+          <li class="clp-entry" data-tag="added">
+            <span class="clp-tag clp-tag--added">Added</span>
+            <p>Export your harvest log as a simple spreadsheet.</p>
+          </li>
+          <li class="clp-entry" data-tag="fixed">
+            <span class="clp-tag clp-tag--fixed">Fixed</span>
+            <p>Frost warnings now respect your local timezone.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="clp-group">
+        <h3 class="clp-date">May 30, 2026</h3>
+        <ul class="clp-entries">
+          <li class="clp-entry" data-tag="added">
+            <span class="clp-tag clp-tag--added">Added</span>
+            <p>New soil-moisture widget for the dashboard home screen.</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </aside>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

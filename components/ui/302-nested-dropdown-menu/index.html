@@ -1,0 +1,66 @@
+<!doctype html>
+<!-- description: A menu bar that opens onto deeper rows when a plot has more than one bed underneath it — click, tap, or walk the arrow keys through it. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nested Dropdown Menu — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="ndrop-wrap">
+  <p class="ndrop-desc">A menu bar that opens onto deeper rows when a plot has more than one bed underneath it — click, tap, or walk the arrow keys through it.</p>
+
+  <nav class="ndrop-nav" aria-label="Garden catalog">
+    <ul class="ndrop-menu" role="menubar">
+
+      <li class="ndrop-menu-item" role="none">
+        <button type="button" class="ndrop-trigger" role="menuitem" aria-haspopup="true" aria-expanded="false">Vegetables</button>
+        <ul class="ndrop-sub" role="menu" hidden>
+          <li role="none"><button type="button" class="ndrop-item" role="menuitem">Tomatoes</button></li>
+          <li role="none"><button type="button" class="ndrop-item" role="menuitem">Peppers</button></li>
+          <li class="ndrop-menu-item" role="none">
+            <button type="button" class="ndrop-trigger ndrop-item" role="menuitem" aria-haspopup="true" aria-expanded="false">Root crops</button>
+            <ul class="ndrop-sub ndrop-sub--right" role="menu" hidden>
+              <li role="none"><button type="button" class="ndrop-item" role="menuitem">Carrots</button></li>
+              <li role="none"><button type="button" class="ndrop-item" role="menuitem">Beets</button></li>
+              <li role="none"><button type="button" class="ndrop-item" role="menuitem">Radishes</button></li>
+            </ul>
+          </li>
+          <li role="none"><button type="button" class="ndrop-item" role="menuitem">Leafy greens</button></li>
+        </ul>
+      </li>
+
+      <li class="ndrop-menu-item" role="none">
+        <button type="button" class="ndrop-trigger" role="menuitem" aria-haspopup="true" aria-expanded="false">Herbs</button>
+        <ul class="ndrop-sub" role="menu" hidden>
+          <li role="none"><button type="button" class="ndrop-item" role="menuitem">Basil</button></li>
+          <li role="none"><button type="button" class="ndrop-item" role="menuitem">Thyme</button></li>
+          <li class="ndrop-menu-item" role="none">
+            <button type="button" class="ndrop-trigger ndrop-item" role="menuitem" aria-haspopup="true" aria-expanded="false">Mints</button>
+            <ul class="ndrop-sub ndrop-sub--right" role="menu" hidden>
+              <li role="none"><button type="button" class="ndrop-item" role="menuitem">Peppermint</button></li>
+              <li role="none"><button type="button" class="ndrop-item" role="menuitem">Spearmint</button></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="ndrop-menu-item" role="none">
+        <button type="button" class="ndrop-trigger" role="menuitem" aria-haspopup="true" aria-expanded="false">Tools</button>
+        <ul class="ndrop-sub" role="menu" hidden>
+          <li role="none"><button type="button" class="ndrop-item" role="menuitem">Trowel</button></li>
+          <li role="none"><button type="button" class="ndrop-item" role="menuitem">Shears</button></li>
+          <li role="none"><button type="button" class="ndrop-item" role="menuitem">Watering can</button></li>
+        </ul>
+      </li>
+
+    </ul>
+  </nav>
+
+  <p class="ndrop-note" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

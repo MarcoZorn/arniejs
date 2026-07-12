@@ -1,0 +1,87 @@
+<!doctype html>
+<!-- description: Switch between monthly and yearly billing to see exactly what you'd pay either way. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Subscription Plan Switcher — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="plans-wrap">
+  <div class="plans-intro">
+    <p class="plans-eyebrow">Billing</p>
+    <h1 class="plans-title">Pick a rhythm that suits your season</h1>
+    <p class="plans-sub">Switch between monthly and yearly billing to see exactly what you'd pay either way.</p>
+  </div>
+
+  <div class="plans-toggle" role="tablist" aria-label="Billing interval">
+    <button type="button" class="plans-toggle-btn is-active" data-interval="monthly" role="tab" aria-selected="true">Monthly</button>
+    <button type="button" class="plans-toggle-btn" data-interval="yearly" role="tab" aria-selected="false">Yearly</button>
+    <span class="plans-toggle-thumb" aria-hidden="true"></span>
+  </div>
+
+  <div class="plans-grid">
+
+    <article class="plan-card" data-plan="Seedling">
+      <h2 class="plan-name">Seedling</h2>
+      <p class="plan-blurb">For a single small plot, kept tidy.</p>
+      <p class="plan-price">
+        <span class="plan-price-amount" data-monthly="9" data-yearly="7">$9</span>
+        <span class="plan-price-suffix">/mo</span>
+      </p>
+      <p class="plan-billed-note"></p>
+      <span class="plan-save-badge" hidden></span>
+      <ul class="plan-features">
+        <li>1 workspace</li>
+        <li>Basic scheduling</li>
+        <li>Email support</li>
+      </ul>
+      <button type="button" class="plan-cta">Choose Seedling</button>
+    </article>
+
+    <article class="plan-card plan-card--featured" data-plan="Bloom">
+      <span class="plan-featured-tag">Most chosen</span>
+      <h2 class="plan-name">Bloom</h2>
+      <p class="plan-blurb">For teams tending several beds at once.</p>
+      <p class="plan-price">
+        <span class="plan-price-amount" data-monthly="29" data-yearly="22">$29</span>
+        <span class="plan-price-suffix">/mo</span>
+      </p>
+      <p class="plan-billed-note"></p>
+      <span class="plan-save-badge" hidden></span>
+      <ul class="plan-features">
+        <li>10 workspaces</li>
+        <li>Automated reminders</li>
+        <li>Priority support</li>
+        <li>Team roles</li>
+      </ul>
+      <button type="button" class="plan-cta">Choose Bloom</button>
+    </article>
+
+    <article class="plan-card" data-plan="Orchard">
+      <h2 class="plan-name">Orchard</h2>
+      <p class="plan-blurb">For operations running at full scale.</p>
+      <p class="plan-price">
+        <span class="plan-price-amount" data-monthly="79" data-yearly="59">$79</span>
+        <span class="plan-price-suffix">/mo</span>
+      </p>
+      <p class="plan-billed-note"></p>
+      <span class="plan-save-badge" hidden></span>
+      <ul class="plan-features">
+        <li>Unlimited workspaces</li>
+        <li>Custom automations</li>
+        <li>Dedicated support</li>
+        <li>Audit log</li>
+      </ul>
+      <button type="button" class="plan-cta">Choose Orchard</button>
+    </article>
+
+  </div>
+
+  <p class="plans-note" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

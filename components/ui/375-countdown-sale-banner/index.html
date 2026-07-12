@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- description: A short-run discount on tools and seed while the current batch lasts. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Countdown Sale Banner — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="csb-wrap">
+  <p class="csb-sub">A short-run discount on tools and seed while the current batch lasts.</p>
+
+  <section class="csb-banner" id="csb-banner">
+    <div class="csb-info">
+      <span class="csb-tag">Limited time</span>
+      <h1 class="csb-headline">Late Summer Clearance — 30% off</h1>
+      <p class="csb-copy">Stock is limited to what's already picked and packed. Once the timer runs out, prices return to normal.</p>
+    </div>
+
+    <div class="csb-timer" role="timer" aria-live="off">
+      <div class="csb-unit">
+        <span class="csb-unit-value" id="csb-hours">00</span>
+        <span class="csb-unit-label">Hours</span>
+      </div>
+      <span class="csb-colon">:</span>
+      <div class="csb-unit">
+        <span class="csb-unit-value" id="csb-minutes">00</span>
+        <span class="csb-unit-label">Minutes</span>
+      </div>
+      <span class="csb-colon">:</span>
+      <div class="csb-unit">
+        <span class="csb-unit-value" id="csb-seconds">00</span>
+        <span class="csb-unit-label">Seconds</span>
+      </div>
+    </div>
+
+    <button class="csb-cta" type="button">Shop the sale</button>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

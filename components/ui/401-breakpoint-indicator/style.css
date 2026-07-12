@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+.bpi-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 24px 120px;
+}
+
+.bpi-sub {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  max-width: 46ch;
+  margin: 0 0 40px;
+}
+
+.bpi-heading {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 12px;
+}
+
+.bpi-content p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.bpi-content code {
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--accent-sand);
+  font-size: 0.85em;
+}
+
+.bpi-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin: 32px 0;
+}
+
+.bpi-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 12px;
+  text-align: center;
+}
+
+.bpi-card h2 {
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+  margin: 0 0 6px;
+  color: var(--accent-terra);
+  font-size: 1.1rem;
+}
+
+.bpi-card p {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--text-faint);
+}
+
+@media (max-width: 640px) {
+  .bpi-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Badge */
+.bpi-badge {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  z-index: 9999;
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bg-deep);
+  background: var(--accent-sand);
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 999px;
+  padding: 8px 16px 8px 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.bpi-badge::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.55;
+}
+
+.bpi-badge .bpi-width {
+  color: rgba(0,0,0,0.55);
+  font-weight: 500;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bpi-badge { transition: none; }
+}

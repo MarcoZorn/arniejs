@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- description: A short guided walk through the dashboard, one calm stop at a time, with the tooltip settling beside whatever it's pointing at. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Onboarding Tour Tooltip — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="tour-page">
+  <p class="tour-sub">A short guided walk through the dashboard, one calm stop at a time, with the tooltip settling beside whatever it's pointing at.</p>
+
+  <div class="tour-toolbar">
+    <button class="tour-restart" id="tourRestart" type="button">Restart tour</button>
+  </div>
+
+  <section class="tour-dashboard" aria-label="Dashboard preview">
+    <header class="tour-dash-header">
+      <span class="tour-dash-title">Plot Overview</span>
+      <button class="tour-dash-btn" id="tourTargetAdd" type="button">+ Add plot</button>
+    </header>
+
+    <div class="tour-dash-body">
+      <aside class="tour-dash-nav" id="tourTargetNav" aria-label="Sections">
+        <span class="tour-dash-nav-item is-active">Beds</span>
+        <span class="tour-dash-nav-item">Irrigation</span>
+        <span class="tour-dash-nav-item">Harvest</span>
+      </aside>
+
+      <div class="tour-dash-main">
+        <div class="tour-dash-stats" id="tourTargetStats">
+          <div class="tour-stat"><span class="tour-stat-num">12</span><span class="tour-stat-label">Active beds</span></div>
+          <div class="tour-stat"><span class="tour-stat-num">87%</span><span class="tour-stat-label">Soil moisture</span></div>
+          <div class="tour-stat"><span class="tour-stat-num">3</span><span class="tour-stat-label">Alerts</span></div>
+        </div>
+
+        <button class="tour-dash-profile" id="tourTargetProfile" type="button">
+          <span class="tour-avatar" aria-hidden="true">AR</span>
+          <span>Your profile</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="tour-tooltip" id="tourTooltip" role="tooltip" hidden>
+    <div class="tour-tooltip-arrow" id="tourArrow"></div>
+    <p class="tour-tooltip-step" id="tourStepCount"></p>
+    <h2 class="tour-tooltip-title" id="tourTooltipTitle"></h2>
+    <p class="tour-tooltip-body" id="tourTooltipBody"></p>
+    <div class="tour-tooltip-actions">
+      <button class="tour-skip" id="tourSkip" type="button">Skip tour</button>
+      <div class="tour-tooltip-nav">
+        <button class="tour-prev" id="tourPrev" type="button">Back</button>
+        <button class="tour-next" id="tourNext" type="button">Next</button>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

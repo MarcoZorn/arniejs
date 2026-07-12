@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.maint-banner {
+  width: 100%;
+  background: linear-gradient(90deg, var(--accent-clay), var(--accent-sand));
+  color: var(--bg-deep);
+  border-bottom: 2px solid var(--accent-terra);
+  transform: translateY(-100%);
+  animation: maint-drop-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.1s forwards;
+  overflow: hidden;
+}
+
+.maint-banner.is-dismissed {
+  animation: maint-drop-out 0.35s ease forwards;
+}
+
+@keyframes maint-drop-in {
+  to { transform: translateY(0); }
+}
+
+@keyframes maint-drop-out {
+  to { transform: translateY(-100%); }
+}
+
+.maint-banner-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.maint-icon {
+  flex: none;
+  display: flex;
+}
+
+.maint-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  flex: 1 1 260px;
+  min-width: 0;
+}
+
+.maint-countdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+}
+
+.maint-unit {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+  background: rgba(26, 18, 8, 0.16);
+  border-radius: 6px;
+  padding: 5px 8px;
+  min-width: 44px;
+  justify-content: center;
+}
+
+.maint-num {
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  font-size: 14.5px;
+}
+
+.maint-label {
+  font-size: 11px;
+  font-weight: 700;
+  opacity: 0.75;
+}
+
+.maint-dismiss {
+  flex: none;
+  background: transparent;
+  border: none;
+  color: var(--bg-deep);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.75;
+  transition: opacity 0.15s ease, background-color 0.15s ease;
+}
+
+.maint-dismiss:hover { opacity: 1; background: rgba(26, 18, 8, 0.14); }
+
+.maint-page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+.maint-page-hint {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .maint-banner-inner { justify-content: center; text-align: center; }
+  .maint-text { flex: 1 1 100%; text-align: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .maint-banner { animation: none; transform: translateY(0); }
+  .maint-banner.is-dismissed { animation: none; display: none; }
+}

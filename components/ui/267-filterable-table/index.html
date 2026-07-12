@@ -1,0 +1,59 @@
+<!doctype html>
+<!-- description: Type to search by name or supplier, or pick a category — both filters work together. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Filterable Table — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="filt-tbl-wrap">
+  <div class="filt-tbl-intro">
+    <p class="filt-tbl-eyebrow">Seed bank</p>
+    <h1 class="filt-tbl-title">Narrow the catalog down to what you're after</h1>
+    <p class="filt-tbl-hint">Type to search by name or supplier, or pick a category — both filters work together.</p>
+  </div>
+
+  <div class="filt-tbl-controls">
+    <div class="filt-tbl-search">
+      <svg class="filt-tbl-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="7"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" class="filt-tbl-search-input" placeholder="Search seeds or suppliers…" aria-label="Search seeds or suppliers">
+    </div>
+    <select class="filt-tbl-select" aria-label="Filter by category">
+      <option value="">All categories</option>
+      <option value="Vegetable">Vegetable</option>
+      <option value="Herb">Herb</option>
+      <option value="Flower">Flower</option>
+      <option value="Fruit">Fruit</option>
+      <option value="Grain">Grain</option>
+    </select>
+  </div>
+
+  <div class="filt-tbl-scroll">
+    <table class="filt-tbl-table">
+      <thead>
+        <tr>
+          <th scope="col">Variety</th>
+          <th scope="col">Category</th>
+          <th scope="col">Supplier</th>
+          <th scope="col">Germination</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody class="filt-tbl-body"></tbody>
+    </table>
+    <div class="filt-tbl-empty" hidden>
+      <p>No seeds match that search. Try a different word or category.</p>
+    </div>
+  </div>
+
+  <p class="filt-tbl-count" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

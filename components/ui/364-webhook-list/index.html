@@ -1,0 +1,100 @@
+<!doctype html>
+<!-- description: Endpoints that get notified the moment something changes in your account. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Webhook List — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wh-wrap">
+  <div class="wh-card">
+    <div class="wh-header">
+      <h1 class="wh-title">Webhooks</h1>
+      <p class="wh-tagline">Endpoints that get notified the moment something changes in your account.</p>
+    </div>
+
+    <ul class="wh-list" id="wh-list">
+      <li class="wh-row" data-active="true">
+        <div class="wh-row-main">
+          <div class="wh-url-block">
+            <span class="wh-url">https://api.trellis.io/hooks/incoming</span>
+            <div class="wh-badges">
+              <span class="wh-badge">user.created</span>
+              <span class="wh-badge">user.deleted</span>
+            </div>
+          </div>
+          <div class="wh-controls">
+            <button class="wh-test-btn" type="button" data-state="idle">Test</button>
+            <button class="wh-toggle" type="button" role="switch" aria-checked="true" aria-label="Toggle webhook active state">
+              <span class="wh-toggle-knob"></span>
+            </button>
+          </div>
+        </div>
+        <p class="wh-feedback" role="status" aria-live="polite"></p>
+      </li>
+
+      <li class="wh-row" data-active="true">
+        <div class="wh-row-main">
+          <div class="wh-url-block">
+            <span class="wh-url">https://billing.greenroot.dev/webhook</span>
+            <div class="wh-badges">
+              <span class="wh-badge">invoice.paid</span>
+              <span class="wh-badge">invoice.failed</span>
+            </div>
+          </div>
+          <div class="wh-controls">
+            <button class="wh-test-btn" type="button" data-state="idle">Test</button>
+            <button class="wh-toggle" type="button" role="switch" aria-checked="true" aria-label="Toggle webhook active state">
+              <span class="wh-toggle-knob"></span>
+            </button>
+          </div>
+        </div>
+        <p class="wh-feedback" role="status" aria-live="polite"></p>
+      </li>
+
+      <li class="wh-row" data-active="false">
+        <div class="wh-row-main">
+          <div class="wh-url-block">
+            <span class="wh-url">https://staging.orchard-app.com/wh/events</span>
+            <div class="wh-badges">
+              <span class="wh-badge">team.invited</span>
+              <span class="wh-badge">team.removed</span>
+            </div>
+          </div>
+          <div class="wh-controls">
+            <button class="wh-test-btn" type="button" data-state="idle">Test</button>
+            <button class="wh-toggle" type="button" role="switch" aria-checked="false" aria-label="Toggle webhook active state">
+              <span class="wh-toggle-knob"></span>
+            </button>
+          </div>
+        </div>
+        <p class="wh-feedback" role="status" aria-live="polite"></p>
+      </li>
+
+      <li class="wh-row" data-active="true">
+        <div class="wh-row-main">
+          <div class="wh-url-block">
+            <span class="wh-url">https://hooks.zapier.com/hooks/catch/arniejs</span>
+            <div class="wh-badges">
+              <span class="wh-badge">subscription.updated</span>
+              <span class="wh-badge">plan.changed</span>
+            </div>
+          </div>
+          <div class="wh-controls">
+            <button class="wh-test-btn" type="button" data-state="idle">Test</button>
+            <button class="wh-toggle" type="button" role="switch" aria-checked="true" aria-label="Toggle webhook active state">
+              <span class="wh-toggle-knob"></span>
+            </button>
+          </div>
+        </div>
+        <p class="wh-feedback" role="status" aria-live="polite"></p>
+      </li>
+    </ul>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

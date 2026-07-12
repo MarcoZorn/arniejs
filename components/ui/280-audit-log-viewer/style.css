@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.adlv-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 56px 20px 90px;
+}
+
+.adlv-intro {
+  max-width: 580px;
+  margin: 0 0 28px;
+}
+
+.adlv-eyebrow {
+  margin: 0 0 10px;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-clay);
+}
+
+.adlv-title {
+  margin: 0 0 12px;
+  font-size: clamp(26px, 3.6vw, 34px);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.adlv-sub {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.adlv-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 28px 0 10px;
+}
+
+.adlv-search-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 220px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 10px 14px;
+  color: var(--text-faint);
+  transition: border-color 0.15s ease;
+}
+
+.adlv-search-field:focus-within {
+  border-color: var(--accent-terra);
+}
+
+.adlv-search-field input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+}
+
+.adlv-search-field input::placeholder {
+  color: var(--text-faint);
+}
+
+.adlv-type-filters {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.adlv-type-btn {
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 999px;
+  padding: 7px 14px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+
+.adlv-type-btn:hover {
+  color: var(--text-primary);
+}
+
+.adlv-type-btn.is-active {
+  color: var(--bg-deep);
+  background: var(--accent-sand);
+  border-color: var(--accent-sand);
+}
+
+.adlv-count {
+  margin: 0 0 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-faint);
+}
+
+.adlv-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg-surface);
+}
+
+.adlv-entry {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.adlv-list .adlv-entry:last-child {
+  border-bottom: none;
+}
+
+.adlv-entry.adlv-hidden {
+  display: none;
+}
+
+.adlv-badge {
+  flex: none;
+  margin-top: 2px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+  color: var(--bg-deep);
+}
+
+.adlv-entry[data-type="info"] .adlv-badge { background: var(--accent-sage); }
+.adlv-entry[data-type="warning"] .adlv-badge { background: var(--accent-sand); }
+.adlv-entry[data-type="error"] .adlv-badge { background: var(--accent-rust); color: var(--text-primary); }
+
+.adlv-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.adlv-message {
+  margin: 0 0 3px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.adlv-meta {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-faint);
+}
+
+.adlv-meta .adlv-actor {
+  color: var(--text-muted);
+}
+
+.adlv-empty {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 14.5px;
+  margin-top: 20px;
+}
+
+mark.adlv-highlight {
+  background: rgba(212, 168, 90, 0.35);
+  color: inherit;
+  border-radius: 3px;
+  padding: 0 1px;
+}
+
+@media (max-width: 560px) {
+  .adlv-controls { flex-direction: column; align-items: stretch; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

@@ -1,0 +1,104 @@
+<!doctype html>
+<!-- description: Fine-tune how your account behaves — every change here takes effect immediately. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Account Settings Panel — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="asp-wrap">
+  <div class="asp-panel">
+    <h1 class="asp-title">Account settings</h1>
+    <p class="asp-tagline">Fine-tune how your account behaves — every change here takes effect immediately.</p>
+
+    <section class="asp-group">
+      <h2 class="asp-group-title">Profile</h2>
+
+      <div class="asp-row">
+        <div class="asp-row-text">
+          <span class="asp-row-label">Public profile</span>
+          <span class="asp-row-desc">Let other members find and view your profile</span>
+        </div>
+        <button type="button" class="asp-toggle is-on" role="switch" aria-checked="true" data-toggle data-name="Public profile">
+          <span class="asp-toggle-knob"></span>
+        </button>
+      </div>
+
+      <div class="asp-row">
+        <div class="asp-row-text">
+          <span class="asp-row-label">Show activity status</span>
+          <span class="asp-row-desc">Display when you were last active in the garden</span>
+        </div>
+        <button type="button" class="asp-toggle" role="switch" aria-checked="false" data-toggle data-name="Show activity status">
+          <span class="asp-toggle-knob"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="asp-group">
+      <h2 class="asp-group-title">Notifications</h2>
+
+      <div class="asp-row">
+        <div class="asp-row-text">
+          <span class="asp-row-label">Email digests</span>
+          <span class="asp-row-desc">Weekly summary of activity on your plots</span>
+        </div>
+        <button type="button" class="asp-toggle is-on" role="switch" aria-checked="true" data-toggle data-name="Email digests">
+          <span class="asp-toggle-knob"></span>
+        </button>
+      </div>
+
+      <div class="asp-row">
+        <div class="asp-row-text">
+          <span class="asp-row-label">Push alerts</span>
+          <span class="asp-row-desc">Real-time notifications for urgent updates</span>
+        </div>
+        <button type="button" class="asp-toggle" role="switch" aria-checked="false" data-toggle data-name="Push alerts">
+          <span class="asp-toggle-knob"></span>
+        </button>
+      </div>
+
+      <div class="asp-row">
+        <div class="asp-row-text">
+          <span class="asp-row-label">Product announcements</span>
+          <span class="asp-row-desc">Occasional emails about new features</span>
+        </div>
+        <button type="button" class="asp-toggle is-on" role="switch" aria-checked="true" data-toggle data-name="Product announcements">
+          <span class="asp-toggle-knob"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="asp-group">
+      <h2 class="asp-group-title">Preferences</h2>
+
+      <div class="asp-row">
+        <div class="asp-row-text">
+          <span class="asp-row-label">Compact layout</span>
+          <span class="asp-row-desc">Reduce spacing across lists and tables</span>
+        </div>
+        <button type="button" class="asp-toggle" role="switch" aria-checked="false" data-toggle data-name="Compact layout">
+          <span class="asp-toggle-knob"></span>
+        </button>
+      </div>
+
+      <div class="asp-row">
+        <div class="asp-row-text">
+          <span class="asp-row-label">Autosave drafts</span>
+          <span class="asp-row-desc">Save unfinished notes every 30 seconds</span>
+        </div>
+        <button type="button" class="asp-toggle is-on" role="switch" aria-checked="true" data-toggle data-name="Autosave drafts">
+          <span class="asp-toggle-knob"></span>
+        </button>
+      </div>
+    </section>
+
+    <p class="asp-status" role="status" aria-live="polite" data-status></p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

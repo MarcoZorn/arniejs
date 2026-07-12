@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- description: Hide your profile and pause billing. You can reactivate any time by logging back in. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Danger Zone Panel — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="dz-wrap">
+  <div class="dz-panel">
+    <h1 class="dz-title">Danger zone</h1>
+    <p class="dz-hint">These actions affect your whole account. Read carefully before you confirm — most of them can't be undone.</p>
+
+    <div class="dz-row">
+      <div class="dz-row-text">
+        <h2 class="dz-row-title">Deactivate account</h2>
+        <p class="dz-row-desc">Hide your profile and pause billing. You can reactivate any time by logging back in.</p>
+      </div>
+      <div class="dz-row-action" data-action="deactivate">
+        <button class="dz-btn dz-btn--outline" type="button" data-trigger="deactivate">Deactivate</button>
+        <div class="dz-confirm" data-confirm="deactivate" hidden>
+          <p class="dz-confirm-text">Deactivate your account now? Your data stays put and nothing is deleted.</p>
+          <div class="dz-confirm-actions">
+            <button class="dz-btn dz-btn--ghost" type="button" data-cancel="deactivate">Cancel</button>
+            <button class="dz-btn dz-btn--warn" type="button" data-confirm-btn="deactivate">Yes, deactivate</button>
+          </div>
+        </div>
+        <div class="dz-success" data-success="deactivate" hidden>
+          <span class="dz-success-icon" aria-hidden="true">&#10003;</span>
+          <span>Account deactivated. You've been signed out of active sessions.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dz-row dz-row--severe">
+      <div class="dz-row-text">
+        <h2 class="dz-row-title">Delete account</h2>
+        <p class="dz-row-desc">Permanently erase your account, plots, and harvest history. This cannot be reversed.</p>
+      </div>
+      <div class="dz-row-action" data-action="delete">
+        <button class="dz-btn dz-btn--danger" type="button" data-trigger="delete">Delete account</button>
+        <div class="dz-confirm" data-confirm="delete" hidden>
+          <p class="dz-confirm-text">This permanently deletes everything tied to this account. Type <strong>DELETE</strong> to confirm.</p>
+          <input class="dz-confirm-input" type="text" data-delete-input placeholder="Type DELETE" autocomplete="off">
+          <div class="dz-confirm-actions">
+            <button class="dz-btn dz-btn--ghost" type="button" data-cancel="delete">Cancel</button>
+            <button class="dz-btn dz-btn--danger" type="button" data-confirm-btn="delete" disabled>Permanently delete</button>
+          </div>
+        </div>
+        <div class="dz-success dz-success--danger" data-success="delete" hidden>
+          <span class="dz-success-icon" aria-hidden="true">&#10003;</span>
+          <span>Account deleted. We're sorry to see you go.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

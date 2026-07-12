@@ -1,0 +1,45 @@
+<!doctype html>
+<!-- description: A live-scrolling console of system events, colour-coded by severity, so you can spot trouble before it spreads to the whole row. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Log Console — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="logc-wrap">
+  <div class="logc-intro">
+    <p class="logc-eyebrow">Field notes</p>
+    <h1 class="logc-title">Watch the greenhouse systems think out loud</h1>
+    <p class="logc-sub">A live-scrolling console of system events, colour-coded by severity, so you can spot trouble before it spreads to the whole row.</p>
+  </div>
+
+  <div class="logc-panel">
+    <div class="logc-toolbar">
+      <div class="logc-toolbar-left">
+        <span class="logc-dot" aria-hidden="true"></span>
+        <span class="logc-dot" aria-hidden="true"></span>
+        <span class="logc-dot" aria-hidden="true"></span>
+        <span class="logc-panel-name">greenhouse-core.log</span>
+      </div>
+      <div class="logc-toolbar-right">
+        <label class="logc-toggle">
+          <input type="checkbox" id="logc-autoscroll" checked>
+          <span class="logc-toggle-track" aria-hidden="true"><span class="logc-toggle-thumb"></span></span>
+          <span class="logc-toggle-label">Autoscroll</span>
+        </label>
+        <button type="button" class="logc-clear-btn" id="logc-clear">Clear</button>
+      </div>
+    </div>
+    <div class="logc-body" id="logc-body" role="log" aria-live="polite" aria-label="System log output"></div>
+    <div class="logc-statusbar">
+      <span id="logc-count">0 lines</span>
+      <span id="logc-live" class="logc-live">● streaming</span>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

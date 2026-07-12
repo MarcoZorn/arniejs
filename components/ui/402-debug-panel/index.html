@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- description: A small instrument cluster that watches the page the way you might watch weather — cursor, viewport, and scroll, tracked in real time. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Debug Panel — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="dbg-wrap">
+  <p class="dbg-sub">A small instrument cluster that watches the page the way you might watch weather — cursor, viewport, and scroll, tracked in real time.</p>
+
+  <h1 class="dbg-heading">Scroll, move the mouse, resize</h1>
+  <p class="dbg-copy">Open the debug panel with the toggle button in the corner. Everything inside it is live: no placeholders, no frozen numbers.</p>
+
+  <div class="dbg-filler">
+    <div class="dbg-row" data-index="0"></div>
+    <div class="dbg-row" data-index="1"></div>
+    <div class="dbg-row" data-index="2"></div>
+    <div class="dbg-row" data-index="3"></div>
+    <div class="dbg-row" data-index="4"></div>
+    <div class="dbg-row" data-index="5"></div>
+    <div class="dbg-row" data-index="6"></div>
+    <div class="dbg-row" data-index="7"></div>
+    <div class="dbg-row" data-index="8"></div>
+    <div class="dbg-row" data-index="9"></div>
+  </div>
+</main>
+
+<button type="button" class="dbg-toggle" id="dbgToggle" aria-expanded="false" aria-controls="dbgPanel">Debug</button>
+<aside class="dbg-panel" id="dbgPanel" hidden>
+  <header class="dbg-panel-head">
+    <span>Debug panel</span>
+    <button type="button" class="dbg-close" id="dbgClose" aria-label="Close debug panel">&times;</button>
+  </header>
+  <dl class="dbg-list">
+    <div class="dbg-item">
+      <dt>Mouse</dt>
+      <dd id="dbgMouse">–, –</dd>
+    </div>
+    <div class="dbg-item">
+      <dt>Window</dt>
+      <dd id="dbgWindow">– × –</dd>
+    </div>
+    <div class="dbg-item">
+      <dt>Scroll</dt>
+      <dd id="dbgScroll">x: –, y: –</dd>
+    </div>
+  </dl>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- description: Every cell is a day in the garden — darker greens mean more minutes spent out there. Hover or tab through to see the exact count. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heatmap Calendar — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="hmc-wrap">
+  <div class="hmc-intro">
+    <p class="hmc-eyebrow">Garden log</p>
+    <h1 class="hmc-title">A year of tending, one square at a time</h1>
+    <p class="hmc-sub">Every cell is a day in the garden — darker greens mean more minutes spent out there. Hover or tab through to see the exact count.</p>
+  </div>
+
+  <div class="hmc-panel">
+    <div class="hmc-scroll">
+      <div class="hmc-graph">
+        <div class="hmc-months" data-months></div>
+        <div class="hmc-body">
+          <div class="hmc-days">
+            <span>Mon</span>
+            <span></span>
+            <span>Wed</span>
+            <span></span>
+            <span>Fri</span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="hmc-grid" data-grid></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hmc-legend">
+      <span class="hmc-legend-label">Less</span>
+      <span class="hmc-swatch" data-level="0"></span>
+      <span class="hmc-swatch" data-level="1"></span>
+      <span class="hmc-swatch" data-level="2"></span>
+      <span class="hmc-swatch" data-level="3"></span>
+      <span class="hmc-swatch" data-level="4"></span>
+      <span class="hmc-legend-label">More</span>
+    </div>
+  </div>
+
+  <div class="hmc-tooltip" data-tooltip role="tooltip" aria-hidden="true"></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

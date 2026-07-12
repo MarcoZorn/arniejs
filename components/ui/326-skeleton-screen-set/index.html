@@ -1,0 +1,89 @@
+<!doctype html>
+<!-- description: Notes from the growing beds, updated this morning -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Skeleton Screen Set — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="skel-wrap">
+  <div class="skel-toolbar">
+    <p class="skel-hint">A patch of ground settles before anything pushes through — this page fills in the same way, piece by piece.</p>
+    <button type="button" class="skel-btn" data-action="simulate-load">Simulate load</button>
+  </div>
+
+  <section class="skel-page" aria-live="polite" aria-busy="true">
+
+    <div class="skel-block skel-header" data-state="loading">
+      <div class="skel-placeholder skel-ph-avatar shimmer"></div>
+      <div class="skel-placeholder-col">
+        <div class="skel-placeholder skel-ph-line skel-ph-line--wide shimmer"></div>
+        <div class="skel-placeholder skel-ph-line skel-ph-line--narrow shimmer"></div>
+      </div>
+      <div class="skel-real skel-real-header">
+        <div class="skel-avatar">GB</div>
+        <div class="skel-real-col">
+          <h1 class="skel-real-title">Greenhouse Bulletin</h1>
+          <p class="skel-real-sub">Notes from the growing beds, updated this morning</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skel-block skel-cards" data-state="loading">
+      <div class="skel-card-ph shimmer-group">
+        <div class="skel-placeholder skel-ph-thumb shimmer"></div>
+        <div class="skel-placeholder skel-ph-line shimmer"></div>
+        <div class="skel-placeholder skel-ph-line skel-ph-line--narrow shimmer"></div>
+      </div>
+      <div class="skel-card-ph shimmer-group">
+        <div class="skel-placeholder skel-ph-thumb shimmer"></div>
+        <div class="skel-placeholder skel-ph-line shimmer"></div>
+        <div class="skel-placeholder skel-ph-line skel-ph-line--narrow shimmer"></div>
+      </div>
+      <div class="skel-card-ph shimmer-group">
+        <div class="skel-placeholder skel-ph-thumb shimmer"></div>
+        <div class="skel-placeholder skel-ph-line shimmer"></div>
+        <div class="skel-placeholder skel-ph-line skel-ph-line--narrow shimmer"></div>
+      </div>
+      <div class="skel-real skel-real-cards">
+        <article class="skel-card">
+          <div class="skel-card-thumb" aria-hidden="true">🌱</div>
+          <h3>Seedling watch</h3>
+          <p>Three new sprouts logged in bed 4 this week.</p>
+        </article>
+        <article class="skel-card">
+          <div class="skel-card-thumb" aria-hidden="true">🪴</div>
+          <h3>Repotting queue</h3>
+          <p>Basil and thyme are ready to move up a size.</p>
+        </article>
+        <article class="skel-card">
+          <div class="skel-card-thumb" aria-hidden="true">🌿</div>
+          <h3>Pruned &amp; tidy</h3>
+          <p>Hedge rows trimmed back ahead of the warm spell.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="skel-block skel-list" data-state="loading">
+      <div class="skel-list-ph shimmer-group">
+        <div class="skel-placeholder skel-ph-row shimmer"></div>
+        <div class="skel-placeholder skel-ph-row shimmer"></div>
+        <div class="skel-placeholder skel-ph-row shimmer"></div>
+        <div class="skel-placeholder skel-ph-row shimmer"></div>
+      </div>
+      <ul class="skel-real skel-real-list">
+        <li><span class="skel-dot"></span>Watered rows 1–6</li>
+        <li><span class="skel-dot"></span>Checked soil moisture, bed 4</li>
+        <li><span class="skel-dot"></span>Logged compost turn</li>
+        <li><span class="skel-dot"></span>Staked the tomato vines</li>
+      </ul>
+    </div>
+
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

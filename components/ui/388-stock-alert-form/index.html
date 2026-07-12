@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- description: Leave your email and we'll let you know the moment it's back in the ground. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stock Alert Form — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="alert-wrap">
+  <div class="alert-intro">
+    <p class="alert-eyebrow">Sold out</p>
+    <h1 class="alert-title">This one's gone for now</h1>
+    <p class="alert-sub">Leave your email and we'll let you know the moment it's back in the ground.</p>
+  </div>
+
+  <article class="alert-card">
+    <div class="alert-product">
+      <div class="alert-thumb" aria-hidden="true">
+        <span class="alert-thumb-badge">Out of stock</span>
+      </div>
+      <div class="alert-product-info">
+        <span class="alert-product-name">Rust Copper Trowel</span>
+        <span class="alert-product-price">$24</span>
+      </div>
+    </div>
+
+    <div class="alert-body" data-alert-body>
+      <form class="alert-form" data-alert-form novalidate>
+        <label class="alert-label" for="alert-email">Notify me by email</label>
+        <div class="alert-field">
+          <input class="alert-input" type="email" id="alert-email" name="email" placeholder="you@example.com" autocomplete="email">
+          <button type="submit" class="alert-submit">Notify me</button>
+        </div>
+        <p class="alert-error" data-alert-error role="alert"></p>
+      </form>
+    </div>
+  </article>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

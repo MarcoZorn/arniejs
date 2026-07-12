@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- description: Pass this along to a fellow gardener — pick a path and it's on its way. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Share Sheet — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="ss-stage">
+  <p class="ss-desc">Pass this along to a fellow gardener — pick a path and it's on its way.</p>
+
+  <button type="button" class="ss-open-btn" id="ssOpenBtn">Share this page</button>
+
+  <div class="ss-overlay" id="ssOverlay" hidden>
+    <div class="ss-sheet" role="dialog" aria-modal="true" aria-labelledby="ssTitle" id="ssSheet">
+      <div class="ss-sheet-head">
+        <h2 class="ss-title" id="ssTitle">Share</h2>
+        <button type="button" class="ss-close" id="ssClose" aria-label="Close share sheet">✕</button>
+      </div>
+
+      <div class="ss-link-row">
+        <input type="text" class="ss-link-input" id="ssLinkInput" readonly value="https://arniejs.dev/components/share-sheet">
+        <button type="button" class="ss-copy-btn" id="ssCopyBtn">Copy link</button>
+      </div>
+      <p class="ss-copy-status" id="ssCopyStatus" role="status" aria-live="polite"></p>
+
+      <div class="ss-targets">
+        <a class="ss-target" id="ssEmail" href="mailto:?subject=Take%20a%20look&body=Thought%20you%27d%20like%20this%3A%20https%3A%2F%2Farniejs.dev%2Fcomponents%2Fshare-sheet">
+          <span class="ss-target-icon" aria-hidden="true">✉️</span>
+          <span class="ss-target-label">Email</span>
+        </a>
+        <button type="button" class="ss-target" data-network="twitter">
+          <span class="ss-target-icon" aria-hidden="true">𝕏</span>
+          <span class="ss-target-label">X</span>
+        </button>
+        <button type="button" class="ss-target" data-network="linkedin">
+          <span class="ss-target-icon" aria-hidden="true">in</span>
+          <span class="ss-target-label">LinkedIn</span>
+        </button>
+        <button type="button" class="ss-target" data-network="facebook">
+          <span class="ss-target-icon" aria-hidden="true">f</span>
+          <span class="ss-target-label">Facebook</span>
+        </button>
+      </div>
+
+      <p class="ss-network-status" id="ssNetworkStatus" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- description: A patch of soil for testing calls before they go anywhere near real ground — send a request, watch what comes back. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>API Response Viewer — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="arv-wrap">
+  <p class="arv-sub">A patch of soil for testing calls before they go anywhere near real ground — send a request, watch what comes back.</p>
+
+  <div class="arv-panel">
+    <div class="arv-toolbar">
+      <span class="arv-endpoint">GET /api/orchard/harvest</span>
+      <button type="button" class="arv-send" id="arvSend">Send request</button>
+    </div>
+
+    <div class="arv-result" id="arvResult">
+      <p class="arv-idle" id="arvIdle">No request sent yet.</p>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

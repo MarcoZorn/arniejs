@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+.ffl-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+
+.ffl-sub {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  max-width: 48ch;
+  margin: 0 0 28px;
+}
+
+.ffl-heading {
+  font-size: 1.9rem;
+  font-weight: 800;
+  margin: 0 0 18px;
+}
+
+.ffl-summary {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: var(--accent-sage);
+  font-size: 0.9rem;
+}
+
+.ffl-list {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ffl-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  flex-wrap: wrap;
+}
+
+.ffl-name {
+  flex: 1 1 140px;
+  font-weight: 600;
+  min-width: 140px;
+}
+
+.ffl-name-key {
+  display: block;
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  margin-top: 2px;
+}
+
+/* Switch */
+.ffl-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  flex: none;
+}
+
+.ffl-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ffl-switch-track {
+  position: absolute;
+  inset: 0;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.ffl-switch-track::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.ffl-switch input:checked + .ffl-switch-track {
+  background: var(--accent-moss);
+}
+
+.ffl-switch input:checked + .ffl-switch-track::before {
+  transform: translateX(20px);
+  background: var(--text-primary);
+}
+
+.ffl-switch input:focus-visible + .ffl-switch-track {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 2px;
+}
+
+/* Rollout field */
+.ffl-rollout {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+}
+
+.ffl-rollout label {
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ffl-rollout input {
+  width: 60px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+  padding: 6px 8px;
+  font-size: 0.85rem;
+}
+
+.ffl-rollout input:focus {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 1px;
+}
+
+.ffl-rollout .ffl-pct {
+  color: var(--text-faint);
+  font-size: 0.8rem;
+}
+
+.ffl-preview-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-faint);
+  margin: 0 0 8px;
+}
+
+.ffl-json {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+  font-size: 0.78rem;
+  color: var(--accent-sand);
+  overflow-x: auto;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .ffl-row { justify-content: space-between; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ffl-switch-track,
+  .ffl-switch-track::before { transition: none; }
+}

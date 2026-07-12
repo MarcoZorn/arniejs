@@ -1,0 +1,71 @@
+<!doctype html>
+<!-- description: Move forward one bed at a time — you can always step back to what's already planted, but the rows ahead stay closed until you reach them. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wizard Step Nav — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wiz-wrap">
+  <p class="wiz-sub">Move forward one bed at a time — you can always step back to what's already planted, but the rows ahead stay closed until you reach them.</p>
+
+  <nav class="wiz-nav" aria-label="Setup steps">
+    <ol class="wiz-steps" id="wizSteps">
+      <li class="wiz-step is-complete is-active" data-step="1">
+        <button class="wiz-step-btn" type="button" data-target="1" aria-current="step">
+          <span class="wiz-step-num">1</span>
+          <span class="wiz-step-label">Plot details</span>
+        </button>
+      </li>
+      <li class="wiz-step" data-step="2">
+        <button class="wiz-step-btn" type="button" data-target="2" disabled>
+          <span class="wiz-step-num">2</span>
+          <span class="wiz-step-label">Soil &amp; light</span>
+        </button>
+      </li>
+      <li class="wiz-step" data-step="3">
+        <button class="wiz-step-btn" type="button" data-target="3" disabled>
+          <span class="wiz-step-num">3</span>
+          <span class="wiz-step-label">Choose crops</span>
+        </button>
+      </li>
+      <li class="wiz-step" data-step="4">
+        <button class="wiz-step-btn" type="button" data-target="4" disabled>
+          <span class="wiz-step-num">4</span>
+          <span class="wiz-step-label">Review</span>
+        </button>
+      </li>
+    </ol>
+  </nav>
+
+  <section class="wiz-panel" id="wizPanel-1" data-panel="1" role="tabpanel">
+    <h2>Plot details</h2>
+    <p>Tell us the size and shape of the plot you're starting with. A rough estimate is fine — you can adjust it later.</p>
+  </section>
+
+  <section class="wiz-panel" id="wizPanel-2" data-panel="2" role="tabpanel" hidden>
+    <h2>Soil &amp; light</h2>
+    <p>Describe how much sun the plot gets each day and whether the soil leans sandy, loamy, or clay-heavy.</p>
+  </section>
+
+  <section class="wiz-panel" id="wizPanel-3" data-panel="3" role="tabpanel" hidden>
+    <h2>Choose crops</h2>
+    <p>Pick a handful of crops suited to your conditions. You'll be able to add more once the plan is set.</p>
+  </section>
+
+  <section class="wiz-panel" id="wizPanel-4" data-panel="4" role="tabpanel" hidden>
+    <h2>Review</h2>
+    <p>Here's a summary of what you've chosen. Everything can still be edited from earlier steps.</p>
+  </section>
+
+  <div class="wiz-controls">
+    <button class="wiz-btn wiz-btn--ghost" type="button" id="wizBack">Back</button>
+    <button class="wiz-btn wiz-btn--solid" type="button" id="wizNext">Next step</button>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.confirmdlg-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.confirmdlg-card {
+  max-width: 380px;
+  width: 100%;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 32px;
+  text-align: left;
+}
+
+.confirmdlg-eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-clay);
+}
+
+.confirmdlg-title {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.confirmdlg-desc {
+  margin: 0 0 24px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.confirmdlg-trigger {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid var(--accent-rust);
+  background: transparent;
+  color: var(--accent-rust);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.confirmdlg-trigger:hover {
+  background: var(--accent-rust);
+  color: var(--text-primary);
+}
+
+/* overlay + dialog */
+.confirmdlg-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 8, 4, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 200;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.confirmdlg-overlay[hidden] { display: none; }
+
+.confirmdlg-overlay.is-open { opacity: 1; }
+
+.confirmdlg-dialog {
+  width: 100%;
+  max-width: 400px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  padding: 30px;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.55);
+  transform: scale(0.94);
+  opacity: 0;
+  transition: transform 0.2s cubic-bezier(0.22,0.9,0.35,1), opacity 0.2s ease;
+}
+
+.confirmdlg-overlay.is-open .confirmdlg-dialog {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.confirmdlg-dialog:focus { outline: none; }
+
+.confirmdlg-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(160,56,32,0.16);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a03820' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='12' y1='9' x2='12' y2='14'/%3E%3Ccircle cx='12' cy='17.5' r='0.6' fill='%23a03820'/%3E%3Cpath d='M10.6 3.9 2.7 18a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.4 3.9a2 2 0 0 0-3.5 0z'/%3E%3C/svg%3E");
+  margin-bottom: 16px;
+}
+
+.confirmdlg-dialog-title {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.confirmdlg-dialog-body {
+  margin: 0 0 26px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.confirmdlg-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.confirmdlg-btn {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 11px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid var(--border-light);
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.confirmdlg-btn:active { transform: translateY(1px); }
+
+.confirmdlg-btn--cancel {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.confirmdlg-btn--cancel:hover {
+  border-color: var(--accent-sand);
+  color: var(--accent-sand);
+}
+
+.confirmdlg-btn--confirm {
+  background: var(--accent-rust);
+  border-color: var(--accent-rust);
+  color: var(--text-primary);
+}
+
+.confirmdlg-btn--confirm:hover {
+  background: #8c2f1a;
+  border-color: #8c2f1a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.bci-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 96px 24px;
+}
+
+.bci-tagline {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 32px;
+  text-align: center;
+}
+
+.bci-nav {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bci-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.bci-item {
+  display: flex;
+  align-items: center;
+}
+
+.bci-link,
+.bci-current {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.bci-link:hover {
+  color: var(--accent-sand);
+  background: var(--bg-subtle);
+}
+
+.bci-link:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 1px;
+}
+
+.bci-icon {
+  flex: none;
+  color: var(--accent-clay);
+}
+
+.bci-link:hover .bci-icon {
+  color: var(--accent-sand);
+}
+
+.bci-current {
+  color: var(--text-primary);
+  font-weight: 800;
+  cursor: default;
+}
+
+.bci-current .bci-icon {
+  color: var(--accent-terra);
+}
+
+.bci-sep {
+  color: var(--text-faint);
+  margin: 0 4px;
+  flex: none;
+}
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }

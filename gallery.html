@@ -3,13 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ArnieJS — 280+ vanilla JS components. Grown from scratch.</title>
-<meta name="description" content="280+ vanilla JS UI components and visual effects. Zero dependencies. Zero build step. Just copy three files and go.">
-<meta property="og:title" content="ArnieJS — 280+ vanilla JS components. Grown from scratch.">
-<meta property="og:description" content="Zero dependencies. Zero build step. Just copy three files and go.">
+<title>Component Gallery — 480+ Vanilla JS UI Components | ArnieJS</title>
+<meta name="description" content="Browse, search, and preview 480+ copy-paste vanilla JS components and visual effects. Filter by category, view source, and reskin live with CSS variables.">
+<link rel="canonical" href="https://marcozorn.github.io/arniejs/gallery.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Component Gallery — 480+ Vanilla JS UI Components | ArnieJS">
+<meta property="og:description" content="Browse, search, and preview 480+ copy-paste vanilla JS components and visual effects. Filter by category, view source, and reskin live with CSS variables.">
 <meta property="og:image" content="https://marcozorn.github.io/arniejs/assets/og-image.jpg">
-<meta property="og:url" content="https://marcozorn.github.io/arniejs/">
+<meta property="og:url" content="https://marcozorn.github.io/arniejs/gallery.html">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Component Gallery — 480+ Vanilla JS UI Components | ArnieJS">
+<meta name="twitter:description" content="Browse, search, and preview 480+ copy-paste vanilla JS components and visual effects. Filter by category, view source, and reskin live with CSS variables.">
+<meta name="twitter:image" content="https://marcozorn.github.io/arniejs/assets/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "ArnieJS Component Gallery",
+  "description": "Browsable gallery of 480+ zero-dependency vanilla JS UI components and visual effects, searchable by category and tag.",
+  "url": "https://marcozorn.github.io/arniejs/gallery.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ArnieJS",
+    "url": "https://marcozorn.github.io/arniejs/"
+  }
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
@@ -23,6 +42,7 @@
   }
   *{box-sizing:border-box;}
   html,body{height:100%;}
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
   body{ margin:0; font-family:'Syne', system-ui, sans-serif; background: var(--bg-deep); color: var(--text-primary); overflow-x:hidden; }
   ::-webkit-scrollbar{ width:10px; height:10px; }
   ::-webkit-scrollbar-thumb{ background: var(--bg-subtle); border-radius:8px; }
@@ -136,10 +156,12 @@
 </head>
 <body>
 
+<h1 class="sr-only">ArnieJS Component Gallery — 480+ Vanilla JS UI Components</h1>
+
 <header>
   <a href="index.html" class="logo" style="text-decoration:none">
-    <img src="assets/arnie.svg" alt="Arnie">
-    <div><div class="name">arniejs 🌱</div><div class="tag">280+ vanilla JS components</div></div>
+    <img src="assets/arnie.svg" alt="ArnieJS logo">
+    <div><div class="name">arniejs 🌱</div><div class="tag">480+ vanilla JS components</div></div>
   </a>
   <nav class="site-nav">
     <a href="index.html">Home</a>

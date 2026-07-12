@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-deep);
+  padding: 40px 20px;
+}
+
+.pci-wrap {
+  width: 100%;
+  max-width: 460px;
+}
+
+.pci-card {
+  background: var(--bg-card);
+  border: 2px dashed var(--accent-rust);
+  border-radius: 0;
+  padding: 40px 32px;
+  text-align: center;
+}
+
+.pci-eyebrow {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-rust);
+}
+
+.pci-title {
+  margin: 0 0 12px;
+  font-size: clamp(20px, 4vw, 24px);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.pci-hint-text {
+  margin: 0 0 30px;
+  color: var(--text-muted);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+.pci-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pci-box {
+  width: 48px;
+  height: 58px;
+  text-align: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-primary);
+  background: var(--bg-surface);
+  border: 2px solid var(--border-light);
+  border-radius: 0;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+}
+
+.pci-box:focus {
+  border-color: var(--accent-rust);
+  box-shadow: 0 0 0 3px rgba(160, 56, 32, 0.25);
+}
+
+.pci-box.is-filled {
+  border-color: var(--accent-sand);
+  color: var(--accent-sand);
+}
+
+.pci-box.is-shake {
+  animation: pci-shake 0.28s ease;
+}
+
+@keyframes pci-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.pci-status {
+  margin: 26px 0 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-sage);
+  min-height: 18px;
+}
+
+@media (max-width: 420px) {
+  .pci-box {
+    width: 40px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

@@ -1,0 +1,114 @@
+<!doctype html>
+<!-- description: A short, honest answer to the questions we hear most often — search to jump straight to yours. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FAQ Accordion — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="faq-wrap">
+  <div class="faq-intro">
+    <p class="faq-eyebrow">Questions</p>
+    <h1 class="faq-title">Things people ask before planting</h1>
+    <p class="faq-sub">A short, honest answer to the questions we hear most often — search to jump straight to yours.</p>
+  </div>
+
+  <div class="faq-search-box">
+    <span class="faq-search-icon" aria-hidden="true"></span>
+    <input class="faq-search" type="search" placeholder="Search questions…" aria-label="Search FAQ">
+  </div>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3 class="faq-q-heading">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>Do I need any gardening experience to start?</span>
+          <span class="faq-chevron" aria-hidden="true"></span>
+        </button>
+      </h3>
+      <div class="faq-answer" hidden>
+        <p>Not at all. The onboarding walks you through setting up your first plot, and the scheduling tools handle most of the guesswork for you.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-q-heading">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>Can I switch plans later?</span>
+          <span class="faq-chevron" aria-hidden="true"></span>
+        </button>
+      </h3>
+      <div class="faq-answer" hidden>
+        <p>Yes, upgrades and downgrades take effect immediately and we prorate the difference on your next invoice.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-q-heading">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>Does the weather scheduling work offline?</span>
+          <span class="faq-chevron" aria-hidden="true"></span>
+        </button>
+      </h3>
+      <div class="faq-answer" hidden>
+        <p>It caches the latest forecast locally, so short connectivity gaps won't interrupt your irrigation rules.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-q-heading">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>How many collaborators can I add?</span>
+          <span class="faq-chevron" aria-hidden="true"></span>
+        </button>
+      </h3>
+      <div class="faq-answer" hidden>
+        <p>It depends on your plan — Sprout includes one seat, Bloom includes five, and Orchard is unlimited.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-q-heading">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>What happens to my data if I cancel?</span>
+          <span class="faq-chevron" aria-hidden="true"></span>
+        </button>
+      </h3>
+      <div class="faq-answer" hidden>
+        <p>Your historical harvest data stays available for export for 90 days after cancellation, then it's permanently deleted.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-q-heading">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>Is there a mobile app?</span>
+          <span class="faq-chevron" aria-hidden="true"></span>
+        </button>
+      </h3>
+      <div class="faq-answer" hidden>
+        <p>Not yet — the web app is fully responsive and works well on phones and tablets in the meantime.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-q-heading">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>Can I import data from a spreadsheet?</span>
+          <span class="faq-chevron" aria-hidden="true"></span>
+        </button>
+      </h3>
+      <div class="faq-answer" hidden>
+        <p>Yes, CSV import is available on every plan from the settings page under "Data &amp; imports".</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="faq-empty" hidden>No questions match your search. Try a different word.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

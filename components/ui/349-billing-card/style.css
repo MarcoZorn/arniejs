@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--bg-deep);
+  font-family: 'Syne', sans-serif;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.bic-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+}
+
+.bic-card {
+  width: 100%;
+  max-width: 460px;
+  background: linear-gradient(160deg, var(--bg-card), var(--bg-surface));
+  border: 1px solid var(--border-light);
+  border-radius: 18px;
+  padding: 30px 30px 26px;
+}
+
+.bic-tagline {
+  margin: 0 0 22px;
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.bic-current {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  padding: 20px 22px;
+}
+
+.bic-current-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bic-plan-name {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--accent-sand);
+}
+
+.bic-plan-price {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.bic-plan-price small {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.bic-blurb {
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.bic-renewal {
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--text-faint);
+}
+
+.bic-renewal strong {
+  color: var(--text-primary);
+}
+
+.bic-upgrade-btn {
+  width: 100%;
+  margin-top: 18px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid var(--accent-terra);
+  background: var(--accent-terra);
+  color: #1a1208;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.bic-upgrade-btn:hover {
+  background: var(--accent-sand);
+  border-color: var(--accent-sand);
+  transform: translateY(-1px);
+}
+
+.bic-upgrade-btn:active { transform: translateY(0); }
+
+.bic-picker {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border-light);
+}
+
+.bic-picker-label {
+  margin: 0 0 12px;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-clay);
+}
+
+.bic-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.bic-option:hover {
+  border-color: var(--accent-sand);
+}
+
+.bic-option input[type="radio"] {
+  margin-top: 3px;
+  accent-color: var(--accent-terra);
+  flex: none;
+}
+
+.bic-option:has(input:checked) {
+  border-color: var(--accent-terra);
+  background: rgba(196, 98, 45, 0.08);
+}
+
+.bic-option-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bic-option-name {
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.bic-option-desc {
+  font-size: 12px;
+  color: var(--text-faint);
+}
+
+.bic-picker-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.bic-confirm-btn,
+.bic-cancel-btn {
+  flex: 1;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 9px;
+  cursor: pointer;
+  border: 1px solid var(--border-light);
+  transition: transform 0.15s ease, background-color 0.15s ease, opacity 0.15s ease;
+}
+
+.bic-confirm-btn {
+  background: var(--accent-terra);
+  border-color: var(--accent-terra);
+  color: #1a1208;
+}
+
+.bic-confirm-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.bic-confirm-btn:not(:disabled):hover {
+  background: var(--accent-sand);
+  border-color: var(--accent-sand);
+}
+
+.bic-cancel-btn {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.bic-cancel-btn:hover {
+  border-color: var(--text-muted);
+}
+
+.bic-status {
+  min-height: 16px;
+  margin: 16px 0 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--accent-sage);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

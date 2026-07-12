@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- description: Convert text to Base64 and back, right where you're standing, no round trip to a server. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Base64 Converter — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="b64-wrap">
+  <div class="b64-panel">
+    <p class="b64-desc">Convert text to Base64 and back, right where you're standing, no round trip to a server.</p>
+
+    <div class="b64-toggle" role="group" aria-label="Mode">
+      <button type="button" class="b64-toggle-btn is-active" data-mode="encode">Encode</button>
+      <button type="button" class="b64-toggle-btn" data-mode="decode">Decode</button>
+    </div>
+
+    <label class="b64-label" for="b64-input" id="b64-input-label">Text to encode</label>
+    <textarea id="b64-input" class="b64-textarea" rows="5" spellcheck="false" placeholder="Type or paste text here…"></textarea>
+
+    <label class="b64-label" for="b64-output" id="b64-output-label">Base64 output</label>
+    <textarea id="b64-output" class="b64-textarea b64-textarea--output" rows="5" spellcheck="false" readonly></textarea>
+
+    <p class="b64-error" id="b64-error" role="alert"></p>
+
+    <button type="button" class="b64-copy" id="b64-copy">Copy output</button>
+    <span class="b64-confirm" id="b64-confirm" aria-live="polite"></span>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

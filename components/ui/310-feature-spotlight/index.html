@@ -1,0 +1,48 @@
+<!doctype html>
+<!-- description: A single element gets a moment in the light, everything else fades back, until you say you have seen it. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Feature Spotlight — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="spot-page">
+  <p class="spot-hint">A single element gets a moment in the light, everything else fades back, until you say you have seen it.</p>
+
+  <div class="spot-toolbar">
+    <button class="spot-replay" id="spotReplay" type="button">Show spotlight again</button>
+  </div>
+
+  <section class="spot-app" aria-label="App preview">
+    <header class="spot-app-header">
+      <span class="spot-app-title">Garden Ledger</span>
+      <nav class="spot-app-nav" aria-label="Primary">
+        <span>Beds</span>
+        <span>Tasks</span>
+        <span>Reports</span>
+      </nav>
+      <button class="spot-app-cta" id="spotTarget" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        New export
+      </button>
+    </header>
+    <div class="spot-app-body">
+      <p>Reports summarize soil, water, and yield trends across every plot you manage.</p>
+    </div>
+  </section>
+
+  <div class="spot-overlay" id="spotOverlay" hidden></div>
+
+  <div class="spot-callout" id="spotCallout" role="tooltip" hidden>
+    <p class="spot-callout-eyebrow">New</p>
+    <h2 class="spot-callout-title">Export your reports</h2>
+    <p class="spot-callout-body">You can now export any report as a spreadsheet straight from this button — handy for sharing with your co-op.</p>
+    <button class="spot-callout-dismiss" id="spotDismiss" type="button">Got it</button>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

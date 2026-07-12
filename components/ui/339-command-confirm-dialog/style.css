@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.cc-demo {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 64px 24px;
+}
+
+.cc-hint {
+  margin: 0;
+  max-width: 420px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.cc-trigger {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--accent-rust);
+  border: 1px solid var(--accent-rust);
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.cc-trigger:hover {
+  background: var(--accent-rust);
+  color: var(--text-primary);
+}
+
+.cc-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 10, 4, 0.78);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease;
+  z-index: 40;
+}
+
+.cc-backdrop.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cc-modal {
+  position: fixed;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(440px, 92vw);
+  background: var(--bg-card);
+  border: 1px solid var(--accent-rust);
+  border-radius: 18px 18px 0 0;
+  padding: 28px 26px 26px;
+  box-shadow: 0 -20px 60px rgba(160, 56, 32, 0.25);
+  z-index: 41;
+  visibility: hidden;
+  transition: bottom 0.3s ease, visibility 0.3s;
+}
+
+.cc-modal.open {
+  bottom: 0;
+  visibility: visible;
+}
+
+@media (min-height: 560px) {
+  .cc-modal {
+    bottom: -100%;
+    top: auto;
+  }
+  .cc-modal.open {
+    bottom: 8vh;
+    border-radius: 18px;
+  }
+}
+
+.cc-title {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--accent-rust);
+}
+
+.cc-desc {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.cc-desc strong {
+  color: var(--text-primary);
+}
+
+.cc-phrase-label {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.cc-phrase-label code {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 3px 8px;
+  background: var(--bg-subtle);
+  color: var(--accent-sand);
+  border-radius: 6px;
+  font-family: 'Syne', monospace;
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+}
+
+.cc-input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  transition: border-color 0.15s ease;
+}
+
+.cc-input:focus {
+  outline: none;
+  border-color: var(--accent-rust);
+}
+
+.cc-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.cc-btn {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 11px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid var(--border-light);
+  transition: transform 0.15s ease, background-color 0.15s ease, opacity 0.15s ease;
+}
+
+.cc-btn--ghost {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.cc-btn--ghost:hover {
+  border-color: var(--accent-sand);
+  color: var(--accent-sand);
+}
+
+.cc-btn--danger {
+  background: var(--accent-rust);
+  color: var(--text-primary);
+  border-color: var(--accent-rust);
+}
+
+.cc-btn--danger:not(:disabled):hover {
+  background: #c14226;
+  transform: translateY(-1px);
+}
+
+.cc-btn--danger:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  background: var(--bg-subtle);
+  color: var(--text-faint);
+  border-color: var(--border);
+}
+
+.cc-status {
+  margin: 16px 0 0;
+  min-height: 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-sage);
+  text-align: right;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

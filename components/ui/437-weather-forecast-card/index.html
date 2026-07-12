@@ -1,0 +1,71 @@
+<!doctype html>
+<!-- description: Partly cloudy, light breeze from the west -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Weather Forecast Card — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="weather-wrap">
+  <section class="weather-card">
+    <p class="weather-hint">A quick read on what the sky has planned.</p>
+
+    <div class="weather-current">
+      <div class="weather-current-icon" id="weatherCurrentIcon" aria-hidden="true">⛅</div>
+      <div class="weather-current-info">
+        <p class="weather-current-day" id="weatherCurrentDay">Today</p>
+        <p class="weather-current-temp"><span id="weatherCurrentTemp">21</span>&deg;</p>
+        <p class="weather-current-desc" id="weatherCurrentDesc">Partly cloudy, light breeze from the west</p>
+      </div>
+    </div>
+
+    <div class="weather-row" id="weatherRow" role="list">
+      <button class="weather-day is-selected" type="button" role="listitem"
+        data-day="Today" data-icon="⛅" data-hi="21" data-lo="14"
+        data-desc="Partly cloudy, light breeze from the west">
+        <span class="weather-day-label">Today</span>
+        <span class="weather-day-icon">⛅</span>
+        <span class="weather-day-hi">21°</span>
+        <span class="weather-day-lo">14°</span>
+      </button>
+      <button class="weather-day" type="button" role="listitem"
+        data-day="Tue" data-icon="🌧" data-hi="17" data-lo="11"
+        data-desc="Steady rain through the afternoon">
+        <span class="weather-day-label">Tue</span>
+        <span class="weather-day-icon">🌧</span>
+        <span class="weather-day-hi">17°</span>
+        <span class="weather-day-lo">11°</span>
+      </button>
+      <button class="weather-day" type="button" role="listitem"
+        data-day="Wed" data-icon="☀️" data-hi="24" data-lo="15"
+        data-desc="Clear skies and full sun all day">
+        <span class="weather-day-label">Wed</span>
+        <span class="weather-day-icon">☀️</span>
+        <span class="weather-day-hi">24°</span>
+        <span class="weather-day-lo">15°</span>
+      </button>
+      <button class="weather-day" type="button" role="listitem"
+        data-day="Thu" data-icon="⛈" data-hi="19" data-lo="13"
+        data-desc="Scattered thunderstorms by evening">
+        <span class="weather-day-label">Thu</span>
+        <span class="weather-day-icon">⛈</span>
+        <span class="weather-day-hi">19°</span>
+        <span class="weather-day-lo">13°</span>
+      </button>
+      <button class="weather-day" type="button" role="listitem"
+        data-day="Fri" data-icon="🌤" data-hi="22" data-lo="14"
+        data-desc="Mostly sunny with a few high clouds">
+        <span class="weather-day-label">Fri</span>
+        <span class="weather-day-icon">🌤</span>
+        <span class="weather-day-hi">22°</span>
+        <span class="weather-day-lo">14°</span>
+      </button>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

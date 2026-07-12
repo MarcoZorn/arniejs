@@ -1,0 +1,45 @@
+<!doctype html>
+<!-- description: A quick word helps us tend this better. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Feedback Widget — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="fw-stage">
+  <p class="fw-hint">A quiet tab waits at the edge of the page — tug it open whenever something's worth telling us.</p>
+
+  <button type="button" class="fw-tab" id="fwTab" aria-expanded="false" aria-controls="fwPanel">
+    <span class="fw-tab-label">Feedback</span>
+  </button>
+
+  <section class="fw-panel" id="fwPanel" role="dialog" aria-modal="false" aria-labelledby="fwPanelTitle" hidden>
+    <div class="fw-panel-inner">
+      <h2 class="fw-panel-title" id="fwPanelTitle">How's it growing?</h2>
+      <p class="fw-panel-sub">A quick word helps us tend this better.</p>
+
+      <div class="fw-emoji-row" role="radiogroup" aria-label="Rate your experience">
+        <button type="button" class="fw-emoji" data-value="1" role="radio" aria-checked="false" aria-label="Wilted">🥀</button>
+        <button type="button" class="fw-emoji" data-value="2" role="radio" aria-checked="false" aria-label="Struggling">🍂</button>
+        <button type="button" class="fw-emoji" data-value="3" role="radio" aria-checked="false" aria-label="Okay">🌱</button>
+        <button type="button" class="fw-emoji" data-value="4" role="radio" aria-checked="false" aria-label="Good">🌿</button>
+        <button type="button" class="fw-emoji" data-value="5" role="radio" aria-checked="false" aria-label="Thriving">🌻</button>
+      </div>
+
+      <label class="fw-label" for="fwComment">Tell us more (optional)</label>
+      <textarea class="fw-textarea" id="fwComment" rows="3" placeholder="What's working, what isn't..."></textarea>
+
+      <div class="fw-actions">
+        <button type="button" class="fw-submit" id="fwSubmit">Submit</button>
+      </div>
+
+      <p class="fw-thanks" id="fwThanks" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

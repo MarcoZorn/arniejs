@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- description: Each stage settles into place as you finish it, so you always know how much ground is left to cover. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout Progress Bar — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="cpb-wrap">
+  <div class="cpb-intro">
+    <p class="cpb-eyebrow">Almost there</p>
+    <h1 class="cpb-title">A few steps between you and your order</h1>
+    <p class="cpb-sub">Each stage settles into place as you finish it, so you always know how much ground is left to cover.</p>
+  </div>
+
+  <nav class="cpb-track" aria-label="Checkout progress">
+    <ol class="cpb-steps" data-steps>
+      <li class="cpb-step" data-step="0" data-state="active">
+        <button type="button" class="cpb-node" data-step-btn aria-current="step">
+          <span class="cpb-node-icon" data-icon></span>
+        </button>
+        <span class="cpb-label">Cart</span>
+      </li>
+      <li class="cpb-step" data-step="1" data-state="upcoming">
+        <button type="button" class="cpb-node" data-step-btn>
+          <span class="cpb-node-icon" data-icon></span>
+        </button>
+        <span class="cpb-label">Shipping</span>
+      </li>
+      <li class="cpb-step" data-step="2" data-state="upcoming">
+        <button type="button" class="cpb-node" data-step-btn>
+          <span class="cpb-node-icon" data-icon></span>
+        </button>
+        <span class="cpb-label">Payment</span>
+      </li>
+      <li class="cpb-step" data-step="3" data-state="upcoming">
+        <button type="button" class="cpb-node" data-step-btn>
+          <span class="cpb-node-icon" data-icon></span>
+        </button>
+        <span class="cpb-label">Confirm</span>
+      </li>
+    </ol>
+  </nav>
+
+  <section class="cpb-panel" data-panel>
+    <h2 class="cpb-panel-title" data-panel-title>Your cart</h2>
+    <p class="cpb-panel-body" data-panel-body>Three items ready to go. Double check quantities before moving on to shipping.</p>
+  </section>
+
+  <div class="cpb-controls">
+    <button type="button" class="cpb-btn cpb-btn--ghost" data-back disabled>Back</button>
+    <button type="button" class="cpb-btn cpb-btn--solid" data-next>Next</button>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

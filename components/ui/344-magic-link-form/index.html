@@ -1,0 +1,57 @@
+<!doctype html>
+<!-- description: Skip the password — we’ll email you a one-time link that signs you in instantly. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Magic Link Form — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="ml-wrap">
+  <div class="ml-card">
+
+    <div class="ml-panel" id="mlRequestPanel">
+      <p class="ml-eyebrow">Passwordless sign-in</p>
+      <h1 class="ml-title">Sign in with a magic link</h1>
+      <p class="ml-tagline">Skip the password — we’ll email you a one-time link that signs you in instantly.</p>
+
+      <form class="ml-form" id="mlForm" novalidate>
+        <div class="ml-field">
+          <label class="ml-label" for="mlEmail">Email address</label>
+          <input class="ml-input" type="text" id="mlEmail" name="email" autocomplete="email" placeholder="you@example.com">
+          <p class="ml-error" id="mlEmailError" role="alert"></p>
+        </div>
+
+        <button class="ml-submit" type="submit" id="mlSubmit">
+          <span class="ml-spinner" id="mlSpinner" hidden aria-hidden="true"></span>
+          <span id="mlSubmitLabel">Send me a link</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="ml-panel ml-panel--sent" id="mlSentPanel" hidden>
+      <div class="ml-sent-icon" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+      </div>
+      <h1 class="ml-title">Link sent</h1>
+      <p class="ml-tagline">We sent a sign-in link to <strong id="mlSentEmail"></strong>. Open it on this device to continue.</p>
+
+      <button class="ml-resend" type="button" id="mlResendBtn">
+        <span class="ml-spinner ml-spinner--dark" id="mlResendSpinner" hidden aria-hidden="true"></span>
+        <span id="mlResendLabel">Resend link</span>
+      </button>
+      <p class="ml-resend-note" id="mlResendNote" role="status" aria-live="polite"></p>
+
+      <button class="ml-back" type="button" id="mlBackBtn">Use a different email</button>
+    </div>
+
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

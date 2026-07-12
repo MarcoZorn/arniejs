@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- description: Send message -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Form Error Summary — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="plot-wrap">
+  <div class="plot-card">
+    <p class="plot-eyebrow">Reach the gardener</p>
+    <h1 class="plot-title">Send us a message</h1>
+    <p class="plot-hint">Fill in the plot below — if anything's missing we'll point you straight to it before you resend.</p>
+
+    <div class="plot-summary" role="alert" aria-live="assertive" tabindex="-1" hidden>
+      <p class="plot-summary-title">We couldn't submit your message</p>
+      <ul class="plot-summary-list"></ul>
+    </div>
+
+    <div class="plot-success" role="status" aria-live="polite" hidden>
+      <p>Message planted! We'll get back to you shortly.</p>
+    </div>
+
+    <form class="plot-form" novalidate>
+      <div class="plot-field">
+        <label class="plot-label" for="plot-name">Full name</label>
+        <input class="plot-input" id="plot-name" name="name" type="text" required minlength="2">
+        <p class="plot-error" id="plot-name-error"></p>
+      </div>
+
+      <div class="plot-field">
+        <label class="plot-label" for="plot-email">Email address</label>
+        <input class="plot-input" id="plot-email" name="email" type="email" required>
+        <p class="plot-error" id="plot-email-error"></p>
+      </div>
+
+      <div class="plot-field">
+        <label class="plot-label" for="plot-topic">Topic</label>
+        <select class="plot-input" id="plot-topic" name="topic" required>
+          <option value="">Choose one…</option>
+          <option value="order">Order question</option>
+          <option value="support">Plant support</option>
+          <option value="other">Something else</option>
+        </select>
+        <p class="plot-error" id="plot-topic-error"></p>
+      </div>
+
+      <div class="plot-field">
+        <label class="plot-label" for="plot-message">Message</label>
+        <textarea class="plot-input plot-textarea" id="plot-message" name="message" required minlength="10" rows="4"></textarea>
+        <p class="plot-error" id="plot-message-error"></p>
+      </div>
+
+      <button class="plot-submit" type="submit">Send message</button>
+    </form>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- description: Set a fair price for this season's harvest — every digit lines up as neatly as rows in a field. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Currency Input — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="cui-wrap">
+  <div class="cui-card">
+    <p class="cui-tagline">Set a fair price for this season's harvest — every digit lines up as neatly as rows in a field.</p>
+
+    <label class="cui-label" for="cui-input">Sale price</label>
+    <div class="cui-field">
+      <span class="cui-symbol" aria-hidden="true">$</span>
+      <input
+        type="text"
+        inputmode="decimal"
+        id="cui-input"
+        class="cui-input"
+        value="0.00"
+        data-raw="0"
+        aria-label="Sale price in dollars"
+        autocomplete="off"
+      >
+    </div>
+
+    <div class="cui-meta">
+      <span class="cui-meta-label">Raw value</span>
+      <span class="cui-meta-value" id="cui-raw">0.00</span>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

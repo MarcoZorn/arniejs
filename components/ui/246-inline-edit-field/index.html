@@ -1,0 +1,49 @@
+<!doctype html>
+<!-- description: No modals, no page reloads — just click a field, change the words, and press Enter to let it take root. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inline Edit Field — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="inedit-wrap">
+  <div class="inedit-intro">
+    <p class="inedit-eyebrow">Tap to tend</p>
+    <h1 class="inedit-title">Click any label to edit it in place</h1>
+    <p class="inedit-sub">No modals, no page reloads — just click a field, change the words, and press Enter to let it take root.</p>
+  </div>
+
+  <div class="inedit-card">
+    <div class="inedit-field" data-inedit-root>
+      <span class="inedit-label">Plot name</span>
+      <div class="inedit-display" tabindex="0" role="button" aria-label="Edit plot name">
+        <span class="inedit-value">North Terrace Garden</span>
+        <svg class="inedit-pencil" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 20l3.6-.7a2 2 0 0 0 1.06-.56L19.4 8a2 2 0 0 0 0-2.83l-.57-.57a2 2 0 0 0-2.83 0L5.26 15.34a2 2 0 0 0-.56 1.06L4 20Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <input class="inedit-input" type="text" value="North Terrace Garden" maxlength="60" aria-label="Edit plot name value">
+      <p class="inedit-hint">Press Enter to save, Escape to cancel</p>
+    </div>
+  </div>
+
+  <div class="inedit-card">
+    <div class="inedit-field" data-inedit-root>
+      <span class="inedit-label">Caretaker email</span>
+      <div class="inedit-display" tabindex="0" role="button" aria-label="Edit caretaker email">
+        <span class="inedit-value">moss@arniejs.dev</span>
+        <svg class="inedit-pencil" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 20l3.6-.7a2 2 0 0 0 1.06-.56L19.4 8a2 2 0 0 0 0-2.83l-.57-.57a2 2 0 0 0-2.83 0L5.26 15.34a2 2 0 0 0-.56 1.06L4 20Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <input class="inedit-input" type="text" value="moss@arniejs.dev" maxlength="60" aria-label="Edit caretaker email value">
+      <p class="inedit-hint">Press Enter to save, Escape to cancel</p>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

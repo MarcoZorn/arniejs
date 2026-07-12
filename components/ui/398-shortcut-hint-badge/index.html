@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- description: Every action here answers to two masters — a click, or the shortcut printed right on the button. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shortcut Hint Badge — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shb-wrap">
+  <p class="shb-sub">Every action here answers to two masters — a click, or the shortcut printed right on the button.</p>
+
+  <div class="shb-actions" id="shb-actions">
+    <button class="shb-action" type="button" data-action="save" data-combo="ctrl+s">
+      <span class="shb-action-label">Save</span>
+      <span class="shb-kbd-group"><kbd class="shb-kbd">Ctrl</kbd><span class="shb-kbd-plus">+</span><kbd class="shb-kbd">S</kbd></span>
+    </button>
+    <button class="shb-action" type="button" data-action="search" data-combo="ctrl+k">
+      <span class="shb-action-label">Search</span>
+      <span class="shb-kbd-group"><kbd class="shb-kbd">Ctrl</kbd><span class="shb-kbd-plus">+</span><kbd class="shb-kbd">K</kbd></span>
+    </button>
+    <button class="shb-action" type="button" data-action="new" data-combo="ctrl+n">
+      <span class="shb-action-label">New</span>
+      <span class="shb-kbd-group"><kbd class="shb-kbd">Ctrl</kbd><span class="shb-kbd-plus">+</span><kbd class="shb-kbd">N</kbd></span>
+    </button>
+    <button class="shb-action shb-action--danger" type="button" data-action="delete" data-combo="ctrl+backspace">
+      <span class="shb-action-label">Delete</span>
+      <span class="shb-kbd-group"><kbd class="shb-kbd">Ctrl</kbd><span class="shb-kbd-plus">+</span><kbd class="shb-kbd">Backspace</kbd></span>
+    </button>
+  </div>
+
+  <div class="shb-log-wrap">
+    <p class="shb-log-title">Activity log</p>
+    <ol class="shb-log" id="shb-log">
+      <li class="shb-log-empty">Nothing yet — click a button or use its shortcut.</li>
+    </ol>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

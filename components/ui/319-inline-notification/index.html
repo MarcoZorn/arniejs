@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- description: A small note that lives inside the page itself, not floating above it. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inline Notification — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="inlinenote-wrap">
+  <article class="inlinenote-article">
+    <p class="inlinenote-tagline">A small note that lives inside the page itself, not floating above it.</p>
+
+    <h1 class="inlinenote-heading">Planting notes: Bed 7</h1>
+    <p class="inlinenote-copy">Sown two weeks ago with a mix of chard and calendula. Soil moisture has held steady, and the first true leaves are showing on the chard.</p>
+
+    <div class="inlinenote-note-slot" data-slot>
+      <div class="inlinenote-note" data-note>
+        <div class="inlinenote-note-inner">
+          <span class="inlinenote-icon" aria-hidden="true"></span>
+          <div class="inlinenote-body">
+            <p class="inlinenote-note-title">Draft autosaved</p>
+            <p class="inlinenote-note-text">Your notes were saved locally a moment ago.</p>
+          </div>
+          <button class="inlinenote-close" type="button" data-dismiss aria-label="Dismiss notification"><span aria-hidden="true">&times;</span></button>
+        </div>
+      </div>
+    </div>
+
+    <p class="inlinenote-copy">Next check-in is scheduled for the weekend, once the forecast clears.</p>
+
+    <button class="inlinenote-restore" type="button" data-restore hidden>Show notification again</button>
+  </article>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

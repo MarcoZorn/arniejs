@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- description: A plain, working shell — top bar, side nav, content pane — the sort of frame most tools end up needing. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>App Shell Layout — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <header class="shell-topbar">
+    <button type="button" class="shell-menu-btn" id="shellMenuBtn" aria-haspopup="true" aria-expanded="false" aria-controls="shellSidebar" aria-label="Open navigation menu">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+    <span class="shell-brand">Arnie Beds</span>
+    <span class="shell-topbar-spacer"></span>
+    <span class="shell-user" title="Signed in">MZ</span>
+  </header>
+
+  <div class="shell-body">
+    <div class="shell-overlay" id="shellOverlay" hidden></div>
+
+    <nav class="shell-sidebar" id="shellSidebar" aria-label="Primary" role="navigation">
+      <p class="shell-sidebar-sub">A plain, working shell — top bar, side nav, content pane — the sort of frame most tools end up needing.</p>
+      <ul class="shell-nav-list">
+        <li><a class="shell-nav-link is-active" href="#" aria-current="page">Overview</a></li>
+        <li><a class="shell-nav-link" href="#">Plots</a></li>
+        <li><a class="shell-nav-link" href="#">Schedules</a></li>
+        <li><a class="shell-nav-link" href="#">Harvest log</a></li>
+        <li><a class="shell-nav-link" href="#">Team</a></li>
+        <li><a class="shell-nav-link" href="#">Settings</a></li>
+      </ul>
+    </nav>
+
+    <main class="shell-content">
+      <h1>Overview</h1>
+      <p class="shell-desc">Resize the window down to see the sidebar tuck itself away behind a menu button, with a click-outside overlay to dismiss it.</p>
+      <div class="shell-cards">
+        <div class="shell-card">
+          <p class="shell-card-label">Active plots</p>
+          <p class="shell-card-value">12</p>
+        </div>
+        <div class="shell-card">
+          <p class="shell-card-label">Pending tasks</p>
+          <p class="shell-card-value">4</p>
+        </div>
+        <div class="shell-card">
+          <p class="shell-card-label">Team members</p>
+          <p class="shell-card-value">6</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

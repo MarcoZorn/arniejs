@@ -1,0 +1,62 @@
+<!doctype html>
+<!-- description: This is the last stop before we let it go for good. Here's exactly what happens. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Delete Account Confirm — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="dac-wrap">
+  <div class="dac-card">
+    <div class="dac-steps" aria-hidden="true">
+      <span class="dac-step-dot is-active" data-step-dot="1"></span>
+      <span class="dac-step-line"></span>
+      <span class="dac-step-dot" data-step-dot="2"></span>
+      <span class="dac-step-line"></span>
+      <span class="dac-step-dot" data-step-dot="3"></span>
+    </div>
+
+    <section class="dac-panel" data-panel="1">
+      <h1 class="dac-title">Delete your account</h1>
+      <p class="dac-desc">This is the last stop before we let it go for good. Here's exactly what happens.</p>
+      <ul class="dac-list">
+        <li>All plots, planting schedules, and harvest logs are permanently erased.</li>
+        <li>Your subscription is cancelled immediately — no partial refund for the current period.</li>
+        <li>Shared plots owned by you are removed for every collaborator.</li>
+        <li>This cannot be undone once step 3 is complete.</li>
+      </ul>
+      <div class="dac-actions">
+        <button class="dac-btn dac-btn--ghost" type="button" data-action="cancel-1">Keep my account</button>
+        <button class="dac-btn dac-btn--primary" type="button" data-action="next-1">Continue</button>
+      </div>
+    </section>
+
+    <section class="dac-panel" data-panel="2" hidden>
+      <h1 class="dac-title">Confirm it's really you</h1>
+      <p class="dac-desc">Type your account email exactly as shown to unlock the final step.</p>
+      <p class="dac-email-target" data-email-target>jordan@example.com</p>
+      <label class="dac-label" for="dac-email-input">Your account email</label>
+      <input class="dac-input" id="dac-email-input" type="text" data-email-input autocomplete="off" spellcheck="false" placeholder="jordan@example.com">
+      <p class="dac-match-hint" data-match-hint></p>
+      <div class="dac-actions">
+        <button class="dac-btn dac-btn--ghost" type="button" data-action="back-2">Back</button>
+        <button class="dac-btn dac-btn--danger" type="button" data-action="next-2" disabled>Delete my account</button>
+      </div>
+    </section>
+
+    <section class="dac-panel" data-panel="3" hidden>
+      <div class="dac-success">
+        <span class="dac-success-icon" aria-hidden="true">&#10003;</span>
+        <h1 class="dac-title">Account deleted</h1>
+        <p class="dac-desc">Your account and everything in it has been permanently removed. Thanks for growing with us while it lasted.</p>
+        <button class="dac-btn dac-btn--ghost" type="button" data-action="restart">Start over (demo)</button>
+      </div>
+    </section>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

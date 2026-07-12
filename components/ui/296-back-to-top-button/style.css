@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-deep);
+  font-family: 'Syne', sans-serif;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.btt-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 72px 24px 140px;
+}
+
+.btt-intro {
+  margin-bottom: 56px;
+}
+
+.btt-eyebrow {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-sand);
+}
+
+.btt-title {
+  margin: 0 0 14px;
+  font-size: clamp(26px, 4vw, 36px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.btt-sub {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.btt-block {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+}
+
+.btt-block h2 {
+  margin: 0 0 14px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent-clay);
+}
+
+.btt-block p {
+  margin: 0 0 12px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 15.5px;
+}
+
+.btt-block p:last-child {
+  margin-bottom: 0;
+}
+
+.btt-button {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  background: var(--accent-terra);
+  color: var(--bg-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px) scale(0.9);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btt-button.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.btt-button:hover {
+  background: var(--accent-sand);
+  box-shadow: 0 12px 30px rgba(196, 98, 45, 0.4);
+}
+
+.btt-button:active {
+  transform: translateY(0) scale(0.94);
+}
+
+.btt-button:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 3px;
+}
+
+.btt-icon {
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

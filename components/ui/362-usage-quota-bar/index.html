@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- description: Usage resets on the 1st of every month; drag the slider below to see how the meter reacts as you approach your limit. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Usage Quota Bar — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="quota-wrap">
+  <div class="quota-card">
+    <div class="quota-head">
+      <h1 class="quota-title">API requests</h1>
+      <span class="quota-badge" id="quota-badge">On track</span>
+    </div>
+    <p class="quota-hint">Usage resets on the 1st of every month; drag the slider below to see how the meter reacts as you approach your limit.</p>
+
+    <div class="quota-numbers">
+      <span class="quota-used" id="quota-used">3,400</span>
+      <span class="quota-of">/ <span id="quota-total">5,000</span> requests used this month</span>
+    </div>
+
+    <div class="quota-bar-track" role="progressbar" aria-valuemin="0" aria-valuemax="5000" aria-valuenow="3400" aria-label="Requests used this month" id="quota-bar-track">
+      <div class="quota-bar-fill" id="quota-bar-fill"></div>
+    </div>
+    <div class="quota-pct" id="quota-pct">68% of monthly quota</div>
+
+    <div class="quota-control">
+      <label class="quota-control-label" for="quota-slider">Simulate usage</label>
+      <input type="range" id="quota-slider" min="0" max="5000" step="50" value="3400">
+      <button type="button" class="quota-bump-btn" id="quota-bump-btn">+250</button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

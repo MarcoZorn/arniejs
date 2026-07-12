@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- description: A small plot marked on the calendar, waiting for company. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Event Card — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="event-wrap">
+  <p class="event-tagline">A small plot marked on the calendar, waiting for company.</p>
+
+  <div class="event-card">
+    <div class="event-date-block" aria-hidden="true">
+      <span class="event-day">14</span>
+      <span class="event-month">Sep</span>
+    </div>
+
+    <div class="event-body">
+      <h2 class="event-title">Community Garden Meetup</h2>
+      <p class="event-meta">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 14"></polyline></svg>
+        6:00 PM – 8:00 PM
+      </p>
+      <p class="event-meta">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        Willow Street Community Plot
+      </p>
+
+      <div class="event-footer">
+        <span class="event-attendees" id="eventAttendees">32 going</span>
+        <button class="event-rsvp" type="button" id="eventRsvpBtn" aria-pressed="false">RSVP</button>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

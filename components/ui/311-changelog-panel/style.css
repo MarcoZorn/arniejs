@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.clp-wrap {
+  min-height: 100vh;
+  padding: 72px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.clp-sub {
+  max-width: 480px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.clp-trigger {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 999px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.15s ease, background-color 0.2s ease;
+}
+
+.clp-trigger:hover {
+  border-color: var(--accent-sand);
+  transform: translateY(-1px);
+}
+
+.clp-trigger:active {
+  transform: translateY(0);
+}
+
+.clp-trigger svg {
+  color: var(--accent-sand);
+}
+
+.clp-dot {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-terra);
+  box-shadow: 0 0 0 2px var(--bg-deep);
+}
+
+.clp-dot[hidden] { display: none; }
+
+.clp-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 7, 3, 0.55);
+  backdrop-filter: blur(2px);
+  z-index: 40;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.clp-backdrop.is-visible { opacity: 1; }
+
+.clp-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(400px, 92vw);
+  background: var(--bg-surface);
+  border-left: 1px solid var(--border-light);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: -20px 0 40px rgba(0, 0, 0, 0.35);
+}
+
+.clp-panel.is-open {
+  transform: translateX(0);
+}
+
+.clp-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 24px 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.clp-panel-head h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.clp-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.clp-close:hover {
+  color: var(--accent-terra);
+  border-color: var(--accent-terra);
+}
+
+.clp-body {
+  overflow-y: auto;
+  padding: 20px 24px 40px;
+  flex: 1;
+}
+
+.clp-group + .clp-group {
+  margin-top: 28px;
+}
+
+.clp-date {
+  margin: 0 0 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-sand);
+}
+
+.clp-entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.clp-entry {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.clp-entry p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.clp-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.clp-tag--added {
+  background: rgba(90, 122, 58, 0.2);
+  color: var(--accent-sage);
+}
+
+.clp-tag--fixed {
+  background: rgba(160, 56, 32, 0.18);
+  color: var(--accent-rust);
+}
+
+.clp-tag--improved {
+  background: rgba(212, 168, 90, 0.18);
+  color: var(--accent-sand);
+}
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }

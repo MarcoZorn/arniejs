@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- description: Tend your environment variables one row at a time, then copy the whole bed out as a plain .env file. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Env Var Editor — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="envd-wrap">
+  <div class="envd-head">
+    <h1 class="envd-title">.env editor</h1>
+    <p class="envd-sub">Tend your environment variables one row at a time, then copy the whole bed out as a plain .env file.</p>
+  </div>
+
+  <div class="envd-card">
+    <div class="envd-rows-head">
+      <span>KEY</span>
+      <span>VALUE</span>
+      <span></span>
+    </div>
+    <div class="envd-rows" id="envd-rows"></div>
+
+    <div class="envd-actions">
+      <button type="button" class="envd-btn envd-btn--ghost" id="envd-add">+ Add row</button>
+      <button type="button" class="envd-btn envd-btn--solid" id="envd-copy">Copy as .env</button>
+      <span class="envd-confirm" id="envd-confirm" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <template id="envd-row-template">
+    <div class="envd-row">
+      <input type="text" class="envd-input envd-key" placeholder="KEY" spellcheck="false" autocapitalize="off">
+      <input type="text" class="envd-input envd-value" placeholder="value" spellcheck="false" autocapitalize="off">
+      <button type="button" class="envd-remove" aria-label="Remove row">×</button>
+    </div>
+  </template>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

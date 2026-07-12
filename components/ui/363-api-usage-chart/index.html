@@ -1,0 +1,26 @@
+<!doctype html>
+<!-- description: Tap or hover a bar to see the exact call count logged that day. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>API Usage Chart — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="apichart-wrap">
+  <div class="apichart-card">
+    <h1 class="apichart-title">API calls, last 7 days</h1>
+    <p class="apichart-desc">Tap or hover a bar to see the exact call count logged that day.</p>
+
+    <div class="apichart-plot" id="apichart-plot">
+      <div class="apichart-bars" id="apichart-bars"></div>
+      <div class="apichart-tooltip" id="apichart-tooltip" role="status" aria-live="polite"></div>
+    </div>
+    <div class="apichart-axis" id="apichart-axis"></div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

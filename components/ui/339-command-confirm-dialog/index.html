@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- description: This removes -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Command Confirm Dialog — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="cc-demo">
+  <p class="cc-hint">Some plots, once cleared, don't grow back the same. We ask you to type it out first.</p>
+  <button class="cc-trigger" type="button" id="ccOpen">Delete plot "north-terrace"</button>
+
+  <div class="cc-backdrop" id="ccBackdrop"></div>
+  <div class="cc-modal" id="ccModal" role="alertdialog" aria-modal="true" aria-labelledby="ccTitle" aria-describedby="ccDesc" tabindex="-1">
+    <h2 id="ccTitle" class="cc-title">Delete plot?</h2>
+    <p id="ccDesc" class="cc-desc">This removes <strong>north-terrace</strong> and every planting record tied to it. There is no undo.</p>
+
+    <p class="cc-phrase-label">Type <code id="ccPhrase">DELETE-NORTH-TERRACE</code> to confirm.</p>
+    <input
+      class="cc-input"
+      type="text"
+      id="ccInput"
+      autocomplete="off"
+      spellcheck="false"
+      aria-label="Type DELETE-NORTH-TERRACE to confirm"
+    >
+
+    <div class="cc-actions">
+      <button class="cc-btn cc-btn--ghost" type="button" id="ccCancel">Cancel</button>
+      <button class="cc-btn cc-btn--danger" type="button" id="ccConfirm" disabled>Confirm delete</button>
+    </div>
+
+    <p class="cc-status" id="ccStatus" role="status" aria-live="polite"></p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

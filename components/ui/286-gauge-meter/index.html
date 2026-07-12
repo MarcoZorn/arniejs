@@ -1,0 +1,48 @@
+<!doctype html>
+<!-- description: A semicircular gauge that sweeps to the current reading, so you can tell at a glance whether the plot is thirsty. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gauge Meter — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="gau-wrap">
+  <div class="gau-intro">
+    <p class="gau-eyebrow">Soil moisture</p>
+    <h1 class="gau-title">Keep an eye on the bed before you water it</h1>
+    <p class="gau-sub">A semicircular gauge that sweeps to the current reading, so you can tell at a glance whether the plot is thirsty.</p>
+  </div>
+
+  <div class="gau-panel">
+    <div class="gau-gauge" role="img" aria-label="Soil moisture gauge">
+      <svg class="gau-svg" viewBox="0 0 240 140" width="100%" height="100%">
+        <path class="gau-track" d="M20 120 A100 100 0 0 1 220 120" fill="none" />
+        <path class="gau-fill" d="M20 120 A100 100 0 0 1 220 120" fill="none" />
+        <g class="gau-ticks"></g>
+        <line class="gau-needle" x1="120" y1="120" x2="120" y2="35" />
+        <circle class="gau-hub" cx="120" cy="120" r="8" />
+      </svg>
+      <div class="gau-readout">
+        <span class="gau-value" data-value>0</span><span class="gau-unit">%</span>
+        <span class="gau-caption" data-caption>reading…</span>
+      </div>
+    </div>
+
+    <div class="gau-controls">
+      <label class="gau-slider-label" for="gau-slider">Set a new reading</label>
+      <input class="gau-slider" id="gau-slider" type="range" min="0" max="100" step="1" value="62" />
+      <div class="gau-presets">
+        <button type="button" class="gau-preset" data-preset="18">Dry bed</button>
+        <button type="button" class="gau-preset" data-preset="55">Raised bed</button>
+        <button type="button" class="gau-preset" data-preset="88">Greenhouse</button>
+        <button type="button" class="gau-preset" data-preset="random">Surprise me</button>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

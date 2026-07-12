@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- description: Season log -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timeline View — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="tlvw-wrap">
+  <div class="tlvw-intro">
+    <p class="tlvw-eyebrow">Season log</p>
+    <h1 class="tlvw-title">A year on the plot, one entry at a time</h1>
+    <p class="tlvw-hint">Every planting, harvest, and setback in order — filter by category to follow just one thread.</p>
+  </div>
+
+  <div class="tlvw-filters" id="tlvw-filters" role="group" aria-label="Filter events by category">
+    <button class="tlvw-pill is-active" type="button" data-filter="all">All</button>
+    <button class="tlvw-pill" type="button" data-filter="planting">Planting</button>
+    <button class="tlvw-pill" type="button" data-filter="harvest">Harvest</button>
+    <button class="tlvw-pill" type="button" data-filter="maintenance">Maintenance</button>
+    <button class="tlvw-pill" type="button" data-filter="weather">Weather</button>
+  </div>
+
+  <ol class="tlvw-timeline" id="tlvw-timeline"></ol>
+
+  <p class="tlvw-empty" id="tlvw-empty" hidden>No events in this category yet.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

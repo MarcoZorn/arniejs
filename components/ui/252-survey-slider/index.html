@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- description: Your answer helps us decide what to plant next season. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Survey Slider — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="surv-wrap">
+  <div class="surv-panel">
+    <p class="surv-eyebrow">Quick check-in</p>
+    <h1 class="surv-question">How satisfied are you with your harvest this season?</h1>
+
+    <div class="surv-readout" aria-hidden="true">
+      <span class="surv-emoji">🙂</span>
+      <span class="surv-label">Satisfied</span>
+    </div>
+
+    <div class="surv-track-wrap">
+      <input
+        type="range"
+        class="surv-range"
+        min="0"
+        max="6"
+        step="1"
+        value="3"
+        aria-label="Satisfaction rating"
+      >
+      <div class="surv-ticks" aria-hidden="true">
+        <button type="button" class="surv-tick" data-index="0" title="Very unsatisfied">😞</button>
+        <button type="button" class="surv-tick" data-index="1" title="Unsatisfied">🙁</button>
+        <button type="button" class="surv-tick" data-index="2" title="Somewhat unsatisfied">😐</button>
+        <button type="button" class="surv-tick" data-index="3" title="Neutral">🙂</button>
+        <button type="button" class="surv-tick" data-index="4" title="Somewhat satisfied">😊</button>
+        <button type="button" class="surv-tick" data-index="5" title="Satisfied">😄</button>
+        <button type="button" class="surv-tick" data-index="6" title="Very satisfied">🤩</button>
+      </div>
+    </div>
+
+    <div class="surv-endcaps">
+      <span>Very unsatisfied</span>
+      <span>Very satisfied</span>
+    </div>
+
+    <p class="surv-tagline">Your answer helps us decide what to plant next season.</p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

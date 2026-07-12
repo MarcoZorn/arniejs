@@ -1,0 +1,75 @@
+<!doctype html>
+<!-- description: Filter by category and price to find the plants that suit your plot, then clear the bed whenever you want a fresh start. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Product Filter Sidebar — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="pfs-wrap">
+  <div class="pfs-intro">
+    <p class="pfs-eyebrow">Browse the beds</p>
+    <h1 class="pfs-title">Narrow it down to what will actually grow</h1>
+    <p class="pfs-sub">Filter by category and price to find the plants that suit your plot, then clear the bed whenever you want a fresh start.</p>
+  </div>
+
+  <div class="pfs-layout">
+    <aside class="pfs-sidebar" aria-label="Product filters">
+      <div class="pfs-sidebar-head">
+        <h2 class="pfs-sidebar-title">Filters</h2>
+        <span class="pfs-badge" data-count-badge>0</span>
+      </div>
+
+      <section class="pfs-group">
+        <h3 class="pfs-group-title">Category</h3>
+        <label class="pfs-check">
+          <input type="checkbox" data-filter data-category value="succulents">
+          <span class="pfs-check-box"></span>
+          <span class="pfs-check-label">Succulents <em>(18)</em></span>
+        </label>
+        <label class="pfs-check">
+          <input type="checkbox" data-filter data-category value="herbs">
+          <span class="pfs-check-box"></span>
+          <span class="pfs-check-label">Herbs <em>(24)</em></span>
+        </label>
+        <label class="pfs-check">
+          <input type="checkbox" data-filter data-category value="perennials">
+          <span class="pfs-check-box"></span>
+          <span class="pfs-check-label">Perennials <em>(12)</em></span>
+        </label>
+        <label class="pfs-check">
+          <input type="checkbox" data-filter data-category value="shrubs">
+          <span class="pfs-check-box"></span>
+          <span class="pfs-check-label">Shrubs <em>(9)</em></span>
+        </label>
+        <label class="pfs-check">
+          <input type="checkbox" data-filter data-category value="seeds">
+          <span class="pfs-check-box"></span>
+          <span class="pfs-check-label">Seeds <em>(31)</em></span>
+        </label>
+      </section>
+
+      <section class="pfs-group">
+        <h3 class="pfs-group-title">Price range</h3>
+        <div class="pfs-price-display">
+          <span>$0</span>
+          <span class="pfs-price-current" data-price-out>Up to $100</span>
+        </div>
+        <input type="range" class="pfs-range" min="5" max="100" step="5" value="100" data-filter data-price aria-label="Maximum price">
+      </section>
+
+      <button class="pfs-clear" type="button" data-clear>Clear all</button>
+    </aside>
+
+    <section class="pfs-results" aria-live="polite">
+      <p class="pfs-results-count" data-results-count>94 plants found</p>
+      <div class="pfs-grid" data-grid></div>
+    </section>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

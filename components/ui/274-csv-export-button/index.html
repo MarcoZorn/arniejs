@@ -1,0 +1,49 @@
+<!doctype html>
+<!-- description: A running list of seed orders, ready to pull into a spreadsheet whenever you need it. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CSV Export Button — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="cxb-wrap">
+  <div class="cxb-card">
+    <div class="cxb-head">
+      <div>
+        <p class="cxb-eyebrow">Seed orders</p>
+        <h1 class="cxb-title">This season's orders</h1>
+        <p class="cxb-sub">A running list of seed orders, ready to pull into a spreadsheet whenever you need it.</p>
+      </div>
+      <div class="cxb-actions">
+        <button class="cxb-export" type="button" id="cxbExport">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+          Export CSV
+        </button>
+        <p class="cxb-status" id="cxbStatus" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <div class="cxb-scroll">
+      <table class="cxb-table" id="cxbTable">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Grower</th>
+            <th>Variety</th>
+            <th>Quantity</th>
+            <th>Unit</th>
+            <th>Order date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="cxbBody"></tbody>
+      </table>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

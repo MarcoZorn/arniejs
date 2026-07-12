@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-deep);
+  font-family: 'Syne', sans-serif;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.split-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+
+.split-hint {
+  margin: 0 0 24px;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 68ch;
+}
+
+.split-pane {
+  display: flex;
+  height: 420px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--bg-surface);
+  user-select: none;
+}
+
+.split-pane.is-dragging {
+  cursor: col-resize;
+}
+
+.split-pane.is-dragging .split-side {
+  pointer-events: none;
+}
+
+.split-side {
+  min-width: 0;
+  height: 100%;
+  padding: 26px;
+  overflow-y: auto;
+}
+
+.split-side--left {
+  background: var(--bg-card);
+}
+
+.split-side--right {
+  background: var(--bg-surface);
+}
+
+.split-side-label {
+  margin: 0 0 12px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-sand);
+}
+
+.split-side-text {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.split-divider {
+  flex: none;
+  width: 14px;
+  background: var(--bg-subtle);
+  border-left: 1px solid var(--border-light);
+  border-right: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: col-resize;
+  touch-action: none;
+  transition: background-color 0.15s ease;
+}
+
+.split-divider:hover,
+.split-divider:focus-visible {
+  background: var(--accent-clay);
+}
+
+.split-divider:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 2px;
+}
+
+.split-divider-grip {
+  width: 3px;
+  height: 32px;
+  border-radius: 3px;
+  background: var(--accent-sand);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .split-pane {
+    height: 520px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

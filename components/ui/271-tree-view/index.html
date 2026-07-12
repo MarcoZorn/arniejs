@@ -1,0 +1,27 @@
+<!doctype html>
+<!-- description: A collapsible tree of every folder and file in the archive — click a row or use the arrow keys to expand, collapse and move through the bran -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tree View — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="tvw-wrap">
+  <div class="tvw-intro">
+    <p class="tvw-eyebrow">Field records</p>
+    <h1 class="tvw-title">Browse the plot archive</h1>
+    <p class="tvw-desc">A collapsible tree of every folder and file in the archive — click a row or use the arrow keys to expand, collapse and move through the branches.</p>
+  </div>
+
+  <div class="tvw-card">
+    <ul class="tvw-tree" role="tree" aria-label="Plot archive file tree" id="tvwTree"></ul>
+  </div>
+
+  <p class="tvw-hint">Arrow keys: <kbd>↑</kbd>/<kbd>↓</kbd> move, <kbd>→</kbd> expand, <kbd>←</kbd> collapse.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.envd-mono {
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+}
+
+.envd-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 20px 80px;
+}
+
+.envd-head {
+  margin-bottom: 28px;
+}
+
+.envd-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+
+.envd-sub {
+  color: var(--text-muted);
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  max-width: 46ch;
+}
+
+.envd-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.envd-rows-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr 32px;
+  gap: 10px;
+  padding: 0 4px 10px;
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--text-faint);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 12px;
+}
+
+.envd-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.envd-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 32px;
+  gap: 10px;
+  align-items: center;
+}
+
+.envd-input {
+  width: 100%;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+  font-size: 0.9rem;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.envd-input.envd-key {
+  color: var(--accent-sand);
+  font-weight: 600;
+}
+
+.envd-input:focus {
+  outline: none;
+  border-color: var(--accent-terra);
+  background: var(--bg-card);
+}
+
+.envd-input::placeholder {
+  color: var(--text-faint);
+}
+
+.envd-remove {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-faint);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.envd-remove:hover {
+  color: var(--accent-rust);
+  border-color: var(--accent-rust);
+  background: rgba(160, 56, 32, 0.12);
+}
+
+.envd-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.envd-btn {
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform 0.1s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.envd-btn:active {
+  transform: translateY(1px);
+}
+
+.envd-btn--ghost {
+  background: transparent;
+  border-color: var(--border-light);
+  color: var(--text-primary);
+}
+
+.envd-btn--ghost:hover {
+  border-color: var(--accent-sage);
+  color: var(--accent-sage);
+}
+
+.envd-btn--solid {
+  background: var(--accent-terra);
+  color: #1a1208;
+}
+
+.envd-btn--solid:hover {
+  background: var(--accent-sand);
+}
+
+.envd-confirm {
+  font-size: 0.85rem;
+  color: var(--accent-sage);
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.envd-confirm.envd-show {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .envd-rows-head {
+    display: none;
+  }
+  .envd-row {
+    grid-template-columns: 1fr 1fr 32px;
+  }
+  .envd-wrap {
+    padding: 36px 14px 60px;
+  }
+}

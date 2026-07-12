@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- description: Sending this along to someone else? We'll wrap it gently in kraft paper and twine. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gift Wrap Toggle — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="gift-wrap-outer">
+  <div class="gift-card">
+    <p class="gift-sub">Sending this along to someone else? We'll wrap it gently in kraft paper and twine.</p>
+
+    <div class="gift-order">
+      <div class="gift-line">
+        <span>Potted olive tree, 12"</span>
+        <span>$58.00</span>
+      </div>
+      <div class="gift-line gift-line--wrap" data-wrap-line hidden>
+        <span>Gift wrap</span>
+        <span>$4.00</span>
+      </div>
+      <div class="gift-line gift-line--total">
+        <span>Total</span>
+        <span data-order-total>$58.00</span>
+      </div>
+    </div>
+
+    <label class="gift-switch-row" for="gift-toggle">
+      <span class="gift-switch" aria-hidden="true">
+        <input type="checkbox" id="gift-toggle" class="gift-switch-input" data-gift-toggle>
+        <span class="gift-switch-track">
+          <span class="gift-switch-thumb"></span>
+        </span>
+      </span>
+      <span class="gift-switch-label">
+        <strong>Add gift wrap</strong>
+        <small>+$4.00 — kraft paper &amp; twine</small>
+      </span>
+    </label>
+
+    <div class="gift-message-panel" data-gift-panel hidden>
+      <label class="gift-message-label" for="gift-message">Gift message <span class="gift-message-optional">(optional)</span></label>
+      <textarea id="gift-message" class="gift-message-input" data-gift-message maxlength="120" rows="3" placeholder="Write a short note to go with the wrapping..."></textarea>
+      <p class="gift-message-count"><span data-gift-count>0</span>/120</p>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

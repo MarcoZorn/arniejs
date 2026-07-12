@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- description: Adjust how many you'd like — we'll only ever sell what's actually on the shelf. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cart Quantity Stepper — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="step-wrap">
+  <div class="step-card">
+    <p class="step-sub">Adjust how many you'd like — we'll only ever sell what's actually on the shelf.</p>
+
+    <div class="step-item">
+      <div class="step-thumb" aria-hidden="true"></div>
+      <div class="step-info">
+        <h1 class="step-name">Rosemary, 4-inch pot</h1>
+        <p class="step-price">$6.50 <span class="step-price-unit">/ each</span></p>
+      </div>
+    </div>
+
+    <div class="step-control-row">
+      <div class="step-stepper" data-min="1" data-max="8">
+        <button type="button" class="step-btn" data-step-dec aria-label="Decrease quantity">–</button>
+        <input class="step-input" type="number" inputmode="numeric" value="1" min="1" max="8" step="1" data-step-input aria-label="Quantity">
+        <button type="button" class="step-btn" data-step-inc aria-label="Increase quantity">+</button>
+      </div>
+      <p class="step-stock" data-stock-msg role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="step-total-row">
+      <span>Subtotal</span>
+      <span class="step-total" data-total>$6.50</span>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

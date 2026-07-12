@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- description: Drag files in, or tap the crate to browse — we'll pack them into your upload list below. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>File Upload List — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="crate-wrap">
+  <div class="crate-intro">
+    <p class="crate-eyebrow">Attach your files</p>
+    <h1 class="crate-title">Drop photos of your plot</h1>
+    <p class="crate-tagline">Drag files in, or tap the crate to browse — we'll pack them into your upload list below.</p>
+  </div>
+
+  <div class="crate-drop" tabindex="0" role="button" aria-label="Drop files here or press Enter to browse">
+    <svg class="crate-drop-icon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 3v12"></path>
+      <path d="M7 8l5-5 5 5"></path>
+      <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
+    </svg>
+    <p class="crate-drop-title">Drag &amp; drop files here</p>
+    <p class="crate-drop-sub">or click to browse from your device</p>
+    <input class="crate-file-input" type="file" multiple aria-hidden="true" tabindex="-1">
+  </div>
+
+  <ul class="crate-list"></ul>
+  <p class="crate-empty">No files selected yet.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

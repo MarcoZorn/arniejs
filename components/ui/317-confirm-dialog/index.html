@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- description: A place to be sure before something irreversible happens. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Confirm Dialog — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="confirmdlg-wrap">
+  <div class="confirmdlg-card">
+    <p class="confirmdlg-eyebrow">Project settings</p>
+    <h1 class="confirmdlg-title">Compost Field #4</h1>
+    <p class="confirmdlg-desc">A place to be sure before something irreversible happens.</p>
+    <button class="confirmdlg-trigger" type="button" data-open>Delete project</button>
+  </div>
+</main>
+
+<div class="confirmdlg-overlay" data-overlay hidden>
+  <div
+    class="confirmdlg-dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="confirmdlg-title"
+    aria-describedby="confirmdlg-body"
+    tabindex="-1"
+  >
+    <div class="confirmdlg-icon" aria-hidden="true"></div>
+    <h2 class="confirmdlg-dialog-title" id="confirmdlg-title">Delete this project?</h2>
+    <p class="confirmdlg-dialog-body" id="confirmdlg-body">This clears everything planted in Compost Field #4 — beds, notes and history. There is no undo.</p>
+    <div class="confirmdlg-actions">
+      <button class="confirmdlg-btn confirmdlg-btn--cancel" type="button" data-cancel>Cancel</button>
+      <button class="confirmdlg-btn confirmdlg-btn--confirm" type="button" data-confirm>Delete project</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

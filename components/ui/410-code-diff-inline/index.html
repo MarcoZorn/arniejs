@@ -1,0 +1,24 @@
+<!doctype html>
+<!-- description: A quiet record of what changed in the irrigation helper — nothing dramatic, just tighter roots. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Code Diff Inline — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="cdi-wrap">
+  <p class="cdi-sub">A quiet record of what changed in the irrigation helper — nothing dramatic, just tighter roots.</p>
+
+  <div class="cdi-toolbar">
+    <span class="cdi-file">irrigation.js</span>
+    <button type="button" class="cdi-toggle" id="cdiToggle" aria-pressed="false">Hide unchanged context lines</button>
+  </div>
+
+  <pre class="cdi-diff" id="cdiDiff"><span class="cdi-line" data-type="context"><span class="cdi-gutter"> </span><span class="cdi-code">function scheduleWatering(zone, options) {</span></span><span class="cdi-line" data-type="removed"><span class="cdi-gutter">-</span><span class="cdi-code">  var duration = 10;</span></span><span class="cdi-line" data-type="added"><span class="cdi-gutter">+</span><span class="cdi-code">  var duration = options.duration || 10;</span></span><span class="cdi-line" data-type="context"><span class="cdi-gutter"> </span><span class="cdi-code">  var startedAt = Date.now();</span></span><span class="cdi-line" data-type="removed"><span class="cdi-gutter">-</span><span class="cdi-code">  if (zone.moisture &lt; 30) {</span></span><span class="cdi-line" data-type="added"><span class="cdi-gutter">+</span><span class="cdi-code">  if (zone.moisture &lt; options.threshold) {</span></span><span class="cdi-line" data-type="context"><span class="cdi-gutter"> </span><span class="cdi-code">    openValve(zone.id);</span></span><span class="cdi-line" data-type="context"><span class="cdi-gutter"> </span><span class="cdi-code">    log('watering started for ' + zone.name);</span></span><span class="cdi-line" data-type="added"><span class="cdi-gutter">+</span><span class="cdi-code">    scheduleClose(zone.id, duration);</span></span><span class="cdi-line" data-type="context"><span class="cdi-gutter"> </span><span class="cdi-code">  }</span></span><span class="cdi-line" data-type="removed"><span class="cdi-gutter">-</span><span class="cdi-code">  return startedAt;</span></span><span class="cdi-line" data-type="added"><span class="cdi-gutter">+</span><span class="cdi-code">  return { startedAt: startedAt, duration: duration };</span></span><span class="cdi-line" data-type="context"><span class="cdi-gutter"> </span><span class="cdi-code">}</span></span></pre>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

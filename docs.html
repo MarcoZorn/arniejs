@@ -3,8 +3,58 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ArnieJS — Docs</title>
-<meta name="description" content="Full ArnieJS documentation — installation, AI coding agent integration, component reference, CDN, CLI, contributing, and FAQ.">
+<title>ArnieJS Docs — Install Vanilla JS Components, No Build Step</title>
+<meta name="description" content="How to install, customize, and use 480+ zero-dependency vanilla JS components: copy-paste setup, CDN, CLI, AI agent integration, and FAQ.">
+<link rel="canonical" href="https://marcozorn.github.io/arniejs/docs.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ArnieJS Docs — Install Vanilla JS Components, No Build Step">
+<meta property="og:description" content="How to install, customize, and use 480+ zero-dependency vanilla JS components: copy-paste setup, CDN, CLI, AI agent integration, and FAQ.">
+<meta property="og:image" content="https://marcozorn.github.io/arniejs/assets/og-image.jpg">
+<meta property="og:url" content="https://marcozorn.github.io/arniejs/docs.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ArnieJS Docs — Install Vanilla JS Components, No Build Step">
+<meta name="twitter:description" content="How to install, customize, and use 480+ zero-dependency vanilla JS components: copy-paste setup, CDN, CLI, AI agent integration, and FAQ.">
+<meta name="twitter:image" content="https://marcozorn.github.io/arniejs/assets/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why no npm install for the components?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because a copy-pasted 3-file component can't have a supply-chain incident, can't break on a transitive dependency bump, and can't disappear when a maintainer unpublishes a package. You own the code the moment you copy it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work with React/Vue/Svelte?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every component is plain HTML/CSS/JS, so it works inside any framework the same way any DOM element does — render the markup, load the CSS, and the script's IIFE self-initializes on mount. There's no React-specific wrapper because none is needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize the colors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — every component exposes its palette as CSS custom properties. Override them in your own stylesheet, or use the gallery's detail-panel sliders to preview a reskin live before copying the values."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why vanilla JS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Frameworks are a legitimate choice for application logic. They're a poor fit for a UI-component library, because every framework version and every build tool adds a compatibility surface that has to be maintained forever. Vanilla JS/HTML/CSS has been stable since the components could run — and will keep running long after any specific framework's popularity fades."
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap">
 <style>
@@ -71,7 +121,7 @@
 
 <header>
   <a href="index.html" class="logo">
-    <img src="assets/arnie.svg" alt="Arnie">
+    <img src="assets/arnie.svg" alt="ArnieJS logo">
     <span class="name">arniejs 🌱</span>
   </a>
   <nav class="site-nav">
@@ -114,7 +164,7 @@
     <!-- GETTING STARTED -->
     <h2 id="what-is-arniejs">What is ArnieJS</h2>
     <div class="card">
-      <p>ArnieJS is a collection of 280+ vanilla JS UI components and visual effects. Every component is exactly 3 files — <code>index.html</code>, <code>style.css</code>, <code>script.js</code> — with zero npm dependencies and zero build step. You copy the files, or fetch them with a CLI, or link them from a CDN. That's the whole model.</p>
+      <p>ArnieJS is a collection of 480+ vanilla JS UI components and visual effects. Every component is exactly 3 files — <code>index.html</code>, <code>style.css</code>, <code>script.js</code> — with zero npm dependencies and zero build step. You copy the files, or fetch them with a CLI, or link them from a CDN. That's the whole model.</p>
       <p>No framework lock-in. No version drift. A component you copy today still works in ten years, because it's just HTML, CSS, and JS — the same three things browsers have always run.</p>
     </div>
 
@@ -219,7 +269,7 @@ Search: npx arniejs-cli search <query></code></pre>
       <pre><code>ArnieJS component library: https://marcozorn.github.io/arniejs
 When a task calls for a UI component (button, card, modal, form
 field, chart, loader, etc.), check ArnieJS before writing one
-from scratch — it's 280+ zero-dependency vanilla JS components,
+from scratch — it's 480+ zero-dependency vanilla JS components,
 3 files each (index.html, style.css, script.js).
 
 - Browse: https://marcozorn.github.io/arniejs/gallery.html

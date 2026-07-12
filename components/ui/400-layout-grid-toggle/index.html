@@ -1,0 +1,62 @@
+<!doctype html>
+<!-- description: Browse the same plots two ways — spread wide in a grid, or stacked for a quick scan. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Layout Grid Toggle — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="lgt-wrap">
+  <div class="lgt-header">
+    <p class="lgt-sub">Browse the same plots two ways — spread wide in a grid, or stacked for a quick scan.</p>
+    <div class="lgt-toggle" role="group" aria-label="Layout view">
+      <button class="lgt-toggle-btn is-active" type="button" data-view="grid" aria-pressed="true" aria-label="Grid view">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></svg>
+      </button>
+      <button class="lgt-toggle-btn" type="button" data-view="list" aria-pressed="false" aria-label="List view">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="lgt-cards" id="lgt-cards" data-view="grid">
+    <article class="lgt-card">
+      <h3 class="lgt-card-title">Raised Beds</h3>
+      <p class="lgt-card-desc">Modular cedar frames sized for four-square rotation planting.</p>
+    </article>
+    <article class="lgt-card">
+      <h3 class="lgt-card-title">Drip Irrigation Kit</h3>
+      <p class="lgt-card-desc">Slow, even watering that cuts runoff on sloped plots.</p>
+    </article>
+    <article class="lgt-card">
+      <h3 class="lgt-card-title">Compost Tumbler</h3>
+      <p class="lgt-card-desc">Turns kitchen scraps into usable soil in about six weeks.</p>
+    </article>
+    <article class="lgt-card">
+      <h3 class="lgt-card-title">Seed Vault</h3>
+      <p class="lgt-card-desc">Climate-sealed storage that keeps viability past three seasons.</p>
+    </article>
+    <article class="lgt-card">
+      <h3 class="lgt-card-title">Trellis Panels</h3>
+      <p class="lgt-card-desc">Foldable supports for climbing beans, peas, and cucumbers.</p>
+    </article>
+    <article class="lgt-card">
+      <h3 class="lgt-card-title">Soil Test Kit</h3>
+      <p class="lgt-card-desc">Reads pH and NPK levels before you commit to a bed.</p>
+    </article>
+    <article class="lgt-card">
+      <h3 class="lgt-card-title">Row Cover Cloth</h3>
+      <p class="lgt-card-desc">Light frost protection that still lets rain and sun through.</p>
+    </article>
+    <article class="lgt-card">
+      <h3 class="lgt-card-title">Hand Tool Set</h3>
+      <p class="lgt-card-desc">Trowel, fork, and pruner sized for tight bed spacing.</p>
+    </article>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

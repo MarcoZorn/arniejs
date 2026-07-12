@@ -1,0 +1,62 @@
+<!doctype html>
+<!-- description: Flip through the delivery log without scrolling forever — set how many rows show per page below. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paginated Table — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="pag-tbl-wrap">
+  <div class="pag-tbl-card">
+    <div class="pag-tbl-intro">
+      <p class="pag-tbl-eyebrow">Delivery ledger</p>
+      <h1 class="pag-tbl-title">Every crate, one page at a time</h1>
+      <p class="pag-tbl-desc">Flip through the delivery log without scrolling forever — set how many rows show per page below.</p>
+    </div>
+
+    <div class="pag-tbl-scroll">
+      <table class="pag-tbl-table">
+        <thead>
+          <tr>
+            <th scope="col">Order</th>
+            <th scope="col">Customer</th>
+            <th scope="col">Crate</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Date</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody class="pag-tbl-body"></tbody>
+      </table>
+    </div>
+
+    <div class="pag-tbl-footer">
+      <div class="pag-tbl-size">
+        <label for="pag-tbl-size-select">Rows per page</label>
+        <select id="pag-tbl-size-select" class="pag-tbl-select">
+          <option value="5">5</option>
+          <option value="10" selected>10</option>
+          <option value="25">25</option>
+        </select>
+      </div>
+
+      <div class="pag-tbl-nav">
+        <button class="pag-tbl-btn" type="button" data-action="prev">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          Prev
+        </button>
+        <span class="pag-tbl-indicator" role="status" aria-live="polite">Page 1 of 1</span>
+        <button class="pag-tbl-btn" type="button" data-action="next">
+          Next
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

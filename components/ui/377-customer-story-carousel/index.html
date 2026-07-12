@@ -1,0 +1,86 @@
+<!doctype html>
+<!-- description: A few honest words from the people tending their own plots with our tools. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Customer Story Carousel — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="story-wrap">
+  <div class="story-intro">
+    <p class="story-eyebrow">Field notes</p>
+    <h1 class="story-title">Stories from growers who stuck with it</h1>
+    <p class="story-sub">A few honest words from the people tending their own plots with our tools.</p>
+  </div>
+
+  <div class="story-carousel" data-autoplay="4800">
+    <div class="story-track">
+
+      <article class="story-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 4">
+        <span class="story-quote-mark" aria-hidden="true">&ldquo;</span>
+        <p class="story-quote">We went from guessing our watering schedule to trusting it completely. Our tomato yield doubled the first season.</p>
+        <div class="story-person">
+          <span class="story-avatar" style="--av-a:#5a7a3a;--av-b:#8fa86e;">RM</span>
+          <span class="story-person-info">
+            <span class="story-name">Renata Mora</span>
+            <span class="story-role">Smallholder farmer, Rio Bravo</span>
+          </span>
+        </div>
+      </article>
+
+      <article class="story-slide" role="group" aria-roledescription="slide" aria-label="2 of 4">
+        <span class="story-quote-mark" aria-hidden="true">&ldquo;</span>
+        <p class="story-quote">The pest alerts caught a blight two weeks before we would have noticed it ourselves. That alone paid for the year.</p>
+        <div class="story-person">
+          <span class="story-avatar" style="--av-a:#9b6b3a;--av-b:#d4a85a;">DK</span>
+          <span class="story-person-info">
+            <span class="story-name">Devon Klay</span>
+            <span class="story-role">Orchard manager, Pine Hollow</span>
+          </span>
+        </div>
+      </article>
+
+      <article class="story-slide" role="group" aria-roledescription="slide" aria-label="3 of 4">
+        <span class="story-quote-mark" aria-hidden="true">&ldquo;</span>
+        <p class="story-quote">Coordinating five plots used to mean five spreadsheets. Now my whole crew sees the same board in real time.</p>
+        <div class="story-person">
+          <span class="story-avatar" style="--av-a:#c4622d;--av-b:#a03820;">JT</span>
+          <span class="story-person-info">
+            <span class="story-name">Jun Tanaka</span>
+            <span class="story-role">Co-op coordinator, Nagano</span>
+          </span>
+        </div>
+      </article>
+
+      <article class="story-slide" role="group" aria-roledescription="slide" aria-label="4 of 4">
+        <span class="story-quote-mark" aria-hidden="true">&ldquo;</span>
+        <p class="story-quote">Small farm, small budget — the free tier still gave us better forecasting than the tool we used to pay for.</p>
+        <div class="story-person">
+          <span class="story-avatar" style="--av-a:#8fa86e;--av-b:#5a7a3a;">AO</span>
+          <span class="story-person-info">
+            <span class="story-name">Aiyana Osei</span>
+            <span class="story-role">Grower, Fresh Furrow Farm</span>
+          </span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="story-controls">
+      <button class="story-arrow story-arrow--prev" type="button" aria-label="Previous story">&#8592;</button>
+      <div class="story-dots" role="tablist" aria-label="Choose a story">
+        <button class="story-dot is-active" type="button" role="tab" aria-selected="true" aria-label="Story 1"></button>
+        <button class="story-dot" type="button" role="tab" aria-selected="false" aria-label="Story 2"></button>
+        <button class="story-dot" type="button" role="tab" aria-selected="false" aria-label="Story 3"></button>
+        <button class="story-dot" type="button" role="tab" aria-selected="false" aria-label="Story 4"></button>
+      </div>
+      <button class="story-arrow story-arrow--next" type="button" aria-label="Next story">&#8594;</button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

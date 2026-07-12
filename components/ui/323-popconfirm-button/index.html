@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- description: A small check before anything gets pulled from the bed for good. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Popconfirm Button — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="pop-wrap">
+  <p class="pop-desc">A small check before anything gets pulled from the bed for good.</p>
+
+  <ul class="pop-list">
+    <li class="pop-item" data-item="Tomato seedlings">
+      <span class="pop-item-name">Tomato seedlings</span>
+      <span class="pop-anchor">
+        <button class="pop-trigger" type="button" aria-haspopup="true" aria-expanded="false">Remove</button>
+        <div class="pop-card" role="dialog" aria-modal="false" aria-labelledby="popTitle" hidden>
+          <p class="pop-title" id="popTitle">Are you sure?</p>
+          <p class="pop-text">This removes the item from your plot list.</p>
+          <div class="pop-actions">
+            <button class="pop-btn pop-btn--no" type="button" data-answer="no">No</button>
+            <button class="pop-btn pop-btn--yes" type="button" data-answer="yes">Yes</button>
+          </div>
+        </div>
+      </span>
+    </li>
+  </ul>
+
+  <p class="pop-status" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

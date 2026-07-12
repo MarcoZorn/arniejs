@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  background: var(--bg-deep);
+  font-family: 'Syne', sans-serif;
+  color: var(--text-primary);
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.spy-desc {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 24px 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.spy-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(26, 18, 8, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--border-light);
+  margin-top: 32px;
+}
+
+.spy-list {
+  list-style: none;
+  display: flex;
+  gap: 4px;
+  margin: 0 auto;
+  padding: 0 24px;
+  max-width: 640px;
+  overflow-x: auto;
+}
+
+.spy-link {
+  display: block;
+  white-space: nowrap;
+  padding: 16px 14px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.spy-link:hover {
+  color: var(--text-primary);
+}
+
+.spy-link.is-active {
+  color: var(--accent-terra);
+  border-bottom-color: var(--accent-terra);
+}
+
+.spy-link:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 2px;
+}
+
+.spy-main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 8px 24px 160px;
+}
+
+.spy-section {
+  padding: 64px 0;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: 72px;
+}
+
+.spy-section:last-child {
+  border-bottom: none;
+}
+
+.spy-section h2 {
+  margin: 0 0 14px;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--accent-sand);
+}
+
+.spy-section p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 15.5px;
+  line-height: 1.7;
+  max-width: 52ch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<!-- description: Tap any name to fold its branch away, or open it back up — the lines keep track of who reports to whom. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Org Chart — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="orgc-wrap">
+  <div class="orgc-intro">
+    <p class="orgc-eyebrow">Who tends what</p>
+    <h1 class="orgc-title">The whole crew, rooted and branching</h1>
+    <p class="orgc-tagline">Tap any name to fold its branch away, or open it back up — the lines keep track of who reports to whom.</p>
+  </div>
+
+  <div class="orgc-chart-scroll">
+    <div class="orgc-chart orgc-tree" id="orgc-chart" role="tree" aria-label="Organization chart"></div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- description: Every call draws from the same shared bed — watch the count before it runs dry. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rate Limit Indicator — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="rli-wrap">
+  <div class="rli-card">
+    <div class="rli-head">
+      <h1 class="rli-title">API Rate Limit</h1>
+      <p class="rli-sub">Every call draws from the same shared bed — watch the count before it runs dry.</p>
+    </div>
+
+    <div class="rli-meter-row">
+      <div class="rli-meter" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Requests used">
+        <div class="rli-meter-fill" id="rliFill"></div>
+      </div>
+      <span class="rli-status" id="rliStatusTag">OK</span>
+    </div>
+
+    <div class="rli-numbers">
+      <span class="rli-count"><strong id="rliUsed">0</strong> / <span id="rliLimit">100</span> requests used</span>
+      <span class="rli-pct" id="rliPct">0%</span>
+    </div>
+
+    <p class="rli-message" id="rliMessage" role="status" aria-live="polite"></p>
+
+    <div class="rli-actions">
+      <button type="button" class="rli-btn rli-btn--primary" id="rliSimulate">Simulate request</button>
+      <button type="button" class="rli-btn rli-btn--ghost" id="rliReset">Reset</button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

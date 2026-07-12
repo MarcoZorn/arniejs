@@ -1,0 +1,109 @@
+<!doctype html>
+<!-- description: Pick which beds and rows this helper can tend — check a whole section at once or fine-tune row by row. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkbox Tree — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="ctree-wrap">
+  <div class="ctree-panel">
+    <h1 class="ctree-title">Plot permissions</h1>
+    <p class="ctree-desc">Pick which beds and rows this helper can tend — check a whole section at once or fine-tune row by row.</p>
+
+    <ul class="ctree-tree" role="tree" aria-label="Plot permissions">
+
+      <li class="ctree-node" role="treeitem" aria-expanded="true">
+        <div class="ctree-row">
+          <button type="button" class="ctree-toggle" aria-label="Collapse Vegetable beds">▾</button>
+          <label class="ctree-label">
+            <input type="checkbox" class="ctree-checkbox" data-id="veg">
+            <span>Vegetable beds</span>
+          </label>
+        </div>
+        <ul class="ctree-children" role="group">
+          <li class="ctree-node" role="treeitem" aria-expanded="true">
+            <div class="ctree-row">
+              <button type="button" class="ctree-toggle" aria-label="Collapse Root vegetables">▾</button>
+              <label class="ctree-label">
+                <input type="checkbox" class="ctree-checkbox" data-id="veg-root" data-parent="veg">
+                <span>Root vegetables</span>
+              </label>
+            </div>
+            <ul class="ctree-children" role="group">
+              <li class="ctree-node" role="treeitem">
+                <div class="ctree-row">
+                  <label class="ctree-label">
+                    <input type="checkbox" class="ctree-checkbox" data-id="carrots" data-parent="veg-root">
+                    <span>Carrots</span>
+                  </label>
+                </div>
+              </li>
+              <li class="ctree-node" role="treeitem">
+                <div class="ctree-row">
+                  <label class="ctree-label">
+                    <input type="checkbox" class="ctree-checkbox" data-id="beets" data-parent="veg-root">
+                    <span>Beets</span>
+                  </label>
+                </div>
+              </li>
+              <li class="ctree-node" role="treeitem">
+                <div class="ctree-row">
+                  <label class="ctree-label">
+                    <input type="checkbox" class="ctree-checkbox" data-id="potatoes" data-parent="veg-root">
+                    <span>Potatoes</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="ctree-node" role="treeitem">
+            <div class="ctree-row">
+              <label class="ctree-label">
+                <input type="checkbox" class="ctree-checkbox" data-id="leafy" data-parent="veg">
+                <span>Leafy greens</span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li class="ctree-node" role="treeitem" aria-expanded="true">
+        <div class="ctree-row">
+          <button type="button" class="ctree-toggle" aria-label="Collapse Orchard">▾</button>
+          <label class="ctree-label">
+            <input type="checkbox" class="ctree-checkbox" data-id="orchard">
+            <span>Orchard</span>
+          </label>
+        </div>
+        <ul class="ctree-children" role="group">
+          <li class="ctree-node" role="treeitem">
+            <div class="ctree-row">
+              <label class="ctree-label">
+                <input type="checkbox" class="ctree-checkbox" data-id="apple" data-parent="orchard">
+                <span>Apple trees</span>
+              </label>
+            </div>
+          </li>
+          <li class="ctree-node" role="treeitem">
+            <div class="ctree-row">
+              <label class="ctree-label">
+                <input type="checkbox" class="ctree-checkbox" data-id="pear" data-parent="orchard">
+                <span>Pear trees</span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+
+    <p class="ctree-summary" role="status" aria-live="polite"></p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

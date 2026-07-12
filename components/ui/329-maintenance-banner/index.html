@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- description: Scheduled maintenance begins soon — the garden gate closes briefly while we tend the roots. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maintenance Banner — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="maint-banner" id="maint-banner" role="status">
+  <div class="maint-banner-inner">
+    <span class="maint-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+        <path d="M12 3l9 16H3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <line x1="12" y1="9.5" x2="12" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="12" cy="17" r="0.9" fill="currentColor"/>
+      </svg>
+    </span>
+    <p class="maint-text">Scheduled maintenance begins soon — the garden gate closes briefly while we tend the roots.</p>
+    <div class="maint-countdown" id="maint-countdown" aria-live="polite">
+      <div class="maint-unit"><span class="maint-num" data-unit="days">00</span><span class="maint-label">d</span></div>
+      <div class="maint-unit"><span class="maint-num" data-unit="hours">00</span><span class="maint-label">h</span></div>
+      <div class="maint-unit"><span class="maint-num" data-unit="minutes">00</span><span class="maint-label">m</span></div>
+      <div class="maint-unit"><span class="maint-num" data-unit="seconds">00</span><span class="maint-label">s</span></div>
+    </div>
+    <button type="button" class="maint-dismiss" id="maint-dismiss-btn" aria-label="Dismiss maintenance notice">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><line x1="5" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="19" y1="5" x2="5" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</div>
+
+<main class="maint-page">
+  <p class="maint-page-hint">This is the rest of the page, going about its business underneath the banner above.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

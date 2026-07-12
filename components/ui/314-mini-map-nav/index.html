@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- description: A small strip on the right mirrors how far you've wandered down the row — click anywhere on it to jump straight there. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mini Map Nav — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="mmap-wrap">
+  <p class="mmap-hint">A small strip on the right mirrors how far you've wandered down the row — click anywhere on it to jump straight there.</p>
+
+  <div class="mmap-shell">
+    <div class="mmap-scroll" id="mmapScroll" tabindex="0" aria-label="Field log, long scrollable content">
+      <article class="mmap-entry" data-index="0"><h2>Row 1 — Tomatoes</h2><p>Staked and mulched early. Leaves are dark green with no sign of blight yet.</p></article>
+      <article class="mmap-entry" data-index="1"><h2>Row 2 — Peppers</h2><p>Slower to establish this year; giving them an extra week before judging yield.</p></article>
+      <article class="mmap-entry" data-index="2"><h2>Row 3 — Beans</h2><p>Climbing well up the trellis. First pods expected within ten days.</p></article>
+      <article class="mmap-entry" data-index="3"><h2>Row 4 — Squash</h2><p>Vines are sprawling further than planned; may need to redirect a few runners.</p></article>
+      <article class="mmap-entry" data-index="4"><h2>Row 5 — Carrots</h2><p>Thinned twice already. Soil here drains a touch too fast after rain.</p></article>
+      <article class="mmap-entry" data-index="5"><h2>Row 6 — Lettuce</h2><p>Bolting risk rising with the heat; harvesting a little earlier than usual.</p></article>
+      <article class="mmap-entry" data-index="6"><h2>Row 7 — Onions</h2><p>Tops have started to flop, a good sign the bulbs are close to ready.</p></article>
+      <article class="mmap-entry" data-index="7"><h2>Row 8 — Herbs</h2><p>Basil and thyme doing well side by side; the mint has been moved to a pot.</p></article>
+      <article class="mmap-entry" data-index="8"><h2>Row 9 — Cucumbers</h2><p>Trellised this year for the first time — much easier to spot ripe fruit.</p></article>
+      <article class="mmap-entry" data-index="9"><h2>Row 10 — Melons</h2><p>Slow start but catching up fast now that the nights have warmed.</p></article>
+    </div>
+
+    <div class="mmap-nav" id="mmapNav" role="navigation" aria-label="Field position minimap">
+      <div class="mmap-track" id="mmapTrack">
+        <div class="mmap-viewport" id="mmapViewport"></div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

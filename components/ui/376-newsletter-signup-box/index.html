@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- description: A short monthly note on what's coming into season — no noise, unsubscribe whenever. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Newsletter Signup Box — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="signup-wrap">
+  <div class="signup-card">
+    <span class="signup-icon" aria-hidden="true"></span>
+    <h1 class="signup-title">Grow with us, one letter at a time</h1>
+    <p class="signup-sub">A short monthly note on what's coming into season — no noise, unsubscribe whenever.</p>
+
+    <form class="signup-form" novalidate>
+      <div class="signup-field">
+        <label class="signup-label" for="signup-email">Email address</label>
+        <input class="signup-input" type="email" id="signup-email" name="email" placeholder="you@example.com" autocomplete="email">
+        <p class="signup-error" id="signup-error" role="alert"></p>
+      </div>
+      <button class="signup-submit" type="submit">Join the list</button>
+      <p class="signup-fine">We send about once a month. No spam, ever.</p>
+    </form>
+
+    <div class="signup-success" hidden>
+      <span class="signup-success-icon" aria-hidden="true"></span>
+      <h2 class="signup-success-title">You're on the list</h2>
+      <p class="signup-success-text">Thanks for signing up — keep an eye on <strong class="signup-success-email"></strong> for our next note.</p>
+      <button class="signup-reset" type="button">Use a different email</button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

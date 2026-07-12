@@ -1,0 +1,66 @@
+<!doctype html>
+<!-- description: New here? -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Signup Form — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="signup-wrap">
+  <div class="signup-card">
+    <p class="signup-tagline">New here?</p>
+    <h1 class="signup-title">Create your account</h1>
+    <p class="signup-desc">A few details and your plot is ready to sow.</p>
+
+    <form class="signup-form" id="signupForm" novalidate>
+      <div class="signup-grid">
+        <div class="signup-field">
+          <label class="signup-label" for="signupName">Full name</label>
+          <input class="signup-input" type="text" id="signupName" name="name" autocomplete="name" placeholder="Jordan Rivers">
+          <p class="signup-error" id="signupNameError" role="alert"></p>
+        </div>
+
+        <div class="signup-field">
+          <label class="signup-label" for="signupEmail">Email</label>
+          <input class="signup-input" type="text" id="signupEmail" name="email" autocomplete="email" placeholder="you@example.com">
+          <p class="signup-error" id="signupEmailError" role="alert"></p>
+        </div>
+
+        <div class="signup-field">
+          <label class="signup-label" for="signupPassword">Password</label>
+          <input class="signup-input" type="password" id="signupPassword" name="password" autocomplete="new-password" placeholder="At least 8 characters">
+          <div class="signup-strength" id="signupStrength" aria-hidden="true">
+            <span class="signup-strength-bar" data-bar="1"></span>
+            <span class="signup-strength-bar" data-bar="2"></span>
+            <span class="signup-strength-bar" data-bar="3"></span>
+          </div>
+          <p class="signup-error" id="signupPasswordError" role="alert"></p>
+        </div>
+
+        <div class="signup-field">
+          <label class="signup-label" for="signupConfirm">Confirm password</label>
+          <input class="signup-input" type="password" id="signupConfirm" name="confirm" autocomplete="new-password" placeholder="Type it again">
+          <p class="signup-error" id="signupConfirmError" role="alert"></p>
+        </div>
+      </div>
+
+      <label class="signup-checkbox-label">
+        <input type="checkbox" id="signupTerms" class="signup-checkbox">
+        <span class="signup-checkbox-box" aria-hidden="true"></span>
+        I agree to the Terms and Privacy Policy
+      </label>
+
+      <button class="signup-submit" type="submit" id="signupSubmit" disabled>
+        <span id="signupSubmitLabel">Create account</span>
+      </button>
+
+      <p class="signup-status" id="signupStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

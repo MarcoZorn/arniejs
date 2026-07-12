@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- description: Drag either handle, or focus one and use the arrow keys — the range never lets the two ends cross. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Budget Range Slider — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="br-wrap">
+  <p class="br-eyebrow">Set a budget</p>
+  <h1 class="br-title">How much room does this bed need?</h1>
+  <p class="br-tagline">Drag either handle, or focus one and use the arrow keys — the range never lets the two ends cross.</p>
+
+  <div class="br-panel">
+    <div class="br-labels">
+      <span class="br-label-value" data-label="min">$250</span>
+      <span class="br-label-sep">–</span>
+      <span class="br-label-value" data-label="max">$1,800</span>
+    </div>
+
+    <div class="br-track-wrap">
+      <div class="br-track">
+        <div class="br-track-fill" data-fill></div>
+        <div class="br-thumb" data-thumb="min" tabindex="0" role="slider" aria-label="Minimum budget" aria-valuemin="0" aria-valuemax="2000" aria-valuenow="250"></div>
+        <div class="br-thumb" data-thumb="max" tabindex="0" role="slider" aria-label="Maximum budget" aria-valuemin="0" aria-valuemax="2000" aria-valuenow="1800"></div>
+      </div>
+      <div class="br-ticks">
+        <span>$0</span>
+        <span>$2,000</span>
+      </div>
+    </div>
+
+    <p class="br-summary" role="status" aria-live="polite">$250 – $1,800</p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

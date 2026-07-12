@@ -1,0 +1,59 @@
+<!doctype html>
+<!-- description: Narrow the bed down to what you're actually looking for. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tag Filter List — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="tagf-wrap">
+  <div class="tagf-card">
+    <p class="tagf-desc">Narrow the bed down to what you're actually looking for.</p>
+
+    <div class="tagf-pills" role="group" aria-label="Filter by tag">
+      <button class="tagf-pill" type="button" data-tag="herbs">Herbs</button>
+      <button class="tagf-pill" type="button" data-tag="perennials">Perennials</button>
+      <button class="tagf-pill" type="button" data-tag="indoor">Indoor</button>
+      <button class="tagf-pill" type="button" data-tag="shade">Shade</button>
+      <button class="tagf-pill" type="button" data-tag="containers">Containers</button>
+      <button class="tagf-pill" type="button" data-tag="pollinator">Pollinator</button>
+      <button class="tagf-pill" type="button" data-tag="edible">Edible</button>
+      <button class="tagf-pill" type="button" data-tag="drought">Drought-hardy</button>
+    </div>
+
+    <ul class="tagf-list">
+      <li class="tagf-item" data-tags="herbs edible">
+        <span class="tagf-item-title">Lemon Basil</span>
+        <span class="tagf-item-tags">Herbs · Edible</span>
+      </li>
+      <li class="tagf-item" data-tags="perennials pollinator">
+        <span class="tagf-item-title">Purple Coneflower</span>
+        <span class="tagf-item-tags">Perennials · Pollinator</span>
+      </li>
+      <li class="tagf-item" data-tags="indoor shade">
+        <span class="tagf-item-title">Snake Plant</span>
+        <span class="tagf-item-tags">Indoor · Shade</span>
+      </li>
+      <li class="tagf-item" data-tags="containers drought">
+        <span class="tagf-item-title">Sedum Mix</span>
+        <span class="tagf-item-tags">Containers · Drought-hardy</span>
+      </li>
+      <li class="tagf-item" data-tags="edible containers">
+        <span class="tagf-item-title">Cherry Tomato 'Sungold'</span>
+        <span class="tagf-item-tags">Edible · Containers</span>
+      </li>
+      <li class="tagf-item" data-tags="shade indoor">
+        <span class="tagf-item-title">Peace Lily</span>
+        <span class="tagf-item-tags">Shade · Indoor</span>
+      </li>
+    </ul>
+
+    <p class="tagf-empty" hidden>No plants match those tags yet — try clearing one to open things back up.</p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

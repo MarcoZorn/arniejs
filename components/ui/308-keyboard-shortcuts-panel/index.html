@@ -1,0 +1,72 @@
+<!doctype html>
+<!-- description: Press the question mark key to unfold a small reference card of shortcuts, tucked out of the way until you need it. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Keyboard Shortcuts Panel — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="ksp-page">
+  <div class="ksp-intro">
+    <p class="ksp-eyebrow">Reference card</p>
+    <h1 class="ksp-heading">Every shortcut lives one keypress away</h1>
+    <p class="ksp-sub">Press the question mark key to unfold a small reference card of shortcuts, tucked out of the way until you need it.</p>
+  </div>
+
+  <button class="ksp-open" id="kspOpen" type="button" aria-haspopup="dialog" aria-controls="kspPanel">
+    <kbd>?</kbd>
+    <span>Show keyboard shortcuts</span>
+  </button>
+
+  <div class="ksp-overlay" id="kspOverlay" hidden>
+    <div
+      class="ksp-panel"
+      id="kspPanel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="kspTitle"
+      tabindex="-1"
+    >
+      <div class="ksp-panel-head">
+        <h2 class="ksp-title" id="kspTitle">Keyboard shortcuts</h2>
+        <button class="ksp-close" id="kspClose" type="button" aria-label="Close shortcuts panel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+
+      <div class="ksp-groups">
+        <section class="ksp-group">
+          <h3 class="ksp-group-title">Navigation</h3>
+          <ul class="ksp-list">
+            <li><span>Go to search</span><span class="ksp-combo"><kbd>⌘</kbd><kbd>K</kbd></span></li>
+            <li><span>Next item</span><span class="ksp-combo"><kbd>J</kbd></span></li>
+            <li><span>Previous item</span><span class="ksp-combo"><kbd>K</kbd></span></li>
+          </ul>
+        </section>
+        <section class="ksp-group">
+          <h3 class="ksp-group-title">Editing</h3>
+          <ul class="ksp-list">
+            <li><span>New item</span><span class="ksp-combo"><kbd>⌘</kbd><kbd>N</kbd></span></li>
+            <li><span>Duplicate</span><span class="ksp-combo"><kbd>⌘</kbd><kbd>D</kbd></span></li>
+            <li><span>Delete</span><span class="ksp-combo"><kbd>⌫</kbd></span></li>
+          </ul>
+        </section>
+        <section class="ksp-group">
+          <h3 class="ksp-group-title">General</h3>
+          <ul class="ksp-list">
+            <li><span>Show this panel</span><span class="ksp-combo"><kbd>?</kbd></span></li>
+            <li><span>Close dialogs</span><span class="ksp-combo"><kbd>Esc</kbd></span></li>
+          </ul>
+        </section>
+      </div>
+
+      <p class="ksp-hint">Press <kbd>Esc</kbd> or click outside to close.</p>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

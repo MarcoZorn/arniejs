@@ -1,0 +1,64 @@
+<!doctype html>
+<!-- description: A handful of snapshots from the plot — click any one to see it full size. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lightbox Gallery — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="lb-stage">
+  <p class="lb-hint">A handful of snapshots from the plot — click any one to see it full size.</p>
+
+  <ul class="lb-grid" id="lbGrid">
+    <li>
+      <button type="button" class="lb-thumb" data-index="0" style="--lb-a:#5a7a3a; --lb-b:#8fa86e;">
+        <span class="lb-thumb-label">Rows at dawn</span>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="lb-thumb" data-index="1" style="--lb-a:#c4622d; --lb-b:#d4a85a;">
+        <span class="lb-thumb-label">Terra beds</span>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="lb-thumb" data-index="2" style="--lb-a:#9b6b3a; --lb-b:#6b5540;">
+        <span class="lb-thumb-label">Clay pots</span>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="lb-thumb" data-index="3" style="--lb-a:#a03820; --lb-b:#c4622d;">
+        <span class="lb-thumb-label">Rust trellis</span>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="lb-thumb" data-index="4" style="--lb-a:#3d2b14; --lb-b:#5a3e20;">
+        <span class="lb-thumb-label">Toolshed</span>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="lb-thumb" data-index="5" style="--lb-a:#8fa86e; --lb-b:#5a7a3a;">
+        <span class="lb-thumb-label">Sage border</span>
+      </button>
+    </li>
+  </ul>
+
+  <div class="lb-overlay" id="lbOverlay" hidden>
+    <div class="lb-frame" role="dialog" aria-modal="true" aria-label="Image lightbox" id="lbFrame">
+      <button type="button" class="lb-close" id="lbClose" aria-label="Close lightbox">✕</button>
+      <button type="button" class="lb-arrow lb-arrow--prev" id="lbPrev" aria-label="Previous image">‹</button>
+
+      <div class="lb-image" id="lbImage">
+        <span class="lb-image-label" id="lbImageLabel"></span>
+      </div>
+
+      <button type="button" class="lb-arrow lb-arrow--next" id="lbNext" aria-label="Next image">›</button>
+      <p class="lb-counter" id="lbCounter" aria-live="polite"></p>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

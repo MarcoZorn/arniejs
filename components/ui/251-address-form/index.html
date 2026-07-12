@@ -1,0 +1,66 @@
+<!doctype html>
+<!-- description: Fill in your address below — pick a country first and we'll dig up the right states or provinces for you. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Address Form — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="addr-wrap">
+  <div class="addr-card">
+    <p class="addr-eyebrow">Shipping details</p>
+    <h1 class="addr-title">Where should we send your seedlings?</h1>
+    <p class="addr-desc">Fill in your address below — pick a country first and we'll dig up the right states or provinces for you.</p>
+
+    <form class="addr-form" novalidate>
+      <div class="addr-field addr-field--full">
+        <label for="addr-street">Street address</label>
+        <input type="text" id="addr-street" name="street" class="addr-input" autocomplete="street-address">
+        <span class="addr-error" data-error-for="street"></span>
+      </div>
+
+      <div class="addr-field">
+        <label for="addr-city">City</label>
+        <input type="text" id="addr-city" name="city" class="addr-input" autocomplete="address-level2">
+        <span class="addr-error" data-error-for="city"></span>
+      </div>
+
+      <div class="addr-field">
+        <label for="addr-postal">Postal code</label>
+        <input type="text" id="addr-postal" name="postal" class="addr-input" autocomplete="postal-code">
+        <span class="addr-error" data-error-for="postal"></span>
+      </div>
+
+      <div class="addr-field">
+        <label for="addr-country">Country</label>
+        <select id="addr-country" name="country" class="addr-input addr-select">
+          <option value="">Select a country…</option>
+          <option value="US">United States</option>
+          <option value="CA">Canada</option>
+          <option value="DE">Germany</option>
+          <option value="AU">Australia</option>
+        </select>
+        <span class="addr-error" data-error-for="country"></span>
+      </div>
+
+      <div class="addr-field">
+        <label for="addr-state">State / Province</label>
+        <select id="addr-state" name="state" class="addr-input addr-select" disabled>
+          <option value="">Choose a country first…</option>
+        </select>
+        <span class="addr-error" data-error-for="state"></span>
+      </div>
+
+      <div class="addr-field addr-field--full addr-actions">
+        <button type="submit" class="addr-submit">Plant this address</button>
+        <p class="addr-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

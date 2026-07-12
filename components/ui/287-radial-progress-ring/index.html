@@ -1,0 +1,45 @@
+<!doctype html>
+<!-- description: A ring that counts up alongside the number in its center, so progress feels like it's actually happening. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Radial Progress Ring — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="rpr-wrap">
+  <div class="rpr-intro">
+    <p class="rpr-eyebrow">Germination tracker</p>
+    <h1 class="rpr-title">Watch the tray fill in as seeds sprout</h1>
+    <p class="rpr-sub">A ring that counts up alongside the number in its center, so progress feels like it's actually happening.</p>
+  </div>
+
+  <div class="rpr-panel">
+    <div class="rpr-ring">
+      <svg class="rpr-svg" viewBox="0 0 200 200" width="100%" height="100%">
+        <circle class="rpr-track" cx="100" cy="100" r="86" fill="none" />
+        <circle class="rpr-fill" cx="100" cy="100" r="86" fill="none" />
+      </svg>
+      <div class="rpr-center">
+        <span class="rpr-percent"><span data-count>0</span>%</span>
+        <span class="rpr-label" data-label>germinated</span>
+      </div>
+    </div>
+
+    <div class="rpr-controls">
+      <div class="rpr-field">
+        <label for="rpr-input">Target percentage</label>
+        <input id="rpr-input" class="rpr-input" type="number" min="0" max="100" value="74" />
+      </div>
+      <div class="rpr-buttons">
+        <button type="button" class="rpr-btn rpr-btn--solid" data-run>Run to target</button>
+        <button type="button" class="rpr-btn rpr-btn--ghost" data-random>Random reading</button>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

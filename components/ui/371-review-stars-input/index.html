@@ -1,0 +1,71 @@
+<!doctype html>
+<!-- description: A quick note from you helps the next gardener pick the right seed. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Review Stars Input — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="rsi-wrap">
+  <div class="rsi-intro">
+    <p class="rsi-eyebrow">Leave a review</p>
+    <h1 class="rsi-title">Tell us how it grew for you</h1>
+    <p class="rsi-sub">A quick note from you helps the next gardener pick the right seed.</p>
+  </div>
+
+  <form class="rsi-form" novalidate>
+    <div class="rsi-field">
+      <label class="rsi-label" id="rsi-stars-label">Your rating</label>
+      <div class="rsi-stars" role="radiogroup" aria-labelledby="rsi-stars-label">
+        <button type="button" class="rsi-star" data-star="1" role="radio" aria-checked="false" aria-label="1 star" tabindex="0">★</button>
+        <button type="button" class="rsi-star" data-star="2" role="radio" aria-checked="false" aria-label="2 stars" tabindex="-1">★</button>
+        <button type="button" class="rsi-star" data-star="3" role="radio" aria-checked="false" aria-label="3 stars" tabindex="-1">★</button>
+        <button type="button" class="rsi-star" data-star="4" role="radio" aria-checked="false" aria-label="4 stars" tabindex="-1">★</button>
+        <button type="button" class="rsi-star" data-star="5" role="radio" aria-checked="false" aria-label="5 stars" tabindex="-1">★</button>
+      </div>
+      <p class="rsi-star-hint" aria-live="polite">Pick a star rating</p>
+    </div>
+
+    <div class="rsi-field">
+      <label class="rsi-label" for="rsi-name">Name</label>
+      <input class="rsi-input" id="rsi-name" name="name" type="text" placeholder="e.g. Priya M." autocomplete="name" required>
+    </div>
+
+    <div class="rsi-field">
+      <label class="rsi-label" for="rsi-text">Your review</label>
+      <textarea class="rsi-input rsi-textarea" id="rsi-text" name="text" rows="3" placeholder="What did you plant, and how did it turn out?" required></textarea>
+    </div>
+
+    <p class="rsi-error" role="alert"></p>
+
+    <button class="rsi-submit" type="submit">Post review</button>
+  </form>
+
+  <div class="rsi-list-wrap">
+    <p class="rsi-list-heading">Recent reviews</p>
+    <ul class="rsi-list" id="rsi-list">
+      <li class="rsi-review">
+        <div class="rsi-review-top">
+          <span class="rsi-review-stars" data-rating="5" aria-label="5 out of 5 stars">★★★★★</span>
+          <span class="rsi-review-name">Dana W.</span>
+          <span class="rsi-review-time">2 weeks ago</span>
+        </div>
+        <p class="rsi-review-text">The companion planting guide alone paid for the subscription. My tomatoes have never looked better.</p>
+      </li>
+      <li class="rsi-review">
+        <div class="rsi-review-top">
+          <span class="rsi-review-stars" data-rating="4" aria-label="4 out of 5 stars">★★★★☆</span>
+          <span class="rsi-review-name">Marcus T.</span>
+          <span class="rsi-review-time">1 month ago</span>
+        </div>
+        <p class="rsi-review-text">Solid tool, wish the irrigation scheduling worked with my older sprinkler timer, but support was helpful.</p>
+      </li>
+    </ul>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<!-- description: Tap a tab below to switch panels — the same way a garden app on your phone would. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mobile Bottom Nav — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="mbnav-wrap">
+  <div class="mbnav-screen">
+    <p class="mbnav-hint">Tap a tab below to switch panels — the same way a garden app on your phone would.</p>
+    <section class="mbnav-panel" id="panel-home" role="tabpanel" aria-labelledby="tab-home">
+      <h2>Home</h2>
+      <p>Today's plots at a glance: three beds watered this morning, one due for feeding.</p>
+    </section>
+    <section class="mbnav-panel" id="panel-plots" role="tabpanel" aria-labelledby="tab-plots" hidden>
+      <h2>Plots</h2>
+      <p>Nine plots under care, from the south terrace down to the shaded rows by the fence.</p>
+    </section>
+    <section class="mbnav-panel" id="panel-tasks" role="tabpanel" aria-labelledby="tab-tasks" hidden>
+      <h2>Tasks</h2>
+      <p>Prune the tomatoes, thin the carrots, and check the rain barrel before evening.</p>
+    </section>
+    <section class="mbnav-panel" id="panel-journal" role="tabpanel" aria-labelledby="tab-journal" hidden>
+      <h2>Journal</h2>
+      <p>Notes from the week: first squash blossoms opened, aphids spotted on the beans.</p>
+    </section>
+    <section class="mbnav-panel" id="panel-profile" role="tabpanel" aria-labelledby="tab-profile" hidden>
+      <h2>Profile</h2>
+      <p>Managing three shared plots with two collaborators since early spring.</p>
+    </section>
+  </div>
+
+  <nav class="mbnav-bar" role="navigation" aria-label="Primary">
+    <button type="button" class="mbnav-tab is-active" id="tab-home" data-panel="panel-home" aria-current="page">
+      <svg class="mbnav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>
+      <span>Home</span>
+    </button>
+    <button type="button" class="mbnav-tab" id="tab-plots" data-panel="panel-plots">
+      <svg class="mbnav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      <span>Plots</span>
+    </button>
+    <button type="button" class="mbnav-tab" id="tab-tasks" data-panel="panel-tasks">
+      <svg class="mbnav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10"/></svg>
+      <span>Tasks</span>
+    </button>
+    <button type="button" class="mbnav-tab" id="tab-journal" data-panel="panel-journal">
+      <svg class="mbnav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      <span>Journal</span>
+    </button>
+    <button type="button" class="mbnav-tab" id="tab-profile" data-panel="panel-profile">
+      <svg class="mbnav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      <span>Profile</span>
+    </button>
+  </nav>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

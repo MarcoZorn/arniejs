@@ -1,0 +1,49 @@
+<!doctype html>
+<!-- description: A short walk through the toolshed before you start digging in. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guided Tour Step — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="tour-wrap">
+  <p class="tour-hint">A short walk through the toolshed before you start digging in.</p>
+
+  <button class="tour-start" type="button" id="tourStart">Start tour</button>
+
+  <section class="tour-mock" aria-hidden="true">
+    <header class="tour-mock-bar">
+      <span class="tour-mock-logo" id="tourTarget1">🌱 Plotter</span>
+      <nav class="tour-mock-nav">
+        <span class="tour-mock-nav-item" id="tourTarget2">Beds</span>
+        <span class="tour-mock-nav-item">Calendar</span>
+        <span class="tour-mock-nav-item">Harvest</span>
+      </nav>
+      <button class="tour-mock-cta" id="tourTarget3" type="button">New bed</button>
+    </header>
+    <div class="tour-mock-body">
+      <div class="tour-mock-card"></div>
+      <div class="tour-mock-card"></div>
+      <div class="tour-mock-card"></div>
+    </div>
+  </section>
+
+  <div class="tour-dim" id="tourDim" hidden></div>
+  <div class="tour-cutout" id="tourCutout" hidden></div>
+
+  <div class="tour-caption" id="tourCaption" role="dialog" aria-modal="true" aria-labelledby="tourCapTitle" tabindex="-1" hidden>
+    <p class="tour-step-count" id="tourStepCount"></p>
+    <h3 class="tour-cap-title" id="tourCapTitle"></h3>
+    <p class="tour-cap-text" id="tourCapText"></p>
+    <div class="tour-cap-actions">
+      <button class="tour-cap-btn tour-cap-btn--ghost" type="button" id="tourClose">Close</button>
+      <button class="tour-cap-btn tour-cap-btn--solid" type="button" id="tourNext">Next</button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

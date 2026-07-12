@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+.notif-wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.notif-hint {
+  align-self: flex-start;
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.notif-anchor {
+  position: relative;
+}
+
+.notif-bell {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.notif-bell:hover {
+  border-color: var(--accent-rust);
+  transform: translateY(-1px);
+}
+
+.notif-bell.is-active {
+  border-color: var(--accent-rust);
+  color: var(--accent-sand);
+}
+
+.notif-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  min-width: 19px;
+  height: 19px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--accent-rust);
+  color: var(--text-primary);
+  font-size: 11px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--bg-deep);
+}
+
+.notif-panel {
+  position: absolute;
+  top: 58px;
+  right: 0;
+  width: 340px;
+  max-width: 86vw;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.notif-panel[hidden] {
+  display: none;
+}
+
+.notif-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.notif-panel-title {
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.notif-mark-all {
+  background: none;
+  border: none;
+  color: var(--accent-sand);
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.notif-mark-all:hover {
+  color: var(--accent-terra);
+}
+
+.notif-mark-all:disabled {
+  color: var(--text-faint);
+  cursor: default;
+}
+
+.notif-list {
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.notif-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  background: transparent;
+  transition: background-color 0.15s ease;
+}
+
+.notif-item:hover {
+  background: var(--bg-card);
+}
+
+.notif-item:last-child {
+  border-bottom: none;
+}
+
+.notif-avatar {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--av-bg, var(--accent-moss));
+  color: #1a1208;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.notif-item-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.notif-item-text {
+  margin: 0 0 3px;
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.notif-item-text strong {
+  font-weight: 700;
+}
+
+.notif-item-time {
+  font-size: 11.5px;
+  color: var(--text-faint);
+}
+
+.notif-dot {
+  flex: none;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent-terra);
+  margin-top: 6px;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.notif-item.is-read .notif-dot {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.notif-empty {
+  padding: 28px 16px;
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 13px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

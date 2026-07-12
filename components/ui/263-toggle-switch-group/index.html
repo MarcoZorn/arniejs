@@ -1,0 +1,81 @@
+<!doctype html>
+<!-- description: Pick which alerts reach your inbox — nothing sprouts without your say-so. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Toggle Switch Group — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="toggle-wrap">
+  <section class="toggle-panel">
+    <div class="toggle-panel-head">
+      <h1 class="toggle-title">Bed notifications</h1>
+      <p class="toggle-desc">Pick which alerts reach your inbox — nothing sprouts without your say-so.</p>
+    </div>
+
+    <p class="toggle-count" role="status" aria-live="polite"></p>
+
+    <ul class="toggle-list">
+      <li class="toggle-row">
+        <div class="toggle-row-text">
+          <span class="toggle-row-label">Watering reminders</span>
+          <span class="toggle-row-sub">Daily nudge when a bed is due for water</span>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" class="toggle-input" checked data-name="Watering reminders">
+          <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+        </label>
+      </li>
+
+      <li class="toggle-row">
+        <div class="toggle-row-text">
+          <span class="toggle-row-label">Frost warnings</span>
+          <span class="toggle-row-sub">Alert the night before a predicted frost</span>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" class="toggle-input" checked data-name="Frost warnings">
+          <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+        </label>
+      </li>
+
+      <li class="toggle-row">
+        <div class="toggle-row-text">
+          <span class="toggle-row-label">Harvest ready</span>
+          <span class="toggle-row-sub">Notify when a crop hits its harvest window</span>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" class="toggle-input" data-name="Harvest ready">
+          <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+        </label>
+      </li>
+
+      <li class="toggle-row">
+        <div class="toggle-row-text">
+          <span class="toggle-row-label">Community posts</span>
+          <span class="toggle-row-sub">Updates from gardeners near your plot</span>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" class="toggle-input" data-name="Community posts">
+          <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+        </label>
+      </li>
+
+      <li class="toggle-row">
+        <div class="toggle-row-text">
+          <span class="toggle-row-label">Weekly digest</span>
+          <span class="toggle-row-sub">A Sunday roundup of everything that grew</span>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" class="toggle-input" checked data-name="Weekly digest">
+          <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+        </label>
+      </li>
+    </ul>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

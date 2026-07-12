@@ -1,0 +1,74 @@
+<!doctype html>
+<!-- description: These are the devices currently signed in to your account — revoke any you don't recognize. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Session List — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sess-wrap">
+  <h1 class="sess-title">Active sessions</h1>
+  <p class="sess-hint">These are the devices currently signed in to your account — revoke any you don't recognize.</p>
+
+  <ul class="sess-list">
+    <li class="sess-item" data-session="current">
+      <span class="sess-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><line x1="8" y1="20" x2="16" y2="20"/><line x1="12" y1="16" x2="12" y2="20"/></svg>
+      </span>
+      <span class="sess-info">
+        <span class="sess-device">Chrome on macOS <span class="sess-current-badge">This device</span></span>
+        <span class="sess-meta">Portland, OR · Active now</span>
+      </span>
+      <span class="sess-action">
+        <button type="button" class="sess-revoke-btn" disabled title="You can't revoke your current session">Current session</button>
+      </span>
+    </li>
+
+    <li class="sess-item" data-session="s2">
+      <span class="sess-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><line x1="10" y1="19" x2="14" y2="19"/></svg>
+      </span>
+      <span class="sess-info">
+        <span class="sess-device">Safari on iPhone 15</span>
+        <span class="sess-meta">Portland, OR · Active 2 hours ago</span>
+      </span>
+      <span class="sess-action">
+        <button type="button" class="sess-revoke-btn">Revoke</button>
+      </span>
+    </li>
+
+    <li class="sess-item" data-session="s3">
+      <span class="sess-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="13" rx="2"/><line x1="7" y1="21" x2="17" y2="21"/></svg>
+      </span>
+      <span class="sess-info">
+        <span class="sess-device">Firefox on Windows</span>
+        <span class="sess-meta">Bend, OR · Active yesterday</span>
+      </span>
+      <span class="sess-action">
+        <button type="button" class="sess-revoke-btn">Revoke</button>
+      </span>
+    </li>
+
+    <li class="sess-item" data-session="s4">
+      <span class="sess-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
+      </span>
+      <span class="sess-info">
+        <span class="sess-device">Chrome on Android</span>
+        <span class="sess-meta">Seattle, WA · Active 6 days ago</span>
+      </span>
+      <span class="sess-action">
+        <button type="button" class="sess-revoke-btn">Revoke</button>
+      </span>
+    </li>
+  </ul>
+
+  <p class="sess-status" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

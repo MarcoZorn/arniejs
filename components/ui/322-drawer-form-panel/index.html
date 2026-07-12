@@ -1,0 +1,62 @@
+<!doctype html>
+<!-- description: Add a new bed to the plot without ever leaving the page you're on. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Drawer Form Panel — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="drawer-wrap">
+  <p class="drawer-tagline">Add a new bed to the plot without ever leaving the page you're on.</p>
+
+  <button class="drawer-trigger" type="button" id="drawerOpen">Add a bed</button>
+
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+
+  <aside class="drawer-panel" id="drawerPanel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" tabindex="-1">
+    <div class="drawer-head">
+      <h2 class="drawer-title" id="drawerTitle">New Bed</h2>
+      <button class="drawer-x" type="button" id="drawerX" aria-label="Close panel">&times;</button>
+    </div>
+
+    <form class="drawer-form" id="drawerForm">
+      <label class="drawer-field">
+        <span class="drawer-label">Bed name</span>
+        <input class="drawer-input" type="text" name="bedName" placeholder="e.g. North Border" required>
+      </label>
+
+      <label class="drawer-field">
+        <span class="drawer-label">Soil type</span>
+        <select class="drawer-input" name="soilType">
+          <option value="loam">Loam</option>
+          <option value="clay">Clay</option>
+          <option value="sandy">Sandy</option>
+          <option value="chalk">Chalk</option>
+        </select>
+      </label>
+
+      <label class="drawer-field">
+        <span class="drawer-label">Notes</span>
+        <textarea class="drawer-input drawer-textarea" name="notes" rows="3" placeholder="Any quirks worth remembering"></textarea>
+      </label>
+
+      <label class="drawer-checkbox">
+        <input type="checkbox" name="irrigated">
+        <span>Has drip irrigation</span>
+      </label>
+    </form>
+
+    <div class="drawer-footer">
+      <button class="drawer-btn drawer-btn--ghost" type="button" id="drawerCancel">Cancel</button>
+      <button class="drawer-btn drawer-btn--solid" type="submit" form="drawerForm">Save bed</button>
+    </div>
+
+    <p class="drawer-success" id="drawerSuccess" role="status" aria-live="polite"></p>
+  </aside>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

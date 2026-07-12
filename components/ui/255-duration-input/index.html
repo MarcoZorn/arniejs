@@ -1,0 +1,51 @@
+<!doctype html>
+<!-- description: Dial in a duration below — click the arrows, scroll, or type to set each segment. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Duration Input — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="dur-wrap">
+  <div class="dur-panel">
+    <h1 class="dur-title">Set your watering timer</h1>
+    <p class="dur-tagline">Dial in a duration below — click the arrows, scroll, or type to set each segment.</p>
+
+    <div class="dur-segments" role="group" aria-label="Duration">
+
+      <div class="dur-segment">
+        <button type="button" class="dur-step dur-step--up" data-unit="hours" data-dir="1" aria-label="Increase hours">▲</button>
+        <input type="text" inputmode="numeric" class="dur-value" data-unit="hours" value="00" maxlength="2" aria-label="Hours">
+        <button type="button" class="dur-step dur-step--down" data-unit="hours" data-dir="-1" aria-label="Decrease hours">▼</button>
+        <span class="dur-unit-label">hr</span>
+      </div>
+
+      <span class="dur-colon">:</span>
+
+      <div class="dur-segment">
+        <button type="button" class="dur-step dur-step--up" data-unit="minutes" data-dir="1" aria-label="Increase minutes">▲</button>
+        <input type="text" inputmode="numeric" class="dur-value" data-unit="minutes" value="05" maxlength="2" aria-label="Minutes">
+        <button type="button" class="dur-step dur-step--down" data-unit="minutes" data-dir="-1" aria-label="Decrease minutes">▼</button>
+        <span class="dur-unit-label">min</span>
+      </div>
+
+      <span class="dur-colon">:</span>
+
+      <div class="dur-segment">
+        <button type="button" class="dur-step dur-step--up" data-unit="seconds" data-dir="1" aria-label="Increase seconds">▲</button>
+        <input type="text" inputmode="numeric" class="dur-value" data-unit="seconds" value="30" maxlength="2" aria-label="Seconds">
+        <button type="button" class="dur-step dur-step--down" data-unit="seconds" data-dir="-1" aria-label="Decrease seconds">▼</button>
+        <span class="dur-unit-label">sec</span>
+      </div>
+
+    </div>
+
+    <p class="dur-summary" role="status" aria-live="polite">Total: 1h 05m 30s</p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

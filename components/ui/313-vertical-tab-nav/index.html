@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- description: Browse the almanac by season — arrow up and down to move between entries, or jump straight to the first or last with Home and End. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vertical Tab Nav — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="vtab-wrap">
+  <p class="vtab-desc">Browse the almanac by season — arrow up and down to move between entries, or jump straight to the first or last with Home and End.</p>
+
+  <div class="vtab-shell">
+    <div class="vtab-tablist" role="tablist" aria-orientation="vertical" aria-label="Growing seasons" id="vtabList">
+      <button class="vtab-tab" role="tab" id="vtab-spring" aria-selected="true" aria-controls="vtabpanel-spring" tabindex="0" data-panel="spring">
+        Spring
+      </button>
+      <button class="vtab-tab" role="tab" id="vtab-summer" aria-selected="false" aria-controls="vtabpanel-summer" tabindex="-1" data-panel="summer">
+        Summer
+      </button>
+      <button class="vtab-tab" role="tab" id="vtab-autumn" aria-selected="false" aria-controls="vtabpanel-autumn" tabindex="-1" data-panel="autumn">
+        Autumn
+      </button>
+      <button class="vtab-tab" role="tab" id="vtab-winter" aria-selected="false" aria-controls="vtabpanel-winter" tabindex="-1" data-panel="winter">
+        Winter
+      </button>
+    </div>
+
+    <div class="vtab-panels">
+      <section class="vtab-panel" role="tabpanel" id="vtabpanel-spring" aria-labelledby="vtab-spring" tabindex="0">
+        <h2>Spring</h2>
+        <p>Cool soil warms slowly. Sow peas and greens early, and hold tender seedlings back until the last frost has passed.</p>
+      </section>
+      <section class="vtab-panel" role="tabpanel" id="vtabpanel-summer" aria-labelledby="vtab-summer" tabindex="0" hidden>
+        <h2>Summer</h2>
+        <p>Growth peaks fast. Water deeply in the early morning and keep an eye out for pests drawn to the heat.</p>
+      </section>
+      <section class="vtab-panel" role="tabpanel" id="vtabpanel-autumn" aria-labelledby="vtab-autumn" tabindex="0" hidden>
+        <h2>Autumn</h2>
+        <p>Harvest before the first hard frost, and use the cooling weeks to sow cover crops that protect the soil.</p>
+      </section>
+      <section class="vtab-panel" role="tabpanel" id="vtabpanel-winter" aria-labelledby="vtab-winter" tabindex="0" hidden>
+        <h2>Winter</h2>
+        <p>Little grows, but plenty can be planned. Mend tools, rotate beds on paper, and let the ground rest.</p>
+      </section>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

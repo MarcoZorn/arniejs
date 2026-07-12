@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-deep);
+  font-family: 'Syne', sans-serif;
+  color: var(--text-primary);
+  padding: 52px 20px;
+}
+
+.ctree-wrap {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.ctree-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent-clay);
+  border-radius: 4px;
+  padding: 32px 30px 26px;
+}
+
+.ctree-title {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.ctree-desc {
+  margin: 0 0 26px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ctree-tree,
+.ctree-children {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ctree-children {
+  padding-left: 26px;
+  border-left: 1px dashed var(--border-light);
+  margin-left: 9px;
+}
+
+.ctree-node {
+  margin: 2px 0;
+}
+
+.ctree-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 6px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+
+.ctree-row:hover {
+  background: var(--bg-subtle);
+}
+
+.ctree-toggle {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease;
+  border-radius: 4px;
+}
+
+.ctree-toggle:hover {
+  color: var(--accent-sand);
+}
+
+.ctree-toggle:focus-visible {
+  outline: 2px solid var(--accent-clay);
+}
+
+.ctree-node.is-collapsed > .ctree-row .ctree-toggle {
+  transform: rotate(-90deg);
+}
+
+.ctree-node.is-collapsed > .ctree-children {
+  display: none;
+}
+
+.ctree-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14.5px;
+  font-weight: 600;
+  user-select: none;
+  padding: 2px 0;
+  flex: 1;
+}
+
+.ctree-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 19px;
+  height: 19px;
+  flex: none;
+  border: 1.5px solid var(--border-light);
+  border-radius: 5px;
+  background: var(--bg-surface);
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.ctree-checkbox:checked {
+  background: var(--accent-clay);
+  border-color: var(--accent-clay);
+}
+
+.ctree-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 8px;
+  height: 12px;
+  border: solid var(--bg-deep);
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg);
+}
+
+.ctree-checkbox:indeterminate {
+  background: var(--accent-sand);
+  border-color: var(--accent-sand);
+}
+
+.ctree-checkbox:indeterminate::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  width: 11px;
+  height: 2.5px;
+  background: var(--bg-deep);
+  border-radius: 2px;
+}
+
+.ctree-checkbox:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 2px;
+}
+
+.ctree-summary {
+  margin: 22px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  color: var(--accent-sand);
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

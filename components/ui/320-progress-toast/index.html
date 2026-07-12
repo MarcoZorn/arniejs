@@ -1,0 +1,26 @@
+<!doctype html>
+<!-- description: A small corner note that tracks a task from start to finished, so you never have to wonder if it's still running. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Progress Toast — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="progresstoast-wrap">
+  <div class="progresstoast-intro">
+    <p class="progresstoast-eyebrow">Field upload</p>
+    <h1 class="progresstoast-title">Watch the work move without leaving the page</h1>
+    <p class="progresstoast-desc">A small corner note that tracks a task from start to finished, so you never have to wonder if it's still running.</p>
+  </div>
+
+  <button class="progresstoast-trigger" type="button" data-start>Start upload</button>
+</main>
+
+<div class="progresstoast-region" role="region" aria-label="Task progress" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

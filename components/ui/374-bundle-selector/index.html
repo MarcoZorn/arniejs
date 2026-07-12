@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- description: Buy more seed packets at once and the per-packet price drops — pick what fits your plot. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bundle Selector — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="bsl-wrap">
+  <div class="bsl-intro">
+    <p class="bsl-eyebrow">Heirloom Tomato Seeds</p>
+    <h1 class="bsl-title">Choose your pack size</h1>
+    <p class="bsl-sub">Buy more seed packets at once and the per-packet price drops — pick what fits your plot.</p>
+  </div>
+
+  <div class="bsl-options" role="radiogroup" aria-label="Pack size">
+    <button type="button" class="bsl-option" data-size="single" data-units="1" data-total="9" role="radio" aria-checked="false">
+      <span class="bsl-option-label">Single</span>
+      <span class="bsl-option-units">1 packet</span>
+      <span class="bsl-option-price">$9</span>
+      <span class="bsl-option-unit-price">$9.00 / packet</span>
+    </button>
+
+    <button type="button" class="bsl-option bsl-option--featured" data-size="pack3" data-units="3" data-total="21" role="radio" aria-checked="false">
+      <span class="bsl-badge">Save 22%</span>
+      <span class="bsl-option-label">Pack of 3</span>
+      <span class="bsl-option-units">3 packets</span>
+      <span class="bsl-option-price">$21</span>
+      <span class="bsl-option-unit-price">$7.00 / packet</span>
+    </button>
+
+    <button type="button" class="bsl-option" data-size="pack6" data-units="6" data-total="36" role="radio" aria-checked="false">
+      <span class="bsl-badge">Save 33%</span>
+      <span class="bsl-option-label">Pack of 6</span>
+      <span class="bsl-option-units">6 packets</span>
+      <span class="bsl-option-price">$36</span>
+      <span class="bsl-option-unit-price">$6.00 / packet</span>
+    </button>
+  </div>
+
+  <div class="bsl-summary" role="status" aria-live="polite">
+    <span class="bsl-summary-text">Select a pack size to see your total.</span>
+  </div>
+
+  <button class="bsl-cta" type="button" disabled>Add to cart</button>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

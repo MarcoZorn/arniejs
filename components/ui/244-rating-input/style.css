@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(800px 500px at 50% 30%, #2a1207 0%, #1a1208 75%);
+  padding: 40px 20px;
+}
+
+.rti-wrap {
+  width: 100%;
+  max-width: 420px;
+}
+
+.rti-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--accent-rust);
+  border-radius: 10px;
+  padding: 40px 34px;
+  text-align: center;
+  position: relative;
+}
+
+.rti-card::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px dashed var(--border-light);
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.rti-title {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.rti-desc {
+  margin: 0 0 28px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.rti-stars {
+  display: inline-flex;
+  gap: 6px;
+  outline: none;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.rti-stars:focus-visible {
+  box-shadow: 0 0 0 3px rgba(160, 56, 32, 0.35);
+}
+
+.rti-star {
+  color: var(--bg-subtle);
+  cursor: pointer;
+  display: inline-flex;
+  transition: color 0.12s ease, transform 0.12s ease;
+}
+
+.rti-star svg {
+  fill: currentColor;
+  display: block;
+}
+
+.rti-star:hover {
+  transform: translateY(-2px);
+}
+
+.rti-star.is-filled {
+  color: var(--accent-rust);
+}
+
+.rti-star.is-preview {
+  color: var(--accent-terra);
+}
+
+.rti-value {
+  margin: 22px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-sand);
+  min-height: 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

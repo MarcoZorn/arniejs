@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- description: A small patch of feeling, left under something someone tended. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reaction Bar — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="rxn-wrap">
+  <p class="rxn-sub">A small patch of feeling, left under something someone tended.</p>
+
+  <article class="rxn-card">
+    <header class="rxn-post-head">
+      <span class="rxn-avatar" style="background:#5a7a3a">MT</span>
+      <div class="rxn-post-meta">
+        <span class="rxn-name">Mireille Tanaka</span>
+        <span class="rxn-handle">@mireille · 3h</span>
+      </div>
+    </header>
+    <p class="rxn-post-body">Finally got the tomatillos to set fruit after three seasons of just leaves. Turns out they needed a second plant nearby to cross-pollinate. Small lesson, huge harvest.</p>
+
+    <div class="rxn-bar" role="group" aria-label="Reactions">
+      <button type="button" class="rxn-btn" data-reaction="like" data-emoji="👍">
+        <span class="rxn-emoji" aria-hidden="true">👍</span>
+        <span class="rxn-count">12</span>
+      </button>
+      <button type="button" class="rxn-btn" data-reaction="love" data-emoji="❤️">
+        <span class="rxn-emoji" aria-hidden="true">❤️</span>
+        <span class="rxn-count">27</span>
+      </button>
+      <button type="button" class="rxn-btn" data-reaction="laugh" data-emoji="😂">
+        <span class="rxn-emoji" aria-hidden="true">😂</span>
+        <span class="rxn-count">4</span>
+      </button>
+      <button type="button" class="rxn-btn" data-reaction="wow" data-emoji="😮">
+        <span class="rxn-emoji" aria-hidden="true">😮</span>
+        <span class="rxn-count">9</span>
+      </button>
+      <button type="button" class="rxn-btn" data-reaction="clap" data-emoji="👏">
+        <span class="rxn-emoji" aria-hidden="true">👏</span>
+        <span class="rxn-count">6</span>
+      </button>
+    </div>
+
+    <p class="rxn-status" role="status" aria-live="polite"></p>
+  </article>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

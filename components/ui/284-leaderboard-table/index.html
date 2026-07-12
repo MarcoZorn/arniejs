@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- description: Ranked by total yield points, with movement measured against last week's standings. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leaderboard Table — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="lbd-wrap">
+  <div class="lbd-intro">
+    <p class="lbd-eyebrow">This season's growers</p>
+    <h1 class="lbd-title">See who's climbing the ranks this week</h1>
+    <p class="lbd-sub">Ranked by total yield points, with movement measured against last week's standings.</p>
+  </div>
+
+  <div class="lbd-panel">
+    <div class="lbd-controls">
+      <span class="lbd-controls-label">Sort by</span>
+      <div class="lbd-sort-group" role="group" aria-label="Sort leaderboard">
+        <button type="button" class="lbd-sort-btn is-active" data-sort="score">Score</button>
+        <button type="button" class="lbd-sort-btn" data-sort="name">Name</button>
+      </div>
+    </div>
+    <div class="lbd-list" id="lbd-list" role="table" aria-label="Leaderboard rankings"></div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

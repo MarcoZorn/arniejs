@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- description: Search the log or narrow it down by type — info, warnings, and errors all keep their own trail. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Audit Log Viewer — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="adlv-wrap">
+  <div class="adlv-intro">
+    <p class="adlv-eyebrow">Field journal</p>
+    <h1 class="adlv-title">Every change to the plot, logged</h1>
+    <p class="adlv-sub">Search the log or narrow it down by type — info, warnings, and errors all keep their own trail.</p>
+  </div>
+
+  <div class="adlv-controls">
+    <div class="adlv-search-field">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="adlv-search" placeholder="Search log entries…" aria-label="Search log entries">
+    </div>
+    <div class="adlv-type-filters" id="adlv-type-filters" role="group" aria-label="Filter by log type">
+      <button class="adlv-type-btn is-active" type="button" data-type="all">All</button>
+      <button class="adlv-type-btn" type="button" data-type="info">Info</button>
+      <button class="adlv-type-btn" type="button" data-type="warning">Warning</button>
+      <button class="adlv-type-btn" type="button" data-type="error">Error</button>
+    </div>
+  </div>
+
+  <p class="adlv-count" id="adlv-count" role="status" aria-live="polite"></p>
+
+  <ul class="adlv-list" id="adlv-list"></ul>
+
+  <p class="adlv-empty" id="adlv-empty" hidden>No entries match your search and filters.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

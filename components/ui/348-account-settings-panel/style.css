@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--bg-deep);
+  font-family: 'Syne', sans-serif;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.asp-wrap {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 56px 20px;
+}
+
+.asp-panel {
+  width: 100%;
+  max-width: 560px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 34px 36px 30px;
+}
+
+.asp-title {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.asp-tagline {
+  margin: 0 0 30px;
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.asp-group {
+  padding: 18px 0;
+  border-top: 1px solid var(--border);
+}
+
+.asp-group:first-of-type {
+  border-top: 1px solid var(--border-light);
+}
+
+.asp-group-title {
+  margin: 0 0 14px;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-clay);
+}
+
+.asp-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.asp-row-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.asp-row-label {
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
+.asp-row-desc {
+  font-size: 12.5px;
+  color: var(--text-faint);
+}
+
+.asp-toggle {
+  flex: none;
+  width: 46px;
+  height: 26px;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-subtle);
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.18s ease, border-color 0.18s ease;
+}
+
+.asp-toggle-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  transition: transform 0.18s ease, background-color 0.18s ease;
+}
+
+.asp-toggle.is-on {
+  background: var(--accent-sage);
+  border-color: var(--accent-sage);
+}
+
+.asp-toggle.is-on .asp-toggle-knob {
+  transform: translateX(20px);
+  background: #16210f;
+}
+
+.asp-toggle:focus-visible {
+  box-shadow: 0 0 0 3px rgba(143, 168, 110, 0.35);
+}
+
+.asp-status {
+  min-height: 16px;
+  margin: 20px 0 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--accent-sand);
+}
+
+@media (max-width: 480px) {
+  .asp-panel { padding: 26px 20px; }
+  .asp-row { gap: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

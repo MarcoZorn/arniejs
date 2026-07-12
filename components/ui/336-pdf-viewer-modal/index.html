@@ -1,0 +1,50 @@
+<!doctype html>
+<!-- description: Open the ledger to page through it slowly, the way you'd read seed notes on a porch. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PDF Viewer Modal — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="pv-demo">
+  <p class="pv-hint">Open the ledger to page through it slowly, the way you'd read seed notes on a porch.</p>
+  <button class="pv-trigger" type="button" id="pvOpen">Open document</button>
+
+  <div class="pv-backdrop" id="pvBackdrop"></div>
+  <div class="pv-modal" id="pvModal" role="dialog" aria-modal="true" aria-labelledby="pvTitle" tabindex="-1">
+    <header class="pv-toolbar">
+      <h2 id="pvTitle" class="pv-title">Field Notes.pdf</h2>
+      <div class="pv-zoom-group">
+        <button class="pv-btn" type="button" id="pvZoomOut" aria-label="Zoom out">−</button>
+        <span class="pv-zoom-value" id="pvZoomValue">100%</span>
+        <button class="pv-btn" type="button" id="pvZoomIn" aria-label="Zoom in">+</button>
+      </div>
+      <button class="pv-close" type="button" id="pvClose" aria-label="Close document">&times;</button>
+    </header>
+
+    <div class="pv-viewport" id="pvViewport">
+      <div class="pv-page" id="pvPage">
+        <div class="pv-page-number" id="pvPageNumber">1</div>
+        <div class="pv-line pv-line--title"></div>
+        <div class="pv-line"></div>
+        <div class="pv-line"></div>
+        <div class="pv-line pv-line--short"></div>
+        <div class="pv-line"></div>
+        <div class="pv-line"></div>
+        <div class="pv-line pv-line--short"></div>
+      </div>
+    </div>
+
+    <footer class="pv-footer">
+      <button class="pv-btn" type="button" id="pvPrev">Prev</button>
+      <span class="pv-page-indicator" id="pvIndicator" aria-live="polite">Page 1 of 5</span>
+      <button class="pv-btn" type="button" id="pvNext">Next</button>
+    </footer>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- description: Every input settles into exactly one fingerprint — type below and watch it form. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hash Generator — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="hsh-wrap">
+  <header class="hsh-header">
+    <h1 class="hsh-title">SHA-256 digest</h1>
+    <p class="hsh-sub">Every input settles into exactly one fingerprint — type below and watch it form.</p>
+  </header>
+
+  <label class="hsh-label" for="hsh-input">Input text</label>
+  <textarea id="hsh-input" class="hsh-textarea" rows="5" spellcheck="false" placeholder="Type something to hash…"></textarea>
+
+  <div class="hsh-result">
+    <div class="hsh-result-top">
+      <span class="hsh-label hsh-label--inline">SHA-256</span>
+      <span class="hsh-status" id="hsh-status"></span>
+    </div>
+    <div class="hsh-digest-row">
+      <code class="hsh-digest" id="hsh-digest">—</code>
+      <button type="button" class="hsh-copy" id="hsh-copy" aria-label="Copy hash">Copy</button>
+    </div>
+    <span class="hsh-confirm" id="hsh-confirm" aria-live="polite"></span>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

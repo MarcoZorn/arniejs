@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-deep);
+  font-family: 'Syne', sans-serif;
+  color: var(--text-primary);
+  padding: 56px 20px;
+}
+
+.plot-wrap {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.plot-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 36px 32px 32px;
+}
+
+.plot-eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-clay);
+}
+
+.plot-title {
+  margin: 0 0 10px;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.plot-hint {
+  margin: 0 0 26px;
+  color: var(--text-muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+.plot-summary {
+  background: rgba(160, 56, 32, 0.12);
+  border: 1px solid var(--accent-rust);
+  border-left: 4px solid var(--accent-rust);
+  border-radius: 4px;
+  padding: 16px 18px;
+  margin-bottom: 22px;
+}
+
+.plot-summary-title {
+  margin: 0 0 8px;
+  font-weight: 700;
+  font-size: 14.5px;
+  color: var(--text-primary);
+}
+
+.plot-summary-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.plot-summary-list li {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.plot-summary-list a {
+  color: var(--accent-sand);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+.plot-summary-list a:hover {
+  color: var(--accent-terra);
+}
+
+.plot-success {
+  background: rgba(90, 122, 58, 0.14);
+  border: 1px solid var(--accent-moss);
+  border-left: 4px solid var(--accent-moss);
+  border-radius: 4px;
+  padding: 14px 18px;
+  margin-bottom: 22px;
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
+.plot-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.plot-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.plot-label {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 7px;
+  color: var(--text-muted);
+}
+
+.plot-input {
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  padding: 11px 13px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.plot-input:focus {
+  border-color: var(--accent-sand);
+  box-shadow: 0 0 0 3px rgba(212, 168, 90, 0.16);
+}
+
+.plot-textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.plot-field.is-invalid .plot-input {
+  border-color: var(--accent-rust);
+}
+
+.plot-field.is-invalid .plot-input:focus {
+  box-shadow: 0 0 0 3px rgba(160, 56, 32, 0.18);
+}
+
+.plot-error {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--accent-terra);
+  min-height: 0;
+  display: none;
+}
+
+.plot-field.is-invalid .plot-error {
+  display: block;
+}
+
+.plot-submit {
+  margin-top: 6px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1208;
+  background: var(--accent-sand);
+  border: none;
+  border-radius: 4px;
+  padding: 13px 20px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.plot-submit:hover {
+  background: var(--accent-terra);
+  color: var(--text-primary);
+}
+
+.plot-submit:active {
+  transform: translateY(1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

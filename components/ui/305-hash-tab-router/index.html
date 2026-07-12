@@ -1,0 +1,49 @@
+<!doctype html>
+<!-- description: Each tab syncs to the address bar, so a shared link opens straight to the right one, and the back button steps you through your own trail. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hash Tab Router — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="htab-wrap">
+  <div class="htab-intro">
+    <p class="htab-eyebrow">Bookmarkable tabs</p>
+    <h1 class="htab-title">Tabs that remember where you left them</h1>
+    <p class="htab-tagline">Each tab syncs to the address bar, so a shared link opens straight to the right one, and the back button steps you through your own trail.</p>
+  </div>
+
+  <div class="htab-card">
+    <div class="htab-list" role="tablist" aria-label="Plot sections">
+      <button type="button" class="htab-tab" id="tab-overview" role="tab" data-hash="overview" aria-selected="true" aria-controls="panel-overview">Overview</button>
+      <button type="button" class="htab-tab" id="tab-watering" role="tab" data-hash="watering" aria-selected="false" aria-controls="panel-watering">Watering</button>
+      <button type="button" class="htab-tab" id="tab-planting" role="tab" data-hash="planting" aria-selected="false" aria-controls="panel-planting">Planting</button>
+      <button type="button" class="htab-tab" id="tab-notes" role="tab" data-hash="notes" aria-selected="false" aria-controls="panel-notes">Notes</button>
+    </div>
+
+    <div class="htab-panels">
+      <section class="htab-panel" id="panel-overview" role="tabpanel" aria-labelledby="tab-overview" tabindex="0">
+        <h2>Overview</h2>
+        <p>Four raised beds, one shared hose bib, and a rotation that changes every other season depending on what did well last year.</p>
+      </section>
+      <section class="htab-panel" id="panel-watering" role="tabpanel" aria-labelledby="tab-watering" tabindex="0" hidden>
+        <h2>Watering</h2>
+        <p>Drip lines run every other morning in summer, hand-watered the rest of the year depending on rainfall.</p>
+      </section>
+      <section class="htab-panel" id="panel-planting" role="tabpanel" aria-labelledby="tab-planting" tabindex="0" hidden>
+        <h2>Planting</h2>
+        <p>Direct-sown root vegetables, started seedlings for anything that needs a head start on the season.</p>
+      </section>
+      <section class="htab-panel" id="panel-notes" role="tabpanel" aria-labelledby="tab-notes" tabindex="0" hidden>
+        <h2>Notes</h2>
+        <p>Try the URL hash directly — #watering, #planting, #notes — or use your browser's back button after switching a few tabs.</p>
+      </section>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

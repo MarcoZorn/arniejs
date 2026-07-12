@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.perm-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 20px 72px;
+}
+
+.perm-title {
+  margin: 0 0 10px;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.perm-desc {
+  margin: 0 0 30px;
+  color: var(--text-muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+.perm-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-surface);
+}
+
+.perm-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 520px;
+}
+
+.perm-table thead th {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-sand);
+  padding: 14px 10px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.perm-row-label-head {
+  text-align: left !important;
+  color: var(--text-faint) !important;
+  padding-left: 18px !important;
+}
+
+.perm-table tbody th {
+  text-align: left;
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--text-primary);
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.perm-table tbody td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.perm-table tbody tr:last-child th,
+.perm-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.perm-table tbody tr:hover {
+  background: var(--bg-card);
+}
+
+.perm-check {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.perm-check input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.perm-box {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 1.5px solid var(--border-light);
+  background: var(--bg-subtle);
+  display: inline-block;
+  position: relative;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.perm-check input:checked + .perm-box {
+  background: var(--accent-clay);
+  border-color: var(--accent-clay);
+}
+
+.perm-check input:checked + .perm-box::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231a1208' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='4 12.5 9.5 18 20 6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+}
+
+.perm-check input:focus-visible + .perm-box {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(155, 107, 58, 0.3);
+}
+
+.perm-check input:not(:disabled):active + .perm-box {
+  transform: scale(0.9);
+}
+
+.perm-check input:disabled + .perm-box {
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+.perm-check input:disabled + .perm-box::before {
+  content: '';
+}
+
+.perm-check:has(input:disabled) {
+  cursor: not-allowed;
+}
+
+.perm-status {
+  min-height: 20px;
+  margin: 20px 0 0;
+  color: var(--accent-sand);
+  font-size: 13.5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

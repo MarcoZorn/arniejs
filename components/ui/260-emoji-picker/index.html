@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- description: Search the patch below and tap an emoji to drop it straight into your message. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emoji Picker — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="ep-wrap">
+  <p class="ep-eyebrow">Plant a little joy</p>
+  <h1 class="ep-title">Say it with a seedling — or twelve</h1>
+  <p class="ep-desc">Search the patch below and tap an emoji to drop it straight into your message.</p>
+
+  <div class="ep-demo">
+    <label class="ep-field-label" for="ep-target">Your message</label>
+    <div class="ep-field">
+      <textarea class="ep-target" id="ep-target" rows="3" placeholder="Write something nice...">The garden is looking great this week </textarea>
+      <div class="ep-trigger-wrap">
+        <button class="ep-trigger" type="button" aria-haspopup="dialog" aria-expanded="false" aria-label="Open emoji picker">🌱</button>
+
+        <div class="ep-panel" role="dialog" aria-label="Emoji picker" hidden>
+          <input class="ep-search" type="text" placeholder="Search emoji (try 'sun' or 'plant')" autocomplete="off">
+          <div class="ep-grid" role="listbox" aria-label="Emoji results"></div>
+          <p class="ep-empty" hidden>No sprouts found for that search.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

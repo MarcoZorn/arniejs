@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- description: Season planner -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Date Range Picker — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="drp-wrap">
+  <div class="drp-intro">
+    <p class="drp-eyebrow">Season planner</p>
+    <h1 class="drp-title">Choose your planting window</h1>
+    <p class="drp-hint-text">Tap a start date, then an end date — we'll shade every day in between so you know exactly how long the bed stays busy.</p>
+  </div>
+
+  <div class="drp-card">
+    <div class="drp-nav">
+      <button type="button" class="drp-nav-btn" data-dir="-1" aria-label="Previous month">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="drp-months" id="drp-months"></div>
+      <button type="button" class="drp-nav-btn" data-dir="1" aria-label="Next month">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
+    <div class="drp-calendars" id="drp-calendars"></div>
+
+    <div class="drp-footer">
+      <p class="drp-summary" id="drp-summary" role="status" aria-live="polite">Pick a start date</p>
+      <div class="drp-actions">
+        <button type="button" class="drp-btn drp-btn--ghost" id="drp-clear">Clear</button>
+        <button type="button" class="drp-btn drp-btn--solid" id="drp-apply" disabled>Apply</button>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

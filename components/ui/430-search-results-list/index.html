@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- description: Type a few letters and watch the right entry surface on its own. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Search Results List — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="srch-wrap">
+  <div class="srch-card">
+    <p class="srch-hint">Type a few letters and watch the right entry surface on its own.</p>
+
+    <div class="srch-field">
+      <svg class="srch-icon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">
+        <circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+        <line x1="16" y1="16" x2="20.5" y2="20.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+      </svg>
+      <input class="srch-input" type="text" placeholder="Search articles…" aria-label="Search articles">
+    </div>
+
+    <ul class="srch-list">
+      <li class="srch-item" data-text="Companion planting for small balconies"><span class="srch-item-text">Companion planting for small balconies</span></li>
+      <li class="srch-item" data-text="How to read your soil's pH without a kit"><span class="srch-item-text">How to read your soil's pH without a kit</span></li>
+      <li class="srch-item" data-text="The case for leaving your leaves this fall"><span class="srch-item-text">The case for leaving your leaves this fall</span></li>
+      <li class="srch-item" data-text="Building a rain garden on a slope"><span class="srch-item-text">Building a rain garden on a slope</span></li>
+      <li class="srch-item" data-text="Why tomatoes crack after heavy rain"><span class="srch-item-text">Why tomatoes crack after heavy rain</span></li>
+      <li class="srch-item" data-text="A beginner's guide to grafting fruit trees"><span class="srch-item-text">A beginner's guide to grafting fruit trees</span></li>
+      <li class="srch-item" data-text="Mulching mistakes that invite root rot"><span class="srch-item-text">Mulching mistakes that invite root rot</span></li>
+      <li class="srch-item" data-text="Succession planting for a longer harvest"><span class="srch-item-text">Succession planting for a longer harvest</span></li>
+      <li class="srch-item" data-text="Reading cloud cover before you water"><span class="srch-item-text">Reading cloud cover before you water</span></li>
+      <li class="srch-item" data-text="Overwintering herbs indoors successfully"><span class="srch-item-text">Overwintering herbs indoors successfully</span></li>
+    </ul>
+
+    <p class="srch-empty" hidden>Nothing matches "<span class="srch-empty-query"></span>" — try a different word.</p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- description: Scan feature by feature across plans, then narrow the view to just the rows where plans actually differ. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comparison Matrix — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="cmpx-wrap">
+  <div class="cmpx-intro">
+    <p class="cmpx-eyebrow">Side by side</p>
+    <h1 class="cmpx-title">Every plan, laid out row by row</h1>
+    <p class="cmpx-sub">Scan feature by feature across plans, then narrow the view to just the rows where plans actually differ.</p>
+  </div>
+
+  <div class="cmpx-controls">
+    <label class="cmpx-toggle">
+      <input type="checkbox" id="cmpx-diff-toggle">
+      <span class="cmpx-toggle-track" aria-hidden="true"></span>
+      <span class="cmpx-toggle-label">Show only differences</span>
+    </label>
+    <p class="cmpx-count" id="cmpx-count" role="status" aria-live="polite"></p>
+  </div>
+
+  <div class="cmpx-scroll">
+    <table class="cmpx-table" id="cmpx-table">
+      <thead>
+        <tr>
+          <th class="cmpx-sticky cmpx-corner" scope="col">Feature</th>
+          <th scope="col">
+            <span class="cmpx-plan-name">Seedling</span>
+            <span class="cmpx-plan-price">$0<small>/mo</small></span>
+          </th>
+          <th scope="col" class="cmpx-featured">
+            <span class="cmpx-badge">Popular</span>
+            <span class="cmpx-plan-name">Thicket</span>
+            <span class="cmpx-plan-price">$24<small>/mo</small></span>
+          </th>
+          <th scope="col">
+            <span class="cmpx-plan-name">Canopy</span>
+            <span class="cmpx-plan-price">$68<small>/mo</small></span>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="cmpx-tbody">
+        <!-- rows injected by script.js -->
+      </tbody>
+    </table>
+  </div>
+
+  <p class="cmpx-empty" id="cmpx-empty" hidden>No rows to show — every feature matches across plans right now.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

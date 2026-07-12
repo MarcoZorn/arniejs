@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- description: Paste any JSON below and watch it take root as a browsable, collapsible tree. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JSON Tree Viewer — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="jtv-wrap">
+  <div class="jtv-intro">
+    <p class="jtv-eyebrow">Inspect the soil</p>
+    <h1 class="jtv-title">JSON Tree Viewer</h1>
+    <p class="jtv-sub">Paste any JSON below and watch it take root as a browsable, collapsible tree.</p>
+  </div>
+
+  <div class="jtv-panel">
+    <div class="jtv-input-col">
+      <label class="jtv-label" for="jtv-input">Source JSON</label>
+      <textarea id="jtv-input" class="jtv-textarea" spellcheck="false"></textarea>
+      <div class="jtv-actions">
+        <button type="button" class="jtv-btn jtv-btn--primary" id="jtv-render">Render tree</button>
+        <button type="button" class="jtv-btn jtv-btn--ghost" id="jtv-expand-all">Expand all</button>
+        <button type="button" class="jtv-btn jtv-btn--ghost" id="jtv-collapse-all">Collapse all</button>
+      </div>
+      <p class="jtv-error" id="jtv-error" role="alert" aria-live="polite"></p>
+    </div>
+
+    <div class="jtv-output-col">
+      <label class="jtv-label">Tree</label>
+      <div class="jtv-tree" id="jtv-tree" aria-live="polite"></div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

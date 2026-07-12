@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- description: Test a webhook the way you'd test soil before planting — send something small, see what comes back, keep a record of every attempt. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Webhook Tester Form — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wht-wrap">
+  <p class="wht-sub">Test a webhook the way you'd test soil before planting — send something small, see what comes back, keep a record of every attempt.</p>
+
+  <h1 class="wht-heading">Webhook tester</h1>
+
+  <form class="wht-form" id="whtForm">
+    <label class="wht-label" for="whtUrl">Endpoint URL</label>
+    <input class="wht-input" id="whtUrl" name="url" type="text" value="https://hooks.example.com/orchard/notify" required>
+
+    <label class="wht-label" for="whtPayload">Payload</label>
+    <textarea class="wht-textarea" id="whtPayload" name="payload" rows="8" spellcheck="false">{
+  "event": "harvest.completed",
+  "plotId": "north-terrace",
+  "weightKg": 42.7,
+  "timestamp": "2026-07-12T09:00:00Z"
+}</textarea>
+
+    <button class="wht-submit" type="submit">Send test</button>
+  </form>
+
+  <section class="wht-log-section">
+    <h2 class="wht-log-heading">Request log</h2>
+    <ul class="wht-log" id="whtLog">
+      <li class="wht-log-empty" id="whtLogEmpty">No requests sent yet.</li>
+    </ul>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

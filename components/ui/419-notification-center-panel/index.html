@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- description: Everything that's sprouted since you last checked in. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Notification Center Panel — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="notif-wrap">
+  <p class="notif-hint">Everything that's sprouted since you last checked in.</p>
+
+  <div class="notif-anchor">
+    <button type="button" class="notif-bell" id="notifBell" aria-haspopup="true" aria-expanded="false" aria-label="Notifications">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+      </svg>
+      <span class="notif-badge" id="notifBadge" hidden>0</span>
+    </button>
+
+    <div class="notif-panel" id="notifPanel" role="menu" aria-label="Notifications panel" hidden>
+      <div class="notif-panel-head">
+        <span class="notif-panel-title">Notifications</span>
+        <button type="button" class="notif-mark-all" id="notifMarkAll">Mark all read</button>
+      </div>
+      <div class="notif-list" id="notifList"></div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

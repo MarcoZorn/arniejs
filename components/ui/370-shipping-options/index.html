@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- description: Every option leaves from the same greenhouse — pick the pace that fits your planting schedule. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shipping Options — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sho-wrap">
+  <div class="sho-intro">
+    <p class="sho-eyebrow">Getting it to you</p>
+    <h1 class="sho-title">Choose how quickly you'd like it delivered</h1>
+    <p class="sho-sub">Every option leaves from the same greenhouse — pick the pace that fits your planting schedule.</p>
+  </div>
+
+  <div class="sho-layout">
+    <fieldset class="sho-options" data-options>
+      <legend class="sho-legend">Shipping speed</legend>
+
+      <label class="sho-option" data-price="0">
+        <input type="radio" name="shipping" value="standard" data-shipping-radio checked>
+        <span class="sho-option-main">
+          <span class="sho-option-name">Standard</span>
+          <span class="sho-option-eta">Arrives Jul 18 – Jul 22</span>
+        </span>
+        <span class="sho-option-price">Free</span>
+      </label>
+
+      <label class="sho-option" data-price="6.5">
+        <input type="radio" name="shipping" value="express" data-shipping-radio>
+        <span class="sho-option-main">
+          <span class="sho-option-name">Express</span>
+          <span class="sho-option-eta">Arrives Jul 15 – Jul 16</span>
+        </span>
+        <span class="sho-option-price">$6.50</span>
+      </label>
+
+      <label class="sho-option" data-price="14">
+        <input type="radio" name="shipping" value="next-day" data-shipping-radio>
+        <span class="sho-option-main">
+          <span class="sho-option-name">Next-day</span>
+          <span class="sho-option-eta">Arrives Jul 13</span>
+        </span>
+        <span class="sho-option-price">$14.00</span>
+      </label>
+    </fieldset>
+
+    <aside class="sho-summary" aria-label="Order total">
+      <h2 class="sho-summary-title">Order total</h2>
+      <div class="sho-summary-row">
+        <span>Items</span>
+        <span data-item-cost>$58.00</span>
+      </div>
+      <div class="sho-summary-row">
+        <span>Shipping</span>
+        <span data-shipping-cost>Free</span>
+      </div>
+      <div class="sho-summary-row sho-summary-row--total">
+        <span>Total</span>
+        <span data-order-total>$58.00</span>
+      </div>
+    </aside>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!doctype html>
+<!-- description: Manage who has access to this workspace and what they're allowed to tend. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Team Members Table — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="team-wrap">
+  <div class="team-intro">
+    <p class="team-tagline">Manage who has access to this workspace and what they're allowed to tend.</p>
+    <h1 class="team-title">Team members</h1>
+  </div>
+
+  <div class="team-scroll">
+    <table class="team-table">
+      <thead>
+        <tr>
+          <th scope="col">Member</th>
+          <th scope="col">Role</th>
+          <th scope="col">Joined</th>
+          <th scope="col" class="team-col-actions">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-member="Priya Shah">
+          <td class="team-cell-member">
+            <span class="team-avatar" style="background:#5a7a3a">PS</span>
+            <span class="team-member-info">
+              <span class="team-member-name">Priya Shah</span>
+              <span class="team-member-email">priya.shah@ferngrove.io</span>
+            </span>
+          </td>
+          <td>
+            <select class="team-role-select" aria-label="Role for Priya Shah">
+              <option value="owner">Owner</option>
+              <option value="admin" selected>Admin</option>
+              <option value="editor">Editor</option>
+              <option value="viewer">Viewer</option>
+            </select>
+          </td>
+          <td class="team-cell-joined">Mar 3, 2024</td>
+          <td class="team-cell-actions">
+            <button type="button" class="team-remove-btn">Remove member</button>
+            <div class="team-confirm" hidden>
+              <span class="team-confirm-text">Remove Priya?</span>
+              <button type="button" class="team-confirm-yes">Yes, remove</button>
+              <button type="button" class="team-confirm-no">Cancel</button>
+            </div>
+          </td>
+        </tr>
+        <tr data-member="Owen Falk">
+          <td class="team-cell-member">
+            <span class="team-avatar" style="background:#c4622d">OF</span>
+            <span class="team-member-info">
+              <span class="team-member-name">Owen Falk</span>
+              <span class="team-member-email">owen.falk@ferngrove.io</span>
+            </span>
+          </td>
+          <td>
+            <select class="team-role-select" aria-label="Role for Owen Falk">
+              <option value="owner" selected>Owner</option>
+              <option value="admin">Admin</option>
+              <option value="editor">Editor</option>
+              <option value="viewer">Viewer</option>
+            </select>
+          </td>
+          <td class="team-cell-joined">Jan 18, 2023</td>
+          <td class="team-cell-actions">
+            <button type="button" class="team-remove-btn">Remove member</button>
+            <div class="team-confirm" hidden>
+              <span class="team-confirm-text">Remove Owen?</span>
+              <button type="button" class="team-confirm-yes">Yes, remove</button>
+              <button type="button" class="team-confirm-no">Cancel</button>
+            </div>
+          </td>
+        </tr>
+        <tr data-member="Mireille Tan">
+          <td class="team-cell-member">
+            <span class="team-avatar" style="background:#9b6b3a">MT</span>
+            <span class="team-member-info">
+              <span class="team-member-name">Mireille Tan</span>
+              <span class="team-member-email">mireille.tan@ferngrove.io</span>
+            </span>
+          </td>
+          <td>
+            <select class="team-role-select" aria-label="Role for Mireille Tan">
+              <option value="owner">Owner</option>
+              <option value="admin">Admin</option>
+              <option value="editor" selected>Editor</option>
+              <option value="viewer">Viewer</option>
+            </select>
+          </td>
+          <td class="team-cell-joined">Jun 22, 2024</td>
+          <td class="team-cell-actions">
+            <button type="button" class="team-remove-btn">Remove member</button>
+            <div class="team-confirm" hidden>
+              <span class="team-confirm-text">Remove Mireille?</span>
+              <button type="button" class="team-confirm-yes">Yes, remove</button>
+              <button type="button" class="team-confirm-no">Cancel</button>
+            </div>
+          </td>
+        </tr>
+        <tr data-member="Declan Ryu">
+          <td class="team-cell-member">
+            <span class="team-avatar" style="background:#a03820">DR</span>
+            <span class="team-member-info">
+              <span class="team-member-name">Declan Ryu</span>
+              <span class="team-member-email">declan.ryu@ferngrove.io</span>
+            </span>
+          </td>
+          <td>
+            <select class="team-role-select" aria-label="Role for Declan Ryu">
+              <option value="owner">Owner</option>
+              <option value="admin">Admin</option>
+              <option value="editor">Editor</option>
+              <option value="viewer" selected>Viewer</option>
+            </select>
+          </td>
+          <td class="team-cell-joined">Oct 9, 2024</td>
+          <td class="team-cell-actions">
+            <button type="button" class="team-remove-btn">Remove member</button>
+            <div class="team-confirm" hidden>
+              <span class="team-confirm-text">Remove Declan?</span>
+              <button type="button" class="team-confirm-yes">Yes, remove</button>
+              <button type="button" class="team-confirm-no">Cancel</button>
+            </div>
+          </td>
+        </tr>
+        <tr data-member="Anya Kowalczyk">
+          <td class="team-cell-member">
+            <span class="team-avatar" style="background:#d4a85a">AK</span>
+            <span class="team-member-info">
+              <span class="team-member-name">Anya Kowalczyk</span>
+              <span class="team-member-email">anya.k@ferngrove.io</span>
+            </span>
+          </td>
+          <td>
+            <select class="team-role-select" aria-label="Role for Anya Kowalczyk">
+              <option value="owner">Owner</option>
+              <option value="admin">Admin</option>
+              <option value="editor" selected>Editor</option>
+              <option value="viewer">Viewer</option>
+            </select>
+          </td>
+          <td class="team-cell-joined">Feb 14, 2025</td>
+          <td class="team-cell-actions">
+            <button type="button" class="team-remove-btn">Remove member</button>
+            <div class="team-confirm" hidden>
+              <span class="team-confirm-text">Remove Anya?</span>
+              <button type="button" class="team-confirm-yes">Yes, remove</button>
+              <button type="button" class="team-confirm-no">Cancel</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="team-status" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

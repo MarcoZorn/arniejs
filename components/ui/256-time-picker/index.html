@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- description: Pick an hour, a minute and a side of noon — the dropdown remembers exactly what you chose. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Time Picker — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="tp-wrap">
+  <div class="tp-intro">
+    <p class="tp-eyebrow">Set a time</p>
+    <h1 class="tp-title">When should the sprinklers switch on?</h1>
+    <p class="tp-sub">Pick an hour, a minute and a side of noon — the dropdown remembers exactly what you chose.</p>
+  </div>
+
+  <div class="tp-field">
+    <label class="tp-label" for="tp-trigger">Watering time</label>
+    <button class="tp-trigger" id="tp-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+      <span class="tp-trigger-value">06:00 AM</span>
+      <svg class="tp-trigger-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
+    </button>
+
+    <div class="tp-panel" role="dialog" aria-label="Time picker" hidden>
+      <div class="tp-columns">
+        <div class="tp-col">
+          <p class="tp-col-label">Hour</p>
+          <div class="tp-list" data-list="hour" role="listbox" aria-label="Hour" tabindex="0"></div>
+        </div>
+        <div class="tp-col">
+          <p class="tp-col-label">Min</p>
+          <div class="tp-list" data-list="minute" role="listbox" aria-label="Minute" tabindex="0"></div>
+        </div>
+        <div class="tp-col tp-col--meridiem">
+          <p class="tp-col-label">&nbsp;</p>
+          <div class="tp-meridiem">
+            <button class="tp-meridiem-btn is-active" type="button" data-meridiem="AM">AM</button>
+            <button class="tp-meridiem-btn" type="button" data-meridiem="PM">PM</button>
+          </div>
+        </div>
+      </div>
+      <button class="tp-done" type="button">Done</button>
+    </div>
+  </div>
+
+  <p class="tp-hint" role="status" aria-live="polite">Selected: 06:00 AM</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

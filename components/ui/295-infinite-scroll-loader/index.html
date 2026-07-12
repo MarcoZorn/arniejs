@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- description: A list that keeps growing the closer you get to the bottom, like turning over one more row of soil. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Infinite Scroll Loader — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="inf-wrap">
+  <p class="inf-tagline">A list that keeps growing the closer you get to the bottom, like turning over one more row of soil.</p>
+
+  <div class="inf-scroll" id="infScroll" role="feed" aria-busy="false" aria-label="Field log entries">
+    <ul class="inf-list" id="infList"></ul>
+    <div class="inf-loader" id="infLoader" hidden>
+      <span class="inf-spinner" aria-hidden="true"></span>
+      <span>Loading more entries&hellip;</span>
+    </div>
+    <p class="inf-end" id="infEnd" hidden>You've reached the end of the log.</p>
+  </div>
+
+  <p class="inf-status" id="infStatus" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- description: Pick a color and size — we'll let you know right away if that pairing isn't in stock. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Product Variant Picker — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="variant-wrap">
+  <div class="variant-intro">
+    <p class="variant-eyebrow">Field jacket</p>
+    <h1 class="variant-title">Choose your fit</h1>
+    <p class="variant-sub">Pick a color and size — we'll let you know right away if that pairing isn't in stock.</p>
+  </div>
+
+  <div class="variant-card">
+    <div class="variant-preview">
+      <div class="variant-swatch-preview" data-preview-swatch></div>
+      <div class="variant-preview-text">
+        <span class="variant-preview-name" data-preview-name>Canvas Field Jacket</span>
+        <span class="variant-preview-price" data-preview-price>$128</span>
+        <span class="variant-preview-selection" data-preview-selection>Clay &middot; M</span>
+      </div>
+    </div>
+
+    <div class="variant-picker">
+      <div class="variant-group">
+        <span class="variant-label">Color</span>
+        <div class="variant-colors" data-colors role="radiogroup" aria-label="Color">
+          <button type="button" class="variant-swatch" data-color="clay" style="--swatch: #9b6b3a" aria-label="Clay" aria-pressed="true"></button>
+          <button type="button" class="variant-swatch" data-color="moss" style="--swatch: #5a7a3a" aria-label="Moss"></button>
+          <button type="button" class="variant-swatch" data-color="rust" style="--swatch: #a03820" aria-label="Rust"></button>
+          <button type="button" class="variant-swatch" data-color="sand" style="--swatch: #d4a85a" aria-label="Sand"></button>
+          <button type="button" class="variant-swatch" data-color="ink" style="--swatch: #2e2010" aria-label="Ink"></button>
+        </div>
+      </div>
+
+      <div class="variant-group">
+        <span class="variant-label">Size</span>
+        <div class="variant-sizes" data-sizes role="radiogroup" aria-label="Size">
+          <button type="button" class="variant-size" data-size="XS">XS</button>
+          <button type="button" class="variant-size" data-size="S">S</button>
+          <button type="button" class="variant-size" data-size="M" aria-pressed="true">M</button>
+          <button type="button" class="variant-size" data-size="L">L</button>
+          <button type="button" class="variant-size" data-size="XL">XL</button>
+        </div>
+      </div>
+
+      <p class="variant-stock-note" data-stock-note role="status" aria-live="polite"></p>
+
+      <button type="button" class="variant-add" data-add-btn>Add to cart</button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

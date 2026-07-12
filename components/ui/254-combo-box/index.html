@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- description: Start typing to filter the catalog, then use the arrow keys to browse and Enter to pick one. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Combo Box — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="combo-wrap">
+  <div class="combo-panel">
+    <label class="combo-field-label" for="combo-input">Search seed varieties</label>
+    <p class="combo-hint">Start typing to filter the catalog, then use the arrow keys to browse and Enter to pick one.</p>
+
+    <div class="combo-root">
+      <input
+        type="text"
+        id="combo-input"
+        class="combo-input"
+        role="combobox"
+        aria-expanded="false"
+        aria-controls="combo-listbox"
+        aria-autocomplete="list"
+        aria-activedescendant=""
+        autocomplete="off"
+        placeholder="e.g. Tomato, Basil, Kale…"
+      >
+      <ul id="combo-listbox" class="combo-listbox" role="listbox" aria-label="Seed varieties" hidden></ul>
+    </div>
+
+    <p class="combo-status" role="status" aria-live="polite"></p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

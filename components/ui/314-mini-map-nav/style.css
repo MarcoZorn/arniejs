@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.mmap-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 72px 24px 96px;
+}
+
+.mmap-hint {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 32px;
+  text-align: center;
+}
+
+.mmap-shell {
+  display: flex;
+  gap: 14px;
+  height: 460px;
+}
+
+.mmap-scroll {
+  flex: 1;
+  overflow-y: auto;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 8px 20px;
+}
+
+.mmap-scroll:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: -2px;
+}
+
+.mmap-entry {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.mmap-entry:last-child {
+  border-bottom: none;
+}
+
+.mmap-entry h2 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--accent-sand);
+}
+
+.mmap-entry p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.mmap-nav {
+  width: 34px;
+  flex: none;
+}
+
+.mmap-track {
+  position: relative;
+  width: 12px;
+  height: 100%;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.mmap-viewport {
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  width: 18px;
+  border-radius: 999px;
+  background: var(--accent-terra);
+  box-shadow: 0 0 0 3px rgba(196, 98, 45, 0.18);
+  transition: top 0.1s linear, height 0.1s linear;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }

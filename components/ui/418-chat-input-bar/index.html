@@ -1,0 +1,51 @@
+<!doctype html>
+<!-- description: Small notes for the plot crew, sent as they sprout. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chat Input Bar — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="inputbar-wrap">
+  <div class="inputbar-card">
+    <p class="inputbar-desc">Small notes for the plot crew, sent as they sprout.</p>
+
+    <div class="inputbar-messages" id="inputbarMessages">
+      <div class="inputbar-msg inputbar-msg--them">
+        <div class="inputbar-avatar" style="--av-bg:#8fa86e">EL</div>
+        <div class="inputbar-bubble">
+          <p class="inputbar-text">is the greenhouse key still under the mat?</p>
+        </div>
+      </div>
+      <div class="inputbar-msg inputbar-msg--me">
+        <div class="inputbar-bubble inputbar-bubble--me">
+          <p class="inputbar-text">yep, exactly where you left it</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inputbar-chip-row" id="inputbarChipRow"></div>
+
+    <div class="inputbar-popover" id="inputbarPopover" role="menu" aria-label="Emoji picker" hidden>
+      <button type="button" class="inputbar-emoji" data-emoji="🌱">🌱</button>
+      <button type="button" class="inputbar-emoji" data-emoji="🌿">🌿</button>
+      <button type="button" class="inputbar-emoji" data-emoji="🌾">🌾</button>
+      <button type="button" class="inputbar-emoji" data-emoji="☀️">☀️</button>
+      <button type="button" class="inputbar-emoji" data-emoji="💧">💧</button>
+      <button type="button" class="inputbar-emoji" data-emoji="🍅">🍅</button>
+    </div>
+
+    <form class="inputbar-bar" id="inputbarForm">
+      <button type="button" class="inputbar-icon-btn" id="inputbarEmojiBtn" aria-label="Insert emoji" aria-haspopup="true" aria-expanded="false">🙂</button>
+      <button type="button" class="inputbar-icon-btn" id="inputbarAttachBtn" aria-label="Attach file">📎</button>
+      <input type="text" id="inputbarText" class="inputbar-text-input" placeholder="Write a message..." autocomplete="off">
+      <button type="submit" class="inputbar-send" aria-label="Send message">Send</button>
+    </form>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<!-- description: Your current plan and what happens if you decide to grow it. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Billing Card — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="bic-wrap">
+  <div class="bic-card">
+    <p class="bic-tagline">Your current plan and what happens if you decide to grow it.</p>
+
+    <div class="bic-current">
+      <div class="bic-current-top">
+        <span class="bic-plan-name">Bloom plan</span>
+        <span class="bic-plan-price">$19<small>/mo</small></span>
+      </div>
+      <p class="bic-blurb">10 plots, weather-aware scheduling and yield forecasting included.</p>
+      <p class="bic-renewal">Renews on <strong data-renewal>August 14, 2026</strong></p>
+    </div>
+
+    <button type="button" class="bic-upgrade-btn" data-upgrade-toggle>Upgrade plan</button>
+
+    <div class="bic-picker" data-picker hidden>
+      <p class="bic-picker-label">Choose a new plan</p>
+
+      <label class="bic-option">
+        <input type="radio" name="bic-plan" value="Orchard" data-plan-radio>
+        <span class="bic-option-body">
+          <span class="bic-option-name">Orchard — $49/mo</span>
+          <span class="bic-option-desc">Unlimited plots, unlimited seats, priority support</span>
+        </span>
+      </label>
+
+      <label class="bic-option">
+        <input type="radio" name="bic-plan" value="Orchard Annual" data-plan-radio>
+        <span class="bic-option-body">
+          <span class="bic-option-name">Orchard Annual — $470/yr</span>
+          <span class="bic-option-desc">Same as Orchard, two months free</span>
+        </span>
+      </label>
+
+      <div class="bic-picker-actions">
+        <button type="button" class="bic-confirm-btn" data-confirm disabled>Confirm upgrade</button>
+        <button type="button" class="bic-cancel-btn" data-cancel-picker>Cancel</button>
+      </div>
+    </div>
+
+    <p class="bic-status" role="status" aria-live="polite" data-status></p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

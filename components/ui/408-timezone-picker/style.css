@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.tzp-wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 52px 20px 64px;
+}
+
+.tzp-tagline {
+  margin: 0 0 28px;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.tzp-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.tzp-search-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-sand);
+  margin-bottom: 10px;
+}
+
+.tzp-search {
+  width: 100%;
+  font-family: 'Syne', sans-serif;
+  font-size: 15px;
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+}
+
+.tzp-search::placeholder { color: var(--text-faint); }
+
+.tzp-search:focus {
+  outline: none;
+  border-color: var(--accent-terra);
+}
+
+.tzp-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 260px;
+  overflow-y: auto;
+  border-top: 1px solid var(--border);
+}
+
+.tzp-item {
+  padding: 10px 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.tzp-item:hover,
+.tzp-item.is-active {
+  background: var(--bg-subtle);
+  color: var(--accent-sand);
+}
+
+.tzp-item-offset {
+  font-size: 11px;
+  color: var(--text-faint);
+  flex: none;
+}
+
+.tzp-empty {
+  padding: 16px 8px;
+  color: var(--text-faint);
+  font-size: 14px;
+  text-align: center;
+}
+
+.tzp-clock-card {
+  background: var(--bg-card);
+  border: 1px solid var(--accent-terra);
+  border-radius: 16px;
+  padding: 26px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(196, 98, 45, 0.15);
+}
+
+.tzp-clock-zone {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-clay);
+  margin-bottom: 10px;
+}
+
+.tzp-clock-time {
+  display: block;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--accent-sand);
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.tzp-clock-date {
+  display: block;
+  margin-top: 6px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .tzp-clock-time { font-size: 32px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

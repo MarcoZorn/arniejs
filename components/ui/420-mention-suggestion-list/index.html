@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- description: Type @ to bring a collaborator into the bed with you. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mention Suggestion List — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="mention-wrap">
+  <div class="mention-card">
+    <label class="mention-label" for="mentionInput">New post</label>
+    <p class="mention-tagline">Type @ to bring a collaborator into the bed with you.</p>
+
+    <div class="mention-field">
+      <textarea id="mentionInput" class="mention-textarea" rows="3" placeholder="Share an update, type @ to mention someone..."></textarea>
+      <ul class="mention-dropdown" id="mentionDropdown" role="listbox" hidden></ul>
+    </div>
+
+    <div class="mention-actions">
+      <button type="button" class="mention-post-btn" id="mentionPostBtn">Post</button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- description: Submit -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Signature Consent Form — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sign-wrap">
+  <div class="sign-card">
+    <p class="sign-eyebrow">Final step</p>
+    <h1 class="sign-title">Consent &amp; signature</h1>
+    <p class="sign-hint">Before we break ground on your plot, give us your consent and a signature below.</p>
+
+    <div class="sign-pad-wrap">
+      <canvas class="sign-canvas" width="600" height="220" aria-label="Signature pad — draw your signature with mouse or touch"></canvas>
+      <p class="sign-pad-placeholder">Sign here</p>
+      <button class="sign-clear" type="button">Clear</button>
+    </div>
+
+    <label class="sign-consent">
+      <input class="sign-consent-input" type="checkbox">
+      <span class="sign-consent-box" aria-hidden="true"></span>
+      <span class="sign-consent-text">I consent to ArnieJS Gardens preparing my plot as described above.</span>
+    </label>
+
+    <button class="sign-submit" type="button" disabled>Submit</button>
+
+    <div class="sign-success" role="status" aria-live="polite" hidden>
+      <p>Signed and submitted — welcome to the garden.</p>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

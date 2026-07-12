@@ -1,0 +1,54 @@
+<!doctype html>
+<!-- description: Prices update instantly wherever you're shopping from — pick a currency below. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Currency Switcher — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="curr-wrap">
+  <div class="curr-intro">
+    <p class="curr-sub">Prices update instantly wherever you're shopping from — pick a currency below.</p>
+    <label class="curr-select-label" for="curr-select">Display prices in</label>
+    <select id="curr-select" class="curr-select" data-currency-select>
+      <option value="USD">USD — US Dollar ($)</option>
+      <option value="EUR">EUR — Euro (€)</option>
+      <option value="GBP">GBP — British Pound (£)</option>
+      <option value="JPY">JPY — Japanese Yen (¥)</option>
+    </select>
+  </div>
+
+  <div class="curr-grid">
+    <article class="curr-card">
+      <div class="curr-thumb curr-thumb--a" aria-hidden="true"></div>
+      <h2 class="curr-name">Watering Can, Brass</h2>
+      <p class="curr-price" data-price-usd="42.00">$42.00</p>
+    </article>
+
+    <article class="curr-card">
+      <div class="curr-thumb curr-thumb--b" aria-hidden="true"></div>
+      <h2 class="curr-name">Raised Bed Kit, Cedar</h2>
+      <p class="curr-price" data-price-usd="189.00">$189.00</p>
+    </article>
+
+    <article class="curr-card">
+      <div class="curr-thumb curr-thumb--c" aria-hidden="true"></div>
+      <h2 class="curr-name">Herb Snips, Pair</h2>
+      <p class="curr-price" data-price-usd="16.50">$16.50</p>
+    </article>
+
+    <article class="curr-card">
+      <div class="curr-thumb curr-thumb--d" aria-hidden="true"></div>
+      <h2 class="curr-name">Compost Tumbler</h2>
+      <p class="curr-price" data-price-usd="112.00">$112.00</p>
+    </article>
+  </div>
+
+  <p class="curr-note" data-currency-note>Rates are static and for illustration only.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<!-- description: A quick side-by-side of what each plan actually includes, feature by feature. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Feature Comparison Grid — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="grid-wrap">
+  <div class="grid-intro">
+    <p class="grid-eyebrow">Plans</p>
+    <h1 class="grid-title">Find the right amount of room to grow</h1>
+    <p class="grid-sub">A quick side-by-side of what each plan actually includes, feature by feature.</p>
+
+    <div class="grid-toggle" role="group" aria-label="Billing period">
+      <button class="grid-toggle-btn is-active" type="button" data-period="monthly">Monthly</button>
+      <button class="grid-toggle-btn" type="button" data-period="annual">Annual <span class="grid-toggle-save">save 20%</span></button>
+    </div>
+  </div>
+
+  <div class="grid-scroll">
+    <table class="grid-table">
+      <thead>
+        <tr>
+          <th class="grid-th grid-th--label" scope="col">Feature</th>
+          <th class="grid-th" scope="col">
+            <span class="grid-plan-name">Sprout</span>
+            <span class="grid-plan-price" data-monthly="$0" data-annual="$0">$0<small>/mo</small></span>
+            <button class="grid-cta" type="button" data-plan="Sprout">Start free</button>
+          </th>
+          <th class="grid-th grid-th--rec" scope="col">
+            <span class="grid-badge">Recommended</span>
+            <span class="grid-plan-name">Bloom</span>
+            <span class="grid-plan-price" data-monthly="$19" data-annual="$15">$19<small>/mo</small></span>
+            <button class="grid-cta grid-cta--solid" type="button" data-plan="Bloom">Choose Bloom</button>
+          </th>
+          <th class="grid-th" scope="col">
+            <span class="grid-plan-name">Orchard</span>
+            <span class="grid-plan-price" data-monthly="$49" data-annual="$39">$49<small>/mo</small></span>
+            <button class="grid-cta" type="button" data-plan="Orchard">Choose Orchard</button>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="grid-row-group"><td colspan="4">Growing essentials</td></tr>
+        <tr>
+          <th scope="row">Plots per account</th>
+          <td data-value="1 plot">1 plot</td>
+          <td class="grid-td--rec" data-value="10 plots">10 plots</td>
+          <td data-value="Unlimited">Unlimited</td>
+        </tr>
+        <tr>
+          <th scope="row">Seed catalog access</th>
+          <td data-yes="false"></td>
+          <td class="grid-td--rec" data-yes="true"></td>
+          <td data-yes="true"></td>
+        </tr>
+        <tr>
+          <th scope="row">Weather-aware scheduling</th>
+          <td data-yes="false"></td>
+          <td class="grid-td--rec" data-yes="true"></td>
+          <td data-yes="true"></td>
+        </tr>
+        <tr class="grid-row-group"><td colspan="4">Growth &amp; automation</td></tr>
+        <tr>
+          <th scope="row">Automated irrigation rules</th>
+          <td data-yes="false"></td>
+          <td class="grid-td--rec" data-yes="true"></td>
+          <td data-yes="true"></td>
+        </tr>
+        <tr>
+          <th scope="row">Yield forecasting</th>
+          <td data-yes="false"></td>
+          <td class="grid-td--rec" data-yes="true"></td>
+          <td data-yes="true"></td>
+        </tr>
+        <tr>
+          <th scope="row">Team collaborators</th>
+          <td data-value="1 seat">1 seat</td>
+          <td class="grid-td--rec" data-value="5 seats">5 seats</td>
+          <td data-value="Unlimited">Unlimited</td>
+        </tr>
+        <tr class="grid-row-group"><td colspan="4">Support &amp; data</td></tr>
+        <tr>
+          <th scope="row">Historical harvest data</th>
+          <td data-value="30 days">30 days</td>
+          <td class="grid-td--rec" data-value="Unlimited">Unlimited</td>
+          <td data-value="Unlimited">Unlimited</td>
+        </tr>
+        <tr>
+          <th scope="row">Priority agronomist support</th>
+          <td data-yes="false"></td>
+          <td class="grid-td--rec" data-yes="false"></td>
+          <td data-yes="true"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="grid-note" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

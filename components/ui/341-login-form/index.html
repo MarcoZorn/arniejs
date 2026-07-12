@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- description: Enter your email and password to pick up right where you left off. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Login Form — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="login-wrap">
+  <div class="login-card">
+    <p class="login-eyebrow">Welcome back</p>
+    <h1 class="login-title">Sign in to your plot</h1>
+    <p class="login-sub">Enter your email and password to pick up right where you left off.</p>
+
+    <form class="login-form" id="loginForm" novalidate>
+      <div class="login-field">
+        <label class="login-label" for="loginEmail">Email</label>
+        <input class="login-input" type="text" id="loginEmail" name="email" autocomplete="email" placeholder="you@example.com">
+        <p class="login-error" id="loginEmailError" role="alert"></p>
+      </div>
+
+      <div class="login-field">
+        <label class="login-label" for="loginPassword">Password</label>
+        <div class="login-password-row">
+          <input class="login-input" type="password" id="loginPassword" name="password" autocomplete="current-password" placeholder="Your password">
+          <button class="login-toggle-eye" type="button" id="loginToggleEye" aria-label="Show password" aria-pressed="false">
+            <svg id="loginEyeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </button>
+        </div>
+        <p class="login-error" id="loginPasswordError" role="alert"></p>
+      </div>
+
+      <div class="login-row-between">
+        <label class="login-checkbox-label">
+          <input type="checkbox" id="loginRemember" class="login-checkbox">
+          <span class="login-checkbox-box" aria-hidden="true"></span>
+          Remember me
+        </label>
+        <a class="login-forgot-link" href="#" id="loginForgotLink">Forgot password?</a>
+      </div>
+
+      <button class="login-submit" type="submit" id="loginSubmit">
+        <span id="loginSubmitLabel">Sign in</span>
+      </button>
+
+      <p class="login-status" id="loginStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

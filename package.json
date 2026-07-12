@@ -1,7 +1,7 @@
 {
   "name": "arniejs-cli",
   "version": "1.0.0",
-  "description": "280+ vanilla JS components. Grown from scratch. No deps.",
+  "description": "480+ vanilla JS components. Grown from scratch. No deps.",
   "bin": {
     "arniejs": "bin/arniejs.js"
   },

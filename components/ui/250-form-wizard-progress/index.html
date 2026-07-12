@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- description: Four short steps to get your plot registered — the trail above fills in as you go. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Form Wizard Progress — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wizard-wrap">
+  <div class="wizard-card">
+    <p class="wizard-desc">Four short steps to get your plot registered — the trail above fills in as you go.</p>
+
+    <ol class="wizard-steps" data-wizard-steps>
+      <li class="wizard-step is-active" data-step="1">
+        <span class="wizard-dot">1</span>
+        <span class="wizard-steplabel">Basics</span>
+      </li>
+      <li class="wizard-step" data-step="2">
+        <span class="wizard-dot">2</span>
+        <span class="wizard-steplabel">Location</span>
+      </li>
+      <li class="wizard-step" data-step="3">
+        <span class="wizard-dot">3</span>
+        <span class="wizard-steplabel">Plants</span>
+      </li>
+      <li class="wizard-step" data-step="4">
+        <span class="wizard-dot">4</span>
+        <span class="wizard-steplabel">Review</span>
+      </li>
+    </ol>
+
+    <form class="wizard-form" novalidate>
+      <div class="wizard-panel is-active" data-panel="1">
+        <label class="wizard-label" for="wizard-name">Plot name</label>
+        <input class="wizard-input" id="wizard-name" type="text" placeholder="e.g. North Terrace" required>
+        <p class="wizard-error" role="alert"></p>
+      </div>
+
+      <div class="wizard-panel" data-panel="2">
+        <label class="wizard-label" for="wizard-city">City or region</label>
+        <input class="wizard-input" id="wizard-city" type="text" placeholder="e.g. Asheville, NC" required>
+        <p class="wizard-error" role="alert"></p>
+      </div>
+
+      <div class="wizard-panel" data-panel="3">
+        <label class="wizard-label" for="wizard-plants">Primary crop</label>
+        <input class="wizard-input" id="wizard-plants" type="text" placeholder="e.g. Tomatoes" required>
+        <p class="wizard-error" role="alert"></p>
+      </div>
+
+      <div class="wizard-panel" data-panel="4">
+        <p class="wizard-label">Review &amp; submit</p>
+        <p class="wizard-review-text">Everything looks rooted and ready. Submit to register your plot.</p>
+      </div>
+
+      <div class="wizard-actions">
+        <button class="wizard-btn wizard-btn--ghost" type="button" data-wizard-back>Back</button>
+        <button class="wizard-btn wizard-btn--solid" type="button" data-wizard-next>Next</button>
+        <button class="wizard-btn wizard-btn--solid" type="submit" data-wizard-submit hidden>Submit</button>
+      </div>
+      <p class="wizard-success" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

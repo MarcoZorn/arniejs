@@ -1,0 +1,46 @@
+<!doctype html>
+<!-- description: Every friend who signs up with your link plants a free month onto both your accounts. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Referral Panel — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="ref-wrap">
+  <div class="ref-card">
+    <p class="ref-eyebrow">Grow the garden</p>
+    <h1 class="ref-title">Share your plot, earn credit</h1>
+    <p class="ref-sub">Every friend who signs up with your link plants a free month onto both your accounts.</p>
+
+    <div class="ref-field">
+      <label class="ref-label" for="ref-link">Your referral link</label>
+      <div class="ref-copy-row">
+        <input id="ref-link" class="ref-input" type="text" readonly value="https://arniejs.app/r/marigold-42" aria-label="Referral link">
+        <button class="ref-copy-btn" type="button" id="ref-copy-btn" data-default="Copy">Copy</button>
+      </div>
+      <p class="ref-copy-status" id="ref-copy-status" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="ref-stats">
+      <div class="ref-stat">
+        <span class="ref-stat-num" id="ref-count">7</span>
+        <span class="ref-stat-label">friends joined using your link</span>
+      </div>
+      <div class="ref-stat">
+        <span class="ref-stat-num">$70</span>
+        <span class="ref-stat-label">in account credit earned</span>
+      </div>
+    </div>
+
+    <div class="ref-code-row">
+      <span class="ref-code-label">or share your code</span>
+      <code class="ref-code" id="ref-code">MARIGOLD42</code>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

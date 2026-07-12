@@ -1,0 +1,72 @@
+<!doctype html>
+<!-- description: This sidebar narrows to a quiet row of icons when space is tight, keeping every path one tap away. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sidebar Collapse — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="side-shell">
+  <nav class="side-nav" id="sideNav" aria-label="Primary" data-collapsed="false">
+    <div class="side-head">
+      <span class="side-mark" aria-hidden="true">🌱</span>
+      <span class="side-brand">Rootstock</span>
+    </div>
+
+    <ul class="side-list">
+      <li class="side-item">
+        <a class="side-link is-active" href="#" aria-current="page">
+          <span class="side-icon" aria-hidden="true">🏡</span>
+          <span class="side-label">Overview</span>
+        </a>
+      </li>
+      <li class="side-item">
+        <a class="side-link" href="#">
+          <span class="side-icon" aria-hidden="true">🪴</span>
+          <span class="side-label">Plots</span>
+        </a>
+      </li>
+      <li class="side-item">
+        <a class="side-link" href="#">
+          <span class="side-icon" aria-hidden="true">💧</span>
+          <span class="side-label">Irrigation</span>
+        </a>
+      </li>
+      <li class="side-item">
+        <a class="side-link" href="#">
+          <span class="side-icon" aria-hidden="true">📋</span>
+          <span class="side-label">Field notes</span>
+        </a>
+      </li>
+      <li class="side-item">
+        <a class="side-link" href="#">
+          <span class="side-icon" aria-hidden="true">⚙️</span>
+          <span class="side-label">Settings</span>
+        </a>
+      </li>
+    </ul>
+
+    <button
+      type="button"
+      class="side-toggle"
+      id="sideToggle"
+      aria-expanded="true"
+      aria-controls="sideNav"
+    >
+      <span class="side-toggle-icon" aria-hidden="true">&#8676;</span>
+      <span class="side-toggle-label">Collapse</span>
+    </button>
+  </nav>
+
+  <main class="side-content">
+    <p class="side-desc">This sidebar narrows to a quiet row of icons when space is tight, keeping every path one tap away.</p>
+    <h1>Field overview</h1>
+    <p class="side-body">Toggle the sidebar to see it settle into an icon-only width — nothing gets lost, it just makes room.</p>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

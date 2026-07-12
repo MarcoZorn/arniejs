@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- description: Measure a row or a field — this converts length between the units you actually reach for. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unit Converter — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="unc-wrap">
+  <p class="unc-desc">Measure a row or a field — this converts length between the units you actually reach for.</p>
+  <h1 class="unc-title">Unit Converter</h1>
+
+  <div class="unc-card">
+    <div class="unc-field unc-field--value">
+      <label class="unc-label" for="unc-value">Value</label>
+      <input type="number" id="unc-value" class="unc-value-input" value="1" step="any">
+    </div>
+
+    <div class="unc-swap-row">
+      <div class="unc-field">
+        <label class="unc-label" for="unc-from">From</label>
+        <select id="unc-from" class="unc-select"></select>
+      </div>
+
+      <button type="button" class="unc-swap-btn" id="unc-swap" aria-label="Swap units">⇄</button>
+
+      <div class="unc-field">
+        <label class="unc-label" for="unc-to">To</label>
+        <select id="unc-to" class="unc-select"></select>
+      </div>
+    </div>
+
+    <div class="unc-result" id="unc-result" aria-live="polite"></div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

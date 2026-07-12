@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- description: Every row is a signup cohort; every column shows what share of that cohort was still active weeks later. Darker cells mean stronger retentio -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cohort Table — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="cht-wrap">
+  <div class="cht-intro">
+    <p class="cht-eyebrow">Roots over time</p>
+    <h1 class="cht-title">Track how each planting season keeps coming back</h1>
+    <p class="cht-sub">Every row is a signup cohort; every column shows what share of that cohort was still active weeks later. Darker cells mean stronger retention.</p>
+  </div>
+
+  <div class="cht-panel">
+    <div class="cht-scroll">
+      <div class="cht-grid" id="cht-grid" role="table" aria-label="Retention cohort grid"></div>
+    </div>
+    <p class="cht-tooltip" id="cht-tooltip" role="status" aria-live="polite"></p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

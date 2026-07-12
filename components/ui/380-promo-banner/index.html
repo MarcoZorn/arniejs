@@ -1,0 +1,24 @@
+<!doctype html>
+<!-- description: This strip sits above the rest of the page and remembers your choice — dismiss it once and it stays closed until local storage is cleared. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Promo Banner — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="promo-banner" id="promo-banner" role="region" aria-label="Promotional announcement">
+  <p class="promo-text">Early bloom sale — new plots get 30% off their first three months.</p>
+  <a class="promo-cta" href="#" data-role="cta">Claim the offer</a>
+  <button class="promo-close" type="button" aria-label="Dismiss announcement">&times;</button>
+</div>
+
+<main class="promo-page">
+  <p class="promo-sub">This strip sits above the rest of the page and remembers your choice — dismiss it once and it stays closed until local storage is cleared.</p>
+  <button class="promo-reopen" type="button" hidden>Show the banner again</button>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

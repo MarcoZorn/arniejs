@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- description: Same rows, different breathing room — pick the density that suits how much you're tending at once. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Density Switcher — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="dst-wrap">
+  <p class="dst-sub">Same rows, different breathing room — pick the density that suits how much you're tending at once.</p>
+
+  <div class="dst-toggle" role="radiogroup" aria-label="Row density">
+    <button class="dst-option is-active" type="button" data-density="compact" role="radio" aria-checked="true">Compact</button>
+    <button class="dst-option" type="button" data-density="comfortable" role="radio" aria-checked="false">Comfortable</button>
+    <button class="dst-option" type="button" data-density="spacious" role="radio" aria-checked="false">Spacious</button>
+    <span class="dst-thumb" aria-hidden="true"></span>
+  </div>
+
+  <ul class="dst-list" id="dst-list" data-density="compact">
+    <li class="dst-row">
+      <div class="dst-row-main">
+        <span class="dst-row-title">Bed rotation plan</span>
+        <span class="dst-row-subtitle">Updated 2 days ago by Mara</span>
+      </div>
+    </li>
+    <li class="dst-row">
+      <div class="dst-row-main">
+        <span class="dst-row-title">Irrigation schedule</span>
+        <span class="dst-row-subtitle">Runs daily at 6:00 AM</span>
+      </div>
+    </li>
+    <li class="dst-row">
+      <div class="dst-row-main">
+        <span class="dst-row-title">Compost batch #14</span>
+        <span class="dst-row-subtitle">Ready in 9 days</span>
+      </div>
+    </li>
+    <li class="dst-row">
+      <div class="dst-row-main">
+        <span class="dst-row-title">Seed order — tomatoes</span>
+        <span class="dst-row-subtitle">Shipped, arriving Thursday</span>
+      </div>
+    </li>
+    <li class="dst-row">
+      <div class="dst-row-main">
+        <span class="dst-row-title">Greenhouse maintenance</span>
+        <span class="dst-row-subtitle">Filter check overdue</span>
+      </div>
+    </li>
+    <li class="dst-row">
+      <div class="dst-row-main">
+        <span class="dst-row-title">Frost watch alert</span>
+        <span class="dst-row-subtitle">Low of 34°F expected Friday</span>
+      </div>
+    </li>
+  </ul>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

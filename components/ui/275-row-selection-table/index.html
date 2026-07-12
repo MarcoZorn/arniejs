@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- description: Check a few tasks — or all of them — to line up a batch action before you commit to it. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Row Selection Table — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="rsl-wrap">
+  <div class="rsl-intro">
+    <p class="rsl-eyebrow">Task board</p>
+    <h1 class="rsl-title">Pick the rows that need attention</h1>
+    <p class="rsl-desc">Check a few tasks — or all of them — to line up a batch action before you commit to it.</p>
+  </div>
+
+  <div class="rsl-summary" id="rslSummary" hidden>
+    <span class="rsl-summary-text" id="rslSummaryText"></span>
+    <button class="rsl-clear" type="button" id="rslClear">Clear selection</button>
+  </div>
+
+  <div class="rsl-scroll">
+    <table class="rsl-table" id="rslTable">
+      <thead>
+        <tr>
+          <th class="rsl-check-col">
+            <input type="checkbox" id="rslSelectAll" aria-label="Select all rows">
+          </th>
+          <th>Task</th>
+          <th>Assigned to</th>
+          <th>Plot</th>
+          <th>Due</th>
+          <th>Priority</th>
+        </tr>
+      </thead>
+      <tbody id="rslBody"></tbody>
+    </table>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

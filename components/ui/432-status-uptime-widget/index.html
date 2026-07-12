@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- description: A quiet daily record of how steadily each service has been growing. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Status Uptime Widget — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="status-wrap">
+  <p class="status-desc">A quiet daily record of how steadily each service has been growing.</p>
+
+  <div class="status-card">
+    <div class="status-head">
+      <span class="status-badge" id="statusBadge">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span class="status-badge-text">All systems operational</span>
+      </span>
+      <span class="status-updated">Updated moments ago</span>
+    </div>
+
+    <div class="status-services" id="statusServices">
+      <div class="status-row" data-service="API Gateway">
+        <div class="status-row-top">
+          <span class="status-service-name">API Gateway</span>
+          <span class="status-service-pct">99.98%</span>
+        </div>
+        <div class="status-strip" data-strip></div>
+      </div>
+
+      <div class="status-row" data-service="Web Dashboard">
+        <div class="status-row-top">
+          <span class="status-service-name">Web Dashboard</span>
+          <span class="status-service-pct">100%</span>
+        </div>
+        <div class="status-strip" data-strip></div>
+      </div>
+
+      <div class="status-row" data-service="Background Jobs">
+        <div class="status-row-top">
+          <span class="status-service-name">Background Jobs</span>
+          <span class="status-service-pct">98.4%</span>
+        </div>
+        <div class="status-strip" data-strip></div>
+      </div>
+    </div>
+
+    <div class="status-tooltip" id="statusTooltip" role="status" aria-live="polite" hidden></div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<!-- description: Before anything leaves the greenhouse on paper, take a look at how it'll actually print. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Print Preview Modal — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="pp-stage">
+  <p class="pp-tagline">Before anything leaves the greenhouse on paper, take a look at how it'll actually print.</p>
+
+  <button type="button" class="pp-open-btn" id="ppOpenBtn">Preview invoice</button>
+
+  <div class="pp-overlay" id="ppOverlay" hidden>
+    <div class="pp-modal" role="dialog" aria-modal="true" aria-labelledby="ppTitle" id="ppModal">
+      <div class="pp-modal-head">
+        <h2 class="pp-title" id="ppTitle">Print preview</h2>
+        <button type="button" class="pp-close" id="ppClose" aria-label="Close preview">✕</button>
+      </div>
+
+      <div class="pp-paper-wrap">
+        <article class="pp-paper" id="ppPrintArea">
+          <header class="pp-paper-head">
+            <div>
+              <h1 class="pp-paper-brand">Arnie &amp; Sons Nursery</h1>
+              <p class="pp-paper-addr">14 Furrow Lane, Millbrook</p>
+            </div>
+            <div class="pp-paper-invoice-meta">
+              <p><strong>Invoice</strong> #A-1042</p>
+              <p>Date: 12 July 2026</p>
+            </div>
+          </header>
+
+          <table class="pp-paper-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Heirloom tomato starts</td>
+                <td>12</td>
+                <td>$3.50</td>
+                <td>$42.00</td>
+              </tr>
+              <tr>
+                <td>Compost, 40L bag</td>
+                <td>3</td>
+                <td>$9.00</td>
+                <td>$27.00</td>
+              </tr>
+              <tr>
+                <td>Hand trowel</td>
+                <td>1</td>
+                <td>$14.00</td>
+                <td>$14.00</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="pp-paper-total">
+            <span>Total due</span>
+            <strong>$83.00</strong>
+          </div>
+
+          <p class="pp-paper-footnote">Thank you for growing with us. Payment due within 14 days.</p>
+        </article>
+      </div>
+
+      <div class="pp-actions">
+        <button type="button" class="pp-cancel" id="ppCancel">Close</button>
+        <button type="button" class="pp-print" id="ppPrint">Print</button>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

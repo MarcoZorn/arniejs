@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: 'Syne', system-ui, sans-serif;
+  padding: 64px 24px;
+}
+
+.bsl-wrap {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.bsl-intro {
+  text-align: center;
+  margin: 0 auto 32px;
+}
+
+.bsl-eyebrow {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-moss);
+}
+
+.bsl-title {
+  margin: 0 0 10px;
+  font-size: clamp(24px, 4vw, 30px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.bsl-sub {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.bsl-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.bsl-option {
+  position: relative;
+  font-family: inherit;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 22px 14px 18px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+  transition: border-color 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
+}
+
+.bsl-option:hover {
+  border-color: var(--accent-sage);
+  transform: translateY(-2px);
+}
+
+.bsl-option:focus-visible {
+  outline: 2px solid var(--accent-sage);
+  outline-offset: 3px;
+}
+
+.bsl-option.is-selected {
+  border-color: var(--accent-moss);
+  background: rgba(90, 122, 58, 0.14);
+  box-shadow: 0 0 0 1px var(--accent-moss);
+}
+
+.bsl-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-moss);
+  color: var(--bg-deep);
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.bsl-option-label {
+  font-size: 15px;
+  font-weight: 800;
+  margin-top: 4px;
+}
+
+.bsl-option-units {
+  font-size: 12.5px;
+  color: var(--text-faint);
+}
+
+.bsl-option-price {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--accent-sand);
+  margin-top: 4px;
+}
+
+.bsl-option-unit-price {
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+.bsl-summary {
+  background: var(--bg-surface);
+  border: 1px dashed var(--border-light);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-bottom: 18px;
+  text-align: center;
+  font-size: 14.5px;
+  color: var(--text-muted);
+  font-weight: 600;
+  min-height: 20px;
+}
+
+.bsl-summary-text strong {
+  color: var(--accent-sage);
+}
+
+.bsl-cta {
+  width: 100%;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--bg-deep);
+  background: var(--accent-moss);
+  border: 1px solid var(--accent-moss);
+  border-radius: 12px;
+  padding: 14px 22px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.bsl-cta:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.bsl-cta:not(:disabled):hover {
+  background: var(--accent-sage);
+  border-color: var(--accent-sage);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(90, 122, 58, 0.35);
+}
+
+.bsl-cta:not(:disabled):active {
+  transform: translateY(0);
+}
+
+@media (max-width: 560px) {
+  .bsl-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

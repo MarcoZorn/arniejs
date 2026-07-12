@@ -1,0 +1,59 @@
+<!doctype html>
+<!-- description: A small button waits quietly out of sight, then rises into view once you've wandered far enough to need a way home. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Back To Top Button — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="btt-wrap">
+  <div class="btt-intro">
+    <p class="btt-eyebrow">Long page</p>
+    <h1 class="btt-title">Scroll down to see the path back up</h1>
+    <p class="btt-sub">A small button waits quietly out of sight, then rises into view once you've wandered far enough to need a way home.</p>
+  </div>
+
+  <section class="btt-block">
+    <h2>01 — Clearing the ground</h2>
+    <p>Every plot starts the same way: bare soil, a plan, and the patience to wait for the first green shoot. Scroll on to see how the rows fill in.</p>
+    <p>Nothing dramatic happens here — just steady, unremarkable progress, the kind that adds up over a season.</p>
+  </section>
+
+  <section class="btt-block">
+    <h2>02 — Rows and rhythm</h2>
+    <p>Once the beds are marked, the work becomes repetitive in a good way. Water, weed, watch. The button in the corner hasn't appeared yet — keep going.</p>
+    <p>Consistency matters more than intensity. A little attention each day beats a rushed afternoon once a month.</p>
+  </section>
+
+  <section class="btt-block">
+    <h2>03 — Midseason check</h2>
+    <p>By now the back-to-top button should have faded into view near the bottom-right corner. Try clicking it whenever you like — it will smooth-scroll you home.</p>
+    <p>You can also reach it with the keyboard: tab to it and press Enter or Space.</p>
+  </section>
+
+  <section class="btt-block">
+    <h2>04 — Thinning out</h2>
+    <p>Some rows need thinning so the strongest plants get room to breathe. The same is true of a long page — not every section needs your full attention.</p>
+    <p>Skip ahead if you'd like, or keep scrolling to see the rest.</p>
+  </section>
+
+  <section class="btt-block">
+    <h2>05 — Nearly there</h2>
+    <p>This is the last stretch before the bottom of the page. The button should be fully visible now, sitting ready in the corner.</p>
+    <p>Give it a click and watch the page ease back up to the top.</p>
+  </section>
+</main>
+
+<button type="button" class="btt-button" id="bttButton" aria-label="Back to top">
+  <svg class="btt-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <line x1="12" y1="19" x2="12" y2="5"></line>
+    <polyline points="6 11 12 5 18 11"></polyline>
+  </svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

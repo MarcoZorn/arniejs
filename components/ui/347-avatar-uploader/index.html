@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- description: Drop a photo onto the circle or use the upload button — your avatar updates instantly, right in the browser. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Avatar Uploader — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="avu-wrap">
+  <div class="avu-card">
+    <p class="avu-desc">Drop a photo onto the circle or use the upload button — your avatar updates instantly, right in the browser.</p>
+
+    <div class="avu-dropzone" data-dropzone tabindex="0" role="button" aria-label="Upload avatar image, drag and drop or press to choose a file">
+      <div class="avu-circle" data-circle>
+        <svg class="avu-placeholder-icon" data-placeholder-icon viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="12" cy="8" r="3.6"></circle>
+          <path d="M4.5 20c1.4-3.8 4.4-6 7.5-6s6.1 2.2 7.5 6"></path>
+        </svg>
+        <img class="avu-img" data-preview alt="Selected avatar preview" hidden>
+      </div>
+      <p class="avu-drop-label" data-drop-label>Drag &amp; drop an image here</p>
+    </div>
+
+    <input class="avu-file-input" type="file" accept="image/*" id="avu-file" data-file-input hidden>
+
+    <div class="avu-actions">
+      <label class="avu-btn avu-btn--primary" for="avu-file">Upload photo</label>
+      <button type="button" class="avu-btn avu-btn--ghost" data-remove disabled>Remove</button>
+    </div>
+
+    <p class="avu-status" role="status" aria-live="polite" data-status></p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- description: A small trail of icons marks the path back to where you started, so you're never quite lost in the beds. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Breadcrumb With Icons — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="bci-wrap">
+  <p class="bci-tagline">A small trail of icons marks the path back to where you started, so you're never quite lost in the beds.</p>
+
+  <nav class="bci-nav" aria-label="Breadcrumb">
+    <ol class="bci-list">
+      <li class="bci-item">
+        <a class="bci-link" href="#home">
+          <svg class="bci-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 11l9-8 9 8"></path>
+            <path d="M5 10v10h14V10"></path>
+          </svg>
+          <span>Home</span>
+        </a>
+        <svg class="bci-sep" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="9 6 15 12 9 18"></polyline>
+        </svg>
+      </li>
+      <li class="bci-item">
+        <a class="bci-link" href="#gardens">
+          <svg class="bci-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2c3 3 5 6 5 9a5 5 0 0 1-10 0c0-3 2-6 5-9z"></path>
+          </svg>
+          <span>Gardens</span>
+        </a>
+        <svg class="bci-sep" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="9 6 15 12 9 18"></polyline>
+        </svg>
+      </li>
+      <li class="bci-item">
+        <a class="bci-link" href="#north-plot">
+          <svg class="bci-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+            <path d="M3 10h18"></path>
+            <path d="M9 4v16"></path>
+          </svg>
+          <span>North Plot</span>
+        </a>
+        <svg class="bci-sep" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="9 6 15 12 9 18"></polyline>
+        </svg>
+      </li>
+      <li class="bci-item">
+        <span class="bci-current" aria-current="page">
+          <svg class="bci-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"></path>
+          </svg>
+          <span>Tomato Row</span>
+        </span>
+      </li>
+    </ol>
+  </nav>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

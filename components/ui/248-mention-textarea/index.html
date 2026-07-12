@@ -1,0 +1,26 @@
+<!doctype html>
+<!-- description: Call in the crew -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mention Textarea — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="mention-wrap">
+  <div class="mention-intro">
+    <p class="mention-eyebrow">Call in the crew</p>
+    <h1 class="mention-title">Write a note, tag a gardener</h1>
+    <p class="mention-hint">Type @ followed by a name to pull up your fellow gardeners — arrow keys move, Enter or a click drops their name right into the text.</p>
+  </div>
+
+  <div class="mention-field" data-mention-root>
+    <textarea class="mention-textarea" rows="6" placeholder="Leave a note for the team... try typing @ to mention someone"></textarea>
+    <ul class="mention-dropdown" role="listbox" aria-label="Mention suggestions" hidden></ul>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

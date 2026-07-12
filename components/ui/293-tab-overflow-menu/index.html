@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- description: Tabs that outgrow the row don't disappear — they wait quietly behind a "more" menu until called on. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tab Overflow Menu — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="tabov-wrap">
+  <p class="tabov-tagline">Tabs that outgrow the row don't disappear — they wait quietly behind a "more" menu until called on.</p>
+
+  <div class="tabov-bar" role="navigation" aria-label="Plot sections">
+    <div class="tabov-list" role="tablist" id="tabovList">
+      <button class="tabov-tab is-active" role="tab" aria-selected="true" id="tab-overview" aria-controls="panel-overview" type="button">Overview</button>
+      <button class="tabov-tab" role="tab" aria-selected="false" id="tab-soil" aria-controls="panel-soil" type="button" tabindex="-1">Soil health</button>
+      <button class="tabov-tab" role="tab" aria-selected="false" id="tab-irrigation" aria-controls="panel-irrigation" type="button" tabindex="-1">Irrigation</button>
+      <button class="tabov-tab" role="tab" aria-selected="false" id="tab-pests" aria-controls="panel-pests" type="button" tabindex="-1">Pests &amp; disease</button>
+      <button class="tabov-tab" role="tab" aria-selected="false" id="tab-harvest" aria-controls="panel-harvest" type="button" tabindex="-1">Harvest log</button>
+      <button class="tabov-tab" role="tab" aria-selected="false" id="tab-crew" aria-controls="panel-crew" type="button" tabindex="-1">Crew &amp; tasks</button>
+      <button class="tabov-tab" role="tab" aria-selected="false" id="tab-weather" aria-controls="panel-weather" type="button" tabindex="-1">Weather</button>
+      <button class="tabov-tab" role="tab" aria-selected="false" id="tab-budget" aria-controls="panel-budget" type="button" tabindex="-1">Budget</button>
+    </div>
+
+    <div class="tabov-more-wrap">
+      <button
+        type="button"
+        class="tabov-more"
+        id="tabovMoreTrigger"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-controls="tabovMoreMenu"
+        hidden
+      >
+        More <span aria-hidden="true">&#9662;</span>
+      </button>
+      <ul class="tabov-menu" id="tabovMoreMenu" role="menu" aria-labelledby="tabovMoreTrigger" hidden></ul>
+    </div>
+  </div>
+
+  <div class="tabov-panels">
+    <div class="tabov-panel is-active" role="tabpanel" id="panel-overview" aria-labelledby="tab-overview">A calm summary of every plot, updated as your crew logs new entries.</div>
+    <div class="tabov-panel" role="tabpanel" id="panel-soil" aria-labelledby="tab-soil" hidden>Soil moisture, pH, and nutrient readings across all beds.</div>
+    <div class="tabov-panel" role="tabpanel" id="panel-irrigation" aria-labelledby="tab-irrigation" hidden>Watering schedules and flow rates for each zone.</div>
+    <div class="tabov-panel" role="tabpanel" id="panel-pests" aria-labelledby="tab-pests" hidden>Recent sightings and treatment notes.</div>
+    <div class="tabov-panel" role="tabpanel" id="panel-harvest" aria-labelledby="tab-harvest" hidden>Yield totals by crop and week.</div>
+    <div class="tabov-panel" role="tabpanel" id="panel-crew" aria-labelledby="tab-crew" hidden>Who's assigned to what, and when they're due back.</div>
+    <div class="tabov-panel" role="tabpanel" id="panel-weather" aria-labelledby="tab-weather" hidden>Forecast and frost warnings for the week ahead.</div>
+    <div class="tabov-panel" role="tabpanel" id="panel-budget" aria-labelledby="tab-budget" hidden>Spend against plan, by category.</div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

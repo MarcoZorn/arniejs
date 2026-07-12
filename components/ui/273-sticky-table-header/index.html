@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- description: Orchard log -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sticky Table Header — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sth-wrap">
+  <div class="sth-intro">
+    <p class="sth-eyebrow">Orchard log</p>
+    <h1 class="sth-title">Scroll the season without losing your place</h1>
+    <p class="sth-hint">The header row stays pinned in view as you scroll through every tree in the orchard log, gathering a soft shadow once the body starts moving beneath it.</p>
+  </div>
+
+  <div class="sth-panel">
+    <div class="sth-scroll" id="sthScroll">
+      <table class="sth-table">
+        <thead id="sthHead">
+          <tr>
+            <th>Tree #</th>
+            <th>Variety</th>
+            <th>Block</th>
+            <th>Planted</th>
+            <th>Height (ft)</th>
+            <th>Last yield (lb)</th>
+            <th>Health</th>
+          </tr>
+        </thead>
+        <tbody id="sthBody"></tbody>
+      </table>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

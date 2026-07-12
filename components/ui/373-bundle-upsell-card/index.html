@@ -1,0 +1,74 @@
+<!doctype html>
+<!-- description: Grab the tools growers usually pick up alongside this one, and save a little on each. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bundle Upsell Card — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="buc-wrap">
+  <div class="buc-card">
+    <p class="buc-sub">Grab the tools growers usually pick up alongside this one, and save a little on each.</p>
+    <h1 class="buc-title">Frequently bought together</h1>
+
+    <div class="buc-items">
+      <label class="buc-item buc-item--main">
+        <input type="checkbox" class="buc-check" data-price="34" data-name="Copper Hand Trowel" checked disabled>
+        <span class="buc-checkbox" aria-hidden="true"></span>
+        <span class="buc-swatch" style="background: linear-gradient(135deg, #9b6b3a, #d4a85a);"></span>
+        <span class="buc-item-info">
+          <span class="buc-item-name">Copper Hand Trowel</span>
+          <span class="buc-item-tag">This item</span>
+        </span>
+        <span class="buc-item-price">$34</span>
+      </label>
+
+      <label class="buc-item">
+        <input type="checkbox" class="buc-check" data-price="18" data-name="Waxed Twine, 50m" checked>
+        <span class="buc-checkbox" aria-hidden="true"></span>
+        <span class="buc-swatch" style="background: linear-gradient(135deg, #6b5540, #a89070);"></span>
+        <span class="buc-item-info">
+          <span class="buc-item-name">Waxed Twine, 50m</span>
+          <span class="buc-item-tag">Companion</span>
+        </span>
+        <span class="buc-item-price">$18</span>
+      </label>
+
+      <label class="buc-item">
+        <input type="checkbox" class="buc-check" data-price="26" data-name="Ceramic Plant Markers (12)" checked>
+        <span class="buc-checkbox" aria-hidden="true"></span>
+        <span class="buc-swatch" style="background: linear-gradient(135deg, #5a7a3a, #8fa86e);"></span>
+        <span class="buc-item-info">
+          <span class="buc-item-name">Ceramic Plant Markers (12)</span>
+          <span class="buc-item-tag">Companion</span>
+        </span>
+        <span class="buc-item-price">$26</span>
+      </label>
+
+      <label class="buc-item">
+        <input type="checkbox" class="buc-check" data-price="42" data-name="Folding Kneeler Stool">
+        <span class="buc-checkbox" aria-hidden="true"></span>
+        <span class="buc-swatch" style="background: linear-gradient(135deg, #a03820, #c4622d);"></span>
+        <span class="buc-item-info">
+          <span class="buc-item-name">Folding Kneeler Stool</span>
+          <span class="buc-item-tag">Companion</span>
+        </span>
+        <span class="buc-item-price">$42</span>
+      </label>
+    </div>
+
+    <div class="buc-summary">
+      <span class="buc-summary-label"><span id="buc-count">3</span> items selected</span>
+      <span class="buc-summary-total">$<span id="buc-total">78</span></span>
+    </div>
+
+    <button class="buc-cta" type="button">Add bundle to cart</button>
+    <p class="buc-confirm" role="status" aria-live="polite"></p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

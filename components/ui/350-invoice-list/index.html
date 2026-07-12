@@ -1,0 +1,73 @@
+<!doctype html>
+<!-- description: Every invoice issued to your account, with a plain-text copy you can download for your own records. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Invoice List — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="inv-wrap">
+  <div class="inv-card">
+    <h1 class="inv-title">Billing history</h1>
+    <p class="inv-subtitle">Every invoice issued to your account, with a plain-text copy you can download for your own records.</p>
+
+    <div class="inv-list" role="table" aria-label="Invoice history">
+      <div class="inv-row inv-row--head" role="row">
+        <span role="columnheader">Date</span>
+        <span role="columnheader">Amount</span>
+        <span role="columnheader">Status</span>
+        <span role="columnheader"></span>
+      </div>
+
+      <div class="inv-row" role="row" data-invoice data-id="INV-2026-0007" data-amount="$49.00" data-date="July 3, 2026">
+        <span class="inv-date" role="cell">Jul 3, 2026</span>
+        <span class="inv-amount" role="cell">$49.00</span>
+        <span class="inv-status" role="cell"><span class="inv-badge inv-badge--paid">Paid</span></span>
+        <span class="inv-dl-cell" role="cell"><button type="button" class="inv-dl-btn" data-download>Download</button></span>
+      </div>
+
+      <div class="inv-row" role="row" data-invoice data-id="INV-2026-0006" data-amount="$49.00" data-date="June 3, 2026">
+        <span class="inv-date" role="cell">Jun 3, 2026</span>
+        <span class="inv-amount" role="cell">$49.00</span>
+        <span class="inv-status" role="cell"><span class="inv-badge inv-badge--paid">Paid</span></span>
+        <span class="inv-dl-cell" role="cell"><button type="button" class="inv-dl-btn" data-download>Download</button></span>
+      </div>
+
+      <div class="inv-row" role="row" data-invoice data-id="INV-2026-0005" data-amount="$49.00" data-date="May 3, 2026">
+        <span class="inv-date" role="cell">May 3, 2026</span>
+        <span class="inv-amount" role="cell">$49.00</span>
+        <span class="inv-status" role="cell"><span class="inv-badge inv-badge--pending">Pending</span></span>
+        <span class="inv-dl-cell" role="cell"><button type="button" class="inv-dl-btn" data-download>Download</button></span>
+      </div>
+
+      <div class="inv-row" role="row" data-invoice data-id="INV-2026-0004" data-amount="$19.00" data-date="April 3, 2026">
+        <span class="inv-date" role="cell">Apr 3, 2026</span>
+        <span class="inv-amount" role="cell">$19.00</span>
+        <span class="inv-status" role="cell"><span class="inv-badge inv-badge--failed">Failed</span></span>
+        <span class="inv-dl-cell" role="cell"><button type="button" class="inv-dl-btn" data-download>Download</button></span>
+      </div>
+
+      <div class="inv-row" role="row" data-invoice data-id="INV-2026-0003" data-amount="$19.00" data-date="March 3, 2026">
+        <span class="inv-date" role="cell">Mar 3, 2026</span>
+        <span class="inv-amount" role="cell">$19.00</span>
+        <span class="inv-status" role="cell"><span class="inv-badge inv-badge--paid">Paid</span></span>
+        <span class="inv-dl-cell" role="cell"><button type="button" class="inv-dl-btn" data-download>Download</button></span>
+      </div>
+
+      <div class="inv-row" role="row" data-invoice data-id="INV-2026-0002" data-amount="$19.00" data-date="February 3, 2026">
+        <span class="inv-date" role="cell">Feb 3, 2026</span>
+        <span class="inv-amount" role="cell">$19.00</span>
+        <span class="inv-status" role="cell"><span class="inv-badge inv-badge--paid">Paid</span></span>
+        <span class="inv-dl-cell" role="cell"><button type="button" class="inv-dl-btn" data-download>Download</button></span>
+      </div>
+    </div>
+
+    <p class="inv-status-line" role="status" aria-live="polite" data-status></p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

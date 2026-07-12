@@ -1,0 +1,64 @@
+<!doctype html>
+<!-- description: A few words, kept and passed along by the people who said them. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quote Block Card — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="quote-wrap">
+  <p class="quote-tagline">A few words, kept and passed along by the people who said them.</p>
+
+  <section class="quote-card">
+    <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+
+    <div class="quote-track">
+      <blockquote class="quote-slide is-active" data-index="0">
+        <p class="quote-text">We stopped fighting the clay soil and started building raised beds instead. Yields tripled the first year, and my back thanks me every single day since.</p>
+        <footer class="quote-attr">
+          <span class="quote-avatar" style="background:#c4622d">RN</span>
+          <span class="quote-attr-text">
+            <span class="quote-name">Rosalind Neary</span>
+            <span class="quote-role">Head Grower, Thistlewood Farm</span>
+          </span>
+        </footer>
+      </blockquote>
+
+      <blockquote class="quote-slide" data-index="1">
+        <p class="quote-text">Their scheduling tool told us to delay the squash planting by nine days because of a late frost risk. We listened. It was the first season we didn't lose a single seedling.</p>
+        <footer class="quote-attr">
+          <span class="quote-avatar" style="background:#5a7a3a">DK</span>
+          <span class="quote-attr-text">
+            <span class="quote-name">Desmond Kato</span>
+            <span class="quote-role">Owner, Kato Family Orchard</span>
+          </span>
+        </footer>
+      </blockquote>
+
+      <blockquote class="quote-slide" data-index="2">
+        <p class="quote-text">I run a two-acre plot alone. The companion planting guide is the closest thing I have to a second pair of hands, and it never forgets what I planted where.</p>
+        <footer class="quote-attr">
+          <span class="quote-avatar" style="background:#9b6b3a">IV</span>
+          <span class="quote-attr-text">
+            <span class="quote-name">Ines Vural</span>
+            <span class="quote-role">Smallholder, Cinderfield Plot</span>
+          </span>
+        </footer>
+      </blockquote>
+    </div>
+
+    <div class="quote-dots" role="tablist" aria-label="Choose testimonial">
+      <button type="button" class="quote-dot is-active" data-goto="0" role="tab" aria-selected="true" aria-label="Testimonial 1"></button>
+      <button type="button" class="quote-dot" data-goto="1" role="tab" aria-selected="false" aria-label="Testimonial 2"></button>
+      <button type="button" class="quote-dot" data-goto="2" role="tab" aria-selected="false" aria-label="Testimonial 3"></button>
+    </div>
+
+    <button type="button" class="quote-next" aria-label="Next testimonial">→</button>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

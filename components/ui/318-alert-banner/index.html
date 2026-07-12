@@ -1,0 +1,51 @@
+<!doctype html>
+<!-- description: Page-level notes that sit above the work, one per severity, until you clear them away. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alert Banner — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="alertbnr-region" data-region>
+  <div class="alertbnr-banner alertbnr-banner--info" data-banner="info" role="status">
+    <span class="alertbnr-icon" aria-hidden="true"></span>
+    <p class="alertbnr-text">The soil report finished processing and is ready to review.</p>
+    <button class="alertbnr-close" type="button" data-dismiss aria-label="Dismiss info alert"><span aria-hidden="true">&times;</span></button>
+  </div>
+  <div class="alertbnr-banner alertbnr-banner--warning" data-banner="warning" role="status">
+    <span class="alertbnr-icon" aria-hidden="true"></span>
+    <p class="alertbnr-text">Watering schedule for Bed 3 hasn't synced in two days.</p>
+    <button class="alertbnr-close" type="button" data-dismiss aria-label="Dismiss warning alert"><span aria-hidden="true">&times;</span></button>
+  </div>
+  <div class="alertbnr-banner alertbnr-banner--error" data-banner="error" role="alert">
+    <span class="alertbnr-icon" aria-hidden="true"></span>
+    <p class="alertbnr-text">We couldn't save your last irrigation change. Try again.</p>
+    <button class="alertbnr-close" type="button" data-dismiss aria-label="Dismiss error alert"><span aria-hidden="true">&times;</span></button>
+  </div>
+  <div class="alertbnr-banner alertbnr-banner--success" data-banner="success" role="status">
+    <span class="alertbnr-icon" aria-hidden="true"></span>
+    <p class="alertbnr-text">Field 4 has been marked harvested — nice work.</p>
+    <button class="alertbnr-close" type="button" data-dismiss aria-label="Dismiss success alert"><span aria-hidden="true">&times;</span></button>
+  </div>
+</div>
+
+<main class="alertbnr-wrap">
+  <p class="alertbnr-desc">Page-level notes that sit above the work, one per severity, until you clear them away.</p>
+
+  <div class="alertbnr-demo">
+    <p class="alertbnr-demo-label">Bring one back</p>
+    <div class="alertbnr-demo-controls">
+      <button class="alertbnr-demo-btn" type="button" data-restore="info">Info</button>
+      <button class="alertbnr-demo-btn" type="button" data-restore="warning">Warning</button>
+      <button class="alertbnr-demo-btn" type="button" data-restore="error">Error</button>
+      <button class="alertbnr-demo-btn" type="button" data-restore="success">Success</button>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

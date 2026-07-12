@@ -1,0 +1,34 @@
+<!doctype html>
+<!-- description: Drag the middle divider (mouse, pen or touch) to resize the two panes below; the split ratio is clamped so neither side disappears. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Split Pane Resizable — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="split-wrap">
+  <p class="split-hint">Drag the middle divider (mouse, pen or touch) to resize the two panes below; the split ratio is clamped so neither side disappears.</p>
+
+  <div class="split-pane" id="splitPane">
+    <section class="split-side split-side--left" id="splitLeft" aria-label="Left pane">
+      <p class="split-side-label">Left bed</p>
+      <p class="split-side-text">Wide open rows for the crops that need the most room to sprawl — squash, pumpkin, anything that spreads.</p>
+    </section>
+
+    <div class="split-divider" id="splitDivider" role="separator" aria-orientation="vertical" aria-valuenow="50" aria-valuemin="15" aria-valuemax="85" tabindex="0" aria-label="Resize panes">
+      <span class="split-divider-grip"></span>
+    </div>
+
+    <section class="split-side split-side--right" id="splitRight" aria-label="Right pane">
+      <p class="split-side-label">Right bed</p>
+      <p class="split-side-text">A narrower strip suited to herbs and anything that prefers to stay compact and close together.</p>
+    </section>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- description: Every plot keeps its own clock — find the one you're working with and watch it tick in real time. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timezone Picker — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="tzp-wrap">
+  <p class="tzp-tagline">Every plot keeps its own clock — find the one you're working with and watch it tick in real time.</p>
+
+  <div class="tzp-panel">
+    <label class="tzp-search-label" for="tzpSearch">Search timezones</label>
+    <input
+      type="text"
+      id="tzpSearch"
+      class="tzp-search"
+      placeholder="Type a city or region, e.g. tokyo, new_york, london…"
+      autocomplete="off"
+    >
+
+    <ul class="tzp-list" id="tzpList" role="listbox" aria-label="Timezone results"></ul>
+  </div>
+
+  <div class="tzp-clock-card" id="tzpClockCard" hidden>
+    <span class="tzp-clock-zone" id="tzpClockZone">UTC</span>
+    <span class="tzp-clock-time" id="tzpClockTime">00:00:00</span>
+    <span class="tzp-clock-date" id="tzpClockDate">—</span>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

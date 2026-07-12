@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.qrd-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 20px 84px;
+}
+
+.qrd-sub {
+  color: var(--accent-rust);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.qrd-title {
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 800;
+  margin: 0 0 28px;
+}
+
+.qrd-panel {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 28px;
+  align-items: start;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 26px;
+}
+
+@media (max-width: 640px) {
+  .qrd-panel { grid-template-columns: 1fr; }
+}
+
+.qrd-label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.qrd-input {
+  width: 100%;
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+  font-size: 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  color: var(--text-primary);
+  padding: 12px 14px;
+}
+
+.qrd-input:focus { outline: none; border-color: var(--accent-terra); }
+
+.qrd-note {
+  font-size: 12px;
+  color: var(--text-faint);
+  line-height: 1.5;
+  margin: 14px 0 0;
+}
+
+.qrd-canvas-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0e6d3;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+#qrd-canvas {
+  display: block;
+  width: 100%;
+  max-width: 290px;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

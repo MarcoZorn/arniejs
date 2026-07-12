@@ -1,0 +1,74 @@
+<!doctype html>
+<!-- description: Tap the round button in the corner and a short stack of actions unfolds beside it, ready whenever you need them. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fab Menu — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="fab-demo">
+  <div class="fab-demo-copy">
+    <p class="fab-eyebrow">Quick tools</p>
+    <h1 class="fab-heading">Everything you need stays within reach</h1>
+    <p class="fab-sub">Tap the round button in the corner and a short stack of actions unfolds beside it, ready whenever you need them.</p>
+  </div>
+
+  <div class="fab-root">
+    <ul class="fab-stack" id="fabStack" aria-hidden="true">
+      <li class="fab-item" style="--i:0;">
+        <button class="fab-action" type="button" data-action="Note added">
+          <span class="fab-action-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+          </span>
+          <span class="fab-action-label">New note</span>
+        </button>
+      </li>
+      <li class="fab-item" style="--i:1;">
+        <button class="fab-action" type="button" data-action="Photo attached">
+          <span class="fab-action-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="m21 16-4.5-4.5L9 19"/></svg>
+          </span>
+          <span class="fab-action-label">Add photo</span>
+        </button>
+      </li>
+      <li class="fab-item" style="--i:2;">
+        <button class="fab-action" type="button" data-action="Task started">
+          <span class="fab-action-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>
+          </span>
+          <span class="fab-action-label">New task</span>
+        </button>
+      </li>
+      <li class="fab-item" style="--i:3;">
+        <button class="fab-action" type="button" data-action="Invite sent">
+          <span class="fab-action-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </span>
+          <span class="fab-action-label">Invite someone</span>
+        </button>
+      </li>
+    </ul>
+
+    <button
+      class="fab-toggle"
+      id="fabToggle"
+      type="button"
+      aria-haspopup="menu"
+      aria-expanded="false"
+      aria-controls="fabStack"
+      aria-label="Open quick actions"
+    >
+      <svg class="fab-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 5v14M5 12h14"/>
+      </svg>
+    </button>
+  </div>
+
+  <p class="fab-note" id="fabNote" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

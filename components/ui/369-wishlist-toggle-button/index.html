@@ -1,0 +1,69 @@
+<!doctype html>
+<!-- description: Tap the heart to save a favorite — it remembers your picks even after you close the tab. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wishlist Toggle Button — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wtb-wrap">
+  <div class="wtb-intro">
+    <p class="wtb-eyebrow">Save for later</p>
+    <h1 class="wtb-title">Keep an eye on the ones you're not ready to plant yet</h1>
+    <p class="wtb-sub">Tap the heart to save a favorite — it remembers your picks even after you close the tab.</p>
+  </div>
+
+  <div class="wtb-grid" data-cards>
+    <article class="wtb-card" data-product-id="terracotta-planter">
+      <button type="button" class="wtb-heart" data-wishlist-btn aria-pressed="false" aria-label="Add Terracotta Planter to wishlist">
+        <svg class="wtb-heart-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 21s-7.5-4.6-10.1-9.1C.4 8.9 1.6 5.4 5 4.4c2.1-.6 4.2.3 5.4 2.1L12 8.3l1.6-1.8c1.2-1.8 3.3-2.7 5.4-2.1 3.4 1 4.6 4.5 3.1 7.5C19.5 16.4 12 21 12 21z"/>
+        </svg>
+      </button>
+      <div class="wtb-thumb" style="background: linear-gradient(135deg,#c4622d,#241a0e);"></div>
+      <p class="wtb-name">Terracotta Planter, Large</p>
+      <p class="wtb-price">$24.00</p>
+    </article>
+
+    <article class="wtb-card" data-product-id="watering-can">
+      <button type="button" class="wtb-heart" data-wishlist-btn aria-pressed="false" aria-label="Add Brass Watering Can to wishlist">
+        <svg class="wtb-heart-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 21s-7.5-4.6-10.1-9.1C.4 8.9 1.6 5.4 5 4.4c2.1-.6 4.2.3 5.4 2.1L12 8.3l1.6-1.8c1.2-1.8 3.3-2.7 5.4-2.1 3.4 1 4.6 4.5 3.1 7.5C19.5 16.4 12 21 12 21z"/>
+        </svg>
+      </button>
+      <div class="wtb-thumb" style="background: linear-gradient(135deg,#d4a85a,#241a0e);"></div>
+      <p class="wtb-name">Brass Watering Can</p>
+      <p class="wtb-price">$32.00</p>
+    </article>
+
+    <article class="wtb-card" data-product-id="pruning-shears">
+      <button type="button" class="wtb-heart" data-wishlist-btn aria-pressed="false" aria-label="Add Pruning Shears to wishlist">
+        <svg class="wtb-heart-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 21s-7.5-4.6-10.1-9.1C.4 8.9 1.6 5.4 5 4.4c2.1-.6 4.2.3 5.4 2.1L12 8.3l1.6-1.8c1.2-1.8 3.3-2.7 5.4-2.1 3.4 1 4.6 4.5 3.1 7.5C19.5 16.4 12 21 12 21z"/>
+        </svg>
+      </button>
+      <div class="wtb-thumb" style="background: linear-gradient(135deg,#5a7a3a,#241a0e);"></div>
+      <p class="wtb-name">Forged Pruning Shears</p>
+      <p class="wtb-price">$18.50</p>
+    </article>
+
+    <article class="wtb-card" data-product-id="herb-trio">
+      <button type="button" class="wtb-heart" data-wishlist-btn aria-pressed="false" aria-label="Add Herb Starter Trio to wishlist">
+        <svg class="wtb-heart-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 21s-7.5-4.6-10.1-9.1C.4 8.9 1.6 5.4 5 4.4c2.1-.6 4.2.3 5.4 2.1L12 8.3l1.6-1.8c1.2-1.8 3.3-2.7 5.4-2.1 3.4 1 4.6 4.5 3.1 7.5C19.5 16.4 12 21 12 21z"/>
+        </svg>
+      </button>
+      <div class="wtb-thumb" style="background: linear-gradient(135deg,#8fa86e,#241a0e);"></div>
+      <p class="wtb-name">Herb Starter Trio</p>
+      <p class="wtb-price">$15.00</p>
+    </article>
+  </div>
+
+  <p class="wtb-status" role="status" aria-live="polite" data-status>Nothing saved yet.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

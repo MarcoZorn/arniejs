@@ -1,0 +1,31 @@
+<!doctype html>
+<!-- description: Scroll through the whole inventory — only the rows in view (plus a small buffer) are actually in the DOM at any moment. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Virtualized List — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="virt-list-wrap">
+  <div class="virt-list-intro">
+    <p class="virt-list-eyebrow">Seed inventory, in full</p>
+    <h1 class="virt-list-title">Five hundred rows, only a handful ever touch the page</h1>
+    <p class="virt-list-sub">Scroll through the whole inventory — only the rows in view (plus a small buffer) are actually in the DOM at any moment.</p>
+  </div>
+
+  <div class="virt-list-frame">
+    <div class="virt-list-scroll" tabindex="0" aria-label="Seed inventory list">
+      <div class="virt-list-spacer">
+        <div class="virt-list-viewport"></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="virt-list-status" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

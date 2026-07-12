@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* {
+  box-sizing: border-box;
+}
+
+.pgn-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 64px 24px;
+  text-align: center;
+}
+
+.pgn-desc {
+  margin: 0;
+  max-width: 480px;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.pgn-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pgn-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+
+.pgn-btn {
+  font-family: inherit;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
+}
+
+.pgn-btn:hover,
+.pgn-btn:focus-visible {
+  color: var(--accent-sand);
+  border-color: var(--accent-sand);
+  outline: none;
+}
+
+.pgn-btn:active {
+  transform: scale(0.96);
+}
+
+.pgn-btn[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.pgn-page {
+  background: transparent;
+}
+
+.pgn-page.is-current {
+  background: var(--accent-terra);
+  border-color: var(--accent-terra);
+  color: var(--bg-deep);
+}
+
+.pgn-page.is-current:hover {
+  color: var(--bg-deep);
+}
+
+.pgn-ellipsis {
+  min-width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-faint);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.pgn-status {
+  margin: 0;
+  color: var(--accent-sand);
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }

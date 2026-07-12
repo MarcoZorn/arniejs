@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- description: Forty-two beds of records, one row at a time — jump ahead or step back without losing your place. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pagination Numbered — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="pgn-wrap">
+  <p class="pgn-desc">Forty-two beds of records, one row at a time — jump ahead or step back without losing your place.</p>
+
+  <nav class="pgn-nav" aria-label="Pagination">
+    <button type="button" class="pgn-btn pgn-btn--edge" id="pgnPrev" aria-label="Previous page">
+      <span aria-hidden="true">&#8592;</span> Prev
+    </button>
+    <ul class="pgn-list" id="pgnList"></ul>
+    <button type="button" class="pgn-btn pgn-btn--edge" id="pgnNext" aria-label="Next page">
+      Next <span aria-hidden="true">&#8594;</span>
+    </button>
+  </nav>
+
+  <p class="pgn-status" id="pgnStatus" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

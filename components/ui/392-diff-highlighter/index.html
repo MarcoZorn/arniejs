@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- description: Set two rows side by side and see exactly what changed between plantings. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Diff Highlighter — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="dif-wrap">
+  <p class="dif-tagline">Set two rows side by side and see exactly what changed between plantings.</p>
+  <h1 class="dif-title">Diff Highlighter</h1>
+
+  <div class="dif-inputs">
+    <div class="dif-field">
+      <label class="dif-label" for="dif-before">Before</label>
+      <textarea id="dif-before" class="dif-textarea" spellcheck="false"></textarea>
+    </div>
+    <div class="dif-field">
+      <label class="dif-label" for="dif-after">After</label>
+      <textarea id="dif-after" class="dif-textarea" spellcheck="false"></textarea>
+    </div>
+  </div>
+
+  <div class="dif-controls">
+    <button type="button" class="dif-btn" id="dif-compare">Compare</button>
+    <div class="dif-legend">
+      <span class="dif-legend-item"><span class="dif-swatch dif-swatch--add"></span>added</span>
+      <span class="dif-legend-item"><span class="dif-swatch dif-swatch--del"></span>removed</span>
+    </div>
+  </div>
+
+  <div class="dif-result" id="dif-result" aria-live="polite"></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

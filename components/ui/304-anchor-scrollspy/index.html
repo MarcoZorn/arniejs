@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- description: These links track your place on the page as you scroll, the way a trail marker keeps you oriented in a long garden walk. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anchor Scrollspy — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p class="spy-desc">These links track your place on the page as you scroll, the way a trail marker keeps you oriented in a long garden walk.</p>
+
+<nav class="spy-nav" role="navigation" aria-label="Section links">
+  <ul class="spy-list">
+    <li><a class="spy-link" href="#spy-intro" data-target="spy-intro" aria-current="page">Intro</a></li>
+    <li><a class="spy-link" href="#spy-soil" data-target="spy-soil">Soil</a></li>
+    <li><a class="spy-link" href="#spy-water" data-target="spy-water">Water</a></li>
+    <li><a class="spy-link" href="#spy-light" data-target="spy-light">Light</a></li>
+    <li><a class="spy-link" href="#spy-pests" data-target="spy-pests">Pests</a></li>
+    <li><a class="spy-link" href="#spy-harvest" data-target="spy-harvest">Harvest</a></li>
+  </ul>
+</nav>
+
+<main class="spy-main">
+  <section id="spy-intro" class="spy-section">
+    <h2>Intro</h2>
+    <p>Every plot starts with a plan — which beds, which crops, and how much time you actually have on weekends. This section sets the stage before we get into specifics.</p>
+  </section>
+  <section id="spy-soil" class="spy-section">
+    <h2>Soil</h2>
+    <p>Good soil is layered, not flat: organic matter on top, structure underneath. A simple jar test tells you more than most soil calculators.</p>
+  </section>
+  <section id="spy-water" class="spy-section">
+    <h2>Water</h2>
+    <p>Deep, infrequent watering builds stronger roots than a daily light sprinkle. Mornings are kinder to your plants than midday heat.</p>
+  </section>
+  <section id="spy-light" class="spy-section">
+    <h2>Light</h2>
+    <p>Six hours of direct sun is the rough line between "full sun" and "partial shade" crops. Track a spot for a day before committing beds to it.</p>
+  </section>
+  <section id="spy-pests" class="spy-section">
+    <h2>Pests</h2>
+    <p>Most pest problems are caught early by just looking closely, a few minutes a day, rather than treating on a fixed schedule.</p>
+  </section>
+  <section id="spy-harvest" class="spy-section">
+    <h2>Harvest</h2>
+    <p>Picking regularly tends to encourage more production — plants that go to seed early often slow down for the rest of the season.</p>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

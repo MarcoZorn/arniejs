@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- description: Account security -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Two-Factor Setup — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="tfa-wrap">
+  <div class="tfa-card">
+    <p class="tfa-desc-tag">Account security</p>
+    <h1 class="tfa-title">Set up two-factor authentication</h1>
+    <p class="tfa-description">Scan the code with an authenticator app, then confirm with a 6-digit code to finish planting this extra layer of protection.</p>
+
+    <div class="tfa-step">
+      <span class="tfa-step-num">1</span>
+      <div class="tfa-step-body">
+        <p class="tfa-step-title">Scan this QR code</p>
+        <div class="tfa-qr" id="tfaQr" role="img" aria-label="QR code placeholder for authenticator app setup">
+          <div class="tfa-qr-pattern"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tfa-step">
+      <span class="tfa-step-num">2</span>
+      <div class="tfa-step-body">
+        <p class="tfa-step-title">Or enter this key manually</p>
+        <div class="tfa-key-row">
+          <code class="tfa-key" id="tfaKey">JBSW Y3DP EHPK 3PXP</code>
+          <button class="tfa-copy" type="button" id="tfaCopyBtn">Copy</button>
+        </div>
+        <p class="tfa-copy-note" id="tfaCopyNote" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <div class="tfa-step">
+      <span class="tfa-step-num">3</span>
+      <div class="tfa-step-body">
+        <p class="tfa-step-title">Enter the 6-digit code</p>
+        <div class="tfa-code-row" id="tfaCodeRow">
+          <input class="tfa-digit" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Digit 1" data-index="0">
+          <input class="tfa-digit" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Digit 2" data-index="1">
+          <input class="tfa-digit" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Digit 3" data-index="2">
+          <input class="tfa-digit" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Digit 4" data-index="3">
+          <input class="tfa-digit" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Digit 5" data-index="4">
+          <input class="tfa-digit" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Digit 6" data-index="5">
+        </div>
+        <button class="tfa-verify" type="button" id="tfaVerifyBtn">Verify &amp; enable</button>
+        <p class="tfa-feedback" id="tfaFeedback" role="alert" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

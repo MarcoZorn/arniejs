@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- description: Type anything and watch a fresh code sprout from it, ready to scan into the field. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QR Code Display — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="qrd-wrap">
+  <p class="qrd-sub">Type anything and watch a fresh code sprout from it, ready to scan into the field.</p>
+  <h1 class="qrd-title">QR Code Display</h1>
+
+  <div class="qrd-panel">
+    <div class="qrd-field">
+      <label class="qrd-label" for="qrd-text">Text or URL</label>
+      <input type="text" id="qrd-text" class="qrd-input" value="https://arniejs.dev" spellcheck="false">
+      <p class="qrd-note">Demo encoder: generates a deterministic module grid from the text via a real bit-mapping hash — not a full ISO/IEC 18004 QR implementation, but every distinct input produces a distinct, reproducible grid with authentic finder patterns.</p>
+    </div>
+    <div class="qrd-canvas-wrap">
+      <canvas id="qrd-canvas" width="290" height="290"></canvas>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

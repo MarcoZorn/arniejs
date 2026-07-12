@@ -1,0 +1,107 @@
+<!doctype html>
+<!-- description: Notes from the field, sorted so you can find the row you're standing in. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blog Post Card Grid — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="blog-wrap">
+  <p class="blog-desc">Notes from the field, sorted so you can find the row you're standing in.</p>
+
+  <div class="blog-filters" role="group" aria-label="Filter by tag">
+    <button type="button" class="blog-tag-btn" data-tag="soil">Soil</button>
+    <button type="button" class="blog-tag-btn" data-tag="irrigation">Irrigation</button>
+    <button type="button" class="blog-tag-btn" data-tag="pests">Pests</button>
+    <button type="button" class="blog-tag-btn" data-tag="harvest">Harvest</button>
+    <button type="button" class="blog-tag-btn" data-tag="tools">Tools</button>
+  </div>
+
+  <section class="blog-grid">
+    <article class="blog-card" data-tag="soil">
+      <div class="blog-thumb blog-thumb--a"></div>
+      <div class="blog-body">
+        <span class="blog-pill">Soil</span>
+        <h2 class="blog-title">Reading your soil before you plant a single seed</h2>
+        <p class="blog-excerpt">A simple jar test tells you more about your bed than any bag of fertilizer will.</p>
+        <div class="blog-meta">
+          <span>6 min read</span>
+          <span>Mar 2</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="blog-card" data-tag="irrigation">
+      <div class="blog-thumb blog-thumb--b"></div>
+      <div class="blog-body">
+        <span class="blog-pill">Irrigation</span>
+        <h2 class="blog-title">Drip lines vs. soaker hoses: what actually saves water</h2>
+        <p class="blog-excerpt">We ran both side by side for a season. The results surprised our whole crew.</p>
+        <div class="blog-meta">
+          <span>8 min read</span>
+          <span>Mar 9</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="blog-card" data-tag="pests">
+      <div class="blog-thumb blog-thumb--c"></div>
+      <div class="blog-body">
+        <span class="blog-pill">Pests</span>
+        <h2 class="blog-title">Aphids showed up early this year. Here's our response plan</h2>
+        <p class="blog-excerpt">Ladybugs, neem oil, and a little patience beat the sprays we used to reach for.</p>
+        <div class="blog-meta">
+          <span>5 min read</span>
+          <span>Mar 14</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="blog-card" data-tag="harvest">
+      <div class="blog-thumb blog-thumb--d"></div>
+      <div class="blog-body">
+        <span class="blog-pill">Harvest</span>
+        <h2 class="blog-title">Knowing when squash is actually ready to cut</h2>
+        <p class="blog-excerpt">Color is a lie. Here's the thumbnail test we teach every new grower on the plot.</p>
+        <div class="blog-meta">
+          <span>4 min read</span>
+          <span>Mar 20</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="blog-card" data-tag="tools">
+      <div class="blog-thumb blog-thumb--e"></div>
+      <div class="blog-body">
+        <span class="blog-pill">Tools</span>
+        <h2 class="blog-title">The five hand tools worth actually spending money on</h2>
+        <p class="blog-excerpt">You don't need a shed full of gear. You need these, sharpened, and put away clean.</p>
+        <div class="blog-meta">
+          <span>7 min read</span>
+          <span>Mar 27</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="blog-card" data-tag="soil harvest">
+      <div class="blog-thumb blog-thumb--f"></div>
+      <div class="blog-body">
+        <span class="blog-pill">Soil</span>
+        <h2 class="blog-title">Cover crops that pay you back by autumn</h2>
+        <p class="blog-excerpt">Clover, buckwheat, and daikon radish, planted right after the last big harvest.</p>
+        <div class="blog-meta">
+          <span>6 min read</span>
+          <span>Apr 3</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <p class="blog-empty" hidden>No posts match the selected tags.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

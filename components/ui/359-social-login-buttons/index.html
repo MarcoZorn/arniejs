@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- description: Create an account in a few seconds using an account you already have. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Social Login Buttons — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sln-wrap">
+  <div class="sln-card">
+    <h1 class="sln-title">Join the garden</h1>
+    <p class="sln-desc">Create an account in a few seconds using an account you already have.</p>
+
+    <div class="sln-grid">
+      <button class="sln-btn" type="button" data-provider="Google">
+        <span class="sln-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 8v4l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <span class="sln-label">Google</span>
+      </button>
+
+      <button class="sln-btn" type="button" data-provider="GitHub">
+        <span class="sln-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 3a9 9 0 0 0-2.85 17.54c.45.08.6-.2.6-.43v-1.68c-2.5.55-3.03-1.07-3.03-1.07-.41-1.04-1-1.31-1-1.31-.82-.56.06-.55.06-.55.9.06 1.38.93 1.38.93.8 1.38 2.1.98 2.6.75.08-.58.31-.98.57-1.21-2-.23-4.1-1-4.1-4.45 0-.98.35-1.79.92-2.42-.09-.23-.4-1.15.09-2.4 0 0 .75-.24 2.45.92a8.4 8.4 0 0 1 4.46 0c1.7-1.16 2.45-.92 2.45-.92.49 1.25.18 2.17.09 2.4.57.63.92 1.44.92 2.42 0 3.46-2.11 4.22-4.12 4.44.32.28.61.83.61 1.67v2.48c0 .24.15.52.61.43A9 9 0 0 0 12 3z" fill="currentColor"/></svg>
+        </span>
+        <span class="sln-label">GitHub</span>
+      </button>
+
+      <button class="sln-btn" type="button" data-provider="Apple">
+        <span class="sln-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 6.5c1-1.4 2.6-1.9 2.6-1.9s.3 1.9-.9 3.2c-1.1 1.3-2.5 1.1-2.5 1.1s-.3-1.6.8-2.4z" fill="currentColor"/><path d="M12.2 8.8c1.3 0 2.3.7 3 .7.6 0 1.7-.9 3-.7 1.5.2 2.7 1.1 3.3 2.3-2.8 1.6-2.4 5.4.4 6.6-.5 1.4-1.2 2.7-2.2 3.8-.9 1-1.9 2-3.2 2-1.2 0-1.6-.8-3-.8s-1.9.8-3 .8c-1.3 0-2.4-1.1-3.3-2.1-2-2.2-3.5-6.2-1.5-9 1-1.4 2.6-2.3 4.2-2.3.9 0 1.7.6 2.3.6z" fill="currentColor"/></svg>
+        </span>
+        <span class="sln-label">Apple</span>
+      </button>
+
+      <button class="sln-btn" type="button" data-provider="Facebook">
+        <span class="sln-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13.5 20v-6h2l.4-2.6h-2.4V9.7c0-.7.2-1.2 1.3-1.2h1.3V6.2c-.2 0-1-.1-1.9-.1-1.9 0-3.2 1.2-3.2 3.3v1.9H9v2.6h2v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="sln-label">Facebook</span>
+      </button>
+    </div>
+
+    <p class="sln-feedback" role="status" aria-live="polite" data-feedback></p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

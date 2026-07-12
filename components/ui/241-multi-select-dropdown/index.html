@@ -1,0 +1,76 @@
+<!doctype html>
+<!-- description: Search the seed catalog, tick as many as you like, and each pick sprouts its own removable chip. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Multi-Select Dropdown — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="msd-wrap">
+  <div class="msd-intro">
+    <p class="msd-eyebrow">Plot your crops</p>
+    <h1 class="msd-title">Pick everything you're planting this season</h1>
+    <p class="msd-sub">Search the seed catalog, tick as many as you like, and each pick sprouts its own removable chip.</p>
+  </div>
+
+  <div class="msd-field">
+    <label class="msd-label" id="msd-label">Crops</label>
+    <div class="msd-combo" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="msd-panel" aria-labelledby="msd-label">
+      <button type="button" class="msd-trigger" aria-controls="msd-panel">
+        <span class="msd-chips" id="msd-chips">
+          <span class="msd-placeholder">Choose crops…</span>
+        </span>
+        <svg class="msd-caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+
+      <div class="msd-panel" id="msd-panel" hidden>
+        <div class="msd-search-row">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" class="msd-search" placeholder="Search crops…" aria-label="Search crops" autocomplete="off">
+        </div>
+        <ul class="msd-list" role="listbox" aria-multiselectable="true" aria-labelledby="msd-label">
+          <li class="msd-option" role="option" aria-selected="false" data-value="tomato">
+            <input type="checkbox" id="msd-opt-tomato" tabindex="-1">
+            <label for="msd-opt-tomato">Tomato</label>
+          </li>
+          <li class="msd-option" role="option" aria-selected="false" data-value="basil">
+            <input type="checkbox" id="msd-opt-basil" tabindex="-1">
+            <label for="msd-opt-basil">Basil</label>
+          </li>
+          <li class="msd-option" role="option" aria-selected="false" data-value="carrot">
+            <input type="checkbox" id="msd-opt-carrot" tabindex="-1">
+            <label for="msd-opt-carrot">Carrot</label>
+          </li>
+          <li class="msd-option" role="option" aria-selected="false" data-value="pumpkin">
+            <input type="checkbox" id="msd-opt-pumpkin" tabindex="-1">
+            <label for="msd-opt-pumpkin">Pumpkin</label>
+          </li>
+          <li class="msd-option" role="option" aria-selected="false" data-value="kale">
+            <input type="checkbox" id="msd-opt-kale" tabindex="-1">
+            <label for="msd-opt-kale">Kale</label>
+          </li>
+          <li class="msd-option" role="option" aria-selected="false" data-value="radish">
+            <input type="checkbox" id="msd-opt-radish" tabindex="-1">
+            <label for="msd-opt-radish">Radish</label>
+          </li>
+          <li class="msd-option" role="option" aria-selected="false" data-value="squash">
+            <input type="checkbox" id="msd-opt-squash" tabindex="-1">
+            <label for="msd-opt-squash">Squash</label>
+          </li>
+          <li class="msd-option" role="option" aria-selected="false" data-value="mint">
+            <input type="checkbox" id="msd-opt-mint" tabindex="-1">
+            <label for="msd-opt-mint">Mint</label>
+          </li>
+          <li class="msd-empty" hidden>No crops match your search.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="msd-hint" role="status" aria-live="polite"></p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

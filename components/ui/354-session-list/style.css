@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.sess-wrap {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 56px 20px 72px;
+}
+
+.sess-title {
+  margin: 0 0 10px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.sess-hint {
+  margin: 0 0 28px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.sess-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sess-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 18px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.15s ease;
+}
+
+.sess-item[data-session="current"] {
+  border-color: var(--accent-sage);
+  background: var(--bg-card);
+}
+
+.sess-icon {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--bg-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-sand);
+}
+
+.sess-item[data-session="current"] .sess-icon {
+  color: var(--accent-sage);
+  background: rgba(143, 168, 110, 0.15);
+}
+
+.sess-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.sess-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  flex: 1;
+}
+
+.sess-device {
+  font-size: 14.5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sess-current-badge {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bg-deep);
+  background: var(--accent-sage);
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.sess-meta {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.sess-action {
+  flex: none;
+}
+
+.sess-revoke-btn {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 9px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--border-light);
+  color: var(--accent-rust);
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+
+.sess-revoke-btn:hover {
+  background: rgba(160, 56, 32, 0.12);
+  border-color: var(--accent-rust);
+}
+
+.sess-revoke-btn:disabled {
+  color: var(--text-faint);
+  border-color: var(--border);
+  cursor: not-allowed;
+  background: transparent;
+}
+
+.sess-item-removing {
+  opacity: 0;
+  transform: translateX(12px) scale(0.98);
+}
+
+.sess-status {
+  min-height: 20px;
+  margin: 22px 0 0;
+  color: var(--accent-sand);
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+@media (max-width: 460px) {
+  .sess-item {
+    flex-wrap: wrap;
+  }
+  .sess-action {
+    margin-left: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

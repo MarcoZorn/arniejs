@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- description: A mobile navigation panel that slides up from the bottom, the kind of thing that stays out of the way until it's needed. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bottom Sheet Nav — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="bsn-wrap">
+  <p class="bsn-tagline">A mobile navigation panel that slides up from the bottom, the kind of thing that stays out of the way until it's needed.</p>
+
+  <button type="button" class="bsn-trigger" id="bsnTrigger" aria-haspopup="dialog" aria-expanded="false" aria-controls="bsnSheet">
+    Open navigation
+  </button>
+</main>
+
+<div class="bsn-backdrop" id="bsnBackdrop" hidden></div>
+
+<section class="bsn-sheet" id="bsnSheet" role="dialog" aria-modal="true" aria-label="Site navigation" tabindex="-1" hidden>
+  <div class="bsn-handle-area" id="bsnHandleArea">
+    <span class="bsn-handle" aria-hidden="true"></span>
+  </div>
+  <nav class="bsn-nav" aria-label="Mobile">
+    <h2 class="bsn-sheet-title">Navigate</h2>
+    <ul class="bsn-list">
+      <li><a class="bsn-link" href="#">Overview</a></li>
+      <li><a class="bsn-link" href="#">Plots &amp; beds</a></li>
+      <li><a class="bsn-link" href="#">Harvest log</a></li>
+      <li><a class="bsn-link" href="#">Weather notes</a></li>
+      <li><a class="bsn-link" href="#">Settings</a></li>
+    </ul>
+    <button type="button" class="bsn-close" id="bsnClose">Close</button>
+  </nav>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

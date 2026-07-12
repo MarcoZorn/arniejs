@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- description: Right-click the plot below, or tap the small button in the corner — either path opens the same tidy set of tools. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Context Menu — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="cmenu-wrap">
+  <div class="cmenu-intro">
+    <p class="cmenu-eyebrow">Right-click anywhere</p>
+    <h1 class="cmenu-title">A context menu that meets you where you click</h1>
+    <p class="cmenu-sub">Right-click the plot below, or tap the small button in the corner — either path opens the same tidy set of tools.</p>
+  </div>
+
+  <section class="cmenu-plot" id="cmenuPlot" tabindex="0" aria-label="Right-click surface">
+    <button type="button" class="cmenu-trigger" id="cmenuTrigger" aria-haspopup="menu" aria-expanded="false" aria-controls="cmenuMenu" aria-label="Open menu">
+      <span aria-hidden="true">&#8230;</span>
+    </button>
+    <p class="cmenu-hint">Row: Autumn Squash Bed</p>
+  </section>
+
+  <ul class="cmenu-menu" id="cmenuMenu" role="menu" aria-label="Actions" hidden>
+    <li role="none"><button type="button" class="cmenu-item" role="menuitem" data-action="cut">Cut</button></li>
+    <li role="none"><button type="button" class="cmenu-item" role="menuitem" data-action="copy">Copy</button></li>
+    <li role="none"><button type="button" class="cmenu-item" role="menuitem" data-action="paste">Paste</button></li>
+    <li role="none" class="cmenu-sep" aria-hidden="true"></li>
+    <li role="none"><button type="button" class="cmenu-item" role="menuitem" data-action="rename">Rename</button></li>
+    <li role="none"><button type="button" class="cmenu-item" role="menuitem" data-action="duplicate">Duplicate</button></li>
+    <li role="none" class="cmenu-sep" aria-hidden="true"></li>
+    <li role="none"><button type="button" class="cmenu-item cmenu-item--danger" role="menuitem" data-action="delete">Delete</button></li>
+  </ul>
+
+  <p class="cmenu-note" role="status" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

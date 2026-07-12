@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* {
+  box-sizing: border-box;
+}
+
+.ksp-page {
+  min-height: 100vh;
+  padding: 80px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.ksp-intro {
+  max-width: 580px;
+  text-align: center;
+}
+
+.ksp-eyebrow {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-clay);
+}
+
+.ksp-heading {
+  margin: 0 0 14px;
+  font-size: clamp(26px, 4vw, 36px);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.ksp-sub {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.ksp-open {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 22px;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 14.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.ksp-open:hover {
+  border-color: var(--accent-sand);
+  transform: translateY(-1px);
+}
+
+.ksp-open:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 2px;
+}
+
+.ksp-open kbd {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--bg-deep);
+  border: 1px solid var(--border-light);
+  color: var(--accent-sand);
+}
+
+.ksp-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 10, 4, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 50;
+}
+
+.ksp-overlay[hidden] {
+  display: none;
+}
+
+.ksp-panel {
+  width: 100%;
+  max-width: 560px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  padding: 28px 30px 26px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+}
+
+.ksp-panel:focus-visible,
+.ksp-panel:focus {
+  outline: none;
+}
+
+.ksp-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.ksp-title {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.ksp-close {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+  background: transparent;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.ksp-close svg {
+  width: 16px;
+  height: 16px;
+}
+
+.ksp-close:hover {
+  color: var(--accent-rust);
+  border-color: var(--accent-rust);
+}
+
+.ksp-close:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 2px;
+}
+
+.ksp-groups {
+  display: grid;
+  gap: 22px;
+}
+
+.ksp-group-title {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-sand);
+}
+
+.ksp-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ksp-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 4px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14.5px;
+  color: var(--text-primary);
+}
+
+.ksp-list li:last-child {
+  border-bottom: none;
+}
+
+.ksp-combo {
+  display: flex;
+  gap: 4px;
+}
+
+.ksp-combo kbd,
+.ksp-hint kbd {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  color: var(--text-muted);
+}
+
+.ksp-hint {
+  margin: 20px 0 0;
+  font-size: 12.5px;
+  color: var(--text-faint);
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }

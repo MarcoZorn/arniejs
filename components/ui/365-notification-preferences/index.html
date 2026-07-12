@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- description: Choose exactly how each type of update reaches you — nothing arrives on a channel you haven't checked. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Notification Preferences — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="np-wrap">
+  <div class="np-card">
+    <h1 class="np-title">Notification preferences</h1>
+    <p class="np-description">Choose exactly how each type of update reaches you — nothing arrives on a channel you haven't checked.</p>
+
+    <div class="np-table-scroll">
+      <table class="np-table">
+        <thead>
+          <tr>
+            <th class="np-th np-th-type" scope="col">Type</th>
+            <th class="np-th np-th-channel" scope="col">Email</th>
+            <th class="np-th np-th-channel" scope="col">Push</th>
+            <th class="np-th np-th-channel" scope="col">SMS</th>
+          </tr>
+        </thead>
+        <tbody id="np-body">
+          <tr class="np-row" data-type="Security alerts">
+            <th class="np-row-label" scope="row">Security alerts</th>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" checked data-channel="email"><span class="np-box"></span></label></td>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" checked data-channel="push"><span class="np-box"></span></label></td>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" checked data-channel="sms"><span class="np-box"></span></label></td>
+          </tr>
+          <tr class="np-row" data-type="Product updates">
+            <th class="np-row-label" scope="row">Product updates</th>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" checked data-channel="email"><span class="np-box"></span></label></td>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" data-channel="push"><span class="np-box"></span></label></td>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" data-channel="sms"><span class="np-box"></span></label></td>
+          </tr>
+          <tr class="np-row" data-type="Billing">
+            <th class="np-row-label" scope="row">Billing</th>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" checked data-channel="email"><span class="np-box"></span></label></td>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" data-channel="push"><span class="np-box"></span></label></td>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" checked data-channel="sms"><span class="np-box"></span></label></td>
+          </tr>
+          <tr class="np-row" data-type="Team activity">
+            <th class="np-row-label" scope="row">Team activity</th>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" checked data-channel="email"><span class="np-box"></span></label></td>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" checked data-channel="push"><span class="np-box"></span></label></td>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" data-channel="sms"><span class="np-box"></span></label></td>
+          </tr>
+          <tr class="np-row" data-type="Marketing">
+            <th class="np-row-label" scope="row">Marketing</th>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" data-channel="email"><span class="np-box"></span></label></td>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" data-channel="push"><span class="np-box"></span></label></td>
+            <td class="np-cell"><label class="np-check"><input type="checkbox" data-channel="sms"><span class="np-box"></span></label></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="np-summary" id="np-summary" role="status" aria-live="polite"></p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

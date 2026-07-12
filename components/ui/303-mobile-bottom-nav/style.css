@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+}
+
+body {
+  background: var(--bg-deep);
+  font-family: 'Syne', sans-serif;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.mbnav-wrap {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 48px 16px 40px;
+}
+
+.mbnav-screen {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  min-height: 620px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 32px;
+  padding: 28px 22px 100px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.mbnav-hint {
+  margin: 0 0 24px;
+  color: var(--text-muted);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+.mbnav-panel h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.mbnav-panel p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+.mbnav-panel[hidden] {
+  display: none;
+}
+
+.mbnav-bar {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 24px;
+  padding: 8px 6px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+}
+
+.mbnav-tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  border-radius: 18px;
+  padding: 8px 4px;
+  color: var(--text-faint);
+  font-family: inherit;
+  font-size: 10.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
+}
+
+.mbnav-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.mbnav-tab:hover {
+  color: var(--text-muted);
+}
+
+.mbnav-tab.is-active {
+  color: var(--bg-deep);
+  background: var(--accent-sage);
+  transform: translateY(-2px);
+}
+
+.mbnav-tab:active {
+  transform: translateY(0) scale(0.96);
+}
+
+.mbnav-tab:focus-visible {
+  outline: 2px solid var(--accent-sand);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<!-- description: Cut generously for layering — check your measurements before you order. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Size Guide Modal — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sg-wrap">
+  <div class="sg-card">
+    <div class="sg-thumb" aria-hidden="true"></div>
+    <h1 class="sg-name">Field Work Jacket</h1>
+    <p class="sg-sub">Cut generously for layering — check your measurements before you order.</p>
+
+    <div class="sg-size-row">
+      <label class="sg-size-label" for="sg-size-select">Size</label>
+      <select id="sg-size-select" class="sg-size-select">
+        <option>XS</option>
+        <option>S</option>
+        <option selected>M</option>
+        <option>L</option>
+        <option>XL</option>
+      </select>
+      <button type="button" class="sg-link" data-open-modal>Size guide</button>
+    </div>
+
+    <button type="button" class="sg-add">Add to cart</button>
+  </div>
+
+  <div class="sg-overlay" data-modal-overlay hidden>
+    <div class="sg-modal" role="dialog" aria-modal="true" aria-labelledby="sg-modal-title" data-modal>
+      <div class="sg-modal-head">
+        <h2 class="sg-modal-title" id="sg-modal-title">Size guide</h2>
+        <button type="button" class="sg-modal-close" data-close-modal aria-label="Close size guide">&times;</button>
+      </div>
+      <p class="sg-modal-hint">Measurements in inches. Lay a similar garment flat to compare.</p>
+      <div class="sg-table-scroll">
+        <table class="sg-table">
+          <thead>
+            <tr>
+              <th scope="col">Size</th>
+              <th scope="col">Chest</th>
+              <th scope="col">Waist</th>
+              <th scope="col">Length</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">XS</th>
+              <td>34–36</td>
+              <td>28–30</td>
+              <td>26.5</td>
+            </tr>
+            <tr>
+              <th scope="row">S</th>
+              <td>37–39</td>
+              <td>31–33</td>
+              <td>27.5</td>
+            </tr>
+            <tr>
+              <th scope="row">M</th>
+              <td>40–42</td>
+              <td>34–36</td>
+              <td>28.5</td>
+            </tr>
+            <tr>
+              <th scope="row">L</th>
+              <td>43–45</td>
+              <td>37–39</td>
+              <td>29.5</td>
+            </tr>
+            <tr>
+              <th scope="row">XL</th>
+              <td>46–48</td>
+              <td>40–42</td>
+              <td>30.5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button type="button" class="sg-modal-done" data-close-modal>Got it</button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

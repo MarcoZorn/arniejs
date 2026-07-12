@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- description: Pick one seed color and let it bloom into tints, shades, and a complement. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Color Palette Generator — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="cpg-wrap">
+  <p class="cpg-hint">Pick one seed color and let it bloom into tints, shades, and a complement.</p>
+  <h1 class="cpg-title">Color Palette Generator</h1>
+
+  <div class="cpg-controls">
+    <label class="cpg-swatch-picker" for="cpg-color">
+      <input type="color" id="cpg-color" value="#c4622d">
+    </label>
+    <input type="text" id="cpg-hex" class="cpg-hex-input" value="#C4622D" maxlength="7" spellcheck="false">
+    <button type="button" class="cpg-btn" id="cpg-generate">Generate palette</button>
+  </div>
+
+  <section class="cpg-group">
+    <h2 class="cpg-group-title">Tints</h2>
+    <div class="cpg-row" id="cpg-tints"></div>
+  </section>
+
+  <section class="cpg-group">
+    <h2 class="cpg-group-title">Shades</h2>
+    <div class="cpg-row" id="cpg-shades"></div>
+  </section>
+
+  <section class="cpg-group">
+    <h2 class="cpg-group-title">Complement</h2>
+    <div class="cpg-row" id="cpg-complement"></div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

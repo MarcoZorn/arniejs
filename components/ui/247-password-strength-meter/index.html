@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- description: Type a password below and watch the strength bar and checklist grow with every rule you satisfy. -->
+<!-- category: forms -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Password Strength Meter — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="pwmeter-wrap">
+  <div class="pwmeter-card">
+    <p class="pwmeter-eyebrow">Guard the gate</p>
+    <h1 class="pwmeter-title">Set a password strong enough to weather storms</h1>
+    <p class="pwmeter-sub">Type a password below and watch the strength bar and checklist grow with every rule you satisfy.</p>
+
+    <label class="pwmeter-fieldlabel" for="pwmeter-input">Password</label>
+    <div class="pwmeter-field">
+      <input class="pwmeter-input" id="pwmeter-input" type="password" autocomplete="new-password" placeholder="Type a password..." aria-describedby="pwmeter-strength-text">
+      <button class="pwmeter-toggle" type="button" aria-pressed="false" aria-label="Show password">
+        <svg class="pwmeter-eye" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="pwmeter-bar" role="progressbar" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0" aria-label="Password strength">
+      <span class="pwmeter-seg"></span>
+      <span class="pwmeter-seg"></span>
+      <span class="pwmeter-seg"></span>
+      <span class="pwmeter-seg"></span>
+    </div>
+    <p class="pwmeter-strength-text" id="pwmeter-strength-text">Strength: <span class="pwmeter-strength-word">Too weak</span></p>
+
+    <ul class="pwmeter-checklist">
+      <li class="pwmeter-check" data-rule="length">
+        <span class="pwmeter-checkmark" aria-hidden="true"></span>
+        At least 8 characters
+      </li>
+      <li class="pwmeter-check" data-rule="upper">
+        <span class="pwmeter-checkmark" aria-hidden="true"></span>
+        One uppercase letter
+      </li>
+      <li class="pwmeter-check" data-rule="lower">
+        <span class="pwmeter-checkmark" aria-hidden="true"></span>
+        One lowercase letter
+      </li>
+      <li class="pwmeter-check" data-rule="number">
+        <span class="pwmeter-checkmark" aria-hidden="true"></span>
+        One number
+      </li>
+      <li class="pwmeter-check" data-rule="symbol">
+        <span class="pwmeter-checkmark" aria-hidden="true"></span>
+        One symbol
+      </li>
+    </ul>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

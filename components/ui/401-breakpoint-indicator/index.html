@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- description: A quiet marker in the corner that tells you which patch of the responsive field you're standing in. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Breakpoint Indicator — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="bpi-wrap">
+  <p class="bpi-sub">A quiet marker in the corner that tells you which patch of the responsive field you're standing in.</p>
+
+  <section class="bpi-content">
+    <h1 class="bpi-heading">Resize the window</h1>
+    <p>The badge in the bottom-right corner reads out the current breakpoint as it happens, computed straight from <code>window.innerWidth</code>. Drag the edge of your browser and watch it change.</p>
+
+    <div class="bpi-grid">
+      <div class="bpi-card">
+        <h2>xs</h2>
+        <p>&lt; 480px</p>
+      </div>
+      <div class="bpi-card">
+        <h2>sm</h2>
+        <p>480–767px</p>
+      </div>
+      <div class="bpi-card">
+        <h2>md</h2>
+        <p>768–1023px</p>
+      </div>
+      <div class="bpi-card">
+        <h2>lg</h2>
+        <p>1024–1279px</p>
+      </div>
+      <div class="bpi-card">
+        <h2>xl</h2>
+        <p>&ge; 1280px</p>
+      </div>
+    </div>
+
+    <p>This is meant as a development aid — drop it into any page while you're tuning layout, then pull it back out before shipping. It costs nothing to keep around, but nobody needs it in production.</p>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

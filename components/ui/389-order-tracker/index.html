@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- description: We track every parcel from the moment it leaves our shelves to the moment it reaches your door. -->
+<!-- category: ecommerce -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Order Tracker — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="tracker-wrap">
+  <div class="tracker-intro">
+    <p class="tracker-eyebrow">Order #A-40217</p>
+    <h1 class="tracker-title">Your order is on its way</h1>
+    <p class="tracker-sub">We track every parcel from the moment it leaves our shelves to the moment it reaches your door.</p>
+  </div>
+
+  <div class="tracker-card">
+    <div class="tracker-track" data-track>
+      <div class="tracker-line">
+        <div class="tracker-line-fill" data-line-fill></div>
+      </div>
+
+      <ol class="tracker-stages" data-stages>
+        <li class="tracker-stage" data-stage="0">
+          <button type="button" class="tracker-dot" data-dot aria-label="Placed">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16l-1.5 12h-13z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+          </button>
+          <span class="tracker-label">Placed</span>
+        </li>
+        <li class="tracker-stage" data-stage="1">
+          <button type="button" class="tracker-dot" data-dot aria-label="Packed">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-5 9 5-9 5-9-5z"/><path d="M3 8v9l9 5 9-5V8"/><path d="M12 13v9"/></svg>
+          </button>
+          <span class="tracker-label">Packed</span>
+        </li>
+        <li class="tracker-stage" data-stage="2">
+          <button type="button" class="tracker-dot" data-dot aria-label="Shipped">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3z"/><path d="M14 11h4l3 3v2h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg>
+          </button>
+          <span class="tracker-label">Shipped</span>
+        </li>
+        <li class="tracker-stage" data-stage="3">
+          <button type="button" class="tracker-dot" data-dot aria-label="Delivered">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6"/></svg>
+          </button>
+          <span class="tracker-label">Delivered</span>
+        </li>
+      </ol>
+    </div>
+
+    <p class="tracker-status" data-status role="status" aria-live="polite"></p>
+
+    <button type="button" class="tracker-advance" data-advance>Simulate next update</button>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

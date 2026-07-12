@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- description: A quiet note about the cookies that help this garden run, and the ones you can leave out entirely. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Consent Banner Detailed — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="consent-page">
+  <p class="consent-page-desc">A quiet note about the cookies that help this garden run, and the ones you can leave out entirely.</p>
+</main>
+
+<div class="consent-banner" id="consent-banner" role="dialog" aria-label="Cookie preferences" aria-live="polite">
+  <div class="consent-banner-main">
+    <div class="consent-banner-text">
+      <h2 class="consent-title">We use cookies, sparingly</h2>
+      <p class="consent-copy">A few are necessary for the site to work. Others help us understand traffic or show relevant offers — you decide which of those to allow.</p>
+    </div>
+    <div class="consent-actions">
+      <button type="button" class="consent-link" id="consent-customize-btn" aria-expanded="false" aria-controls="consent-prefs">Customize</button>
+      <button type="button" class="consent-btn consent-btn--ghost" id="consent-reject-btn">Reject non-essential</button>
+      <button type="button" class="consent-btn consent-btn--solid" id="consent-accept-btn">Accept all</button>
+    </div>
+  </div>
+
+  <div class="consent-prefs" id="consent-prefs" hidden>
+    <div class="consent-pref-row">
+      <div class="consent-pref-text">
+        <strong>Necessary</strong>
+        <span>Required for basic site function. Always on.</span>
+      </div>
+      <label class="consent-toggle consent-toggle--locked">
+        <input type="checkbox" checked disabled aria-label="Necessary cookies, always on">
+        <span class="consent-toggle-track"><span class="consent-toggle-thumb"></span></span>
+      </label>
+    </div>
+    <div class="consent-pref-row">
+      <div class="consent-pref-text">
+        <strong>Analytics</strong>
+        <span>Helps us see which pages are useful and which aren't.</span>
+      </div>
+      <label class="consent-toggle">
+        <input type="checkbox" id="consent-analytics-toggle" aria-label="Analytics cookies">
+        <span class="consent-toggle-track"><span class="consent-toggle-thumb"></span></span>
+      </label>
+    </div>
+    <div class="consent-pref-row">
+      <div class="consent-pref-text">
+        <strong>Marketing</strong>
+        <span>Used to show offers that are more relevant to you.</span>
+      </div>
+      <label class="consent-toggle">
+        <input type="checkbox" id="consent-marketing-toggle" aria-label="Marketing cookies">
+        <span class="consent-toggle-track"><span class="consent-toggle-thumb"></span></span>
+      </label>
+    </div>
+
+    <div class="consent-prefs-footer">
+      <p class="consent-status" id="consent-status" role="status" aria-live="polite"></p>
+      <button type="button" class="consent-btn consent-btn--solid" id="consent-save-btn">Save preferences</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

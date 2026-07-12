@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- description: Two beds, one on top of the other — open the second only once the first has settled. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Modal Stack — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stack-wrap">
+  <p class="stack-hint">Two beds, one on top of the other — open the second only once the first has settled.</p>
+
+  <button class="stack-trigger" type="button" id="openA">Open planting plan</button>
+
+  <div class="stack-overlay" id="overlayA" hidden>
+    <div class="stack-modal" role="dialog" aria-modal="true" aria-labelledby="titleA" tabindex="-1" id="modalA">
+      <button class="stack-close" type="button" data-close="A" aria-label="Close planting plan">&times;</button>
+      <h2 class="stack-title" id="titleA">Planting Plan</h2>
+      <p class="stack-body">Lay out your rows here. When you're ready to check companion spacing, open the detail card without losing this one.</p>
+      <div class="stack-actions">
+        <button class="stack-btn stack-btn--ghost" type="button" data-close="A">Close</button>
+        <button class="stack-btn stack-btn--solid" type="button" id="openB">Open spacing detail</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="stack-overlay stack-overlay--b" id="overlayB" hidden>
+    <div class="stack-modal stack-modal--b" role="dialog" aria-modal="true" aria-labelledby="titleB" tabindex="-1" id="modalB">
+      <button class="stack-close" type="button" data-close="B" aria-label="Close spacing detail">&times;</button>
+      <h2 class="stack-title" id="titleB">Spacing Detail</h2>
+      <p class="stack-body">Rows here sit twelve inches apart. Escape closes just this card, leaving the plan behind it untouched.</p>
+      <div class="stack-actions">
+        <button class="stack-btn stack-btn--solid" type="button" data-close="B">Got it</button>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- description: A quiet sidebar that keeps track of where you are as you move down a long article. -->
+<!-- category: navigation -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sticky TOC Nav — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="toc-layout">
+  <nav class="toc-nav" aria-label="Table of contents">
+    <p class="toc-label">On this page</p>
+    <p class="toc-sub">A quiet sidebar that keeps track of where you are as you move down a long article.</p>
+    <ul class="toc-list">
+      <li><a class="toc-link" href="#roots" data-target="roots">Roots &amp; foundations</a></li>
+      <li><a class="toc-link" href="#soil" data-target="soil">Reading the soil</a></li>
+      <li><a class="toc-link" href="#seasons" data-target="seasons">Working with seasons</a></li>
+      <li><a class="toc-link" href="#water" data-target="water">Water &amp; patience</a></li>
+      <li><a class="toc-link" href="#harvest" data-target="harvest">Harvest &amp; rest</a></li>
+    </ul>
+  </nav>
+
+  <main class="toc-content">
+    <section id="roots" class="toc-section">
+      <h2>Roots &amp; foundations</h2>
+      <p>Every planting starts below the surface, where nothing is visible yet. Roots take hold slowly, and the plant above ground only looks steady because of the unseen work underneath.</p>
+      <p>Spend time here before rushing toward what shows. A shallow start rarely holds up once the weather turns.</p>
+      <p>This section exists mostly to give you room to scroll and watch the sidebar link light up as it comes into view.</p>
+    </section>
+
+    <section id="soil" class="toc-section">
+      <h2>Reading the soil</h2>
+      <p>Good soil tells you what it needs if you're willing to look closely — texture, drainage, the smell after rain. None of it is complicated, but it does take attention.</p>
+      <p>The same instinct applies to reading a page: notice what's in front of you before deciding what to build next.</p>
+      <p>Keep scrolling — the active item in the sidebar should now say "Reading the soil".</p>
+    </section>
+
+    <section id="seasons" class="toc-section">
+      <h2>Working with seasons</h2>
+      <p>Nothing grows on demand. Seasons set the pace, and the more a garden works with that rhythm rather than against it, the less effort everything else takes.</p>
+      <p>Long pages have their own seasons too — sections that need a slow read, and ones you can skim past.</p>
+      <p>Notice the sidebar updating as you cross into this section.</p>
+    </section>
+
+    <section id="water" class="toc-section">
+      <h2>Water &amp; patience</h2>
+      <p>Too much attention can drown a thing just as easily as too little. Consistency, given in modest amounts, tends to outperform anything frantic.</p>
+      <p>This holds true whether you're tending beds or just reading through a long document one section at a time.</p>
+      <p>Almost at the last section now.</p>
+    </section>
+
+    <section id="harvest" class="toc-section">
+      <h2>Harvest &amp; rest</h2>
+      <p>Eventually the waiting pays off, and there's a quiet satisfaction in gathering what came from steady, unhurried effort.</p>
+      <p>Then the ground rests, and the whole thing starts again elsewhere.</p>
+      <p>This is the final section — the sidebar link for "Harvest &amp; rest" should now be marked as current.</p>
+    </section>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

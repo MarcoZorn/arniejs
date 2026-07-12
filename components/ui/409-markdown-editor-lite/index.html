@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- description: A small patch of markdown, tended live — type on the left and watch it take shape on the right. -->
+<!-- category: utility -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Markdown Editor Lite — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="mde-wrap">
+  <p class="mde-desc">A small patch of markdown, tended live — type on the left and watch it take shape on the right.</p>
+
+  <div class="mde-split">
+    <div class="mde-pane">
+      <span class="mde-pane-label">Write</span>
+      <textarea id="mdeInput" class="mde-textarea" spellcheck="false"># Garden Notes
+
+Plant the **early beds** first, then move on to *slower* crops once the soil warms.
+
+## This week
+
+- Turn the compost
+- Check the drip lines
+- Sow the second round of lettuce
+
+Read more about companion planting on the [ArnieJS blog](https://example.com/blog).
+</textarea>
+    </div>
+    <div class="mde-pane">
+      <span class="mde-pane-label">Preview</span>
+      <div id="mdePreview" class="mde-preview" aria-live="polite"></div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

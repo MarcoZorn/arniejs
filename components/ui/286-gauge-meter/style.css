@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg-deep: #1a1208;
+  --bg-surface: #241a0e;
+  --bg-card: #2e2010;
+  --bg-subtle: #3d2b14;
+  --text-primary: #f0e6d3;
+  --text-muted: #a89070;
+  --text-faint: #6b5540;
+  --accent-terra: #c4622d;
+  --accent-moss: #5a7a3a;
+  --accent-sage: #8fa86e;
+  --accent-clay: #9b6b3a;
+  --accent-sand: #d4a85a;
+  --accent-rust: #a03820;
+  --border: #3d2b14;
+  --border-light: #5a3e20;
+
+  --gau-low: var(--accent-rust);
+  --gau-mid: var(--accent-sand);
+  --gau-high: var(--accent-moss);
+}
+body { background: var(--bg-deep); font-family: 'Syne', sans-serif; color: var(--text-primary); margin:0; }
+
+* { box-sizing: border-box; }
+
+.gau-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 24px 80px;
+}
+
+.gau-intro {
+  text-align: center;
+  margin: 0 auto 40px;
+}
+
+.gau-eyebrow {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-sand);
+}
+
+.gau-title {
+  margin: 0 0 14px;
+  font-size: clamp(24px, 4vw, 34px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.gau-sub {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+.gau-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  padding: 36px 32px 32px;
+}
+
+.gau-gauge {
+  position: relative;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.gau-svg {
+  display: block;
+}
+
+.gau-track {
+  stroke: var(--bg-subtle);
+  stroke-width: 16;
+  stroke-linecap: round;
+}
+
+.gau-fill {
+  stroke: var(--accent-sand);
+  stroke-width: 16;
+  stroke-linecap: round;
+  transition: stroke 0.4s ease;
+}
+
+.gau-ticks line {
+  stroke: var(--text-faint);
+  stroke-width: 2;
+}
+
+.gau-needle {
+  stroke: var(--text-primary);
+  stroke-width: 3;
+  stroke-linecap: round;
+  transform-origin: 120px 120px;
+  transition: transform 0.15s linear;
+}
+
+.gau-hub {
+  fill: var(--text-primary);
+}
+
+.gau-readout {
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.gau-value {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.gau-unit {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-left: 2px;
+}
+
+.gau-caption {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.gau-controls {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.gau-slider-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.gau-slider {
+  width: 100%;
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--bg-subtle);
+  outline: none;
+  cursor: pointer;
+}
+
+.gau-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent-terra);
+  border: 3px solid var(--text-primary);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.gau-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.gau-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent-terra);
+  border: 3px solid var(--text-primary);
+  cursor: pointer;
+}
+
+.gau-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.gau-preset {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.gau-preset:hover {
+  border-color: var(--accent-sand);
+  color: var(--accent-sand);
+  transform: translateY(-1px);
+}
+
+.gau-preset:active {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<!-- description: A short pruning of today's headlines, ready in one sitting. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>News Digest Card — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="news-wrap">
+  <section class="news-card">
+    <div class="news-header">
+      <h1 class="news-title">Morning Digest</h1>
+      <p class="news-sub">A short pruning of today's headlines, ready in one sitting.</p>
+    </div>
+
+    <ul class="news-list">
+      <li class="news-item">
+        <button class="news-item-head" type="button" aria-expanded="false" aria-controls="news-body-1">
+          <div class="news-item-text">
+            <span class="news-headline">Community gardens see record signups this spring</span>
+            <span class="news-item-meta"><span class="news-source">Field Notes</span><span class="news-dot">&middot;</span><span class="news-time">2h ago</span></span>
+          </div>
+          <svg class="news-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+        <div class="news-item-body" id="news-body-1">
+          <p class="news-summary">Municipal plots across twelve cities report a 40% jump in new applicants, with waitlists forming for the first time in a decade. Organizers credit renewed interest in home-grown produce.</p>
+        </div>
+      </li>
+
+      <li class="news-item">
+        <button class="news-item-head" type="button" aria-expanded="false" aria-controls="news-body-2">
+          <div class="news-item-text">
+            <span class="news-headline">New drought-resistant wheat strain clears final trials</span>
+            <span class="news-item-meta"><span class="news-source">AgriWire</span><span class="news-dot">&middot;</span><span class="news-time">4h ago</span></span>
+          </div>
+          <svg class="news-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+        <div class="news-item-body" id="news-body-2">
+          <p class="news-summary">The strain, developed over six growing seasons, held yield steady through a simulated 30% rainfall reduction. Wider seed distribution is expected by next planting season.</p>
+        </div>
+      </li>
+
+      <li class="news-item">
+        <button class="news-item-head" type="button" aria-expanded="false" aria-controls="news-body-3">
+          <div class="news-item-text">
+            <span class="news-headline">Local co-op market expands to a second weekly location</span>
+            <span class="news-item-meta"><span class="news-source">Town Ledger</span><span class="news-dot">&middot;</span><span class="news-time">6h ago</span></span>
+          </div>
+          <svg class="news-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+        <div class="news-item-body" id="news-body-3">
+          <p class="news-summary">Growing demand pushed organizers to add a Wednesday evening market alongside the existing Saturday morning session, doubling vendor capacity for the summer run.</p>
+        </div>
+      </li>
+
+      <li class="news-item">
+        <button class="news-item-head" type="button" aria-expanded="false" aria-controls="news-body-4">
+          <div class="news-item-text">
+            <span class="news-headline">Study links backyard composting to healthier soil microbiomes</span>
+            <span class="news-item-meta"><span class="news-source">Root &amp; Record</span><span class="news-dot">&middot;</span><span class="news-time">9h ago</span></span>
+          </div>
+          <svg class="news-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+        <div class="news-item-body" id="news-body-4">
+          <p class="news-summary">Researchers tracked forty backyard plots over two years, finding compost-amended soil supported nearly twice the microbial diversity of untreated control beds.</p>
+        </div>
+      </li>
+
+      <li class="news-item">
+        <button class="news-item-head" type="button" aria-expanded="false" aria-controls="news-body-5">
+          <div class="news-item-text">
+            <span class="news-headline">Beekeepers report strongest hive survival rate in five years</span>
+            <span class="news-item-meta"><span class="news-source">Field Notes</span><span class="news-dot">&middot;</span><span class="news-time">11h ago</span></span>
+          </div>
+          <svg class="news-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+        <div class="news-item-body" id="news-body-5">
+          <p class="news-summary">Milder winter temperatures and expanded wildflower buffer zones are cited as key factors behind an 88% overwintering survival rate across regional apiaries.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

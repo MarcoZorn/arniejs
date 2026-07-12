@@ -1,0 +1,94 @@
+<!doctype html>
+<!-- description: Something worth letting simmer a while. -->
+<!-- category: cards -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Recipe Card — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="recipe-wrap">
+  <article class="recipe-card">
+    <div class="recipe-photo" aria-hidden="true">
+      <span class="recipe-photo-emoji">🍲</span>
+    </div>
+    <div class="recipe-body">
+      <p class="recipe-tagline">Something worth letting simmer a while.</p>
+      <h1 class="recipe-title">Slow-Roasted Tomato &amp; White Bean Stew</h1>
+
+      <div class="recipe-meta">
+        <span class="recipe-badge recipe-badge--time">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          25 min
+        </span>
+        <span class="recipe-badge recipe-badge--difficulty" data-level="easy">Easy</span>
+        <span class="recipe-badge recipe-badge--count">8 ingredients</span>
+      </div>
+
+      <button class="recipe-toggle" type="button" aria-expanded="false" aria-controls="recipe-ingredients">
+        <span class="recipe-toggle-label">View ingredients</span>
+        <svg class="recipe-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+
+      <div class="recipe-ingredients" id="recipe-ingredients">
+        <div class="recipe-ingredients-inner">
+          <ul class="recipe-list">
+            <li class="recipe-item">
+              <label>
+                <input type="checkbox" class="recipe-check">
+                <span class="recipe-item-text">2 tbsp olive oil</span>
+              </label>
+            </li>
+            <li class="recipe-item">
+              <label>
+                <input type="checkbox" class="recipe-check">
+                <span class="recipe-item-text">1 yellow onion, diced</span>
+              </label>
+            </li>
+            <li class="recipe-item">
+              <label>
+                <input type="checkbox" class="recipe-check">
+                <span class="recipe-item-text">3 cloves garlic, minced</span>
+              </label>
+            </li>
+            <li class="recipe-item">
+              <label>
+                <input type="checkbox" class="recipe-check">
+                <span class="recipe-item-text">2 cans crushed tomatoes</span>
+              </label>
+            </li>
+            <li class="recipe-item">
+              <label>
+                <input type="checkbox" class="recipe-check">
+                <span class="recipe-item-text">2 cans white beans, drained</span>
+              </label>
+            </li>
+            <li class="recipe-item">
+              <label>
+                <input type="checkbox" class="recipe-check">
+                <span class="recipe-item-text">1 sprig fresh rosemary</span>
+              </label>
+            </li>
+            <li class="recipe-item">
+              <label>
+                <input type="checkbox" class="recipe-check">
+                <span class="recipe-item-text">Sea salt &amp; cracked pepper</span>
+              </label>
+            </li>
+            <li class="recipe-item">
+              <label>
+                <input type="checkbox" class="recipe-check">
+                <span class="recipe-item-text">Crusty bread, for serving</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

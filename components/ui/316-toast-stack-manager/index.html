@@ -1,0 +1,30 @@
+<!doctype html>
+<!-- description: Notification patch -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Toast Stack Manager — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="toaststack-wrap">
+  <div class="toaststack-intro">
+    <p class="toaststack-eyebrow">Notification patch</p>
+    <h1 class="toaststack-title">Send word without stopping the work</h1>
+    <p class="toaststack-hint">Small messages that arrive, sit a moment, then let themselves out — stack as many as you need.</p>
+  </div>
+
+  <div class="toaststack-controls">
+    <button class="toaststack-btn toaststack-btn--success" type="button" data-variant="success">Spawn success toast</button>
+    <button class="toaststack-btn toaststack-btn--error" type="button" data-variant="error">Spawn error toast</button>
+    <button class="toaststack-btn toaststack-btn--info" type="button" data-variant="info">Spawn info toast</button>
+  </div>
+</main>
+
+<div class="toaststack-region" role="region" aria-label="Notifications" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

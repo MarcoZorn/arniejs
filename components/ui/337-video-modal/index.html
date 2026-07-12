@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- description: A short walk through the greenhouse, whenever you have a quiet minute to watch. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Video Modal — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="vm-demo">
+  <p class="vm-tagline">A short walk through the greenhouse, whenever you have a quiet minute to watch.</p>
+
+  <button class="vm-thumb" type="button" id="vmOpen" aria-label="Play video: Greenhouse walkthrough">
+    <span class="vm-thumb-art"></span>
+    <span class="vm-play-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+    </span>
+    <span class="vm-thumb-caption">Greenhouse walkthrough — 2:14</span>
+  </button>
+
+  <div class="vm-backdrop" id="vmBackdrop"></div>
+  <div class="vm-modal" id="vmModal" role="dialog" aria-modal="true" aria-labelledby="vmTitle" tabindex="-1">
+    <div class="vm-modal-inner">
+      <button class="vm-close" type="button" id="vmClose" aria-label="Close video">&times;</button>
+      <h2 id="vmTitle" class="vm-title">Greenhouse walkthrough</h2>
+      <video
+        class="vm-video"
+        id="vmVideo"
+        controls
+        preload="none"
+        poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='360'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23241a0e'/%3E%3Cstop offset='1' stop-color='%23a03820'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g)'/%3E%3C/svg%3E"
+      >
+        Your browser does not support embedded video.
+      </video>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

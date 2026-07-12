@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- description: Hover or focus the little seed icon to learn more before you commit to planting. -->
+<!-- category: overlays -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rich Tooltip — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="rt-wrap">
+  <p class="rt-hint">Hover or focus the little seed icon to learn more before you commit to planting.</p>
+
+  <div class="rt-anchor">
+    <span class="rt-label">Companion planting</span>
+    <button class="rt-trigger" type="button" aria-describedby="rtCard" aria-label="More about companion planting">i</button>
+
+    <div class="rt-card" id="rtCard" role="tooltip" hidden>
+      <h3 class="rt-card-title">Companion Planting</h3>
+      <p class="rt-card-body">Pairing crops that support each other — shade, pest deterrence, or nutrient sharing — can raise yield without extra work.</p>
+      <a class="rt-card-link" href="#" target="_blank" rel="noopener">Read the planting guide</a>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

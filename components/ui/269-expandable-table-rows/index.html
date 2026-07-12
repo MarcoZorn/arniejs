@@ -1,0 +1,34 @@
+<!doctype html>
+<!-- description: Each pen has more going on than the summary lets on — open as many rows as you like. -->
+<!-- category: data-display -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Expandable Table Rows — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="exp-tbl-wrap">
+  <div class="exp-tbl-intro">
+    <p class="exp-tbl-eyebrow">Flock ledger</p>
+    <h1 class="exp-tbl-title">Tap a row to see what's underneath</h1>
+    <p class="exp-tbl-tagline">Each pen has more going on than the summary lets on — open as many rows as you like.</p>
+  </div>
+
+  <table class="exp-tbl-table" role="table">
+    <thead>
+      <tr>
+        <th scope="col" class="exp-tbl-th-chevron" aria-hidden="true"></th>
+        <th scope="col">Pen</th>
+        <th scope="col">Animal</th>
+        <th scope="col">Head count</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody class="exp-tbl-body"></tbody>
+  </table>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

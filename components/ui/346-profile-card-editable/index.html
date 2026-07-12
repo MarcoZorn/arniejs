@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- description: Click "Edit profile" to update your name, title and bio right on the card, then save or cancel. -->
+<!-- category: saas -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Profile Card Editable — ArnieJS component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="pce-wrap">
+  <div class="pce-card">
+    <p class="pce-hint">Click "Edit profile" to update your name, title and bio right on the card, then save or cancel.</p>
+
+    <div class="pce-avatar-row">
+      <div class="pce-avatar" aria-hidden="true">
+        <span class="pce-avatar-initials">RM</span>
+      </div>
+      <button type="button" class="pce-avatar-btn" data-edit-only hidden>Change photo</button>
+    </div>
+
+    <div class="pce-view" data-view>
+      <h1 class="pce-name" data-field="name">Rosa Marchetti</h1>
+      <p class="pce-title" data-field="title">Head Gardener, Terra Collective</p>
+      <p class="pce-bio" data-field="bio">Ten seasons of coaxing stubborn clay soil into something worth harvesting. Ask me about crop rotation.</p>
+    </div>
+
+    <form class="pce-edit" data-edit hidden>
+      <label class="pce-label" for="pce-name-input">Name</label>
+      <input class="pce-input" id="pce-name-input" name="name" type="text" maxlength="60" required>
+
+      <label class="pce-label" for="pce-title-input">Title</label>
+      <input class="pce-input" id="pce-title-input" name="title" type="text" maxlength="80">
+
+      <label class="pce-label" for="pce-bio-input">Bio</label>
+      <textarea class="pce-textarea" id="pce-bio-input" name="bio" maxlength="220" rows="4"></textarea>
+      <span class="pce-counter" data-counter>220 characters left</span>
+    </form>
+
+    <div class="pce-actions">
+      <button type="button" class="pce-btn pce-btn--primary" data-action="edit">Edit profile</button>
+      <button type="button" class="pce-btn pce-btn--primary" data-action="save" data-edit-only hidden>Save changes</button>
+      <button type="button" class="pce-btn pce-btn--ghost" data-action="cancel" data-edit-only hidden>Cancel</button>
+    </div>
+
+    <p class="pce-status" role="status" aria-live="polite" data-status></p>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
